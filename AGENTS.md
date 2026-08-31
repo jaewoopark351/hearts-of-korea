@@ -207,6 +207,29 @@ Many later errors may be cascades from one early load failure. Fix and retest th
 
 Treat Paradox Script as context-sensitive game logic, not generic configuration text.
 
+### Language and evaluation model
+
+Paradox Script is a family of directory- and context-specific declarative DSLs, not a single general-purpose language. Syntax that works in one database, block, or game version is not evidence that it is legal or equivalent in another. Before introducing, moving, or generating syntax, verify the target directory's root schema, loader and merge behavior, lifecycle, and a target-version vanilla example from the same context.
+
+- Treat a script block as an ordered multi-map, not a JSON/YAML object or programming-language dictionary. Repeated keys can be meaningful, and effect order can change behavior. Do not sort, deduplicate, merge, or generically round-trip blocks unless that exact transformation is proven semantics-preserving for that file type.
+- Do not import C, C++, or Java operators, statement syntax, or comment syntax. `=` is context-dependent; do not substitute `==`, `&&`, `||`, `!`, semicolons, `//`, or `/* ... */`. Use `#` comments and only syntax demonstrated for the target HOI4 version.
+- In ordinary trigger contexts, sibling conditions form a declarative condition set. Do not rely on left-to-right evaluation or short-circuit behavior to make a later condition safe. In effect contexts, earlier commands can change the state or scope used by later commands, so preserve and test command order. A `limit` block remains trigger context even when nested inside an effect construct.
+- Brace nesting alone does not prove a scope change. Identify the enclosing command's actual scope contract. Treat `any_*`, `all_*`, `every_*`, and `random_*` constructs as distinct engine operations rather than interchangeable loop forms.
+- Treat scripted trigger/effect parameters as context-sensitive expansion, not statically typed function arguments. At every caller, verify required parameters, resulting tokens, entry scope, and the meaning of `ROOT`, `THIS`, `PREV`, and `FROM`.
+- Distinguish runtime variables, flags, event targets, saved scopes, and scripted parameters. For state-bearing constructs, verify owning scope, lifetime, unset or default behavior, save persistence, and multiplayer implications. Do not assume lexical block scope or automatic initialization.
+- Do not infer numeric semantics from notation alone. For modifiers, weights, costs, durations, and cadences, verify units, additive versus multiplicative behavior, defaults, clamps, and legal ranges against target-version evidence.
+
+### Load and runtime model
+
+Paradox Script has no Java/C++-style compile, type-check, and link barrier. A brace checker, parser, external schema, or linter proves only the conditions it actually checks and may not match the target game version.
+
+- Validate separately that the intended physical file was discovered and loaded, the definition parsed and registered, the block evaluated in the intended runtime scope, and the observable game behavior occurred. A clean parser result or quiet log does not prove all four stages.
+- Before splitting, renaming, or duplicating files, determine the target directory's actual accumulation, filename precedence, duplicate-ID, dependency-order, and `replace_path` behavior. Do not assume a later file inherits from or extends an earlier definition.
+- Classify the relevant lifecycle: load-time definition, new-game or history initialization, repeated trigger/AI/UI evaluation, sequential effect execution, or localisation/UI rendering. Do not infer runtime execution order merely from file order.
+- Before changing a high-frequency trigger, AI weight, decision visibility/availability block, scripted GUI, or `on_action`, identify its call cadence and worst-case scope count. Do not assume caching or short-circuit evaluation without target-version evidence.
+- Treat console reload and hot reload as exploratory diagnostics only. Final validation must use a full process restart and a clean run appropriate to the changed subsystem.
+- Treat changes to random-selection sites, weights, and ordering as behavior changes rather than harmless refactors. When multiplayer compatibility is claimed, validate synchronized runtime behavior and inspect out-of-sync evidence in addition to comparing checksums.
+
 ### Scope correctness
 
 For every changed trigger or effect, determine:
@@ -465,6 +488,7 @@ For every supported bookmark relevant to the change:
 - test a positive path and an important blocked/negative path
 - inspect AI runtime behavior when AI logic changes
 - inspect save/load when persistent IDs, flags, variables, history, or map data changes
+- Distinguish a new-save round trip from backward compatibility. To claim existing-save compatibility, load a representative pre-change save in the patched build, advance the game, save again, and reload it. Any one-time migration must be version-gated and idempotent.
 - check multiplayer checksum/synchronization only when multiplayer compatibility is claimed
 
 Risk examples:

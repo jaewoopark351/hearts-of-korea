@@ -52,6 +52,9 @@ __pycache__/
 /.mypy_cache/
 /.ruff_cache/
 
+# Generated local baselines and diagnostic reports (not mod source)
+/.local-artifacts/
+
 # Local HOI4 launcher state if copied into the project
 /dlc_load.json
 /game_data.json
