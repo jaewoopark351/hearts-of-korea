@@ -1,0 +1,166 @@
+﻿##### CHINA NAME LISTS #####
+### DESTROYER NAMES###
+CHI_DE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_LIGHT_DDS
+
+	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+	
+	prefix = "ROCN "
+	fallback_name = "%d Quzujian"					
+
+	unique = {											
+		"Tai Kang" "Tai Ping" "Tai He" "Tai Cang" "Tai Hu" "Tai Zhao" "Tai Yuan"
+		"Mei Yuan" "Shan Hai" "Wei Yuan" "Zhen Nan" "Yu Men" "Yang Ming" "Yong Niing"
+		"Yong Jia" "Yong Xiu" "Zi Ling" "Yong Feng" "Lin Huai" "Yong Chun" "Yong He" "Yong Kang" "Yong Ming"
+		"Tian Shan" "Yu Shan" "Hua Shan" "Fu Shan" "Shou Shan" "Shou Shan" "Tai Shan" "Heng Shan" "Wen Shan" "Lu Shan" "Gang Shan"
+		"Jian Men" "Wu Sheng" "Ju Yong" "Ping Jing"
+	}
+}
+
+CHI_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "ROCN "
+	fallback_name = "%d Quzujian"					
+
+	unique = {											
+		"Tze Kiang" "Ta Tung" "Chien Wei" "Chien An" 
+		"Shen Yang" "Tan Yang" "Fen Yang" "An Shan" "Fu Shun" "Chang Chun" 
+		"Chien Kang" "Tung An" "Ching Po" "Lung Tuan" 
+		"Fu Po" "Fei Hung" "Yu Chang" "Chang Feng" "Lung Tuan" 
+		"Long Chiang" "Sui Chiang" "Hai Jiao" "Hai Lung"
+		"Chi Yang" "Hai Yang" "Dang Yang" "Fu Yang" "Tse Yang" "Han Yang" "Kai Yang" "Lao Yang" "Sheui Yang"
+		"Chien Yang" "Shao Yang" "Luo Yang" "Xian Yang" "Nan Yang" "An Yang" "Qing Yang" "Gui Yang" "Kun Yang"
+		"Hui Yang" "Hui Yang" "Bo Yang" "Xiang Yang" "Heng Yang" "Hua Yang" "Xin Yang"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+CHI_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "ROCN "
+	fallback_name = "%d Qingxing Xunyangjian"
+
+	unique = {
+		"Shantou" "Chengdu" "Jiangmen" "Foshan" "Jiujing" "Beihai" "Haikou" "Chencun" "Meilu" "Wuhu" "Jiujing" "Zigong" "Shilong"
+		"Zhengzhou" "Changsha" "Liuzhou" "Nanning" "Kunming" "Wanxian" "Suzhou" "Kaifeng" "Guilin" "Baotou" "Fuzhou" "Lianyun"
+		"Xiamen" "Lanzhou" "Hengyang" "Guiyang" "Taiyuan" "Shanba" "Shaoguan" "Weihaiwei" "Dihua" "Zhanjing" "Xuzhou" "Xining"
+		"Tangshan" "Shimen" "Jinan" "Yantai" "Bengbu" "Zhangyuan" "Yungkou" "Tonghua" "Andong" "Siping" "Jilin" "Changchun"
+		"Mudanjiang" "Jiamusi" "Bei'an" "Qiqihar" "Hailar" "Jinzhou" "Guisui"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+CHI_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "ROCN "
+	fallback_name = "%d Zhong Xunyangjian"
+
+	unique = {
+		 "Guangzhou" "Beiping" "Jingdu" "Qingdao" "Harbin" "Wwxi" "Hangzhou" "Ningbo" "Anqing" "Wuchang" "Nanchang" "Wuzhou" "Jingu"
+		 "Tianjin" "Hankou" "Wuhan" "Hankou" "Songhu" "Shanghai" "Chongqing" "Nanjing" "Xi'an" "Shenyang"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+CHI_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "ROCN "
+	fallback_name = "%d Zhanjian"		
+
+	unique = {
+		"Anhui" "Fujian" "Gansu" "Guangdong" "Guangxi" "Guizhou" "Henan" "Hubei" "Hunan" "Jiangsu" "Jiangxi" "Shaanxi" "Shandong"	#chinese provinces
+		"Shanxi" "Sichuan" "Yunnan" "Zhejiang" "Zhili" "Xingian" "Taiwan" "Fengtian" "Jilin" "Heilongjiang" "Qinghai"
+		"Sun Zhongshan" "Kong Fuzi" "Laozi" "Qu Yuan"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+CHI_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "ROCN "
+	fallback_name = "%d Zhan lie Xunyangjian"		
+
+	unique = {
+		"Hairong" "Zhaohe" "Haiqi" "Yingrui" "Ninghai" "Pinghai" "Zhongeng" "Haizhao" "Haizhen"	"Feihong" "Nanshen" "Paonin" "Yingjing" "Tuanji"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+CHI_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "ROCN "
+	fallback_name = "%d Hangmu"	
+
+	unique = {
+		"Chen Hai" "Ching Yuen" "Chen Wei" "Chen Tai" "Wei Hai" "Hwah Jah" "Wei Sheng" "Teh Sheng"	##historical chinese seaplane tender
+		"Zhong Ye" "Zhong Hai" "Zhong Quan" "Zhong Ding" "Zhong Xing" "Zhong Jian" "Zhong Ji" "Zhong Cheng" "Zhong Xun" "Zhong Lian"	#fictional
+		"Zhong Rong" "Zhong Gong" "Zhong Guang" "Zhong Zhao" "Zhong Qi" "Zhong Xi" "Zhong Sheng" "Zhong Fu" "Zhong Qiang" "Zhong Zhi"
+		"Zhong Ming" "Zhong Su" "Zhong Wang" "Zhong Pang" "Zhong Ye"
+	}
+}
+
+### SUBMARINES ###
+CHI_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "ROCN "
+	fallback_name = "%d Qianting"
+	
+	ordered = {
+		1 = {"Q-1"}
+		2 = {"Q-2"} 
+		3 = {"Q-3"} 
+		4 = {"Q-4"} 
+		5 = {"Q-5"} 
+		6 = {"Q-6"} 
+		7 = {"Q-7"} 
+		8 = {"Q-8"} 
+		9 = {"Q-9"} 
+		10 = {"Q-10"}
+	}
+}

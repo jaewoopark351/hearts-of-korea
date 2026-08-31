@@ -1,0 +1,133 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Je 3 Hamdae"
+		naval_base = 4056
+		task_force ={
+			name = "Je 3 Hamdae"
+			location = 4056
+			ship = { name = "ROKS Baekdusan" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = KOR version_name = "Baekdusan Class" } } }
+			ship = { name = "ROKS Hanrasan" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = KOR version_name = "Baekdusan Class" } } }
+			ship = { name = "ROKS Geumgangsan" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = KOR version_name = "Baekdusan Class" } } }
+			ship = { name = "ROKS Sejong the Great" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = KOR version_name = "Sejong the Great Class" } } }
+			ship = { name = "ROKS Gwanggaeto the Great" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = KOR version_name = "Sejong the Great Class" } } }
+			ship = { name = "ROKS Munmu the Great" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Munmu the Great Class" } } }
+			ship = { name = "ROKS Dae Joyeong" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Munmu the Great Class" } } }
+			ship = { name = "ROKS Wang Geon" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Munmu the Great Class" } } }
+			ship = { name = "ROKS Gang Gam-chan" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Munmu the Great Class" } } }
+			ship = { name = "ROKS Ahn Yongbok" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Ahn Yongbok Class" } } }
+			ship = { name = "ROKS Choe Museon" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Ahn Yongbok Class" } } }
+			ship = { name = "ROKS Park Wi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Ahn Yongbok Class" } } }
+			ship = { name = "ROKS Gyeongyeolgong Jeong-ji" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Ahn Yongbok Class" } } }
+			ship = { name = "ROKS Yi Jong-mu" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Ahn Yongbok Class" } } }
+			ship = { name = "ROKS Chungjanggong Jeong-un" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Ahn Yongbok Class" } } }
+			ship = { name = "ROKS Dandong" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Mokpo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Gimcheon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Chungju" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Jinju" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Yeosu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Hapibin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Bisa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Dumakru" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Simyang" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Yeongil" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Jehap" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+		}
+	}
+	fleet = {
+		name = "Je 2 Hamdae"
+		naval_base = 7221
+		task_force ={
+			name = "Je 2 Hamdae"
+			location = 7221
+			ship = { name = "ROKS Dokdo" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = KOR version_name = "Dokdo Class" } } }
+			ship = { name = "ROKS Marado" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = KOR version_name = "Dokdo Class" } } }
+			ship = { name = "ROKS Jang Bogo" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sunshin Class" } } }
+			ship = { name = "ROKS Yulgok Yi I" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sunshin Class" } } }
+			ship = { name = "ROKS Seoae Ryu Sungryong" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sunshin Class" } } }
+			ship = { name = "ROKS Na Dae-yong" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Ahn Yongbok Class" } } }
+			ship = { name = "ROKS Uimin Yi Eokgi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "Ahn Yongbok Class" } } }
+			ship = { name = "ROKS Jinhae" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Suncheon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Iksan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Andong" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Cheonan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Wonju" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Bucheon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Seongnam" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Jecheon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Daecheon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Sokcho" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Yeongju" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Buyeo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Yongjeong" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Hwaryong" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Domun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Hunchun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Donhwa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Ahndo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "Donghae Class" } } }
+		}
+	}
+	fleet = {
+		name = "Jamsuham Saryeongbu"
+		naval_base = 848
+		task_force ={
+			name = "Je 1 Jamsu-Jeondae"
+			location = 848
+			ship = { name = "ROKS SS-1" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-2" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-3" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-4" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-5" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-6" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-7" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-8" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-9" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-10" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+		}
+		task_force ={
+			name = "Je 2 Jamsu-Jeondae"
+			location = 848
+			ship = { name = "ROKS SS-11" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-12" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-13" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-14" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-15" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-16" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-17" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-18" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-19" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-20" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+		}
+		task_force ={
+			name = "Je 3 Jamsu-Jeondae"
+			location = 848
+			ship = { name = "ROKS SS-21" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-22" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-23" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-24" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-25" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-26" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-27" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-28" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-29" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-30" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+		}
+		task_force ={
+			name = "Je 4 Jamsu-Jeondae"
+			location = 848
+			ship = { name = "ROKS SS-31" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-32" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-33" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-34" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-35" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-36" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-37" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-38" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-39" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+			ship = { name = "ROKS SS-40" definition = submarine equipment = { ship_hull_submarine_2 = {amount = 1 owner = KOR version_name = "Type VII-K Class"} } }
+		}
+	}
+}

@@ -1,0 +1,47 @@
+﻿air_wings = {
+	1017 = { 
+		fighter_equipment_1 =  { owner = "KOR" amount = 100 }
+		fighter_equipment_1 =  { owner = "KOR" amount = 100 }
+		CAS_equipment_1 =  { owner = "KOR" amount = 100 }
+	}
+	1021 = { 
+		fighter_equipment_1 =  { owner = "KOR" amount = 100 }
+		CAS_equipment_1 =  { owner = "KOR" amount = 100 }
+	}
+	"ROKS Baekdusan"  = { 
+		cv_fighter_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_fighter_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 }
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+	}
+	"ROKS Hanrasan"  = { 
+		cv_fighter_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_fighter_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 }
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+	}
+	"ROKS Geumgangsan"  = { 
+		cv_fighter_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_fighter_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 }
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+	}
+	"ROKS Dokdo" = {
+		cv_fighter_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+	}
+	"ROKS Marado" = {
+		cv_fighter_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+	}
+}

@@ -1,0 +1,320 @@
+﻿MON_INF_01 = 
+{
+	name = "Infantry Divisions"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { MON_GAR_01 }
+
+	fallback_name = "%d-p Yavgan Tsereg Diviz"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-r Yavgan Tsereg Diviz" }
+		2 = { "%d-p Yavgan Tsereg Diviz" }
+		3 = { "%d-p Yavgan Tsereg Diviz" }
+		4 = { "%d-p Yavgan Tsereg Diviz" }
+		5 = { "%d-p Yavgan Tsereg Diviz" }
+		6 = { "%d-p Yavgan Tsereg Diviz" }
+		7 = { "%d-p Yavgan Tsereg Diviz" }
+		8 = { "%d-p Yavgan Tsereg Diviz" }
+		9 = { "%d-p Yavgan Tsereg Diviz" }
+		10 = { "%d-p Yavgan Tsereg Diviz" }
+	}
+}
+
+MON_CAV_01 = 
+{
+	name = "Cavalry Divisions"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MON_INF_01 }
+
+	fallback_name = "%d-p Morin Diviz"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-r Morin Diviz" }
+		2 = { "%d-p Morin Diviz" }
+		3 = { "%d-p Morin Diviz" }
+		4 = { "%d-p Morin Diviz" }
+		5 = { "%d-p Morin Diviz" }
+		6 = { "%d-p Morin Diviz" }
+		7 = { "%d-p Morin Diviz" }
+		8 = { "%d-p Morin Diviz" }
+		9 = { "%d-p Morin Diviz" }
+		10 = { "%d-p Morin Diviz" }
+	}
+}
+
+MON_CAV_02 = 
+{
+	name = "Cavalry Brigade"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { MON_INF_01 }
+
+	fallback_name = "%d-p Morin Brigad"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-r Morin Brigad" }
+		2 = { "%d-p Morin Brigad" }
+		3 = { "%d-p Morin Brigad" }
+		4 = { "%d-p Morin Brigad" }
+		5 = { "%d-p Morin Brigad" }
+		6 = { "%d-p Morin Brigad" }
+		7 = { "%d-p Morin Brigad" }
+		8 = { "%d-p Morin Brigad" }
+		9 = { "%d-p Morin Brigad" }
+		10 = { "%d-p Morin Brigad" }
+	}
+}
+
+MON_MOT_01 = 
+{
+	name = "Motorised Divisions"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MON_INF_01 }
+
+	fallback_name = "%d-r Motortoi Morin Diviz"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-r Motortoi Morin Diviz" }
+		2 = { "%d-p Motortoi Morin Diviz" }
+		3 = { "%d-p Motortoi Morin Diviz" }
+		4 = { "%d-p Motortoi Morin Diviz" }
+		5 = { "%d-p Motortoi Morin Diviz" }
+		6 = { "%d-p Motortoi Morin Diviz" }
+		7 = { "%d-p Motortoi Morin Diviz" }
+		8 = { "%d-p Motortoi Morin Diviz" }
+		9 = { "%d-p Motortoi Morin Diviz" }
+		10 = { "%d-p Motortoi Morin Diviz" }
+	}
+}
+
+MON_ARM_01 = 
+{
+	name = "Armored Divisions"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { MON_INF_01 }
+
+	fallback_name = "%d-p Tankny Diviz"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-r Tankny Diviz" }
+		2 = { "%d-p Tankny Diviz" }
+		3 = { "%d-p Tankny Diviz" }
+		4 = { "%d-p Tankny Diviz" }
+		5 = { "%d-p Tankny Diviz" }
+		6 = { "%d-p Tankny Diviz" }
+		7 = { "%d-p Tankny Diviz" }
+		8 = { "%d-p Tankny Diviz" }
+		9 = { "%d-p Tankny Diviz" }
+		10 = { "%d-p Tankny Diviz" }
+	}
+}
+
+MON_MEC_01 = 
+{
+	name = "Mechanized Divisions"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized"  }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MON_INF_01 }
+
+	fallback_name = "%d-p Myekhanikjsan Diviz"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-p Myekhanikjsan Diviz" }
+		2 = { "%d-p Myekhanikjsan Diviz" }
+		3 = { "%d-p Myekhanikjsan Diviz" }
+		4 = { "%d-p Myekhanikjsan Diviz" }
+		5 = { "%d-p Myekhanikjsan Diviz" }
+		6 = { "%d-p Myekhanikjsan Diviz" }
+		7 = { "%d-p Myekhanikjsan Diviz" }
+		8 = { "%d-p Myekhanikjsan Diviz" }
+		9 = { "%d-p Myekhanikjsan Diviz" }
+		10 = { "%d-p Myekhanikjsan Diviz" }
+	}
+}
+
+MON_GAR_01 = 
+{
+	name = "Garrison Units"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { MON_INF_01 }
+
+	fallback_name = "%d-p Dugaar Angi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-r Dugaar Angi" }
+		2 = { "%d-p Dugaar Angi" }
+		3 = { "%d-p Dugaar Angi" }
+		4 = { "%d-p Dugaar Angi" }
+		5 = { "%d-p Dugaar Angi" }
+		6 = { "%d-p Dugaar Angi" }
+		7 = { "%d-p Dugaar Angi" }
+		8 = { "%d-p Dugaar Angi" }
+		9 = { "%d-p Dugaar Angi" }
+		10 = { "%d-p Dugaar Angi" }
+	}
+}
+
+MON_MAR_01 = 
+{
+	name = "Marine Divisions"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { MON_INF_01 }
+
+	fallback_name = "%d-p Tengisiin Yavgan Tsergiin Diviz"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-r Tengisiin Yavgan Tsergiin Diviz" }
+		2 = { "%d-p Tengisiin Yavgan Tsergiin Diviz" }
+		3 = { "%d-p Tengisiin Yavgan Tsergiin Diviz" }
+		4 = { "%d-p Tengisiin Yavgan Tsergiin Diviz" }
+		5 = { "%d-p Tengisiin Yavgan Tsergiin Diviz" }
+		6 = { "%d-p Tengisiin Yavgan Tsergiin Diviz" }
+		7 = { "%d-p Tengisiin Yavgan Tsergiin Diviz" }
+		8 = { "%d-p Tengisiin Yavgan Tsergiin Diviz" }
+		9 = { "%d-p Tengisiin Yavgan Tsergiin Diviz" }
+		10 = { "%d-p Tengisiin Yavgan Tsergiin Diviz" }
+
+	}
+}
+
+MON_MTN_01 = 
+{
+	name = "Mountain Divisions"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MON_INF_01 }
+
+	fallback_name = "%d-p Uulyn Yavgan Tsergiin Diviz"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-r Uulyn Yavgan Tsergiin Diviz" }
+		2 = { "%d-p Uulyn Yavgan Tsergiin Diviz" }
+		3 = { "%d-p Uulyn Yavgan Tsergiin Diviz" }
+		4 = { "%d-p Uulyn Yavgan Tsergiin Diviz" }
+		5 = { "%d-p Uulyn Yavgan Tsergiin Diviz" }
+		6 = { "%d-p Uulyn Yavgan Tsergiin Diviz" }
+		7 = { "%d-p Uulyn Yavgan Tsergiin Diviz" }
+		8 = { "%d-p Uulyn Yavgan Tsergiin Diviz" }
+		9 = { "%d-p Uulyn Yavgan Tsergiin Diviz" }
+		10 = { "%d-p Uulyn Yavgan Tsergiin Diviz" }
+	}
+}
+
+MON_PAR_01 = 
+{
+	name = "Paratrooper Divisions"
+
+	for_countries = { MON }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { MON_INF_01 }
+
+	fallback_name = "%d-p Agaaryn Dyesantyn Diviz"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-r Agaaryn Dyesantyn Diviz" }
+		2 = { "%d-p Agaaryn Dyesantyn Diviz" }
+		3 = { "%d-p Agaaryn Dyesantyn Diviz" }
+		4 = { "%d-p Agaaryn Dyesantyn Diviz" }
+		5 = { "%d-p Agaaryn Dyesantyn Diviz" }
+		6 = { "%d-p Agaaryn Dyesantyn Diviz" }
+		7 = { "%d-p Agaaryn Dyesantyn Diviz" }
+		8 = { "%d-p Agaaryn Dyesantyn Diviz" }
+		9 = { "%d-p Agaaryn Dyesantyn Diviz" }
+		10 = { "%d-p Agaaryn Dyesantyn Diviz" }
+	}
+}

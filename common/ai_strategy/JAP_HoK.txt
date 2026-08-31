@@ -1,0 +1,365 @@
+JAP_for_democracy_victory = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_completed_focus = JAP_pre_emptive_coup
+		has_civil_war = yes
+	}
+	abort = {
+		OR = {
+			has_completed_focus = JAP_proclaim_the_republic
+			has_completed_focus = JAP_the_showa_constitution
+		}
+	}
+	ai_strategy = {
+		type = front_control
+		strategic_region = 154	#Japanese home island
+		
+		ratio = 0.9
+		
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+
+
+JAP_we_hate_manchuria = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_completed_focus = JAP_pre_emptive_coup
+		country_exists = MAN
+	}
+	abort = {
+		NOT = {
+			country_exists = MAN
+		}
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = MAN
+		value = 2000
+	}
+}
+
+JAP_korea_ally = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_completed_focus = JAP_go_with_korea
+		country_exists = KOR
+	}
+	abort = {
+		NOT = { country_exists = KOR }
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "KOR"
+		value = 2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "KOR"
+		value = 2000
+	}
+}
+
+KOR_japan_ally = {
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		JAP = { has_completed_focus = JAP_go_with_korea }
+		country_exists = JAP
+	}
+	abort = {
+		NOT = { country_exists = JAP }
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "JAP"
+		value = 2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = 2000
+	}
+}
+
+JAP_we_will_liberate_manchuria = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_completed_focus = JAP_liberation_of_manchuria
+		country_exists = MAN
+	}
+	abort = {
+		NOT = {
+			country_exists = MAN
+		}
+	}
+	ai_strategy = {
+		type = declare_war
+		id = MAN
+		value = 2000
+	}
+}
+
+SOV_please_dont_care_to_manchuria = {
+	allowed = { original_tag = SOV }
+	enable = {
+		JAP = { has_completed_focus = JAP_pre_emptive_coup }
+	}
+	
+	abort = { always = no }
+	
+	ai_strategy = {
+		type = ignore_claim
+		id = MAN
+		value = 1
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = MAN
+		value = -9999999
+	}
+}
+
+MAN_do_nothing_jeez = {
+	allowed = { original_tag = MAN }
+	enable = {
+		JAP = { has_completed_focus = JAP_pre_emptive_coup }
+	}
+	
+	abort = { always = no }
+	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -9999999
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = PRC
+		value = -9999999
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = CHI
+		value = -9999999
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = YUN
+		value = -9999999
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = XSM
+		value = -9999999
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = SHX
+		value = -9999999
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = SIK
+		value = -9999999
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = MON
+		value = -9999999
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = SOV
+		value = -9999999
+	}
+}
+
+HoK_JAP_dont_justify_on_axis = {
+	enable = {
+		is_in_faction_with = GER
+		GER = { has_war_together_with = JAP }
+	}
+	abort_when_not_enabled = yes
+	reversed = yes
+	
+	ai_strategy = { type = ignore_claim id = "JAP" value = 1 }
+	ai_strategy = { type = befriend id = "JAP" value = 500 }
+	ai_strategy = { type = ignore id = "JAP" value = 500 }
+	ai_strategy = { type = antagonize id = "JAP" value = -500 }
+	ai_strategy = { type = declare_war id = "JAP" value = -500 }
+}
+
+HoK_JAP_ignore_SOV = {
+	allowed = { tag = JAP }
+	enable = {
+		is_historical_focus_on = yes
+		date < 1942.1.1
+	}
+
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = ignore_claim
+		id = "SOV"
+		value = 1
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "SOV"
+		value = -500
+	}
+}
+
+HoK_JAP_force_build_army = {
+	allowed = { tag = JAP }
+	enable = { 
+		has_army_manpower = { size < 1200000 }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = { type = build_army id = infantry value = 500 }
+	ai_strategy = { type = force_build_armies value = 300 }
+}
+
+HoK_JAP_area_priority = {
+	allowed = { tag = JAP }
+	enable = {
+		always = yes
+	}
+	abort = { always = no }
+
+	ai_strategy = { type = area_priority id = HoK_china_coast value = 200 }
+}
+
+HoK_JAP_war_against_CHI = {
+	allowed = { tag = JAP }
+	enable = {
+		focus_progress = { focus = JAP_intervene_in_china progress > 0.0 }
+		NOT = { has_completed_focus = JAP_intervene_in_china }
+	}
+	abort = {
+		has_completed_focus = JAP_intervene_in_china
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = "CHI"			
+		value = 2000
+	}
+}
+
+HoK_JAP_war_against_CHI_2 = {
+	allowed = { tag = JAP }
+	enable = {
+		OR = { 
+			has_war_with = CHI
+			
+			AND = {
+				focus_progress = { focus = JAP_intervene_in_china progress > 0.0 }
+				NOT = { has_completed_focus = JAP_intervene_in_china }
+			}
+		}
+		NOT = { has_war_with = SHX }
+	}
+	abort = {
+		NOT = {
+			AND = {
+				OR = { 
+					has_war_with = CHI
+					
+					AND = {
+						focus_progress = { focus = JAP_intervene_in_china progress > 0.0 }
+						NOT = { has_completed_focus = JAP_intervene_in_china }
+					}
+				}
+				NOT = { has_war_with = SHX }
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "SHX"			
+		value = 1000
+	}
+}
+
+HoK_JAP_offensive_vs_CHI_naval_invasion_strategy = {
+	allowed = { tag = JAP }
+	enable = {
+		has_war_with = CHI
+		NOT = { any_enemy_country = { NOT = { tag = CHI } is_major = yes } }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority id = HoK_china_coast value = 2000 }
+
+	ai_strategy = { type = invade id = "CHI" value = 10000 }
+
+	ai_strategy = {
+		type = naval_invasion_supremacy_weight
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 1000
+	}
+}
+
+
+HoK_JAP_hold_off_until_more_escalations = {
+	allowed = { tag = JAP }
+	enable = {  
+		OR = {
+			has_idea = JAP_intervene_in_china_3
+			has_idea = JAP_intervene_in_china_4
+			has_idea = JAP_intervene_in_china_5
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		priority = 1000
+		country_trigger = {
+			OR = {
+				tag = CHI
+				has_war_together_with = CHI
+			}
+		}
+		ratio > 0.1
+		execution_type = careful
+		execute_order = no
+	}
+
+	ai_strategy = { type = invade id = "CHI" value = -15000 }
+	ai_strategy = { type = invade id = "GXC" value = -15000 }
+}
+

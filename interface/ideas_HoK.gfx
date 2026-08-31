@@ -1,0 +1,136 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_kor_home_of_the_free"
+		texturefile = "gfx/interface/ideas/idea_kor_home_of_the_free.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_armed_forces_intelligence_command"
+		texturefile = "gfx/interface/ideas/idea_kor_armed_forces_intelligence_command.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_saemaeul_undong"
+		texturefile = "gfx/interface/ideas/idea_kor_saemaeul_undong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_saemaeul_undong_commie"
+		texturefile = "gfx/interface/ideas/idea_kor_saemaeul_undong_commie.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_spirit_of_goguryo"
+		texturefile = "gfx/interface/ideas/idea_kor_spirit_of_goguryo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_dasmfe"
+		texturefile = "gfx/interface/ideas/idea_kor_dasmfe.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_vision_1950"
+		texturefile = "gfx/interface/ideas/idea_kor_vision_1950.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_legacy_of_resistance"
+		texturefile = "gfx/interface/ideas/idea_kor_legacy_of_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_emperor_lee_eun"
+		texturefile = "gfx/interface/ideas/idea_kor_emperor_lee_eun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_the_hwan_empire_idea"
+		texturefile = "gfx/interface/ideas/idea_kor_the_hwan_empire_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_jaeryeong_plain_agricultural_products_idea"
+		texturefile = "gfx/interface/ideas/idea_kor_jaeryeong_plain_agricultural_products.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_gyeryongdae"
+		texturefile = "gfx/interface/ideas/idea_kor_gyeryongdae.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_goldstar"
+		texturefile = "gfx/interface/ideas/idea_kor_goldstar.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_samsung"
+		texturefile = "gfx/interface/ideas/idea_kor_samsung.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_kia_motors"
+		texturefile = "gfx/interface/ideas/idea_kor_kia_motors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_sunkyong"
+		texturefile = "gfx/interface/ideas/idea_kor_sunkyong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_hanhwa"
+		texturefile = "gfx/interface/ideas/idea_kor_hanhwa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_hyundai"
+		texturefile = "gfx/interface/ideas/idea_kor_hyundai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_daewoo"
+		texturefile = "gfx/interface/ideas/idea_kor_daewoo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_daewoo_ship"
+		texturefile = "gfx/interface/ideas/idea_kor_daewoo_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_gms"
+		texturefile = "gfx/interface/ideas/idea_kor_gms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_doosan"
+		texturefile = "gfx/interface/ideas/idea_kor_doosan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_hanjin"
+		texturefile = "gfx/interface/ideas/idea_kor_hanjin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_daehanjoseongongsa"
+		texturefile = "gfx/interface/ideas/idea_kor_daehanjoseongongsa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_kai"
+		texturefile = "gfx/interface/ideas/idea_kor_kai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_korail"
+		texturefile = "gfx/interface/ideas/idea_kor_korail.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_afab"
+		texturefile = "gfx/interface/ideas/idea_kor_afab.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_mmaa"
+		texturefile = "gfx/interface/ideas/idea_kor_mmaa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_jinhae_naval_air_factory"
+		texturefile = "gfx/interface/ideas/idea_kor_jinhae_naval_air_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_yugyeong_machine_industry"
+		texturefile = "gfx/interface/ideas/idea_kor_yugyeong_machine_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jap_joint_staff_office"
+		texturefile = "gfx/interface/ideas/idea_jap_joint_staff_office.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jap_hitachi"
+		texturefile = "gfx/interface/ideas/idea_jap_hitachi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jap_tachikawa"
+		texturefile = "gfx/interface/ideas/idea_jap_tachikawa.dds"
+	}
+}

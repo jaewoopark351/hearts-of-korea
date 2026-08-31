@@ -1,0 +1,963 @@
+﻿KOR_INF_01 = 
+{
+	name = "Infantry Divisions"
+
+	for_countries = { KOR }
+
+	can_use = {	always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_GAR_01 }
+
+	fallback_name = "Je %d Bobyeong-Sadan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		4 = { "Sudo-Bobyeong-Sadan 'Maeng-ho'" }				#Capital Infantry Division "Tiger"
+		1 = { "Je %d Bobyeong-Sadan 'Jeon-jin'" }				#1~76 Historical and present ROKA Infantry Divisions
+		2 = { "Je %d Bobyeong-Sadan 'No-do'" }					#Korea don't use 4 to unit number because of Tetraphobia
+		3 = { "Je %d Bobyeong-Sadan 'Baek-gol'" }
+		5 = { "Je %d Bobyeong-Sadan 'Yeol-soe'" }
+		6 = { "Je %d Bobyeong-Sadan 'Cheong-seong'" }
+		7 = { "Je %d Bobyeong-Sadan 'Chil-seong'" }
+		8 = { "Je %d Bobyeong-Sadan 'Ottugi'" }
+		9 = { "Je %d Bobyeong-Sadan 'Baek-ma'" }
+		11 = { "Je %d Bobyeong-Sadan 'Hwa-rang'" }
+		12 = { "Je %d Bobyeong-Sadan 'Eul-ji'" }
+		15 = { "Je %d Bobyeong-Sadan 'Seung-ri'" }
+		17 = { "Je %d Bobyeong-Sadan 'Beon-gae'" }
+		20 = { "Je %d Bobyeong-Sadan 'Gyeol-jeon'" }
+		21 = { "Je %d Bobyeong-Sadan 'Baek-du-san'" }
+		22 = { "Je %d Bobyeong-Sadan 'Noe-jong'" }
+		23 = { "Je %d Bobyeong-Sadan 'Cheol-byeok'" }
+		25 = { "Je %d Bobyeong-Sadan 'Bi-ryong'" }
+		26 = { "Je %d Bobyeong-Sadan 'Bulmuri'" }
+		27 = { "Je %d Bobyeong-Sadan 'Igija!'" }
+		28 = { "Je %d Bobyeong-Sadan 'Tae-pung'" }
+		29 = { "Je %d Bobyeong-Sadan 'Taek-gyeon'" }
+		30 = { "Je %d Bobyeong-Sadan 'Pil-seung'" }
+		31 = { "Je %d Bobyeong-Sadan 'Chung-jang'" }
+		32 = { "Je %d Bobyeong-Sadan 'Baek-ryong'" }
+		33 = { "Je %d Bobyeong-Sadan 'Beon-gae'" }
+		35 = { "Je %d Bobyeong-Sadan 'Chung-gyeong'" }
+		36 = { "Je %d Bobyeong-Sadan 'Baek-ho'" }
+		37 = { "Je %d Bobyeong-Sadan 'Chung-yong'" }
+		38 = { "Je %d Bobyeong-Sadan 'Chi-ak-san'" }
+		39 = { "Je %d Bobyeong-Sadan 'Chung-mu'" }
+		50 = { "Je %d Bobyeong-Sadan 'Gang-cheol'" }
+		51 = { "Je %d Bobyeong-Sadan 'Jeon-seung'" }
+		52 = { "Je %d Bobyeong-Sadan 'Hwa-sal'" }
+		53 = { "Je %d Bobyeong-Sadan 'Chung-ryeol'" }
+		55 = { "Je %d Bobyeong-Sadan 'Bong-hwa'" }
+		56 = { "Je %d Bobyeong-Sadan 'Buk-han-san'" }
+		57 = { "Je %d Bobyeong-Sadan 'Yong-ma'" }
+		60 = { "Je %d Bobyeong-Sadan 'Gwon-yul'" }
+		61 = { "Je %d Bobyeong-Sadan 'Sang-seung'" }
+		62 = { "Je %d Bobyeong-Sadan 'Chung-ryong'" }
+		63 = { "Je %d Bobyeong-Sadan 'Bong-hwa'" }
+		65 = { "Je %d Bobyeong-Sadan 'Mil-mul'" }
+		66 = { "Je %d Bobyeong-Sadan 'Hwaet-bul'" }
+		67 = { "Je %d Bobyeong-Sadan 'Yong-jin'" }
+		68 = { "Je %d Bobyeong-Sadan 'Cheol-byeok'" }
+		69 = { "Je %d Bobyeong-Sadan 'Tae-pung'" }
+		70 = { "Je %d Bobyeong-Sadan 'Chung-hyo'" }
+		71 = { "Je %d Bobyeong-Sadan 'Seon-seung'" }
+		72 = { "Je %d Bobyeong-Sadan 'O-bong-san'" }
+		73 = { "Je %d Bobyeong-Sadan 'Chung-il'" }
+		75 = { "Je %d Bobyeong-Sadan 'Cheol-ma'" }
+		76 = { "Je %d Bobyeong-Sadan 'Jin-gyeok'" }
+		13 = { "Je %d Bobyeong-Sadan 'Heuk-mae'" }				#Fictional division starts here
+		16 = { "Je %d Bobyeong-Sadan 'Seon-bong'" }
+		19 = { "Je %d Bobyeong-Sadan 'Non-gae'" }
+		58 = { "Je %d Bobyeong-Sadan 'Bi-bong'" }
+		59 = { "Je %d Bobyeong-Sadan 'Chung-yeong'" }
+		77 = { "Je %d Bobyeong-Sadan 'Haeng-un'" }
+		78 = { "Je %d Bobyeong-Sadan 'Bang-pae'" }
+		79 = { "Je %d Bobyeong-Sadan 'Han-gang'" }
+		80 = { "Je %d Bobyeong-Sadan 'Sol-gae'" }
+		81 = { "Je %d Bobyeong-Sadan 'Cho-san'" }
+		82 = { "Je %d Bobyeong-Sadan 'Jo-gyeong'" }
+		83 = { "Je %d Bobyeong-Sadan 'Dol-gyeok'" }
+		85 = { "Je %d Bobyeong-Sadan 'Ko-kki-ri'" }
+		86 = { "Je %d Bobyeong-Sadan 'Sae-jong'" }
+		87 = { "Je %d Bobyeong-Sadan 'Myo-hyang-san'" }
+		88 = { "Je %d Bobyeong-Sadan 'Pal-gwae'" }
+		89 = { "Je %d Bobyeong-Sadan 'Yuk-tan'" }
+		90 = { "Je %d Bobyeong-Sadan 'Ryu-gyeong'" }
+		91 = { "Je %d Bobyeong-Sadan 'Jin-chung'" }
+		92 = { "Je %d Bobyeong-Sadan 'Mang-chi'" }
+		93 = { "Je %d Bobyeong-Sadan 'Il-gyeok'" }
+		95 = { "Je %d Bobyeong-Sadan 'Sa-ja'" }
+		96 = { "Je %d Bobyeong-Sadan 'Jiri-san'" }
+		97 = { "Je %d Bobyeong-Sadan 'Sseol-mul'" }
+		98 = { "Je %d Bobyeong-Sadan 'Cheon-gun'" }
+		99 = { "Je %d Bobyeong-Sadan 'Yi-Sun-sin'" }
+		100 = { "Je %d Bobyeong-Sadan 'Yeon-mu'" }
+		101 = { "Je %d Bobyeong-Sadan 'Mu-jeok'" }				#Historical 101st independence Infantry Brigade
+		102 = { "Je %d Bobyeong-Sadan 'Il-chul'" }				#Historical 102nd independence Infantry Brigade
+		103 = { "Je %d Bobyeong-Sadan 'Mi-chu-hol'" }			#Historical 103rd independence Infantry Brigade
+		105 = { "Je %d Bobyeong-Sadan 'Bo-geom'" }
+		106 = { "Je %d Bobyeong-Sadan 'Chil-gap-san'" }
+		107 = { "Je %d Bobyeong-Sadan 'Bi-ho'" }
+		108 = { "Je %d Bobyeong-Sadan 'Jang-san'" }
+		109 = { "Je %d Bobyeong-Sadan 'Dae-dong-gang'" }
+		111 = { "Je %d Bobyeong-Sadan 'O-lyuk-do'" }
+		112 = { "Je %d Bobyeong-Sadan 'Cheon-bong'" }
+		113 = { "Je %d Bobyeong-Sadan 'Ssang-ma'" }
+		115 = { "Je %d Bobyeong-Sadan 'Dong-cheon'" }
+		116 = { "Je %d Bobyeong-Sadan 'Mu-geuk'" }
+		117 = { "Je %d Bobyeong-Sadan 'Meong-seok'" }
+		119 = { "Je %d Bobyeong-Sadan 'San-seong'" }
+		120 = { "Je %d Bobyeong-Sadan 'Gwan-mo'" }
+		121 = { "Je %d Bobyeong-Sadan 'Do-kki'" }
+		122 = { "Je %d Bobyeong-Sadan 'Yul-gok'" }
+		123 = { "Je %d Bobyeong-Sadan 'Seo-hwa'" }
+		125 = { "Je %d Bobyeong-Sadan 'Heuk-gol'" }
+		126 = { "Je %d Bobyeong-Sadan 'Baek-seung'" }
+		127 = { "Je %d Bobyeong-Sadan 'Gye-baek'" }
+		128 = { "Je %d Bobyeong-Sadan 'Gwan-chang'" }
+		129 = { "Je %d Bobyeong-Sadan 'Jung-won'" }
+		130 = { "Je %d Bobyeong-Sadan 'Yeon-seung'" }
+		131 = { "Je %d Bobyeong-Sadan 'Heuk-myo'" }
+		132 = { "Je %d Bobyeong-Sadan 'Bul-kkot'" }
+		133 = { "Je %d Bobyeong-Sadan 'Yong-mun-san'" }
+		135 = { "Je %d Bobyeong-Sadan 'Su-ho'" }
+		136 = { "Je %d Bobyeong-Sadan 'Tae-geuk'" }
+		137 = { "Je %d Bobyeong-Sadan 'Yong-ho'" }
+		138 = { "Je %d Bobyeong-Sadan 'Cheong-gu'" }
+		139 = { "Je %d Bobyeong-Sadan 'Chung-jeol'" }
+		150 = { "Je %d Bobyeong-Sadan 'Ssang-ho'" }
+		151 = { "Je %d Bobyeong-Sadan 'Gye-ryong'" }
+		152 = { "Je %d Bobyeong-Sadan 'Dol-pung'" }
+		153 = { "Je %d Bobyeong-Sadan 'Tu-ho'" }
+		155 = { "Je %d Bobyeong-Sadan 'Lim-kkeok-jeong'" }
+		156 = { "Je %d Bobyeong-Sadan 'Pal-gong-san'" }
+		157 = { "Je %d Bobyeong-Sadan 'Cheong-ho'" }
+		158 = { "Je %d Bobyeong-Sadan 'Choe-yeong'" }
+		159 = { "Je %d Bobyeong-Sadan 'Jeok-ryeong'" }
+		160 = { "Je %d Bobyeong-Sadan 'Ju-mong'" }
+		161 = { "Je %d Bobyeong-Sadan 'Do-kkae-bi'" }
+		162 = { "Je %d Bobyeong-Sadan 'Apeuro!'" }
+		163 = { "Je %d Bobyeong-Sadan 'Tae-baek-san'" }
+		165 = { "Je %d Bobyeong-Sadan 'Gil-dong'" }
+		166 = { "Je %d Bobyeong-Sadan 'Tae-jong'" }
+		167 = { "Je %d Bobyeong-Sadan 'Nak-dong-gang'" }
+		168 = { "Je %d Bobyeong-Sadan 'Geum-gang-san'" }
+		169 = { "Je %d Bobyeong-Sadan 'Gang-gam-chan'" }
+		170 = { "Je %d Bobyeong-Sadan 'Jeon-gal'" }
+		171 = { "Je %d Bobyeong-Sadan 'Mun-hak'" }
+		172 = { "Je %d Bobyeong-Sadan 'Wol-myo'" }
+		173 = { "Je %d Bobyeong-Sadan 'Du-man'" }
+		175 = { "Je %d Bobyeong-Sadan 'Seong-gong'" }
+		176 = { "Je %d Bobyeong-Sadan 'Ja-dang'" }
+		177 = { "Je %d Bobyeong-Sadan 'Myeong-sa-su'" }
+		178 = { "Je %d Bobyeong-Sadan 'Bok-min'" }
+		179 = { "Je %d Bobyeong-Sadan 'Bul-pae'" }
+		180 = { "Je %d Bobyeong-Sadan 'Mu-yeol'" }
+		181 = { "Je %d Bobyeong-Sadan 'Sin-seon'" }
+		182 = { "Je %d Bobyeong-Sadan 'Chung-ui'" }
+		183 = { "Je %d Bobyeong-Sadan 'Nam-seong'" }
+		185 = { "Je %d Bobyeong-Sadan 'Ji-ri-san'" }
+		186 = { "Je %d Bobyeong-Sadan 'No-bong'" }
+		187 = { "Je %d Bobyeong-Sadan 'Chung-mok" }
+		188 = { "Je %d Bobyeong-Sadan 'Sam-yang'" }
+		189 = { "Je %d Bobyeong-Sadan 'Woong-bi'" }
+		190 = { "Je %d Bobyeong-Sadan 'Sang-mu'" }
+		191 = { "Je %d Bobyeong-Sadan 'Dong-cheon'" }
+		192 = { "Je %d Bobyeong-Sadan 'Cheong-sol'" }
+		193 = { "Je %d Bobyeong-Sadan 'Sam-ma'" }
+		195 = { "Je %d Bobyeong-Sadan 'Chung-yeol'" }
+		196 = { "Je %d Bobyeong-Sadan 'Heuk-un'" }
+		197 = { "Je %d Bobyeong-Sadan 'Dang-rang'" }
+		198 = { "Je %d Bobyeong-Sadan 'Cheong-woo'" }
+		199 = { "Je %d Bobyeong-Sadan 'Cheon-seong'" }
+		200 = { "Je %d Bobyeong-Sadan 'Ssang-baek'" }
+		201 = { "Je %d Bobyeong-Sadan 'Cheol-wang'" }
+		202 = { "Je %d Bobyeong-Sadan 'Woo-nam'" }
+		203 = { "Je %d Bobyeong-Sadan 'Ahn-si'" }
+		205 = { "Je %d Bobyeong-Sadan 'Heuk-soo'" }
+		206 = { "Je %d Bobyeong-Sadan 'San-ju'" }
+		207 = { "Je %d Bobyeong-Sadan 'Bong-hwang'" }
+		208 = { "Je %d Bobyeong-Sadan 'Baek-seol'" }
+		209 = { "Je %d Bobyeong-Sadan 'Shin-rok'" }
+		211 = { "Je %d Bobyeong-Sadan 'Ho-ryong'" }
+		212 = { "Je %d Bobyeong-Sadan 'Wi-chung'" }
+		213 = { "Je %d Bobyeong-Sadan 'Myeong-ji'" }
+		215 = { "Je %d Bobyeong-Sadan 'Geon-yang'" }
+		216 = { "Je %d Bobyeong-Sadan 'Mu-gang'" }
+		217 = { "Je %d Bobyeong-Sadan 'Bal-ho'" }
+		219 = { "Je %d Bobyeong-Sadan 'Gap-san'" }
+		220 = { "Je %d Bobyeong-Sadan 'Tae-geuk'" }
+		221 = { "Je %d Bobyeong-Sadan 'Noe-wu'" }
+		222 = { "Je %d Bobyeong-Sadan 'Seung-cheon'" }
+		223 = { "Je %d Bobyeong-Sadan 'Hoe-o-li'" }
+		225 = { "Je %d Bobyeong-Sadan 'Ap-lok'" }
+		226 = { "Je %d Bobyeong-Sadan 'Beon-noe'" }
+		227 = { "Je %d Bobyeong-Sadan 'Cheong-san'" }
+		228 = { "Je %d Bobyeong-Sadan 'Bong-o'" }
+		229 = { "Je %d Bobyeong-Sadan 'Sin-ui-ju'" }
+		230 = { "Je %d Bobyeong-Sadan 'Chung-suk'" }
+		231 = { "Je %d Bobyeong-Sadan 'Cheong-hun'" }
+		232 = { "Je %d Bobyeong-Sadan 'Hyeon-mu'" }
+		233 = { "Je %d Bobyeong-Sadan 'Chang-jo'" }
+		235 = { "Je %d Bobyeong-Sadan 'Bo-guk'" }
+		236 = { "Je %d Bobyeong-Sadan 'Mu-deung-san'" }
+		237 = { "Je %d Bobyeong-Sadan 'Bul-sa-jo'" }
+		238 = { "Je %d Bobyeong-Sadan 'Chung-mok'" }
+		239 = { "Je %d Bobyeong-Sadan 'Baek-sa'" }
+		250 = { "Je %d Bobyeong-Sadan 'Bok-su'" }
+		251 = { "Je %d Bobyeong-Sadan 'Seon-hak'" }
+		252 = { "Je %d Bobyeong-Sadan 'Gwak-jae-woo'" }
+		253 = { "Je %d Bobyeong-Sadan 'Geo-in'" }
+		255 = { "Je %d Bobyeong-Sadan 'Jeong-ui'" }
+		256 = { "Je %d Bobyeong-Sadan 'Sa-seong'" }
+		257 = { "Je %d Bobyeong-Sadan 'Baek-jan'" }
+		258 = { "Je %d Bobyeong-Sadan 'Sam-ji-chang'" }
+		259 = { "Je %d Bobyeong-Sadan 'Cheol-gwon'" }
+		260 = { "Je %d Bobyeong-Sadan 'In-yeong'" }
+		261 = { "Je %d Bobyeong-Sadan 'Chung-jeong'" }
+		262 = { "Je %d Bobyeong-Sadan 'Ju-wang-san'" }
+		263 = { "Je %d Bobyeong-Sadan 'Hye-seong'" }
+		265 = { "Je %d Bobyeong-Sadan 'Ae-guk'" }
+		266 = { "Je %d Bobyeong-Sadan 'Gye-rim'" }
+		267 = { "Je %d Bobyeong-Sadan 'Heuk-gu'" }
+		268 = { "Je %d Bobyeong-Sadan 'Cheol-hyeol'" }
+		269 = { "Je %d Bobyeong-Sadan 'Sok-li-san'" }
+		270 = { "Je %d Bobyeong-Sadan 'Gang-an'" }
+		271 = { "Je %d Bobyeong-Sadan 'Tam-la'" }
+		272 = { "Je %d Bobyeong-Sadan 'O-seong'" }
+		273 = { "Je %d Bobyeong-Sadan 'Yong-maeng'" }
+		275 = { "Je %d Bobyeong-Sadan 'Hae-tae'" }
+		276 = { "Je %d Bobyeong-Sadan 'Seol-ak-san'" }
+		277 = { "Je %d Bobyeong-Sadan 'Cheon-dung'" }
+		278 = { "Je %d Bobyeong-Sadan 'Wi-guk'" }
+		279 = { "Je %d Bobyeong-Sadan 'Sa-in'" }
+		280 = { "Je %d Bobyeong-Sadan 'Cheong-bo'" }
+		281 = { "Je %d Bobyeong-Sadan 'Tae-yeong'" }
+		282 = { "Je %d Bobyeong-Sadan 'Cheol-in'" }
+		283 = { "Je %d Bobyeong-Sadan 'Won-dong'" }
+		285 = { "Je %d Bobyeong-Sadan 'Po-su'" }
+		286 = { "Je %d Bobyeong-Sadan 'Han-do'" }
+		287 = { "Je %d Bobyeong-Sadan 'Baek-tan'" }
+		288 = { "Je %d Bobyeong-Sadan 'Pil-jung'" }
+		289 = { "Je %d Bobyeong-Sadan 'Du-ryu-san'" }
+		290 = { "Je %d Bobyeong-Sadan 'Myeol-wae'" }
+		291 = { "Je %d Bobyeong-Sadan 'Gu-wol-san'" }
+		292 = { "Je %d Bobyeong-Sadan 'Juk-lim'" }
+		293 = { "Je %d Bobyeong-Sadan 'Cheon-byeong'" }
+		295 = { "Je %d Bobyeong-Sadan 'Heuk-seong'" }
+		296 = { "Je %d Bobyeong-Sadan 'Chung-ik'" }
+		297 = { "Je %d Bobyeong-Sadan 'Ye-seong'" }
+		298 = { "Je %d Bobyeong-Sadan 'Ma-ni-san'" }
+		299 = { "Je %d Bobyeong-Sadan 'Hwa-yeol'" }
+		300 = { "Je %d Bobyeong-Sadan 'Wan-seung'" }
+		301 = { "Je %d Bobyeong-Sadan 'Nam-pyeong'" }
+		302 = { "Je %d Bobyeong-Sadan 'Bu-han'" }
+		303 = { "Je %d Bobyeong-Sadan 'Eung-jing'" }
+		305 = { "Je %d Bobyeong-Sadan 'Cheon-gi'" }
+		306 = { "Je %d Bobyeong-Sadan 'Un-geom'" }
+		307 = { "Je %d Bobyeong-Sadan 'Baek-am'" }
+		308 = { "Je %d Bobyeong-Sadan 'Noe-geom'" }
+		309 = { "Je %d Bobyeong-Sadan 'Bo-mun-san'" }
+		311 = { "Je %d Bobyeong-Sadan 'Bang-pa-jae'" }
+		312 = { "Je %d Bobyeong-Sadan 'Myeong-jin'" }
+		313 = { "Je %d Bobyeong-Sadan 'Sam-do'" }
+		315 = { "Je %d Bobyeong-Sadan 'Gae-poong'" }
+		316 = { "Je %d Bobyeong-Sadan 'Woo-seong'" }
+		317 = { "Je %d Bobyeong-Sadan 'Cheol-mae'" }
+		319 = { "Je %d Bobyeong-Sadan 'Hwa-shin'" }
+		320 = { "Je %d Bobyeong-Sadan 'Cheong-woon'" }
+		321 = { "Je %d Bobyeong-Sadan 'Tae-chang'" }
+		322 = { "Je %d Bobyeong-Sadan 'Geon-yeong'" }
+		323 = { "Je %d Bobyeong-Sadan 'Hwa-poong'" }
+		325 = { "Je %d Bobyeong-Sadan 'Mok-won'" }
+		326 = { "Je %d Bobyeong-Sadan 'Bong-myeong'" }
+		327 = { "Je %d Bobyeong-Sadan 'Gwang-myeong'" }
+		328 = { "Je %d Bobyeong-Sadan 'Yeon-deok-san'" }
+		329 = { "Je %d Bobyeong-Sadan 'Sang-ji'" }
+		330 = { "Je %d Bobyeong-Sadan 'Deok-san'" }
+		331 = { "Je %d Bobyeong-Sadan 'Gwang-won'" }
+		332 = { "Je %d Bobyeong-Sadan 'Nok-un'" }
+		333 = { "Je %d Bobyeong-Sadan 'Ssang-cheon'" }
+		335 = { "Je %d Bobyeong-Sadan 'Won-myeong'" }
+		336 = { "Je %d Bobyeong-Sadan 'Si-ju'" }
+	}
+}
+
+
+KOR_CAV_01 = 
+{
+	name = "Cavalry Divisions"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "Je %d Gibyeong-Sadan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Je %d Gibyeong-Sadan 'Dok-rip-mun'" }			#All Fictional
+		2 = { "Je %d Gibyeong-Sadan 'Han-ra-san'" }
+		3 = { "Je %d Gibyeong-Sadan 'Mu-gung-hwa'" }
+		5 = { "Je %d Gibyeong-Sadan 'Gae-ma'" }
+		6 = { "Je %d Gibyeong-Sadan 'Dong-myeong'" }
+		7 = { "Je %d Gibyeong-Sadan 'Byeol-mu'" }
+		8 = { "Je %d Gibyeong-Sadan 'Seon-gi'" }
+		9 = { "Je %d Gibyeong-Sadan 'Gap-sa'" }
+		11 = { "Je %d Gibyeong-Sadan 'Heuk-ma'" }
+		12 = { "Je %d Gibyeong-Sadan 'Sam-jok-o'" }
+		13 = { "Je %d Gibyeong-Sadan 'Sal-su'" }
+		15 = { "Je %d Gibyeong-Sadan 'Nagaja!'" }
+		16 = { "Je %d Gibyeong-Sadan 'Bal-gup'" }
+		17 = { "Je %d Gibyeong-Sadan 'Gwi-ju'" }
+		19 = { "Je %d Gibyeong-Sadan 'Jeok-to-ma'" }
+		20 = { "Je %d Gibyeong-Sadan 'Yong-hwa'" }
+		21 = { "Je %d Gibyeong-Sadan 'Jin-maeng'" }
+		22 = { "Je %d Gibyeong-Sadan 'Il-so'" }
+		23 = { "Je %d Gibyeong-Sadan 'Gyeon-gang'" }
+		25 = { "Je %d Gibyeong-Sadan 'Dae-son'" }
+		26 = { "Je %d Gibyeong-Sadan 'Hong-hwa'" }
+		27 = { "Je %d Gibyeong-Sadan 'Ma-bu'" }
+		28 = { "Je %d Gibyeong-Sadan 'Gyeol-sa'" }
+		29 = { "Je %d Gibyeong-Sadan 'Sang-cheon'" }
+		30 = { "Je %d Gibyeong-Sadan 'Eun-ma'" }
+	}
+}
+
+KOR_ARM_01 = 
+{
+	name = "Armored Divisions"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "Je %d Gigap-Sadan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Je %d Gigap-Sadan 'Jeon-gyeok'" }				#1~5 Historical ROKA Armored Brigades
+		2 = { "Je %d Gigap-Sadan 'Chung-seong'" }
+		3 = { "Je %d Gigap-Sadan 'Beon-gae'" }
+		5 = { "Je %d Gigap-Sadan 'Cheol-pung'" }
+		4 = { "Sudo-Gigap-Sadan 'Cheon-seung'" }				#Fictional division starts here
+		6 = { "Je %d Gigap-Sadan 'Pok-pung'" }
+		7 = { "Je %d Gigap-Sadan 'Dol-pa'" }
+		8 = { "Je %d Gigap-Sadan 'Gwang-gae-to'" }
+		9 = { "Je %d Gigap-Sadan 'Dol-jin'" }
+		11 = { "Je %d Gigap-Sadan 'Mu-jeok'" }
+		12 = { "Je %d Gigap-Sadan 'Hwang-so'" }
+		15 = { "Je %d Gigap-Sadan 'Jeok-to-ma'" }
+		16 = { "Je %d Gigap-Sadan 'Chiu'" }
+		17 = { "Je %d Gigap-Sadan 'Gae-ma'" }
+		19 = { "Je %d Gigap-Sadan 'Pyo-beom'" }
+		20 = { "Je %d Gigap-Sadan 'Gang-pung'" }
+		21 = { "Je %d Gigap-Sadan 'Geum-gang-san'" }
+		22 = { "Je %d Gigap-Sadan 'Ssang-ryong'" }
+		23 = { "Je %d Gigap-Sadan 'Seung-jin'" }
+		25 = { "Je %d Gigap-Sadan 'Go-gu-ryeo'" }
+		26 = { "Je %d Gigap-Sadan 'Jin-gun'" }
+		27 = { "Je %d Gigap-Sadan 'Do-kkae-bi'" }
+		28 = { "Je %d Gigap-Sadan 'Pung-ho'" }
+		29 = { "Je %d Gigap-Sadan 'Tu-gyeon'" }
+		30 = { "Je %d Gigap-Sadan 'Chung-ma'" }
+		31 = { "Je %d Gigap-Sadan 'Dong-gyeong'" }
+		32 = { "Je %d Gigap-Sadan 'Poong-san'" }
+		33 = { "Je %d Gigap-Sadan 'Ha-na'" }
+		35 = { "Je %d Gigap-Sadan 'Eom-han'" }
+		36 = { "Je %d Gigap-Sadan 'Geuk-han'" }
+		37 = { "Je %d Gigap-Sadan 'Jeok-gol'" }
+		38 = { "Je %d Gigap-Sadan 'Chung-gyeok'" }
+		39 = { "Je %d Gigap-Sadan 'Gang-po'" }
+		50 = { "Je %d Gigap-Sadan 'Baek-gom'" }
+		51 = { "Je %d Gigap-Sadan 'Sa-ja'" }
+		52 = { "Je %d Gigap-Sadan 'Un-gi'" }
+	}
+}
+
+KOR_MEC_01 = 
+{
+	name = "Mechanized Divisions"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" "mechanized"  }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "Je %d Gigyehwa-Bobyeong-Sadan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		4 = { "Sudo-Gigyehwa-Bobyeong-Sadan 'Maeng-ho'" }				#Capital Infantry Division "Tiger"
+		1 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jeon-jin'" }				#1~76 Historical and present ROKA Infantry Divisions
+		2 = { "Je %d Gigyehwa-Bobyeong-Sadan 'No-do'" }
+		3 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-gol'" }
+		5 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yeol-soe'" }
+		6 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheong-seong'" }
+		7 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chil-seong'" }
+		8 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ottugi'" }
+		9 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-ma'" }
+		11 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hwa-rang'" }
+		12 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Eul-ji'" }
+		15 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Seung-ri'" }
+		17 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Beon-gae'" }
+		20 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gyeol-jeon'" }
+		21 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-du-san'" }
+		22 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Noe-jong'" }
+		23 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheol-byeok'" }
+		25 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bi-ryong'" }
+		26 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bulmuri'" }
+		27 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Igija!'" }
+		28 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tae-pung'" }
+		29 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Taek-gyeon'" }
+		30 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Pil-seung'" }
+		31 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-jang'" }
+		32 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-ryong'" }
+		33 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Beon-gae'" }
+		35 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-gyeong'" }
+		36 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-ho'" }
+		37 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-yong'" }
+		38 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chi-ak-san'" }
+		39 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-mu'" }
+		50 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gang-cheol'" }
+		51 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jeon-seung'" }
+		52 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hwa-sal'" }
+		53 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-ryeol'" }
+		55 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bong-hwa'" }
+		56 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Buk-han-san'" }
+		57 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yong-ma'" }
+		60 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gwon-yul'" }
+		61 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sang-seung'" }
+		62 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-ryong'" }
+		63 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bong-hwa'" }
+		65 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mil-mul'" }
+		66 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hwaet-bul'" }
+		67 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yong-jin'" }
+		68 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheol-byeok'" }
+		69 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tae-pung'" }
+		70 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-hyo'" }
+		71 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Seon-seung'" }
+		72 = { "Je %d Gigyehwa-Bobyeong-Sadan 'O-bong-san'" }
+		73 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-il'" }
+		75 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheol-ma'" }
+		76 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jin-gyeok'" }
+		13 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Heuk-mae'" }				#Fictional division starts here
+		16 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Seon-bong'" }
+		19 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Non-gae'" }
+		58 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bi-bong'" }
+		59 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-yeong'" }
+		77 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Haeng-un'" }
+		78 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bang-pae'" }
+		79 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Han-gang'" }
+		80 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sol-gae'" }
+		81 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cho-san'" }
+		82 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jo-gyeong'" }
+		83 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Dol-gyeok'" }
+		85 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ko-kki-ri'" }
+		86 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sae-jong'" }
+		87 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Myo-hyang-san'" }
+		88 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Pal-gwae'" }
+		89 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yuk-tan'" }
+		90 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ryu-gyeong'" }
+		91 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jin-chung'" }
+		92 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mang-chi'" }
+		93 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Il-gyeok'" }
+		95 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sa-ja'" }
+		96 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jiri-san'" }
+		97 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sseol-mul'" }
+		98 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheon-gun'" }
+		99 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yi-Sun-sin'" }
+		100 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yeon-mu'" }
+		101 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mu-jeok'" }				#Historical 101st independence Infantry Brigade
+		102 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Il-chul'" }				#Historical 102nd independence Infantry Brigade
+		103 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mi-chu-hol'" }			#Historical 103rd independence Infantry Brigade
+		105 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bo-geom'" }
+		106 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chil-gap-san'" }
+		107 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bi-ho'" }
+		108 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jang-san'" }
+		109 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Dae-dong-gang'" }
+		111 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Oryukdo'" }
+		112 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheon-bong'" }
+		113 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ssang-ma'" }
+		115 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Dong-cheon'" }
+		116 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mu-geuk'" }
+		117 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Meong-seok'" }
+		119 = { "Je %d Gigyehwa-Bobyeong-Sadan 'San-seong'" }
+		120 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gwan-mo'" }
+		121 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Do-kki'" }
+		122 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yul-gok'" }
+		123 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Seo-hwa'" }
+		125 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Heuk-gol'" }
+		126 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-seung'" }
+		127 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gye-baek'" }
+		128 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gwan-chang'" }
+		129 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jung-won'" }
+		130 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yeon-seung'" }
+		131 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Heuk-myo'" }
+		132 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bul-kkot'" }
+		133 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yong-mun-san'" }
+		135 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Su-ho'" }
+		136 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tae-geuk'" }
+		137 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yong-ho'" }
+		138 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheong-gu'" }
+		139 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-jeol'" }
+		150 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ssang-ho'" }
+		151 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gye-ryong'" }
+		152 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Dol-pung'" }
+		153 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tu-ho'" }
+		155 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Lim-kkeok-jeong'" }
+		156 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Pal-gong-san'" }
+		157 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheong-ho'" }
+		158 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Choe-yeong'" }
+		159 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jeok-ryeong'" }
+		160 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ju-mong'" }
+		161 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Do-kkae-bi'" }
+		162 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Apeuro!'" }
+		163 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tae-baek-san'" }
+		165 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gil-dong'" }
+		166 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tae-jong'" }
+		167 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Nak-dong-gang'" }
+		168 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Geum-gang-san'" }
+		169 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gang-gam-chan'" }
+		170 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jeon-gal'" }
+		171 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mun-hak'" }
+		172 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Wol-myo'" }
+		173 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Du-man'" }
+		175 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Seong-gong'" }
+		176 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ja-dang'" }
+		177 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Myeong-sa-su'" }
+		178 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bok-min'" }
+		179 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bul-pae'" }
+		180 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mu-yeol'" }
+		181 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sin-seon'" }
+		182 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-ui'" }
+		183 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Nam-seong'" }
+		185 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ji-ri-san'" }
+		186 = { "Je %d Gigyehwa-Bobyeong-Sadan 'No-bong'" }
+		187 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-mok" }
+		188 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sam-yang'" }
+		189 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Woong-bi'" }
+		190 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sang-mu'" }
+		191 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Dong-cheon'" }
+		192 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheong-sol'" }
+		193 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sam-ma'" }
+		195 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-yeol'" }
+		196 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Heuk-un'" }
+		197 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Dang-rang'" }
+		198 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheong-woo'" }
+		199 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheon-seong'" }
+		200 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ssang-baek'" }
+		201 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheol-wang'" }
+		202 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Woo-nam'" }
+		203 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ahn-si'" }
+		205 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Heuk-soo'" }
+		206 = { "Je %d Gigyehwa-Bobyeong-Sadan 'San-ju'" }
+		207 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bong-hwang'" }
+		208 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-seol'" }
+		209 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Shin-rok'" }
+		211 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ho-ryong'" }
+		212 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Wi-chung'" }
+		213 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Myeong-ji'" }
+		215 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Geon-yang'" }
+		216 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mu-gang'" }
+		217 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bal-ho'" }
+		219 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gap-san'" }
+		220 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tae-geuk'" }
+		221 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Noe-wu'" }
+		222 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Seung-cheon'" }
+		223 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hoe-o-li'" }
+		225 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ap-lok'" }
+		226 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Beon-noe'" }
+		227 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheong-san'" }
+		228 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bong-o'" }
+		229 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sin-ui-ju'" }
+		230 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-suk'" }
+		231 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheong-hun'" }
+		232 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hyeon-mu'" }
+		233 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chang-jo'" }
+		235 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bo-guk'" }
+		236 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mu-deung-san'" }
+		237 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bul-sa-jo'" }
+		238 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-mok'" }
+		239 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-sa'" }
+		250 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bok-su'" }
+		251 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Seon-hak'" }
+		252 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gwak-jae-woo'" }
+		253 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Geo-in'" }
+		255 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Jeong-ui'" }
+		256 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sa-seong'" }
+		257 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-jan'" }
+		258 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sam-ji-chang'" }
+		259 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheol-gwon'" }
+		260 = { "Je %d Gigyehwa-Bobyeong-Sadan 'In-yeong'" }
+		261 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-jeong'" }
+		262 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ju-wang-san'" }
+		263 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hye-seong'" }
+		265 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ae-guk'" }
+		266 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gye-rim'" }
+		267 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Heuk-gu'" }
+		268 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheol-hyeol'" }
+		269 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sok-li-san'" }
+		270 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gang-an'" }
+		271 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tam-la'" }
+		272 = { "Je %d Gigyehwa-Bobyeong-Sadan 'O-seong'" }
+		273 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yong-maeng'" }
+		275 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hae-tae'" }
+		276 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Seol-ak-san'" }
+		277 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheon-dung'" }
+		278 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Wi-guk'" }
+		279 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sa-in'" }
+		280 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheong-bo'" }
+		281 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tae-yeong'" }
+		282 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheol-in'" }
+		283 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Won-dong'" }
+		285 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Po-su'" }
+		286 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Han-do'" }
+		287 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-tan'" }
+		288 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Pil-jung'" }
+		289 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Du-ryu-san'" }
+		290 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Myeol-wae'" }
+		291 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gu-wol-san'" }
+		292 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Juk-lim'" }
+		293 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheon-byeong'" }
+		295 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Heuk-seong'" }
+		296 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Chung-ik'" }
+		297 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ye-seong'" }
+		298 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ma-ni-san'" }
+		299 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hwa-yeol'" }
+		300 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Wan-seung'" }
+		301 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Nam-pyeong'" }
+		302 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bu-han'" }
+		303 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Eung-jing'" }
+		305 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheon-gi'" }
+		306 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Un-geom'" }
+		307 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Baek-am'" }
+		308 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Noe-geom'" }
+		309 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bo-mun-san'" }
+		311 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bang-pa-jae'" }
+		312 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Myeong-jin'" }
+		313 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sam-do'" }
+		315 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gae-poong'" }
+		316 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Woo-seong'" }
+		317 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheol-mae'" }
+		319 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hwa-shin'" }
+		320 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Cheong-woon'" }
+		321 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Tae-chang'" }
+		322 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Geon-yeong'" }
+		323 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Hwa-poong'" }
+		325 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Mok-won'" }
+		326 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Bong-myeong'" }
+		327 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gwang-myeong'" }
+		328 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Yeon-deok-san'" }
+		329 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Sang-ji'" }
+		330 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Deok-san'" }
+		331 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Gwang-won'" }
+		332 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Nok-un'" }
+		333 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Ssang-cheon'" }
+		335 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Won-myeong'" }
+		336 = { "Je %d Gigyehwa-Bobyeong-Sadan 'Si-ju'" }
+	}
+}
+
+KOR_ART_01 = 
+{
+	name = "Artillery Brigades"
+	
+	for_countries = { KOR }
+	
+	can_use = { always = yes }
+	
+	division_types = { "infantry" }
+	
+	fallback_name = "Je %d Pobyeong-Yeodan"
+	
+	ordered = 
+	{
+		4 = { "Sudo-Pobyeong-Yeodan 'Chung-ui-pobyeong'" }		#0~11 Historical and present ROKA Artillery Brigade under the direct control of the I~XI Corps
+		1 = { "Je %d Pobyeong-Yeodan 'Bi-ho-pobyeong'" }
+		2 = { "Je %d Pobyeong-Yeodan 'Ssang-ryong-pobyeong'" }
+		3 = { "Je %d Pobyeong-Yeodan 'San-ak-pobyeong'" }
+		5 = { "Je %d Pobyeong-Yeodan 'Seung-jin-pobyeong'" }
+		6 = { "Je %d Pobyeong-Yeodan 'Jin-gun-pobyeong'" }
+		7 = { "Je %d Pobyeong-Yeodan 'Buk-jin-pobyeong'" }
+		8 = { "Je %d Pobyeong-Yeodan 'Dong-hae-pobyeong'" }
+		9 = { "Je %d Pobyeong-Yeodan 'Chung-mu-pobyeong'" }
+		11 = { "Je %d Pobyeong-Yeodan 'Chung-ryeol-pobyeong'" }
+	}
+}
+
+
+KOR_MAR_01 = 
+{
+	name = "Marine Divisions"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "Je %d Haebyeong-Sadan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Je %d Haebyeong-Sadan 'Hae-ryong'" }						#1~2 Historical ROKMC Divisions
+		2 = { "Je %d Haebyeong-Sadan 'Cheong-ryong'" }
+		3 = { "Je %d Haebyeong-Sadan 'Hwang-ryong'" }					#Marine Corps Universe Easter-egg
+		5 = { "Je %d Haebyeong-Sadan 'Jeok-ryong'" }					#Fictional Marine Division starts here
+		6 = { "Je %d Haebyeong-Sadan 'Heuk-ryong'" }
+		7 = { "Je %d Haebyeong-Sadan 'Chang-ryong'" }
+		8 = { "Je %d Haebyeong-Sadan 'Un-ryong'" }
+		9 = { "Je %d Haebyeong-Sadan 'Baek-ryong'" }
+		11 = { "Je %d Haebyeong-Sadan 'Nok-ryong'" }
+		12 = { "Je %d Haebyeong-Sadan 'Gong-ryong'" }
+		13 = { "Je %d Haebyeong-Sadan 'Seo-ryong'" }
+		15 = { "Je %d Haebyeong-Sadan 'In-ryong'" }
+		16 = { "Je %d Haebyeong-Sadan 'Sang-ryong'" }
+		17 = { "Je %d Haebyeong-Sadan 'Geom-ryong'" }
+		19 = { "Je %d Haebyeong-Sadan 'Hwa-ryong'" }
+		20 = { "Je %d Haebyeong-Sadan 'Shin-ryong'" }
+		21 = { "Je %d Haebyeong-Sadan 'Geum-ryong'" }
+		22 = { "Je %d Haebyeong-Sadan 'Deung-ryong'" }
+		23 = { "Je %d Haebyeong-Sadan 'Myeong-ryong'" }
+		25 = { "Je %d Haebyeong-Sadan 'Do-ryong'" }
+		26 = { "Je %d Haebyeong-Sadan 'Su-ryong'" }
+	}
+}
+
+KOR_MNT_01 = 
+{
+	name = "Mountain Division"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "Je %d Sanak-Sadan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Je %d Sanak-Sadan 'Tae-baek'" }		# Historical 1st Mountain Brigade 'Tae-baek'
+		2 = { "Je %d Sanak-Sadan 'Jeon-gal'" }		# ROKA Professional Opposing Force Regiment 'Scorpion'
+		3 = { "Je %d Sanak-Sadan 'Nang-rim'" }		# fictional divisions start here
+		5 = { "Je %d Sanak-Sadan 'Cha-ryeong'" }
+		6 = { "Je %d Sanak-Sadan 'No-ryeong'" }
+		7 = { "Je %d Sanak-Sadan 'Myeol-ak'" }
+		8 = { "Je %d Sanak-Sadan 'Ma-sik-ryeong'" }
+		9 = { "Je %d Sanak-Sadan 'Ham-gyeong'" }
+		11 = { "Je %d Sanak-Sadan 'Eon-jin'" }
+		12 = { "Je %d Sanak-Sadan 'Jeok-yu-ryeong'" }
+		13 = { "Je %d Sanak-Sadan 'Myo-hyang'" }
+		15 = { "Je %d Sanak-Sadan 'Ma-cheon-ryeong'" }
+		16 = { "Je %d Sanak-Sadan 'Cheon-ma-san'" }
+		17 = { "Je %d Sanak-Sadan 'Gu-weol-san'" }
+		19 = { "Je %d Sanak-Sadan 'Wan-dal'" }
+		20 = { "Je %d Sanak-Sadan 'Cheon-san'" }
+		21 = { "Je %d Sanak-Sadan 'Gang-nam'" }
+		22 = { "Je %d Sanak-Sadan 'Yong-gang'" }
+		23 = { "Je %d Sanak-Sadan 'Chil-bo-san'" }
+		25 = { "Je %d Sanak-Sadan 'Bu-yi-ryeong'" }
+		26 = { "Je %d Sanak-Sadan 'Ga-ya'" }
+		27 = { "Je %d Sanak-Sadan 'Mun-su-san'" }
+		28 = { "Je %d Sanak-Sadan 'Wi-ho-ryeong'" }
+		29 = { "Je %d Sanak-Sadan 'Bang-tae'" }
+		30 = { "Je %d Sanak-Sadan 'Weol-myeong-san'" }
+		31 = { "Je %d Sanak-Sadan 'Guk-mang-bong'" }
+		32 = { "Je %d Sanak-Sadan 'Nae-jang-san'" }
+		33 = { "Je %d Sanak-Sadan 'Jeom-bong'" }
+		35 = { "Je %d Sanak-Sadan 'Ham-baek'" }
+		36 = { "Je %d Sanak-Sadan 'Gye-bang'" }
+		37 = { "Je %d Sanak-Sadan 'Baek-seok'" }
+		38 = { "Je %d Sanak-Sadan 'Sok-ri-san'" }
+	}
+}
+
+KOR_PAR_01 = 
+{
+	name = "Paratrooper Divisions"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "Je %d Gongsu-Sadan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Je %d Gongsu-Sadan 'Doksuri'" }								#1~13 Historical ROKASF Brigades
+		3 = { "Je %d Gongsu-Sadan 'Bi-ho'" }
+		5 = { "Je %d Gongsu-Sadan 'Heuk-ryong'" }
+		7 = { "Je %d Gongsu-Sadan 'Cheon-ma'" }
+		9 = { "Je %d Gongsu-Sadan 'Gwi-seong'" }
+		11 = { "Je %d Gongsu-Sadan 'Hwang-geum-bak-jwi'" }
+		13 = { "Je %d Gongsu-Sadan 'Heuk-pyo'" }
+		15 = { "Je %d Gongsu-Sadan 'Tae-ho'" }								#fictional divisions start here
+		17 = { "Je %d Gongsu-Sadan 'Cheon-ryong'" }
+		19 = { "Je %d Gongsu-Sadan 'Bulsajo'" }
+		21 = { "Je %d Gongsu-Sadan 'Cheon-byeong'" }
+		23 = { "Je %d Gongsu-Sadan 'Eun-seong'" }
+		25 = { "Je %d Gongsu-Sadan 'Do-Cheol'" }
+		27 = { "Je %d Gongsu-Sadan 'Gye-ryong'" }
+		29 = { "Je %d Gongsu-Sadan 'Baek-beom'" }
+		31 = { "Je %d Gongsu-Sadan 'Sae-mae'" }
+		33 = { "Je %d Gongsu-Sadan 'Cheon-geom'" }
+		35 = { "Je %d Gongsu-Sadan 'Jeon-han'" }
+		37 = { "Je %d Gongsu-Sadan 'Heuk-gom'" }
+		39 = { "Je %d Gongsu-Sadan 'Baek-jang-mi'" }
+		51 = { "Je %d Gongsu-Sadan 'Wi-gun'" }
+		53 = { "Je %d Gongsu-Sadan 'Jeon-sin'" }
+		55 = { "Je %d Gongsu-Sadan 'Hyeol-ho'" }
+		57 = { "Je %d Gongsu-Sadan 'Cheon-myo'" }
+		59 = { "Je %d Gongsu-Sadan 'Beol-mae'" }
+	}
+}
+
+KOR_GAR_01 = 
+{
+	name = "Garrison Brigades"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "Je %d Gyeongbi-Yeodan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Je %d Gyeongbi-Yeodan" }			#All Fictional
+		2 = { "Je %d Gyeongbi-Yeodan" }
+		3 = { "Je %d Gyeongbi-Yeodan" }
+		5 = { "Je %d Gyeongbi-Yeodan" }
+		6 = { "Je %d Gyeongbi-Yeodan" }
+		7 = { "Je %d Gyeongbi-Yeodan" }
+		8 = { "Je %d Gyeongbi-Yeodan" }
+		9 = { "Je %d Gyeongbi-Yeodan" }
+		11 = { "Je %d Gyeongbi-Yeodan" }
+		12 = { "Je %d Gyeongbi-Yeodan" }
+		13 = { "Je %d Gyeongbi-Yeodan" }
+		15 = { "Je %d Gyeongbi-Yeodan" }
+		16 = { "Je %d Gyeongbi-Yeodan" }
+		17 = { "Je %d Gyeongbi-Yeodan" }
+		19 = { "Je %d Gyeongbi-Yeodan" }
+		20 = { "Je %d Gyeongbi-Yeodan" }
+	}
+}
+
+KOR_CAV_02 = 
+{
+	name = "Manchurian Cavalry"
+
+	for_countries = { KOR }
+
+	can_use = { has_completed_focus = KOR_proclaim_federation_of_balhae }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "Je %d Manju-Gibyeong-Sadan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Je %d Manju-Gibyeong-Sadan 'Sok-mal'" }			#All Fictional
+		2 = { "Je %d Manju-Gibyeong-Sadan 'Baek-san'" }
+		3 = { "Je %d Manju-Gibyeong-Sadan 'Heuk-su'" }
+		4 = { "Je %d Manju-Gibyeong-Sadan 'Cheol-ri'" }
+		5 = { "Je %d Manju-Gibyeong-Sadan 'Wol-hui'" }
+		6 = { "Je %d Manju-Gibyeong-Sadan 'Wu-ru'" }
+		7 = { "Je %d Manju-Gibyeong-Sadan 'Bul-yeol'" }
+		8 = { "Je %d Manju-Gibyeong-Sadan 'Baek-dol'" }
+		9 = { "Je %d Manju-Gibyeong-Sadan 'Geon-ju'" }
+		10 = { "Je %d Manju-Gibyeong-Sadan 'Hae-seo'" }
+		11 = { "Je %d Manju-Gibyeong-Sadan 'Ya-in'" }
+		12 = { "Je %d Manju-Gibyeong-Sadan 'Suk-sin'" }
+	}
+}
+
+KOR_INF_02 = 
+{
+	name = "Penal Battlegroup"
+
+	for_countries = { KOR }
+
+	can_use = { has_completed_focus = KOR_aeguk_gongchae }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { KOR_INF_01 }
+
+	fallback_name = "Je 4%d Jiphangyuyae-Jeontudan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Je 4%d Jiphangyuyae-Jeontudan" }			#All Fictional
+		2 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		3 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		4 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		5 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		6 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		7 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		8 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		9 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		10 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		11 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+		12 = { "Je 4%d Jiphangyuyae-Jeontudan" }
+	}
+}

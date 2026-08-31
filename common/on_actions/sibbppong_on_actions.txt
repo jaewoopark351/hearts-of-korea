@@ -1,0 +1,1380 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sov_sibbppong_status
+						option = SIBBPPONG_ENABLED
+					}
+				}
+				SOV = {
+					#more railways for soviet siberia
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9131 9199 75 72 9130 3065 11171 312 3338 }
+						start_province = 9131
+						target_province = 3338
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 11375 9368 270 3261 3349 9270 9172 112 3103 }
+						start_province = 11375
+						target_province = 3103
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6089 9065 6133 9232 3177 11110 9124 9213 6193 11061 3064 3065 }
+						start_province = 6089
+						target_province = 3065
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12491 1493 10485 12454 7541 12474 12163 12108 12179 10253 }
+						start_province = 12491
+						target_province = 10253
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6516 6525 11472 9513 6564 6588 9538 6491 432 9462 1318 1290 3563 }
+						start_province = 6516
+						target_province = 3563
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3578 11523 9432 6601 3490 9487 3467 6588 }
+						start_province = 3578
+						target_province = 6588
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3467 9549 410 6473 497 338 11348 }
+						start_province = 3467
+						target_province = 11348
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 11225 339 9401 11496 3365 9336 }
+						start_province = 11225
+						target_province = 9336
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9213 7330 11200 154 6177 6538 11182 11119 6040 198 }
+						start_province = 9213
+						target_province = 198
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12128 12298 1378 7373 12200 10256 7401 12229 10213 9292 }
+						start_province = 12128
+						target_province = 9292
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 10213 4340 1363 12257 12285 1276 4337 1331 10295 10164 4227 }
+						start_province = 10213
+						target_province = 4227
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1459 10660 10408 1825 4224 1591 }
+						start_province = 1459
+						target_province = 1591
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12474 10262 475 642 9453 6615 11442 11552 432 }
+						start_province = 12474
+						target_province = 432
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7563 10406 12383 13207 12474 }
+						start_province = 7563
+						target_province = 12474
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9694 11696 748 3748 9722 6765 6794 3413 481 3475 498 3529 }
+						start_province = 9694
+						target_province = 3529
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6794 11724 759 745 728 6748 }
+						start_province = 6794
+						target_province = 6748
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1599 12380 12320 6997 }
+						start_province = 1599
+						target_province = 6997
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1599 4534 3667 666 3672 }
+						start_province = 1599
+						target_province = 3672
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9691 6692 11664 672 654 }
+						start_province = 9691
+						target_province = 654
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9696 3717 6736 9691 }
+						start_province = 9696
+						target_province = 9691
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6380 3259 11236 6346 9144 6203 3143 3035 11131 3085 81 }
+						start_province = 6380
+						target_province = 81
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 11230 3278 3210 306 }
+						start_province = 11230
+						target_province = 306
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9417 11403 6417 3417 9415 3777 6794 }
+						start_province = 9417
+						target_province = 6794
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3672 11632 712 728 }
+						start_province = 3672
+						target_province = 728
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6588 3515 6523 9469 464 3618 9453 }
+						start_province = 6588
+						target_province = 9453
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9753 9592 3622 11578 615 464 }
+						start_province = 9753
+						target_province = 464
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3139 6297 305 6217 6278 }
+						start_province = 3139
+						target_province = 6278
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 11352 9283 189 6274 11170 1307 11203 6121 99 108 7330 }
+						start_province = 11352
+						target_province = 7330
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 10253 4394 7313 10224 4215 10256 }
+						start_province = 10253
+						target_province = 10256
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1554 10420 7486 4638 7243 }
+						start_province = 1554
+						target_province = 7243
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1554 7775 1573 1632 4549 5003 }
+						start_province = 1554
+						target_province = 5003
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12333 7491 7560 5003 }
+						start_province = 12333
+						target_province = 5003
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7600 10452 10508 1312 1243 10179 7425 4232 1375 10633 4670 1800 10696 }
+						start_province = 7600
+						target_province = 10696
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12285 4309 4238 10211 10308 1375 }
+						start_province = 12285
+						target_province = 1375
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6177 10579 7712 12393 10677 4774 7796 12630 10620 10592 7738 12517 4761 7809 1729 4733 4859 13064 2923 13065 9224 6085 1722 1745 6211 12634 4229 12592 4455 10540 1823 1839 7878 4728 }
+						start_province = 6177
+						target_province = 4728
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4455 13062 5264 13063 }
+						start_province = 4455
+						target_province = 13063
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7541 10395 1479 4488 7486 }
+						start_province = 7541
+						target_province = 7486
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1375 1879 1287 7350 10218 10653 1668 10680 10550 10619 10547 1591 }
+						start_province = 1375
+						target_province = 1591
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3338 9041 6192 3147 9230 6538 }
+						start_province = 3338
+						target_province = 6538
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 11170 12175 11195 4802 7898 12393 }
+						start_province = 11170
+						target_province = 12393
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6040 12502 3169 4774 }
+						start_province = 6040
+						target_province = 4774
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4215 7281 7233 10140 12143 1303 4337 }
+						start_province = 4215
+						target_province = 4337
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4337 12266 4277 12121 1243 4389 4595 12385 7711 10146 1591 }
+						start_province = 4337
+						target_province = 1591
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1459 10488 2058 4923 }
+						start_province = 1459
+						target_province = 4923
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12630 1659 7833 12390 3472 }
+						start_province = 12630
+						target_province = 3472
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 10712 10580 1685 7822 4800 10531 7890 12594 10584 10218 }
+						start_province = 10712
+						target_province = 10218
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7886 4793 1718 12174 10617 4730 10533 1726 7837 1757 12517 }
+						start_province = 7886
+						target_province = 12517
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1726 7793 10529 12580 4700 }
+						start_province = 1726
+						target_province = 4700
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4730 12514 7750 10576 10705 12555 4687 7707 7805 1741 4812 9224 }
+						start_province = 4730
+						target_province = 9224
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12691 4818 12628 7731 4680 10627 }
+						start_province = 12691
+						target_province = 10627
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7731 12625 7703 1810 10543 4797 }
+						start_province = 7731
+						target_province = 4797
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7822 1702 7819 1676 10627 }
+						start_province = 7822
+						target_province = 10627
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12691 7744 10544 12655 4687 }
+						start_province = 12691
+						target_province = 4687
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 10528 7835 12644 4716 12575 4737 7726 12668 12531 4812 }
+						start_province = 10528
+						target_province = 4812
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9604 11575 11719 3753 3739 6715 11626 6833 11745 11904 9895 6961 957 }
+						start_province = 9604
+						target_province = 957
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3753 753 3756 7266 12189 }
+						start_province = 3753
+						target_province = 12189
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7266 1397 1325 9589 9604 }
+						start_province = 7266
+						target_province = 9604
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9604 4404 7309 7249 4290 9659 10577 }
+						start_province = 9604
+						target_province = 10577
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 10678 4731 4847 1807 10590 7871 10577 }
+						start_province = 10678
+						target_province = 10577
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 10577 12569 7748 4701 12261 }
+						start_province = 10577
+						target_province = 12261
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7748 1842 1724 1807 12591 12650 4881 10572 1714 12634 }
+						start_province = 7748
+						target_province = 12634
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12591 10667 4752 12694 1748 10714 1795 7765 12611 10557 12531 }
+						start_province = 12591
+						target_province = 12531
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4716 4835 1761 10583 4868 4795 12611 }
+						start_province = 4716
+						target_province = 12611
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1761 4762 10681 7785 12543 }
+						start_province = 1761
+						target_province = 12543
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12621 4853 10570 7876 7802 10699 1735 7828 4737 }
+						start_province = 12621
+						target_province = 4737
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4797 7838 12647 10596 7828 }
+						start_province = 4797
+						target_province = 7828
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 10699 7863 10631 7805 }
+						start_province = 10699
+						target_province = 7805
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4733 12643 4831 7805 }
+						start_province = 4733
+						target_province = 7805
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9553 1750 7778 10720 4846 7895 4746 4774 }
+						start_province = 9553
+						target_province = 4774
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3169 1664 9142 7738 }
+						start_province = 3169
+						target_province = 7738
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7833 1768 7685 12542 4771 1726 }
+						start_province = 7833
+						target_province = 1726
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1860 7687 10537 10546 11410 12594 }
+						start_province = 1860
+						target_province = 12594
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9453 11591 12235 1247 4254 10253 }
+						start_province = 9453
+						target_province = 10253
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 2923 2900 11122 13060 3184 2877 12549 13061 4229 }
+						start_province = 2923
+						target_province = 4229
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6211 4878 10641 7817 7765 }
+						start_province = 6211
+						target_province = 7765
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7765 1852 2853 1722 3184 }
+						start_province = 7765
+						target_province = 3184
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7785 4821 10714 }
+						start_province = 7785
+						target_province = 10714
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4878 12623 1714 12518 12551 12683 1865 10540 }
+						start_province = 4878
+						target_province = 10540
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7309 4841 7868 1742 1755 }
+						start_province = 7309
+						target_province = 1755
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7750 1679 1828 10635 12643 }
+						start_province = 7750
+						target_province = 12643
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4831 12687 11328 2923 }
+						start_province = 4831
+						target_province = 2923
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12549 4006 1819 4455 }
+						start_province = 12549
+						target_province = 4455
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1823 4744 5264 }
+						start_province = 1823
+						target_province = 5264
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4716 7736 1826 12641 4677 }
+						start_province = 4716
+						target_province = 4677
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1775 4850 1229 4238 }
+						start_province = 1775
+						target_province = 4238
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12397 12340 10506 4492 12385 }
+						start_province = 12397
+						target_province = 12385
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 10529 1765 12510 4840 12606 1860 }
+						start_province = 10529
+						target_province = 1860
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 1724 4829 4779 12654 4725 }
+						start_province = 1724
+						target_province = 4725
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 664 9639 11624 9641 3695 3723 3753 }
+						start_province = 664
+						target_province = 3753
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 7868 3664 4844 10577 }
+						start_province = 7868
+						target_province = 10577
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4802 12659 10648 1704 10720 }
+						start_province = 4802
+						target_province = 10720
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4389 1402 1239 7332 4764 1668 }
+						start_province = 4389
+						target_province = 1668
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 12594 4867 12564 1818 7693 4823 }
+						start_province = 12594
+						target_province = 4823
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 4923 1766 2015 }
+						start_province = 4923
+						target_province = 2015
+					}
+					
+					
+					
+					#more infrastructure for soviet siberia
+					879 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					214 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					880 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					825 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					262 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					397 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					587 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					584 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					832 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					881 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					404 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					732 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					40 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					654 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					581 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					579 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					580 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					237 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					406 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					637 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					822 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					847 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					644 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					408 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					409 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					560 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					657 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					561 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					562 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					574 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					876 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					877 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					516 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					576 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					878 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					575 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					577 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					878 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					565 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					256 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					563 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					564 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					566 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					569 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					568 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					567 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					403 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					571 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					570 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					578 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					583 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					590 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					882 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					588 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					405 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					742 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					586 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+					589 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					874 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					824 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					
+					
+					#more supply hubs for soviet siberia
+					219 = {
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 3065
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 9200
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 9213
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 6794
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 9691
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 6588
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 6538
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 7898
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 9453
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 7541
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 4337
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 3169
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1243
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1591
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1668
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1375
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1726
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1729
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1659
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 12594
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 7822
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 4687
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 2923
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 10699
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 4812
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 12531
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 4716
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 4737
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 7835
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 12611
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 7785
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1722
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1807
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 7748
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 3753
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 11624
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 7868
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 7738
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1714
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 10641
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 12549
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 4455
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 12683
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 1823
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 11170
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 10577
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+state={
+	id=1021
+	name="STATE_1021"
+	resources={
+		aluminium=5.000
+	}
+	provinces={
+		912 978 3912 4052 6963 7171 9790 9795 9918 11775 11828 11835 11896 13377
+	}
+	
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+			13377 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
+		}
+		victory_points = {
+			4052 20
+		}
+		victory_points = {
+			11835 3
+		}
+		victory_points = {
+			6963 3
+		}
+		victory_points = {
+			13377 1
+		}
+		add_core_of = KOR
+		
+		1939.3.14 = {
+			owner = JAP
+			controller = JAP
+		}
+
+	}
+	
+	manpower=4179983
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

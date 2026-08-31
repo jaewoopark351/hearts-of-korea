@@ -1,0 +1,59 @@
+state={
+	id=1017
+	name="STATE_1017"
+	resources={
+		aluminium=9.000
+	}
+	provinces={
+		7125 7221 12040 13376 13378 13379 13382 13383
+	}
+	
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			anti_air_building = 2
+			air_base = 3
+			7221 = {
+				naval_base = 4
+				coastal_bunker = 1
+			}
+			
+			7125 = {	#Seoul
+			    landmark_gyeongbokgung = {
+			        allowed = {
+			            has_dlc = "Gotterdammerung"
+			        }
+			        level = 1
+			    }
+			}
+
+		}
+		victory_points = {
+			7125 30
+		}
+		victory_points = {
+			7221 10
+		}
+		victory_points = {
+			12040 3
+		}
+		victory_points = {
+			13376 3
+		}
+		add_core_of = KOR
+		
+		1939.3.14 = {
+			owner = JAP
+			controller = JAP
+		}
+
+	}
+	
+	manpower=3451691
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

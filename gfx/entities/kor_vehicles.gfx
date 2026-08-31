@@ -1,0 +1,11 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "KOR_mechanized_mesh"
+		file = "gfx/models/units/vehicles/KOR_mechanized.mesh"
+		
+		animation = { id = "idle"			type = "KOR_mechanized_idle_animation" }
+		animation = { id = "move"			type = "KOR_mechanized_moving_animation" }
+		animation = { id = "attack"			type = "KOR_mechanized_attack_animation" }
+	}
+}

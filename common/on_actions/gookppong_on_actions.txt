@@ -1,0 +1,859 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = kor_gookppong_status
+						option = GOOKPPONG_ENABLED
+					}
+				}
+				
+				#Give Manchuria to Korea
+				KOR = {
+					transfer_state = 716
+					transfer_state = 745
+					transfer_state = 328
+					transfer_state = 717
+					transfer_state = 714
+					transfer_state = 761
+					transfer_state = 715
+					transfer_state = 1024
+					transfer_state = 1025
+					transfer_state = 1026
+					transfer_state = 610
+					
+					716 = { add_core_of = KOR }
+					745 = { add_core_of = KOR }
+					328 = { add_core_of = KOR }
+					717 = { add_core_of = KOR }
+					714 = { add_core_of = KOR }
+					761 = { add_core_of = KOR }
+					715 = { add_core_of = KOR }
+					1024 = { add_core_of = KOR }
+					1025 = { add_core_of = KOR }
+					1026 = { add_core_of = KOR }
+					610 = { add_core_of = KOR }
+			
+					716 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+					745 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+					328 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+					717 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+					714 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+					761 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+					715 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+					1026 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+					610 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+					
+					set_global_flag = kor_triumph_for_the_manchuria_flag
+					
+					716 = { set_state_name = STATE_KR_716 }
+					745 = { set_state_name = STATE_KR_745 }
+					328 = { set_state_name = STATE_KR_328 }
+					717 = { set_state_name = STATE_KR_717 }
+					714 = { set_state_name = STATE_KR_714 }
+					761 = { set_state_name = STATE_KR_761 }
+					715 = { set_state_name = STATE_KR_715 }
+					1024 = { set_state_name = STATE_KR_1024 }
+					1025 = { set_state_name = STATE_KR_1025 }
+					1026 = { set_state_name = STATE_KR_1026 }
+					610 = { set_state_name = STATE_KR_610 }
+			
+					set_province_name = { id = 11771 name = VICTORY_POINTS_KR_11771 }
+					set_province_name = { id = 4572 name = VICTORY_POINTS_KR_4572 }
+					set_province_name = { id = 10433 name = VICTORY_POINTS_KR_10433 }
+					set_province_name = { id = 1150 name = VICTORY_POINTS_KR_1150 }
+					set_province_name = { id = 6981 name = VICTORY_POINTS_KR_6981 }
+					set_province_name = { id = 7663 name = VICTORY_POINTS_KR_7663 }
+					set_province_name = { id = 964 name = VICTORY_POINTS_KR_964 }
+					set_province_name = { id = 9835 name = VICTORY_POINTS_KR_9835 }
+					set_province_name = { id = 9897 name = VICTORY_POINTS_KR_9897 }
+					set_province_name = { id = 6964 name = VICTORY_POINTS_KR_6964 }
+					set_province_name = { id = 944 name = VICTORY_POINTS_KR_944 }
+					set_province_name = { id = 11781 name = VICTORY_POINTS_KR_11781 }
+					set_province_name = { id = 13150 name = VICTORY_POINTS_KR_13150 }
+					set_province_name = { id = 4506 name = VICTORY_POINTS_KR_4506 }
+					set_province_name = { id = 7613 name = VICTORY_POINTS_KR_7613 }
+					set_province_name = { id = 7832 name = VICTORY_POINTS_KR_7832 }
+					set_province_name = { id = 10463 name = VICTORY_POINTS_KR_10463 }
+					set_province_name = { id = 1732 name = VICTORY_POINTS_KR_1732 }
+					set_province_name = { id = 12482 name = VICTORY_POINTS_KR_12482 }
+					set_province_name = { id = 4633 name = VICTORY_POINTS_KR_4633 }
+					set_province_name = { id = 9885 name = VICTORY_POINTS_KR_9885 }
+					set_province_name = { id = 930 name = VICTORY_POINTS_KR_930 }
+					set_province_name = { id = 1776 name = VICTORY_POINTS_KR_1776 }
+					set_province_name = { id = 987 name = VICTORY_POINTS_KR_987 }
+					set_province_name = { id = 7633 name = VICTORY_POINTS_KR_7633 }
+					set_province_name = { id = 11801 name = VICTORY_POINTS_KR_11801 }
+					set_province_name = { id = 6837 name = VICTORY_POINTS_KR_6837 }
+					
+					set_global_flag = kor_rename_manchuria_flag
+					
+					716 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					745 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					328 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					717 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					714 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					761 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					715 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					1024 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					1025 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					1026 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}
+					610 = {
+						remove_core_of = MAN
+						remove_core_of = CHI
+						remove_core_of = PRC
+					}			
+				}
+				
+				JAP = {
+					delete_unit = { state = 716 }
+					delete_unit = { state = 745 }
+					delete_unit = { state = 328 }
+					delete_unit = { state = 717 }
+					delete_unit = { state = 714 }
+					delete_unit = { state = 761 }
+					delete_unit = { state = 715 }
+					delete_unit = { state = 1024 }
+					delete_unit = { state = 1025 }
+					delete_unit = { state = 1026 }
+					delete_unit = { state = 610 }
+				}
+				MAN = {
+					delete_unit = { state = 716 }
+					delete_unit = { state = 745 }
+					delete_unit = { state = 328 }
+					delete_unit = { state = 717 }
+					delete_unit = { state = 714 }
+					delete_unit = { state = 761 }
+					delete_unit = { state = 715 }
+					delete_unit = { state = 1024 }
+					delete_unit = { state = 1025 }
+					delete_unit = { state = 1026 }
+					delete_unit = { state = 610 }
+				}
+				
+				KOR = {
+					set_global_flag = kor_hok_gookppong_enabled_flag
+					add_research_slot = 2
+										
+					#INDUSTRY
+					set_technology = {
+						fuel_refining = 1
+						fuel_silos = 1
+						popup = no
+					}
+					
+					#CREATE GOOKPPONG GENERALS
+					
+					
+					#ARMY
+					if = {	#For NSB DLC Owner
+						limit = { has_dlc = "No Step Back" }
+						set_technology = {
+							basic_light_tank_chassis = 1
+							basic_heavy_tank_chassis = 1
+							armor_tech_1 = 1
+							engine_tech_1 = 1
+							motorised_infantry = 1
+							popup = no
+						}
+						create_equipment_variant = {
+							name = "KLT-33 Jara"
+							type = light_tank_chassis_1
+							parent_version = 0
+							modules = {
+								main_armament_slot = tank_small_cannon_2
+								turret_type_slot = tank_light_two_man_tank_turret
+								suspension_type_slot = tank_christie_suspension
+								armor_type_slot = tank_riveted_armor
+								engine_type_slot = tank_gasoline_engine
+								special_type_slot_1 = tank_radio_1
+							}
+							upgrades = {
+								tank_nsb_engine_upgrade = 2
+								tank_nsb_armor_upgrade = 2
+							}
+						}
+						
+						delete_unit_template_and_units = { division_template = "Gigap-Sadan" }	#Remove existiing units
+						
+						else = {	#For non NSB Owner
+							set_technology = {
+								basic_light_tank = 1
+								basic_heavy_tank = 1
+								motorised_infantry = 1
+								popup = no
+							}
+							delete_unit_template_and_units = { division_template = "Gigap-Sadan" }	#Remove existiing units 
+						}
+					}
+					if = {	#For LaR DLC Owner
+						limit = { has_dlc = "La Resistance" }
+						set_technology = {
+							armored_car1 = 1
+							popup = no
+						}
+					}
+					
+					set_technology = {
+						tech_mountaineers = 1
+						infantry_weapons1 = 1
+						popup = no
+					}
+					delete_unit_template_and_units = { division_template = "Mountaineer-Division" }	#Remove existiing units
+					
+					#NAVY
+					if = {	#For MtG DLC Owner
+						limit = { has_dlc = "Man the Guns" }
+						add_ideas = MTG_naval_treaty_adherent
+						set_technology = {
+							basic_ship_hull_light = 1
+							basic_ship_hull_cruiser = 1
+							early_ship_hull_heavy = 1
+							basic_ship_hull_heavy = 1
+							early_ship_hull_carrier = 1
+							basic_ship_hull_carrier = 1
+							popup = no
+						}
+						create_equipment_variant = {
+							name = "Sejong the Great Class"
+							type = ship_hull_heavy_2
+							name_group = KOR_BB_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_heavy_battery_2
+								fixed_ship_anti_air_slot = ship_anti_air_2
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = heavy_ship_engine_2
+								fixed_ship_secondaries_slot = ship_secondaries_2
+								fixed_ship_armor_slot = ship_armor_bb_2
+								front_1_custom_slot = ship_anti_air_2
+								mid_1_custom_slot = ship_airplane_launcher_2
+								mid_2_custom_slot = ship_secondaries_2
+								rear_1_custom_slot = ship_heavy_battery_2
+							}
+						}
+						create_equipment_variant = {
+							name = "Dangun Wanggeom Class"
+							type = ship_hull_pre_dreadnought
+							name_group = KOR_BB_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_heavy_battery_1
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = heavy_ship_engine_2
+								fixed_ship_secondaries_slot = ship_secondaries_1
+								fixed_ship_armor_slot = ship_armor_bb_1
+								front_1_custom_slot = ship_anti_air_1
+								mid_1_custom_slot = ship_secondaries_1
+								rear_1_custom_slot = ship_airplane_launcher_1
+							}
+							obsolete = yes
+						}
+						create_equipment_variant = {
+							name = "Dokdo Class"
+							type = ship_hull_carrier_conversion_ca
+							name_group = KOR_CVL_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_deck_slot_1 = ship_deck_space
+								fixed_ship_deck_slot_2 = ship_deck_space
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = carrier_ship_engine_2
+								fixed_ship_secondaries_slot = empty
+							}
+						}
+						create_equipment_variant = {
+							name = "Baekdusan Class"
+							type = ship_hull_carrier_1
+							name_group = KOR_CV_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_deck_slot_1 = ship_deck_space
+								fixed_ship_deck_slot_2 = ship_deck_space
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = carrier_ship_engine_1
+								front_1_custom_slot = ship_deck_space
+							}
+						}
+						create_equipment_variant = {
+							name = "Ahn Yongbok Class"
+							type = ship_hull_cruiser_2
+							name_group = KOR_CL_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_light_medium_battery_2
+								fixed_ship_anti_air_slot = ship_anti_air_2
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = cruiser_ship_engine_2
+								fixed_ship_armor_slot = ship_armor_cruiser_2
+								front_1_custom_slot = ship_anti_air_2
+								mid_1_custom_slot = ship_torpedo_2
+								mid_2_custom_slot = ship_secondaries_2
+								rear_1_custom_slot = ship_light_medium_battery_2
+							}
+						}
+						create_equipment_variant = {
+							name = "Munmu the Great Class"
+							type = ship_hull_cruiser_2
+							name_group = KOR_CA_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_medium_battery_2
+								fixed_ship_anti_air_slot = ship_anti_air_2
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = cruiser_ship_engine_2
+								fixed_ship_armor_slot = ship_armor_cruiser_2
+								front_1_custom_slot = ship_anti_air_2
+								mid_1_custom_slot = ship_torpedo_2
+								mid_2_custom_slot = ship_secondaries_2
+								rear_1_custom_slot = ship_medium_battery_2
+							}
+						}
+						
+						else = {	#For non MtG Owner
+							set_technology = {
+								early_submarine = 1
+								basic_submarine = 1
+								early_destroyer = 1
+								basic_destroyer = 1
+								early_light_cruiser = 1
+								early_heavy_cruiser = 1
+								early_battleship = 1
+								early_battlecruiser = 1
+								early_carrier = 1
+								transport = 1			
+								popup = no
+							}
+						}
+					}
+					
+					#AIRFORCE
+					if = {	#For BBA DLC Owner
+						limit = { has_dlc = "By Blood Alone" }
+						set_technology = {
+							aa_lmg = 1
+							aa_cannon_1 = 1
+							engines_1 = 1
+							engines_2 = 1
+							early_bombs = 1
+							aircraft_construction = 1
+							basic_small_airframe = 1
+							basic_medium_airframe = 1
+							basic_large_airframe = 1
+							iw_large_airframe = 1
+							air_torpedoe_1 = 1
+							popup = no
+						}
+						create_equipment_variant = {
+							name = "KTBC-38 Mulsae"
+							type = cv_small_plane_naval_bomber_airframe_1
+							modules = {
+								fixed_main_weapon_slot = torpedo_mounting
+								engine_type_slot = engine_2_1x
+								special_type_slot_1 = empty
+							}
+							icon = "GFX_KOR_cv_naval_bomber1_medium"
+						}
+						create_equipment_variant = {
+							name = "KA-32N Chamsae"
+							type = cv_small_plane_cas_airframe_1
+							modules = {
+								fixed_main_weapon_slot = bomb_locks
+								fixed_auxiliary_weapon_slot_1 = light_mg_4x
+								engine_type_slot = engine_2_1x
+								special_type_slot_1 = dive_brakes_small
+							}
+							icon = "GFX_KOR_cv_CAS1_medium"
+						}
+						create_equipment_variant = {
+							name = "KP-36N Doksuri"
+							type = cv_small_plane_airframe_1
+							modules = {
+								fixed_main_weapon_slot = light_mg_4x
+								fixed_auxiliary_weapon_slot_1 = light_mg_4x
+								engine_type_slot = engine_2_1x
+								special_type_slot_1 = empty
+							}
+							icon = "GFX_KOR_cv_fighter1_medium"
+						}
+						create_equipment_variant = {
+							name = "KB-2 Hwangsae"
+							type = large_plane_airframe_1
+							modules = {
+							fixed_main_weapon_slot = large_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+							engine_type_slot = engine_3_4x
+							special_type_slot_1 = hmg_defense_turret_2x
+							special_type_slot_2 = hmg_defense_turret_2x
+							special_type_slot_3 = bomb_sights_1
+							}
+							icon = "GFX_KOR_strategic_bomber1_medium"
+						}
+						create_equipment_variant = {
+							name = "KB-1 Galmaegi" 
+							type = medium_plane_airframe_1
+							modules = {
+							fixed_main_weapon_slot = medium_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+							engine_type_slot = engine_2_2x
+							special_type_slot_1 = lmg_defense_turret_2x
+							special_type_slot_2 = lmg_defense_turret
+							}
+							icon = "GFX_KOR_tactical_bomber1_medium"
+						}
+						create_equipment_variant = {
+							name = "KP-37 Chammae" 
+							type = medium_plane_fighter_airframe_1
+							modules = {
+								fixed_main_weapon_slot = light_mg_4x
+								fixed_auxiliary_weapon_slot_1 = light_mg_4x
+								fixed_auxiliary_weapon_slot_2 = bomb_locks
+								fixed_auxiliary_weapon_slot_3 = bomb_locks
+								engine_type_slot = engine_2_2x
+								special_type_slot_1 = lmg_defense_turret
+							}
+							icon = "GFX_KOR_heavy_fighter1_medium"
+						}
+						create_equipment_variant = {
+							name = "KA-32 Chamsae"
+							type = small_plane_cas_airframe_1
+							modules = {
+								fixed_main_weapon_slot = bomb_locks
+								fixed_auxiliary_weapon_slot_1 = bomb_locks
+								engine_type_slot = engine_2_1x
+								special_type_slot_1 = lmg_defense_turret
+								special_type_slot_2 = dive_brakes_small
+							}
+							icon = "GFX_KOR_CAS1_medium"
+						}
+						create_equipment_variant = {
+							name = "KP-36 Doksuri"
+							type = small_plane_airframe_1
+							modules = {
+								fixed_main_weapon_slot = light_mg_4x
+								fixed_auxiliary_weapon_slot_1 = light_mg_4x
+								engine_type_slot = engine_2_1x
+								special_type_slot_1 = empty
+							}
+							icon = "GFX_KOR_fighter1_medium"
+						}
+							
+						else = {	#For non BBA Owner
+							set_technology = {
+								early_fighter = 1
+								fighter1 = 1
+								early_bomber = 1
+								tactical_bomber1 = 1
+								strategic_bomber1 = 1
+								CAS1 = 1
+								naval_bomber1 = 1
+								cv_fighter1 = 1
+								cv_naval_bomber1 = 1
+								cv_CAS1 = 1
+								popup = no
+							}
+						}
+					}
+					
+					#MORE SUPPLIERS
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 200
+						producer = KOR
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 200
+						producer = KOR
+					}
+
+					#MORE BUILDINGS AND BUILDING SLOTS FOR KOREA
+					1017 = {	#Gyeonggi
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = air_base level = 5 instant_build = yes }
+						add_building_construction = { type = fuel_silo level = 1 instant_build = yes }
+						add_building_construction = { type = dockyard level = 1 instant_build = yes }
+					}
+					1021 = {	#Pyeongan
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					1022 = {	#Hwanghae
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					1019 = {	#Chungcheong
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					}
+					1020 = {	#Gyeongsang
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					525 = { #Jeolla
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					1018 = { #Gangwon
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					}
+					527 = { #Hamgyeong
+						add_extra_state_shared_building_slots = 4
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_building_construction = { type = dockyard level = 1 instant_build = yes }
+					}
+					1023 = { #Jeju
+						add_extra_state_shared_building_slots = 1
+					}
+					
+					#MORE BUILDINGS AND BUILDING SLOTS FOR MANCHURIA
+					716 = {	#Yodong
+						add_extra_state_shared_building_slots = 6
+						add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+						add_building_construction = { type = dockyard level = 2 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+						add_building_construction = { type = fuel_silo level = 1 instant_build = yes }
+					}
+					745 = {	#Bisa
+						add_extra_state_shared_building_slots = 4
+						add_building_construction = { type = dockyard level = 4 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					}
+					328 = {	#Buyeo
+						add_extra_state_shared_building_slots = 6
+						add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = air_base level = 8 instant_build = yes }
+						add_building_construction = { type = fuel_silo level = 1 instant_build = yes }
+					}
+					717 = {	#Bukgando
+						add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = air_base level = 3 instant_build = yes }
+					}
+					714 = {	#Dumak-ru
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = air_base level = 3 instant_build = yes }
+					}
+					761 = {	#Heung-an
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					}
+					715 = {	#Yoryeong
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = air_base level = 3 instant_build = yes }
+					}
+					1024 = {	#Yeonbyeon
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					}
+					1025 = {	#Seogando
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+						add_building_construction = { type = dockyard level = 1 instant_build = yes }
+					}
+					1026 = {	#Heuk-ha
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+					}
+					610 = {	#Yeol-ha
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = air_base level = 3 instant_build = yes }
+					}
+					
+					
+					#CREATE MORE UNITS FOR KOREA
+					division_template = {
+						name = "Gigap-Sadan" 	
+						division_names_group = KOR_ARM_01
+		
+						regiments = {
+							light_armor = { x = 0 y = 0 }		
+							light_armor = { x = 0 y = 1 }						
+							light_armor = { x = 1 y = 0 }		
+							light_armor = { x = 1 y = 1 }
+							motorized = { x = 2 y = 0 }			
+							motorized = { x = 2 y = 1 }
+							motorized = { x = 2 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					division_template = {
+						name = "Sanak-Sadan"
+						priority = 1
+						division_names_group = KOR_MNT_01
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+				
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+				
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+						}
+						support = {      		
+							artillery = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							recon = { x = 0 y = 2 }
+						}
+					}
+					
+					1017 = {	#Gyeonggi
+						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1021 = {	#Pyeongan
+						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1022 = {	#Hwanghae
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1019 = {	#Chungcheong
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1020 = {	#Gyeongsang
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					525 = { #Jeolla
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1018 = { #Gangwon
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					527 = { #Hamgyeong
+						create_unit = { division = "division_template = \"Sanak-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Sanak-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					716 = {	#Yodong
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					745 = {	#Bisa
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					328 = {	#Buyeo
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					717 = {	#Bukgando
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+					}
+					714 = {	#Dumak-ru
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					761 = {	#Heung-an
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+					}
+					715 = {	#Yoryeong
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+					}
+					1024 = {	#Yeonbyeon
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1025 = {	#Seogando
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1026 = {	#Heuk-ha
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+					}
+					610 = {	#Yeol-ha
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
+					}
+					
+					
+					if = {
+						limit = { has_dlc = "Man the Guns" }
+						add_ideas = MTG_naval_treaty_adherent
+						load_oob = "gookppong_KOR_naval_mtg"
+						
+						else = {
+							load_oob = "gookppong_KOR_naval_legacy"
+						}
+					}
+					
+					if = {
+						limit = { has_dlc = "By Blood Alone" }
+						load_oob = "gookppong_KOR_air_bba"
+						
+						else = {
+							load_oob = "gookppong_KOR_air_legacy"
+						}
+					}
+				}
+				
+				#Give Land research facility to Korea if has GDR DLC
+				
+				
+				#CREATE MORE UNITS FOR JAPAN
+				282 = { #Kanto
+					create_unit = { division = "division_template = \"Kihei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Kihei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Kihei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Kihei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					
+					create_unit = { division = "division_template = \"Hohei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Hohei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Hohei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Hohei Shidan\" start_experience_factor = 0.3" owner = JAP }
+				}
+				528 = {	#Nagasaki
+					create_unit = { division = "division_template = \"Kihei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Kihei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Kihei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Kihei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+
+				}
+				529 = {	#Hiroshima
+					create_unit = { division = "division_template = \"Kihei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					
+					create_unit = { division = "division_template = \"Hohei Shidan\" start_experience_factor = 0.3" owner = JAP }
+					
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+					create_unit = { division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.3" owner = JAP }
+
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+# Windows and macOS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor and workspace-local settings
+/.vs/
+/.vscode/
+/.idea/
+/.codex/
+/.claude/
+/.agents/
+*.suo
+*.user
+*.code-workspace
+*~
+~$*
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Runtime logs, crash data, and saves
+*.log
+*.dmp
+*.mdmp
+*.wer
+*.stackdump
+*.hoi4
+*.sav
+/logs/
+/crashes/
+/exceptions/
+/save games/
+
+# Temporary files and local backups
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.rej
+*.swp
+*.swo
+
+# Local tool caches
+__pycache__/
+*.py[cod]
+/.pytest_cache/
+/.mypy_cache/
+/.ruff_cache/
+
+# Local HOI4 launcher state if copied into the project
+/dlc_load.json
+/game_data.json
+/mod_registry.json
+/pdx_settings.txt

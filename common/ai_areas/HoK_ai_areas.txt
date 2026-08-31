@@ -1,0 +1,20 @@
+areas = {
+
+	korea_and_manchuria = {
+		strategic_regions = {
+			186
+			155
+			242
+			243
+		}
+	}
+	
+	HoK_china_coast = {
+        strategic_regions = {
+            164
+			247
+            248
+        }
+    }
+
+}

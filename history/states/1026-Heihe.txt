@@ -1,0 +1,29 @@
+state={
+	id=1026
+	name="STATE_1026"
+	
+	state_category = rural
+
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7832 1
+		}
+		victory_points = {
+			1732 1
+		}
+	}
+
+	provinces={
+		1545 1693 1732 7832 7848 10368 10675 10698 12548 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

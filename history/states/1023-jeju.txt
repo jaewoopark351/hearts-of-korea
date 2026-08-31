@@ -1,0 +1,30 @@
+state={
+	id=1023
+	name="STATE_1023"
+	provinces={
+		1177 
+	}
+	
+	history={
+		buildings = {
+			infrastructure = 1
+			1177 = {
+				naval_base = 1
+
+			}
+		}
+		owner = KOR
+		add_core_of = KOR
+		
+		1939.3.14 = {
+			owner = JAP
+			controller = JAP
+		}
+
+	}
+	
+	manpower=38290	
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

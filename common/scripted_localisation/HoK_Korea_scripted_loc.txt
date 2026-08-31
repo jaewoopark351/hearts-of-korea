@@ -1,0 +1,15 @@
+defined_text = {
+    name = GetSaemaulUndongName
+    text = {
+        trigger = {
+			has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat
+        }
+        localization_key = KOR_saemaeul_undong_commie
+    }
+    text = {
+        localization_key = KOR_saemaeul_undong_default
+    }
+}
+
+
+

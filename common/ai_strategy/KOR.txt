@@ -1,0 +1,708 @@
+KOR_unit_production = {
+	allowed = { original_tag = KOR }
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 80
+	}
+	
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 75 # From 70 to 75
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 10 # 15 to 10
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 0
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 0
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 0
+	}
+	
+	
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 25 # from 15 to 25
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 40 #from 50 to 40
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 35
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 0
+	}
+	
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 50
+	}
+}
+
+KOR_armored_production = {
+	allowed = { original_tag = KOR }
+	enable = {
+		ai_wants_divisions > 12 #Decreasing the amount of tanks the AI wants
+	}
+	abort = {
+		ai_wants_divisions < 13 #Decreasing the amount of tanks the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 2
+	}
+}
+
+British_dont_care_korea = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		date > 1936.1.1
+	}
+	abort = { always = no }
+	ai_strategy = {
+		type = diplo_action_desire
+		id = KOR
+		target = guarantee
+		value = -9999
+	}
+}
+
+French_dont_care_korea = {
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		date > 1936.1.1
+	}
+	abort = { always = no }
+	ai_strategy = {
+		type = diplo_action_desire
+		id = KOR
+		target = guarantee
+		value = -9999
+	}
+}
+
+KOR_the_japanese_threat = {
+	enable = {
+		original_tag = KOR
+	}
+	abort = {
+		OR = {
+			is_in_faction_with = JAP
+			is_guaranteed_by = JAP
+			has_guaranteed = JAP
+			has_non_aggression_pact_with = JAP
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = JAP	
+		value = 200
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = MAN	
+		value = 200
+	}	
+}
+
+Japanese_want_annex_korea_since_they_fail = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		date > 1936.1.1
+		date < 2023.10.10
+	}
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = KOR
+			}
+			JAP = { has_completed_focus = JAP_strengthen_civilian_government }
+			KOR = {
+				OR = {
+					is_in_faction_with = JAP
+					is_puppet_of = JAP
+					has_completed_focus = KOR_friendship_with_japan
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = KOR
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = KOR
+		value = 100
+	}
+}
+
+dont_ally_japan_pls = {
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		NOT = { has_government = fascism }
+	}
+	abort = { always = no }
+	
+	ai_strategy = {
+		type = alliance
+		id = "KOR"			
+		value = -10001
+	}
+}
+
+soviet_want_to_support_daegu_commune = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		KOR = { has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat }
+		has_government = communism
+	}
+	abort = {
+		NOT = { country_exists = KOR }
+	}
+	ai_strategy = {
+		type = support
+		id = KOR
+		value = 100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KOR
+		value = 100
+	}
+}
+
+
+KOR_prio_military_even_at_peace = {
+	allowed = { original_tag = KOR }
+	enable = {
+		always = yes
+	}
+	abort = { always = no }
+	
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50
+	}
+	
+}
+
+KOR_you_should_be_prepared_for_war = {
+	allowed = { 
+		original_tag = KOR
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 250
+    }
+}
+
+KOR_buffer_in_mainland = {
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		NOT = { has_global_flag = kor_triumph_for_the_manchuria_flag }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			525
+			527
+			1017
+			1018
+			1019
+			1020
+			1021
+			1022
+		}
+		ratio = 0.8
+		area = korea_and_manchuria
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+}
+
+KOR_buffer_in_mainland_after_manschulus = {
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_global_flag = kor_triumph_for_the_manchuria_flag
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			525
+			527
+			1017
+			1018
+			1019
+			1020
+			1021
+			1022
+		}
+		ratio = 0.4
+		area = korea_and_manchuria
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+}
+
+
+KOR_hey_dont_give_your_rifle_to_china = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		OR = {
+			date < 1944.6.1
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = MAN
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = CHI
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = YUN
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SHX
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = XSM
+		value = -999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SIK
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = PRC
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = GXC
+		value = -9999
+	}
+}
+
+KOR_korean_dont_ask_for_diplo_access_to_CHI = {
+	enable = {
+		original_tag = KOR
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = MAN
+		target = military_access
+		value = -5000
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = CHI
+		target = military_access
+		value = -5000
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = PRC
+		target = military_access
+		value = -5000
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = YUN
+		target = military_access
+		value = -5000
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SHX
+		target = military_access
+		value = -5000
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = XSM
+		target = military_access
+		value = -5000
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SIK
+		target = military_access
+		value = -5000
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = GXC
+		target = military_access
+		value = -5000
+	}
+}
+
+
+KOR_invading_manchuria_is_pointless_because_we_heve_to_defence_our_homeland = {
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_government = democratic
+	}
+	abort = {
+		OR = {
+			JAP = { has_war_with = USA }
+			has_global_flag = kor_triumph_for_the_manchuria_flag
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invade
+		id = "MAN"
+		value = -2000
+	}
+	ai_strategy = {
+		type = invade
+		id = "JAP"
+		value = -2000
+	}
+}
+
+
+KOR_dumangang_and_aprokgang_subi = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		has_government = democratic
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		tag = MAN
+		
+		ratio = 0.5
+		
+		priority = 100
+		ordertype = front
+		execution_type = careful
+	}
+	ai_strategy = {
+		type = front_control
+		
+		tag = JAP
+		
+		ratio = 0.5
+		
+		priority = 100
+		ordertype = front
+		execution_type = careful
+	}
+}
+
+KOR_area_priority_before_manschulus_aka_please_dont_care_europe = {
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		NOT = { has_global_flag = kor_triumph_for_the_manchuria_flag }
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = -9999
+	}
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = -9999
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = korea_and_manchuria
+		value = 100
+	}
+}
+
+
+
+KOR_area_priority_after_manschulus = {
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_global_flag = kor_triumph_for_the_manchuria_flag
+	}
+	
+	abort = { always = no }
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 20
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = -30
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 50
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 50
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 30
+	}
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 20
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = -60
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 80
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 80
+	}
+	ai_strategy = {
+		type = area_priority
+		id = korea_and_manchuria
+		value = 100
+	}
+}
+
+HoK_ragnarok_all_AI_hate_korea = {
+	allowed = {
+		NOT = { original_tag = KOR }
+	}
+	enable = {
+		has_global_flag = kor_HoK_ragnarok_option_enabled
+	}
+	
+	abort = { NOT = { has_global_flag = kor_HoK_ragnarok_option_enabled } }
+
+	ai_strategy = {
+		type = antagonize
+		id = KOR
+		value = 9999
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = KOR
+		value = 9999
+	}
+}

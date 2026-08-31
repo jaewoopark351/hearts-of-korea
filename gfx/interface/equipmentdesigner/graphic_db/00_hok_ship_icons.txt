@@ -1,0 +1,26 @@
+#non-MtG Battlecruiser icon for MtG owner
+
+KOR = {
+	ship_hull_heavy_1 = {
+		pool = {
+			icons = {
+				GFX_early_ship_hull_heavy_medium
+				"gfx/interface/technologies/KOR_battlecruiser1_retrofit_ww2.dds"
+				GFX_KOR_early_battlecruiser_medium
+				"gfx/interface/technologies/KOR_battleship1_retrofit_ww2.dds"
+				GFX_KOR_early_ship_hull_heavy_medium
+			}			
+		}
+	
+	}
+	
+	ship_hull_heavy_2 = {
+		pool = {
+			icons = {
+				GFX_basic_ship_hull_heavy_medium
+				GFX_KOR_basic_battlecruiser_medium
+				GFX_KOR_basic_ship_hull_heavy_medium
+			}
+		}
+	}
+}

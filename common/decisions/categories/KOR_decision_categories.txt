@@ -1,0 +1,130 @@
+KOR_triumph_for_the_manchuria_category = {
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_goguryeo
+	
+	allowed = {
+		tag = KOR
+	}
+}
+
+KOR_defeat_japan_category = {
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+		tag = KOR
+	}
+}
+
+KOR_liberation_of_asia_category = {
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+		tag = KOR
+	}
+}
+
+KOR_vision_1950_category = {
+	icon  = generic_political_actions
+	
+	allowed = {
+		tag = KOR
+	}
+}
+
+KOR_integrate_japanese_fleet_category = {
+	icon = military_operation
+
+	picture = GFX_decision_cat_picture_ger_case_anton
+
+	allowed = {
+		tag = KOR
+	}
+}
+
+KOR_jaebeol_category = {
+	icon = generic_political_actions
+	
+	picture = GFX_decision_cat_kor_jaebeol
+	
+	allowed = {
+		original_tag = KOR
+	}
+	priority = 85
+}
+
+KOR_fall_of_the_sun_category = {
+	icon  = generic_political_actions
+	
+	allowed = {
+		tag = KOR
+	}
+}
+
+KOR_China_national_reconstruction_category = {
+	icon  = generic_political_actions
+	
+	allowed = {
+		tag = KOR
+	}
+}
+
+KOR_decision_CNDP_category = {
+	icon = generic_political_actions
+	
+	picture = GFX_decision_cat_kor_CNDP
+	
+	allowed = {
+		original_tag = KOR
+	}
+}
+
+KOR_soyanggangdam_category = {
+	icon = hol_prepare_the_inundation_lines
+	
+	allowed = {
+		original_tag = KOR
+	}
+
+	visible = {
+		has_completed_focus = KOR_build_soyanggang_dam
+	}
+}
+
+KOR_decision_greater_hwan_category = {
+	icon = generic_formable_nations
+	
+	allowed = {
+		original_tag = KOR
+	}
+	
+	visible = {
+		has_completed_focus = KOR_hwan_world_order
+	}
+}
+
+KOR_decision_expend_federation_of_balhae_category = {
+	icon = generic_formable_nations
+	
+	picture = GFX_decision_cat_kor_decision_expend_federation_of_balhae
+	
+	allowed = {
+		original_tag = KOR
+	}
+	
+	visible = {
+		has_completed_focus = KOR_proclaim_federation_of_balhae
+	}
+}
+
+KOR_decision_rokrf_category = {
+	icon = generic_political_actions
+	
+	allowed = {
+		original_tag = KOR
+	}
+	
+	visible = {
+		has_completed_focus = KOR_call_up_the_rokrf
+	}
+}

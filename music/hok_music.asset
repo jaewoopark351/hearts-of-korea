@@ -1,0 +1,47 @@
+music = {
+	name = "Sinarirang"
+	file = "Sinarirang.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "March_of_hwarang"
+	file = "March_of_hwarang.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "Federation_of_Balhae"
+	file = "Federation_of_Balhae.ogg"
+	volume = 2.5
+}
+
+music = {
+	name = "Alive_as_the_flower_of_the_nation"
+	file = "Alive_as_the_flower_of_the_nation.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "Lyrical_folk_song_of_korea"
+	file = "Lyrical_folk_song_of_korea.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Songs_of_minjoong"
+	file = "Songs_of_minjoong.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "Daegu_commune"
+	file = "Daegu_commune.ogg"
+	volume = 0.6
+}
+
+music = {
+	name = "Minshu_ikki"
+	file = "Minshu_ikki.ogg"
+	volume = 0.55
+}

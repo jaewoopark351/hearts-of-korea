@@ -1,0 +1,235 @@
+KOR = {
+	light_tank_chassis_0 = {
+		pool = {
+			icons = { 
+				GFX_KOR_gw_light_tank_medium
+			}
+		}
+	}
+	
+	light_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_light_tank_1.dds"
+				GFX_KOR_basic_light_spaa_medium
+				GFX_KOR_basic_light_art_medium
+				GFX_KOR_basic_light_td_medium
+				GFX_KOR_basic_light_tank_medium
+			 }
+		}
+	}
+	light_tank_aa_chassis_1 = { pool = { icons = { GFX_KOR_basic_light_spaa_medium } } }
+	light_tank_destroyer_chassis_1 = { pool = { icons = { GFX_KOR_basic_light_td_medium } } }
+	light_tank_artillery_chassis_1 = { pool = { icons = { GFX_KOR_basic_light_art_medium } } }
+	light_tank_flame_chassis_1 = { pool = { icons = { "gfx/interface/technologies/KOR_flame_light_tank_1.dds" } } }
+
+
+	light_tank_chassis_2 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_light_tank_2.dds"
+				GFX_KOR_improved_light_spaa_medium
+				GFX_KOR_improved_light_art_medium
+				GFX_KOR_improved_light_td_medium
+				GFX_KOR_improved_light_tank_medium
+			 }
+		}
+	}
+	light_tank_aa_chassis_2 = { pool = { icons = { GFX_KOR_improved_light_spaa_medium } } }
+	light_tank_destroyer_chassis_2 = { pool = { icons = { GFX_KOR_improved_light_td_medium } } }
+	light_tank_artillery_chassis_2 = { pool = { icons = { GFX_KOR_improved_light_art_medium } } }
+	light_tank_flame_chassis_2 = { pool = { icons = { "gfx/interface/technologies/KOR_flame_light_tank_2.dds" } } }
+
+
+	light_tank_chassis_3 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_light_tank_3.dds"
+				GFX_KOR_advanced_light_spaa_medium
+				GFX_KOR_advanced_light_art_medium
+				GFX_KOR_advanced_light_td_medium
+				GFX_KOR_advanced_light_tank_medium
+			 }
+		}
+	}
+	light_tank_aa_chassis_3 = { pool = { icons = { GFX_KOR_advanced_light_spaa_medium } } }
+	light_tank_destroyer_chassis_3 = { pool = { icons = { GFX_KOR_advanced_light_td_medium } } }
+	light_tank_artillery_chassis_3 = { pool = { icons = { GFX_KOR_advanced_light_art_medium } } }
+	light_tank_flame_chassis_3 = { pool = { icons = { "gfx/interface/technologies/KOR_flame_light_tank_3.dds" } } }
+	
+	
+	medium_tank_chassis_0 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_medium_tank_0.dds"
+				GFX_KOR_gw_medium_spaa_medium
+				GFX_KOR_gw_medium_art_medium
+				GFX_KOR_gw_medium_td_medium
+				GFX_KOR_gw_medium_tank_medium
+			}
+		}
+	}
+	medium_tank_aa_chassis_0 = { pool = { weight = 3 icons = { GFX_KOR_gw_medium_spaa_medium } } }
+	medium_tank_destroyer_chassis_0 = { pool = { weight = 3 icons = { GFX_KOR_gw_medium_td_medium } } }
+	medium_tank_artillery_chassis_0  = { pool = { weight = 3 icons = { GFX_KOR_gw_medium_art_medium } } }
+	medium_tank_flame_chassis_0 = { pool = { weight = 3 icons = { "gfx/interface/technologies/KOR_flame_medium_tank_0.dds" } } }
+	
+	
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_medium_tank_1.dds"
+				GFX_KOR_amphibious_tank_2_medium
+				GFX_KOR_basic_medium_spaa_medium
+				GFX_KOR_basic_medium_art_medium
+				GFX_KOR_basic_medium_td_medium
+				GFX_KOR_basic_medium_tank_medium
+			 }
+		}
+	}
+	medium_tank_aa_chassis_1 = { pool = { icons = { GFX_KOR_basic_medium_spaa_medium } } }
+	medium_tank_destroyer_chassis_1 = { pool = { icons = { GFX_KOR_basic_medium_td_medium } } }
+	medium_tank_artillery_chassis_1 = { pool = { icons = { GFX_KOR_basic_medium_art_medium } } }
+	medium_tank_flame_chassis_1 = { pool = { icons = { "gfx/interface/technologies/KOR_flame_medium_tank_1.dds" } } }
+	medium_tank_amphibious_chassis_1 = { pool = { icons = { GFX_KOR_amphibious_tank_2_medium } } }
+
+
+	medium_tank_chassis_2 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_medium_tank_2.dds"
+				GFX_KOR_amphibious_tank_2_medium
+				GFX_KOR_improved_medium_spaa_medium
+				GFX_KOR_improved_medium_art_medium
+				GFX_KOR_improved_medium_td_medium
+				GFX_KOR_improved_medium_tank_medium
+			 }
+		}
+	}
+	medium_tank_aa_chassis_2 = { pool = { icons = { GFX_KOR_improved_medium_spaa_medium } } }
+	medium_tank_destroyer_chassis_2 = { pool = { icons = { GFX_KOR_improved_medium_td_medium } } }
+	medium_tank_artillery_chassis_2 = { pool = { icons = { GFX_KOR_improved_medium_art_medium } } }
+	medium_tank_flame_chassis_2 = { pool = { icons = { "gfx/interface/technologies/KOR_flame_medium_tank_2.dds" } } }
+	medium_tank_amphibious_chassis_2 = { pool = { icons = { GFX_KOR_amphibious_tank_2_medium } } }
+
+
+	medium_tank_chassis_3 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_medium_tank_3.dds"
+				GFX_KOR_amphibious_tank_2_medium
+				GFX_KOR_advanced_medium_spaa_medium
+				GFX_KOR_advanced_medium_art_medium
+				GFX_KOR_advanced_medium_td_medium
+				GFX_KOR_advanced_medium_tank_medium
+			 }
+		}
+	}
+	medium_tank_aa_chassis_3 = { pool = { icons = { GFX_KOR_advanced_medium_spaa_medium } } }
+	medium_tank_destroyer_chassis_3 = { pool = { icons = { GFX_KOR_advanced_medium_td_medium } } }
+	medium_tank_artillery_chassis_3 = { pool = { icons = { GFX_KOR_advanced_medium_art_medium } } }
+	medium_tank_flame_chassis_3 = { pool = { icons = { "gfx/interface/technologies/KOR_flame_medium_tank_3.dds" } } }
+	medium_tank_amphibious_chassis_3 = { pool = { icons = { GFX_KOR_amphibious_tank_2_medium } } }
+	
+	
+	heavy_tank_chassis_0 = {
+		pool = {
+			icons = { 
+				GFX_KOR_gw_heavy_tank_medium
+			}
+		}
+	}
+	
+	
+	heavy_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_heavy_tank_1.dds"
+				GFX_KOR_basic_heavy_spaa_medium
+				GFX_KOR_basic_heavy_art_medium
+				GFX_KOR_basic_heavy_td_medium
+				GFX_KOR_basic_heavy_tank_medium
+			 }
+		}
+	}
+	heavy_tank_aa_chassis_1 = { pool = { icons = { GFX_KOR_basic_heavy_spaa_medium } } }
+	heavy_tank_destroyer_chassis_1 = { pool = { icons = { GFX_KOR_basic_heavy_td_medium } } }
+	heavy_tank_artillery_chassis_1 = { pool = { icons = { GFX_KOR_basic_heavy_art_medium } } }
+	heavy_tank_flame_chassis_1 = { pool = { icons = { "gfx/interface/technologies/KOR_flame_heavy_tank_1.dds" } } }
+
+
+
+	heavy_tank_chassis_2 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_heavy_tank_2.dds"
+				GFX_KOR_improved_heavy_spaa_medium
+				GFX_KOR_improved_heavy_art_medium
+				GFX_KOR_improved_heavy_td_medium
+				GFX_KOR_improved_heavy_tank_medium
+			 }
+		}
+	}
+	heavy_tank_aa_chassis_2 = { pool = { icons = { GFX_KOR_improved_heavy_spaa_medium } } }
+	heavy_tank_destroyer_chassis_2 = { pool = { icons = { GFX_KOR_improved_heavy_td_medium } } }
+	heavy_tank_artillery_chassis_2 = { pool = { icons = { GFX_KOR_improved_heavy_art_medium } } }
+	heavy_tank_flame_chassis_2 = { pool = { icons = { "gfx/interface/technologies/KOR_flame_heavy_tank_2.dds" } } }
+
+
+	heavy_tank_chassis_3 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_flame_heavy_tank_3.dds"
+				GFX_KOR_advanced_heavy_spaa_medium
+				GFX_KOR_advanced_heavy_art_medium
+				GFX_KOR_advanced_heavy_td_medium
+				GFX_KOR_advanced_heavy_tank_medium
+			 }
+		}
+	}
+	heavy_tank_aa_chassis_3 = { pool = { icons = { GFX_KOR_advanced_heavy_spaa_medium } } }
+	heavy_tank_destroyer_chassis_3 = { pool = { icons = { GFX_KOR_advanced_heavy_td_medium } } }
+	heavy_tank_artillery_chassis_3 = { pool = { icons = { GFX_KOR_advanced_heavy_art_medium } } }
+	heavy_tank_flame_chassis_3 = { pool = { icons = { "gfx/interface/technologies/KOR_flame_heavy_tank_3.dds" } } }
+	
+	
+	super_heavy_tank_chassis = {
+		pool = {
+			icons = {
+				GFX_KOR_super_heavy_tank_medium
+				"gfx/interface/technologies/KOR_superheavy_tank2.dds"
+			}
+		}
+	}
+	
+	
+	modern_tank_chassis = {
+		pool = {
+			icons = {
+				GFX_KOR_main_battle_tank_medium
+			}
+		}
+	}
+	
+	land_cruiser_chassis_1 = {
+		pool = {
+			icons = {
+				GFX_KOR_land_cruiser_armor_medium
+			}
+			models = {
+				KOR_land_cruiser_entity
+			}
+		}
+	}
+	
+	
+	amphibious_tank_chassis = {
+		pool = {
+			icons = {
+				GFX_KOR_amphibious_tank_2_medium
+				GFX_KOR_amphibious_tank_medium
+			}
+		}
+	}
+}

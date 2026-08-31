@@ -1,0 +1,296 @@
+﻿######################## ROK SHIPNAMES #############################
+
+KOR_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	prefix = "ROKS "
+	fallback_name = "Guchukham %d"
+
+	ordered = {
+		#city & county name of Korea in HoK universe
+		1 = {"Donghae"} 2 = {"Suwon"} 3 = {"Gangneung"} 4 = {"Anyang"} 5 = {"Nampo"} 
+		6 = {"Incheon"} 7 = {"Daegu"} 8 = {"Seoul"} 9 = {"Gaeseong"} 10 = {"Daejeon"}
+		11 = {"Wonsan"} 12 = {"Gunsan"} 13 = {"Busan"} 14 = {"Dongrae"} 15 = {"Pyeongyang"} 
+		16 = {"Cheongjin"} 17 = {"Chuncheon"} 18 = {"Haeju"} 19 = {"Cheongju"} 20 = {"Gwangju"}
+		21 = {"Mokpo"} 22 = {"Ulsan"} 23 = {"Uiju"} 24 = {"Hamheung"} 25 = {"Najin"} 
+		26 = {"Heungnam"} 27 = {"Yeosu"} 28 = {"Jeonju"} 29 = {"Sariwon"} 30 = {"Chungju"}
+		31 = {"Jochiwon"} 32 = {"Dalseong"} 33 = {"Ganghwa"} 34 = {"Cheonan"} 35 = {"Asan"} 
+		36 = {"Danyang"} 37 = {"Jecheon"} 38 = {"Yangsan"} 39 = {"Daedong"} 40 = {"Yiri"}
+		41 = {"Gimpo"} 42 = {"Bucheon"} 43 = {"Yongcheon"} 44 = {"Cheolsan"} 45 = {"Cheongdo"} 
+		46 = {"Junghwa"} 47 = {"Seongjin"} 48 = {"Musan"} 49 = {"Dangjin"} 50 = {"Muncheon"}
+		51 = {"Anbyeon"} 52 = {"Pyeongtaek"} 53 = {"Pocheon"} 54 = {"Gapyeong"} 55 = {"Gochang"} 
+		56 = {"Samcheok"} 57 = {"Uljin"} 58 = {"Andong"} 59 = {"Boseong"} 60 = {"Bonghwa"}
+		61 = {"Jinyang"} 62 = {"Yeongdong"} 63 = {"Yangdeok"} 64 = {"Mungyeong"} 65 = {"Changnyeong"} 
+		66 = {"Tongyeong"} 67 = {"Seongcheon"} 68 = {"Yeongam"} 69 = {"Milyang"} 70 = {"Gunwi"}
+		71 = {"Masan"} 72 = {"Gimhae"} 73 = {"Jinju"} 74 = {"Dancheon"} 75 = {"Heungwon"} 
+		76 = {"Chosan"} 77 = {"Yeongbyeon"} 78 = {"Gapsan"} 79 = {"Hapcheon"} 80 = {"Muan"}
+		81 = {"Nonsan"} 82 = {"Daedeok"} 83 = {"Ongjin"} 84 = {"Jaeryeong"} 85 = {"Suan"} 
+		86 = {"Boeun"} 87 = {"Yeonggwang"} 88 = {"Hampyeong"} 89 = {"Yangyang"} 90 = {"Jeongseon"}
+		91 = {"Yeongwol"} 92 = {"Yongin"} 93 = {"Icheon"} 94 = {"Anseong"} 95 = {"Yecheon"}
+		96 = {"Gurye"} 97 = {"Jinan"} 98 = {"Gokseong"} 99 = {"Songhwa"} 100 = {"Yanggu"}
+		101 = {"Yeongju"} 102 = {"Samsu"} 103 = {"Yeongwon"} 104 = {"Haman"} 105 = {"Changseong"}
+		106 = {"Bukcheong"} 107 = {"Anju"} 108 = {"Hwansun"} 109 = {"Gangjin"} 110 = {"Jindo"}
+		111 = {"Wonju"} 112 = {"Pyoengchang"} 113 = {"Yeongyang"} 114 = {"Goryoeng"} 115 = {"Yeongcheon"}
+		116 = {"Uiryeong"} 117 = {"Heecheon"} 118 = {"Hwacheon"} 119 = {"Inje"} 120 = {"Jangdan"}
+		121 = {"Iksan"} 122 = {"Gyeongju"} 123 = {"Wando"} 124 = {"Cheongyang"} 125 = {"Hadong"}
+		126 = {"Seosan"} 127 = {"Goyang"} 128 = {"Yeongheung"} 129 = {"Myeongcheon"} 130 = {"Ganggye"}
+		131 = {"Pyeongwon"} 132 = {"Imsil"} 133 = {"Jeongeup"} 134 = {"Pyeongsan"} 135 = {"Onseong"}
+		136 = {"Hoeryeong"} 137 = {"Jongseong"} 138 = {"Seonsan"} 139 = {"Hamyang"} 140 = {"Goheung"}
+		141 = {"Singye"} 142 = {"Hoengseong"} 143 = {"Sakju"} 144 = {"Taecheon"} 145 = {"Byeokdong"}
+		146 = {"Yeonbaek"} 147 = {"Sincheon"} 148 = {"Goseong"} 149 = {"Hongcheon"} 150 = {"Seongju"}
+		151 = {"Namwon"} 152 = {"Jangsu"} 153 = {"Muju"} 154 = {"Suncheon"} 155 = {"Huchang"}
+		156 = {"Sinheung"} 157 = {"Jangseong"} 158 = {"Guseong"} 159 = {"Yeoncheon"} 160 = {"Chilgok"}
+		161 = {"Uiseong"} 162 = {"Geumcheon"} 163 = {"Yeongi"} 164 = {"Goksan"} 165 = {"Gimhwa"}
+		166 = {"Gongju"} 167 = {"Gimje"} 168 = {"Gimcheon"} 169 = {"Gaecheon"} 170 = {"Jaseong"}
+		171 = {"Hamju"} 172 = {"Gyeongwon"} 173 = {"Buan"} 174 = {"Maengsan"} 175 = {"Wiwon"}
+		176 = {"Sangju"} 177 = {"Okcheon"} 178 = {"Yiwon"} 179 = {"Seocheon"} 180 = {"Byeokseong"}
+		181 = {"Yeoju"} 182 = {"Cheolwon"} 183 = {"Sunchang"} 184 = {"Geochang"} 185 = {"Gyeongheung"}
+		186 = {"Geumsan"} 187 = {"Jangyeon"} 188 = {"Hoeyang"} 189 = {"Boryeong"} 190 = {"Yangpyeong"}
+		191 = {"Cheongwon"} 192 = {"Damyang"} 193 = {"Sancheong"} 194 = {"Yeongdeok"} 195 = {"Hakseong"}
+		196 = {"Jangjin"} 197 = {"Bakcheon"} 198 = {"Yonggang"} 199 = {"Gangseo"} 200 = {"Gangdong"}
+		201 = {"Gilju"} 202 = {"Jeongpyeong"} 203 = {"Tongcheon"} 204 = {"Jincheon"} 205 = {"Hongseong"}
+		206 = {"Anui"} 207 = {"Yangju"} 208 = {"Gwangyang"} 209 = {"Namhae"} 210 = {"Jeongju"}
+		211 = {"Yeongil"} 212 = {"Wanju"} 213 = {"Paju"} 214 = {"Eumseong"} 215 = {"Okgu"}
+		216 = {"Deokwon"} 217 = {"Eunyul"} 218 = {"Yesan"} 219 = {"Gwangsan"} 220 = {"Sacheon"}
+		221 = {"Gowon"} 222 = {"Seoncheon"} 223 = {"Gyeongsan"}
+	}
+}
+
+KOR_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_cruiser Light_cruiser }
+	prefix = "ROKS "
+	fallback_name = "Gyeongsun %d"
+	link_numbering_with = { KOR_CA_HISTORICAL }
+
+	ordered = {
+		#2nd class historical hero of Korea
+		1 = {"Yi Sabu"} 2 = {"Gyebaek"} 3 = {"Kim Yusin"} 4 = {"Yoo Geum-pil"} 5 = {"Yang Gyu"}
+		6 = {"Jangwigong Seo Hee"} 7 = {"Eulji Mundeok"} 8 = {"Yang Manchoon"} 9 = {"Yeon Gaesomun"} 10 = {"Munsukgong Yun Gwan"}
+		11 = {"Ahn Yongbok"} 12 = {"Choe Museon"} 13 = {"Park Wi"} 14 = {"Gyeongyeolgong Jeong-ji"} 15 = {"Yi Jong-mu"} 
+		16 = {"Chungjanggong Jeong-un"} 17 = {"Na Dae-yong"} 18 = {"Uimin Yi Eokgi"} 19 = {"Munmu the Great"} 20 = {"Dae Joyeong"}
+		21 = {"Wang Geon"} 22 = {"Gang Gam-chan"} 23 = {"Choi Young"} 24 = {"Chungmugong Kim Si-min"} 25 = {"Chungjanggong Gwon-yul"} 
+		26 = {"Chungmingong Yim Gyeongup"} 27 = {"Kim Gyeong-son"} 28 = {"Chung-ik Gwak Jaewoo"} 29 = {"Chungjanggong Kim Deok-ryong"} 30 = {"Samyeongdaesa Yoo Jeong"}
+		31 = {"Kim Myeon"} 32 = {"Go Gyeong-myeong"} 33 = {"Eo Yeong-dam"} 34 = {"Muuigong Yi Sunshin"} 35 = {"Yi Jeong-am"} 
+		36 = {"Jeong Bong-su"} 37 = {"Ji Chae-mun"} 38 = {"Kim Woong-won"} 39 = {"Gang Mincheom"} 40 = {"Gwan Eung-su"}
+		41 = {"Yun Chung"} 42 = {"Go Dalga"} 43 = {"Seon Geo-yi"} 44 = {"Geo Chil-bu"} 45 = {"Sin Ryu"} 
+		46 = {"Kim Suk-heung"} 47 = {"Yi Un-ryong"} 48 = {"Chunggyeonggong Nam Jae"} 49 = {"Jang Munhyu"} 50 = {"Cheok Jun-gyeong"}
+		51 = {"Si Deuk"} 52 = {"Yeon Suyeong"} 53 = {"Sang Gwi"} 54 = {"Dasan Jeong Yak-yong"} 55 = {"Park Munseong"} 
+		56 = {"Dae Muyae"} 57 = {"King Geunsugu"} 58 = {"Toegye Yi Hwang"} 59 = {"Choi Chiwon"} 60 = {"Kim Daeseong"}
+	}
+}
+
+KOR_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	prefix = "ROKS "
+	fallback_name = "Jungsun %d"
+	link_numbering_with = { KOR_CL_HISTORICAL }
+
+	ordered = {
+		#2nd class historical hero of Korea
+		1 = {"Yi Sabu"} 2 = {"Gyebaek"} 3 = {"Kim Yusin"} 4 = {"Yoo Geum-pil"} 5 = {"Yang Gyu"}
+		6 = {"Jangwigong Seo Hee"} 7 = {"Eulji Mundeok"} 8 = {"Yang Manchoon"} 9 = {"Yeon Gaesomun"} 10 = {"Munsukgong Yun Gwan"}
+		11 = {"Ahn Yongbok"} 12 = {"Choe Museon"} 13 = {"Park Wi"} 14 = {"Gyeongyeolgong Jeong-ji"} 15 = {"Yi Jong-mu"} 
+		16 = {"Chungjanggong Jeong-un"} 17 = {"Na Dae-yong"} 18 = {"Uimin Yi Eokgi"} 19 = {"Munmu the Great"} 20 = {"Dae Joyeong"}
+		21 = {"Wang Geon"} 22 = {"Gang Gam-chan"} 23 = {"Choi Young"} 24 = {"Chungmugong Kim Si-min"} 25 = {"Chungjanggong Gwon-yul"} 
+		26 = {"Chungmingong Yim Gyeongup"} 27 = {"Kim Gyeong-son"} 28 = {"Chung-ik Gwak Jaewoo"} 29 = {"Chungjanggong Kim Deok-ryong"} 30 = {"Samyeongdaesa Yoo Jeong"}
+		31 = {"Kim Myeon"} 32 = {"Go Gyeong-myeong"} 33 = {"Eo Yeong-dam"} 34 = {"Muuigong Yi Sunshin"} 35 = {"Yi Jeong-am"} 
+		36 = {"Jeong Bong-su"} 37 = {"Ji Chae-mun"} 38 = {"Kim Woong-won"} 39 = {"Gang Mincheom"} 40 = {"Gwan Eung-su"}
+		41 = {"Yun Chung"} 42 = {"Go Dalga"} 43 = {"Seon Geo-yi"} 44 = {"Geo Chil-bu"} 45 = {"Sin Ryu"} 
+		46 = {"Kim Suk-heung"} 47 = {"Yi Un-ryong"} 48 = {"Chunggyeonggong Nam Jae"} 49 = {"Jang Munhyu"} 50 = {"Cheok Jun-gyeong"}
+		51 = {"Si Deuk"} 52 = {"Yeon Suyeong"} 53 = {"Sang Gwi"} 54 = {"Dasan Jeong Yak-yong"} 55 = {"Park Munseong"} 
+		56 = {"Dae Muyae"} 57 = {"King Geunsugu"} 58 = {"Toegye Yi Hwang"} 59 = {"Choi Chiwon"} 60 = {"Kim Daeseong"}
+	}
+}
+
+KOR_PZ_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_PZ
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { heavy_cruiser light_cruiser }
+	prefix = "ROKS "
+	fallback_name = "Haebangham %d"
+	
+	ordered = {
+		#province name of Korea in HoK universe
+		1 = {"Gyeonggi"} 2 = {"Gangwon"} 3 = {"Pyeongnam"} 4 = {"Pyeongbuk"} 5 = {"Chungnam"} 
+		6 = {"Hwanghae"} 7 = {"Chungbuk"} 8 = {"Gyeongbuk"} 9 = {"Gyeongnam"} 10 = {"Jeonbuk"}
+		11 = {"Jeon-nam"} 12 = {"Hamnam"} 13 = {"Hambuk"}
+	}		 
+}
+
+
+KOR_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	prefix = "ROKS "
+	fallback_name = "Jeonsun %d"
+	link_numbering_with = { KOR_BB_HISTORICAL }
+	
+	ordered = {
+		#1st class historical hero of Korea
+		1 = {"Chungmugong Yi Sunshin"} 2 = {"Jang Bogo"} 3 = {"Sejong the Great"} 4 = {"Gwanggaeto the Great"} 5 = {"King Geunchogo"} 
+		6 = {"Muyeol the Great"} 7 = {"Songjae Seo Jaepil"} 8 = {"Yi In-yeong"} 9 = {"Dangun Wanggeom"} 10 = {"Dongmyeong the Saint"}
+		11 = {"Haemosu"} 12 = {"Yulgok Yi I"} 13 = {"Seoae Ryu Sungryong"} 14 = {"Ikseonggong Hwang Hui"} 15 = {"Jeong Mongju"} 
+		16 = {"Ikwongong Kim Sa-hyeong"} 17 = {"Myeongrimdapbu"} 18 = {"Baekam Park Eunsik"} 19 = {"Sin Dolseok"} 20 = {"Jeongjo the Great"}
+		21 = {"Queen Seondeok"} 22 = {"King Hyeonjong"} 23 = {"King Jinheung"} 24 = {"Taejo Yi Seong-gye"} 25 = {"Daehanminguk"} 
+	}
+}
+
+KOR_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	prefix = "ROKS "
+	fallback_name = "Jeonham %d"
+	link_numbering_with = { KOR_BC_HISTORICAL }	
+
+	ordered = {
+		#1st class historical hero of Korea
+		1 = {"Chungmugong Yi Sunshin"} 2 = {"Jang Bogo"} 3 = {"Sejong the Great"} 4 = {"Gwanggaeto the Great"} 5 = {"King Geunchogo"} 
+		6 = {"Muyeol the Great"} 7 = {"Songjae Seo Jaepil"} 8 = {"Yi In-yeong"} 9 = {"Dangun Wanggeom"} 10 = {"Dongmyeong the Saint"}
+		11 = {"Haemosu"} 12 = {"Yulgok Yi I"} 13 = {"Seoae Ryu Sungryong"} 14 = {"Ikseonggong Hwang Hui"} 15 = {"Jeong Mongju"} 
+		16 = {"Ikwongong Kim Sa-hyeong"} 17 = {"Myeongrimdapbu"} 18 = {"Baekam Park Eunsik"} 19 = {"Sin Dolseok"} 20 = {"Jeongjo the Great"}
+		21 = {"Queen Seondeok"} 22 = {"King Hyeonjong"} 23 = {"King Jinheung"} 24 = {"Taejo Yi Seong-gye"} 25 = {"Cheong-gu"} 
+	}
+}
+
+KOR_CVL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CVL
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	prefix = "ROKS "							
+	fallback_name = "Gyeonghangmo %d"	
+
+	unique = {
+		#island of Korea
+		"Dokdo" "Marado" "Sindo" "Nokdundo" "Hansando" "Baekryeongdo" "Ulreungdo" "Jejudo" "Geojedo" "Wihwado"
+	}
+}
+
+KOR_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	prefix = "ROKS "
+	fallback_name = "Hangmo %d"	
+
+	unique = {	
+		#mountain of Korea
+		"Baekdusan" "Hanrasan" "Geumgangsan" "Myohyangsan" "Samgaksan" "Jirisan" "Seoraksan" "Odaesan" "Geumjeongsan" "Mudeungsan"
+	}
+}
+
+KOR_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	prefix = "ROKS "
+	fallback_name = "ROKS SS-%d"
+	
+	ordered = {
+		1 = {"SS-1"}
+		2 = {"SS-2"} 
+		3 = {"SS-3"} 
+		4 = {"SS-4"} 
+		5 = {"SS-5"} 
+		6 = {"SS-6"} 
+		7 = {"SS-7"} 
+		8 = {"SS-8"} 
+		9 = {"SS-9"} 
+		10 = {"SS-10"}
+	}
+}
+
+KOR_TB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_TB
+	
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	prefix = "ROKS "
+	fallback_name = "ROKS Chamsuri-%d"	#Historical Chamsuri class Patrol Boat
+	
+	ordered = {
+		1 = {"Chamsuri-1"}
+		2 = {"Chamsuri-2"} 
+		3 = {"Chamsuri-3"} 
+		4 = {"Chamsuri-4"} 
+		5 = {"Chamsuri-5"} 
+		6 = {"Chamsuri-6"} 
+		7 = {"Chamsuri-7"} 
+		8 = {"Chamsuri-8"} 
+		9 = {"Chamsuri-9"} 
+		10 = {"Chamsuri-10"}
+	}
+}
+
+KOR_FISH = {
+	name = NAME_THEME_FISH
+
+	for_countries = { KOR }
+	type = ship
+	ship_types = { ship_hull_submarine }
+	prefix = "ROKS "							
+
+	unique = {
+		"Yeon-eo" "Gwisang-eo" "Gaoli" "Ing-eo" "Cheongsang-eo" "Sancheon-eo" "Neob-chi" "Hongsang-eo" "Galchi" "Bung-eo" 
+		"Nalchi" "Hong-eo" "Myeong-tae" "Baegsang-eo" "Chamdom" "Baemsang-eo" "Myeol-chi" "Cheong-eo" "Heug-sang-eo" "Meog-jang-eo" 
+		"Magwisang-eo" "Ung-eo" "Eunsang-eo" "Gangjunchi" "Byeolsang-eo" "Go-laesang-eo" "Bing-eo" "Eun-eo" "Baeng-eo" "Sangalchi" 
+		"Mil-eo" "Mangdung-eo" "Haema" "Go-deung-eo" "Kkongchi" "Kkochisang-eo" "Hwang-eo" "Megi" "Jachi" "Jeon-eo" 
+		"Baemjang-eo" "Gomchi" "Supsang-eo" "Gaesang-eo" "Hyungsang-eo" "Gaesjang-eo" "Hwandosang-eo" "Nong-eo" "Agsang-eo" "Nu-chi" 
+		"Gwaeng-isang-eo" "Bungjang-eo" "Byeong-eo" "Gamulchi" "Hwangsaechi" "Jagalchi" "Gajami" "Bagdae" "Chamchi" "Doldom" 
+		"Mulmegi" "Gasigogi" "Yangtae" "Neung-seong-eo" "Changkkochi" "Cheongdom" "Chilseongjang-eo" "Geumbung-eo" "Dung-eo" "Bang-eo" 
+	}
+}
+
+######################## EOK SHIPNAMES #############################
+####KOR_DD_IMPERIAL
+####KOR_CL_IMPERIAL
+####KOR_CA_IMPERIAL
+####KOR_PZ_IMPERIAL
+####KOR_BC_IMPERIAL
+####KOR_BB_IMPERIAL
+####KOR_CVL_IMPERIAL
+####KOR_CV_IMPERIAL
+####KOR_SS_IMPERIAL
+####KOR_TB_IMPERIAL
+####KOR_FISH_IMPERIAL
+
+
+
+######################## PROK SHIPNAMES #############################
+####KOR_DD_COMMUNIST
+####KOR_CL_COMMUNIST
+####KOR_CA_COMMUNIST
+####KOR_PZ_COMMUNIST
+####KOR_BC_COMMUNIST
+####KOR_BB_COMMUNIST
+####KOR_CVL_COMMUNIST
+####KOR_CV_COMMUNIST
+####KOR_SS_COMMUNIST
+####KOR_TB_COMMUNIST
+####KOR_FISH_COMMUNIST
+

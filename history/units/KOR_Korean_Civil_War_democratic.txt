@@ -1,0 +1,99 @@
+﻿division_template = {
+	name = "Daehan-jayu-gundan"
+	is_locked = yes
+
+	division_names_group = KOR_Inf_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Je 1 Jayu-bobyeong-yeondae"
+		location = 4107
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 2 Jayu-bobyeong-yeondae"
+		location = 4107
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 3 Jayu-bobyeong-yeondae"
+		location = 4107
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 4 Jayu-bobyeong-yeondae"
+		location = 4052
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 5 Jayu-bobyeong-yeondae"
+		location = 4052
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 6 Jayu-bobyeong-yeondae"
+		location = 4052
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 7 Jayu-bobyeong-yeondae"
+		location = 11977
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 8 Jayu-bobyeong-yeondae"
+		location = 11977
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 9 Jayu-bobyeong-yeondae"
+		location = 11977
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 10 Jayu-bobyeong-yeondae"
+		location = 4126
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 11 Jayu-bobyeong-yeondae"
+		location = 4126
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 12 Jayu-bobyeong-yeondae"
+		location = 11977
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 13 Jayu-bobyeong-yeondae"
+		location = 11977
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 14 Jayu-bobyeong-yeondae"
+		location = 11977
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 15 Jayu-bobyeong-yeondae"
+		location = 12011
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 16 Jayu-bobyeong-yeondae"
+		location = 12011
+		division_template = "Daehan-jayu-gundan"
+	}
+	division = {
+		name = "Je 17 Jayu-bobyeong-yeondae"
+		location = 12011
+		division_template = "Daehan-jayu-gundan"
+	}
+}

@@ -1,0 +1,154 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_kor_intro"
+		texturefile = "gfx/event_pictures/report_event_kor_intro.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_K001"
+		texturefile = "gfx/event_pictures/report_event_K001.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_K002"
+		texturefile = "gfx/event_pictures/report_event_K002.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_K003"
+		texturefile = "gfx/event_pictures/report_event_K003.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_K004"
+		texturefile = "gfx/event_pictures/report_event_K004.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_K005"
+		texturefile = "gfx/event_pictures/report_event_K005.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_K006"
+		texturefile = "gfx/event_pictures/report_event_K006.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_kor_kimttler"
+		texturefile = "gfx/event_pictures/report_event_kor_kimttler.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_jap_fuse_tatsuji"
+		texturefile = "gfx/event_pictures/report_event_jap_fuse_tatsuji.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_jap_rok_jpn_talks"
+		texturefile = "gfx/event_pictures/report_event_jap_rok_jpn_talks.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_japanese_people_protest"
+		texturefile = "gfx/event_pictures/report_event_japanese_people_protest.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_newsk_event_001"
+		texturefile = "gfx/event_pictures/newsk_event_001.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_002"
+		texturefile = "gfx/event_pictures/newsk_event_002.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_003"
+		texturefile = "gfx/event_pictures/newsk_event_003.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_004"
+		texturefile = "gfx/event_pictures/newsk_event_004.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_005"
+		texturefile = "gfx/event_pictures/newsk_event_005.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_006"
+		texturefile = "gfx/event_pictures/newsk_event_006.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_007"
+		texturefile = "gfx/event_pictures/newsk_event_007.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_008"
+		texturefile = "gfx/event_pictures/newsk_event_008.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_009"
+		texturefile = "gfx/event_pictures/newsk_event_009.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_010"
+		texturefile = "gfx/event_pictures/newsk_event_010.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_011"
+		texturefile = "gfx/event_pictures/newsk_event_011.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_012"
+		texturefile = "gfx/event_pictures/newsk_event_012.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_013"
+		texturefile = "gfx/event_pictures/newsk_event_013.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_014"
+		texturefile = "gfx/event_pictures/newsk_event_014.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_015"
+		texturefile = "gfx/event_pictures/newsk_event_015.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_016"
+		texturefile = "gfx/event_pictures/newsk_event_016.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_017"
+		texturefile = "gfx/event_pictures/newsk_event_017.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_018"
+		texturefile = "gfx/event_pictures/newsk_event_018.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_019"
+		texturefile = "gfx/event_pictures/newsk_event_019.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_020"
+		texturefile = "gfx/event_pictures/newsk_event_020.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_021"
+		texturefile = "gfx/event_pictures/newsk_event_021.dds"
+	}
+	spriteType = {
+		name = "GFX_newsk_event_022"
+		texturefile = "gfx/event_pictures/newsk_event_022.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_newsj_event_001"
+		texturefile = "gfx/event_pictures/newsj_event_001.dds"
+	}
+	spriteType = {
+		name = "GFX_newsj_event_002"
+		texturefile = "gfx/event_pictures/newsj_event_002.dds"
+	}
+	spriteType = {
+		name = "GFX_newsj_event_003"
+		texturefile = "gfx/event_pictures/newsj_event_003.dds"
+	}
+	spriteType = {
+		name = "GFX_newsj_event_004"
+		texturefile = "gfx/event_pictures/newsj_event_004.dds"
+	}
+}

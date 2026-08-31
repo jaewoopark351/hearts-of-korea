@@ -1,0 +1,58 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "KOR_plane_light_mesh"
+		file = "gfx/models/units/planes/KOR_plane_light.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "KOR_plane_medium_mesh"
+		file = "gfx/models/units/planes/KOR_plane_medium.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "KOR_plane_heavy_mesh"
+		file = "gfx/models/units/planes/KOR_plane_heavy.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "KOR_supersonic_jet_plane_mesh"
+		file = "gfx/models/units/supersonic_jets/KOR_supersonic_jet_plane.mesh"
+
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+	}
+	
+	pdxmesh = {
+		name = "KOR_mothership_mesh"
+		file = "gfx/models/units/motherships/KOR_mothership.mesh"
+
+		animation = { id = "idle1" type = "mothership_idle1_animation" }
+		animation = { id = "idle2" type = "mothership_idle2_animation" }
+		animation = { id = "idle3" type = "mothership_idle2_animation" }
+
+	}
+	
+	pdxmesh = {
+		name = "KOR_helicopter_0_mesh"
+		file = "gfx/models/units/helicopters/generic_helicopter.mesh"
+
+		animation = { id = "idle"			type = "generic_helicopter_idle_animation" }
+		animation = { id = "move"			type = "generic_helicopter_moving_animation" }
+		animation = { id = "training"		type = "generic_helicopter_training_animation" }
+		
+		meshsettings = {
+			name = "generic_helicopterShape"
+			index = 0
+			texture_diffuse = "KOR_helicopter_0_diffuse.dds"
+			texture_normal = "KOR_helicopter_0_normal.dds"
+			texture_specular = "KOR_helicopter_0_specular.dds"
+			shader = "PdxMeshAdvanced"
+		}
+
+	}
+}

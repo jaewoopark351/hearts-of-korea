@@ -1,0 +1,32 @@
+state={
+	id=1024
+	name="STATE_1024"
+
+	state_category = town
+
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			6964 1
+		}
+		victory_points = {
+			944 1
+		}
+		victory_points = {
+			9897 3
+		}
+	}
+
+	provinces={
+		783 944 973 3929 3944 6806 6964 9897 11862 11893 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

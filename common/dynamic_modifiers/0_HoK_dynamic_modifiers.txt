@@ -1,0 +1,51 @@
+chinese_separatism = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_conscription_exemptions_granted
+	
+	recruitable_population_factor = -0.9
+	disable_strategic_redeployment = yes
+}
+
+weakened_chinese_separatism = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_conscription_exemptions_granted
+	
+	recruitable_population_factor = -0.6
+	disable_strategic_redeployment = yes
+}
+
+
+jewish_autonomous_community = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_KOR_jewish_community
+	
+	state_production_speed_buildings_factor = -0.05
+	supply_factor = 0.15
+}
+
+
+russian_autonomous_community = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_capital_of_the_tsars
+	
+	state_production_speed_buildings_factor = -0.05
+	supply_factor = 0.15
+}
+
+samchung_re_education_camp = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	production_factory_efficiency_gain_factor = 0.1
+	state_production_speed_rail_way_factor = 0.1
+	state_production_speed_supply_node_factor = 0.1
+	state_production_speed_buildings_factor = 0.1
+}
+
+
+

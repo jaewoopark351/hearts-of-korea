@@ -1,0 +1,141 @@
+on_actions = {
+	#Japanese Korea
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = JAP
+					}
+				}
+				set_cosmetic_tag = KOR_JAP
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = JAP
+					}
+				}
+				set_cosmetic_tag = KOR_JAP
+			}
+		}
+	}
+	#Nationalist China Korea
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = CHI
+					}
+				}
+				set_cosmetic_tag = KOR_CHI
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = CHI
+					}
+				}
+				set_cosmetic_tag = KOR_CHI
+			}
+		}
+	}
+	#Communist China Korea
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = PRC
+					}
+				}
+				set_cosmetic_tag = KOR_PRC
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = PRC
+					}
+				}
+				set_cosmetic_tag = KOR_PRC
+			}
+		}
+	}
+	#German Reichskommissariat Korea
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = GER
+						GER = { has_government = fascism }
+					}
+				}
+				set_cosmetic_tag = KOR_reichskommissariat_fascism
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = GER
+						GER = { has_government = fascism }
+					}
+				}
+				set_cosmetic_tag = KOR_reichskommissariat_fascism
+			}
+		}
+	}
+	#Communist Soviet Korea
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = SOV
+						SOV = { has_government = communism }
+					}
+				}
+				set_cosmetic_tag = KOR_SOV_communism
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = SOV
+						SOV = { has_government = communism }
+					}
+				}
+				set_cosmetic_tag = KOR_SOV_communism
+			}
+		}
+	}
+}

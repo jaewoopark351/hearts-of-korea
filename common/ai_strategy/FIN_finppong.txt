@@ -1,0 +1,80 @@
+FIN_prio_military_even_at_peace = {
+	allowed = { original_tag = FIN }
+	enable = {
+		has_global_flag = fin_finnppong_option_enabled
+	}
+	
+	abort = { always = no }
+	
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50
+	}
+	
+}
+
+FIN_you_should_be_prepared_for_war = {
+	allowed = { original_tag = FIN }
+	enable = {
+		has_global_flag = fin_finnppong_option_enabled
+	}
+	
+	abort = { always = no }
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 300
+    }
+}
+
+FIN_dont_join_the_axis_please = {
+	allowed = { original_tag = FIN }
+	enable = {
+		has_global_flag = fin_finnppong_option_enabled
+	}
+	
+	abort = { always = no }
+
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = -10001
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ITA"			
+		value = -10001
+	}
+	ai_strategy = {
+		type = alliance
+		id = "JAP"			
+		value = -10001
+	}
+}
+
+SOV_we_cant_fight_with_finn_empire = {
+	allowed = { original_tag = SOV }
+	enable = {
+		FIN = { has_global_flag = fin_finnppong_option_enabled }
+	}
+	
+	abort = { always = no }
+	
+	ai_strategy = {
+		type = ignore_claim
+		id = FIN
+		value = 1
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = FIN
+		value = 100000
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = FIN
+		value = -9999999
+	}
+}

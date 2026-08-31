@@ -1,0 +1,10 @@
+﻿air_wings = {
+	1020 = { 
+		fighter_equipment_1 =  { owner = "KOR" amount = 100 } name = "Je 5 Jeontu-Bihaengdan"
+		CAS_equipment_1 =  { owner = "KOR" amount = 100 } name = "Je 4 Gonggyeok-Bihaengdan"	
+	}
+	1022 = {
+		fighter_equipment_1 =  { owner = "KOR" amount = 100 } name = "Je 6 Jeontu-Bihaengdan"
+		tac_bomber_equipment_0 = { owner = "GER" amount = 60 } name = "Je 2 Pokgyeok-Bihaengdan"
+	}
+}

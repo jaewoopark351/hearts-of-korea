@@ -1,0 +1,50 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					JAP = {
+						is_ai = yes
+					}
+				}
+				
+				JAP = {
+					division_template = {
+						name = "Sensha Shidan" 	
+						division_names_group = JAP_ARM_01
+		
+						regiments = {
+							light_armor = { x = 0 y = 0 }		
+							light_armor = { x = 0 y = 1 }
+							light_armor = { x = 0 y = 2 }							
+							light_armor = { x = 1 y = 0 }		
+							light_armor = { x = 1 y = 1 }
+							light_armor = { x = 1 y = 2 }
+							motorized = { x = 2 y = 0 }			
+							motorized = { x = 2 y = 1 }
+							motorized = { x = 2 y = 2 }
+							motorized = { x = 2 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					
+					282 = {
+						create_unit = { division = "division_template = \"Sensha Shidan\" start_experience_factor = 0.3" owner = JAP }
+						create_unit = { division = "division_template = \"Sensha Shidan\" start_experience_factor = 0.3" owner = JAP }
+						create_unit = { division = "division_template = \"Sensha Shidan\" start_experience_factor = 0.3" owner = JAP }
+						create_unit = { division = "division_template = \"Sensha Shidan\" start_experience_factor = 0.3" owner = JAP }
+					}
+					
+					532 = {
+						create_unit = { division = "division_template = \"Sensha Shidan\" start_experience_factor = 0.3" owner = JAP }
+						create_unit = { division = "division_template = \"Sensha Shidan\" start_experience_factor = 0.3" owner = JAP }
+						create_unit = { division = "division_template = \"Sensha Shidan\" start_experience_factor = 0.3" owner = JAP }
+						create_unit = { division = "division_template = \"Sensha Shidan\" start_experience_factor = 0.3" owner = JAP }
+					}
+				}
+			}	
+		}
+	}	
+}

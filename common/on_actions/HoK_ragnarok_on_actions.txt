@@ -1,0 +1,25 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = kor_HoK_ragnarok_status
+						option = RAGNAROK_ENABLED
+					}
+				}
+				
+				KOR = {
+					set_global_flag = kor_HoK_ragnarok_option_enabled
+					
+					country_event = { id = hokRagnarok.1 }
+					
+					complete_national_focus = KOR_future_of_the_republic
+					complete_national_focus = KOR_democracy_advance_forward
+					complete_national_focus = KOR_president_kim_gu
+					complete_national_focus = KOR_independent_party_in_power
+				}
+			}
+		}
+	}
+}

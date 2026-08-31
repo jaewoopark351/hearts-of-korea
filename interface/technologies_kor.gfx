@@ -1,0 +1,1160 @@
+spriteTypes = {
+
+	######## Airplanes
+	SpriteType = {
+		name = "GFX_KOR_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/KOR_jet_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_modern_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_jet_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/KOR_strategic_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_strategic_bomber3.dds"
+	}		
+	SpriteType = {
+		name = "GFX_KOR_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/KOR_strategic_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_strategic_bomber2.dds"
+	}		
+	SpriteType = {
+		name = "GFX_KOR_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/KOR_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_iw_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_early_strategic_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/KOR_jet_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/KOR_jet_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_modern_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_jet_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/KOR_tactical_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_tactical_bomber3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KOR_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/KOR_tactical_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_tactical_bomber2.dds"
+	}		
+	SpriteType = {
+		name = "GFX_KOR_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/KOR_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_tactical_bomber1.dds"
+	}		
+	SpriteType = {
+		name = "GFX_KOR_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/KOR_early_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_early_bomber.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KOR_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/KOR_naval_bomber3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/KOR_naval_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/KOR_naval_bomber2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/KOR_naval_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/KOR_naval_bomber1_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/KOR_naval_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/KOR_cas3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_CAS3_medium"
+		texturefile = "gfx/interface/technologies/KOR_cas3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_CAS2_medium"
+		texturefile = "gfx/interface/technologies/KOR_cas2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_CAS2_medium"
+		texturefile = "gfx/interface/technologies/KOR_cas2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_CAS1_medium"
+		texturefile = "gfx/interface/technologies/KOR_CAS1_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_CAS1_medium"
+		texturefile = "gfx/interface/technologies/KOR_cas1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/KOR_jet_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/KOR_jet_fighter1_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/KOR_jet_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_jet_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_fighter3_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter3_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_fighter2_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter2_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_fighter1_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter1_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter1_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/KOR_early_fighter.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/KOR_early_fighter.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_transport_plane_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_transport_plane_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_bba_early_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/KOR_transport_plane_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_early_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/KOR_transport_plane_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_transport_plane_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/KOR_transport_plane_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_bba_improved_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/KOR_transport_plane_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/KOR_transport_plane_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_transport_plane_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/KOR_transport_plane_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_bba_strategic_airlifter_medium"
+		texturefile = "gfx/interface/technologies/KOR_transport_plane_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_strategic_airlifter_medium"
+		texturefile = "gfx/interface/technologies/KOR_transport_plane_equipment_3.dds"
+	}
+	
+	#More Korean Plane icons for BBA Owners
+	SpriteType = {
+		name = "GFX_KOR_fighter0_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_fighter0_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter0_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_CAS0_medium"
+		texturefile = "gfx/interface/technologies/KOR_CAS0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_CAS0_medium"
+		texturefile = "gfx/interface/technologies/KOR_CAS0_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_naval_bomber0_medium"
+		texturefile = "gfx/interface/technologies/KOR_naval_bomber0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_cv_naval_bomber0_medium"
+		texturefile = "gfx/interface/technologies/KOR_naval_bomber0_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_heavy_fighter0_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_fighter0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_1_cv_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_1_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_2_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_2_cv_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_3_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_3_cv_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_4_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_4_cv_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_4_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_5_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_5_cv_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_5_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_6_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fighter_BBA_6_cv_medium"
+		texturefile = "gfx/interface/technologies/KOR_fighter_BBA_6_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_Seaplane_fighter_medium"
+		texturefile = "gfx/interface/technologies/KOR_Seaplane_fighter.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_strategic_maritime_patrol_bomber_medium"
+		texturefile = "gfx/interface/technologies/KOR_strategic_maritime_patrol_bomber.dds"
+	}
+	
+	
+
+	######## Tanks
+	
+	#Light Tank and its Varrients
+	spriteType = {
+		name = "GFX_KOR_gw_light_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_gw_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_light_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_light_art.dds"
+	}
+	SpriteType = {
+        name = "GFX_KOR_basic_light_spaa_medium"
+        texturefile = "gfx/interface/technologies/KOR_basic_light_tank_aa.dds"
+    }
+	
+	SpriteType = {
+		name = "GFX_KOR_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_light_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_light_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_light_art.dds"
+	}
+	SpriteType = {
+        name = "GFX_KOR_improved_light_spaa_medium"
+        texturefile = "gfx/interface/technologies/KOR_imp_light_tank_aa.dds"
+    }
+	
+	SpriteType = {
+		name = "GFX_KOR_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_light_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_light_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_light_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_light_art.dds"
+	}
+	SpriteType = {
+        name = "GFX_KOR_advanced_light_spaa_medium"
+        texturefile = "gfx/interface/technologies/KOR_adv_light_tank_aa.dds"
+    }
+	
+	#Heavy Tank and its Varrients
+	SpriteType = {
+		name = "GFX_KOR_gw_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_gw_heavy_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_heavy_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_heavy_art.dds"
+	}
+	SpriteType = {
+        name = "GFX_KOR_basic_heavy_spaa_medium"
+        texturefile = "gfx/interface/technologies/KOR_basic_heavy_tank_aa.dds"
+    }
+	
+	SpriteType = {
+		name = "GFX_KOR_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_heavy_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_heavy_art.dds"
+	}
+	SpriteType = {
+        name = "GFX_KOR_improved_heavy_spaa_medium"
+        texturefile = "gfx/interface/technologies/KOR_imp_heavy_tank_aa.dds"
+    }
+	
+	SpriteType = {
+		name = "GFX_KOR_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_heavy_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_heavy_art.dds"
+	}
+	SpriteType = {
+        name = "GFX_KOR_advanced_heavy_spaa_medium"
+        texturefile = "gfx/interface/technologies/KOR_adv_heavy_tank_aa.dds"
+    }
+	
+	#Medium Tank and its Varrients
+	spriteType = {
+		name = "GFX_KOR_gw_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_gw_medium_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_gw_medium_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_gw_medium_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_gw_medium_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_gw_medium_art.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_gw_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/KOR_gw_medium_tank_aa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_medium_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_medium_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_medium_art.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_medium_tank_aa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_medium_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_medium_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_medium_art.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/KOR_imp_medium_tank_aa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_medium_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_medium_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_medium_art.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/KOR_adv_medium_tank_aa.dds"
+	}
+	
+	
+	#Other Tanks
+	SpriteType = {
+		name = "GFX_KOR_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_main_battle_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/KOR_amphibious_tank_2.dds"
+	}
+	
+	
+	#HoK Tank Chassis icon for NSB owner
+	SpriteType = {
+		name = "GFX_KOR_gwtank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_light_tank_chassis_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_light_tank_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_light_tank_chassis_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_medium_tank_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_medium_tank_chassis_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_heavy_tank_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_heavy_tank_chassis_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_super_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_super_heavy_tank_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/NSB_tank_chassis_KOR/KOR_modern_tank_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/KOR_amphibious_tank_1.dds"
+	}
+
+
+
+
+	######## Infantry & mechs
+	
+	
+	SpriteType = {
+		name = "GFX_KOR_tech_trucks_medium"
+		texturefile = "gfx/interface/technologies/KOR_motorized_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_motorized_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/KOR_motorized_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/KOR_motorised_infantry.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_motorised_infantry.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/KOR_mechanised_infantry.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/KOR_mechanised_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/KOR_mechanised_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_amphibious_mechanized_infantry_medium"
+		texturefile = "gfx/interface/technologies/KOR_amphibious_mech_1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KOR_amphibious_mechanized_infantry_2_medium"
+		texturefile = "gfx/interface/technologies/KOR_amphibious_mech_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_motorized_rocket_unit_medium"
+		texturefile = "gfx/interface/technologies/KOR_motorized_rocket_unit.dds"
+    }
+	SpriteType = {
+		name = "GFX_KOR_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/KOR_basic_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/KOR_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/KOR_infantry_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/KOR_infantry_equipment_3.dds"
+	}
+	
+	#LaR armored cars
+	SpriteType = {
+	    name = "GFX_KOR_armored_car1_medium"
+	    texturefile = "gfx/interface/technologies/KOR_armored_car_equipment_1.dds"
+	}
+    SpriteType = {
+	    name = "GFX_KOR_armored_car2_medium"
+	    texturefile = "gfx/interface/technologies/KOR_armored_car_equipment_2.dds"
+    }
+    SpriteType = {
+	    name = "GFX_KOR_armored_car3_medium"
+	    texturefile = "gfx/interface/technologies/KOR_armored_car_equipment_3.dds"
+    }
+    SpriteType = {
+	    name = "GFX_KOR_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/KOR_armored_car_equipment_3.dds"
+	}
+	
+	# NSB railway guns
+	SpriteType = {
+		name = "GFX_KOR_railway_gun_medium"
+		texturefile = "gfx/interface/technologies/KOR_railway_gun.dds"
+	}
+	
+	
+	######## Ships
+  
+	# submarines
+	SpriteType = {
+		name = "GFX_KOR_early_submarine_medium"
+		texturefile = "gfx/interface/technologies/KOR_submarine1.dds"
+	}	
+	SpriteType = {	
+		name = "GFX_KOR_early_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/KOR_submarine1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_basic_submarine_medium"
+		texturefile = "gfx/interface/technologies/KOR_submarine2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KOR_basic_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/KOR_submarine2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_improved_submarine_medium"
+		texturefile = "gfx/interface/technologies/KOR_submarine3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/KOR_submarine3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_advanced_submarine_medium"
+		texturefile = "gfx/interface/technologies/KOR_submarine4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/KOR_submarine4.dds"
+	}
+
+		
+	# destroyer
+	SpriteType = {
+		name = "GFX_KOR_early_destroyer_medium"
+		texturefile = "gfx/interface/technologies/KOR_destroyer1.dds"
+	}
+	SpriteType = {	
+		name = "GFX_KOR_early_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/KOR_destroyer1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_basic_destroyer_medium"
+		texturefile = "gfx/interface/technologies/KOR_destroyer2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KOR_basic_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/KOR_destroyer2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_improved_destroyer_medium"
+		texturefile = "gfx/interface/technologies/KOR_destroyer3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/KOR_destroyer3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_advanced_destroyer_medium"
+		texturefile = "gfx/interface/technologies/KOR_destroyer4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/KOR_destroyer4.dds"
+	}   
+		
+	# light cruiser
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_coastal_defense_ship_medium"
+		texturefile = "gfx/interface/technologies/KOR_cruiser_coastal_defense_ship.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_KOR_early_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_light_cruiser1.dds"
+	}	
+	SpriteType = {	
+		name = "GFX_KOR_early_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_light_cruiser1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_light_cruiser1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KOR_basic_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_light_cruiser2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/KOR_light_cruiser2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOR_improved_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_light_cruiser3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_3_medium"
+		texturefile = "gfx/interface/technologies/KOR_light_cruiser3.dds"
+	}		
+
+	SpriteType = {
+		name = "GFX_KOR_advanced_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_light_cruiser4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_4_medium"
+		texturefile = "gfx/interface/technologies/KOR_light_cruiser4.dds"
+	}
+			
+	# heavy cruiser
+	SpriteType = {
+		name = "GFX_KOR_early_light_cruiser_capital_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_early_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_1_capital_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOR_basic_light_cruiser_capital_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_2_capital_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_improved_light_cruiser_capital_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_3_capital_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser3.dds"
+	}		
+
+	SpriteType = {
+		name = "GFX_KOR_advanced_light_cruiser_capital_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_4_capital_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_cruiser4.dds"
+	}
+		
+	# battlecruiser
+	SpriteType = {	
+		name = "GFX_KOR_early_battlecruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_battlecruiser1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOR_basic_battlecruiser_medium"
+		texturefile = "gfx/interface/technologies/KOR_battlecruiser2.dds"
+	}
+      
+	# battleship
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_pre_dreadnought_medium"
+		texturefile = "gfx/interface/technologies/KOR_pre_dreadnought.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_early_battleship_medium"
+		texturefile = "gfx/interface/technologies/KOR_battleship1.dds"
+	}	
+	SpriteType = {	
+		name = "GFX_KOR_early_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/KOR_battleship1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KOR_basic_battleship_medium"
+		texturefile = "gfx/interface/technologies/KOR_battleship2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/KOR_battleship2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/KOR_battleship3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/KOR_battleship3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_KOR_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/KOR_battleship4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/KOR_battleship4.dds"
+	}
+	
+	# super-heavy battleship
+	SpriteType = {
+		name = "GFX_KOR_heavy_battleship_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_battleship1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_heavy_battleship1.dds"
+	}   
+	
+    # carrier
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_carrier_conversion_ca_medium"
+		texturefile = "gfx/interface/technologies/KOR_carrier_conversion_ca.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_early_carrier_medium"
+		texturefile = "gfx/interface/technologies/KOR_carrier1.dds"
+	}
+	SpriteType = {	
+		name = "GFX_KOR_early_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/KOR_carrier1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KOR_basic_carrier_medium"
+		texturefile = "gfx/interface/technologies/KOR_carrier2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_basic_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/KOR_carrier2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_improved_carrier_medium"
+		texturefile = "gfx/interface/technologies/KOR_carrier3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improved_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/KOR_carrier3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_advanced_carrier_medium"
+		texturefile = "gfx/interface/technologies/KOR_carrier4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_advanced_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/KOR_carrier4.dds"
+	}
+	
+	
+	######## Special projecte Equipment icons for GDR owner
+	
+	#Air Equipment
+	SpriteType = {
+		name = "GFX_KOR_helicopter_equipment_medium"
+		texturefile = "gfx/interface/technologies/KOR_helicopter.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_mothership_equipment_medium"
+		texturefile = "gfx/interface/technologies/KOR_mothership.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_strat_bomber_intercontinental_equipment_medium"
+		texturefile = "gfx/interface/technologies/KOR_strategic_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_small_plane_airframe_5_medium"
+		texturefile = "gfx/interface/technologies/KOR_supersonic_jet_plane.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_supersonic_fighter1_medium"
+		texturefile = "gfx/interface/technologies/KOR_supersonic_jet_plane.dds"
+	}
+	
+	
+	#Land Equipment
+	SpriteType = {
+		name = "GFX_KOR_light_flame_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_flame_light_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_medium_flame_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_flame_medium_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_heavy_flame_tank_medium"
+		texturefile = "gfx/interface/technologies/KOR_flame_heavy_tank_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_armored_support_vehicle_medium" #Mine Clearance
+		texturefile = "gfx/interface/technologies/KOR_armored_support_vehicle.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_armored_support_vehicle_recovery_1_medium" #Recovery Tank
+		texturefile = "gfx/interface/technologies/KOR_armored_support_vehicle_recovery_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_armored_support_vehicle_recovery_2_medium" #Recovery Tank
+		texturefile = "gfx/interface/technologies/KOR_armored_support_vehicle_recovery_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_armored_support_vehicle_crossing_medium" #Bridge Layer
+		texturefile = "gfx/interface/technologies/KOR_armored_support_vehicle_crossing.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_armored_support_vehicle_command_medium"
+		texturefile = "gfx/interface/technologies/KOR_armored_support_vehicle_command.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_land_cruiser_armor_medium"
+		texturefile = "gfx/interface/technologies/KOR_land_cruiser_armor.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_land_cruiser_chassis_medium"
+		texturefile = "gfx/interface/technologies/KOR_land_cruiser_armor.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_super_heavy_artillery_equipment_medium"
+		texturefile = "gfx/interface/technologies/KOR_super_heavy_artillery.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_self_propelled_super_heavy_artillery_equipment_medium"
+		texturefile = "gfx/interface/technologies/KOR_self_propelled_super_heavy_artillery.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_super_heavy_railway_gun_equipment_medium"
+		texturefile = "gfx/interface/technologies/KOR_super_heavy_railway_gun.dds"
+	}
+	
+	
+	#Naval Equipment
+	# Midget Submarines
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_midget_submarine_medium" #Used for MTG Version
+		texturefile = "gfx/interface/technologies/KOR_midget_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_midget_submarine_medium" #Used for non-MTG Version
+		texturefile = "gfx/interface/technologies/KOR_midget_submarine.dds"
+	}
+	SpriteType = { #MM: Should be obsolete now
+		name = "GFX_KOR_midget_submarines_medium" #Used for tech (tech researched pop-up)
+		texturefile = "gfx/interface/technologies/KOR_midget_submarine.dds"
+	}
+
+	# Cruiser Submarine GFXs
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_submarine_medium" #Used for MTG equipment
+		texturefile = "gfx/interface/technologies/KOR_cruiser_submarine.dds" #Was ship_hull_cruiser_submarine, with GOT we got a new icon that matches the new 3D model
+	}
+	SpriteType = {
+		name = "GFX_KOR_cruiser_submarine_medium" #Used for non-MTG equipment
+			texturefile = "gfx/interface/technologies/KOR_cruiser_submarine.dds" #Was ship_hull_cruiser_submarine, with GOT we got a new icon that matches the new 3D model
+	}
+	SpriteType = { #MM: Should be obsolete now
+		name = "GFX_KOR_cruiser_submarines_medium" #Used for tech (tech researched pop-up)
+		texturefile = "gfx/interface/technologies/KOR_cruiser_submarine.dds" #Was ship_hull_cruiser_submarine, with GOT we got a new icon that matches the new 3D model
+	}
+
+	# Fleet Submarine
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_fleet_submarine_medium" #Used for MTG Fleet Submarine (Equipment)
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_fleet_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fleet_submarine_medium" #Used for non-MTG Fleet Submarine (Equipment)
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_fleet_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_rocket_submarine_medium" #Used for non-MTG Rocket Submarine (Equipment)
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_fleet_submarine.dds"
+	}
+
+	# Nuclear Submarine
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_nuclear_submarine_medium" #Used for MTG Nuclear Submarine
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_nuclear_powered_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_nuclear_submarine_medium" #Used for non-MTG Nuclear Submarine
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_nuclear_powered_submarine.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KOR_nuclear_missile_submarine_medium" #Used for non-MTG Nuclear Missile Submarine
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_nuclear_powered_submarine.dds"
+	}
+
+	# Torpedo Cruiser
+	SpriteType = {
+		name = "GFX_KOR_torpedo_cruiser_mtg_medium" #Used for MTG Torpedo Cruiser
+		texturefile = "gfx/interface/technologies/KOR_torpedo_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_torpedo_cruiser_medium" #Used for non-MTG Torpedo Cruiser
+		texturefile = "gfx/interface/technologies/KOR_torpedo_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_torpedo_cruiser_medium" #Used for Tech?
+		texturefile = "gfx/interface/technologies/KOR_torpedo_cruiser.dds"
+	}
+	
+	# Panzership
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_cruiser_panzerschiff_medium"	#Used for MTG Panzership
+		texturefile = "gfx/interface/technologies/KOR_panzerschiff.dds"
+	}
+
+	# Modern Carrier
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_carrier_modern_medium" #MTG Modern Carrier
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_super_carrier.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_modern_carrier_medium" #Non-MTG Modern Carrier
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_super_carrier.dds"
+	}
+	
+	# Modern Battleship
+	SpriteType = {
+		name = "GFX_KOR_ship_hull_heavy_modern_medium" #Modern MTG Battleship
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_modern_super_battleship.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KOR_modern_battleship_medium" #Modern Non-MTG Battleship
+		texturefile = "gfx/interface/technologies/KOR_ship_hull_modern_super_battleship.dds"
+	}
+		
+}

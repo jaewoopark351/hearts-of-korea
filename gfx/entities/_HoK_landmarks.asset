@@ -1,0 +1,5 @@
+entity = {
+	name = "building_landmark_gyeongbokgung"
+	pdxmesh = "landmark_gyeongbokgung_mesh"
+	scale = 1.0
+}

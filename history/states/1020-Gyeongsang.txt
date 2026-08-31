@@ -1,0 +1,43 @@
+state={
+	id=1020
+	name="STATE_1020"
+	provinces={
+		1054 1081 4056 4086 4103 7121 10085 10115 11912 12060 12089 13394 13395 13396 13397 13398 13399
+	}
+	resources={
+		tungsten=5.000
+	}
+	
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			dockyard = 1
+			arms_factory = 1
+			air_base = 1
+			4056 = {
+				naval_base = 5
+				coastal_bunker = 1
+			}
+		}
+		victory_points = {
+			4056 20
+		}
+		victory_points = {
+			13398 15
+		}
+		add_core_of = KOR
+		
+		1939.3.14 = {
+			owner = JAP
+			controller = JAP
+		}
+
+	}
+	
+	manpower=4811479
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

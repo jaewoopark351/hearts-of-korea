@@ -1,0 +1,1688 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = fin_finnppong_status
+						option = FINNPPONG_ENABLED
+					}
+				}
+				FIN = {
+					#basic setup
+					set_global_flag = fin_finnppong_option_enabled
+					set_global_flag = form_nordic_league_flag
+					
+					#Re-militarize olland(145)
+					145 = { set_demilitarized_zone = no }
+					
+					#territory of finn empire
+					
+					transfer_state = 213	#Soviet territory
+					transfer_state = 215
+					transfer_state = 216
+					transfer_state = 110	#Norway
+					transfer_state = 142
+					transfer_state = 143
+					transfer_state = 144
+					transfer_state = 914
+					transfer_state = 920
+					transfer_state = 921
+					transfer_state = 922
+					transfer_state = 923
+					transfer_state = 924
+					transfer_state = 925
+					transfer_state = 138	#Sweden
+					transfer_state = 139
+					transfer_state = 140
+					transfer_state = 141
+					transfer_state = 38
+					transfer_state = 666
+					transfer_state = 124
+					transfer_state = 913
+					transfer_state = 915
+					transfer_state = 916
+					transfer_state = 917
+					transfer_state = 918
+					transfer_state = 919
+					transfer_state = 99		#Denmark
+					transfer_state = 37
+					transfer_state = 337
+					transfer_state = 100
+					transfer_state = 101
+					transfer_state = 912
+					transfer_state = 911
+					transfer_state = 910
+					transfer_state = 811	#Estonia
+					transfer_state = 812
+					transfer_state = 813
+					transfer_state = 13
+					transfer_state = 191
+					transfer_state = 12		#Latvia
+					transfer_state = 810
+					transfer_state = 808
+					transfer_state = 809
+					transfer_state = 190
+					transfer_state = 452	#Egypt
+					transfer_state = 552
+					transfer_state = 447
+					transfer_state = 907
+					transfer_state = 457
+					transfer_state = 456
+					
+					111 = { set_state_category = metropolis }							#Capital of Greater Finn Empire
+					146 = { add_extra_state_shared_building_slots = 2 }					#Original Finnland States
+					147 = { add_extra_state_shared_building_slots = 2 }
+					148 = { add_extra_state_shared_building_slots = 2 }
+					149 = { add_extra_state_shared_building_slots = 2 }
+					150 = { add_extra_state_shared_building_slots = 2 }
+					213	= { add_core_of = FIN add_extra_state_shared_building_slots = 2 remove_core_of = SOV } #Soviet territory
+					215 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 remove_core_of = SOV }
+					216 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 remove_core_of = SOV }
+					110 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }	#Norway
+					142 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					143 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					144 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					914 = { add_core_of = FIN }
+					920 = { add_core_of = FIN }
+					921 = { add_core_of = FIN }
+					922 = { add_core_of = FIN }
+					923 = { add_core_of = FIN }
+					924 = { add_core_of = FIN }
+					925 = { add_core_of = FIN }
+					138 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }	#Sweden
+					139 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					140 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					141 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					38 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					666 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					124 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					913 = { add_core_of = FIN }
+					915 = { add_core_of = FIN }
+					916 = { add_core_of = FIN }
+					917 = { add_core_of = FIN }
+					918 = { add_core_of = FIN }
+					919 = { add_core_of = FIN }
+					99 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }	#Denmark
+					37 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					337 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					100 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					101 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					912 = { add_core_of = FIN }
+					911 = { add_core_of = FIN }
+					910 = { add_core_of = FIN }
+					811 = { add_core_of = FIN }	#Estonia
+					812 = { add_core_of = FIN }
+					813 = { add_core_of = FIN }
+					13 = { add_core_of = FIN  }
+					191 = { add_core_of = FIN  }
+					12 = { add_core_of = FIN }	#Latvia
+					810 = { add_core_of = FIN }
+					808 = { add_core_of = FIN }
+					809 = { add_core_of = FIN }
+					190 = { add_core_of = FIN }
+					452 = { add_core_of = FIN }	#Egypt
+					552 = { add_core_of = FIN }
+					447 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					907 = { add_core_of = FIN add_extra_state_shared_building_slots = 2 }
+					457 = { add_core_of = FIN }
+					456 = { add_core_of = FIN }
+					
+					#More military factories for finn
+					38 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					666 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					143 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					144 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					148 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					149 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					150 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					213 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					215 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					100 = {
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+					
+					#more railways for finn
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3187 6052 9176 9078 2994 11159  }
+						start_province = 3187
+						target_province = 11159
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6146 7 6098 11054 11096 36 11045 3189  }
+						start_province = 6146
+						target_province = 3189
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6146 11024 6134 3073 6045 3156 11030 3107 6142 103 6061 11104 9089 76 11077 3040 6079 3082 3058 11050 }
+						start_province = 6146
+						target_province = 11050
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3134 11183 6117 9140 11142 9116 3097 6061 }
+						start_province = 3134
+						target_province = 6061
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 11125 124 6087 11204 11167 6142 }
+						start_province = 11125
+						target_province = 6142
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 11050 91 3145 192 }
+						start_province = 11050
+						target_province = 192
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 118 3173 6200 109 3003 9211 11102 190 6155 192 }
+						start_province = 118
+						target_province = 192
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6155 9126 6214 173 6111 9208 9069 3098 11173 115 6038 }
+						start_province = 6155
+						target_province = 6038
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3094 3059 }
+						start_province = 3094
+						target_province = 3059
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9096 11176 9296 }
+						start_province = 9096
+						target_province = 9296
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3094 6184 11101 137 53 }
+						start_province = 3094
+						target_province = 53
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 11037 6136 3093 9216 3096 21 3022 }
+						start_province = 11037
+						target_province = 3022
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 147 9138 6195 3070 6093 156 9193 9117 }
+						start_province = 147
+						target_province = 9117
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 6093 9182 3005 6123 202 6207 11118 9139 }
+						start_province = 6093
+						target_province = 9139
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 3156 197 9123 3121 }
+						start_province = 3156
+						target_province = 3121
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 9233 3115 3153 6179 3156 }
+						start_province = 9233
+						target_province = 3156
+					}
+					build_railway = {
+						level = 2
+						build_only_on_allied = no
+						path = { 11380 11390 3229 299 329 11215 }
+						start_province = 11380
+						target_province = 11215
+					}
+					
+					#oil for finn
+					101 = {
+						add_resource = { 
+							type = oil
+							amount = 25
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = synthetic_refinery
+							level = 2
+							instant_build = yes
+						}
+					}
+					
+					
+					
+					#more supply hubs for finn
+					
+					
+					#more infrastructure for finn
+					38 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					143 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					666 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					144 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					213 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+					148 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+					149 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					150 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					215 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					111 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					216 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					100 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+					
+					
+					
+					#build mannerheim line
+					146 = {
+						add_building_construction = { type = bunker province = 3060 level = 10 instant_build = yes }
+						add_building_construction = { type = bunker province = 9150 level = 10 instant_build = yes }
+					}
+					216 = {
+						add_building_construction = { type = bunker province = 11153 level = 10 instant_build = yes }
+						add_building_construction = { type = bunker province = 6057 level = 10 instant_build = yes }
+						add_building_construction = { type = bunker province = 3084 level = 10 instant_build = yes }
+						add_building_construction = { type = bunker province = 6106 level = 10 instant_build = yes }
+					}
+					215 = {
+						add_building_construction = { type = bunker province = 6090 level = 10 instant_build = yes }
+						add_building_construction = { type = bunker province = 11094 level = 10 instant_build = yes }
+						add_building_construction = { type = bunker province = 6159 level = 10 instant_build = yes }
+						add_building_construction = { type = bunker province = 9055 level = 10 instant_build = yes }
+					}
+					
+			
+					#Units and technologies of finn
+					set_technology = {
+						infantry_weapons = 1
+						infantry_weapons1 = 1
+						tech_support = 1
+						tech_engineers = 1
+						tech_recon = 1
+						tech_mountaineers = 1
+						motorised_infantry = 1
+						gw_artillery = 1
+						interwar_antiair = 1
+						trench_warfare = 1
+						fleet_in_being = 1
+						fuel_silos = 1
+						fuel_refining = 1
+						basic_train = 1
+						popup = no
+					}
+					
+					if = {
+						limit = { has_dlc = "No Step Back" }
+						set_technology = {
+							gwtank_chassis = 1
+							basic_light_tank_chassis = 1
+							popup = no
+						}
+						
+						else = {
+							set_technology = {
+								gwtank = 1
+								basic_light_tank = 1
+								popup = no
+							}
+						}
+					}			
+					
+					if = {
+						limit = { has_dlc = "Man the Guns" }
+						add_ideas = MTG_naval_treaty_adherent
+						set_technology = {
+							basic_naval_mines = 1
+							submarine_mine_laying = 1
+							early_ship_hull_light = 1
+							basic_ship_hull_light = 1
+							early_ship_hull_submarine = 1
+							early_ship_hull_cruiser = 1
+							basic_ship_hull_cruiser = 1
+							early_ship_hull_heavy = 1
+							basic_ship_hull_heavy = 1
+							early_ship_hull_carrier = 1
+							basic_ship_hull_carrier = 1
+							basic_battery = 1
+							basic_light_battery = 1
+							basic_medium_battery = 1
+							basic_heavy_battery = 1
+							basic_torpedo = 1
+							sonar = 1
+							smoke_generator = 1
+							basic_depth_charges = 1
+							basic_cruiser_armor_scheme = 1
+							basic_heavy_armor_scheme = 1
+							mtg_transport = 1
+							basic_fire_control_system = 1
+							basic_dp_light_battery = 1
+							popup = no
+						}		
+						else = {
+							set_technology = {
+								early_submarine = 1
+								early_destroyer = 1
+								basic_destroyer = 1
+								early_light_cruiser = 1
+								early_heavy_cruiser = 1
+								early_battleship = 1
+								early_battlecruiser = 1
+								early_carrier = 1
+								transport = 1
+								popup = no
+							}
+						}
+					}
+					
+					if = {
+						limit = { has_dlc = "By Blood Alone" }
+							set_technology = {
+								aa_lmg = 1
+								engines_1 = 1
+								engines_2 = 1
+								early_bombs = 1
+								aircraft_construction = 1
+								iw_small_airframe = 1
+								iw_medium_airframe = 1
+								iw_large_airframe = 1
+								basic_medium_airframe = 1
+								basic_small_airframe = 1
+								popup = no
+							}
+							else = {
+								set_technology = {
+									early_fighter = 1
+									cv_early_fighter = 1
+									cv_naval_bomber1 = 1
+									naval_bomber1 = 1
+									early_bomber = 1
+									CAS1 = 1
+									popup = no
+								}
+							}
+					}
+					
+					
+					
+					#equipment variants for finn
+					
+					if = {
+						limit = { has_dlc = "No Step Back" }
+						create_equipment_variant = {
+							name = "FF-35"
+							type = light_tank_chassis_1
+							parent_version = 0
+							modules = {
+								main_armament_slot = tank_small_cannon_2
+								turret_type_slot = tank_light_two_man_tank_turret
+								suspension_type_slot = tank_christie_suspension
+								armor_type_slot = tank_riveted_armor
+								engine_type_slot = tank_gasoline_engine
+								special_type_slot_1 = tank_radio_1
+							}
+							upgrades = {
+								tank_nsb_engine_upgrade = 2
+								tank_nsb_armor_upgrade = 4
+							}
+						}
+					}			
+					
+					
+					if = {
+						limit = { has_dlc = "Man the Guns" }
+						create_equipment_variant = {
+							name = "Hämeenmaa Class"
+							type = ship_hull_light_1
+							name_group = FIN_DD_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = dp_light_battery_1
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+								fixed_ship_radar_slot = ship_sonar_1
+								fixed_ship_engine_slot = light_ship_engine_1
+								fixed_ship_torpedo_slot = ship_torpedo_1
+								mid_1_custom_slot = ship_torpedo_1
+								rear_1_custom_slot = ship_depth_charge_1
+							}
+						}
+						create_equipment_variant = {
+							name = "Pommi Class"
+							type = ship_hull_light_2
+							name_group = FIN_DD_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = dp_light_battery_2
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+								fixed_ship_radar_slot = ship_sonar_1
+								fixed_ship_engine_slot = light_ship_engine_1
+								fixed_ship_torpedo_slot = ship_torpedo_1
+								mid_1_custom_slot = ship_torpedo_1
+								rear_1_custom_slot = ship_depth_charge_1
+							}
+						}
+						create_equipment_variant = {
+							name = "Salo Class"
+							type = ship_hull_cruiser_1
+							name_group = FIN_CL_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_light_medium_battery_1
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = cruiser_ship_engine_2
+								fixed_ship_armor_slot = ship_armor_cruiser_1
+								mid_1_custom_slot = ship_torpedo_1
+								mid_2_custom_slot = ship_torpedo_1
+								rear_1_custom_slot = ship_light_medium_battery_1
+							}
+						}
+						create_equipment_variant = {
+							name = "Kajaani Class"
+							type = ship_hull_cruiser_2
+							name_group = FIN_CL_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_light_medium_battery_2
+								fixed_ship_anti_air_slot = ship_anti_air_2
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = cruiser_ship_engine_2
+								fixed_ship_armor_slot = ship_armor_cruiser_1
+								fixed_ship_secondaries_slot = dp_ship_secondaries_1
+								front_1_custom_slot = empty
+								mid_1_custom_slot = ship_torpedo_1
+								mid_2_custom_slot = ship_airplane_launcher_1
+								rear_1_custom_slot = ship_light_medium_battery_2
+							}
+						}
+						create_equipment_variant = {
+							name = "Helsinki Class"
+							type = ship_hull_cruiser_1
+							name_group = FIN_CA_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_medium_battery_2
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = cruiser_ship_engine_2
+								fixed_ship_armor_slot = ship_armor_cruiser_1
+								fixed_ship_secondaries_slot = dp_ship_secondaries_1
+								mid_1_custom_slot = ship_airplane_launcher_1
+								mid_2_custom_slot = ship_torpedo_1
+								rear_1_custom_slot = ship_medium_battery_2
+							}
+						}
+						create_equipment_variant = {
+							name = "Väinämöinen Class"
+							type = ship_hull_heavy_1
+							name_group = FIN_BC_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_heavy_battery_1
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = heavy_ship_engine_2
+								fixed_ship_secondaries_slot = dp_ship_secondaries_1
+								fixed_ship_armor_slot = ship_armor_bc_1
+								front_1_custom_slot = ship_anti_air_1
+								mid_1_custom_slot = ship_airplane_launcher_1
+								mid_2_custom_slot = ship_secondaries_1
+								rear_1_custom_slot = ship_heavy_battery_1
+							}
+						}
+						create_equipment_variant = {
+							name = "Karjala Class"
+							type = ship_hull_heavy_1
+							name_group = FIN_BB_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_heavy_battery_1
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = heavy_ship_engine_2
+								fixed_ship_secondaries_slot = dp_ship_secondaries_1
+								fixed_ship_armor_slot = ship_armor_bb_1
+								front_1_custom_slot = ship_anti_air_1
+								mid_1_custom_slot = dp_ship_secondaries_1
+								mid_2_custom_slot = dp_ship_secondaries_1
+								rear_1_custom_slot = ship_heavy_battery_1
+							}
+						}
+						create_equipment_variant = {
+							name = "Suomi Class"
+							type = ship_hull_heavy_2
+							name_group = FIN_BB_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_battery_slot = ship_heavy_battery_2
+								fixed_ship_anti_air_slot = ship_anti_air_2
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = heavy_ship_engine_2
+								fixed_ship_secondaries_slot = dp_ship_secondaries_2
+								fixed_ship_armor_slot = ship_armor_bb_2
+								front_1_custom_slot = ship_heavy_battery_2
+								mid_1_custom_slot = dp_ship_secondaries_2
+								mid_2_custom_slot = dp_ship_secondaries_2
+								rear_1_custom_slot = ship_anti_air_2
+							}
+						}
+						create_equipment_variant = {
+							name = "Riilahti Class"
+							type = ship_hull_carrier_conversion_bb
+							name_group = FIN_CV_HISTORICAL
+							parent_version = 0
+							modules = {
+								fixed_ship_deck_slot_1 = ship_deck_space
+								fixed_ship_deck_slot_2 = ship_deck_space
+								fixed_ship_anti_air_slot = ship_anti_air_1
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = heavy_ship_engine_2
+								fixed_ship_secondaries_slot = dp_ship_secondaries_1
+								mid_1_custom_slot = ship_deck_space
+							}
+						}
+					}
+					
+					if = {
+						limit = { has_dlc = "By Blood Alone" }
+						create_equipment_variant = {
+							name = "VL Humu"
+							type = small_plane_airframe_0
+							modules = {
+								fixed_main_weapon_slot = light_mg_2x
+								fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+								engine_type_slot = engine_2_1x
+								special_type_slot_1 = empty
+							}
+						}
+						create_equipment_variant = {
+							name = "VL Tuisku"
+							type = small_plane_cas_airframe_0
+							modules = {
+								fixed_main_weapon_slot = bomb_locks
+								engine_type_slot = engine_2_1x
+								special_type_slot_1 = lmg_defense_turret
+								special_type_slot_2 = dive_brakes_small
+							}
+						}
+					}
+					
+					
+					#finnppong OOB
+					
+					delete_unit_template_and_units = { division_template = "Jalkaväkidivisioona" }
+					delete_unit_template_and_units = { division_template = "Ratsuväkiprikaati" }
+					delete_unit_template_and_units = { division_template = "Mountaineer-Division" }
+					delete_unit_template_and_units = { division_template = "Armored-Division" }
+					delete_unit_template_and_units = { division_template = "Motorized-Division" }
+					
+					division_template = {
+						name = "Jalkaväkidivisioona"
+						priority = 1
+						division_names_group = FIN_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+				
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }      		
+							artillery = { x = 0 y = 1 }
+							engineer = { x = 0 y = 2 }
+						}
+					}
+					division_template = {
+						name = "Sissidivisioona"
+						priority = 2
+						division_names_group = FIN_MTN_01
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+				
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+				
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }      		
+							artillery = { x = 0 y = 1 }
+							engineer = { x = 0 y = 2 }
+						}
+					}
+					division_template = {
+						name = "Panssaridivisioona" 	
+						division_names_group = FIN_ARM_01
+		
+						regiments = {
+							light_armor = { x = 0 y = 0 }		
+							light_armor = { x = 0 y = 1 }
+							light_armor = { x = 0 y = 2 }							
+							light_armor = { x = 1 y = 0 }		
+							light_armor = { x = 1 y = 1 }
+							light_armor = { x = 1 y = 2 }
+							motorized = { x = 2 y = 0 }			
+							motorized = { x = 2 y = 1 }
+							motorized = { x = 2 y = 2 }
+							motorized = { x = 2 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					
+					111 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Sissidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Sissidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					149 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Sissidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					150 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Sissidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					146 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Sissidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					215 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Sissidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					216 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Sissidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					148 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					213 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					144 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					666 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					38 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					141 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					139 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					138 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					110 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					142 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					143 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					99 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					37 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					907 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Panssaridivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					447 = {
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+						create_unit = {
+							division = "division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.3" 
+							owner = FIN
+						}
+					}
+					
+					
+					
+					if = {
+						limit = { has_dlc = "Man the Guns" }
+						
+						create_ship = {
+							type = ship_hull_heavy_2
+							equipment_variant = "Suomi Class"
+							name = "Suomi"
+						}
+						create_ship = {
+							type = ship_hull_heavy_2
+							equipment_variant = "Suomi Class"
+							name = "Kainuu"
+						}
+						create_ship = {
+							type = ship_hull_heavy_1
+							equipment_variant = "Karjala Class"
+							name = "Karjala"
+						}
+						create_ship = {
+							type = ship_hull_heavy_1
+							equipment_variant = "Karjala Class"
+							name = "Lappi"
+						}
+						create_ship = {
+							type = ship_hull_heavy_1
+							equipment_variant = "Karjala Class"
+							name = "Pohjanmaa"
+						}
+						create_ship = {
+							type = ship_hull_carrier_conversion_bb
+							equipment_variant = "Riilahti Class"
+							name = "Riilahti"
+						}
+						create_ship = {
+							type = ship_hull_carrier_conversion_bb
+							equipment_variant = "Riilahti Class"
+							name = "Ruotsinsalmi"
+						}
+						create_ship = {
+							type = ship_hull_carrier_conversion_bb
+							equipment_variant = "Riilahti Class"
+							name = "Pohjanmaa"
+						}
+						create_ship = {
+							type = ship_hull_carrier_conversion_bb
+							equipment_variant = "Riilahti Class"
+							name = "Keihässalmi"
+						}
+						create_ship = {
+							type = ship_hull_heavy_1
+							equipment_variant = "Väinämöinen Class"
+							name = "Väinämöinen"
+						}
+						create_ship = {
+							type = ship_hull_heavy_1
+							equipment_variant = "Väinämöinen Class"
+							name = "Ilmarinen"
+						}
+						create_ship = {
+							type = ship_hull_heavy_1
+							equipment_variant = "Väinämöinen Class"
+							name = "Lemminkäinen"
+						}
+						create_ship = {
+							type = ship_hull_heavy_1
+							equipment_variant = "Väinämöinen Class"
+							name = "Joukahainen"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Helsinki Class" 
+							name = "Helsinki"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Helsinki Class" 
+							name = "Espoo"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Helsinki Class" 
+							name = "Tampere"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Helsinki Class" 
+							name = "Vantaa"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Helsinki Class" 
+							name = "Oulu"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Helsinki Class" 
+							name = "Turku"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Helsinki Class" 
+							name = "Jyväskylä"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_2
+							equipment_variant = "Kajaani Class" 
+							name = "Kajaani"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_2
+							equipment_variant = "Kajaani Class" 
+							name = "Kerava"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_2
+							equipment_variant = "Kajaani Class" 
+							name = "Savonlinna"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_2
+							equipment_variant = "Kajaani Class" 
+							name = "Nokia"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_2
+							equipment_variant = "Kajaani Class" 
+							name = "Kaarina"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_2
+							equipment_variant = "Kajaani Class" 
+							name = "Ylöjärvi"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_2
+							equipment_variant = "Kajaani Class" 
+							name = "Kangasala"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_2
+							equipment_variant = "Kajaani Class" 
+							name = "Riihimäki"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_2
+							equipment_variant = "Kajaani Class" 
+							name = "Raasepori"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Salo Class" 
+							name = "Salo"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Salo Class" 
+							name = "Porvoo"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Salo Class" 
+							name = "Kokkola"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Salo Class" 
+							name = "Hyvinkää"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Salo Class" 
+							name = "Lohja"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Salo Class" 
+							name = "Järvenpää"
+						}
+						create_ship = {
+							type = ship_hull_cruiser_1
+							equipment_variant = "Salo Class" 
+							name = "Rauma"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Hämeenmaa"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Matti Kurki"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Uusimaa"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Karjala"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Turunmaa"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Sisu"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Hurja"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Isku"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Syöksy"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Nuoli"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Vinha"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Raju"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Vasama"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Vihuri"
+						}
+						create_ship = {
+							type = ship_hull_light_1
+							equipment_variant = "Hämeenmaa Class" 
+							name = "Viima"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Pommi"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Miina"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Lieska"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Loimu"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Paukku"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Porkkala"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Pukkio"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Pansio"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Frej"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Poseidon"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Ajonpää"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Kallanpää"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Purunpää"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Vahterpää"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Tammenpää"
+						}
+						create_ship = {
+							type = ship_hull_light_2
+							equipment_variant = "Pommi Class" 
+							name = "Katanpää"
+						}
+						
+						
+						else = {
+							
+						}
+					}
+					
+					if = {
+						limit = { has_dlc = "By Blood Alone" }
+						add_equipment_to_stockpile = {
+							type = small_plane_airframe_0
+							amount = 500
+							producer = FIN
+							variant_name = "VL Humu"
+						}
+						add_equipment_to_stockpile = {
+							type = small_plane_cas_airframe_0
+							amount = 300
+							producer = FIN
+							variant_name = "VL Tuisku"
+						}
+						#for aircraft carrier
+						add_equipment_to_stockpile = {
+							type = cv_small_plane_airframe_0
+							amount = 120
+							producer = FRA
+							variant_name = "D.371"
+						}
+						add_equipment_to_stockpile = {
+							type = cv_small_plane_naval_bomber_airframe
+							amount = 120
+							producer = FRA
+							variant_name = "PL.7"
+						}
+						
+						else = {
+							add_equipment_to_stockpile = {
+								type = fighter_equipment_0
+								amount = 500
+								producer = FIN
+							}
+							add_equipment_to_stockpile = {
+								type = CAS_equipment_1
+								amount = 300
+								producer = FIN
+							}
+							#for aircraft carrier
+							add_equipment_to_stockpile = {
+								type = cv_fighter_equipment_0
+								amount = 120
+								producer = FRA
+							}
+							add_equipment_to_stockpile = {
+								type = cv_nav_bomber_equipment_1
+								amount = 120
+								producer = FRA
+							}
+						}
+					}
+					
+					
+					#others
+					
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 200
+						producer = FIN
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 600
+						producer = FIN
+					}
+				}
+			}
+		}
+	}
+}

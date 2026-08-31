@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_bongchang_lee"
+		texturefile = "gfx/leaders/KOR/portrait_KOR_operative_Bongchang_Lee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_bonggil_yoon"
+		texturefile = "gfx/leaders/KOR/portrait_KOR_operative_Bonggil_Yoon.dds"
+	}
+}

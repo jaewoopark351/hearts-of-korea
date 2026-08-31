@@ -1,0 +1,167 @@
+KOR_ai_behavior = {
+	name = "KOR_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC"
+		desc = "RULE_OPTION_DEMOCRATIC_KOR_AI_DESC"
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_COMMUNIST"
+		desc = "RULE_OPTION_COMMUNIST_KOR_AI_DESC"
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_FASCIST"
+		desc = "RULE_OPTION_FASCIST_KOR_AI_DESC"
+	}
+	option = {
+		name = NEUTRALITY
+		text = "RULE_OPTION_NEUTRALITY"
+		desc = "RULE_OPTION_NEUTRALITY_KOR_AI_DESC"
+	}
+}
+
+kor_HoK_ragnarok_status = {
+	name = "HOK_RAGNAROK_STATUS"
+	group = "RULE_GROUP_GOOKPPONG_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_RAGNAROK_DESC"
+	}
+	option = {
+		name = RAGNAROK_ENABLED
+		text = "RAGNAROK_ENABLED_TEXT"
+		desc = "RAGNAROK_ENABLED_TEXT_DESC"
+	}
+}
+
+kor_gookppong_status = {
+	name = "GOOKPPONG_STATUS"
+	group = "RULE_GROUP_GOOKPPONG_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_GOOKPPONG_DESC"
+	}
+	option = {
+		name = GOOKPPONG_ENABLED
+		text = "GOOKPPONG_ENABLED_TEXT"
+		desc = "GOOKPPONG_ENABLED_TEXT_DESC"
+	}
+	option = {
+		name = GOOKPPONG_MIDDLE_POWER_ENABLED
+		text = "GOOKPPONG_MIDDLE_POWER_ENABLED_TEXT"
+		desc = "GOOKPPONG_MIDDLE_POWER_ENABLED_TEXT_DESC"
+	}
+}
+chi_jungppong_status = {
+	name = "JUNGPPONG_STATUS"
+	group = "RULE_GROUP_GOOKPPONG_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_JUNGPPONG_DESC"
+	}
+	option = {
+		name = JUNGPPONG_ENABLED
+		text = "JUNGPPONG_ENABLED_TEXT"
+		desc = "JUNGPPONG_ENABLED_TEXT_DESC"
+	}
+}
+fin_finnppong_status = {
+	name = "FINNPPONG_STATUS"
+	group = "RULE_GROUP_GOOKPPONG_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FINNPPONG_DESC"
+	}
+	option = {
+		name = FINNPPONG_ENABLED
+		text = "FINNPPONG_ENABLED_TEXT"
+		desc = "FINNPPONG_ENABLED_TEXT_DESC"
+	}
+}
+mon_mongppong_status = {
+	name = "MONGPPONG_STATUS"
+	group = "RULE_GROUP_GOOKPPONG_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_MONGPPONG_DESC"
+	}
+	option = {
+		name = MONGPPONG_ENABLED
+		text = "MONGPPONG_ENABLED_TEXT"
+		desc = "MONGPPONG_ENABLED_TEXT_DESC"
+	}
+}
+sov_sibbppong_status = {
+	name = "SIBBPPONG_STATUS"
+	group = "RULE_GROUP_GOOKPPONG_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_SIBBPPONG_DESC"
+	}
+	option = {
+		name = SIBBPPONG_ENABLED
+		text = "SIBBPPONG_ENABLED_TEXT"
+		desc = "SIBBPPONG_ENABLED_TEXT_DESC"
+	}
+}
+
+
+
+#baebakee_option_status = {
+#	name = "BAEBAKEE_STATUS"
+#	group = "RULE_GROUP_GOOKPPONG_SETUP"
+#	default = {
+#		name = DEFAULT
+#		text = "RULE_OPTION_DEFAULT"
+#		desc = "RULE_OPTION_DEFAULT_BAEBAKEE_DESC"
+#	}
+#	option = {
+#		name = BAEBAKEE_ENABLED
+#		text = "BAEBAKEE_ENABLED_TEXT"
+#		desc = "BAEBAKEE_ENABLED_TEXT_DESC"
+#	}
+#}
+
+#byz_byppong_status = {
+#	name = "BYPPONG_STATUS"
+#	group = "RULE_GROUP_GOOKPPONG_SETUP"
+#	default = {
+#		name = DEFAULT
+#		text = "RULE_OPTION_DEFAULT"
+#		desc = "RULE_OPTION_DEFAULT_BYPPONG_DESC"
+#	}
+#	option = {
+#		name = BYPPONG_ENABLED
+#		text = "BYPPONG_ENABLED_TEXT"
+#		desc = "BYPPONG_ENABLED_TEXT_DESC"
+#	}
+#}
+
+#ast_happpong_status = {
+#	name = "HAPPPONG_STATUS"
+#	group = "RULE_GROUP_GOOKPPONG_SETUP"
+#	default = {
+#		name = DEFAULT
+#		text = "RULE_OPTION_DEFAULT"
+#		desc = "RULE_OPTION_DEFAULT_HAPPONG_DESC"
+#	}
+#	option = {
+#		name = HAPPPONG_ENABLED
+#		text = "HAPPPONG_ENABLED_TEXT"
+#		desc = "HAPPPONG_ENABLED_TEXT_DESC"
+#	}
+#}

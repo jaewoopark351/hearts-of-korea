@@ -1,0 +1,12 @@
+animation = {
+	name = "KOR_mechanized_idle_animation"
+	file = "KOR_mechanized_idle.anim"
+}
+animation = {
+	name = "KOR_mechanized_moving_animation"
+	file = "KOR_mechanized_moving.anim"
+}
+animation = {
+	name = "KOR_mechanized_attack_animation"
+	file = "KOR_mechanized_attack.anim"
+}

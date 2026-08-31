@@ -1,0 +1,38 @@
+spriteTypes = {	
+
+	### category pictures
+	spriteType = {
+		name = "GFX_decision_cat_generic_goguryeo"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_goguryeo.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_kor_jaebeol"
+		texturefile = "gfx/interface/decisions/decision_cat_kor_jaebeol.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_kor_CNDP"
+		texturefile = "gfx/interface/decisions/decision_cat_kor_CNDP.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_kor_decision_expend_federation_of_balhae"
+		texturefile = "gfx/interface/decisions/decision_cat_kor_decision_expend_federation_of_balhae.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_jap_unite_karafuto"
+		texturefile = "gfx/interface/decisions/decision_cat_jap_unite_karafuto.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_greater_mongolia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_greater_mongolia.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_unite_mongolia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_unite_mongolia.dds"
+	}
+	
+	## dynamic modifiers
+	spriteType = {
+		name = "GFX_modifiers_KOR_jewish_community"
+		texturefile = "gfx/interface/modifiers_KOR_jewish_community.dds"
+	}
+}

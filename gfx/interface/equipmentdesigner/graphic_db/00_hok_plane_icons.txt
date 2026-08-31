@@ -1,0 +1,154 @@
+KOR = {
+	small_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_KOR_fighter_BBA_6_medium
+				GFX_KOR_fighter_BBA_5_medium
+				GFX_KOR_fighter_BBA_4_medium
+				GFX_KOR_fighter_BBA_3_medium
+				GFX_KOR_fighter_BBA_2_medium
+				GFX_KOR_fighter_BBA_1_medium
+				GFX_KOR_Seaplane_fighter_medium
+				GFX_KOR_small_plane_airframe_5_medium
+				GFX_KOR_jet_fighter1_medium
+				GFX_KOR_naval_bomber3_medium
+				GFX_KOR_CAS3_medium
+				GFX_KOR_fighter3_medium
+				GFX_KOR_naval_bomber2_medium
+				GFX_KOR_CAS2_medium
+				GFX_KOR_fighter2_medium
+				GFX_KOR_naval_bomber1_medium
+				GFX_KOR_CAS1_medium
+				GFX_KOR_fighter1_medium
+				GFX_KOR_naval_bomber0_medium
+				GFX_KOR_CAS0_medium
+				GFX_KOR_fighter0_medium
+				GFX_KOR_early_fighter_medium
+			}
+			models = {
+				KOR_light_plane_entity
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_KOR_fighter_BBA_6_cv_medium
+				GFX_KOR_fighter_BBA_5_cv_medium
+				GFX_KOR_fighter_BBA_4_cv_medium
+				GFX_KOR_fighter_BBA_3_cv_medium
+				GFX_KOR_fighter_BBA_2_cv_medium
+				GFX_KOR_fighter_BBA_1_cv_medium
+				GFX_KOR_cv_jet_fighter1_medium
+				GFX_KOR_cv_CAS3_medium
+				GFX_KOR_cv_naval_bomber3_medium
+				GFX_KOR_cv_fighter3_medium
+				GFX_KOR_cv_CAS2_medium
+				GFX_KOR_cv_naval_bomber2_medium
+				GFX_KOR_cv_fighter2_medium
+				GFX_KOR_cv_CAS1_medium
+				GFX_KOR_cv_naval_bomber1_medium
+				GFX_KOR_cv_fighter1_medium
+				GFX_KOR_cv_naval_bomber0_medium
+				GFX_KOR_cv_CAS0_medium
+				GFX_KOR_cv_fighter0_medium
+				GFX_KOR_early_fighter_medium
+			}
+			models = {
+				KOR_light_plane_entity
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_KOR_jet_tactical_bomber1_medium
+				GFX_KOR_tactical_bomber3_medium
+				GFX_KOR_heavy_fighter3_medium
+				GFX_KOR_tactical_bomber2_medium
+				GFX_KOR_heavy_fighter2_medium
+				GFX_KOR_tactical_bomber1_medium
+				GFX_KOR_heavy_fighter1_medium
+				GFX_KOR_early_bomber_medium
+				GFX_KOR_heavy_fighter0_medium
+			}
+			models = {
+				KOR_medium_plane_entity
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_KOR_strategic_maritime_patrol_bomber_medium
+				GFX_KOR_jet_strategic_bomber1_medium
+				GFX_KOR_strategic_bomber3_medium
+				GFX_KOR_strategic_bomber2_medium
+				GFX_KOR_strategic_bomber1_medium
+				GFX_KOR_iw_large_airframe_medium
+			}
+			models = {
+				KOR_heavy_plane_entity
+			}
+		}
+	}
+	
+	small_plane_airframe_0 = { pool = { icons = { GFX_KOR_fighter0_medium } } }
+	small_plane_airframe_1 = { pool = { icons = { GFX_KOR_fighter1_medium } } }
+	small_plane_airframe_2 = { pool = { icons = { GFX_KOR_fighter2_medium } } }
+	small_plane_airframe_3 = { pool = { icons = { GFX_KOR_fighter3_medium } } }
+	small_plane_airframe_4 = { pool = { icons = { GFX_KOR_jet_fighter1_medium } } }
+	
+	small_plane_cas_airframe_0 = { pool = { icons = { GFX_KOR_CAS0_medium } } }
+	small_plane_cas_airframe_1 = { pool = { icons = { GFX_KOR_CAS1_medium } } }
+	small_plane_cas_airframe_2 = { pool = { icons = { GFX_KOR_CAS2_medium } } }
+	small_plane_cas_airframe_3 = { pool = { icons = { GFX_KOR_CAS3_medium } } }
+	
+	small_plane_naval_bomber_airframe_0 = { pool = { icons = { GFX_KOR_naval_bomber0_medium } } }
+	small_plane_naval_bomber_airframe_1 = { pool = { icons = { GFX_KOR_naval_bomber1_medium } } }
+	small_plane_naval_bomber_airframe_2 = { pool = { icons = { GFX_KOR_naval_bomber2_medium } } }
+	small_plane_naval_bomber_airframe_3 = { pool = { icons = { GFX_KOR_naval_bomber3_medium } } }
+	
+	cv_small_plane_airframe_0 = { pool = { icons = { GFX_KOR_cv_fighter0_medium } } }
+	cv_small_plane_airframe_1 = { pool = { icons = { GFX_KOR_cv_fighter1_medium } } }
+	cv_small_plane_airframe_2 = { pool = { icons = { GFX_KOR_cv_fighter2_medium } } }
+	cv_small_plane_airframe_3 = { pool = { icons = { GFX_KOR_cv_fighter3_medium } } }
+	cv_small_plane_airframe_4 = { pool = { icons = { GFX_KOR_cv_jet_fighter1_medium } } }
+	
+	cv_small_plane_cas_airframe_0 = { pool = { icons = { GFX_KOR_cv_CAS0_medium } } }
+	cv_small_plane_cas_airframe_1 = { pool = { icons = { GFX_KOR_cv_CAS1_medium } } }
+	cv_small_plane_cas_airframe_2 = { pool = { icons = { GFX_KOR_cv_CAS2_medium } } }
+	cv_small_plane_cas_airframe_3 = { pool = { icons = { GFX_KOR_cv_CAS3_medium } } }
+	
+	cv_small_plane_naval_bomber_airframe_0 = { pool = { icons = { GFX_KOR_cv_naval_bomber0_medium } } }
+	cv_small_plane_naval_bomber_airframe_1 = { pool = { icons = { GFX_KOR_cv_naval_bomber1_medium } } }
+	cv_small_plane_naval_bomber_airframe_2 = { pool = { icons = { GFX_KOR_cv_naval_bomber2_medium } } }
+	cv_small_plane_naval_bomber_airframe_3 = { pool = { icons = { GFX_KOR_cv_naval_bomber3_medium } } }
+	
+	medium_plane_airframe_0 = { pool = { icons = { GFX_KOR_early_bomber_medium } } }
+	medium_plane_airframe_1 = { pool = { icons = { GFX_KOR_tactical_bomber1_medium } } }
+	medium_plane_airframe_2 = { pool = { icons = { GFX_KOR_tactical_bomber2_medium } } }
+	medium_plane_airframe_3 = { pool = { icons = { GFX_KOR_tactical_bomber3_medium } } }
+	medium_plane_airframe_4 = { pool = { icons = { GFX_KOR_jet_tactical_bomber1_medium } } }
+	
+	medium_plane_fighter_airframe_0 = { pool = { icons = { GFX_KOR_heavy_fighter0_medium } } }
+	medium_plane_fighter_airframe_1 = { pool = { icons = { GFX_KOR_heavy_fighter1_medium } } }
+	medium_plane_fighter_airframe_2 = { pool = { icons = { GFX_KOR_heavy_fighter2_medium } } }
+	medium_plane_fighter_airframe_3 = { pool = { icons = { GFX_KOR_heavy_fighter3_medium } } }
+		
+	large_plane_airframe_0 = { pool = { icons = { GFX_KOR_iw_large_airframe_medium } } }
+	large_plane_airframe_1 = { pool = { icons = { GFX_KOR_strategic_bomber1_medium } } }
+	large_plane_airframe_2 = { pool = { icons = { GFX_KOR_strategic_bomber2_medium } } }
+	large_plane_airframe_3 = { pool = { icons = { GFX_KOR_strategic_bomber3_medium } } }
+	large_plane_airframe_4 = { pool = { icons = { GFX_KOR_jet_strategic_bomber1_medium } } }
+	
+	large_plane_maritime_patrol_plane_airframe_0 = { pool = { icons = { GFX_KOR_strategic_maritime_patrol_bomber_medium } } }
+	large_plane_maritime_patrol_plane_airframe_1 = { pool = { icons = { GFX_KOR_strategic_maritime_patrol_bomber_medium } } }
+	large_plane_maritime_patrol_plane_airframe_2 = { pool = { icons = { GFX_KOR_strategic_maritime_patrol_bomber_medium } } }
+	large_plane_maritime_patrol_plane_airframe_3 = { pool = { icons = { GFX_KOR_strategic_maritime_patrol_bomber_medium } } }
+	
+	small_plane_airframe_5 = { pool = { weight = 3 icons = { GFX_KOR_small_plane_airframe_5_medium } models = { KOR_supersonic_jet_plane_entity } } }
+	supersonic_fighter_equipment_1 = { pool = { weight = 3 icons = { GFX_KOR_small_plane_airframe_5_medium } models = { KOR_supersonic_jet_plane_entity } } }
+	
+	
+}

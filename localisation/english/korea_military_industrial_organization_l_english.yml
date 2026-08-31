@@ -1,0 +1,35 @@
+﻿l_english:
+
+#  #  ##  ###  ####  ##
+# #  #  # #  # #    #  #
+##   #  # ###  #### ####
+# #  #  # #  # #    #  #
+#  #  ##  #  # #### #  #
+
+###################
+####### KOR #######
+###################
+
+### ORGANIZATIONS ### 
+KOR_daewoo_tank_organization: "대우중공업"
+KOR_hyundai_rotem_organization: "현대정공"
+KOR_rygyeong_organization: "유경기계공업"
+KOR_doosan_organization: "두산중공업"
+
+KOR_kai_company_organization: "한국항공우주산업"
+KOR_hanjin_air_organization: "한진항공"
+KOR_jinhae_naval_air_factory_organization: "진해 해군항공공창"
+
+KOR_daewoo_ship_organization: "대우조선해양"
+KOR_hyundai_heavy_industries_organization: "현대중공업"
+KOR_daehanjoseongongsa_organization: "대한조선공사"
+KOR_gms_organization: "경원마린시스템즈"
+
+KOR_gukgun_jobyeongchang_organization: "국군부산조병창"
+KOR_hanhwa_organization: "한국화약"
+KOR_kia_motors_organization: "기아자동차"
+KOR_mmaa_organization: "군인공제회"
+
+### TRAITS ###
+#NO TRAITS FOR KOREAN ORGANIZATIONS
+#HoK is N.O.T Gookppong

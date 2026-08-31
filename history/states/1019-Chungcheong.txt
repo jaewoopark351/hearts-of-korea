@@ -1,0 +1,30 @@
+state={
+	id=1019
+	name="STATE_1019"
+	provinces={
+		1100 7175 7204 11977 11992 13404 13405 13406 13407 13408 13409
+	}
+	
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			11977 10
+		}
+		add_core_of = KOR
+		
+		1939.3.14 = {
+			owner = JAP
+			controller = JAP
+		}
+
+	}
+
+	manpower=2486315
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

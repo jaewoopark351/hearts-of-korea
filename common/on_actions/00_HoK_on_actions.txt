@@ -1,0 +1,11 @@
+on_actions = {
+	# country
+	on_new_term_election = {
+		random_events = {
+			100 = kor_events.69
+			100 = kor_events.70
+			100 = kor_events.71
+			100 = kor_events.72
+		}
+	}
+}

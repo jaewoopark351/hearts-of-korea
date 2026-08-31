@@ -1,0 +1,22 @@
+peace_ai_desires = {
+
+	#Korea want to conquer manchuria
+	korea_want_to_conquer_manchuria = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = { original_tag = KOR }
+			
+			FROM = { original_tag = KOR }
+			
+			FROM.FROM.FROM = {
+				OR = {
+					region = 155	#manchuria
+					region = 243	#eastern manchuria
+					region = 242	#norhern manchuria
+				}
+			}
+		}
+		ai_desire = 9999
+	}
+	
+}

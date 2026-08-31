@@ -1,0 +1,481 @@
+spriteTypes = {
+
+	##### KOR - Korea #####
+
+	spriteType = {
+		name = "GFX_Portrait_KOR_Syngman_Rhee"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Prince_Rhee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gu_Kim"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Gu_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Boseon_Yoon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Boseon_Yoon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gang_Lee"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Gang_Lee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_provisional_peoples_committee"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_provisional_peoples_committee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Woonhyung_Yeo"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Woon_Hyung_Yeo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Heonyoung_Park"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Heon_Young_Park.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Beomseok_Lee"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Beomseok_Lee.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Beomseok_Lee_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_beomseok_lee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Yeonsu_Gye"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Yeonsu_Gye.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Eun_Lee"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Eun_Lee.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Eun_Lee_general"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Eun_Lee_general.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Eun_Lee_general_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Eun_Lee_general.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Wonil_Son"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Wonil_Son.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Wonil_Son_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_wonil_son.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Seongmo_Shin"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Seongmo_Shin.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Seongmo_Shin_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Seongmo_Shin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gyugap_Lee"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Gyugap_Lee.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gyugap_Lee_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Gyugap_Lee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Seonghak_Choi"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Seonghak_Choi.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Seonghak_Choi_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Seonghak_Choi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Yongdeuck_Choi_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Yongdeok_Choi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Jeongryeol_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Jeongryeol_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Giok_Gwon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Giok_Gwon.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Giok_Gwon_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Giok_Gwon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Changnam_Ahn_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_changnam_ahn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Sin_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Sin_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Dubong_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Dubong_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Changho_Ahn"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Changho_Ahn.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Changho_Ahn_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Changho_Ahn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Hosang_Ahn_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Hosang_Ahn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Urihwangsilsaranghoe_idea_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Urihwangsilsaranghoe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Ilhan_Yu_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Ilhan_Yu.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Doyeon_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Doyeon_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Seungjik_Park_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Seungjik_Park.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Dongjin_Yeom_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Dongjin_Yeom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Giboong_Lee_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Gibung_Lee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gwansun_Yoo_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Gwansun_Yoo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Jeonghwan_Bang_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Jeonghwan_Bang.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Mansik_Jo_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Mansik_Jo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Jaehong_Ahn_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Jaehong_Ahn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Jinwoo_Song_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Jinwoo_Song.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Namseon_Choi_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Namseon_Choi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gongsu_Kim"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Gongsu_Kim.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gongsu_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Gongsu_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Geunchul_Hwang"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Hyunjoon_Shin.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Geunchul_Hwang_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Hyunjoon_Shin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Cheongcheon_Ji"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Cheongcheon_Ji.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Cheongcheon_Ji_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Cheongcheon_Ji.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Dongyeol_Yoo"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Dongyeol_Yoo.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Dongyeol_Yoo_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Dongyeol_Yoo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gyungcheon_Kim"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Gyungcheon_Kim.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gyungcheon_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Gyungcheon_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Hongil_Kim"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Hongil_Kim.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Hongil_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Hongil_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Saik_Hong"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Saik_Hong.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Saik_Hong_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Saik_Hong.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Seokwon_Kim"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Seokwon_Kim.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Seokwon_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Seokwon_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Eungjun_Lee"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Eungjun_Lee.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Eungjun_Lee_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Eungjun_Lee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gwangseon_Oh"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Gwangseon_Oh.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gwangseon_Oh_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Gwangseon_Oh.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Hakgyu_Kim"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Hakgyu_Kim.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Hakgyu_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Hakgyu_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Hoseong_Song"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Hoseong_Song.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Hoseong_Song_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Hoseong_Song.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Jun_Gwon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Jun_Gwon.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Jun_Gwon_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Jun_Gwon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Junsik_Lee"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Junsik_Lee.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Junsik_Lee_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Junsik_Lee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Sichang_Park"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Sichang_Park.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Sichang_Park_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Sichang_Park.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Wonbong_Kim"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Wonbong_Kim.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Wonbong_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Wonbong_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Beomdo_Hong"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Beomdo_Hong.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Beomdo_Hong_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Beomdo_Hong.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Jwajin_Kim"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Jwajin_Kim.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Jwajin_Kim_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Jwajin_Kim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Junggeun_Ahn"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Junggeun_Ahn.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Junggeun_Ahn_small"
+		texturefile = "gfx/interface/ideas/idea_KOR_Junggeun_Ahn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Bugil_Hwang"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_scientist_Bugil_Hwang.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Gyeongyeon_Jo"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_scientist_Gyeongyeon_Jo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Sanglok_Do"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_scientist_Sanglok_Do.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_KOR_Yonggwan_Kim"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_scientist_Yonggwan_Kim.dds"
+	}
+	
+	
+	
+	##### JAP - Japan #####
+	
+	spriteType = {
+		name = "GFX_Portrait_JAP_japanese_national_liberation_committee"
+		texturefile = "gfx/leaders/JAP/portrait_Japan_jnlc.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_JAP_tatsuji_fuse"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Tatsuji_Fuse.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_JAP_tadamichi_kuribayashi"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Tadamichi_kuribayashi.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_tadamichi_kuribayashi_small"
+		texturefile = "gfx/interface/ideas/idea_Japan_Tadamichi_kuribayashi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_JAP_sigesaburo_miyazaki"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Sigesaburo_miyazaki.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_sigesaburo_miyazaki_small"
+		texturefile = "gfx/interface/ideas/idea_Japan_Sigesaburo_miyazaki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_JAP_shin_yoshida"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Shin_Yoshida.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_shin_yoshida_small"
+		texturefile = "gfx/interface/ideas/idea_Japan_Shin_Yoshida.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_JAP_mitsumasa_yonai_navy"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Mitsumasa_Yonai.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_mitsumasa_yonai_navy_small"
+		texturefile = "gfx/interface/ideas/idea_Japan_Mitsumasa_Yonai.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_JAP_tamon_yamaguchi"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Tamon_Yamaguchi.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_tamon_yamaguchi_small"
+		texturefile = "gfx/interface/ideas/idea_Japan_Tamon_Yamaguchi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_JAP_masatomi_kimura"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Masatomi_Kimura.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_masatomi_kimura_small"
+		texturefile = "gfx/interface/ideas/idea_Japan_Masatomi_Kimura.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_JAP_renya_mutaguchi"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Renya_Mutaguchi.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_renya_mutaguchi_small"
+		texturefile = "gfx/interface/ideas/idea_Japan_Renya_Mutaguchi.dds"
+	}
+
+	
+}

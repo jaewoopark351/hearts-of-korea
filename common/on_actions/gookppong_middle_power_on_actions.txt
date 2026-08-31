@@ -1,0 +1,352 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = kor_gookppong_status
+						option = GOOKPPONG_MIDDLE_POWER_ENABLED
+					}
+				}
+				KOR = {
+					set_global_flag = kor_hok_gookppong_middle_power_enabled_flag
+					add_research_slot = 1
+										
+					#INDUSTRY
+					set_technology = {
+						fuel_refining = 1
+						fuel_silos = 1
+						popup = no
+					}
+					
+					#ARMY
+					if = {	#For NSB DLC Owner
+						limit = { has_dlc = "No Step Back" }
+						set_technology = {
+							basic_light_tank_chassis = 1
+							basic_heavy_tank_chassis = 1
+							armor_tech_1 = 1
+							engine_tech_1 = 1
+							motorised_infantry = 1
+							popup = no
+						}
+						create_equipment_variant = {
+							name = "KLT-33 Jara"
+							type = light_tank_chassis_1
+							parent_version = 0
+							modules = {
+								main_armament_slot = tank_small_cannon_2
+								turret_type_slot = tank_light_two_man_tank_turret
+								suspension_type_slot = tank_christie_suspension
+								armor_type_slot = tank_riveted_armor
+								engine_type_slot = tank_gasoline_engine
+								special_type_slot_1 = tank_radio_1
+							}
+							upgrades = {
+								tank_nsb_engine_upgrade = 2
+								tank_nsb_armor_upgrade = 4
+							}
+							model = "KOR_light_armor_entity"
+						}
+						
+						delete_unit_template_and_units = { division_template = "Gigap-Sadan" }	#Remove existiing units
+						
+						else = {	#For non NSB Owner
+							set_technology = {
+								basic_light_tank = 1
+								basic_heavy_tank = 1
+								motorised_infantry = 1
+								popup = no
+							}
+							delete_unit_template_and_units = { division_template = "Gigap-Sadan" }	#Remove existiing units 
+						}
+					}
+					if = {	#For LaR DLC Owner
+						limit = { has_dlc = "La Resistance" }
+						set_technology = {
+							armored_car1 = 1
+							popup = no
+						}
+					}
+					
+					set_technology = {
+						tech_mountaineers = 1
+						infantry_weapons1 = 1
+						popup = no
+					}
+					delete_unit_template_and_units = { division_template = "Mountaineer-Division" }	#Remove existiing units
+					
+					#NAVY
+					if = {	#For MtG DLC Owner
+						limit = { has_dlc = "Man the Guns" }
+						set_technology = {
+							basic_ship_hull_light = 1
+							early_ship_hull_heavy = 1
+							early_ship_hull_carrier = 1
+							popup = no
+						}
+						
+						else = {	#For non MtG Owner
+							set_technology = {
+								early_submarine = 1
+								basic_submarine = 1
+								early_destroyer = 1
+								basic_destroyer = 1
+								early_light_cruiser = 1
+								early_heavy_cruiser = 1
+								early_battleship = 1
+								early_battlecruiser = 1
+								early_carrier = 1
+								transport = 1			
+								popup = no
+							}
+						}
+					}
+					
+					#AIRFORCE
+					if = {	#For BBA DLC Owner
+						limit = { has_dlc = "By Blood Alone" }
+						set_technology = {
+							aa_lmg = 1
+							aa_cannon_1 = 1
+							engines_1 = 1
+							engines_2 = 1
+							early_bombs = 1
+							aircraft_construction = 1
+							basic_small_airframe = 1
+							iw_large_airframe = 1
+							air_torpedoe_1 = 1
+							popup = no
+						}
+						
+						create_equipment_variant = {
+							name = "KA-31 Kkachi"
+							type = medium_plane_airframe_0
+							modules = {
+								fixed_main_weapon_slot = medium_bomb_bay
+								fixed_auxiliary_weapon_slot_1 = bomb_locks
+								fixed_auxiliary_weapon_slot_2 = bomb_locks
+								engine_type_slot = engine_2_2x
+								special_type_slot_1 = lmg_defense_turret
+							}
+							icon = "GFX_KOR_early_bomber_medium"
+						}
+						create_equipment_variant = {
+							name = "KA-32 Chamsae"
+							type = small_plane_cas_airframe_1
+							modules = {
+								fixed_main_weapon_slot = bomb_locks
+								fixed_auxiliary_weapon_slot_1 = bomb_locks
+								engine_type_slot = engine_2_1x
+								special_type_slot_1 = lmg_defense_turret
+								special_type_slot_2 = dive_brakes_small
+							}
+							icon = "GFX_KOR_CAS1_medium"
+						}
+						create_equipment_variant = {
+							name = "KP-36 Doksuri"
+							type = small_plane_airframe_1
+							modules = {
+								fixed_main_weapon_slot = light_mg_4x
+								fixed_auxiliary_weapon_slot_1 = light_mg_4x
+								engine_type_slot = engine_2_1x
+								special_type_slot_1 = empty
+							}
+							icon = "GFX_KOR_fighter1_medium"
+						}
+							
+						else = {	#For non BBA Owner
+							set_technology = {
+								early_fighter = 1
+								fighter1 = 1
+								early_bomber = 1
+								tactical_bomber1 = 1
+								strategic_bomber1 = 1
+								CAS1 = 1
+								naval_bomber1 = 1
+								popup = no
+							}
+						}
+					}
+					
+					#MORE SUPPLIERS
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 100
+						producer = KOR
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 200
+						producer = KOR
+					}
+
+					#MORE BUILDINGS AND BUILDING SLOTS FOR KOREA
+					1017 = {	#Gyeonggi
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = air_base level = 5 instant_build = yes }
+						add_building_construction = { type = fuel_silo level = 1 instant_build = yes }
+						add_building_construction = { type = dockyard level = 1 instant_build = yes }
+					}
+					1021 = {	#Pyeongan
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					1022 = {	#Hwanghae
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					1019 = {	#Chungcheong
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					}
+					1020 = {	#Gyeongsang
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					525 = { #Jeolla
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					1018 = { #Gangwon
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					527 = { #Hamgyeong
+						add_extra_state_shared_building_slots = 4
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_building_construction = { type = dockyard level = 1 instant_build = yes }
+					}
+					1023 = { #Jeju
+						add_extra_state_shared_building_slots = 1
+					}
+					
+					#CREATE MORE UNITS FOR KOREA
+					division_template = {
+						name = "Gigap-Sadan" 	
+						division_names_group = KOR_ARM_01
+		
+						regiments = {
+							light_armor = { x = 0 y = 0 }		
+							light_armor = { x = 0 y = 1 }						
+							light_armor = { x = 1 y = 0 }		
+							light_armor = { x = 1 y = 1 }
+							motorized = { x = 2 y = 0 }			
+							motorized = { x = 2 y = 1 }
+							motorized = { x = 2 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					division_template = {
+						name = "Sanak-Sadan"
+						priority = 1
+						division_names_group = KOR_MNT_01
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+				
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+				
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+						}
+						support = {      		
+							artillery = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							recon = { x = 0 y = 2 }
+						}
+					}
+					
+					1017 = {	#Gyeonggi
+						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1021 = {	#Pyeongan
+						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1022 = {	#Hwanghae
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1019 = {	#Chungcheong
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1020 = {	#Gyeongsang
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					525 = { #Jeolla
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					1018 = { #Gangwon
+						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					527 = { #Hamgyeong
+						create_unit = { division = "division_template = \"Sanak-Sadan\" start_experience_factor = 0.3" owner = KOR }
+						create_unit = { division = "division_template = \"Sanak-Sadan\" start_experience_factor = 0.3" owner = KOR }
+					}
+					
+					if = {
+						limit = { has_dlc = "By Blood Alone" }
+						load_oob = "gookppong_middle_power_KOR_air_bba"
+						
+						else = {
+							load_oob = "gookppong_middle_power_KOR_air_legacy"
+						}
+					}
+					
+					if = {
+						limit = { has_dlc = "Man the Guns" }
+						
+						create_ship = { type = ship_hull_heavy_1 equipment_variant = "Chungmugong Yi Sunshin Class" name = "ROKS Jang Bogo" }
+						create_ship = { type = ship_hull_cruiser_1 equipment_variant = "Eulji Mundeok Class" name = "ROKS Yeon Gaesomun" }
+						create_ship = { type = ship_hull_cruiser_coastal_defense_ship equipment_variant = "Yi Sabu Class" name = "ROKS Gyebaek" }
+						create_ship = { type = ship_hull_cruiser_coastal_defense_ship equipment_variant = "Yi Sabu Class" name = "ROKS Kim Yusin" }
+						create_ship = { type = ship_hull_cruiser_coastal_defense_ship equipment_variant = "Yi Sabu Class" name = "ROKS Yang Gyu" }
+						create_ship = { type = ship_hull_light_1 equipment_variant = "Donghae Class" name = "ROKS Gangneung" }
+						create_ship = { type = ship_hull_light_1 equipment_variant = "Donghae Class" name = "ROKS Anyang" }
+						create_ship = { type = ship_hull_light_1 equipment_variant = "Donghae Class" name = "ROKS Gunsan" }
+						create_ship = { type = ship_hull_light_1 equipment_variant = "Donghae Class" name = "ROKS Gyeongju"}
+						create_ship = { type = ship_hull_submarine_1 equipment_variant = "Type II-K Class" name = "ROKS SSM-7"}
+						create_ship = { type = ship_hull_submarine_1 equipment_variant = "Type II-K Class" name = "ROKS SSM-8"}
+						
+						else = {
+							create_ship = { type = battle_cruiser_1 equipment_variant = "battle_cruiser_1" name = "ROKS Jang Bogo" }
+							create_ship = { type = heavy_cruiser_1 equipment_variant = "heavy_cruiser_1" name = "ROKS Yeon Gaesomun" }
+							create_ship = { type = light_cruiser_1 equipment_variant = "light_cruiser_1" name = "ROKS Gyebaek" }
+							create_ship = { type = light_cruiser_1 equipment_variant = "light_cruiser_1" name = "ROKS Kim Yusin" }
+							create_ship = { type = light_cruiser_1 equipment_variant = "light_cruiser_1" name = "ROKS Yang Gyu" }
+							create_ship = { type = destroyer_1 equipment_variant = "destroyer_1" name = "ROKS Gangneung" }
+							create_ship = { type = destroyer_1 equipment_variant = "destroyer_1" name = "ROKS Anyang" }
+							create_ship = { type = destroyer_1 equipment_variant = "destroyer_1" name = "ROKS Gunsan" }
+							create_ship = { type = destroyer_1 equipment_variant = "destroyer_1" name = "ROKS Gyeongju" }
+							create_ship = { type = submarine_1 equipment_variant = "submarine_1" name = "ROKS SSM-7"}
+							create_ship = { type = submarine_1 equipment_variant = "submarine_1" name = "ROKS SSM-8"}
+						}
+					}
+				}
+			}
+		}
+	}
+}

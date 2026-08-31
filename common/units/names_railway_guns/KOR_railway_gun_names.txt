@@ -1,0 +1,17 @@
+﻿KOR_RG_HISTORICAL = {
+	for_countries = { KOR }
+
+	type = railway_gun
+	
+	fallback_name = "Hwaryeok-Yeodan Je %d Po-dae"
+
+	ordered = {
+		
+		
+		1 = {"Hwaryeok-Yeodan Je %d Po-dae"}
+		2 = {"Hwaryeok-Yeodan Je %d Po-dae"}
+		3 = {"Hwaryeok-Yeodan Je %d Po-dae"}
+		4 = {"Hwaryeok-Yeodan Je %d Po-dae"}
+		5 = {"Hwaryeok-Yeodan Je %d Po-dae"}
+	}
+}

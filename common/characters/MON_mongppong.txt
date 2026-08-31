@@ -1,0 +1,210 @@
+characters={
+
+	MON_random_general_1={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_1"
+				small = "GFX_Portrait_Asia_Generic_land_1_small"
+			}
+		}
+		field_marshal={
+			traits={ cavalry_officer war_hero }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			
+			visible = { 
+				has_global_flag = mon_hok_mongppong_enabled_flag 
+			}
+		}
+	}
+	
+	MON_random_general_2={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_2"
+				small = "GFX_Portrait_Asia_Generic_land_2_small"
+			}
+		}
+		corps_commander={
+			traits = { cavalry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			
+			visible = { 
+				has_global_flag = mon_hok_mongppong_enabled_flag 
+			}
+		}
+	}
+	
+	MON_random_general_3={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_3"
+				small = "GFX_Portrait_Asia_Generic_land_3_small"
+			}
+		}
+		field_marshal={
+			traits = { cavalry_officer defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			
+			visible = { 
+				has_global_flag = mon_hok_mongppong_enabled_flag 
+			}
+		}
+	}
+	
+	MON_random_general_4={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_4"
+				small = "GFX_Portrait_Asia_Generic_land_4_small"
+			}
+		}
+		field_marshal={
+			traits = { old_guard thorough_planner politically_connected }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			
+			visible = { 
+				has_global_flag = mon_hok_mongppong_enabled_flag 
+			}
+		}
+	}
+	
+	MON_random_general_5={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_5"
+				small = "GFX_Portrait_Asia_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			traits = { cavalry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			
+			visible = { 
+				has_global_flag = mon_hok_mongppong_enabled_flag 
+			}
+		}
+	}
+	
+	MON_random_general_6={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_1"
+				small = "GFX_Portrait_Asia_Generic_land_1_small"
+			}
+		}
+		corps_commander={
+			traits = { cavalry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			
+			visible = { 
+				has_global_flag = mon_hok_mongppong_enabled_flag 
+			}
+		}
+	}
+	
+	MON_random_general_7={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_2"
+				small = "GFX_Portrait_Asia_Generic_land_2_small"
+			}
+		}
+		corps_commander={
+			traits = { cavalry_officer brilliant_strategist trait_reckless }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			
+			visible = { 
+				has_global_flag = mon_hok_mongppong_enabled_flag 
+			}
+		}
+	}
+	
+	MON_random_general_8={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_3"
+				small = "GFX_Portrait_Asia_Generic_land_3_small"
+			}
+		}
+		corps_commander={
+			traits = { cavalry_officer career_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			
+			visible = { 
+				has_global_flag = mon_hok_mongppong_enabled_flag 
+			}
+		}
+	}
+	
+	MON_random_general_9={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_4"
+				small = "GFX_Portrait_Asia_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			traits = { armor_officer brilliant_strategist trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			
+			visible = { 
+				has_global_flag = mon_hok_mongppong_enabled_flag 
+			}
+		}
+	}
+	
+	MON_random_high_command_1={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_5"
+				small = "GFX_Portrait_Asia_Generic_land_5_small"
+			}
+		}
+	}
+	
+	MON_random_high_command_2={
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Asia_Generic_land_1"
+				small = "GFX_Portrait_Asia_Generic_land_1_small"
+			}
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+
+
+#### Trait Icons for Hearts of Korea ####
+
+
+spriteTypes = {	
+    				
+	spriteType = {
+		name = "GFX_trait_HoK_artillery_officer"
+		texturefile = "gfx/interface/traits/personal/trait_HoK_artillery_officer.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_trait_HoK_democratic_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_HoK_democratic_sympathizer.dds"
+		legacy_lazy_load = no
+	}
+}

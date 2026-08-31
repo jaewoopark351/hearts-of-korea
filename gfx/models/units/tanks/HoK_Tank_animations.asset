@@ -1,0 +1,81 @@
+animation = {
+	name = "KOR_gw_armor_idle_animation"
+	file = "KOR_gw_armor_idle.anim"
+}
+animation = {
+	name = "KOR_gw_armor_moving_animation"
+	file = "KOR_gw_armor_moving.anim"
+}
+animation = {
+	name = "KOR_gw_armor_attack_animation"
+	file = "KOR_gw_armor_attack.anim"
+}
+
+
+animation = {
+	name = "KOR_heavy_armor_idle_animation"
+	file = "KOR_heavy_armor_idle.anim"
+}
+animation = {
+	name = "KOR_heavy_armor_moving_animation"
+	file = "KOR_heavy_armor_moving.anim"
+}
+animation = {
+	name = "KOR_heavy_armor_attack_animation"
+	file = "KOR_heavy_armor_attack.anim"
+}
+
+
+animation = {
+	name = "KOR_light_armor_idle_animation"
+	file = "KOR_light_armor_idle.anim"
+}
+animation = {
+	name = "KOR_light_armor_moving_animation"
+	file = "KOR_light_armor_moving.anim"
+}
+animation = {
+	name = "KOR_light_armor_attack_animation"
+	file = "KOR_light_armor_attack.anim"
+}
+
+
+animation = {
+	name = "KOR_medium_armor_idle_animation"
+	file = "KOR_medium_armor_idle.anim"
+}
+animation = {
+	name = "KOR_medium_armor_moving_animation"
+	file = "KOR_medium_armor_moving.anim"
+}
+animation = {
+	name = "KOR_medium_armor_attack_animation"
+	file = "KOR_medium_armor_attack.anim"
+}
+
+
+animation = {
+	name = "KOR_super_heavy_armor_idle_animation"
+	file = "KOR_super_heavy_armor_idle.anim"
+}
+animation = {
+	name = "KOR_super_heavy_armor_moving_animation"
+	file = "KOR_super_heavy_armor_moving.anim"
+}
+animation = {
+	name = "KOR_super_heavy_armor_attack_animation"
+	file = "KOR_super_heavy_armor_attack.anim"
+}
+
+animation = {
+	name = "KOR_modern_armor_idle_animation"
+	file = "KOR_modern_armor_idle.anim"
+}
+animation = {
+	name = "KOR_modern_armor_moving_animation"
+	file = "KOR_modern_armor_moving.anim"
+}
+animation = {
+	name = "KOR_modern_armor_attack_animation"
+	file = "KOR_modern_armor_attack.anim"
+}

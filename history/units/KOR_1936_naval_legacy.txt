@@ -1,0 +1,38 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Daehanminguk Haegun"			
+		naval_base = 4056
+		task_force = {				
+			name = "Haegun Jakjeonsaryeongbu"
+			location = 4056
+			ship = { name = "ROKS Chungmugong Yi Sunshin" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS Eulji Mundeok" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS Yang Manchoon" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS Munsukgong Yun Gwan" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS Yi Sabu" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS Yoo Geum-pil" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS Jangwigong Seo Hee" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS Incheon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR } } }	
+			ship = { name = "ROKS Pyeongyang" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR } } }	
+			ship = { name = "ROKS Busan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR } } }					
+			ship = { name = "ROKS Daegu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR } } }	
+			ship = { name = "ROKS Nampo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR } } }	
+			ship = { name = "ROKS Suwon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR } } }	
+			ship = { name = "ROKS Pohang" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR } } }					
+			ship = { name = "ROKS Gaeseong" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS Donghae" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR } } }
+		}
+		
+		task_force = {
+			name = "Jamsu-Jeondae"
+			location = 848
+			ship = { name = "ROKS SSM-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SSM-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SSM-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SSM-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SSM-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR } } }
+		}
+	}
+}

@@ -1,0 +1,454 @@
+﻿capital = 1017	
+
+##Korean start setup###
+
+set_research_slots = 2
+if = {
+	limit = { has_dlc = "Gotterdammerung" }
+	set_stability = 0.55	# Was 0.6, but korea now get +5.00% from landmark Gyeongbokgung
+	else = {
+		set_stability = 0.6
+	}
+}
+add_command_power = 20
+set_convoys = 65
+
+add_ideas = {
+	KOR_home_of_the_free
+	KOR_legacy_of_resistance
+	KOR_disjointed_government
+	KOR_great_depression
+	KOR_agrarian_society
+	KOR_ridiculed_army
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.12.31"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 55
+	neutrality = 1
+	communism = 25
+	fascism = 19
+}
+
+
+##Korean OOB ###
+
+if = {
+	limit = { has_dlc = "No Step Back" }
+		set_oob = "KOR_1936_land_nsb"
+	else = {
+		set_oob = "KOR_1936_land_legacy"
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "KOR_1936_naval_mtg"
+		set_war_support = 0.05
+	else = {
+		set_naval_oob = "KOR_1936_naval_legacy"
+		set_war_support = 0.1
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "KOR_1936_air_bba"
+	else = {
+		set_air_oob = "KOR_1936_air_legacy"
+	}
+}
+
+
+##Korean technology ###
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	basic_train = 1
+	tech_trucks = 1
+	fuel_silos = 1
+	
+	#doctrines#
+	superior_firepower = 1
+	trade_interdiction = 1
+	formation_flying = 1
+}
+
+if = {
+	limit = { has_dlc = "No Step Back" }
+		set_technology = {
+			gwtank_chassis = 1
+		}
+	else = {
+		set_technology = {
+			gwtank = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			early_ship_hull_light = 1
+			basic_ship_hull_light = 1
+			early_ship_hull_submarine = 1
+			basic_ship_hull_submarine = 1
+			early_ship_hull_cruiser = 1
+			early_ship_hull_heavy = 1
+			pre_dreadnoughts = 1
+			coastal_defense_ships  = 1
+			basic_battery = 1
+			basic_cruiser_armor_scheme = 1
+			basic_torpedo = 1
+			basic_depth_charges = 1
+			mtg_transport = 1
+		}
+	else = {
+		set_technology = {
+			early_submarine = 1
+			early_destroyer = 1
+			early_light_cruiser = 1
+			early_heavy_cruiser = 1
+			early_battleship = 1
+			early_battlecruiser = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			early_bombs = 1
+			bba_early_transport_plane = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+			early_transport_plane = 1
+		}
+	}
+}
+
+
+##Korean leaders ###
+
+##Political leader
+recruit_character = KOR_Syngman_Rhee						#Democratic Leader 1
+recruit_character = KOR_Gu_Kim								#Democratic Leader 2
+recruit_character = KOR_Boseon_Yoon
+recruit_character = KOR_Gang_Lee
+recruit_character = KOR_provisional_peoples_committee		#Communist leader 0
+recruit_character = KOR_Woonhyung_Yeo						#Communist Leader 1
+recruit_character = KOR_Heonyoung_Park						#Communist Leader 2
+recruit_character = KOR_Beomseok_Lee						#Fascist Leader 1
+recruit_character = KOR_Yeonsu_Gye							#neutrality Leader 1
+recruit_character = KOR_Eun_Lee								#neutrality Leader 2
+
+##Military advisors
+recruit_character = KOR_Wonil_Son
+recruit_character = KOR_Geungmo_Jeong
+recruit_character = KOR_Yongdeuck_Choi
+recruit_character = KOR_Jeongryeol_Kim
+recruit_character = KOR_Seongho_Lee
+recruit_character = KOR_Giok_Gwon
+recruit_character = KOR_Changnam_Ahn
+
+##Theorist
+recruit_character = KOR_Okgyu_Park
+recruit_character = KOR_Sin_Kim
+recruit_character = KOR_Taeyeong_Shin
+
+##Political Advisor
+recruit_character = KOR_Dubong_Kim
+recruit_character = KOR_Changho_Ahn
+recruit_character = KOR_Hosang_Ahn
+recruit_character = KOR_Giboong_Lee
+recruit_character = KOR_Urihwangsilsaranghoe_idea
+
+##others
+recruit_character = KOR_Ilhan_Yu
+recruit_character = KOR_Doyeon_Kim
+recruit_character = KOR_Seungjik_Park
+recruit_character = KOR_Gwansun_Yoo
+recruit_character = KOR_Jeonghwan_Bang
+recruit_character = KOR_Mansik_Jo
+recruit_character = KOR_Jaehong_Ahn
+recruit_character = KOR_Jinwoo_Song
+recruit_character = KOR_Namseon_Choi
+
+##form Focus
+recruit_character = KOR_Gongsu_Kim							#Airborne Force leader
+recruit_character = KOR_Geunchul_Hwang						#Marine Corps leader
+recruit_character = KOR_Jamsoo_Park							#Submarine Forces leader
+
+##from Focus communist generals
+recruit_character = KOR_Wonbong_Kim
+recruit_character = KOR_Il_Nam
+recruit_character = KOR_Yonggeon_Choe
+recruit_character = KOR_Chaek_Kim
+recruit_character = KOR_Gyeongsu_Ryu
+
+##army generals
+recruit_character = KOR_Cheongcheon_Ji
+recruit_character = KOR_Dongyeol_Yoo
+recruit_character = KOR_Gyungcheon_Kim
+#Beonseok_Lee Here
+recruit_character = KOR_Hongil_Kim
+recruit_character = KOR_Saik_Hong
+recruit_character = KOR_Seokwon_Kim
+recruit_character = KOR_Eungjun_Lee
+recruit_character = KOR_Gwangseon_Oh
+recruit_character = KOR_Hakgyu_Kim
+recruit_character = KOR_Hoseong_Song
+recruit_character = KOR_Jun_Gwon
+recruit_character = KOR_Junsik_Lee
+recruit_character = KOR_Sichang_Park
+
+##navy admirals
+recruit_character = KOR_Seongmo_Shin
+recruit_character = KOR_Gyugap_Lee
+recruit_character = KOR_Seonghak_Choi
+
+##gookppong generals
+recruit_character = KOR_Beomdo_Hong
+recruit_character = KOR_Jwajin_Kim
+recruit_character = KOR_Junggeun_Ahn
+
+##scientists
+recruit_character = KOR_Bugil_Hwang
+recruit_character = KOR_Gyeongyeon_Jo
+recruit_character = KOR_Sanglok_Do
+recruit_character = KOR_Yonggwan_Kim
+
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = KOR_bonggil_yoon
+		GFX = GFX_portrait_bonggil_yoon
+		traits = { operative_infiltrator operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { KOR }
+	}
+
+	create_operative_leader = {
+		name = KOR_bongchang_lee
+		GFX = GFX_portrait_bongchang_lee
+		traits = { operative_tough operative_linguist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { KOR JAP }
+	}
+	
+	recruit_character = KOR_Dongjin_Yeom
+}
+
+
+##Korean Equipment Varrient for DLCs###
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Type II-K Class"	
+		type = ship_hull_submarine_1
+		name_group = KOR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Type VII-K Class"
+		type = ship_hull_submarine_2
+		name_group = KOR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Donghae Class"
+		type = ship_hull_light_1
+		name_group = KOR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Incheon Class"
+		type = ship_hull_light_2
+		name_group = KOR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Cruisers #
+	create_equipment_variant = {
+		name = "Yi Sabu Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = KOR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_torpedo_1
+		}
+		icon = "GFX_KOR_ship_hull_cruiser_1_medium"
+	}
+	create_equipment_variant = {
+		name = "Eulji Mundeok Class"
+		type = ship_hull_cruiser_1
+		name_group = KOR_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Battlecruisers #
+	create_equipment_variant = {
+		name = "Chungmugong Yi Sunshin Class"
+		type = ship_hull_heavy_1
+		name_group = KOR_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		icon = GFX_KOR_early_battlecruiser_medium
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "KA-30 Chamsae"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = GFX_KOR_CAS0_medium
+	}
+	create_equipment_variant = {
+		name = "KP-33 Jebi"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = GFX_KOR_fighter0_medium
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "FT-17K"
+		type = light_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = GFX_KOR_gw_light_tank_medium
+	}
+	create_equipment_variant = {
+		name = "KMT-31 Cheolma"
+		type = medium_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+	}
+}

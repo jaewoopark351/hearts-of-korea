@@ -1,0 +1,20 @@
+### BUILDING ICONS FOR RAIDS ###
+
+
+# Big Icons in Raid Window #
+spriteTypes = {
+   	spriteType = {
+		name = "GFX_gyeongbokgung_icon"
+		texturefile = "gfx/interface/buildings/historical_buildings/large/gyeongbokgung_icon.dds"
+		noOfFrames = 2
+	}
+   	
+
+# Small Icons in Province Window #
+   	spriteType = {
+		name = "GFX_gyeongbokgung_icon_small"
+		texturefile = "gfx/interface/buildings/historical_buildings/small/gyeongbokgung_icon_small.dds"
+		noOfFrames = 2
+	}
+	
+}

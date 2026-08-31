@@ -1,0 +1,434 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = mon_mongppong_status
+						option = MONGPPONG_ENABLED
+					}
+				}
+				
+				#GIVE MORE LANDS AND VICTORY POINTS FOR MONGOLIA
+				MON = {
+					annex_country = {
+						target = TAN
+						transfer_troops = no
+					}
+					annex_country = {
+						target = MEN
+						transfer_troops = no
+					}
+					
+					transfer_state = 654
+					transfer_state = 621
+					
+					612 = { add_core_of = MON remove_core_of = CHI remove_core_of = PRC remove_core_of = MEN }
+					611 = { add_core_of = MON remove_core_of = CHI remove_core_of = PRC remove_core_of = MEN }
+					621 = { add_core_of = MON remove_core_of = CHI remove_core_of = PRC remove_core_of = MEN remove_core_of = SHX }
+					329 = { add_core_of = MON remove_core_of = TAN remove_core_of = SOV }
+					654 = { add_core_of = MON remove_core_of = SOV remove_core_of = ALT }
+									
+					add_victory_points = { province = 4801 value = 20 }	#Ulaanbaatar
+					add_victory_points = { province = 10627 value = 12 } #Kyzyl
+					add_victory_points = { province = 11752 value = 16 } #Jangbei
+					add_victory_points = { province = 7799 value = 9 } #Uliastay
+					add_victory_points = { province = 7843 value = 9 } #Ulangom
+					add_victory_points = { province = 7717 value = 8 } #Darhan
+					add_victory_points = { province = 7676 value = 19 } #Erdenet
+					add_victory_points = { province = 12557 value = 9 } #Choybalsan
+					add_victory_points = { province = 12612 value = 9 } #Sainshand
+					
+				}
+				
+				MON = {
+					#BASIC SETUP
+					set_global_flag = mon_hok_mongppong_enabled_flag
+					add_research_slot = 1
+					add_ideas = soldiers_of_the_steppe
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 10
+						neutrality = 70
+						fascism = 10
+						communism = 10
+					}
+					leave_faction = yes		#REMOVE MON FROM COMMINTERN
+					
+					#INDUSTRY
+					set_technology = {
+						infantry_weapons = 1
+						infantry_weapons1 = 1
+						tech_support = 1
+						tech_recon = 1
+						tech_mountaineers = 1
+						tech_trucks = 1
+						gw_artillery = 1
+						interwar_antiair = 1
+						fuel_silos = 1
+						basic_train = 1
+						popup = no
+					}
+										
+					#ARMY
+					if = {
+						limit = { has_dlc = "No Step Back" }
+						set_technology = {
+							gwtank_chassis = 1
+							basic_light_tank_chassis = 1
+							improved_light_tank_chassis = 1
+							popup = no
+						}
+						create_equipment_variant = {
+							name = "TKSM"
+							type = light_tank_chassis_0
+							parent_version = 0
+							modules = {
+								main_armament_slot = tank_heavy_machine_gun
+								turret_type_slot = tank_light_fixed_superstructure_turret
+								suspension_type_slot = tank_bogie_suspension
+								armor_type_slot = tank_riveted_armor
+								engine_type_slot = tank_gasoline_engine
+							}
+							upgrades = {
+								tank_nsb_armor_upgrade = 1
+								tank_nsb_engine_upgrade = 1
+							}
+						}
+						
+						else = {
+							set_technology = {
+								gwtank = 1
+								basic_light_tank = 1
+								improved_light_tank = 1
+								popup = no
+							}
+						}
+					}
+					
+					#AIRFORCE
+					if = {
+						limit = { has_dlc = "By Blood Alone" }
+						set_technology = {
+							aa_lmg = 1
+							engines_1 = 1
+							engines_2 = 1
+							iw_small_airframe = 1
+							iw_medium_airframe = 1
+							early_bombs = 1
+							popup = no
+						}
+						create_equipment_variant = {
+							name = "PZL P.11M"
+							type = small_plane_airframe_0
+							modules = {
+								fixed_main_weapon_slot = light_mg_4x
+								engine_type_slot = engine_1_1x
+								special_type_slot_1 = empty
+							}
+						}
+						create_equipment_variant = {
+							name = "PZL P.13M"
+							type = small_plane_cas_airframe_0
+							modules = {
+								fixed_main_weapon_slot = bomb_locks
+								engine_type_slot = engine_1_1x
+								special_type_slot_1 = lmg_defense_turret
+							}
+						}
+						
+						else = {
+							set_technology = {
+								early_fighter = 1
+								early_bomber = 1
+								CAS1 = 1
+								popup = no
+							}
+						}
+					}
+					
+					#MORE SUPPLIERS
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 200
+						producer = MON
+					}
+					
+					#MORE BUILDINGS AND BUILDING SLOTS AND POPULATIONS FOR MONGOLIA
+					330 = {
+						add_extra_state_shared_building_slots = 4
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_building_construction = { type = fuel_silo level = 1 instant_build = yes }
+						add_manpower = 2000000
+						add_building_construction = { type = infrastructure level = 3 instant_build = yes }
+						add_resource = { type = steel amount = 15 }
+						add_resource = { type = chromium amount = 12 }
+						add_resource = { type = aluminium amount = 30 }
+						add_resource = { type = tungsten amount = 10 }
+					}
+					820 = {
+						add_extra_state_shared_building_slots = 6
+						add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+						add_manpower = 1500000
+						add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+					}
+					329 = {
+						add_extra_state_shared_building_slots = 2
+						add_manpower = 100000
+						add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+					}
+					818 = {
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_manpower = 100000
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					}
+					654 = {
+						add_extra_state_shared_building_slots = 4
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_manpower = 100000
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					}
+					817 = {
+						add_extra_state_shared_building_slots = 4
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_manpower = 100000
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+						add_resource = { type = steel amount = 15 }
+					}
+					819 = {
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_manpower = 100000
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					}
+					612 = {
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+						add_manpower = 100000
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					}
+					611 = {
+						add_extra_state_shared_building_slots = 6
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_manpower = 100000
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					}
+					621 = {
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+						add_manpower = 100000
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					}
+					
+					
+					#MORE RAILWAY AND HUBS FOR MONGOLIA
+					330 = {
+						add_building_construction = { type = supply_node level = 1 province = 7799 instant_build = yes }	
+						add_building_construction = { type = supply_node level = 1 province = 7843 instant_build = yes }
+						add_building_construction = { type = supply_node level = 1 province = 7717 instant_build = yes }
+						add_building_construction = { type = supply_node level = 1 province = 7676 instant_build = yes }
+						add_building_construction = { type = supply_node level = 1 province = 12557 instant_build = yes }
+						add_building_construction = { type = supply_node level = 1 province = 12612 instant_build = yes }
+						add_building_construction = { type = supply_node level = 1 province = 12541 instant_build = yes }
+						add_building_construction = { type = supply_node level = 1 province = 12609 instant_build = yes }
+						
+						build_railway = { level = 2 build_only_on_allied = no path = { 4801 7752 7749 12612 } start_province = 4801 target_province = 12612 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 12612 4655 12448 11752 } start_province = 12612 target_province = 11752 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 12612 10575 10647 12557 } start_province = 12612 target_province = 12557 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 4801 12605 7717 } start_province = 4801 target_province = 7717 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 12612 4856 1853 12609 } start_province = 12612 target_province = 12609 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 4801 4732 7881 1725 12541 } start_province = 4801 target_province = 12541 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 7717 7676 } start_province = 7717 target_province = 7676 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 7676 1834 12579 10597 10627 } start_province = 7676 target_province = 10627 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 10627 1676 12695 7843 } start_province = 10627 target_province = 7843 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 10627 1877 1689 7799 } start_province = 10627 target_province = 7799 }
+						build_railway = { level = 2 build_only_on_allied = no path = { 7799 12544 12614 12541 } start_province = 7799 target_province = 12541 }
+					}
+					
+					#CREATE MORE UNITS FOR MONGOLIA
+					division_template = {
+						name = "Morin Brigad"
+						priority = 1
+						division_names_group = MON_CAV_02
+						regiments = {
+							cavalry = { x = 0 y = 0 }
+							cavalry = { x = 0 y = 1 }
+							cavalry = { x = 0 y = 2 }
+				
+							cavalry = { x = 1 y = 0 }
+							cavalry = { x = 1 y = 1 }
+							cavalry = { x = 1 y = 2 }
+						}
+						support = {      		
+						}
+					}
+					division_template = {
+						name = "Morin Diviz"
+						priority = 1
+						division_names_group = MON_CAV_01
+						regiments = {
+							cavalry = { x = 0 y = 0 }
+							cavalry = { x = 0 y = 1 }
+							cavalry = { x = 0 y = 2 }
+				
+							cavalry = { x = 1 y = 0 }
+							cavalry = { x = 1 y = 1 }
+							cavalry = { x = 1 y = 2 }
+				
+							cavalry = { x = 2 y = 0 }
+							cavalry = { x = 2 y = 1 }
+							cavalry = { x = 2 y = 2 }
+						}
+						support = {      		
+							artillery = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							recon = { x = 0 y = 2 }
+						}
+					}
+					division_template = {
+						name = "Tankny Diviz" 	
+						division_names_group = MON_ARM_01
+		
+						regiments = {
+							light_armor = { x = 0 y = 0 }		
+							light_armor = { x = 0 y = 1 }						
+							light_armor = { x = 1 y = 0 }		
+							light_armor = { x = 1 y = 1 }
+							cavalry = { x = 2 y = 0 }			
+							cavalry = { x = 2 y = 1 }
+							cavalry = { x = 2 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					division_template = {
+						name = "Uulyn Yavgan Tsergiin Diviz"
+						priority = 1
+						division_names_group = MON_MTN_01
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+				
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+				
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+						}
+						support = {      		
+							artillery = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							recon = { x = 0 y = 2 }
+						}
+					}
+					
+					330 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					820 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					329 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					818 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					654 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					817 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					819 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					612 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					611 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					621 = {
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+						create_unit = { division = "division_template = \"Morin Diviz\" start_experience_factor = 0.3" owner = MON }
+					}
+					
+					delete_unit_template_and_units = { division_template = "Morit Diviziin" }	#Remove existiing units
+					delete_unit_template_and_units = { division_template = "Mountaineer-Division" }
+					delete_unit_template_and_units = { division_template = "Armored-Division" }
+					
+					#MORE CHARACTERS FOR MONGOLIA
+					add_advisor_role = {
+						character = MON_random_high_command_1
+						advisor = {
+							slot = high_command
+							cost = 100
+							idea_token = MON_random_high_command_1
+							traits = {
+								army_cavalry_2
+							}
+						}
+					}
+					
+					add_advisor_role = {
+						character = MON_random_high_command_2
+						advisor = {
+							slot = high_command
+							cost = 100
+							idea_token = MON_random_high_command_2
+							traits = {
+								army_logistics_2
+							}
+						}
+					}
+					
+				}
+				
+				#REMOVE MONGOLIAN DIPLOMATIC PENALTY
+				SOV = {
+					remove_opinion_modifier = { target = MON modifier = faction_traitor }
+				}
+			}
+		}
+	}
+}

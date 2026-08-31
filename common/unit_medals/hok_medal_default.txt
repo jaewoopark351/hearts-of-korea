@@ -1,0 +1,79 @@
+@cost = 30
+
+unit_medals = {
+	
+	### KOR
+	
+	hwarang_mugong_hunjang = {
+		
+		available = { original_tag = KOR }
+		frame = 1
+		icon = "GFX_medal_icon_kor"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_morale_factor = 0.05
+			army_org_factor = 0.05
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	chungmu_mugong_hunjang = {
+		
+		available = { original_tag = KOR }
+		frame = 2
+		icon = "GFX_medal_icon_kor"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.1
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	eulji_mugong_hunjang = {
+		
+		available = { original_tag = KOR }
+		frame = 3
+		icon = "GFX_medal_icon_kor"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_attack_factor = 0.05
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	taeguk_mugong_hunjang = {
+		
+		available = { original_tag = KOR }
+		frame = 4
+		icon = "GFX_medal_icon_kor"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			experience_loss_factor = -0.2
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+}

@@ -1,0 +1,143 @@
+#TANK
+
+KOR_daewoo_tank_organization = {
+	include = generic_tank_organization 
+	icon = GFX_idea_kor_daewoo
+	allowed = {
+		tag = KOR
+	}
+}
+KOR_hyundai_rotem_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_kor_hyundai
+	allowed = {
+		tag = KOR
+	}
+	available = {
+		owner = { has_completed_focus = KOR_armored_focus }
+	}
+}
+KOR_rygyeong_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_kor_yugyeong_machine_industry
+	allowed = {
+		tag = KOR
+	}
+	available = {
+		owner = { has_completed_focus = KOR_armored_focus }
+	}
+}
+KOR_doosan_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_kor_doosan
+	allowed = {
+		tag = KOR
+	}
+	available = {
+		owner = { has_completed_focus = KOR_armored_focus }
+	}
+}
+
+
+#AIRCRAFT
+KOR_kai_company_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_kor_kai
+	allowed = {
+		tag = KOR
+	}
+	available = {
+		owner = { has_completed_focus = KOR_korea_aerospace_industry }
+	}
+}
+KOR_hanjin_air_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_kor_hanjin
+	allowed = {
+		tag = KOR
+	}
+}
+KOR_jinhae_naval_air_factory_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_kor_jinhae_naval_air_factory
+	allowed = {
+		tag = KOR
+	}
+}
+
+
+#SHIP
+
+KOR_daewoo_ship_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_kor_daewoo_ship
+	allowed = {
+		tag = KOR
+	}
+	available = {
+		owner = { has_completed_focus = KOR_invitation_of_foreign_naval_designers }
+	}
+}
+KOR_hyundai_heavy_industries_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_kor_hyundai
+	allowed = {
+		tag = KOR
+	}
+	available = {
+		owner = { has_completed_focus = KOR_invitation_of_foreign_naval_designers }
+	}
+}
+KOR_daehanjoseongongsa_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_kor_daehanjoseongongsa
+	allowed = {
+		tag = KOR
+	}
+}
+KOR_gms_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_kor_gms
+	allowed = {
+		tag = KOR
+	}
+	available = {
+		owner = { has_completed_focus = KOR_invitation_of_foreign_naval_designers }
+	}
+}
+
+
+#MATERIEL
+
+KOR_gukgun_jobyeongchang_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_kor_afab
+	allowed = {
+		tag = KOR
+	}
+}
+KOR_hanhwa_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_kor_hanhwa
+	allowed = {
+		tag = KOR
+	}
+}
+KOR_kia_motors_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_kor_kia_motors
+	allowed = {
+		tag = KOR
+	}
+}
+KOR_mmaa_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_kor_mmaa
+	allowed = {
+		tag = KOR
+	}
+	available = {
+		owner = { has_completed_focus = KOR_expansion_of_non_combat_support_units }
+	}
+}
+

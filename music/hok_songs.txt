@@ -1,0 +1,147 @@
+
+music_station = "base_music"
+
+music = {
+	song = "Sinarirang"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { original_tag = KOR }
+		}	
+		modifier = {
+			factor = 10
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "March_of_hwarang"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { original_tag = KOR }
+		}	
+		modifier = {
+			factor = 10
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "Federation_of_Balhae"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_completed_focus = KOR_proclaim_federation_of_balhae }
+		}	
+		modifier = {
+			factor = 10
+			has_completed_focus = KOR_proclaim_federation_of_balhae
+		}
+	}
+}
+
+music = {
+	song = "Alive_as_the_flower_of_the_nation"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { original_tag = KOR }
+		}
+		modifier = {
+			factor = 10
+			original_tag = KOR
+			OR = {
+				has_government = democratic
+				has_government = fascism
+			}
+		}
+	}
+}
+
+music = {
+	song = "Lyrical_folk_song_of_korea"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { original_tag = KOR }
+		}	
+		modifier = {
+			factor = 10
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "Songs_of_minjoong"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { original_tag = KOR }
+		}
+		modifier = {
+			factor = 0
+			original_tag = KOR
+			NOT = { has_government = communism }
+		}
+		modifier = {
+			factor = 10
+			original_tag = KOR
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "Daegu_commune"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { original_tag = KOR }
+		}
+		modifier = {
+			factor = 0
+			original_tag = KOR
+			NOT = { has_government = communism }
+		}	
+		modifier = {
+			factor = 10
+			original_tag = KOR
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "Minshu_ikki"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_completed_focus = JAP_proclaim_the_republic }
+		}	
+		modifier = {
+			factor = 10
+			has_completed_focus = JAP_proclaim_the_republic
+		}
+	}
+}
+

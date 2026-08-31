@@ -1,0 +1,146 @@
+KOR_alternate_plan_communist = {
+	name = "Communist Korea Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_game_rule = {
+			rule = KOR_AI_BEHAVIOR
+			option = COMMUNIST
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		KOR_future_of_the_republic
+		KOR_long_live_the_dictatorship_of_the_proletariat
+		KOR_agitate_the_union
+		KOR_formation_of_the_provisional_peoples_committee
+		KOR_begin_rearmament
+		KOR_daehanminguk_yuggun
+		KOR_army_augmentation
+		KOR_organization_rokasf
+		KOR_infantry_focus
+		KOR_new_model_rifle
+		KOR_expansion_of_non_combat_support_units
+		KOR_proclaim_peoples_republic_of_korea
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+KOR_alternate_plan_fascist = {
+	name = "Fascist Korea Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_game_rule = {
+			rule = KOR_ai_behavior
+			option = FASCIST
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		KOR_future_of_the_republic
+		KOR_empowering_the_nrsc
+		KOR_gathering_the_farright_in_the_military
+		KOR_establishment_of_the_national_salvation_army
+		KOR_prussia_in_the_far_east
+		KOR_begin_rearmament
+		KOR_daehanminguk_yuggun
+		KOR_army_augmentation
+		KOR_organization_rokmc
+		KOR_stop_democracy
+		KOR_samcheong_re_education_camp
+		KOR_threelegged_boys
+		KOR_armed_forces_intelligence_command
+		KOR_taming_the_jaebeol
+		KOR_infantry_focus
+		KOR_new_model_rifle
+		KOR_korea_reigns_above_the_world
+		KOR_anticommunism_agreement_signed
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+KOR_alternate_plan_neutrality = {
+	name = "Neutrality Korea Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_game_rule = {
+			rule = KOR_ai_behavior
+			option = NEUTRALITY
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		KOR_urihwangsilsaranghoe
+		KOR_take_control_the_radio_media
+		KOR_devalue_the_won
+		KOR_support_light_industry_export
+		KOR_ask_the_ifc_to_invest
+		KOR_seoul_national_university_expansion
+		KOR_gyeongbu_expressway
+		KOR_gyeongui_expressway
+		KOR_first_new_city_plan
+		KOR_construction_boom
+		KOR_deoksugung_pyeonguihoe
+		KOR_revise_the_constitution
+		KOR_return_of_the_king
+		KOR_oppose_gyeyeonsu
+		KOR_reconstruction_confusian_order
+		KOR_revive_bibyeonsa
+		KOR_reform_military
+		KOR_emperors_order
+		KOR_modern_sejong_the_great
+		KOR_dedication_of_emperor
+		KOR_royal_guards_division
+		KOR_march_of_the_king
+		KOR_addresses_to_the_korean_nation
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

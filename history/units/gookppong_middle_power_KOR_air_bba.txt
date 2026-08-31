@@ -1,0 +1,10 @@
+﻿air_wings = {
+	1020 = { 
+		small_plane_airframe_1 = { owner = "KOR" amount = 100 version_name = "KP-36 Doksuri" } name = "Je 5 Jeontu-Bihaengdan"
+		small_plane_cas_airframe_1 = { owner = "KOR" amount = 100 version_name = "KA-32 Chamsae" } name = "Je 4 Gonggyeok-Bihaengdan"	
+	}
+	1022 = { 
+		small_plane_airframe_1 = { owner = "KOR" amount = 100 version_name = "KP-36 Doksuri" } name = "Je 6 Jeontu-Bihaengdan"
+		medium_plane_airframe_0 = { owner = "KOR" amount = 60 version_name = "KA-31 Kkachi" } name = "Je 2 Pokgyeok-Bihaengdan"
+	}
+}

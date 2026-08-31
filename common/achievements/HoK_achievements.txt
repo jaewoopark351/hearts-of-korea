@@ -1,0 +1,289 @@
+unique_id = HoK_achievements_2898629778
+
+
+#################################################################
+# List of HoK achievements										#
+#################################################################
+
+Hearts_of_korea = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+ 
+    happened = {
+        date > 1936.01.07
+    }
+}
+
+Gootgeon_needs_friends = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+	
+	happened = {
+		has_idea = scraping_the_barrel
+	}
+}
+
+Baebakee = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_completed_focus = KOR_vision_1950
+		has_global_flag = kor_vision_1950_step_3_complete_flag
+	}
+}
+
+Ready_for_jamboree = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		525 = { infrastructure > 4 }
+	}
+}
+
+The_good_the_bad_the_weird_hok = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_completed_focus = KOR_manchurian_oil
+	}
+}
+
+He_has_returned_from_korea = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_global_flag = KOR_kimttler_become_leader_of_korea
+		controls_state = 64
+	}
+}
+
+Manschluss = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_global_flag = kor_triumph_for_the_manchuria_flag
+	}
+}
+
+Meet_hevisaurus = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_completed_focus = KOR_our_true_enemy
+		controls_state = 111
+	}
+}
+
+The_hwan_world_order = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_completed_focus = KOR_hwan_world_order
+		all_state = {
+			controller = {
+					tag = KOR
+			}
+		}
+	}
+}
+
+Long_live_the_president = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_completed_focus = KOR_fall_of_the_sun
+	}
+}
+
+BTS = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_completed_focus = KOR_threelegged_boys
+		controls_state = 326
+		controls_state = 729
+		controls_state = 531
+		controls_state = 378
+		controls_state = 358
+		controls_state = 16
+		controls_state = 126
+	}
+}
+
+Yi_un_cess_maker = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = KOR
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_completed_focus = KOR_lee_seong_gyes_resurrection
+	}
+}
+
+Japanese_chang_seop = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+			original_tag = JAP
+		custom_trigger_tooltip = {
+            tooltip = TRIGGER_IS_IRONMAN
+            is_ironman = yes
+        }
+    }
+
+	happened = {
+		has_government = democratic
+		KOR = {
+			NOT = { has_government = democratic } 
+			OR = {
+				has_capitulated = yes
+				exists = no
+			}
+		}
+		has_full_control_of_state = 1017		#HoK State - Gyeonggi
+	}
+}

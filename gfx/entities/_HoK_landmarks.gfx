@@ -1,0 +1,19 @@
+objectTypes = {
+
+###########################################
+######	    Gyeongbokgung - HoK      ######
+###########################################
+
+	pdxmesh = {
+		name = "landmark_gyeongbokgung_mesh"
+		file = "gfx/models/buildings/landmarks/landmark_gyeongbokgung.mesh"
+		meshsettings = {
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+	
+#DESTROYED
+
+
+}

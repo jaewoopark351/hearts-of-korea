@@ -1,0 +1,1894 @@
+KOR_triumph_for_the_manchuria_category = {
+
+	kor_triumph_for_the_manchuria = {
+
+		icon = generic_form_nation
+
+		allowed = { original_tag = KOR }
+
+		available = {
+			is_subject = no
+			
+			# korea
+			controls_state = 525
+			controls_state = 527
+			controls_state = 1017
+			controls_state = 1018
+			controls_state = 1019
+			controls_state = 1020
+			controls_state = 1021
+			controls_state = 1022
+			
+			# manchuria
+			controls_state = 716 #liaotung
+			#controls_state = 745 #dalian
+			controls_state = 328 #kirin
+			controls_state = 717 #sungkiang
+			controls_state = 714 #heilungkiang
+			controls_state = 761 #hulunbuir
+			controls_state = 715 #liaoning
+			controls_state = 1024 #Jiandao Hok
+			controls_state = 1025 #Andung Hok
+			controls_state = 1026 #Heihe Hok
+		}
+
+		visible = {
+			original_tag = KOR
+
+			NOT =  { has_global_flag = kor_triumph_for_the_manchuria_flag }
+		}
+		
+		complete_effect = {
+			716 = { add_core_of = ROOT }
+			745 = { add_core_of = ROOT }
+			328 = { add_core_of = ROOT }
+			717 = { add_core_of = ROOT }
+			714 = { add_core_of = ROOT }
+			761 = { add_core_of = ROOT }
+			715 = { add_core_of = ROOT }
+			1024 = { add_core_of = ROOT }
+			1025 = { add_core_of = ROOT }
+			1026 = { add_core_of = ROOT }
+			610 = { add_core_of = ROOT }
+			
+			716 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+			745 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+			328 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+			717 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+			714 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+			761 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+			715 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+			1026 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+			610 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+
+			hidden_effect = {
+				set_global_flag = kor_triumph_for_the_manchuria_flag
+				transfer_state = 716
+				transfer_state = 328
+				transfer_state = 717
+				transfer_state = 714
+				transfer_state = 761
+				transfer_state = 715
+				transfer_state = 1024
+				transfer_state = 1025
+				transfer_state = 1026
+				#transfer_state = 610
+			}
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	rename_manchuria = {
+
+		icon = generic_form_nation
+
+		allowed = { original_tag = KOR }
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			has_global_flag = kor_triumph_for_the_manchuria_flag
+			NOT =  { has_global_flag = kor_rename_manchuria_flag }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			716 = { set_state_name = STATE_KR_716 }
+			745 = { set_state_name = STATE_KR_745 }
+			328 = { set_state_name = STATE_KR_328 }
+			717 = { set_state_name = STATE_KR_717 }
+			714 = { set_state_name = STATE_KR_714 }
+			761 = { set_state_name = STATE_KR_761 }
+			715 = { set_state_name = STATE_KR_715 }
+			1024 = { set_state_name = STATE_KR_1024 }
+			1025 = { set_state_name = STATE_KR_1025 }
+			1026 = { set_state_name = STATE_KR_1026 }
+			610 = { set_state_name = STATE_KR_610 }
+			
+			set_province_name = { id = 11771 name = VICTORY_POINTS_KR_11771 }
+			set_province_name = { id = 4572 name = VICTORY_POINTS_KR_4572 }
+			set_province_name = { id = 10433 name = VICTORY_POINTS_KR_10433 }
+			set_province_name = { id = 1150 name = VICTORY_POINTS_KR_1150 }
+			set_province_name = { id = 6981 name = VICTORY_POINTS_KR_6981 }
+			set_province_name = { id = 7663 name = VICTORY_POINTS_KR_7663 }
+			set_province_name = { id = 964 name = VICTORY_POINTS_KR_964 }
+			set_province_name = { id = 9835 name = VICTORY_POINTS_KR_9835 }
+			set_province_name = { id = 9897 name = VICTORY_POINTS_KR_9897 }
+			set_province_name = { id = 6964 name = VICTORY_POINTS_KR_6964 }
+			set_province_name = { id = 944 name = VICTORY_POINTS_KR_944 }
+			set_province_name = { id = 11781 name = VICTORY_POINTS_KR_11781 }
+			set_province_name = { id = 13150 name = VICTORY_POINTS_KR_13150 }
+			set_province_name = { id = 4506 name = VICTORY_POINTS_KR_4506 }
+			set_province_name = { id = 7613 name = VICTORY_POINTS_KR_7613 }
+			set_province_name = { id = 7832 name = VICTORY_POINTS_KR_7832 }
+			set_province_name = { id = 10463 name = VICTORY_POINTS_KR_10463 }
+			set_province_name = { id = 1732 name = VICTORY_POINTS_KR_1732 }
+			set_province_name = { id = 12482 name = VICTORY_POINTS_KR_12482 }
+			set_province_name = { id = 4633 name = VICTORY_POINTS_KR_4633 }
+			set_province_name = { id = 9885 name = VICTORY_POINTS_KR_9885 }
+			set_province_name = { id = 930 name = VICTORY_POINTS_KR_930 }
+			set_province_name = { id = 1776 name = VICTORY_POINTS_KR_1776 }
+			set_province_name = { id = 987 name = VICTORY_POINTS_KR_987 }
+			set_province_name = { id = 7633 name = VICTORY_POINTS_KR_7633 }
+			set_province_name = { id = 11801 name = VICTORY_POINTS_KR_11801 }
+			set_province_name = { id = 6837 name = VICTORY_POINTS_KR_6837 }
+			
+			hidden_effect = {
+				set_global_flag = kor_rename_manchuria_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+KOR_defeat_japan_category = {
+
+	KOR_defeat_japan = {
+
+		allowed = { tag = KOR }
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+			# korea
+			has_full_control_of_state = 525
+			has_full_control_of_state = 527
+			has_full_control_of_state = 1017
+			has_full_control_of_state = 1018
+			has_full_control_of_state = 1019
+			has_full_control_of_state = 1020
+			has_full_control_of_state = 1021
+			has_full_control_of_state = 1022
+			
+			# manchuria
+			has_full_control_of_state = 716 #liaotung
+			has_full_control_of_state = 745 #dalian
+			has_full_control_of_state = 328 #kirin
+			has_full_control_of_state = 717 #sungkiang
+			has_full_control_of_state = 714 #heilungkiang
+			has_full_control_of_state = 761 #hulunbuir
+			has_full_control_of_state = 715 #liaoning
+			has_full_control_of_state = 1024
+			has_full_control_of_state = 1025
+			has_full_control_of_state = 1026
+			#has_full_control_of_state = 610
+			has_war_with = JAP
+			KOR = { is_in_faction = no }
+			MAN = { is_subject_of = JAP }
+		}
+		is_good = yes
+		fire_only_once = yes
+
+		visible = {
+			has_war_with = JAP
+			MAN = { is_subject_of = JAP }
+			NOT =  { has_global_flag = kor_defeat_japanese_army }
+		}
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			JAP = { country_event = KOR_events.1 }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				transfer_state = 716
+				transfer_state = 745
+				transfer_state = 328
+				transfer_state = 717
+				transfer_state = 714
+				transfer_state = 761
+				transfer_state = 715
+				transfer_state = 1024
+				transfer_state = 1025
+				transfer_state = 1026
+				transfer_state = 610
+				white_peace = JAP
+			}
+		}
+
+		timeout_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+}
+
+KOR_liberation_of_asia_category = {
+
+	KOR_liberation_of_indochina = {
+	
+		icon = generic_form_nation
+		
+		available = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+			controls_state = 671
+			controls_state = 670
+			controls_state = 741
+			controls_state = 286
+		}
+		
+		cost = 0
+		
+		visible = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = VIN
+					NOT = { VIN = { has_government = democratic } }
+				}
+				hidden_effect = {
+					VIN = {
+						set_state_controller = 671
+						set_state_controller = 670
+						set_state_controller = 741
+						set_state_controller = 286
+					}
+				}
+				VIN = {
+					start_civil_war = {
+						ideology = democratic
+						size = 1
+						
+						transfer_state = 671
+						transfer_state = 670
+						transfer_state = 741
+						transfer_state = 286
+						
+						KOR = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
+						}
+					}
+				}
+			}
+			else = {
+				VIN = {
+					transfer_state = 671
+					transfer_state = 670
+					transfer_state = 741
+					transfer_state = 286
+				}
+				set_autonomy = { target = VIN autonomy_state = autonomy_dominion }
+			}
+		}
+	}
+	
+	KOR_liberation_of_philippine = {
+	
+		icon = generic_form_nation
+		
+		available = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+			controls_state = 623
+			controls_state = 327
+			controls_state = 625
+			controls_state = 624
+			controls_state = 627
+			controls_state = 626
+		}
+		
+		cost = 0
+		
+		visible = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = PHI
+					NOT = { NOR = { has_government = democratic } }
+				}
+				hidden_effect = {
+					PHI = {
+						set_state_controller = 623
+						set_state_controller = 327
+						set_state_controller = 625
+						set_state_controller = 624
+						set_state_controller = 627
+						set_state_controller = 626
+					}
+				}
+				PHI = {
+					start_civil_war = {
+						ideology = democratic
+						size = 1
+						
+						transfer_state = 623
+						transfer_state = 327
+						transfer_state = 625
+						transfer_state = 624
+						transfer_state = 627
+						transfer_state = 626
+						set_cosmetic_tag = PHI_free
+						KOR = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
+						}
+					}
+				}
+			}
+			else = {
+				PHI = {
+					transfer_state = 623
+					transfer_state = 327
+					transfer_state = 625
+					transfer_state = 624
+					transfer_state = 627
+					transfer_state = 626
+					set_cosmetic_tag = PHI_free
+				}
+				set_autonomy = { target = PHI autonomy_state = autonomy_dominion }
+			}
+		}
+	}
+	
+	KOR_liberation_of_indonesia = {
+		
+		icon = generic_form_nation
+		
+		available = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+			controls_state = 672
+			controls_state = 334
+			controls_state = 335
+			controls_state = 673
+			controls_state = 667
+			controls_state = 668
+			controls_state = 669
+		}
+		
+		cost = 0
+		
+		visible = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = INS
+					NOT = { INS = { has_government = democratic } }
+				}
+				hidden_effect = {
+					INS = {
+						set_state_controller = 672
+						set_state_controller = 334
+						set_state_controller = 335
+						set_state_controller = 673
+						set_state_controller = 667
+						set_state_controller = 668
+						set_state_controller = 669
+					}
+					set_province_name = { id = 7381 name = "Jakarta" }
+					
+				}
+				INS = {
+					start_civil_war = {
+						ideology = democratic
+						size = 1
+						
+						transfer_state = 672
+						transfer_state = 334
+						transfer_state = 335
+						transfer_state = 673
+						transfer_state = 667
+						transfer_state = 668
+						transfer_state = 669
+						KOR = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
+						}
+						set_cosmetic_tag = INS_free
+					}
+				}
+			}
+			else = {
+				INS = {
+					transfer_state = 672
+					transfer_state = 334
+					transfer_state = 335
+					transfer_state = 673
+					transfer_state = 667
+					transfer_state = 668
+					transfer_state = 669
+					set_province_name = { id = 7381 name = "Jakarta" }
+					set_cosmetic_tag = INS_free
+				}
+				set_autonomy = { target = INS autonomy_state = autonomy_dominion }	
+			}		
+		}
+	}
+	
+	KOR_liberation_of_maleisia = {
+		
+		icon = generic_form_nation
+		
+		available = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+			controls_state = 336
+			controls_state = 333
+		}
+		
+		cost = 0
+		
+		visible = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = MAL
+					NOT = { MAL = { has_government = democratic } }
+				}
+				hidden_effect = {
+					MAL = {
+						set_state_controller = 336
+						set_state_controller = 333
+					}
+				}
+				MAL = {
+					start_civil_war = {
+						ideology = democratic
+						size = 1
+						
+						transfer_state = 336
+						transfer_state = 333
+						
+						set_cosmetic_tag = MAL_free
+						
+						KOR = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
+						}
+					}
+				}
+			}
+			else = {
+				MAL = {
+					transfer_state = 336
+					transfer_state = 333
+					
+					set_cosmetic_tag = MAL_free
+				}
+				set_autonomy = { target = MAL autonomy_state = autonomy_dominion }
+			}
+		}
+	}
+	
+	KOR_liberation_of_pamanyungan = {
+	
+		icon = generic_form_nation
+		
+		available = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+			controls_state = 522
+			controls_state = 520
+			controls_state = 519
+			controls_state = 521
+			controls_state = 285
+			controls_state = 517
+			controls_state = 518
+		}
+		
+		cost = 0
+		
+		visible = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = AST
+					NOT = { AST = { has_government = democratic } }
+				}
+				hidden_effect = {
+					AST = {
+						set_state_controller = 522
+						set_state_controller = 520
+						set_state_controller = 519
+						set_state_controller = 521
+						set_state_controller = 285
+						set_state_controller = 517
+						set_state_controller = 518
+					}
+				}
+				AST = {
+					start_civil_war = {
+						ideology = democratic
+						size = 1
+						
+						transfer_state = 522
+						transfer_state = 520
+						transfer_state = 519
+						transfer_state = 521
+						transfer_state = 285
+						transfer_state = 517
+						transfer_state = 518
+						
+						KOR = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
+						}
+						set_cosmetic_tag = AST_pamanyungan
+						create_country_leader = {
+							name = "James Niungga"
+							picture = GFX_Portrait_Africa_Generic_3
+							expire = "1965.1.1"
+							ideology = socialism
+						}
+					}
+				}
+			}
+			else = {
+				AST = {
+					transfer_state = 522
+					transfer_state = 520
+					transfer_state = 519
+					transfer_state = 521
+					transfer_state = 285
+					transfer_state = 517
+					transfer_state = 518
+					set_cosmetic_tag = AST_pamanyungan
+					create_country_leader = {
+						name = "James Niungga"
+						picture = GFX_Portrait_Africa_Generic_3
+						expire = "1965.1.1"
+						ideology = socialism
+					}
+				}
+				set_autonomy = { target = AST autonomy_state = autonomy_dominion }
+			}
+		}
+	}
+	
+	KOR_liberation_of_aotearoa = {
+	
+		icon = generic_form_nation
+		
+		available = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+			controls_state = 723
+			controls_state = 284
+		}
+		
+		cost = 0
+		
+		visible = {
+			has_completed_focus = KOR_asian_independence_support
+			has_government = democratic
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = NZL
+					NOT = { NZL = { has_government = democratic } }
+				}
+				hidden_effect = {
+					NZL = {
+						set_state_controller = 723
+						set_state_controller = 284
+					}
+				}
+				NZL = {
+					start_civil_war = {
+						ideology = democratic
+						size = 1
+						
+						transfer_state = 723
+						transfer_state = 284
+						
+						KOR = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
+						}
+						set_cosmetic_tag = NZL_aotearoa
+						create_country_leader = {
+							name = "Korokī Mahuta"
+							picture = GFX_Portrait_Africa_Generic_2
+							expire = "1965.1.1"
+							ideology = socialism
+						}
+					}
+				}
+			}
+			else = {
+				NZL = {
+					transfer_state = 723
+					transfer_state = 284
+					set_cosmetic_tag = NZL_aotearoa
+					create_country_leader = {
+						name = "Korokī Mahuta"
+						picture = GFX_Portrait_Africa_Generic_2
+						expire = "1965.1.1"
+						ideology = socialism
+					}
+				}
+				set_autonomy = { target = NZL autonomy_state = autonomy_dominion }
+			}
+		}
+	}
+}
+
+KOR_vision_1950_category = {
+
+	KOR_vision_1950_step_1 = {
+		
+		icon = generic_naval
+		
+		available = {
+			has_navy_size = {
+				unit = battle_cruiser
+				size > 1
+			}
+			has_navy_size = {
+				unit = heavy_cruiser
+				size > 3
+			}
+			has_navy_size = {
+				unit = light_cruiser
+				size > 3
+			}
+			has_navy_size = {
+				unit = destroyer
+				size > 19
+			}
+		}
+		
+		fire_only_once = yes
+		is_good = no
+		visible = {
+			has_completed_focus = KOR_vision_1950
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			navy_experience = 150
+			hidden_effect = {
+				set_global_flag = kor_vision_1950_step_1_complete_flag
+			}
+		}
+	}
+	
+	KOR_vision_1950_step_2 = {
+		
+		icon = generic_naval
+		
+		available = {
+			has_navy_size = {
+				unit = battleship
+				size > 3
+			}
+			has_navy_size = {
+				unit = battle_cruiser
+				size > 1
+			}
+			has_navy_size = {
+				unit = carrier
+				size > 3
+			}
+			has_navy_size = {
+				unit = heavy_cruiser
+				size > 9
+			}
+			has_navy_size = {
+				unit = light_cruiser
+				size > 9
+			}
+			has_navy_size = {
+				unit = destroyer
+				size > 39
+			}
+		}
+		
+		fire_only_once = yes
+		is_good = no
+		visible = {
+			has_global_flag = kor_vision_1950_step_1_complete_flag
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			navy_experience = 150
+			hidden_effect = {
+				set_global_flag = kor_vision_1950_step_2_complete_flag
+			}
+		}
+	}
+	
+	KOR_vision_1950_step_3 = {
+		
+		icon = generic_naval
+		
+		available = {
+			has_navy_size = {
+				unit = battleship
+				size > 7
+			}
+			has_navy_size = {
+				unit = battle_cruiser
+				size > 3
+			}
+			has_navy_size = {
+				unit = carrier
+				size > 9
+			}
+			has_navy_size = {
+				unit = heavy_cruiser
+				size > 11
+			}
+			has_navy_size = {
+				unit = light_cruiser
+				size > 15
+			}
+			has_navy_size = {
+				unit = destroyer
+				size > 99
+			}
+		}
+		
+		fire_only_once = yes
+		is_good = no
+		visible = {
+			has_global_flag = kor_vision_1950_step_2_complete_flag
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			navy_experience = 150
+			hidden_effect = {
+				set_global_flag = kor_vision_1950_step_3_complete_flag
+				news_event = { id = newsk.12 hours = 6 }
+			}
+		}
+	}
+}
+
+KOR_integrate_japanese_fleet_category = {
+
+	KOR_absorb_the_japanese_fleet = {
+	
+		icon = generic_naval
+		
+		allowed = { tag = KOR }
+		
+		available = {
+			JAP = { is_puppet_of = KOR }
+		}
+		
+		fire_only_once = yes
+		is_good = no
+		visible = {
+			JAP = { is_puppet_of = KOR }
+		}
+		complete_effect = {
+			JAP = {
+				transfer_navy = {
+					target = KOR
+				}
+			}
+		}
+	}
+	
+	KOR_recommissioning_hiei = {
+	
+		icon = generic_naval
+		
+		allowed = { tag = KOR }
+		
+		available = {
+			JAP = { is_puppet_of = KOR }
+		}
+		
+		fire_only_once = yes
+		is_good = no
+		visible = {
+			JAP = { is_puppet_of = KOR }
+		}
+		complete_effect = {
+			if = { 
+				limit = { 
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				add_equipment_production = {
+					equipment = {
+						type = battleship_1
+					}
+					requested_factories = 1
+					progress = 0.95
+					amount = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dlc = "Man the Guns"
+				}
+				hidden_effect = { 
+					create_equipment_variant = {
+						name = "Kim Chung-seon Class"
+						type = ship_hull_heavy_1
+						name_group = KOR_BC_HISTORICAL
+						parent_version = 0
+						modules = { 
+							fixed_ship_battery_slot = ship_heavy_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1 
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = heavy_ship_engine_2 
+							fixed_ship_secondaries_slot = ship_secondaries_1
+							fixed_ship_armor_slot = ship_armor_bc_1 
+							front_1_custom_slot = ship_anti_air_1
+							front_2_custom_slot = empty 
+							mid_1_custom_slot = ship_secondaries_1
+							mid_2_custom_slot = empty
+							mid_3_custom_slot = empty 
+							rear_1_custom_slot = ship_heavy_battery_1 
+							rear_2_custom_slot = empty 
+						} 
+					}	
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_1
+						creator = "KOR" 
+						version_name = "Kim Chung-seon Class"
+					}
+					name = "ROKS Kim Chung-seon" 
+					requested_factories = 1
+					progress = 0.95
+					amount = 1
+				}
+			}
+		}
+	}
+}
+
+KOR_jaebeol_category = {
+
+	KOR_order_to_samsung = {
+		icon = ger_mefo_bills
+		available = {
+			OR = {
+				has_completed_focus = KOR_cooperation_with_the_jaebeol
+				has_completed_focus = KOR_taming_the_jaebeol
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = KOR_cooperation_with_the_jaebeol
+				has_completed_focus = KOR_taming_the_jaebeol
+			}
+		}
+		cost = 100
+		days_remove = 90
+		days_re_enable = 0
+		modifier = { 
+			research_speed_factor = 0.10  
+			special_project_speed_factor = 0.05
+		}
+	}
+	
+	KOR_order_to_hyundai = {
+		icon = ger_mefo_bills
+		available = {
+			OR = {
+				has_completed_focus = KOR_cooperation_with_the_jaebeol
+				has_completed_focus = KOR_taming_the_jaebeol
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = KOR_cooperation_with_the_jaebeol
+				has_completed_focus = KOR_taming_the_jaebeol
+			}
+		}
+		cost = 100
+		days_remove = 90
+		days_re_enable = 0
+		modifier = { industrial_capacity_dockyard = 0.1 }
+	}
+	
+	KOR_order_to_sk = {
+		icon = ger_mefo_bills
+		available = {
+			OR = {
+				has_completed_focus = KOR_cooperation_with_the_jaebeol
+				has_completed_focus = KOR_taming_the_jaebeol
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = KOR_cooperation_with_the_jaebeol
+				has_completed_focus = KOR_taming_the_jaebeol
+			}
+		}
+		cost = 100
+		days_remove = 90
+		days_re_enable = 0
+		modifier = {
+			production_speed_synthetic_refinery_factor = 0.20 
+			production_oil_factor = 0.5
+		}
+	}
+}
+
+KOR_fall_of_the_sun_category = {
+
+	KOR_establish_protectorate_states_of_japan = {
+
+		icon = generic_form_nation
+
+		allowed = { original_tag = KOR }
+
+		available = {
+			is_subject = no
+			
+			OR = {
+				AND = {
+					controls_state = 282
+					controls_state = 528
+					controls_state = 529
+					controls_state = 530
+					controls_state = 531
+					controls_state = 532
+					controls_state = 533
+					controls_state = 534
+					controls_state = 535
+					controls_state = 536
+				}
+				AND = {
+					JAP = { is_subject_of = KOR }
+					JAP = {
+						controls_state = 282
+						controls_state = 528
+						controls_state = 529
+						controls_state = 530
+						controls_state = 531
+						controls_state = 532
+						controls_state = 533
+						controls_state = 534
+						controls_state = 535
+						controls_state = 536
+					}
+				}
+			}
+		}
+		
+		cost = 0
+		
+		visible = {
+			original_tag = KOR
+			has_completed_focus = KOR_fall_of_the_sun
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = { KOR = { set_global_flag = kor_superevent_globalflag_01 } }
+			282 = { add_core_of = KJP }
+			528 = { add_core_of = KJP }
+			529 = { add_core_of = KJP }
+			530 = { add_core_of = KJP }
+			531 = { add_core_of = KJP }
+			532 = { add_core_of = KJP }
+			533 = { add_core_of = KJP }
+			534 = { add_core_of = KJP }
+			535 = { add_core_of = KJP }
+			536 = { add_core_of = KJP }
+			
+			
+			KJP = {
+				transfer_state = 282
+				transfer_state = 528
+				transfer_state = 529
+				transfer_state = 530
+				transfer_state = 531
+				transfer_state = 532
+				transfer_state = 533
+				transfer_state = 534
+				transfer_state = 535
+				transfer_state = 536
+				
+				set_cosmetic_tag = KJP_PSJ
+				
+				create_country_leader = {
+					name = "Choi Deokshin"
+					picture = GFX_Portrait_Korea_Generic_land_7
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+				}
+			}
+			set_autonomy = { target = KJP autonomy_state = autonomy_integrated_puppet }
+		}
+	}
+}
+
+KOR_China_national_reconstruction_category = {
+
+	KOR_New_China_Government = {
+		icon = generic_form_nation
+		allowed = { original_tag = KOR }
+		available = {
+			is_subject = no
+			KOR = { is_in_faction_with = KCH }
+			CHI = { is_subject_of = KOR }
+		}
+		cost = 0
+		visible = {
+			original_tag = KOR
+			has_completed_focus = KOR_overthrow_the_chinese_dictators
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = { KOR = { set_global_flag = kor_superevent_globalflag_02 } }
+			KCH = {
+				annex_country = { target = CHI }
+				set_cosmetic_tag = KCH_china
+				hidden_effect = {
+					KCH = {
+						325 = { add_core_of = KCH }
+						326 = { add_core_of = KCH }
+						591 = { add_core_of = KCH }
+						592 = { add_core_of = KCH }
+						593 = { add_core_of = KCH }
+						594 = { add_core_of = KCH }
+						595 = { add_core_of = KCH }
+						596 = { add_core_of = KCH }
+						597 = { add_core_of = KCH }
+						598 = { add_core_of = KCH }
+						599 = { add_core_of = KCH }
+						600 = { add_core_of = KCH }
+						601 = { add_core_of = KCH }
+						602 = { add_core_of = KCH }
+						603 = { add_core_of = KCH }
+						604 = { add_core_of = KCH }
+						605 = { add_core_of = KCH }
+						606 = { add_core_of = KCH }
+						607 = { add_core_of = KCH }
+						608 = { add_core_of = KCH }
+						609 = { add_core_of = KCH }
+						610 = { add_core_of = KCH }
+						611 = { add_core_of = KCH }
+						612 = { add_core_of = KCH }
+						613 = { add_core_of = KCH }
+						614 = { add_core_of = KCH }
+						615 = { add_core_of = KCH }
+						616 = { add_core_of = KCH }
+						617 = { add_core_of = KCH }
+						618 = { add_core_of = KCH }
+						619 = { add_core_of = KCH }
+						620 = { add_core_of = KCH }
+						621 = { add_core_of = KCH }
+						622 = { add_core_of = KCH }
+						602 = { add_core_of = KCH }
+						603 = { add_core_of = KCH }
+						604 = { add_core_of = KCH }
+						605 = { add_core_of = KCH }
+						606 = { add_core_of = KCH }
+						607 = { add_core_of = KCH }
+						608 = { add_core_of = KCH }
+						609 = { add_core_of = KCH }
+						611 = { add_core_of = KCH }
+						728 = { add_core_of = KCH }
+						729 = { add_core_of = KCH }
+						744 = { add_core_of = KCH }
+						746 = { add_core_of = KCH }
+						747 = { add_core_of = KCH }
+						748 = { add_core_of = KCH }
+						749 = { add_core_of = KCH }
+						750 = { add_core_of = KCH }
+						751 = { add_core_of = KCH }
+						752 = { add_core_of = KCH }
+						753 = { add_core_of = KCH }
+						754 = { add_core_of = KCH }
+						755 = { add_core_of = KCH }
+						756 = { add_core_of = KCH }
+					}
+				}
+			}
+		}
+	}
+}
+
+KOR_decision_CNDP_category = {
+
+	KOR_develop_jeolla = {
+		icon = GFX_decision_generic_construction
+		allowed = {
+			tag = KOR
+		}
+		available = { 
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			controls_state = 525
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 180
+		modifier = { civilian_factory_use = 5 }
+		
+		remove_effect = {
+			525 = {
+				set_state_category = large_town
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 13391 
+					value = 1
+				}
+				add_victory_points = {
+					province = 10110 
+					value = 1
+				}
+			}
+		}
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+	}
+	KOR_develop_gyeongsang = {
+		icon = GFX_decision_generic_construction
+		allowed = {
+			tag = KOR
+		}
+		available = { 
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			controls_state = 1020 
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 180
+		modifier = { civilian_factory_use = 5 }
+		
+		remove_effect = {
+			1020 = {
+				set_state_category = city
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 7121 
+					value = 1
+				}
+				add_victory_points = {
+					province = 12060 
+					value = 1
+				}
+				add_victory_points = {
+					province = 13397 
+					value = 1
+				}
+			}
+		}
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+	}
+	KOR_develop_chungcheong = {
+		icon = GFX_decision_generic_construction
+		allowed = {
+			tag = KOR
+		}
+		available = { 
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			controls_state = 1019
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 180
+		modifier = { civilian_factory_use = 5 }
+		
+		remove_effect = {
+			1019 = {
+				set_state_category = large_town
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 13408 
+					value = 1
+				}
+				add_victory_points = {
+					province = 7204 
+					value = 1
+				}
+			}
+		}
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+	}
+	KOR_develop_hwanghae = {
+		icon = GFX_decision_generic_construction
+		allowed = {
+			tag = KOR
+		}
+		available = { 
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			controls_state = 1022 
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 180
+		modifier = { civilian_factory_use = 5 }
+		
+		remove_effect = {
+			1022 = {
+				set_state_category = large_town
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 11915 
+					value = 1
+				}
+			}
+		}
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+	}
+	KOR_develop_pyeongan = {
+		icon = GFX_decision_generic_construction
+		allowed = {
+			tag = KOR
+		}
+		available = { 
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			controls_state = 1021 
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 180
+		modifier = { civilian_factory_use = 5 }
+		
+		remove_effect = {
+			1021 = {
+				set_state_category = large_city
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 9790 
+					value = 1
+				}
+			}
+		}
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+	}
+	KOR_develop_gangwon = {
+		icon = GFX_decision_generic_construction
+		allowed = {
+			tag = KOR
+		}
+		available = { 
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			controls_state = 1018 
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 180
+		modifier = { civilian_factory_use = 5 }
+		
+		remove_effect = {
+			1018 = {
+				set_state_category = town
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 1148 
+					value = 1
+				}
+			}
+		}
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+	}
+	KOR_develop_hamgyeong = {
+		icon = GFX_decision_generic_construction
+		allowed = {
+			tag = KOR
+		}
+		available = { 
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			controls_state = 527 
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 180
+		modifier = { civilian_factory_use = 5 }
+		
+		remove_effect = {
+			527 = {
+				set_state_category = town
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 6944 
+					value = 1
+				}
+			}
+		}
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+	}
+}
+
+
+KOR_decision_greater_hwan_category = {
+
+	kor_rise_of_greater_hwan = {
+		icon = generic_form_nation
+	
+		allowed = { original_tag = KOR }
+	
+		available = {
+			is_subject = no
+			num_of_factories > 200
+		}
+	
+		visible = {
+			has_completed_focus = KOR_hwan_world_order
+		}
+	
+		fire_only_once = yes
+
+		complete_effect = {
+			set_cosmetic_tag = KOR_greater_Hwan_neutrality
+			hidden_effect = {
+				news_event = { id = newsk.19 hours = 6 }
+				KOR = { set_global_flag = kor_superevent_globalflag_03 }
+			}
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+political_actions = {
+	
+	KOR_macarthur_go_home = {
+		icon = generic_prepare_civil_war
+		
+		allowed = {
+			original_tag = KOR
+		}
+		
+		visible = {
+			has_global_flag = KOR_macarthur_send_to_korea
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {	#MacArthur Go back to Home
+			USA_douglas_macarthur = {
+				set_nationality = USA
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+KOR_decision_expend_federation_of_balhae_category = {
+	
+	KOR_admission_vladivostok_to_the_federation = {
+		icon = generic_form_nation
+		allowed = { original_tag = KOR }
+		available = { controls_state = 408 } 	#SOV - Vladivostok
+		visible = { has_completed_focus = KOR_proclaim_federation_of_balhae }
+		fire_only_once = yes
+		cost = 100
+		highlight_states = { highlight_state_targets = { state = 408 } }
+		complete_effect = {
+			408 = { 
+				add_core_of = ROOT
+				set_state_name = STATE_KR_408
+			}
+			set_province_name = { id = 957 name = VICTORY_POINTS_KR_957 }
+			set_province_name = { id = 6989 name = VICTORY_POINTS_KR_6989 }
+			set_province_name = { id = 6961 name = VICTORY_POINTS_KR_6961 }
+			
+			hidden_effect = {
+				transfer_state = 408
+				
+				#MORE VP SCORE
+				add_victory_points = { province = 957 value = 2 }
+				add_victory_points = { province = 6989 value = 2 }
+				add_victory_points = { province = 6961 value = 2 }
+			}
+		}
+		ai_will_do = { factor = 100 }
+	}
+	
+	KOR_admission_khabarovsk_to_the_federation = {
+		icon = generic_form_nation
+		allowed = { original_tag = KOR }
+		available = { controls_state = 409 }	#SOV - Khabarovsk
+		visible = { has_completed_focus = KOR_proclaim_federation_of_balhae }
+		fire_only_once = yes
+		cost = 100
+		highlight_states = { highlight_state_targets = { state = 409 } }
+		complete_effect = {
+			409 = { 
+				add_core_of = ROOT
+				set_state_name = STATE_KR_409
+			}
+			set_province_name = { id = 12189 name = VICTORY_POINTS_KR_12189 }
+			
+			hidden_effect = {
+				transfer_state = 409
+				
+				#MORE VP SCORE
+				add_victory_points = { province = 12189 value = 9 }
+			}
+		}
+		ai_will_do = { factor = 100 }
+	}
+	
+	KOR_admission_birobidzhan_to_the_federation = {
+		icon = generic_form_nation
+		allowed = { original_tag = KOR }
+		available = { controls_state = 657 }	#SOV - Birobidzhan
+		visible = { has_completed_focus = KOR_proclaim_federation_of_balhae }
+		fire_only_once = yes
+		cost = 100
+		highlight_states = { highlight_state_targets = { state = 657 } }
+		complete_effect = {
+			657 = { 
+				add_core_of = ROOT
+				set_state_name = STATE_KR_657
+			}
+			
+			hidden_effect = {
+				transfer_state = 657
+			}
+		}
+		ai_will_do = { factor = 100 }
+	}
+	
+	KOR_admission_nikolaevsk_to_the_federation = {
+		icon = generic_form_nation
+		allowed = { original_tag = KOR }
+		available = { controls_state = 560 }	#SOV - Nikolaevsk
+		visible = { has_completed_focus = KOR_proclaim_federation_of_balhae }
+		fire_only_once = yes
+		cost = 100
+		highlight_states = { highlight_state_targets = { state = 560 } }
+		complete_effect = {
+			560 = { 
+				add_core_of = ROOT
+				set_state_name = STATE_KR_560
+			}
+			
+			hidden_effect = {
+				transfer_state = 560
+			}
+		}
+		ai_will_do = { factor = 100 }
+	}
+	
+	KOR_admission_amur_to_the_federation = {
+		icon = generic_form_nation
+		allowed = { original_tag = KOR }
+		available = { controls_state = 561 }	#SOV - Amur
+		visible = { has_completed_focus = KOR_proclaim_federation_of_balhae }
+		fire_only_once = yes
+		cost = 100
+		highlight_states = { highlight_state_targets = { state = 561 } }
+		complete_effect = {
+			561 = { 
+				add_core_of = ROOT
+				set_state_name = STATE_KR_561
+			}
+			
+			hidden_effect = {
+				transfer_state = 561
+			}
+		}
+		ai_will_do = { factor = 100 }
+	}
+	
+	KOR_admission_tsushima_to_the_federation = {
+		icon = generic_form_nation
+		allowed = { original_tag = KOR }
+		available = { controls_state = 1027 }	#JAP - Tsushima (HoK)
+		visible = { has_completed_focus = KOR_proclaim_federation_of_balhae }
+		fire_only_once = yes
+		cost = 100
+		highlight_states = { highlight_state_targets = { state = 1027 } }
+		complete_effect = {
+			1027 = { 
+				add_core_of = ROOT
+				set_state_name = STATE_KR_992
+			}
+			
+			hidden_effect = {
+				transfer_state = 992
+			}
+		}
+		ai_will_do = { factor = 100 }
+	}
+}
+
+KOR_decision_rokrf_category = {
+
+	KOR_assemble_rokrf_gyeonggi = {
+		icon = GFX_decision_generic_military
+		priority = 99
+		allowed = { original_tag = KOR }
+		available = {
+			1017 = { is_controlled_by = ROOT }		#Gyeonggi
+		}
+		days_remove = 3
+		complete_effect = {
+		}
+		cancel_trigger = {
+			1017 = {	#Gyeonggi
+				is_not_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KOR_assemble_rokrf_tt
+			hidden_effect = {
+				1017 = {	#Gyeonggi
+					create_unit = {
+					    division = "name = \"Je 1 Yugyeok-Yeodan 'Gyeonggi'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+					create_unit = {
+					    division = "name = \"Je 2 Yugyeok-Yeodan 'Gyeonggi'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+				}
+			}
+		}
+		ai_will_do = { base = 100 }
+		fire_only_once = yes
+	}
+	
+	KOR_assemble_rokrf_gangwon = {
+		icon = GFX_decision_generic_military
+		priority = 99
+		allowed = { original_tag = KOR }
+		available = {
+			1018 = { is_controlled_by = ROOT }		#Gangwon
+		}
+		days_remove = 3
+		complete_effect = {
+		}
+		cancel_trigger = {
+			1018 = {	#Gangwon
+				is_not_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KOR_assemble_rokrf_tt
+			hidden_effect = {
+				1018 = {	#Gangwon
+					create_unit = {
+					    division = "name = \"Je 3 Yugyeok-Yeodan 'Gangwon'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+					create_unit = {
+					    division = "name = \"Je 5 Yugyeok-Yeodan 'Gangwon'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+				}
+			}
+		}
+		ai_will_do = { base = 100 }
+		fire_only_once = yes
+	}
+	
+	KOR_assemble_rokrf_chungcheong = {
+		icon = GFX_decision_generic_military
+		priority = 99
+		allowed = { original_tag = KOR }
+		available = {
+			1019 = { is_controlled_by = ROOT }		#Chungcheong
+		}
+		days_remove = 3
+		complete_effect = {
+		}
+		cancel_trigger = {
+			1019 = {	#Chungcheong
+				is_not_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KOR_assemble_rokrf_tt
+			hidden_effect = {
+				1019 = {	#Chungcheong
+					create_unit = {
+					    division = "name = \"Je 6 Yugyeok-Yeodan 'Chungcheong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+					create_unit = {
+					    division = "name = \"Je 7 Yugyeok-Yeodan 'Chungcheong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+				}
+			}
+		}
+		ai_will_do = { base = 100 }
+		fire_only_once = yes
+	}
+	
+	KOR_assemble_rokrf_gyeongsang = {
+		icon = GFX_decision_generic_military
+		priority = 99
+		allowed = { original_tag = KOR }
+		available = {
+			1020 = { is_controlled_by = ROOT }		#Gyeongsang
+		}
+		days_remove = 3
+		complete_effect = {
+		}
+		cancel_trigger = {
+			1020 = {	#Gyeongsang
+				is_not_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KOR_assemble_rokrf_tt
+			hidden_effect = {
+				1020 = {	#Gyeongsang
+					create_unit = {
+					    division = "name = \"Je 6 Yugyeok-Yeodan 'Gyeongsang'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+					create_unit = {
+					    division = "name = \"Je 7 Yugyeok-Yeodan 'Gyeongsang'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+				}
+			}
+		}
+		ai_will_do = { base = 100 }
+		fire_only_once = yes
+	}
+	
+	KOR_assemble_rokrf_pyeongan = {
+		icon = GFX_decision_generic_military
+		priority = 99
+		allowed = { original_tag = KOR }
+		available = {
+			1021 = { is_controlled_by = ROOT }		#Pyeongan
+		}
+		days_remove = 3
+		complete_effect = {
+		}
+		cancel_trigger = {
+			1021 = {	#Pyeongan
+				is_not_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KOR_assemble_rokrf_tt
+			hidden_effect = {
+				1021 = {	#Pyeongan
+					create_unit = {
+					    division = "name = \"Je 8 Yugyeok-Yeodan 'Pyeongan'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+					create_unit = {
+					    division = "name = \"Je 9 Yugyeok-Yeodan 'Pyeongan'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+				}
+			}
+		}
+		ai_will_do = { base = 100 }
+		fire_only_once = yes
+	}
+	
+	KOR_assemble_rokrf_hwanghae = {
+		icon = GFX_decision_generic_military
+		priority = 99
+		allowed = { original_tag = KOR }
+		available = {
+			1022 = { is_controlled_by = ROOT }		#Hwanghae
+		}
+		days_remove = 3
+		complete_effect = {
+		}
+		cancel_trigger = {
+			1022 = {	#Hwanghae
+				is_not_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KOR_assemble_rokrf_tt
+			hidden_effect = {
+				1022 = {	#Hwanghae
+					create_unit = {
+					    division = "name = \"Je 11 Yugyeok-Yeodan 'Hwanghae'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+					create_unit = {
+					    division = "name = \"Je 12 Yugyeok-Yeodan 'Hwanghae'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+				}
+			}
+		}
+		ai_will_do = { base = 100 }
+		fire_only_once = yes
+	}
+	
+	KOR_assemble_rokrf_jeolla = {
+		icon = GFX_decision_generic_military
+		priority = 99
+		allowed = { original_tag = KOR }
+		available = {
+			525 = { is_controlled_by = ROOT }		#Jeolla
+		}
+		days_remove = 3
+		complete_effect = {
+		}
+		cancel_trigger = {
+			525 = {	#Jeolla
+				is_not_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KOR_assemble_rokrf_tt
+			hidden_effect = {
+				525 = {	#Jeolla
+					create_unit = {
+					    division = "name = \"Je 13 Yugyeok-Yeodan 'Jeolla'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+					create_unit = {
+					    division = "name = \"Je 15 Yugyeok-Yeodan 'Jeolla'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+				}
+			}
+		}
+		ai_will_do = { base = 100 }
+		fire_only_once = yes
+	}
+	
+	KOR_assemble_rokrf_hamgyeong = {
+		icon = GFX_decision_generic_military
+		priority = 99
+		allowed = { original_tag = KOR }
+		available = {
+			527 = { is_controlled_by = ROOT }		#Hamgyeong
+		}
+		days_remove = 3
+		complete_effect = {
+		}
+		cancel_trigger = {
+			527 = {	#Hamgyeong
+				is_not_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = KOR_assemble_rokrf_tt
+			hidden_effect = {
+				527 = {	#Hamgyeong
+					create_unit = {
+					    division = "name = \"Je 16 Yugyeok-Yeodan 'Hamgyeong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+					create_unit = {
+					    division = "name = \"Je 17 Yugyeok-Yeodan 'Hamgyeong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					    owner = ROOT
+					}
+				}
+			}
+		}
+		ai_will_do = { base = 100 }
+		fire_only_once = yes
+	}
+
+	KOR_disband_the_reserve_forces = {
+		icon = GFX_decision_eng_blackshirt_march
+		priority = 100
+		allowed = { original_tag = KOR }
+		available = {
+			any_country_division = {
+				division_has_majority_template = militia
+			}
+		}
+		visible = { has_completed_focus = KOR_call_up_the_rokrf }
+		cost = 5
+		complete_effect = {
+			custom_effect_tooltip = KOR_disband_the_reserve_forces_tt
+
+			hidden_effect = {
+				delete_units = {
+					division_template = "Yugyeok-Yeodan"
+					disband = no #MP or weapons are not ours to take
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0 # NEVER do this!
+		}
+	}
+	
+	
+
+}

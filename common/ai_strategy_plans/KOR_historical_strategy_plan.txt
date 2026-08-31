@@ -1,0 +1,104 @@
+KOR_historical_plan = {
+	name = "Korea historical plan"
+	desc = "Historical behavior for Korea"
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes 
+				has_game_rule = {
+					rule = KOR_AI_BEHAVIOR
+					option = DEFAULT
+				}
+			}
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = DEMOCRATIC
+			}
+		}	
+	}
+	
+
+	ai_national_focuses = {
+		KOR_future_of_the_republic
+		KOR_democracy_advance_forward
+		KOR_president_kim_gu
+		KOR_independent_party_in_power
+		KOR_democracy_is_our_strength
+		KOR_ban_extremism
+		KOR_strengthen_government_support
+		KOR_devalue_the_won
+		KOR_support_light_industry_export
+		KOR_ask_the_ifc_to_invest
+		KOR_seoul_national_university_expansion
+		KOR_gyeongbu_expressway
+		KOR_gyeongui_expressway
+		KOR_first_new_city_plan
+		KOR_construction_boom
+		KOR_development_of_heavy_industry
+		KOR_guro_industrial_complex
+		KOR_national_unity
+		KOR_expend_military_budget
+		KOR_pohang_iron__steel_company
+		KOR_namdong_imhae_industrial_complex
+		KOR_saemaeul_undong
+		KOR_prepare_for_the_next_war
+		KOR_industrialized_society
+		KOR_miracle_on_the_han_river
+		KOR_begin_rearmament
+		KOR_daehanminguk_yuggun
+		KOR_army_augmentation
+		KOR_build_the_gyeryongdae
+		KOR_establish_dasmfe
+		KOR_call_up_the_rokrf
+		KOR_homeland_defence_special_act
+		KOR_organization_rokasf
+		KOR_attract_worldclass_scholars
+		KOR_armored_focus
+		KOR_mobile_infantry
+		KOR_armored_vanguard
+		KOR_eight_province_development_committee
+		KOR_northern_development
+		KOR_develop_unsan_gold_mine
+		KOR_hamgyeong_underground_resources
+		KOR_support_gaema_plateau
+		KOR_southern_development
+		KOR_honam_plain_food_factory
+		KOR_saemangeum_reclamation
+		KOR_busan_free_trade_zone
+		KOR_central_region_development
+		KOR_agricultural_support_in_jaeryeong_plain
+		KOR_gangwon_underground_resources
+		KOR_build_soyanggang_dam
+		KOR_daehanminguk_haegun
+	}
+	
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+	
+	ideas = {
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "CHI"
+		value = -500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "PRC"
+		value = -500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA"
+		value = 500
+	}
+}
