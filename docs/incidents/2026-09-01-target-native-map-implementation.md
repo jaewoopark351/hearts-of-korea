@@ -1,6 +1,6 @@
 # 2026-09-01 target-native 맵 구현 기록
 
-> 후속 상태: 이 문서는 시작 크래시를 제거한 당시 구현과 검증의 역사적 기록이다. 이후 결정된 중국·만주·일본 target 정렬 범위는 [중국·일본 1.19.2 바닐라 정렬 정책](../CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md)에 기록한다. 해당 정책은 현재 문서화만 됐으며, 이 기록에 나온 state `1085–1087`과 관련 production delta는 아직 되돌리지 않았다.
+> 후속 상태: 이 문서는 시작 크래시를 제거한 당시 구현과 검증의 역사적 기록이다. 이후 승인된 중국·만주·일본 target 정렬로 이 기록의 state `1085–1087`과 관련 production delta는 제거되어 target source states로 복귀했고, 쓰시마는 다시 승인된 후속 마이그레이션에서 `1088 → 1085`로 이동했다. 아래 `1088` 매핑은 당시 구현의 역사적 기록이다. 현재 정책은 [중국·일본 1.19.2 바닐라 정렬 정책](../CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md), 실제 후속 변경은 [중국·만주·일본 바닐라 정렬 구현 기록](2026-09-01-china-japan-vanilla-alignment-implementation.md)에 기록한다. 후속 `D-CJ-POST-FIX`는 map 진입·1/7/30일 진행·정상 종료를 통과해 `game.log` 기준 최소 1936.08.17.13, 다른 보존 로그 기준 1936.08.27.07까지 진행 증거가 있으며, `C-CJ-POST`는 `NOT RUN`이다.
 
 ## 판정
 
@@ -151,7 +151,7 @@ scanner는 geometry 연결성, 정확한 좌표와 rail adjacency를 완전히 �
 2. 정확한 `V_OLD`가 없어 이 결과를 원작자의 1.16 `INTENDED_DELTA` 정밀 복원이라고 부를 수 없다.
 3. 기존 세이브와 persistent map ID를 직접 참조하는 서브모드는 의도적으로 호환되지 않는다.
 4. 기존 target unitstack 중 10개 좌표는 자기 province 밖이지만 old HoK에도 동일했던 inherited placement이며 이번 migration 신규 결함은 아니다.
-5. 상속되는 Vanilla 한국 판정 로직 일부는 새 `1082`, `1083`, `1084`를 아직 열거하지 않는다. scripted trigger, 저항 modifier, KOR decision과 WTT Japan 소유권 이전의 후속 gameplay compatibility 사건으로 분리한다. startup crash 수정과 같은 patch에서 검증 없이 전체 Vanilla script를 덮지 않는다.
+5. 당시에는 상속되는 Vanilla 한국 판정 로직 일부가 새 `1082`, `1083`, `1084`를 열거하지 않는 위험이 남아 있었다. 후속 중국·일본 정렬 구현에서 target-derived scripted trigger, 저항 modifier, KOR decision, WTT/SEA Japan event와 평화회의 AI의 완전한 한국 열거에 문맥별 fan-out을 적용했다. 정적 map control 비교는 통과했지만 실제 gameplay 동작은 아직 `NOT RUN`이다.
 6. `Korean Language` descriptor는 `1.17.*`를 선언하며 1.19.2 runtime UI/font/localisation 호환성은 `C-POST` 전까지 미확인이다.
 7. state `1029`에는 서로 다른 유효 `rocket_site_spawn`이 2개 있다. 이번 15행 복구가 만든 중복은 아니며 runtime 오류도 없지만 시각 검수 대상이다.
 8. 쓰시마 state `1088`의 rocket site는 원본 좌표가 현행 해상 province가 되어 가장 가까운 `10011` land pixel로 옮긴 합성 좌표다. 엔진 검증은 통과했지만 화면 위치를 확인해야 한다.
@@ -186,7 +186,7 @@ scanner는 geometry 연결성, 정확한 좌표와 rail adjacency를 완전히 �
 2. OneDrive user-data의 autosave rename 오류를 별도 사건으로 확인한 뒤 save/reload를 검증한다.
 3. production HoK + 정확한 `Korean Language`의 `C-POST`를 실행한다.
 4. `C-POST`에서도 새 게임, 한국 선택, map 진입, 1일·7일·30일, save/reload와 새 crash/로그를 확인한다.
-5. startup/map 사건을 닫은 뒤 Vanilla 한국 판정 누락과 남은 MIO·AI·기술·event·character/localisation 오류를 각각 별도 사건으로 처리한다.
+5. 후속 중국·일본 정렬에서 적용한 한국 semantic fan-out과 target 상속을 `D-CJ-POST`, `C-CJ-POST`로 검증하고, 그 뒤 남는 MIO·AI·기술·event·character/localisation 오류를 각각 별도 사건으로 처리한다.
 
 ## Git 상태
 

@@ -129,19 +129,3 @@ music = {
 	}
 }
 
-music = {
-	song = "Minshu_ikki"
-
-	chance = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { has_completed_focus = JAP_proclaim_the_republic }
-		}	
-		modifier = {
-			factor = 10
-			has_completed_focus = JAP_proclaim_the_republic
-		}
-	}
-}
-

@@ -19,11 +19,10 @@ focus_tree = {
 	focus = {
 		id = KOR_devalue_the_won
 		icon = {
-			trigger = { has_completed_focus = KOR_urihwangsilsaranghoe }
-			value = GFX_focus_kor_devalue_the_won_neutie
-		}
-		icon = {
-			value = GFX_focus_kor_devalue_the_won
+			GFX_focus_kor_devalue_the_won_neutie = {
+				has_completed_focus = KOR_urihwangsilsaranghoe
+			}
+			GFX_focus_kor_devalue_the_won = yes
 		}
 		dynamic = yes
 		x = 11
@@ -109,11 +108,10 @@ focus_tree = {
 	focus = {
 		id = KOR_northern_development
 		icon = {
-			trigger = { has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat }
-			value = GFX_focus_kor_northern_development_commie
-		}
-		icon = {
-			value = GFX_focus_kor_northern_development
+			GFX_focus_kor_northern_development_commie = {
+				has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat
+			}
+			GFX_focus_kor_northern_development = yes
 		}
 		dynamic = yes
 		x = 2
@@ -138,11 +136,10 @@ focus_tree = {
 	focus = {
 		id = KOR_southern_development
 		icon = {
-			trigger = { has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat }
-			value = GFX_focus_kor_southern_development_commie
-		}
-		icon = {
-			value = GFX_focus_kor_southern_development
+			GFX_focus_kor_southern_development_commie = {
+				has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat
+			}
+			GFX_focus_kor_southern_development = yes
 		}
 		dynamic = yes
 		x = 6
@@ -170,11 +167,10 @@ focus_tree = {
 	focus = {
 		id = KOR_central_region_development
 		icon = {
-			trigger = { has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat }
-			value = GFX_focus_kor_central_region_development_commie
-		}
-		icon = { 
-			value = GFX_focus_kor_central_region_development
+			GFX_focus_kor_central_region_development_commie = {
+				has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat
+			}
+			GFX_focus_kor_central_region_development = yes
 		}
 		dynamic = yes
 		x = 10
@@ -792,11 +788,10 @@ focus_tree = {
 	focus = {
 		id = KOR_saemaeul_undong
 		icon = {
-			trigger = { has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat }
-			value = GFX_focus_kor_saemaeul_undong_commie
-		}
-		icon = {
-			value = GFX_focus_kor_saemaeul_undong
+			GFX_focus_kor_saemaeul_undong_commie = {
+				has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat
+			}
+			GFX_focus_kor_saemaeul_undong = yes
 		}
 		dynamic = yes
 		x = 18
@@ -1124,7 +1119,6 @@ focus_tree = {
 			714 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			761 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			715 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
-			1087 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			610 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			
 			716 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
@@ -1134,7 +1128,6 @@ focus_tree = {
 			714 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			761 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			715 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
-			1087 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			610 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 		}
 	}
@@ -1218,7 +1211,6 @@ focus_tree = {
 			714 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			761 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			715 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
-			1087 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			610 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 		}
 	}
@@ -1308,7 +1300,6 @@ focus_tree = {
 			714 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			761 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			715 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
-			1087 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			610 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			
 			716 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
@@ -1318,7 +1309,6 @@ focus_tree = {
 			714 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			761 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			715 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
-			1087 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			610 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 		}
 	}
@@ -1331,7 +1321,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		available = {
-			1086 = { is_controlled_by = ROOT }
+			328 = { is_controlled_by = ROOT } # Guknaeseong province 9803 target successor
 		}
 		prerequisite = { focus = KOR_korean_settlement }
 		prerequisite = { focus = KOR_teaching_korean_to_manchurians }
@@ -1339,13 +1329,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			1086 = {
+			328 = {
 				add_victory_points = {
 					province = 9803
 					value = 5
 				}
 			}
-			1086 = {
+			328 = {
 				add_building_construction = {
 					type = supply_node
 					level = 1
@@ -9654,8 +9644,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_state_claim = 1085
-			add_state_claim = 1086
 			army_experience = 50
 		}
 	}
@@ -9697,18 +9685,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.2
-			transfer_state = 1085
-			transfer_state = 1086
-			1085 = { add_core_of = KOR }
-			1086 = { add_core_of = KOR }
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = MAN
 				expire = 0
-			}
-			hidden_effect = {
-				remove_state_claim = 1085
-				remove_state_claim = 1086
 			}
 		}
 	}

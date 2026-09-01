@@ -31,7 +31,7 @@ except ModuleNotFoundError:  # Direct execution from the tools directory.
     from evidence_manifest import verify_manifest
 
 
-TOOL_VERSION = "11"
+TOOL_VERSION = "12"
 TEXT_SUFFIXES = {
     ".asset",
     ".csv",
@@ -1175,6 +1175,24 @@ class MapScanner:
                     self.candidate_sources["state"][internal_id].update(
                         record.source_layer for record in definitions
                     )
+
+        if kind == "state" and by_id:
+            maximum_state_id = max(by_id)
+            for missing_state_id in sorted(
+                set(range(1, maximum_state_id + 1)).difference(by_id)
+            ):
+                self.add_finding(
+                    "ERROR",
+                    "state",
+                    "MISSING_STATE_ID",
+                    entity_type="state",
+                    entity_id=missing_state_id,
+                    detail=(
+                        "No parsed effective state definition has this ID; "
+                        "effective state IDs must be continuous from 1 through "
+                        f"{maximum_state_id}."
+                    ),
+                )
 
         if kind == "state":
             required_ids = {

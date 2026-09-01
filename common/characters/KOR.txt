@@ -1,6 +1,26 @@
-characters={
+characters = {
 
-	KOR_Syngman_Rhee={ #Democratic Leader 1
+	### Leaders ###
+
+	# Jirō Minami
+	KOR_jiro_minami = {
+		name = KOR_jiro_minami
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_jiro_minami
+				small = GFX_portrait_KOR_jiro_minami_small
+			}
+		}
+		#country_leader = {
+		#	ideology = oligarchism
+		#	traits = { JAP_governor_general_of_korea }
+		#	expire = "1965.1.1.1"
+		#	id = -1
+		#}
+	}
+
+	# Syngman Rhee
+	KOR_syngman_rhee={ #Democratic Leader 1
 		name=KOR_syngman_rhee
 		portraits={
 			civilian={
@@ -14,7 +34,124 @@ characters={
 			id=-1
 		}
 	}
-	
+
+	# Lyuh Woon-hyung
+	KOR_lyuh_woon_hyung = {
+		name = KOR_lyuh_woon_hyung
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Yi_Kang
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			traits = { KOR_mongyang }
+			id = -1
+		}
+	}
+
+	# Yi Kang
+	KOR_yi_kang = {
+		name = KOR_yi_kang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Yi_Kang
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+
+	# Kim Il-sung
+	KOR_kim_il_sung = {
+		name = KOR_kim_il_sung
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_il_sung
+				small = GFX_portrait_KOR_kim_il_sung_small
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { KOR_suryong }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	# Pak Hon-yong
+	KOR_pak_hon_yong = {
+		name = KOR_pak_hon_yong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_pak_hon_yong
+				small = GFX_portrait_KOR_pak_hon_yong_civilian_small
+			}
+			army = {
+				small = GFX_portrait_KOR_pak_hon_yong_military_small
+			}
+		}
+		#country_leader = {
+		#	ideology = stalinism
+		#	traits = {  }
+		#	expire = "1965.1.1.1"
+		#	id = -1
+		#}
+	}
+
+	# Yi Un
+	KOR_yi_un = {
+		name = KOR_yi_un
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_yi_un
+				small = GFX_portrait_KOR_yi_un_civilian_small
+			}
+			army = {
+				small = GFX_portrait_KOR_yi_un_military_small
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { KOR_highness_yi_of_changdeokgung }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	# Choe Hyon
+	KOR_choe_hyon = {
+		name = KOR_choe_hyon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Syngman_Rhee
+			}
+		}
+		
+		corps_commander = {
+			traits = { trickster trait_mountaineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				NOT = {
+					is_subject_of = JAP
+				}
+			}
+		}
+
+	}
+
+
+	# Hearts of Korea inherited character roster
 	KOR_Gu_Kim={ #Democratic Leader 2
 		name=KOR_gu_kim
 		portraits={
@@ -23,9 +160,7 @@ characters={
 			}
 		}
 	}
-	
-	#Changho Ahn Here : Democratic Leader 3
-	
+
 	KOR_Boseon_Yoon = { #Democratic Leader 4
 		name=KOR_boseon_yoon
 		portraits={
@@ -34,7 +169,7 @@ characters={
 			}
 		}
 	}
-	
+
 	KOR_Gang_Lee = { #Democratic Leader 5
 		name=KOR_gang_lee
 		portraits={
@@ -43,9 +178,7 @@ characters={
 			}
 		}
 	}
-	
-	#Woonhyung Yeo Here : Democratic Leader 6
-	
+
 	KOR_provisional_peoples_committee={ #Communist Leader 0
 		name=KOR_provisional_peoples_committee
 		portraits={
@@ -54,7 +187,7 @@ characters={
 			}
 		}
 	}
-	
+
 	KOR_Woonhyung_Yeo={ #Communist Leader 1
 		name=KOR_woonhyung_yeo
 		portraits={
@@ -63,7 +196,7 @@ characters={
 			}
 		}
 	}
-	
+
 	KOR_Heonyoung_Park={ #Communist Leader 2
 		name=KOR_heonyoung_park
 		portraits={
@@ -93,7 +226,7 @@ characters={
 			logistics_skill=1
 		}
 	}
-	
+
 	KOR_Yeonsu_Gye={ #neutrality Leader 1
 		name=KOR_yeonsu_gye
 		portraits={
@@ -102,7 +235,7 @@ characters={
 			}
 		}
 	}
-	
+
 	KOR_Eun_Lee={ #neutrality Leader 2
 		name=KOR_eun_lee
 		portraits={
@@ -127,10 +260,7 @@ characters={
 			}
 		}
 	}
-	
-# Navy & Airforce advisors
-	
-	
+
 	KOR_Wonil_Son={	#Navy Commander
 		name=KOR_wonil_son
 		portraits={
@@ -160,7 +290,7 @@ characters={
 			coordination_skill=3
 		}
 	}
-	
+
 	KOR_Seongmo_Shin={
 		name=KOR_seongmo_shin
 		portraits={
@@ -179,7 +309,7 @@ characters={
 			coordination_skill=1
 		}
 	}
-	
+
 	KOR_Gyugap_Lee={
 		name=KOR_gyugap_lee
 		portraits={
@@ -209,7 +339,7 @@ characters={
 			coordination_skill=2
 		}
 	}
-	
+
 	KOR_Seonghak_Choi={
 		name=KOR_seonghak_choi
 		portraits={
@@ -228,7 +358,7 @@ characters={
 			coordination_skill=1
 		}
 	}
-	
+
 	KOR_Geungmo_Jeong={
 		name=KOR_geungmo_jeong
 		portraits={
@@ -248,7 +378,7 @@ characters={
 		#	cost = 100
 		#}
 	}
-	
+
 	KOR_Yongdeuck_Choi={
 		name=KOR_yongdeuck_choi
 		portraits={
@@ -268,7 +398,7 @@ characters={
 			cost = 100
 		}
 	}
-	
+
 	KOR_Jeongryeol_Kim={
 		name=KOR_jeongryeol_kim
 		portraits={
@@ -288,7 +418,7 @@ characters={
 			cost = 100
 		}
 	}
-	
+
 	KOR_Seongho_Lee={
 		name=KOR_seongho_lee
 		portraits={
@@ -309,7 +439,7 @@ characters={
 			cost = 50
 		}
 	}
-	
+
 	KOR_Giok_Gwon={
 		name=KOR_giok_gwon
 		portraits={
@@ -331,7 +461,7 @@ characters={
 			cost = 100
 		}
 	}
-		
+
 	KOR_Changnam_Ahn={
 		name=KOR_changnam_ahn
 		portraits={
@@ -352,10 +482,7 @@ characters={
 			cost = 50
 		}
 	}
-	
-	
-	#Theorist
-	
+
 	KOR_Okgyu_Park={
 		name=KOR_okgyu_park
 		portraits={
@@ -376,7 +503,7 @@ characters={
 			}
 		}
 	}
-	
+
 	KOR_Sin_Kim={
 		name=KOR_sin_kim
 		portraits={
@@ -397,6 +524,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Taeyeong_Shin={
 		name=KOR_taeyeong_shin
 		portraits={
@@ -417,9 +545,7 @@ characters={
 			}
 		}
 	}
-	
-	#Political Advisor
-	
+
 	KOR_Dubong_Kim={
 		name=KOR_dubong_kim
 		portraits={
@@ -439,6 +565,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Changho_Ahn={
 		name=KOR_changho_ahn
 		portraits={
@@ -464,6 +591,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Hosang_Ahn={
 		name=KOR_hosang_ahn
 		portraits={
@@ -483,6 +611,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Urihwangsilsaranghoe_idea={
 		name=KOR_urihwangsilsaranghoe_idea
 		portraits={
@@ -505,11 +634,7 @@ characters={
 			}
 		}
 	}
-	
-	
-	
-	#others
-	
+
 	KOR_Ilhan_Yu={
 		name=KOR_ilhan_yu
 		portraits={
@@ -529,6 +654,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Doyeon_Kim={
 		name=KOR_doyeon_kim
 		portraits={
@@ -547,6 +673,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Seungjik_Park={
 		name=KOR_seungjik_park
 		portraits={
@@ -565,6 +692,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Dongjin_Yeom={
 		name=KOR_dongjin_yeom
 		portraits={
@@ -587,6 +715,7 @@ characters={
 			}
 		}		
 	}
+
 	KOR_Giboong_Lee={
 		name=KOR_giboong_lee
 		portraits={
@@ -608,6 +737,7 @@ characters={
 			}
 		}		
 	}
+
 	KOR_Gwansun_Yoo={
 		name=KOR_gwansun_yoo
 		portraits={
@@ -629,6 +759,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Jeonghwan_Bang={
 		name=KOR_jeonghwan_bang
 		portraits={
@@ -650,6 +781,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Mansik_Jo={
 		name=KOR_mansik_jo
 		portraits={
@@ -671,6 +803,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Jaehong_Ahn={
 		name=KOR_jaehong_ahn
 		portraits={
@@ -692,6 +825,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Jinwoo_Song={
 		name=KOR_jinwoo_song
 		portraits={
@@ -710,6 +844,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Namseon_Choi={
 		name=KOR_namseon_choi
 		portraits={
@@ -728,9 +863,7 @@ characters={
 			}
 		}
 	}
-	
-	
-	#Focus
+
 	KOR_Gongsu_Kim={
 		name=KOR_gongsu_kim
 		portraits={
@@ -768,6 +901,7 @@ characters={
 		}
 		
 	}
+
 	KOR_Geunchul_Hwang={
 		name=KOR_geunchul_hwang
 		portraits={
@@ -804,6 +938,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Jamsoo_Park={
 		name=KOR_jamsoo_park
 		portraits = {
@@ -825,11 +960,7 @@ characters={
 			}
 		}
 	}
-	
-	
-	
-	#army generals
-	
+
 	KOR_Cheongcheon_Ji={
 		name=KOR_cheongcheon_ji
 		portraits={
@@ -858,7 +989,7 @@ characters={
 			logistics_skill=2
 		}
 	}
-	
+
 	KOR_Dongyeol_Yoo={
 		name=KOR_dongyeol_yoo
 		portraits={
@@ -887,7 +1018,7 @@ characters={
 			logistics_skill=3
 		}
 	}
-	
+
 	KOR_Gyungcheon_Kim={
 		name=KOR_gyungcheon_kim
 		portraits={
@@ -905,9 +1036,7 @@ characters={
 			logistics_skill=3
 		}
 	}
-	
-	#Beonseok_Lee Here
-	
+
 	KOR_Hongil_Kim={
 		name=KOR_hongil_kim
 		portraits={
@@ -937,7 +1066,7 @@ characters={
 			logistics_skill=2
 		}
 	}
-	
+
 	KOR_Saik_Hong={
 		name=KOR_saik_hong
 		portraits={
@@ -955,7 +1084,7 @@ characters={
 			logistics_skill=4
 		}
 	}
-	
+
 	KOR_Seokwon_Kim={
 		name=KOR_seokwon_kim
 		portraits={
@@ -985,7 +1114,7 @@ characters={
 			logistics_skill=1
 		}
 	}
-	
+
 	KOR_Eungjun_Lee={
 		name=KOR_eungjun_lee
 		portraits={
@@ -1015,6 +1144,7 @@ characters={
 			logistics_skill=3
 		}
 	}
+
 	KOR_Gwangseon_Oh={
 		name=KOR_gwangseon_oh
 		portraits={
@@ -1032,6 +1162,7 @@ characters={
 			logistics_skill=2
 		}
 	}
+
 	KOR_Hakgyu_Kim={
 		name=KOR_hakgyu_kim
 		portraits={
@@ -1049,6 +1180,7 @@ characters={
 			logistics_skill=1
 		}
 	}
+
 	KOR_Hoseong_Song={
 		name=KOR_hoseong_song
 		portraits={
@@ -1066,6 +1198,7 @@ characters={
 			logistics_skill=1
 		}
 	}
+
 	KOR_Jun_Gwon={
 		name=KOR_jun_gwan
 		portraits={
@@ -1083,6 +1216,7 @@ characters={
 			logistics_skill=1
 		}
 	}
+
 	KOR_Junsik_Lee={
 		name=KOR_junsik_lee
 		portraits={
@@ -1100,6 +1234,7 @@ characters={
 			logistics_skill=1
 		}
 	}
+
 	KOR_Sichang_Park={
 		name=KOR_sichang_park
 		portraits={
@@ -1129,9 +1264,7 @@ characters={
 			logistics_skill=2
 		}
 	}
-	
-	
-	#Commie military leaders
+
 	KOR_Wonbong_Kim={
 		name=KOR_wonbong_kim
 		portraits={
@@ -1152,6 +1285,7 @@ characters={
 			cost = 100
 		}
 	}
+
 	KOR_Il_Nam={
 		name=KOR_il_nam
 		portraits={
@@ -1185,6 +1319,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Yonggeon_Choe={
 		name=KOR_yonggeon_choe
 		portraits={
@@ -1206,6 +1341,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Chaek_Kim={
 		name=KOR_chaek_kim
 		portraits={
@@ -1227,6 +1363,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Gyeongsu_Ryu={
 		name=KOR_gyeongsu_ryu
 		portraits={
@@ -1260,10 +1397,7 @@ characters={
 			}
 		}
 	}
-	
-	
-	#Gookppong Generals - become military leader when gookppong_on_actions only.
-	
+
 	KOR_Beomdo_Hong = {
 		name=KOR_beomdo_hong
 		portraits={
@@ -1298,6 +1432,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Jwajin_Kim = {
 		name=KOR_jwajin_kim
 		portraits={
@@ -1319,6 +1454,7 @@ characters={
 			}
 		}
 	}
+
 	KOR_Junggeun_Ahn = {
 		name=KOR_junggeun_ahn
 		portraits={
@@ -1340,8 +1476,7 @@ characters={
 			}
 		}
 	}
-	
-	#Scientists
+
 	KOR_Bugil_Hwang = {
 		name=KOR_bugil_hwang
 		portraits={
@@ -1354,6 +1489,7 @@ characters={
 			skills = { specialization_naval = 1 }
 		}
 	}
+
 	KOR_Gyeongyeon_Jo = {
 		name=KOR_gyeongyeon_jo
 		portraits={
@@ -1366,6 +1502,7 @@ characters={
 			skills = { specialization_air = 1 }
 		}
 	}
+
 	KOR_Sanglok_Do = {
 		name=KOR_sanglok_do
 		portraits={
@@ -1378,6 +1515,7 @@ characters={
 			skills = { specialization_nuclear = 2 }
 		}
 	}
+
 	KOR_Yonggwan_Kim = {
 		name=KOR_yonggwan_kim
 		portraits={
@@ -1391,3 +1529,4 @@ characters={
 		}
 	}
 }
+	

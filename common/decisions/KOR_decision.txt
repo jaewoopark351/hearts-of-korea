@@ -27,9 +27,6 @@ KOR_triumph_for_the_manchuria_category = {
 			controls_state = 714 #heilungkiang
 			controls_state = 761 #hulunbuir
 			controls_state = 715 #liaoning
-			controls_state = 1085 #Jiandao Hok
-			controls_state = 1086 #Andung Hok
-			controls_state = 1087 #Heihe Hok
 		}
 
 		visible = {
@@ -46,9 +43,6 @@ KOR_triumph_for_the_manchuria_category = {
 			714 = { add_core_of = ROOT }
 			761 = { add_core_of = ROOT }
 			715 = { add_core_of = ROOT }
-			1085 = { add_core_of = ROOT }
-			1086 = { add_core_of = ROOT }
-			1087 = { add_core_of = ROOT }
 			610 = { add_core_of = ROOT }
 			
 			716 = { add_dynamic_modifier = { modifier = chinese_separatism } }
@@ -58,7 +52,6 @@ KOR_triumph_for_the_manchuria_category = {
 			714 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 			761 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 			715 = { add_dynamic_modifier = { modifier = chinese_separatism } }
-			1087 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 			610 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 
 			hidden_effect = {
@@ -69,9 +62,6 @@ KOR_triumph_for_the_manchuria_category = {
 				transfer_state = 714
 				transfer_state = 761
 				transfer_state = 715
-				transfer_state = 1085
-				transfer_state = 1086
-				transfer_state = 1087
 				#transfer_state = 610
 			}
 		}
@@ -106,9 +96,6 @@ KOR_triumph_for_the_manchuria_category = {
 			714 = { set_state_name = STATE_KR_714 }
 			761 = { set_state_name = STATE_KR_761 }
 			715 = { set_state_name = STATE_KR_715 }
-			1085 = { set_state_name = STATE_KR_1024 }
-			1086 = { set_state_name = STATE_KR_1025 }
-			1087 = { set_state_name = STATE_KR_1026 }
 			610 = { set_state_name = STATE_KR_610 }
 			
 			set_province_name = { id = 11771 name = VICTORY_POINTS_KR_11771 }
@@ -177,9 +164,6 @@ KOR_defeat_japan_category = {
 			has_full_control_of_state = 714 #heilungkiang
 			has_full_control_of_state = 761 #hulunbuir
 			has_full_control_of_state = 715 #liaoning
-			has_full_control_of_state = 1085
-			has_full_control_of_state = 1086
-			has_full_control_of_state = 1087
 			#has_full_control_of_state = 610
 			has_war_with = JAP
 			KOR = { is_in_faction = no }
@@ -209,9 +193,6 @@ KOR_defeat_japan_category = {
 				transfer_state = 714
 				transfer_state = 761
 				transfer_state = 715
-				transfer_state = 1085
-				transfer_state = 1086
-				transfer_state = 1087
 				transfer_state = 610
 				white_peace = JAP
 			}
@@ -1570,13 +1551,13 @@ KOR_decision_expend_federation_of_balhae_category = {
 	KOR_admission_tsushima_to_the_federation = {
 		icon = generic_form_nation
 		allowed = { original_tag = KOR }
-		available = { controls_state = 1088 }	#JAP - Tsushima (HoK)
+		available = { controls_state = 1085 }	#JAP - Tsushima (HoK)
 		visible = { has_completed_focus = KOR_proclaim_federation_of_balhae }
 		fire_only_once = yes
 		cost = 100
-		highlight_states = { highlight_state_targets = { state = 1088 } }
+		highlight_states = { highlight_state_targets = { state = 1085 } }
 		complete_effect = {
-			1088 = {
+			1085 = {
 				add_core_of = ROOT
 				set_state_name = STATE_KR_992
 			}

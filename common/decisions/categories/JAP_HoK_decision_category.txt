@@ -1,16 +1,7 @@
+# HoK Korea-war bridge. The rest of Japan's categories come from target 1.19.2.
 JAP_war_on_korea_category = {
 	icon = military_operation
-	
-	allowed = {
-		tag = JAP
-	}
-}
 
-JAP_gain_core_on_north_sakhalin_category = {
-	icon = generic_formable_nations
-	
-	picture = GFX_decision_cat_jap_unite_karafuto
-	
 	allowed = {
 		original_tag = JAP
 	}

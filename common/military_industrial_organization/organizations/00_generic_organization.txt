@@ -15,10 +15,8 @@ generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { original_tag = GER original_tag = ENG original_tag = SOV original_tag = FRA original_tag = ITA original_tag = JAP original_tag = USA original_tag = BEL original_tag = CZE original_tag = ROM  original_tag = HUN } }
-		NOT = {
-			tag = KOR	#Has MOD Hearts of Korea
-		}
+		NOT = { tag = KOR } # HoK provides dedicated tank MIOs
+		NOT = { OR = { original_tag = GER original_tag = ENG original_tag = SOV original_tag = FRA original_tag = ITA original_tag = JAP original_tag = USA original_tag = BEL original_tag = CZE original_tag = ROM  original_tag = HUN original_tag = SLO original_tag = RKH } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -94,6 +92,21 @@ generic_tank_organization = {
 					original_tag = RAJ
 				}
 				has_dlc = "Graveyard of Empires"
+			}
+		}
+		NOT = {
+			AND = {
+#				OR = {
+					original_tag = PHI
+#				}
+				has_dlc = "No Compromise, No Surrender"
+				
+			}
+		}
+		NOT = {
+			AND =  {
+				original_tag = SIA
+				has_dlc = "Thunder at Our Gates"
 			}
 		}
 	}
@@ -407,11 +420,7 @@ generic_infantry_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_overlapped_track_wheels }
 
 		equipment_bonus = {
-			maximum_speed = 0.1
-		}
-
-		production_bonus = {
-			production_cost_factor = 0.05
+			maximum_speed = 0.05
 		}
 	}
 
@@ -456,9 +465,8 @@ generic_infantry_tank_organization = {
 		any_parent = { generic_mio_trait_battle_tank_specifications }
 
 		equipment_bonus = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-			ap_attack = 0.05
+			soft_attack = 0.03
+			hard_attack = 0.03
 		}
 	}
 
@@ -492,7 +500,7 @@ generic_infantry_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_anti_tank_role }
 		
 		equipment_bonus = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}
 	}
 
@@ -509,7 +517,7 @@ generic_infantry_tank_organization = {
 		mutually_exclusive= { generic_mio_trait_close_support_role }
 
 		equipment_bonus = {
-		hard_attack = 0.1
+		hard_attack = 0.05
 		ap_attack = 0.1
 		}
 	}
@@ -623,7 +631,7 @@ generic_assault_guns_organization = {
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
-	equipment_type = { light_tank_artillery_chassis medium_tank_artillery_chassis heavy_tank_artillery_chassis }
+	equipment_type = { light_tank_artillery_chassis medium_tank_artillery_chassis heavy_tank_artillery_chassis modern_tank_artillery_chassis }
 	research_categories = { mio_cat_tech_all_armor_and_modules mio_cat_all_artillery_equipment }
 
 	tree_header_text = {
@@ -645,11 +653,11 @@ generic_assault_guns_organization = {
 		name = generic_mio_initial_trait_assault_guns_organization
 		
 		limit_to_equipment_type = { 
-			light_tank_artillery_chassis medium_tank_artillery_chassis heavy_tank_artillery_chassis
+			light_tank_artillery_chassis medium_tank_artillery_chassis heavy_tank_artillery_chassis modern_tank_artillery_chassis
 		}
 		
 		equipment_bonus = {
-			soft_attack = 0.07
+			soft_attack = 0.05
 			armor_value = -0.03
 			reliability = 0.05
 		}
@@ -666,7 +674,7 @@ generic_assault_guns_organization = {
 		limit_to_equipment_type = { light_tank_artillery_chassis }
 
 		equipment_bonus = {
-			soft_attack = 0.05
+			soft_attack = 0.03
 			maximum_speed = 0.1
 		}
 	}
@@ -707,7 +715,7 @@ generic_assault_guns_organization = {
 		limit_to_equipment_type = { light_tank_artillery_chassis }
 
 		equipment_bonus = {
-			soft_attack = 0.05
+			soft_attack = 0.03
 			breakthrough = 0.1
 		}
 	}
@@ -728,7 +736,7 @@ generic_assault_guns_organization = {
 		limit_to_equipment_type = { light_tank_artillery_chassis }
 
 		equipment_bonus = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 			reliability = 0.05
 		}
 	}
@@ -805,7 +813,7 @@ generic_assault_guns_organization = {
 		#	production_resource_penalty_factor = -0.15
 		#}
 
-		limit_to_equipment_type = { medium_tank_artillery_chassis }
+		limit_to_equipment_type = { medium_tank_artillery_chassis modern_tank_artillery_chassis }
 
 		equipment_bonus = {
 			defense = 0.1
@@ -831,7 +839,7 @@ generic_assault_guns_organization = {
 		#}
 
 		equipment_bonus = {
-			soft_attack = 0.05
+			soft_attack = 0.03
 			breakthrough = 0.1
 			defense = 0.05
 		}
@@ -868,7 +876,7 @@ generic_assault_guns_organization = {
 
 		all_parents = { generic_mio_trait_heavy_assault_gun_improvements }
 
-		limit_to_equipment_type = { heavy_tank_artillery_chassis }
+		limit_to_equipment_type = { heavy_tank_artillery_chassis modern_tank_artillery_chassis }
 		
 		equipment_bonus = {
 			armor_value = 0.05
@@ -886,7 +894,7 @@ generic_assault_guns_organization = {
 
 		all_parents = { generic_mio_trait_heavy_assault_gun_improvements }
 
-		limit_to_equipment_type = { heavy_tank_artillery_chassis }
+		limit_to_equipment_type = { heavy_tank_artillery_chassis modern_tank_artillery_chassis }
 		
 		equipment_bonus = {
 			maximum_speed = 0.1
@@ -919,7 +927,7 @@ generic_assault_guns_organization = {
 		limit_to_equipment_type = { medium_tank_artillery_chassis }
 
 		equipment_bonus = {
-			soft_attack = 0.15
+			soft_attack = 0.05
 			breakthrough = 0.05
 			reliability = -0.1
 		}
@@ -2068,7 +2076,7 @@ generic_task_force_ship_organization = {
 
 		equipment_bonus = {
 			anti_air_attack = 0.05
-			naval_light_gun_hit_chance_factor = 0.05
+			naval_light_gun_hit_chance_factor = 0.025
 		}
 	}
 
@@ -2360,7 +2368,7 @@ generic_battle_line_ship_organization = {
 
 		equipment_bonus = {
 			anti_air_attack = 0.05
-			naval_light_gun_hit_chance_factor = 0.05
+			naval_light_gun_hit_chance_factor = 0.025
 		}
 	}
 
@@ -2457,14 +2465,12 @@ generic_escort_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST } }
-		NOT = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD } }
-		NOT = {
-			tag = KOR	#Has MOD Hearts of Korea
-		}
+		NOT = { tag = KOR } # HoK provides dedicated naval MIOs
+		NOT = { OR = { original_tag = GER original_tag = ENG original_tag = SOV original_tag = FRA original_tag = ITA original_tag = JAP original_tag = USA original_tag = BEL original_tag = CAN original_tag = SWE original_tag = HUN original_tag = CZE original_tag = ROM original_tag = YUG original_tag = POR original_tag = GRE original_tag = TUR original_tag = LAT original_tag = EST original_tag = RKH } }
+		NOT = { OR = { original_tag = SPR original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD } }
 		NOT = {
 			AND = {
-				tag = POL
+				original_tag = POL
 				OR = {
 					has_dlc = "Poland: United and Ready"
 					has_dlc = "No Step Back"
@@ -2473,43 +2479,43 @@ generic_escort_ship_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = AST tag = NZL tag = RAJ }
+				OR = { original_tag = AST original_tag = NZL original_tag = RAJ }
 				has_dlc = "Together for Victory"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+				OR = { original_tag = CHI original_tag = PRC original_tag = MAN original_tag = SHX original_tag = XSM original_tag = GXC original_tag = YUN original_tag = SIK original_tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { tag = MEX tag = HOL }
+				OR = { original_tag = MEX original_tag = HOL }
 				has_dlc = "Man the Guns"
 			}
 		}
 		NOT = {
 			AND = {
-				tag = BUL
+				original_tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { tag = EST  tag = LAT }
+				OR = { original_tag = EST  original_tag = LAT }
 				has_dlc = "No Step Back"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { tag = ETH tag = SWI }
+				OR = { original_tag = ETH original_tag = SWI }
 				has_dlc = "By Blood Alone"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE tag = ICE }
+				OR = { original_tag = FIN original_tag = NOR original_tag = DEN original_tag = SWE original_tag = ICE }
 				has_dlc = "Arms Against Tyranny"
 			}
 		}
@@ -2541,6 +2547,32 @@ generic_escort_ship_organization = {
 					original_tag = IRQ
 				}
 				has_dlc = "Graveyard of Empires"
+			}
+		}
+
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = PHI
+					original_tag = SND
+					original_tag = HBC
+					original_tag = XIC
+					original_tag = GDC
+					original_tag = SIC
+					original_tag = NXM
+					original_tag = GSM
+					original_tag = KHM
+				}
+				has_dlc = "No Compromise, No Surrender"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = INS
+					original_tag = SIA
+				}
+				has_dlc = "Thunder at Our Gates"
 			}
 		}
 	}
@@ -3970,14 +4002,12 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
+		NOT = { tag = KOR } # HoK provides dedicated aircraft MIOs
 		NOT = { 
-			OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT 
+			OR = { original_tag = GER original_tag = ENG original_tag = SOV original_tag = FRA original_tag = ITA original_tag = JAP original_tag = USA original_tag = BEL original_tag = CAN original_tag = YUG original_tag = ROM original_tag = CZE original_tag = HUN original_tag = CHI original_tag = MAN original_tag = HOL original_tag = BUL original_tag = GRE original_tag = TUR original_tag = LAT original_tag = LIT original_tag = RKH
 			} 
 		}
-		NOT = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
-		NOT = {
-			tag = KOR	#Has MOD Hearts of Korea
-		}
+		NOT = { original_tag = SPR original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD }
 		NOT = {
 			AND = {
 				original_tag = POL
@@ -4068,6 +4098,31 @@ generic_general_aircraft_organization = {
 					original_tag = IRQ
 				}
 				has_dlc = "Graveyard of Empires"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = PHI
+					original_tag = SND
+					original_tag = HBC
+					original_tag = XIC
+					original_tag = GDC
+					original_tag = SIC
+					original_tag = NXM
+					original_tag = GSM
+					original_tag = KHM
+				}
+				has_dlc = "No Compromise, No Surrender"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = INS
+					original_tag = SIA
+				}
+				has_dlc = "Thunder at Our Gates"
 			}
 		}
 	}
@@ -5594,6 +5649,10 @@ generic_naval_aircraft_organization = {
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
+
+		equipment_bonus = {
+			naval_strike_attack = 0.05
+		}
 	}
 
 	trait = {
@@ -5605,6 +5664,8 @@ generic_naval_aircraft_organization = {
 
 		equipment_bonus = {
 			reliability = 0.05
+			surface_detection = 0.05
+			sub_detection = 0.05
 		}
 	}
 
@@ -5643,6 +5704,7 @@ generic_naval_aircraft_organization = {
 
 		equipment_bonus = {
 			maximum_speed = 0.05
+			naval_strike_attack = 0.05
 		}
 	}
 
@@ -5660,6 +5722,9 @@ generic_naval_aircraft_organization = {
 
 		equipment_bonus = {
 			surface_detection = 0.05
+			sub_detection = 0.05
+			naval_strike_attack = 0.05
+			naval_strike_targetting = 0.05
 		}
 	}
 
@@ -5727,6 +5792,7 @@ generic_naval_aircraft_organization = {
 
 		equipment_bonus = {
 			air_attack = 0.05
+			air_ground_attack = 0.05
 		}
 	}
 
@@ -5741,7 +5807,8 @@ generic_naval_aircraft_organization = {
 		all_parents = { generic_mio_strength_wing_design }
 
 		equipment_bonus = {
-			air_ground_attack = 0.05
+			naval_strike_attack = 0.05
+			naval_strike_targetting = 0.05
 		}
 	}
 
@@ -6793,10 +6860,8 @@ generic_artillery_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = CZE tag = ROM tag = MEX } }
-		NOT = {
-			tag = KOR	#Has MOD Hearts of Korea
-		}
+		NOT = { tag = KOR } # HoK provides dedicated artillery MIOs
+		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = CZE tag = ROM tag = MEX tag = SLO tag = RKH tag = INS } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -6888,6 +6953,24 @@ generic_artillery_organization = {
 				}
 				has_dlc = "Graveyard of Empires"
 				
+			}
+		}
+		NOT = {
+			AND = {
+#				OR = {
+					original_tag = PHI
+#				}
+				has_dlc = "No Compromise, No Surrender"
+				
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = AST
+					original_tag = SIA
+				}
+				has_dlc = "Thunder at Our Gates"
 			}
 		}
 	}
@@ -7200,10 +7283,8 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST } }
-		NOT = {
-			tag = KOR	#Has MOD Hearts of Korea
-		}
+		NOT = { tag = KOR } # HoK provides dedicated infantry MIOs
+		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST tag = SLO tag = RKH tag = INS } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -7294,6 +7375,23 @@ generic_infantry_equipment_organization = {
 				}
 				has_dlc = "Graveyard of Empires"
 				
+			}
+		}
+		NOT = {
+			AND = {
+#				OR = {
+					original_tag = PHI
+#				}
+				has_dlc = "No Compromise, No Surrender"
+				
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = SIA
+				}
+				has_dlc = "Thunder at Our Gates"
 			}
 		}
 	}
@@ -7767,7 +7865,7 @@ generic_support_equipment_organization = {
 		name = generic_mio_trait_single_shot_man_portable_anti_tank_system
 		icon = GFX_generic_mio_trait_icon_soft_attack
 		
-		position = { x=0 y=4 }
+		position = { x=0 y=3 }
 		relative_position_id = generic_mio_trait_anti_tank_rifle
 		
 		all_parents = { generic_mio_trait_anti_tank_rifle }
@@ -7787,7 +7885,7 @@ generic_support_equipment_organization = {
 		name = generic_mio_trait_small_sidearms
 		icon = GFX_generic_mio_trait_icon_defense
 		
-		position = { x=1 y=2 }
+		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_private_tenders
 		
 		all_parents = { generic_mio_trait_private_tenders }
@@ -7849,13 +7947,11 @@ generic_motorized_mechanized_organization = {
 	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
 
 	allowed = {
-		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = ROM tag = MEX } }
-		NOT = {
-			tag = KOR	#Has MOD Hearts of Korea
-		}
+		NOT = { tag = KOR } # HoK provides dedicated motorized MIOs
+		NOT = { OR = { original_tag = GER original_tag = ENG original_tag = SOV original_tag = FRA original_tag = ITA original_tag = JAP original_tag = USA original_tag = CZE original_tag = ROM original_tag = MEX original_tag = SLO original_tag = RKH } }
 		NOT = {
 			AND = {
-				tag = POL
+				original_tag = POL
 				OR = {
 					has_dlc = "Poland: United and Ready"
 					has_dlc = "No Step Back"
@@ -7864,49 +7960,49 @@ generic_motorized_mechanized_organization = {
 		}
 		NOT = {
 			AND = {
-				tag = NZL
+				original_tag = NZL
 				has_dlc = "Together for Victory"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+				OR = { original_tag = CHI original_tag = PRC original_tag = MAN original_tag = SHX original_tag = XSM original_tag = GXC original_tag = YUN original_tag = SIK original_tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
 		}
 		NOT = {
 			AND = {
-				tag = HOL
+				original_tag = HOL
 				has_dlc = "Man the Guns"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
+				OR = { original_tag = SPR original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD original_tag = POR }
 				has_dlc = "La Resistance"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { tag = BUL tag = GRE tag = TUR }
+				OR = { original_tag = BUL original_tag = GRE original_tag = TUR }
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { tag = EST tag = LAT tag = LIT }
+				OR = { original_tag = EST original_tag = LAT original_tag = LIT }
 				has_dlc = "No Step Back"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { tag = ETH tag = SWI }
+				OR = { original_tag = ETH original_tag = SWI }
 				has_dlc = "By Blood Alone"
 			}
 		}
 		NOT = {
 			AND = {
-				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
+				OR = { original_tag = FIN original_tag = NOR original_tag = DEN original_tag = SWE }
 				has_dlc = "Arms Against Tyranny"
 			}
 		}
@@ -7942,6 +8038,33 @@ generic_motorized_mechanized_organization = {
 				}
 				has_dlc = "Graveyard of Empires"
 				
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = PHI
+					original_tag = SND
+					original_tag = HBC
+					original_tag = XIC
+					original_tag = GDC
+					original_tag = SIC
+					original_tag = NXM
+					original_tag = GSM
+					original_tag = KHM
+					original_tag = KUM
+				}
+				has_dlc = "No Compromise, No Surrender"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = INS
+					original_tag = AST
+					original_tag = SIA
+				}
+				has_dlc = "Thunder at Our Gates"
 			}
 		}
 	}
@@ -8129,7 +8252,7 @@ generic_motorized_mechanized_organization = {
 		
 		mutually_exclusive = { generic_mio_trait_advanced_artillery_racks generic_mio_trait_mounted_light_anti_tank_gun }
 		
-		limit_to_equipment_type = { mechanized_equipment motorized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment motorized_equipment }
 		
 		equipment_bonus = {
 			breakthrough = 0.04
@@ -8149,7 +8272,7 @@ generic_motorized_mechanized_organization = {
 		
 		all_parents = { generic_mio_trait_bulletproof_panels }
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 
 		equipment_bonus = {
 			ap_attack = 0.1
@@ -8165,7 +8288,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_medium_machinegun_mounts
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		mutually_exclusive = { generic_mio_trait_closed_chassi }
 
@@ -8183,7 +8306,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_open_chassi
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		mutually_exclusive = { generic_mio_trait_open_chassi }
 
@@ -8201,7 +8324,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=-1 y=2 }
 		relative_position_id = generic_mio_trait_closed_chassi
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		any_parent = { generic_mio_trait_closed_chassi generic_mio_trait_open_chassi }
 
@@ -8218,7 +8341,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_bulletproof_panels
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		all_parents = { generic_mio_trait_bulletproof_panels }
 
@@ -8235,7 +8358,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=1 y=0 }
 		relative_position_id = generic_mio_trait_light_flame_projectors
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		all_parents = { generic_mio_trait_bulletproof_panels }
 
@@ -8602,9 +8725,356 @@ generic_helicopter_organization = {
 	}
 }
 
+#####################
+####   Trains    ####
+#####################
 
+#TRAIN MANUFACTURER - Based on CKD-Plzen (CZE) 
+generic_train_organization = {
+	icon = GFX_idea_generic_build_infrastructure
 
+	allowed = {
+		always = no # Archetype only - countries using it have their own verisons
+	}
 
+	equipment_type = { train_equipment railway_gun_equipment support_equipment }
+	research_categories = { train_tech }
+
+	tree_header_text = {
+		text = mio_header_design_and_production
+		x = 4
+	}
+
+	tree_header_text = {
+		text = mio_header_support
+		x = 1
+	}
+
+	tree_header_text = {
+		text = mio_header_weapons
+		x = 7
+	}
+
+	initial_trait = {
+		name = generic_mio_initial_trait_generic_train_manufacturer
+		limit_to_equipment_type = { 
+			train_equipment 
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_material_improvements
+		name = generic_mio_trait_material_improvements
+		icon = GFX_generic_mio_trait_icon_armor_value
+
+		position = { x=3 y=0 }
+
+		limit_to_equipment_type = { train_equipment }
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_joint_stock_scheme
+		name = generic_mio_trait_joint_stock_scheme
+		icon = GFX_generic_mio_department_icon_facilities
+
+		position = { x=5 y=0 }
+
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.20
+		}
+
+		limit_to_equipment_type = { train_equipment }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.02
+		}
+	}
+
+	trait = {
+		token = generic_rapid_production_upscaling
+		name = generic_rapid_production_upscaling
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_joint_stock_scheme
+
+		limit_to_equipment_type = { train_equipment }
+
+		all_parents = { generic_mio_trait_joint_stock_scheme }
+
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.05
+			military_industrial_organization_size_up_requirement = -0.25
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_additional_flak_wagons
+		name = generic_mio_trait_additional_flak_wagons
+		icon = GFX_generic_mio_department_icon_anti_air_production
+
+		position = { x=2 y=0 }
+		relative_position_id = generic_mio_trait_joint_stock_scheme
+
+		limit_to_equipment_type = { train_equipment }
+
+		equipment_bonus = {
+			air_attack = 0.1
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_improved_axle_fitting
+		name = generic_mio_trait_improved_axle_fitting
+		icon = GFX_generic_mio_trait_icon_production_capacity
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_material_improvements
+		
+		limit_to_equipment_type = { train_equipment railway_gun_equipment }
+
+		any_parent = { generic_mio_trait_material_improvements generic_mio_trait_joint_stock_scheme }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+			production_resource_penalty_factor = -0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_improved_wagon_design
+		name = generic_mio_trait_improved_wagon_design
+		icon = GFX_generic_mio_department_icon_support_production
+
+		position = { x=-3 y=1 }
+		relative_position_id = generic_mio_trait_improved_axle_fitting
+
+		all_parents = { generic_mio_trait_improved_axle_fitting }
+
+		limit_to_equipment_type = { support_equipment }
+
+		equipment_bonus = {
+			reliability = 0.02
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_improved_loading
+		name = generic_mio_trait_improved_loading
+		icon = GFX_generic_mio_department_icon_support_line_efficiency
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_improved_wagon_design
+
+		all_parents = { generic_mio_trait_improved_wagon_design }
+
+		limit_to_equipment_type = { support_equipment }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.03
+		}
+	}
+
+	trait = {
+		token = CZE_mio_trait_minimalist_wagon_design
+		name = CZE_mio_trait_minimalist_wagon_design
+		icon = GFX_generic_mio_department_icon_support_materials
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_improved_loading
+
+		all_parents = { generic_mio_trait_improved_loading }
+
+		limit_to_equipment_type = { support_equipment }
+
+		production_bonus = {
+			production_resource_need_factor = -0.05
+			production_resource_penalty_factor = -0.01
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_ugly_ducklings
+		name = generic_mio_trait_ugly_ducklings
+		icon = GFX_military_industrial_organization_train_equipment
+
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_improved_axle_fitting
+
+		all_parents = { generic_mio_trait_improved_axle_fitting }
+
+		mutually_exclusive = { generic_mio_trait_armor_plating }
+
+		limit_to_equipment_type = { train_equipment }
+
+		production_bonus = {
+			production_cost_factor = -0.05
+			production_resource_penalty_factor = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_armor_plating
+		name = generic_mio_trait_armor_plating
+		icon = GFX_generic_mio_trait_icon_defense
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_improved_axle_fitting
+
+		all_parents = { generic_mio_trait_improved_axle_fitting }
+
+		mutually_exclusive = { generic_mio_trait_ugly_ducklings }
+
+		limit_to_equipment_type = { train_equipment }
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		production_bonus = {
+			production_resource_penalty_factor = 0.10
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_simplified_rail_carrier 
+		name = generic_mio_trait_simplified_rail_carrier
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+
+		position = { x=3 y=1 }
+		relative_position_id = generic_mio_trait_improved_axle_fitting
+
+		all_parents = { generic_mio_trait_improved_axle_fitting }
+
+		limit_to_equipment_type = { railway_gun }
+
+		visible = {
+			has_dlc = "No Step Back"
+		}
+		
+		production_bonus = {
+			production_capacity_factor = 0.10
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_improved_barrel_lining
+		name = generic_mio_trait_improved_barrel_lining
+		icon = GFX_generic_mio_department_icon_tank_general_at
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_simplified_rail_carrier 
+
+		any_parent = { generic_mio_trait_simplified_rail_carrier  }
+
+		visible = {
+			has_dlc = "No Step Back"
+		}
+
+		limit_to_equipment_type = { railway_gun }
+
+		equipment_bonus = {
+			reliability = 0.10
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_quick_design_turnarounds
+		name = generic_mio_trait_quick_design_turnarounds
+		icon = GFX_generic_mio_trait_icon_conversion_speed
+
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_improved_axle_fitting
+
+		any_parent = { generic_mio_trait_armor_plating generic_mio_trait_ugly_ducklings }
+
+		limit_to_equipment_type = { train_equipment }
+
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -1
+			military_industrial_organization_design_team_change_cost = -1
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_salavage_destoryed_locomotives
+		name = generic_mio_trait_salavage_destoryed_locomotives
+		icon = GFX_generic_mio_trait_icon_resources
+
+		position = { x=-1 y=3 }
+		relative_position_id = generic_mio_trait_improved_axle_fitting
+
+		limit_to_equipment_type = { train_equipment }
+
+		all_parents = { generic_mio_trait_quick_design_turnarounds }
+	
+		production_bonus = {
+			production_resource_need_factor = -0.25
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_train_production_at_scale
+		name = generic_mio_trait_train_production_at_scale
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+		limit_to_equipment_type = { train_equipment }
+		
+		position = { x=0 y=3 }
+		relative_position_id = generic_mio_trait_improved_axle_fitting
+
+		all_parents = { generic_mio_trait_quick_design_turnarounds }
+	
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_machine_assembly  
+		name = generic_mio_trait_machine_assembly
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+
+		position = { x=1 y=3 }
+		relative_position_id = generic_mio_trait_improved_axle_fitting
+
+		all_parents = { generic_mio_trait_quick_design_turnarounds }
+
+		limit_to_equipment_type = { train_equipment }
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}
 
 
 ##       ####  ######  ########     #######  ########     ######  ########    ###    ########  ######
@@ -8669,7 +9139,7 @@ generic_helicopter_organization = {
 #fuel_consumption
 #build_cost_ic
 #manpower
-#naval_supremacy_factor
+#naval_dominance_factor
 #naval_torpedo_enemy_critical_chance_factor (if you have modules adding it)
 #naval_torpedo_damage_reduction_factor (if you have modules adding it)
 #carrier_size (this will get very bad for you I promise, equipment modifiers are a mistake)

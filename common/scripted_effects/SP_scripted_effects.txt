@@ -20,7 +20,7 @@ SP_create_variant_based_on_country_assault_engineer = {
 				tank_gun_upgrade = 0
 			}
 			icon = "GFX_GER_armored_support_vehicle_medium"
-			model = assault_engineer_entity
+			model = GER_assault_engineer_entity
 		}
 	}
 	else_if = {
@@ -99,10 +99,8 @@ SP_create_variant_based_on_country_assault_engineer = {
 			model = USA_assault_engineer_entity
 		}
 	}
-	else_if = {			#Hearts of Korea
-		limit = {
-			original_tag = KOR
-		}
+	else_if = { # Hearts of Korea
+		limit = { original_tag = KOR }
 		create_equipment_variant = {
 			name = "K-1 CEV Ttanggom"
 			type = armored_support_vehicle_1
@@ -210,10 +208,8 @@ SP_create_variant_based_on_country_armored_engineer = {
 			model = ENG_armored_engineer_entity
 		}
 	}
-	else_if = {
-		limit = {
-			original_tag = KOR
-		}
+	else_if = { # Hearts of Korea
+		limit = { original_tag = KOR }
 		create_equipment_variant = {
 			name = "K-1 AVLB Gyogom"
 			type = armored_support_vehicle_1
@@ -337,10 +333,8 @@ SP_create_variant_based_on_country_armored_maintenance = {
 			model = USA_armored_maintenance_entity
 		}
 	}
-	else_if = {
-		limit = {
-			original_tag = KOR
-		}
+	else_if = { # Hearts of Korea
+		limit = { original_tag = KOR }
 		create_equipment_variant = {
 			name = "K-1 ARV Heukgom"
 			type = armored_support_vehicle_1
@@ -500,10 +494,8 @@ SP_create_variant_based_on_country_armored_signal = {
 			model = USA_armored_signal_entity
 		}
 	}
-	else_if = {
-		limit = {
-			original_tag = KOR
-		}
+	else_if = { # Hearts of Korea
+		limit = { original_tag = KOR }
 		create_equipment_variant = {
 			name = "K-1 C/TMR Wanggom"
 			type = armored_support_vehicle_1
@@ -565,7 +557,7 @@ SP_create_variant_based_on_country_improved_small_airframe_rocket_engine = {
 			if = {
 				limit = {
 					has_tech = aa_cannon_1
-					has_completed_focus = JAP_agility_focus
+					has_completed_focus = JAP_develop_new_fighters
 				}
 				create_equipment_variant = {
 			 		name = "J8M1"
@@ -585,7 +577,7 @@ SP_create_variant_based_on_country_improved_small_airframe_rocket_engine = {
 			}
 			else_if = {
 				limit = {
-					has_completed_focus = JAP_agility_focus
+					has_completed_focus = JAP_develop_new_fighters
 				}
 				create_equipment_variant = {
 					name = "J8M2"

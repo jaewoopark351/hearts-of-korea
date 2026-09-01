@@ -153,7 +153,7 @@ if = {
 ##Korean leaders ###
 
 ##Political leader
-recruit_character = KOR_Syngman_Rhee						#Democratic Leader 1
+recruit_character = KOR_syngman_rhee						#Democratic Leader 1
 recruit_character = KOR_Gu_Kim								#Democratic Leader 2
 recruit_character = KOR_Boseon_Yoon
 recruit_character = KOR_Gang_Lee

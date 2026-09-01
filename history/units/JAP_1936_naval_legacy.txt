@@ -316,7 +316,7 @@ units = {
 		#Pusan
 		task_force = {
 			name = "Bogojunyokan Kantai"
-			location = 10011  # Thushima, Vanila was Pusan
+			location = 10011  # Tsushima; HoK keeps Korea independent in 1936
 			#Mutsuki-class destroyers
 			ship = { name = "Iwate" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
 			ship = { name = "Hirado" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }

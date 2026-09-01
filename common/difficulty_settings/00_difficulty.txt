@@ -47,7 +47,7 @@ difficulty_settings = {
 		countries = { CHI PRC }
 		multiplier = 2.0
 	}
-	difficulty_setting = {
+	difficulty_setting = { # Hearts of Korea
 		key = "custom_diff_strong_kor"
 		modifier = diff_strong_ai_generic
 		countries = { KOR }

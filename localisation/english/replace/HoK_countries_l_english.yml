@@ -91,17 +91,6 @@
  RKY_DEF:0 "류큐"
  RKY_ADJ:0 "류큐"
  #Ainu
- ANU_democratic:0 "아이누 자유국"
- ANU_democratic_DEF:0 "아이누 자유국"
- ANU_fascism:0 "아이누 제국"
- ANU_fascism_DEF:0 "아이누 제국"
- ANU_communism:0 "아이누민주주의인민공화국"
- ANU_communism_DEF:0 "아이누민주주의인민공화국"
- ANU_neutrality:0 "아이누 부족연맹국"
- ANU_neutrality_DEF:0 "아이누 부족연맹국"
- ANU:0 "아이누"
- ANU_DEF:0 "아이누"
- ANU_ADJ:0 "아이누"
  #Taiwan
  TWN_democratic:0 "대만민국"
  TWN_democratic_DEF:0 "대만민국"

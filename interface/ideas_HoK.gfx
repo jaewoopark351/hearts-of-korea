@@ -126,10 +126,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_jap_joint_staff_office.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_jap_hitachi"
-		texturefile = "gfx/interface/ideas/idea_jap_hitachi.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_jap_tachikawa"
 		texturefile = "gfx/interface/ideas/idea_jap_tachikawa.dds"
 	}

@@ -18,9 +18,6 @@ on_actions = {
 					transfer_state = 714
 					transfer_state = 761
 					transfer_state = 715
-					transfer_state = 1085
-					transfer_state = 1086
-					transfer_state = 1087
 					transfer_state = 610
 					
 					716 = { add_core_of = KOR }
@@ -30,9 +27,6 @@ on_actions = {
 					714 = { add_core_of = KOR }
 					761 = { add_core_of = KOR }
 					715 = { add_core_of = KOR }
-					1085 = { add_core_of = KOR }
-					1086 = { add_core_of = KOR }
-					1087 = { add_core_of = KOR }
 					610 = { add_core_of = KOR }
 			
 					716 = { add_dynamic_modifier = { modifier = chinese_separatism } }
@@ -42,7 +36,6 @@ on_actions = {
 					714 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 					761 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 					715 = { add_dynamic_modifier = { modifier = chinese_separatism } }
-					1087 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 					610 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 					
 					set_global_flag = kor_triumph_for_the_manchuria_flag
@@ -54,9 +47,6 @@ on_actions = {
 					714 = { set_state_name = STATE_KR_714 }
 					761 = { set_state_name = STATE_KR_761 }
 					715 = { set_state_name = STATE_KR_715 }
-					1085 = { set_state_name = STATE_KR_1024 }
-					1086 = { set_state_name = STATE_KR_1025 }
-					1087 = { set_state_name = STATE_KR_1026 }
 					610 = { set_state_name = STATE_KR_610 }
 			
 					set_province_name = { id = 11771 name = VICTORY_POINTS_KR_11771 }
@@ -124,21 +114,6 @@ on_actions = {
 						remove_core_of = CHI
 						remove_core_of = PRC
 					}
-					1085 = {
-						remove_core_of = MAN
-						remove_core_of = CHI
-						remove_core_of = PRC
-					}
-					1086 = {
-						remove_core_of = MAN
-						remove_core_of = CHI
-						remove_core_of = PRC
-					}
-					1087 = {
-						remove_core_of = MAN
-						remove_core_of = CHI
-						remove_core_of = PRC
-					}
 					610 = {
 						remove_core_of = MAN
 						remove_core_of = CHI
@@ -154,9 +129,6 @@ on_actions = {
 					delete_unit = { state = 714 }
 					delete_unit = { state = 761 }
 					delete_unit = { state = 715 }
-					delete_unit = { state = 1085 }
-					delete_unit = { state = 1086 }
-					delete_unit = { state = 1087 }
 					delete_unit = { state = 610 }
 				}
 				MAN = {
@@ -167,9 +139,6 @@ on_actions = {
 					delete_unit = { state = 714 }
 					delete_unit = { state = 761 }
 					delete_unit = { state = 715 }
-					delete_unit = { state = 1085 }
-					delete_unit = { state = 1086 }
-					delete_unit = { state = 1087 }
 					delete_unit = { state = 610 }
 				}
 				
@@ -619,16 +588,18 @@ on_actions = {
 						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 						add_building_construction = { type = air_base level = 3 instant_build = yes }
 					}
-					1085 = {	#Yeonbyeon
+					717 = {	#HoK legacy Yeonbyeon bonus; target successor
 						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 					}
-					1086 = {	#Seogando
+					328 = {	#HoK legacy Seogando inland bonus; target successor
 						add_extra_state_shared_building_slots = 2
 						add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+					}
+					716 = {	#HoK legacy Seogando coastal bonus; target successor
 						add_building_construction = { type = dockyard level = 1 instant_build = yes }
 					}
-					1087 = {	#Heuk-ha
+					714 = {	#HoK legacy Heuk-ha bonus; target successor
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 						add_building_construction = { type = infrastructure level = 2 instant_build = yes }
@@ -764,17 +735,17 @@ on_actions = {
 						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
 						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }
 					}
-					1085 = {	#Yeonbyeon
+					717 = {	#HoK legacy Yeonbyeon units; target successor
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 					}
-					1086 = {	#Seogando
+					328 = {	#HoK legacy Seogando units; target successor
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 					}
-					1087 = {	#Heuk-ha
+					714 = {	#HoK legacy Heuk-ha units; target successor
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 						create_unit = { division = "division_template = \"Gyeongbi-Yeodan\" start_experience_factor = 0.2 start_equipment_factor = 0.7" owner = KOR }

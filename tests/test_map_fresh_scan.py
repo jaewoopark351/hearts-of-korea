@@ -87,7 +87,7 @@ class MapFreshScanTests(unittest.TestCase):
         for root in (self.vanilla, self.old):
             write_text(root, "map/definition.csv", vanilla_definition)
             write_bmp(root, "map/provinces.bmp", [[(255, 0, 0), (0, 0, 255)]])
-            write_text(root, "history/states/10-base.txt", "state = { id = 10 provinces = { 1 } }\n")
+            write_text(root, "history/states/1-base.txt", "state = { id = 1 provinces = { 1 } }\n")
             write_text(
                 root,
                 "map/strategicregions/100-base.txt",
@@ -101,8 +101,8 @@ class MapFreshScanTests(unittest.TestCase):
         )
         write_text(
             self.mod,
-            "history/states/20-custom.txt",
-            "state = {\n    id = 20\n    provinces = { 3 }\n}\n",
+            "history/states/2-custom.txt",
+            "state = {\n    id = 2\n    provinces = { 3 }\n}\n",
         )
         write_text(
             self.mod,
@@ -112,11 +112,11 @@ class MapFreshScanTests(unittest.TestCase):
         write_text(
             self.mod,
             "events/candidate_refs.txt",
-            "country_event = { trigger = { controls_state = 20 controls_province = 3 } }\n",
+            "country_event = { trigger = { controls_state = 2 controls_province = 3 } }\n",
         )
         write_text(
             self.mod,
-            "events/reference_20.txt",
+            "events/reference_2.txt",
             "country_event = { }\n",
         )
         for excluded in (
@@ -130,7 +130,7 @@ class MapFreshScanTests(unittest.TestCase):
             write_text(
                 self.mod,
                 f"{excluded}/must-not-be-scanned.txt",
-                "state = 20 province = 3\n",
+                "state = 2 province = 3\n",
             )
         write_text(self.vanilla, "map/railways.txt", "1 2 1 3\n")
         write_text(self.vanilla, "map/supply_nodes.txt", "1 1\n")
@@ -145,11 +145,11 @@ class MapFreshScanTests(unittest.TestCase):
             self.vanilla,
             "map/buildings.txt",
             (
-                "10;arms_factory;0;0;0;0;0\n"
-                "10;air_base;0;0;0;0;0\n"
-                "10;rocket_site_spawn;0;0;0;0;0\n"
-                "20;air_base;0;0;0;0;0\n"
-                "20;rocket_site_spawn;0;0;0;0;0"
+                "1;arms_factory;0;0;0;0;0\n"
+                "1;air_base;0;0;0;0;0\n"
+                "1;rocket_site_spawn;0;0;0;0;0\n"
+                "2;air_base;0;0;0;0;0\n"
+                "2;rocket_site_spawn;0;0;0;0;0"
             ),
         )
         write_text(
@@ -162,11 +162,11 @@ class MapFreshScanTests(unittest.TestCase):
             "localisation/test_l_english.yml",
             (
                 "l_english:\n"
-                " STATE_20_suffix:0 \"20\"\n"
+                " STATE_2_suffix:0 \"2\"\n"
                 " STATE_3:0 \"Wrong entity type\"\n"
                 " VICTORY_POINTS_3_suffix:0 \"Custom province\"\n"
-                " VICTORY_POINTS_20:0 \"Wrong entity type\"\n"
-                " # STATE_20:0 \"Comment only\"\n"
+                " VICTORY_POINTS_2:0 \"Wrong entity type\"\n"
+                " # STATE_2:0 \"Comment only\"\n"
             ),
         )
 
@@ -269,7 +269,7 @@ class MapFreshScanTests(unittest.TestCase):
             any(row["entity_type"] == "province" and row["entity_id"] == "3" for row in references)
         )
         self.assertTrue(
-            any(row["entity_type"] == "state" and row["entity_id"] == "20" for row in references)
+            any(row["entity_type"] == "state" and row["entity_id"] == "2" for row in references)
         )
         physical_keys = [
             (
@@ -286,7 +286,7 @@ class MapFreshScanTests(unittest.TestCase):
         self.assertTrue(
             any(
                 row["entity_type"] == "state"
-                and row["entity_id"] == "20"
+                and row["entity_id"] == "2"
                 and "state_localisation_token" in row["context"]
                 and row["confidence"] == "HIGH"
                 for row in references
@@ -296,9 +296,9 @@ class MapFreshScanTests(unittest.TestCase):
             row
             for row in references
             if row["entity_type"] == "state"
-            and row["entity_id"] == "20"
+            and row["entity_id"] == "2"
             and row["source_layer"] == "mod"
-            and row["relative_path"] == "history/states/20-custom.txt"
+            and row["relative_path"] == "history/states/2-custom.txt"
             and row["line"] == "2"
         )
         self.assertEqual(state_definition["column"], "10")
@@ -307,7 +307,7 @@ class MapFreshScanTests(unittest.TestCase):
         self.assertTrue(
             any(
                 row["entity_type"] == "state"
-                and row["entity_id"] == "20"
+                and row["entity_id"] == "2"
                 and row["context"] == "comment_numeric_candidate"
                 and row["confidence"] == "LOW"
                 for row in references
@@ -317,8 +317,8 @@ class MapFreshScanTests(unittest.TestCase):
         self.assertTrue(
             any(
                 row["entity_type"] == "state"
-                and row["entity_id"] == "20"
-                and row["relative_path"] == "events/reference_20.txt"
+                and row["entity_id"] == "2"
+                and row["relative_path"] == "events/reference_2.txt"
                 and row["line"] == "0"
                 and row["context"] == "relative_path_numeric_candidate"
                 and row["confidence"] == "LOW"
@@ -345,7 +345,7 @@ class MapFreshScanTests(unittest.TestCase):
         self.assertFalse(
             any(
                 row["entity_type"] == "state"
-                and row["entity_id"] == "20"
+                and row["entity_id"] == "2"
                 and "victory_point_localisation_token" in row["context"]
                 for row in references
             )
@@ -362,8 +362,8 @@ class MapFreshScanTests(unittest.TestCase):
     def test_detects_cross_file_integrity_failures_and_legal_sentinel_boundary(self) -> None:
         write_text(
             self.mod,
-            "history/states/21-duplicate.txt",
-            "state = { id = 20 provinces = { 3 } }\n",
+            "history/states/2-duplicate.txt",
+            "state = { id = 2 provinces = { 3 } }\n",
         )
         write_text(self.mod, "map/railways.txt", "1 2 1 99\n")
         write_text(self.mod, "map/supply_nodes.txt", "1 99\n")
@@ -395,13 +395,55 @@ class MapFreshScanTests(unittest.TestCase):
         self.assertEqual(summary["static_result"], "FAIL")
         self.assertEqual(summary["three_way_status"], "BLOCKED")
 
+    def test_detects_effective_state_id_gap(self) -> None:
+        write_text(
+            self.mod,
+            "history/states/3-gap-boundary.txt",
+            "state = { id = 3 provinces = { } }\n",
+        )
+        write_text(
+            self.mod,
+            "history/states/7-gap-boundary.txt",
+            "state = { id = 7 provinces = { } }\n",
+        )
+        write_text(
+            self.mod,
+            "map/buildings.txt",
+            (
+                "1;air_base;0;0;0;0;0\n"
+                "1;rocket_site_spawn;0;0;0;0;0\n"
+                "2;air_base;0;0;0;0;0\n"
+                "2;rocket_site_spawn;0;0;0;0;0\n"
+                "3;air_base;0;0;0;0;0\n"
+                "3;rocket_site_spawn;0;0;0;0;0\n"
+                "7;air_base;0;0;0;0;0\n"
+                "7;rocket_site_spawn;0;0;0;0;0"
+            ),
+        )
+
+        output = self.base / "state-id-gap"
+        completed = self.run_tool(output, old=False)
+        self.assertEqual(completed.returncode, 0, completed.stderr)
+        findings = read_tsv(output / "findings.tsv")
+        missing = [row for row in findings if row["code"] == "MISSING_STATE_ID"]
+        self.assertEqual([row["entity_id"] for row in missing], ["4", "5", "6"])
+        self.assertTrue(all(row["severity"] == "ERROR" for row in missing))
+        self.assertTrue(all(row["entity_type"] == "state" for row in missing))
+        self.assertTrue(
+            all("continuous from 1 through 7" in row["detail"] for row in missing)
+        )
+        error_codes = {row["code"] for row in findings if row["severity"] == "ERROR"}
+        self.assertEqual(error_codes, {"MISSING_STATE_ID"})
+        summary = json.loads((output / "summary.json").read_text(encoding="utf-8"))
+        self.assertEqual(summary["static_result"], "FAIL")
+
     def test_detects_buildings_trailing_newline(self) -> None:
         for label, line_ending in (("lf", "\n"), ("crlf", "\r\n")):
             with self.subTest(line_ending=label):
                 write_text(
                     self.mod,
                     "map/buildings.txt",
-                    "20;arms_factory;0;0;0;0;0" + line_ending,
+                    "2;arms_factory;0;0;0;0;0" + line_ending,
                 )
                 output = self.base / f"buildings-trailing-{label}"
                 completed = self.run_tool(output, old=False)
@@ -427,9 +469,9 @@ class MapFreshScanTests(unittest.TestCase):
             self.mod,
             "map/buildings.txt",
             (
-                "10;rocket_site_spawn;0;0;0;0;0\n"
-                "20;air_base;0;0;0;0;0\n"
-                "20;rocket_site_spawn;0;0;0;0;0"
+                "1;rocket_site_spawn;0;0;0;0;0\n"
+                "2;air_base;0;0;0;0;0\n"
+                "2;rocket_site_spawn;0;0;0;0;0"
             ),
         )
         output = self.base / "missing-air-base-site"
@@ -444,7 +486,7 @@ class MapFreshScanTests(unittest.TestCase):
         self.assertEqual(len(missing_air), 1)
         self.assertEqual(missing_air[0]["severity"], "ERROR")
         self.assertEqual(missing_air[0]["entity_type"], "state")
-        self.assertEqual(missing_air[0]["entity_id"], "10")
+        self.assertEqual(missing_air[0]["entity_id"], "1")
         self.assertEqual(missing_air[0]["source_layer"], "mod")
         self.assertEqual(missing_air[0]["relative_path"], "map/buildings.txt")
         self.assertFalse(
@@ -459,9 +501,9 @@ class MapFreshScanTests(unittest.TestCase):
             self.mod,
             "map/buildings.txt",
             (
-                "10;air_base;0;0;0;0;0\n"
-                "20;air_base;0;0;0;0;0\n"
-                "20;rocket_site_spawn;0;0;0;0;0"
+                "1;air_base;0;0;0;0;0\n"
+                "2;air_base;0;0;0;0;0\n"
+                "2;rocket_site_spawn;0;0;0;0;0"
             ),
         )
         output = self.base / "missing-rocket-site-spawn"
@@ -476,7 +518,7 @@ class MapFreshScanTests(unittest.TestCase):
         self.assertEqual(len(missing_rocket), 1)
         self.assertEqual(missing_rocket[0]["severity"], "ERROR")
         self.assertEqual(missing_rocket[0]["entity_type"], "state")
-        self.assertEqual(missing_rocket[0]["entity_id"], "10")
+        self.assertEqual(missing_rocket[0]["entity_id"], "1")
         self.assertEqual(missing_rocket[0]["source_layer"], "mod")
         self.assertEqual(missing_rocket[0]["relative_path"], "map/buildings.txt")
         self.assertFalse(
@@ -510,8 +552,8 @@ class MapFreshScanTests(unittest.TestCase):
     def test_duplicate_membership_within_one_state_is_not_multiple_states(self) -> None:
         write_text(
             self.mod,
-            "history/states/20-custom.txt",
-            "state = { id = 20 provinces = { 3 3 } }\n",
+            "history/states/2-custom.txt",
+            "state = { id = 2 provinces = { 3 3 } }\n",
         )
         output = self.base / "duplicate-membership"
         completed = self.run_tool(output, old=False)

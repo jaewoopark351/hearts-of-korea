@@ -25,10 +25,6 @@
  GOOKPPONG_MIDDLE_POWER_ENABLED_TEXT:0 "국뽕-중견국 시작 옵션 사용"
  GOOKPPONG_MIDDLE_POWER_ENABLED_TEXT_DESC:0 "한국은 게임 시작 시 국뽕옵션과 달리 한반도만을 가지고 시작하지만, 기존 한국보다 더 많은, 폴란드급의 시작 기술력 및 공장과 육군병력, 해군함선, 공군비행단, 보급여건, 자원, 추가 건설슬롯을 가지고 시작합니다. \n\n본 옵션 사용 시, 기존 마이너 국가 국력의 HoK 한국이 아닌, 폴란드, 스웨덴, 브라질급의 중견국 한국으로 플레이가 가능하며, 멀티플레이에 권장됩니다."
  
- JUNGPPONG_STATUS:0 "중뽕옵션 사용 여부"
- RULE_OPTION_DEFAULT_JUNGPPONG_DESC:0 "중뽕옵션을 사용하지 않습니다."
- JUNGPPONG_ENABLED_TEXT:0 "중뽕옵션 사용"
- JUNGPPONG_ENABLED_TEXT_DESC:0 "중국이 게임 시작부터 만주국과 몽강을 제외한 모든 군벌들을 평정하고, 7대열강급의 시작 기술력 및 공장과 육군병력, 해군함선, 보급여건, 자원을 가지고 시작하며, 또한 전투 및 생산 AI가 소련과 비슷하게 바뀝니다. \n\n본 옵션은 중국전선에서 기존 아시아식 전장 대신 유럽식 전장을 경험할 수 있게 합니다."
  
  FINNPPONG_STATUS:0 "핀뽕옵션 사용 여부"
  RULE_OPTION_DEFAULT_FINNPPONG_DESC:0 "핀뽕옵션을 사용하지 않습니다."

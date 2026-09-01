@@ -62,20 +62,6 @@ kor_gookppong_status = {
 		desc = "GOOKPPONG_MIDDLE_POWER_ENABLED_TEXT_DESC"
 	}
 }
-chi_jungppong_status = {
-	name = "JUNGPPONG_STATUS"
-	group = "RULE_GROUP_GOOKPPONG_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_JUNGPPONG_DESC"
-	}
-	option = {
-		name = JUNGPPONG_ENABLED
-		text = "JUNGPPONG_ENABLED_TEXT"
-		desc = "JUNGPPONG_ENABLED_TEXT_DESC"
-	}
-}
 fin_finnppong_status = {
 	name = "FINNPPONG_STATUS"
 	group = "RULE_GROUP_GOOKPPONG_SETUP"

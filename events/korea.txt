@@ -39,9 +39,6 @@ country_event = {
 			transfer_state = 714
 			transfer_state = 761
 			transfer_state = 715
-			transfer_state = 1085
-			transfer_state = 1086
-			transfer_state = 1087
 			transfer_state = 610
 			white_peace = JAP
 		}
@@ -53,9 +50,6 @@ country_event = {
 			remove_state_core = 714
 			remove_state_core = 761
 			remove_state_core = 715
-			remove_state_core = 1085
-			remove_state_core = 1086
-			remove_state_core = 1087
 			remove_state_core = 610
 		}
 		every_other_country = {
@@ -66,7 +60,7 @@ country_event = {
 			white_peace = KOR
 		}
 		if = {
-			limit = { JAP = { has_completed_focus = JAP_sign_tripartite_pact } }
+			limit = { JAP = { has_completed_focus = JAP_sea_tripartite_pact } }
 			GER = {
 				white_peace = KOR
 			}
@@ -148,7 +142,7 @@ country_event = {
 				size = 0.5
 				navy_ratio = 0.01
 				capital = 525
-				states = { 525 1082 1028 1029 1031 527 1083 716 745 328 717 714 761 715 1085 1086 1087 }
+				states = { 525 1082 1028 1029 1031 527 1083 716 745 328 717 714 761 715 }
 			}
 			division_template = {
 				name = "Nonong-jeokwi-Sadan"
@@ -291,7 +285,7 @@ country_event = {
 				size = 0.5
 				navy_ratio = 0.01
 				capital = 1030
-				states = { 1082 1028 1029 1031 1030 527 1083 716 745 328 717 714 761 715 1085 1086 1087 }
+				states = { 1082 1028 1029 1031 1030 527 1083 716 745 328 717 714 761 715 }
 			}
 			
 			division_template = {
@@ -748,9 +742,6 @@ country_event = {
 			transfer_state = 714
 			transfer_state = 761
 			transfer_state = 715
-			transfer_state = 1085
-			transfer_state = 1086
-			transfer_state = 1087
 			transfer_state = 610
 		}
 		add_war_support = 0.1
@@ -899,7 +890,7 @@ country_event = {
 			factor = 50
 		}
 		set_capital = {
-			state = 1086
+			state = 328 # Guknaeseong province 9803 is in target state 328
 			remember_old_capital = no
 		}
 	}

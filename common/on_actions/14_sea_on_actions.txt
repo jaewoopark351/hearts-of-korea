@@ -168,6 +168,9 @@ on_actions = {
 							state = 1029
 							state = 1028
 							state = 527
+							state = 1082 # HoK: Jeolla
+							state = 1083 # HoK: Hwanghae
+							state = 1084 # HoK: Jeju
 						}
 					}
 					add_dynamic_modifier = {
@@ -182,12 +185,11 @@ on_actions = {
 		effect = {
 			IF = {
 				limit = { has_dlc = "No Compromise, No Surrender" }
-				1086 = { # Andung
+				328 = { # Kirin
 					add_province_modifier = {
 						static_modifiers = { the_great_wall }
 						province = {
 							id = 9848
-							id = 6910
 						}
 					}
 					add_to_array = { global.great_wall_state = THIS }
@@ -197,6 +199,7 @@ on_actions = {
 					add_province_modifier = {
 						static_modifiers = { the_great_wall }
 						province = {
+							id = 6910
 							id = 6804
 							id = 3849
 							id = 11808
