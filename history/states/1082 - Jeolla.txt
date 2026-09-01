@@ -1,0 +1,43 @@
+
+state={
+	id=1082
+	name="STATE_1082"
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 1
+			10110 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+			13429 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+		}
+		victory_points = {
+			13430 1 
+		}
+		victory_points = {
+			13424 10
+		}
+		add_core_of = KOR
+		
+		1939.3.14 = {
+			owner = JAP
+			controller = JAP
+		}
+
+	}
+
+	provinces={
+		4126 10110 11948 12085 13424 13425 13426 13427 13428 13429 13430 13431
+	}
+	manpower=4077292
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

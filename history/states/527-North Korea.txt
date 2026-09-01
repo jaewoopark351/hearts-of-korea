@@ -1,34 +1,36 @@
-
 state={
 	id=527
 	name="STATE_527"
 	resources={
-		steel=15.000
-		tungsten=28.000
+		aluminium=5.000
+	}
+	provinces={
+		912 978 3912 4052 6963 7171 9790 9795 9918 11775 11828 11835 11896 13415
 	}
 
 	history={
 		owner = KOR
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			848 = {
-				naval_base = 3
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+			13415 = {
+				naval_base = 2
 				coastal_bunker = 1
 			}
-
 		}
 		victory_points = {
-			6928 3
+			4052 20
 		}
 		victory_points = {
-			6822 3
+			11835 3
 		}
 		victory_points = {
-			848 10
+			6963 3
 		}
 		victory_points = {
-			6944 1
+			13415 1
 		}
 		add_core_of = KOR
 		
@@ -39,11 +41,8 @@ state={
 
 	}
 
-	provinces={
-		848 852 898 906 959 3803 3852 3860 3904 3981 6822 6922 6928 6944 9899 10083 11770 11878 
-	}
-	manpower=2574500
+	manpower=4179983
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=large_town
 	local_supplies=0.000
 }

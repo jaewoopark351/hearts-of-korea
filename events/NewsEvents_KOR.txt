@@ -326,8 +326,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		1017 = { is_controlled_by = JAP }
-		1017 = { is_owned_by = KOR }
+		525 = { is_controlled_by = JAP }
+		525 = { is_owned_by = KOR }
 		JAP = { has_war_with = KOR }
 		NOT = { has_global_flag = fall_of_seoul_jap }
 	}
@@ -613,8 +613,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		1017 = { is_controlled_by = CHI }
-		1017 = { is_owned_by = KOR }
+		525 = { is_controlled_by = CHI }
+		525 = { is_owned_by = KOR }
 		CHI = { has_war_with = KOR }
 		NOT = { has_global_flag = fall_of_seoul_chi }
 	}
@@ -658,8 +658,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		1017 = { is_controlled_by = PRC }
-		1017 = { is_owned_by = KOR }
+		525 = { is_controlled_by = PRC }
+		525 = { is_owned_by = KOR }
 		PRC = { has_war_with = KOR }
 		NOT = { has_global_flag = fall_of_seoul_prc }
 	}

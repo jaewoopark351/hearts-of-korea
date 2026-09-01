@@ -10,14 +10,14 @@ KOR_triumph_for_the_manchuria_category = {
 			is_subject = no
 			
 			# korea
+			controls_state = 1082
+			controls_state = 1028
 			controls_state = 525
+			controls_state = 1029
+			controls_state = 1031
+			controls_state = 1030
 			controls_state = 527
-			controls_state = 1017
-			controls_state = 1018
-			controls_state = 1019
-			controls_state = 1020
-			controls_state = 1021
-			controls_state = 1022
+			controls_state = 1083
 			
 			# manchuria
 			controls_state = 716 #liaotung
@@ -27,9 +27,9 @@ KOR_triumph_for_the_manchuria_category = {
 			controls_state = 714 #heilungkiang
 			controls_state = 761 #hulunbuir
 			controls_state = 715 #liaoning
-			controls_state = 1024 #Jiandao Hok
-			controls_state = 1025 #Andung Hok
-			controls_state = 1026 #Heihe Hok
+			controls_state = 1085 #Jiandao Hok
+			controls_state = 1086 #Andung Hok
+			controls_state = 1087 #Heihe Hok
 		}
 
 		visible = {
@@ -46,9 +46,9 @@ KOR_triumph_for_the_manchuria_category = {
 			714 = { add_core_of = ROOT }
 			761 = { add_core_of = ROOT }
 			715 = { add_core_of = ROOT }
-			1024 = { add_core_of = ROOT }
-			1025 = { add_core_of = ROOT }
-			1026 = { add_core_of = ROOT }
+			1085 = { add_core_of = ROOT }
+			1086 = { add_core_of = ROOT }
+			1087 = { add_core_of = ROOT }
 			610 = { add_core_of = ROOT }
 			
 			716 = { add_dynamic_modifier = { modifier = chinese_separatism } }
@@ -58,7 +58,7 @@ KOR_triumph_for_the_manchuria_category = {
 			714 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 			761 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 			715 = { add_dynamic_modifier = { modifier = chinese_separatism } }
-			1026 = { add_dynamic_modifier = { modifier = chinese_separatism } }
+			1087 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 			610 = { add_dynamic_modifier = { modifier = chinese_separatism } }
 
 			hidden_effect = {
@@ -69,9 +69,9 @@ KOR_triumph_for_the_manchuria_category = {
 				transfer_state = 714
 				transfer_state = 761
 				transfer_state = 715
-				transfer_state = 1024
-				transfer_state = 1025
-				transfer_state = 1026
+				transfer_state = 1085
+				transfer_state = 1086
+				transfer_state = 1087
 				#transfer_state = 610
 			}
 		}
@@ -106,9 +106,9 @@ KOR_triumph_for_the_manchuria_category = {
 			714 = { set_state_name = STATE_KR_714 }
 			761 = { set_state_name = STATE_KR_761 }
 			715 = { set_state_name = STATE_KR_715 }
-			1024 = { set_state_name = STATE_KR_1024 }
-			1025 = { set_state_name = STATE_KR_1025 }
-			1026 = { set_state_name = STATE_KR_1026 }
+			1085 = { set_state_name = STATE_KR_1024 }
+			1086 = { set_state_name = STATE_KR_1025 }
+			1087 = { set_state_name = STATE_KR_1026 }
 			610 = { set_state_name = STATE_KR_610 }
 			
 			set_province_name = { id = 11771 name = VICTORY_POINTS_KR_11771 }
@@ -160,14 +160,14 @@ KOR_defeat_japan_category = {
 
 		available = {
 			# korea
+			has_full_control_of_state = 1082
+			has_full_control_of_state = 1028
 			has_full_control_of_state = 525
+			has_full_control_of_state = 1029
+			has_full_control_of_state = 1031
+			has_full_control_of_state = 1030
 			has_full_control_of_state = 527
-			has_full_control_of_state = 1017
-			has_full_control_of_state = 1018
-			has_full_control_of_state = 1019
-			has_full_control_of_state = 1020
-			has_full_control_of_state = 1021
-			has_full_control_of_state = 1022
+			has_full_control_of_state = 1083
 			
 			# manchuria
 			has_full_control_of_state = 716 #liaotung
@@ -177,9 +177,9 @@ KOR_defeat_japan_category = {
 			has_full_control_of_state = 714 #heilungkiang
 			has_full_control_of_state = 761 #hulunbuir
 			has_full_control_of_state = 715 #liaoning
-			has_full_control_of_state = 1024
-			has_full_control_of_state = 1025
-			has_full_control_of_state = 1026
+			has_full_control_of_state = 1085
+			has_full_control_of_state = 1086
+			has_full_control_of_state = 1087
 			#has_full_control_of_state = 610
 			has_war_with = JAP
 			KOR = { is_in_faction = no }
@@ -209,9 +209,9 @@ KOR_defeat_japan_category = {
 				transfer_state = 714
 				transfer_state = 761
 				transfer_state = 715
-				transfer_state = 1024
-				transfer_state = 1025
-				transfer_state = 1026
+				transfer_state = 1085
+				transfer_state = 1086
+				transfer_state = 1087
 				transfer_state = 610
 				white_peace = JAP
 			}
@@ -1185,7 +1185,7 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 525
+			controls_state = 1082
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1193,11 +1193,11 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
-			525 = {
+			1082 = {
 				set_state_category = large_town
 				add_extra_state_shared_building_slots = 1
 				add_victory_points = {
-					province = 13391 
+					province = 13429
 					value = 1
 				}
 				add_victory_points = {
@@ -1216,7 +1216,7 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1020 
+			controls_state = 1030
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1224,7 +1224,7 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
-			1020 = {
+			1030 = {
 				set_state_category = city
 				add_extra_state_shared_building_slots = 1
 				add_victory_points = {
@@ -1236,7 +1236,7 @@ KOR_decision_CNDP_category = {
 					value = 1
 				}
 				add_victory_points = {
-					province = 13397 
+					province = 13435
 					value = 1
 				}
 			}
@@ -1251,7 +1251,7 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1019
+			controls_state = 1031
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1259,11 +1259,11 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
-			1019 = {
+			1031 = {
 				set_state_category = large_town
 				add_extra_state_shared_building_slots = 1
 				add_victory_points = {
-					province = 13408 
+					province = 13446
 					value = 1
 				}
 				add_victory_points = {
@@ -1282,7 +1282,7 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1022 
+			controls_state = 1083
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1290,7 +1290,7 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
-			1022 = {
+			1083 = {
 				set_state_category = large_town
 				add_extra_state_shared_building_slots = 1
 				add_victory_points = {
@@ -1309,7 +1309,7 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1021 
+			controls_state = 527
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1317,7 +1317,7 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
-			1021 = {
+			527 = {
 				set_state_category = large_city
 				add_extra_state_shared_building_slots = 1
 				add_victory_points = {
@@ -1336,7 +1336,7 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1018 
+			controls_state = 1029
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1344,7 +1344,7 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
-			1018 = {
+			1029 = {
 				set_state_category = town
 				add_extra_state_shared_building_slots = 1
 				add_victory_points = {
@@ -1363,7 +1363,7 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 527 
+			controls_state = 1028
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1371,7 +1371,7 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
-			527 = {
+			1028 = {
 				set_state_category = town
 				add_extra_state_shared_building_slots = 1
 				add_victory_points = {
@@ -1570,13 +1570,13 @@ KOR_decision_expend_federation_of_balhae_category = {
 	KOR_admission_tsushima_to_the_federation = {
 		icon = generic_form_nation
 		allowed = { original_tag = KOR }
-		available = { controls_state = 1027 }	#JAP - Tsushima (HoK)
+		available = { controls_state = 1088 }	#JAP - Tsushima (HoK)
 		visible = { has_completed_focus = KOR_proclaim_federation_of_balhae }
 		fire_only_once = yes
 		cost = 100
-		highlight_states = { highlight_state_targets = { state = 1027 } }
+		highlight_states = { highlight_state_targets = { state = 1088 } }
 		complete_effect = {
-			1027 = { 
+			1088 = {
 				add_core_of = ROOT
 				set_state_name = STATE_KR_992
 			}
@@ -1596,20 +1596,20 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1017 = { is_controlled_by = ROOT }		#Gyeonggi
+			525 = { is_controlled_by = ROOT }		#Gyeonggi
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1017 = {	#Gyeonggi
+			525 = {	#Gyeonggi
 				is_not_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1017 = {	#Gyeonggi
+				525 = {	#Gyeonggi
 					create_unit = {
 					    division = "name = \"Je 1 Yugyeok-Yeodan 'Gyeonggi'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1630,20 +1630,20 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1018 = { is_controlled_by = ROOT }		#Gangwon
+			1029 = { is_controlled_by = ROOT }		#Gangwon
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1018 = {	#Gangwon
+			1029 = {	#Gangwon
 				is_not_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1018 = {	#Gangwon
+				1029 = {	#Gangwon
 					create_unit = {
 					    division = "name = \"Je 3 Yugyeok-Yeodan 'Gangwon'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1664,20 +1664,20 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1019 = { is_controlled_by = ROOT }		#Chungcheong
+			1031 = { is_controlled_by = ROOT }		#Chungcheong
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1019 = {	#Chungcheong
+			1031 = {	#Chungcheong
 				is_not_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1019 = {	#Chungcheong
+				1031 = {	#Chungcheong
 					create_unit = {
 					    division = "name = \"Je 6 Yugyeok-Yeodan 'Chungcheong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1698,20 +1698,20 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1020 = { is_controlled_by = ROOT }		#Gyeongsang
+			1030 = { is_controlled_by = ROOT }		#Gyeongsang
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1020 = {	#Gyeongsang
+			1030 = {	#Gyeongsang
 				is_not_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1020 = {	#Gyeongsang
+				1030 = {	#Gyeongsang
 					create_unit = {
 					    division = "name = \"Je 6 Yugyeok-Yeodan 'Gyeongsang'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1732,20 +1732,20 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1021 = { is_controlled_by = ROOT }		#Pyeongan
+			527 = { is_controlled_by = ROOT }		#Pyeongan
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1021 = {	#Pyeongan
+			527 = {	#Pyeongan
 				is_not_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1021 = {	#Pyeongan
+				527 = {	#Pyeongan
 					create_unit = {
 					    division = "name = \"Je 8 Yugyeok-Yeodan 'Pyeongan'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1766,20 +1766,20 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1022 = { is_controlled_by = ROOT }		#Hwanghae
+			1083 = { is_controlled_by = ROOT }		#Hwanghae
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1022 = {	#Hwanghae
+			1083 = {	#Hwanghae
 				is_not_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1022 = {	#Hwanghae
+				1083 = {	#Hwanghae
 					create_unit = {
 					    division = "name = \"Je 11 Yugyeok-Yeodan 'Hwanghae'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1800,20 +1800,20 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			525 = { is_controlled_by = ROOT }		#Jeolla
+			1082 = { is_controlled_by = ROOT }		#Jeolla
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			525 = {	#Jeolla
+			1082 = {	#Jeolla
 				is_not_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				525 = {	#Jeolla
+				1082 = {	#Jeolla
 					create_unit = {
 					    division = "name = \"Je 13 Yugyeok-Yeodan 'Jeolla'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1834,20 +1834,20 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			527 = { is_controlled_by = ROOT }		#Hamgyeong
+			1028 = { is_controlled_by = ROOT }		#Hamgyeong
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			527 = {	#Hamgyeong
+			1028 = {	#Hamgyeong
 				is_not_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				527 = {	#Hamgyeong
+				1028 = {	#Hamgyeong
 					create_unit = {
 					    division = "name = \"Je 16 Yugyeok-Yeodan 'Hamgyeong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT

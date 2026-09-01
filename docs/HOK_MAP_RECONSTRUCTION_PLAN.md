@@ -2,21 +2,25 @@
 
 ## 문서 상태
 
-- 작업 단계: **Documentation / Migration Decision 준비**
+- 작업 단계: **Implementation 적용 / static validation 완료 / D-POST 통과 / C-POST 대기**
 - 목표 게임: HOI4 `1.19.2.0.a729 (d245)`
 - 목표 방식: **V_TARGET-first HoK 지리 재구성**
-- production 맵 수정: **미승인 / 미수행**
-- province·state 영구 ID 마이그레이션: **제안 단계 / 미승인**
+- production 맵 수정: **사용자 명시 승인 / 적용**
+- province·state 영구 ID 마이그레이션: **사용자 명시 승인 / 적용**
 - 정확한 `V_OLD` 3-way: **BLOCKED**
-- 런타임 완료 판정: **NOT RUN**
+- 런타임 완료 판정: **PARTIAL — D-POST PASS, C-POST NOT RUN**
 
-이 문서는 구현 패치가 아니다. 현재 1.19.2 바닐라 전역 맵을 보존하면서 HoK의 한국·만주·쓰시마 지리를 다시 이식하기 위한 설계, 증거 등급, 영향 범위와 승인 게이트를 고정한다.
+이 문서는 현재 1.19.2 바닐라 전역 맵을 보존하면서 HoK의 한국·만주·쓰시마 지리를 다시 이식하기 위한 설계, 증거 등급, 영향 범위와 승인 게이트를 고정한다. 2026-09-01 사용자가 이 문서의 target-native 정책, 개별 ID 매핑, 새 게임 전용 호환성 정책과 production 구현을 명시적으로 승인했다. 실제 적용과 정적 검증 결과는 [target-native 맵 구현 기록](incidents/2026-09-01-target-native-map-implementation.md)에 기록한다.
+
+이 문서는 시작 크래시 복구 당시의 구현 기준과 현재 적용 상태를 보존한다. 후속 중국·만주·일본 정렬에서는 [중국·일본 1.19.2 바닐라 정렬 정책](CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md)이 우선한다. 현재 적용된 만주 state `1085–1087`과 관련 delta는 target 복구 후보지만 KOR 기능 disposition과 persistent ID 승인을 받기 전에는 되돌리지 않는다. 해당 후속 정책은 아직 문서화만 됐고 production 데이터에는 적용되지 않았다.
 
 관련 문서:
 
 - [크래시 디버깅 런북](CRASH_DEBUGGING_RUNBOOK.md)
 - [맵 호환성 점검표](MAP_COMPATIBILITY_CHECKLIST.md)
+- [중국·일본 1.19.2 바닐라 정렬 정책](CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md)
 - [2026-09-01 fresh 맵 격리 사건](incidents/2026-09-01-fresh-map-isolation.md)
+- [2026-09-01 target-native 맵 구현 기록](incidents/2026-09-01-target-native-map-implementation.md)
 - [기존 시작 크래시 사건](incidents/2026-08-31-startup-crash.md)
 - [맵 fresh scan 감사](audits/2026-08-31-map-fresh-scan.md)
 
@@ -43,7 +47,8 @@ V_TARGET 전역 맵
 | `D-FRESH-2026-09-01` | 현재 저장소 HoK만, `--debug`, DLC 36 | province 13,410개, 첫 history 단계에서 종료, `C0000005`, `IsMapInGoodState: no` | `FAIL` |
 | `D-NOMAP-FRESH-2026-09-01` | HoK에서 `map/`과 `history/states/`만 제외 | province 13,414개, 양쪽 history 단계와 startup/session change 완료, 새 crash 없음 | 시작 경계 통과. 실행 harness·exit code 부재로 제한적 |
 | `D-MAPONLY` | HoK의 `map/`과 `history/states/`만 포함 | 아직 실행하지 않음 | `NOT RUN` |
-| `C-POST` | 수정 HoK + `Korean Language` | 아직 수정·실행하지 않음 | `NOT RUN` |
+| `D-POST` | target-native HoK 단독 | 새 게임·맵 진입·unpause 후 최소 1937.01.01까지 진행, 새 crash 없음 | `PASS` |
+| `C-POST` | 수정 HoK + `Korean Language` | 아직 실행하지 않음 | `NOT RUN` |
 
 현재 증거 등급은 다음과 같다.
 
@@ -52,9 +57,10 @@ V_TARGET 전역 맵
 - **CONFIRMED** — `D-NOMAP`에서는 맵 오류가 사라지고 원래 crash 경계를 통과했다.
 - **STRONGLY_SUPPORTED** — HoK의 `map/` + `history/states/` 묶음은 `D-FRESH` 시작 crash의 필수 기여 요인이다.
 - **UNPROVEN** — 어느 단일 map invariant 또는 엔진 함수가 `C0000005`를 직접 일으켰는지.
-- **UNPROVEN** — 아래 재구성안이 `D-POST`와 `C-POST`를 통과하는지.
+- **CONFIRMED** — 적용된 재구성안은 `D-POST`에서 기존 시작 crash 경계를 통과했다.
+- **UNPROVEN** — 실제 지원 구성 `C-POST`가 같은 결과를 내는지.
 
-`D-NOMAP`에 남은 MIO, 일본 decision/focus/character, doctrine와 technology 오류는 startup을 막지 않았다. 이들은 맵 복구 뒤 별도 사건으로 처리한다.
+`D-NOMAP`에 남은 MIO, 일본 decision/focus/character, doctrine와 technology 오류는 startup을 막지 않았다. 이들은 맵 복구 뒤 [중국·일본 바닐라 정렬 정책](CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md)과 별도 후속 사건으로 처리한다.
 
 ## 3. HoK가 지도를 구성한 방식
 
@@ -108,7 +114,7 @@ HoK에 없는 `rivers.bmp`, `trees.bmp`, `cities.bmp`, `world_normal.bmp` 등은
 
 현재 바닐라는 ID `13376–13409`를 동남아시아·중국 등 다른 실제 province로 사용하며 `13410–13413`도 사용한다. 따라서 target의 `13376–13413`은 그대로 보존한다.
 
-### 4.2 제안 정책 — 미승인
+### 4.2 승인·적용 정책
 
 1. target `provinces.bmp`를 base로 사용한다.
 2. HoK-only 34개 RGB가 차지하는 픽셀을 식별한다.
@@ -118,7 +124,7 @@ HoK에 없는 `rivers.bmp`, `trees.bmp`, `cities.bmp`, `world_normal.bmp` 등은
 6. HoK province 34개에는 target 최대 ID 뒤의 새 ID 후보를 개별 배정한다.
 7. 각 새 ID의 RGB, geometry, state, strategic region과 모든 참조를 entity registry에 기록한다.
 
-후보 예약 구간은 `13414–13447`이지만 승인된 매핑이 아니다. old `13376–13409`에 일률적으로 `+38`을 적용하지 않는다. 각 province의 지리적 정체성과 RGB를 확인한 뒤 old ID → new ID 행을 별도로 승인한다.
+예약 구간 `13414–13447`과 개별 old ID → new ID registry는 사용자 승인 뒤 적용됐다. 숫자 배열은 연속이지만 old `13376–13409`에 무조건적인 전역 `+38` 치환을 적용한 것이 아니다. 각 province의 지리적 정체성, RGB와 참조 문맥을 개별 확인했다.
 
 ### 4.3 `V_OLD`가 없는 한계
 
@@ -129,7 +135,7 @@ HoK에 없는 `rivers.bmp`, `trees.bmp`, `cities.bmp`, `world_normal.bmp` 등은
 - 이 경우에도 HoK-only 34개 RGB와 한국 내 geometry를 근거로 제한하며, 결과를 “정확한 1.16 원형 delta”로 표현하지 않는다.
 - 구형 전역 `heightmap.bmp`, `terrain.bmp`, `ambient_object.txt`를 자동 승계하지 않는다.
 
-## 5. State 의미 매핑 제안 — 미승인
+## 5. State 의미 매핑 — 승인·적용
 
 target 바닐라 한국은 `525`, `527`, `1028–1031`의 6개 state로 구성되며, 이 여섯 state의 province 집합은 HoK 한국 state에서 custom 34개를 제외한 기존 province 69개를 정확히 분할한다.
 
@@ -148,21 +154,21 @@ HoK 한국은 경기·강원·충청·경상·평안·황해·제주·전라·�
 
 | 의미 지역 | HoK old ID | proposed target ID | 근거 | 상태 |
 |---|---:|---:|---|---|
-| 경기 | `1017` | `525` | target 남부 한국의 수도권 의미를 기존 한국 ID에 보존 | 미승인 |
-| 평안 | `1021` | `527` | target 북부 한국 ID에 평안 의미 보존 | 미승인 |
-| 함경 | `527` | `1028` | target의 현재 Hamgyong ID 사용 | 미승인 |
-| 강원 | `1018` | `1029` | target의 현재 Gangwon ID 사용 | 미승인 |
-| 경상 | `1020` | `1030` | target의 현재 Gyeongsang ID 사용 | 미승인 |
-| 충청 | `1019` | `1031` | target의 결합 state에서 충청 의미를 기존 ID에 보존 | 미승인 |
-| 전라 | `525` | `1082` | target `1031`에서 분리되는 추가 state | 후보, 미승인 |
-| 황해 | `1022` | `1083` | target `527`에서 분리되는 추가 state | 후보, 미승인 |
-| 제주 | `1023` | `1084` | target 한국에서 분리되는 추가 state | 후보, 미승인 |
-| 젠다오 | `1024` | `1085` | target source state `328`·`717`에서 분리 | 후보, 미승인 |
-| 안둥 | `1025` | `1086` | target source state `328`·`716`에서 분리 | 후보, 미승인 |
-| 헤이허 | `1026` | `1087` | target source state `714`에서 분리 | 후보, 미승인 |
-| 쓰시마 | `1027` | `1088` | target source state `528`에서 분리 | 후보, 미승인 |
+| 경기 | `1017` | `525` | target 남부 한국의 수도권 의미를 기존 한국 ID에 보존 | 승인·적용 |
+| 평안 | `1021` | `527` | target 북부 한국 ID에 평안 의미 보존 | 승인·적용 |
+| 함경 | `527` | `1028` | target의 현재 Hamgyong ID 사용 | 승인·적용 |
+| 강원 | `1018` | `1029` | target의 현재 Gangwon ID 사용 | 승인·적용 |
+| 경상 | `1020` | `1030` | target의 현재 Gyeongsang ID 사용 | 승인·적용 |
+| 충청 | `1019` | `1031` | target의 결합 state에서 충청 의미를 기존 ID에 보존 | 승인·적용 |
+| 전라 | `525` | `1082` | target `1031`에서 분리되는 추가 state | 승인·적용 |
+| 황해 | `1022` | `1083` | target `527`에서 분리되는 추가 state | 승인·적용 |
+| 제주 | `1023` | `1084` | target 한국에서 분리되는 추가 state | 승인·적용 |
+| 젠다오 | `1024` | `1085` | target source state `328`·`717`에서 분리 | 승인·적용 |
+| 안둥 | `1025` | `1086` | target source state `328`·`716`에서 분리 | 승인·적용 |
+| 헤이허 | `1026` | `1087` | target source state `714`에서 분리 | 승인·적용 |
+| 쓰시마 | `1027` | `1088` | target source state `528`에서 분리 | 승인·적용 |
 
-이 표는 현재 바닐라의 한국 ID 의미를 최대한 보존하고, 충돌하는 target state `1017–1027`을 건드리지 않는 제안이다. 숫자 전역 치환 규칙이 아니며, save/submod 정책과 함께 별도 승인이 필요하다.
+이 표는 현재 바닐라의 한국 ID 의미를 최대한 보존하고 충돌하는 target state `1017–1027`을 건드리지 않는 승인된 매핑이다. 숫자 전역 치환 규칙이 아니며, 기존 save와 persistent map ID를 참조하는 submod는 비호환으로 선언했다.
 
 ### 5.1 영향받는 target state 파일
 
@@ -301,7 +307,7 @@ WP-1부터 WP-6은 영구 map ID 마이그레이션과 production 구현이 명�
 - `V_OLD` 없이 전역 heightmap·terrain 차이를 원작 의도로 간주
 - 메인 메뉴 진입만으로 복구 완료 판정
 
-## 13. 승인 게이트
+## 13. 승인 기록과 남은 게이트
 
 다음 결정은 서로 별도다.
 
@@ -313,6 +319,8 @@ WP-1부터 WP-6은 영구 map ID 마이그레이션과 production 구현이 명�
 6. HOI4 런타임 검증 실행
 
 일반적인 “크래시 수정” 승인을 persistent ID migration 승인으로 확대 해석하지 않는다.
+
+2026-09-01 사용자는 위 1–5번의 target-native 선택, entity registry, state 매핑, 새 게임 전용 비호환 정책과 production 구현을 명시적으로 승인했다. 6번 중 HoK 단독 `D-POST`는 통과했지만 실제 지원 구성 `C-POST`, 육안 점검과 save/reload는 완료 판정의 남은 게이트다.
 
 ## 14. 완료 조건
 

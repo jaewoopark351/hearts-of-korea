@@ -136,7 +136,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 13376
+		location = 13414
 		division_template = "Bobyeong-Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -146,7 +146,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 13380
+		location = 13418
 		division_template = "Bobyeong-Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -156,7 +156,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 13377
+		location = 13415
 		division_template = "Bobyeong-Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -166,7 +166,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 15
 		}
-		location = 13386
+		location = 13424
 		division_template = "Bobyeong-Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -206,7 +206,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 22
 		}
-		location = 13398
+		location = 13436
 		division_template = "Bobyeong-Sadan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5

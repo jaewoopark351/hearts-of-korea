@@ -1,0 +1,35 @@
+state={
+	id=1087
+	name="STATE_1087"
+	
+	state_category = rural
+
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7832 1
+		}
+		victory_points = {
+			1732 1
+		}
+		victory_points = {
+			7848 1 # Mohe
+		}
+		victory_points = {
+			1693 2 # Aihui/Heihe
+		}
+	}
+
+	provinces={
+		1545 1693 1732 7832 7848 10368 10675 10698 12548 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

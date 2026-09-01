@@ -126,10 +126,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			1021 = {
+			527 = {
 					add_extra_state_shared_building_slots = 3
 			}
-			527 = {
+			1028 = {
 					add_extra_state_shared_building_slots = 3
 			}
 		}
@@ -155,13 +155,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			525 = {
+			1082 = {
 					add_extra_state_shared_building_slots = 2
 			}
-			1020 = {
+			1030 = {
 					add_extra_state_shared_building_slots = 2
 			}
-			1019 = {
+			1031 = {
 					add_extra_state_shared_building_slots = 2
 			}
 		}
@@ -187,13 +187,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			1017 = {
+			525 = {
 					add_extra_state_shared_building_slots = 2
 			}
-			1018 = {
+			1029 = {
 					add_extra_state_shared_building_slots = 2
 			}
-			1022 = {
+			1083 = {
 					add_extra_state_shared_building_slots = 2
 			}
 		}
@@ -212,11 +212,11 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1021 = { is_controlled_by = ROOT }
+			527 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			add_ideas = KOR_gold_exports
-			1021 = {
+			527 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -240,10 +240,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			527 = { is_controlled_by = ROOT }
+			1028 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			527 = {
+			1028 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -273,10 +273,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			525 = { is_controlled_by = ROOT }
+			1082 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			525 = {
+			1082 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -300,10 +300,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1019 = { is_controlled_by = ROOT }
+			1031 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1019 = {
+			1031 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -332,10 +332,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1020 = { is_controlled_by = ROOT }
+			1030 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1020 = {
+			1030 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -365,11 +365,11 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1022 = { is_controlled_by = ROOT }
+			1083 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			add_ideas = KOR_jaeryeong_plain_agricultural_products
-			1022 = {
+			1083 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -393,10 +393,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1018 = { is_controlled_by = ROOT }
+			1029 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1018 = {
+			1029 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -413,7 +413,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 					province = {
-						id = 13380	#chuncheon
+						id = 13418	#chuncheon
 					}
 				}
 			}
@@ -475,10 +475,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			527 = { is_controlled_by = ROOT }
+			1028 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			527 = {
+			1028 = {
 				add_resource = { 
 					type = steel
 					amount = 15
@@ -504,10 +504,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1018 = { is_controlled_by = ROOT }
+			1029 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1018 = {
+			1029 = {
 				add_resource = { 
 					type = steel
 					amount = 12
@@ -559,21 +559,21 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			1017 = {
+			525 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			1019 = {
+			1031 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
 			}
-			1020 = {
+			1030 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -603,21 +603,21 @@ focus_tree = {
 					add_idea = KOR_great_depression_2
 				}
 			}
-			1017 = {
+			525 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			1022 = {
+			1083 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
 			}
-			1021 = {
+			527 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -639,32 +639,32 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1017 = { is_controlled_by = ROOT }
+			525 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1017 = {
+			525 = {
 				add_manpower = 2000000
 				set_state_category = metropolis
 			}
-			525 = {
+			1082 = {
 				add_manpower = -800000
 			}
-			1019 = {
+			1031 = {
 				add_manpower = -300000
 			}
-			1020 = {
+			1030 = {
 				add_manpower = -450000
 			}
-			527 = {
+			1028 = {
 				add_manpower = -450000
 			}
-			1017 = {
+			525 = {
 				add_victory_points = {
-					province = 13383
+					province = 13421
 					value = 3
 				}
 				add_victory_points = {
-					province = 13378
+					province = 13416
 					value = 3
 				}
 			}
@@ -720,10 +720,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1017 = { is_controlled_by = ROOT }
+			525 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1017 = {
+			525 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
@@ -746,10 +746,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1020 = { is_controlled_by = ROOT }
+			1030 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1020 = {
+			1030 = {
 				add_resource = { 
 					type = steel
 					amount = 25
@@ -770,10 +770,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1020 = { is_controlled_by = ROOT }
+			1030 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1020 = {
+			1030 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -859,7 +859,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			1017 = { is_controlled_by = ROOT }
+			525 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			if = {
@@ -869,7 +869,7 @@ focus_tree = {
 				add_research_slot = 1
 			}			
 			
-			1017 = {
+			525 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -911,12 +911,12 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			527 = { is_controlled_by = ROOT }
-			1018 = { is_controlled_by = ROOT }
+			1028 = { is_controlled_by = ROOT }
+			1029 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			set_technology = { synth_oil_experiments = 1 }
-			527 = {
+			1028 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
@@ -924,7 +924,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1018 = {
+			1029 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
@@ -1124,7 +1124,7 @@ focus_tree = {
 			714 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			761 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			715 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
-			1026 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
+			1087 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			610 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			
 			716 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
@@ -1134,7 +1134,7 @@ focus_tree = {
 			714 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			761 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			715 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
-			1026 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
+			1087 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			610 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 		}
 	}
@@ -1218,7 +1218,7 @@ focus_tree = {
 			714 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			761 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			715 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
-			1026 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
+			1087 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			610 = { remove_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 		}
 	}
@@ -1308,7 +1308,7 @@ focus_tree = {
 			714 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			761 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			715 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
-			1026 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
+			1087 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			610 = { remove_dynamic_modifier = { modifier = chinese_separatism } }
 			
 			716 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
@@ -1318,7 +1318,7 @@ focus_tree = {
 			714 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			761 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			715 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
-			1026 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
+			1087 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 			610 = { add_dynamic_modifier = { modifier = weakened_chinese_separatism } }
 		}
 	}
@@ -1331,7 +1331,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		available = {
-			1025 = { is_controlled_by = ROOT }
+			1086 = { is_controlled_by = ROOT }
 		}
 		prerequisite = { focus = KOR_korean_settlement }
 		prerequisite = { focus = KOR_teaching_korean_to_manchurians }
@@ -1339,13 +1339,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			1025 = {
+			1086 = {
 				add_victory_points = {
 					province = 9803
 					value = 5
 				}
 			}
-			1025 = {
+			1086 = {
 				add_building_construction = {
 					type = supply_node
 					level = 1
@@ -1690,7 +1690,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 1017 }#Gyeonggi
+					prioritize = { 525 }#Gyeonggi
 					create_unit = {
 						division = "division_template = \"Gongsu-Sadan\" start_experience_factor = 0.3" 
 						owner = KOR
@@ -2099,7 +2099,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 1017 }#Gyeonggi
+					prioritize = { 525 }#Gyeonggi
 					create_unit = {
 						division = "division_template = \"Haebyeong-Sadan\" start_experience_factor = 0.3" 
 						owner = KOR
@@ -2611,7 +2611,7 @@ focus_tree = {
 		y = 7
 		cost = 5
 		available_if_capitulated = no
-		available = { controls_state = 1023 }
+		available = { controls_state = 1084 }
 		prerequisite = { 
 			focus = KOR_vision_1950 
 		}
@@ -2619,7 +2619,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			1023 = {
+			1084 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -2668,10 +2668,10 @@ focus_tree = {
 		available_if_capitulated = no
 		available = { 
 			KOR = { has_global_flag = kor_triumph_for_the_manchuria_flag }
-			1021 = { is_controlled_by = ROOT }
-			1022 = { is_controlled_by = ROOT }
-			1019 = { is_controlled_by = ROOT }
-			525 = { is_controlled_by = ROOT }
+			527 = { is_controlled_by = ROOT }
+			1083 = { is_controlled_by = ROOT }
+			1031 = { is_controlled_by = ROOT }
+			1082 = { is_controlled_by = ROOT }
 		}
 		prerequisite = { 
 			focus = KOR_vision_1950
@@ -2680,7 +2680,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			1021 = {
+			527 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -2688,7 +2688,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1022 = {
+			1083 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -2696,7 +2696,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1019 = {
+			1031 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -2704,7 +2704,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			525 = {
+			1082 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -2822,12 +2822,12 @@ focus_tree = {
 			# Gyeonggi
 			if = {
 				limit = {
-					controls_state = 1017 
-					1017 = {
+					controls_state = 525
+					525 = {
 						air_base < 9
 					}
 				}
-				1017 = {
+				525 = {
 					add_building_construction = {
 						type = air_base
 						level = 2
@@ -2839,12 +2839,12 @@ focus_tree = {
 			# Pyeongan
 			if = {
 				limit = {
-					controls_state = 1021
-					1021 = {
+					controls_state = 527
+					527 = {
 						air_base < 9
 					}
 				}
-				1021 = {
+				527 = {
 					add_building_construction = {
 						type = air_base
 						level = 2
@@ -2856,12 +2856,12 @@ focus_tree = {
 			# Gyeongsang
 			if = {
 				limit = {
-					controls_state = 1020
-					1020 = {
+					controls_state = 1030
+					1030 = {
 						air_base < 9
 					}
 				}
-				1020 = {
+				1030 = {
 					add_building_construction = {
 						type = air_base
 						level = 2
@@ -2873,15 +2873,15 @@ focus_tree = {
 			# Hamgyeong
 			if = {
 				limit = {
-					controls_state = 527
+					controls_state = 1028
 				}
 				if = {
 					limit = {
-						527 = {
+						1028 = {
 							air_base < 10
 						}
 					}
-					527 = {
+					1028 = {
 						add_building_construction = {
 							type = air_base
 							level = 1
@@ -2907,10 +2907,10 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					controls_state = 1017 
+					controls_state = 525
 				}
 				
-				1017 = { # Gyeonggi
+				525 = { # Gyeonggi
 					add_building_construction = {
 						type = anti_air_building
 						level = 2
@@ -2921,9 +2921,9 @@ focus_tree = {
 			
 			if = {
 				limit = {
-					controls_state = 1021
+					controls_state = 527
 				}
-				1021 = { # Pyeongan
+				527 = { # Pyeongan
 					add_building_construction = {
 						type = anti_air_building
 						level = 2
@@ -2934,9 +2934,9 @@ focus_tree = {
 			
 			if = {
 				limit = {
-					controls_state = 1020
+					controls_state = 1030
 				}
-				1020 = { # Gyeongsang
+				1030 = { # Gyeongsang
 					add_building_construction = {
 						type = anti_air_building
 						level = 2
@@ -3415,10 +3415,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_victory_points = {
-				province = 13398
+				province = 13436
 				value = 30
 			}
-			set_capital = { state = 1020 }
+			set_capital = { state = 1030 }
 			custom_effect_tooltip = KOR_commie_civil_war
 			country_event = { id = kor_events.2 }
 			
@@ -3446,9 +3446,9 @@ focus_tree = {
 			set_party_name = { ideology = communism long_name = KOR_communist_party_korea_long name = KOR_communist_party_korea }
 			
 			hidden_effect = {
-				set_capital = { state = 1017 remember_old_capital = no }
+				set_capital = { state = 525 remember_old_capital = no }
 				set_victory_points = {
-					province = 13398
+					province = 13436
 					value = 15
 				}
 				news_event = { id = newsk.9 hours = 6 }
@@ -3713,7 +3713,7 @@ focus_tree = {
 			add_ideas = KOR_democratic_banned
 			add_stability = -0.3
 			add_war_support = 0.2
-			1017 = {
+			525 = {
 				add_manpower = -20000
 			}
 		}
@@ -4895,8 +4895,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		available = {
-			1021 = { is_controlled_by = ROOT }
 			527 = { is_controlled_by = ROOT }
+			1028 = { is_controlled_by = ROOT }
 		}
 		prerequisite = { focus = KOR_prepare_for_the_next_war }
 		ai_will_do = {
@@ -4918,14 +4918,14 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = KOR_construction_syngman_rhee_line_tt
 			hidden_effect = {
-				1021 = {
+				527 = {
 					add_building_construction = { type = bunker province = 11835 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9918 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9795 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 11828 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 6963 level = 2 instant_build = yes }
 				}
-				527 = {
+				1028 = {
 					add_building_construction = { type = bunker province = 906 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9899 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 3803 level = 2 instant_build = yes }
@@ -4945,8 +4945,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		available = {
-			1021 = { is_controlled_by = ROOT }
 			527 = { is_controlled_by = ROOT }
+			1028 = { is_controlled_by = ROOT }
 		}
 		prerequisite = { focus = KOR_construction_syngman_rhee_line }
 		ai_will_do = {
@@ -4968,14 +4968,14 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = KOR_syngman_rhee_line_final_fortifications_tt
 			hidden_effect = {
-				1021 = {
+				527 = {
 					add_building_construction = { type = bunker province = 11835 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9918 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9795 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 11828 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 6963 level = 2 instant_build = yes }
 				}
-				527 = {
+				1028 = {
 					add_building_construction = { type = bunker province = 906 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9899 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 3803 level = 2 instant_build = yes }
@@ -4995,12 +4995,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		available = {
-			1021 = { is_controlled_by = ROOT }
 			527 = { is_controlled_by = ROOT }
-			1017 = { is_controlled_by = ROOT }
+			1028 = { is_controlled_by = ROOT }
 			525 = { is_controlled_by = ROOT }
-			1020 = { is_controlled_by = ROOT }
-			1022 = { is_controlled_by = ROOT }
+			1082 = { is_controlled_by = ROOT }
+			1030 = { is_controlled_by = ROOT }
+			1083 = { is_controlled_by = ROOT }
 		}
 		prerequisite = { focus = KOR_syngman_rhee_line_final_fortifications }
 		ai_will_do = {
@@ -5022,24 +5022,24 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = KOR_port_fortification_tt
 			hidden_effect = {
-				1021 = {
-					add_building_construction = { type = coastal_bunker province = 13377 level = 3 instant_build = yes }
-				}
 				527 = {
+					add_building_construction = { type = coastal_bunker province = 13415 level = 3 instant_build = yes }
+				}
+				1028 = {
 					add_building_construction = { type = coastal_bunker province = 848 level = 3 instant_build = yes }
 				}
-				1017 = {
+				525 = {
 					add_building_construction = { type = coastal_bunker province = 7221 level = 3 instant_build = yes }
 				}
-				525 = {
+				1082 = {
 					add_building_construction = { type = coastal_bunker province = 10110 level = 3 instant_build = yes }
-					add_building_construction = { type = coastal_bunker province = 13381 level = 3 instant_build = yes }
+					add_building_construction = { type = coastal_bunker province = 13419 level = 3 instant_build = yes }
 				}
-				1020 = {
+				1030 = {
 					add_building_construction = { type = coastal_bunker province = 4056 level = 3 instant_build = yes }
 				}
-				1022 = {
-					add_building_construction = { type = coastal_bunker province = 13391 level = 3 instant_build = yes }
+				1083 = {
+					add_building_construction = { type = coastal_bunker province = 13429 level = 3 instant_build = yes }
 				}
 			}
 		}
@@ -5309,7 +5309,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 1017 } #Gyeonggi
+				prioritize = { 525 } #Gyeonggi
 				create_unit = {
 					division = "division_template = \"Sanak-Sadan\" start_experience_factor = 0.3" 
 					owner = KOR
@@ -7414,7 +7414,7 @@ focus_tree = {
 				popularity = 0.2
 			}
 			add_stability = 0.2
-			1017 = {
+			525 = {
 				add_manpower = -20000
 			}
 		}
@@ -9654,8 +9654,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_state_claim = 1024
-			add_state_claim = 1025
+			add_state_claim = 1085
+			add_state_claim = 1086
 			army_experience = 50
 		}
 	}
@@ -9697,18 +9697,18 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.2
-			transfer_state = 1024
-			transfer_state = 1025
-			1024 = { add_core_of = KOR }
-			1025 = { add_core_of = KOR }
+			transfer_state = 1085
+			transfer_state = 1086
+			1085 = { add_core_of = KOR }
+			1086 = { add_core_of = KOR }
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = MAN
 				expire = 0
 			}
 			hidden_effect = {
-				remove_state_claim = 1024
-				remove_state_claim = 1025
+				remove_state_claim = 1085
+				remove_state_claim = 1086
 			}
 		}
 	}
@@ -9749,7 +9749,7 @@ focus_tree = {
 			add_war_support = 0.2
 			add_political_power = 200
 			328 = { add_manpower = -1 }
-			1017 = { add_manpower = 1 }
+			525 = { add_manpower = 1 }
 		}
 	}
 	#Focus for sojunghwa
@@ -10098,7 +10098,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 1017 } #Gyeonggi
+				prioritize = { 525 } #Gyeonggi
 				create_unit = {
 					division = "name = \"Je 1 Hwangsil-Geunwi-Sadan 'Yi-hwa'\" division_template = \"Hwangsil-Geunwi-Sadan\" start_experience_factor = 1.0" 
 					owner = KOR
@@ -10719,7 +10719,7 @@ focus_tree = {
 			
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 1017 } #Gyeonggi
+				prioritize = { 525 } #Gyeonggi
 				create_unit = {
 					division = "name = \"Je 41 Jiphangyuyae-Jeontudan\" division_template = \"Hyeongbeol-Budae\" start_experience_factor = 0" 
 					owner = KOR

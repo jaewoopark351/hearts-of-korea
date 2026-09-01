@@ -1,0 +1,32 @@
+state={
+	id=1083
+	name="STATE_1083"
+	resources={
+		steel=8.000
+	}
+	provinces={
+		1003 4107 7070 7155 10065 11915 13438 13439 13440 13441
+	}
+	
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13438 1 
+		}
+		add_core_of = KOR
+		
+		1939.3.14 = {
+			owner = JAP
+			controller = JAP
+		}
+
+	}
+	
+	manpower=2674214
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

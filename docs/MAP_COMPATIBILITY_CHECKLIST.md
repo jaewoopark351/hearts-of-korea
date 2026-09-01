@@ -2,7 +2,7 @@
 
 ## 핵심 원칙
 
-현재 목표 버전의 바닐라 맵을 기준으로 사용하고, Hearts of Korea의 의도된 한국·만주·일본 변경만 의미 단위로 합친다. 구버전 전역 맵 파일을 현재 버전에 통째로 덮어쓰지 않는다.
+현재 목표 버전의 바닐라 맵을 기준으로 사용하고, Hearts of Korea의 승인된 한국 변경만 의미 단위로 합친다. 중국·만주·일본은 [중국·일본 1.19.2 바닐라 정렬 정책](CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md)에 따라 target을 상속하고 한국에 필요한 최소 접점만 예외로 둔다. 구버전 전역 맵 파일을 현재 버전에 통째로 덮어쓰지 않는다.
 
 현재 프로젝트의 구체적인 target-first 구성안, state 의미 매핑과 영향 파일은 [Hearts of Korea 1.19.2 맵 재구성 설계](HOK_MAP_RECONSTRUCTION_PLAN.md)에 기록한다.
 
@@ -132,12 +132,14 @@ ID 변경이 승인된 경우에만 수행한다.
 - [ ] 이전 핵심 `Malformed token` 항목이 사라졌고 새 fatal/assert/map 오류가 없다.
 - [ ] 성공 시 새 WER가 생성되지 않았음을 확인했다. 계속 크래시한 경우에만 이전 예외 코드·오프셋과 비교했다.
 
-## 현재 프로젝트의 안전 정지 지점
+## 현재 프로젝트의 승인 이후 상태
 
-2026-09-01 fresh 진단과 target 파일 대조에서 다음 후보가 계산됐지만 **승인되거나 확정된 마이그레이션이 아니다**.
+2026-09-01 fresh 진단과 target 파일 대조에서 계산된 다음 후보는 이후 사용자의 별도 persistent ID 결정으로 **승인·적용**됐다.
 
-- target province `13376–13413`은 그대로 보존하고, HoK 전용 province 34개를 새 entity로 `13414–13447` 후보에 개별 배정
-- target 한국 state `525`, `527`, `1028–1031`을 의미에 맞게 재사용하고, 전라·황해·제주·젠다오·안둥·헤이허·쓰시마 7개만 `1082–1088` 후보에 배정
+- target province `13376–13413`은 그대로 보존하고, HoK 전용 province 34개를 새 entity로 `13414–13447`에 개별 배정
+- target 한국 state `525`, `527`, `1028–1031`을 의미에 맞게 재사용하고, 전라·황해·제주·젠다오·안둥·헤이허·쓰시마 7개를 `1082–1088`에 배정
 - HoK old state `1017–1027`을 연속 offset으로 이동하지 않고, 지역 의미·province 집합·target counterpart를 기준으로 개별 매핑
 
-구체적인 후보 번호와 근거는 [맵 재구성 설계](HOK_MAP_RECONSTRUCTION_PLAN.md)와 [fresh 맵 격리 사건](incidents/2026-09-01-fresh-map-isolation.md)에 있다. 일반적인 구현 승인만으로는 이 ID 변경을 시작하지 않는다. 별도의 persistent ID 마이그레이션 결정을 받은 뒤, 필수 의존 모드를 포함한 전체 ID 공간과 모든 참조를 다시 스캔해야 한다.
+구체적인 번호와 근거는 [맵 재구성 설계](HOK_MAP_RECONSTRUCTION_PLAN.md), 역사적 [fresh 맵 격리 사건](incidents/2026-09-01-fresh-map-isolation.md)과 [target-native 맵 구현 기록](incidents/2026-09-01-target-native-map-implementation.md)에 있다. 일반적인 구현 승인만으로 persistent ID를 바꾸는 것은 여전히 금지되며, 이번 변경은 해당 결정을 별도로 받은 사례다. `D-POST`는 통과했고 실제 지원 구성 `C-POST`가 남아 있다.
+
+후속 중국·만주·일본 정렬에서 현재 적용된 state `1085–1087`은 target source states 복구 후보이다. 이는 이 점검표의 과거 적용 기록을 지우는 것이 아니라 새 persistent ID·gameplay 마이그레이션이므로, [중국·일본 정렬 정책](CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md)의 KOR 기능 disposition·영향표·승인·검증 절차를 별도로 따라야 한다. 현재는 문서화만 됐고 해당 rollback은 적용되지 않았다.

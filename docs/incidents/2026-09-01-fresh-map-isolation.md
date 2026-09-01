@@ -2,6 +2,8 @@
 
 ## 문서 판정
 
+> 이 문서의 `NOT APPROVED` 표기는 fresh 진단 당시의 역사적 상태다. 이후 사용자가 target-native production 구현과 persistent ID 마이그레이션을 명시적으로 승인했고 정적 구현이 적용됐다. 후속 상태는 [2026-09-01 target-native 맵 구현 기록](2026-09-01-target-native-map-implementation.md)을 따른다.
+
 - 작업 모드: **Diagnostic documentation**
 - 대상: HOI4 `1.19.2.0.a729`, Hearts of Korea 시작 crash
 - production source 수정: **수행하지 않음**

@@ -1,10 +1,10 @@
 ﻿air_wings = {
-	1017 = { 
+	525 = {
 		small_plane_airframe_1 =  { owner = "KOR" amount = 100 version_name = "KP-36 Doksuri" }
 		small_plane_airframe_1 =  { owner = "KOR" amount = 100 version_name = "KP-36 Doksuri" }
 		small_plane_cas_airframe_1 =  { owner = "KOR" amount = 100 version_name = "KA-32 Chamsae" }
 	}
-	1021 = { 
+	527 = {
 		small_plane_airframe_1 =  { owner = "KOR" amount = 100 version_name = "KP-36 Doksuri" }
 		small_plane_cas_airframe_1 =  { owner = "KOR" amount = 100 version_name = "KA-32 Chamsae" }
 	}

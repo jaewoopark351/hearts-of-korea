@@ -1,10 +1,10 @@
 ﻿air_wings = {
-	1017 = { 
+	525 = {
 		fighter_equipment_1 =  { owner = "KOR" amount = 100 }
 		fighter_equipment_1 =  { owner = "KOR" amount = 100 }
 		CAS_equipment_1 =  { owner = "KOR" amount = 100 }
 	}
-	1021 = { 
+	527 = {
 		fighter_equipment_1 =  { owner = "KOR" amount = 100 }
 		CAS_equipment_1 =  { owner = "KOR" amount = 100 }
 	}

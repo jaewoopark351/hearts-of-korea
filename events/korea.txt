@@ -39,9 +39,9 @@ country_event = {
 			transfer_state = 714
 			transfer_state = 761
 			transfer_state = 715
-			transfer_state = 1024
-			transfer_state = 1025
-			transfer_state = 1026
+			transfer_state = 1085
+			transfer_state = 1086
+			transfer_state = 1087
 			transfer_state = 610
 			white_peace = JAP
 		}
@@ -53,9 +53,9 @@ country_event = {
 			remove_state_core = 714
 			remove_state_core = 761
 			remove_state_core = 715
-			remove_state_core = 1024
-			remove_state_core = 1025
-			remove_state_core = 1026
+			remove_state_core = 1085
+			remove_state_core = 1086
+			remove_state_core = 1087
 			remove_state_core = 610
 		}
 		every_other_country = {
@@ -147,8 +147,8 @@ country_event = {
 				ideology = democratic
 				size = 0.5
 				navy_ratio = 0.01
-				capital = 1017
-				states = { 1017 525 527 1018 1019 1021 1022 716 745 328 717 714 761 715 1024 1025 1026 }
+				capital = 525
+				states = { 525 1082 1028 1029 1031 527 1083 716 745 328 717 714 761 715 1085 1086 1087 }
 			}
 			division_template = {
 				name = "Nonong-jeokwi-Sadan"
@@ -177,7 +177,7 @@ country_event = {
 			
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 1020 }
+				prioritize = { 1030 }
 				create_unit = {
 					division = "name = \"Je 1 Nonong-jeokwi-Sadan 'Jeok-gi'\" division_template = \"Nonong-jeokwi-Sadan\" start_experience_factor = 0.2" 
 					owner = KOR
@@ -284,14 +284,14 @@ country_event = {
 		name = kor_events.3.a
 		hidden_effect = {
 
-			set_capital = { state = 1020 }
+			set_capital = { state = 1030 }
 			start_civil_war = {
 				ruling_party = fascism
 				ideology = democratic
 				size = 0.5
 				navy_ratio = 0.01
-				capital = 1020
-				states = { 525 527 1018 1019 1020 1021 1022 716 745 328 717 714 761 715 1024 1025 1026 }
+				capital = 1030
+				states = { 1082 1028 1029 1031 1030 527 1083 716 745 328 717 714 761 715 1085 1086 1087 }
 			}
 			
 			division_template = {
@@ -748,9 +748,9 @@ country_event = {
 			transfer_state = 714
 			transfer_state = 761
 			transfer_state = 715
-			transfer_state = 1024
-			transfer_state = 1025
-			transfer_state = 1026
+			transfer_state = 1085
+			transfer_state = 1086
+			transfer_state = 1087
 			transfer_state = 610
 		}
 		add_war_support = 0.1
@@ -805,7 +805,7 @@ country_event = {
 			create_wargoal = {
 				type = take_state_focus
 				target = KOR
-				generator = { 1017 }	#Gyeonggi
+				generator = { 525 }	#Gyeonggi
 			}
 		}
 	}
@@ -899,7 +899,7 @@ country_event = {
 			factor = 50
 		}
 		set_capital = {
-			state = 1025
+			state = 1086
 			remember_old_capital = no
 		}
 	}

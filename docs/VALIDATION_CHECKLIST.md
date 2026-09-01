@@ -2,6 +2,8 @@
 
 이 문서는 수정이 명시적으로 승인되고 적용된 경우에만 사용한다. 게임 실행이나 외부 도구 사용도 별도 승인 범위를 따른다.
 
+중국·만주·일본을 1.19.2 target에 맞추는 후속 작업은 [중국·일본 바닐라 정렬 정책](CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md)의 파일 분류, 기능 손실과 행위 검증 조건을 함께 적용한다.
+
 ## 1. 변경 범위 확인
 
 - [ ] 수정한 파일 목록과 수정 이유가 있다.
@@ -67,7 +69,12 @@
 - [ ] MIO, technology, doctrine 참조 오류를 확인했다.
 - [ ] division name group과 OOB가 유효하다.
 - [ ] 주요 state의 owner/core/claim, victory point, resource가 유지된다.
-- [ ] 모드의 의도된 한국·만주·일본 경계와 명칭이 유지된다.
+- [ ] HoK 한국 경계·명칭·핵심 콘텐츠가 유지된다.
+- [ ] 중국·만주·일본은 target control과 일치하며, 제거가 승인된 HoK 기능만 사라졌다.
+- [ ] `SND`를 포함한 중국 국가의 map/UI 색상과 owner·core가 target과 일치한다.
+- [ ] 현행 일본 focus·AI plan·decision·character·MIO·OOB가 유효하고 historical AI에서 중국전쟁 경로가 실제로 진행된다.
+- [ ] 독립 한국 때문에 필요한 1936·지원 대상 1939 일본 OOB 위치와 KOR caller 예외만 allowlist에 남았다.
+- [ ] 한국 추가 state `1082–1084`가 target의 한국 전체·남부·북부 판정, 저항, decision와 WTT Japan 효과에 문맥별로 반영됐다.
 
 ## 7. 최종 보고
 

@@ -82,7 +82,7 @@ Ready_for_jamboree = {
     }
 
 	happened = {
-		525 = { infrastructure > 4 }
+		1082 = { infrastructure > 4 }
 	}
 }
 
@@ -284,6 +284,6 @@ Japanese_chang_seop = {
 				exists = no
 			}
 		}
-		has_full_control_of_state = 1017		#HoK State - Gyeonggi
+		has_full_control_of_state = 525		#HoK State - Gyeonggi
 	}
 }
