@@ -240,6 +240,23 @@ bookmarks = {
 
 
 		# minors from DLC ####
+		KOR = { # HoK: keep independent Korea visible in the filtered minor list
+			minor = yes
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = democratic
+			version = hearts_of_korea
+			assume_not_played_if_missing_data = yes
+			ideas = {
+				KOR_home_of_the_free
+				KOR_disjointed_government
+				KOR_great_depression
+			}
+			focuses = {
+				KOR_proclaim_peoples_republic_of_korea
+				KOR_national_unity
+				KOR_empowering_the_nrsc
+			}
+		}
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
@@ -1458,21 +1475,6 @@ bookmarks = {
 				INSHOL_autonomous_dominion
 				INS_the_declaration_of_independence
 				INS_support_tan_malakas_coup
-			}
-		}
-		KOR = { # HoK: preserve the playable independent Korea bookmark
-			minor = yes
-			history = "KOR_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				KOR_home_of_the_free
-				KOR_disjointed_government
-				KOR_great_depression
-			}
-			focuses = {
-				KOR_proclaim_peoples_republic_of_korea
-				KOR_national_unity
-				KOR_empowering_the_nrsc
 			}
 		}
 		effect = {
