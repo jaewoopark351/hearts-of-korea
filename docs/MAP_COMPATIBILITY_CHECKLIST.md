@@ -4,6 +4,8 @@
 
 현재 목표 버전의 바닐라 맵을 기준으로 사용하고, Hearts of Korea의 의도된 한국·만주·일본 변경만 의미 단위로 합친다. 구버전 전역 맵 파일을 현재 버전에 통째로 덮어쓰지 않는다.
 
+현재 프로젝트의 구체적인 target-first 구성안, state 의미 매핑과 영향 파일은 [Hearts of Korea 1.19.2 맵 재구성 설계](HOK_MAP_RECONSTRUCTION_PLAN.md)에 기록한다.
+
 province 또는 state ID의 영구 변경은 단순 정리가 아니라 마이그레이션이다. 세이브, 스크립트, 이벤트, 포커스, AI, 철도, 보급, 서브모드까지 영향을 받을 수 있으므로 사용자의 명시적 승인 전에는 적용하지 않는다.
 
 ## 1. 기준 버전과 소유권
@@ -16,6 +18,7 @@ province 또는 state ID의 영구 변경은 단순 정리가 아니라 마이�
 - [ ] 저장소와 launcher descriptor의 모든 `replace_path`를 감사하고, 런처가 실제 로드한 물리적 모드 복사본을 확인했다.
 - [ ] 각 맵 파일이 바닐라 전체를 대체하는지, 일부 데이터만 추가하는지 확인했다.
 - [ ] Hearts of Korea가 의도적으로 변경한 지리 범위를 문서화했다.
+- [ ] `V_OLD`, 불변 `HOK_ORIGINAL`, `V_TARGET` 각각의 식별 정보·물리 경로·파일 목록·SHA-256 manifest를 검증했다.
 
 ## 2. Province ID와 `definition.csv`
 
@@ -37,6 +40,8 @@ province 또는 state ID의 영구 변경은 단순 정리가 아니라 마이�
 - [ ] 1픽셀 province, 교차점, 잘못된 해안선 등 형태 오류를 검사했다.
 - [ ] 변경 영역 밖의 픽셀이 목표 바닐라와 동일하거나 차이가 설명돼 있다.
 - [ ] 로컬 기하 변경은 관련 state, strategic region, buildings, units, supply 데이터와 함께 검증한다.
+- [ ] `V_OLD`·`HOK_ORIGINAL`·`V_TARGET`을 동일 좌표로 비교해 원작 변경 후보, 이후 바닐라 변경, 양쪽이 다르게 바꾼 same-pixel conflict를 분리했다.
+- [ ] same-pixel conflict와 검토된 변경 범위 밖의 픽셀 차이는 자동 병합하지 않고 수동 판정표에 남겼다.
 
 ## 4. State
 
@@ -93,6 +98,7 @@ ID 변경이 승인된 경우에만 수행한다.
 
 - [ ] `old ID -> new ID` 표를 먼저 고정했다.
 - [ ] state 문맥과 province 문맥을 분리한 참조 목록을 만들었다.
+- [ ] 숫자 occurrence를 `state_ref`, `province_ref`, `coordinate`, `date_or_count`, `other_numeric`, `unknown`으로 분류하고 `unknown`은 자동 변경 대상에서 제외했다.
 - [ ] 파일 전체 숫자 치환을 사용하지 않는다.
 - [ ] `history/states`, `map`, `events`, `common`, `history/units`, `localisation` 및 의존 모드를 문맥별로 검색했다.
 - [ ] 이벤트 target, trigger, effect, focus, decision, AI 전략과 scripted 데이터 참조를 확인했다.
@@ -114,20 +120,24 @@ ID 변경이 승인된 경우에만 수행한다.
 게임 실행이 승인된 경우에만 수행하며 각 항목을 `PASS`, `FAIL`, `NOT RUN`, `BLOCKED`로 기록한다.
 
 - [ ] 최소 유효 playset과 실제 로드된 물리적 모드 경로를 기록했다.
+- [ ] 원래 실패 구성의 `D-POST`를 먼저 실행해 `D-PRE`와 비교한 뒤 실제 지원 구성 `C-POST`를 실행했다.
 - [ ] 새 게임을 시작하고 관련 bookmark에서 한국을 선택해 실제 맵에 진입했다.
 - [ ] 영향 지역의 state 경계, owner/core/claim, victory point, 지형과 해안선을 확인했다.
 - [ ] supply, railway, naval base, building과 unit 위치를 각각 표시해 검사했다.
 - [ ] 일시정지를 해제하고 1일, 7일, 30일 지점까지 승인된 범위에서 확인했다.
-- [ ] persistent ID 또는 map 데이터가 바뀌었다면 새 저장과 reload를 확인했다.
+- [ ] persistent ID 또는 map 데이터가 바뀌었다면 새 저장, 프로세스 종료, 재실행, reload와 추가 진행을 확인했다.
+- [ ] 같은 구성의 clean start를 최소 두 번 반복해 같은 결과를 확인했다.
+- [ ] 선언된 `Korean Language` 계약을 유지한다면 `C-POST`에서 실제 Korean UI, 글꼴과 localisation 표시를 확인했다.
 - [ ] 실행 직후 `error.log`, `game.log`와 새 WER 유무를 실행 ID로 묶어 baseline/control과 비교했다.
 - [ ] 이전 핵심 `Malformed token` 항목이 사라졌고 새 fatal/assert/map 오류가 없다.
 - [ ] 성공 시 새 WER가 생성되지 않았음을 확인했다. 계속 크래시한 경우에만 이전 예외 코드·오프셋과 비교했다.
 
 ## 현재 프로젝트의 안전 정지 지점
 
-2026-08-31 진단에서 다음 후보가 계산됐지만 **승인되거나 확정된 마이그레이션이 아니다**.
+2026-09-01 fresh 진단과 target 파일 대조에서 다음 후보가 계산됐지만 **승인되거나 확정된 마이그레이션이 아니다**.
 
-- 모드 전용 province `13376–13409`를 현재 바닐라 최대 ID 뒤로 이동하는 후보
-- 모드 전용 state `1017–1027`을 현재 바닐라 최대 ID 뒤로 이동하는 후보
+- target province `13376–13413`은 그대로 보존하고, HoK 전용 province 34개를 새 entity로 `13414–13447` 후보에 개별 배정
+- target 한국 state `525`, `527`, `1028–1031`을 의미에 맞게 재사용하고, 전라·황해·제주·젠다오·안둥·헤이허·쓰시마 7개만 `1082–1088` 후보에 배정
+- HoK old state `1017–1027`을 연속 offset으로 이동하지 않고, 지역 의미·province 집합·target counterpart를 기준으로 개별 매핑
 
-구체적인 후보 번호와 근거는 [현재 사건 기록](incidents/2026-08-31-startup-crash.md)에 있다. 일반적인 구현 승인만으로는 이 ID 변경을 시작하지 않는다. 별도의 persistent ID 마이그레이션 결정을 받은 뒤, 필수 의존 모드를 포함한 전체 ID 공간과 모든 참조를 다시 스캔해야 한다.
+구체적인 후보 번호와 근거는 [맵 재구성 설계](HOK_MAP_RECONSTRUCTION_PLAN.md)와 [fresh 맵 격리 사건](incidents/2026-09-01-fresh-map-isolation.md)에 있다. 일반적인 구현 승인만으로는 이 ID 변경을 시작하지 않는다. 별도의 persistent ID 마이그레이션 결정을 받은 뒤, 필수 의존 모드를 포함한 전체 ID 공간과 모든 참조를 다시 스캔해야 한다.

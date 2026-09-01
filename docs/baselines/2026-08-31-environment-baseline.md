@@ -4,6 +4,26 @@
 
 이 문서는 `2026-08-31 15:16:33 +09:00` 전후에 확인한 복구 작업의 환경 기준선이다. 파일·descriptor·Steam 로컬 메타데이터를 읽기 전용으로 대조한 결과와 같은 시점에 생성·검증된 원본 archive 상태를 기록하며, 새 게임 실행이나 수정 후 재현 결과를 대신하지 않는다.
 
+### 2026-09-01 재검증 갱신
+
+후속 Diagnostic implementation에서 다음을 재확인했다. 이 갱신은 아래 2026-08-31 시점의 Git 기록을 소급 변경하지 않는다.
+
+- 재검증 시작 HEAD: `91e1a7b62d046ba209fc6e35c0e405c65e07355a`
+- 원본 per-file manifest가 실제로 존재하며 Workshop 원본과 ZIP 양쪽에서 `1,049 files / 224,994,293 bytes`, missing/extra/mismatch `0/0/0`으로 PASS
+- manifest SHA-256: `6DDDC297229BD52C1D984E43BA1F313D2A508E488C107CC06A7FEA72120214AB`
+- ZIP SHA-256: `4683E8E2D8BBAAD8AEFA5C1E335DFB6346FEE269300E0FDDE34AEA7F012118F9`
+- ZIP과 manifest에 NTFS read-only 속성을 설정함. 이는 실수 방지 장치이며 hash와 별도의 WORM 보존을 뜻하지 않음
+- `D-PRE` bundle은 manifest 대상 `11 entries / 1,301,666 bytes`, mismatch `0`으로 자기검증 PASS다. 디렉터리에는 자기 자신을 해시할 수 없는 `SHA256SUMS.tsv`까지 합쳐 12개 파일이 있다.
+- 새 `PREFLIGHT-2026-09-01` bundle에 게임을 실행하지 않은 현재 로그·launcher·descriptor 14개 원본과 `capture.json`을 보존했고, manifest 기준 `15 files / 426,323 bytes`, mismatch `0`으로 PASS
+- `Korean Language` 전체 301개 파일의 새 SHA-256 manifest를 생성·검증함: `351,308,475 bytes`, manifest SHA-256 `5B5BA180124F4B9F8DE7E05225022062D985253990E32097A51F5A09F7694B81`
+- 재현 가능한 static overlap 재실행 결과는 바닐라 동일 경로 270개(localisation 189, gfx 78, interface 3), HoK 동일 localisation key 102개
+- launcher 외부 descriptor 수정은 별도 명시 승인 부재로 수행하지 않음
+- `V_OLD 1.16.8` 실제 depot 파일은 여전히 미확보
+
+위 launcher 항목은 이 preflight 갱신 시점의 역사적 상태다. 이후 사용자의 명시적 승인으로 launcher path를 현재 저장소에 맞추고 `A-FRESH`, `D-FRESH`, `D-NOMAP`을 실행했다. 최신 실행 환경과 결과는 [2026-09-01 fresh 맵 격리 사건](../incidents/2026-09-01-fresh-map-isolation.md)을 따른다.
+
+맵 fresh scan의 입력 해시·전체 결과와 한계는 [맵 fresh scan 감사](../audits/2026-08-31-map-fresh-scan.md)에 기록한다.
+
 증거 등급은 다음과 같이 사용한다.
 
 - `CONFIRMED`: 로컬 파일, 메타데이터 또는 공식 공개 기록에서 직접 확인
@@ -32,7 +52,7 @@
 | 목표 바닐라 `V_TARGET` | CONFIRMED | Operation Postern `1.19.2.0.a729 (d245)`, Steam build ID `23969257` |
 | 원본 모드 설치본 | CONFIRMED | Workshop ID `2898629778`, content manifest `6685434440007626210` |
 | 프로젝트와 원본 모드 파일 | CONFIRMED | 원본 1,049개 파일 중 1,048개 SHA-256 일치, 유일한 차이는 `descriptor.mod` |
-| 원본 archive | CONFIRMED | ZIP 생성 및 원본 1,049개 항목과 개별 SHA-256 재검증 완료; missing/extra/mismatch `0/0/0` |
+| 원본 archive | CONFIRMED | ZIP과 독립 per-file manifest 존재; 원본·ZIP 각각 1,049개 항목 재검증 완료, missing/extra/mismatch `0/0/0` |
 | 원본 공개 릴리스 식별 | STRONGLY_SUPPORTED | 설치 manifest는 공개 `1.0.9(1) '강계'` / HOI4 1.16 릴리스와 시각·크기·내용 범위가 일치 |
 | 구형 바닐라 `V_OLD` | STRONGLY_SUPPORTED | 가장 강한 후보는 `1.16.8`, build ID `18550822`; 실제 depot 파일은 미확보 |
 | 필수 의존 모드 | CONFIRMED | `Korean Language` 설치본은 존재하지만 현재 launcher 선택에는 활성화되지 않음 |
@@ -123,7 +143,17 @@ Steam 관리 폴더를 그대로 불변 기준본으로 보지 않기 위해 다
 - 원본 입력: 1,049 files / `224,994,293` bytes
 - ZIP 항목 대조: missing `0`, extra `0`, SHA-256 mismatch `0`
 
-따라서 이 ZIP과 기록된 ZIP hash는 현재 `HOK_ORIGINAL` snapshot을 재식별할 수 있는 검증 기준이다. 다만 각 1,049개 파일의 상대 경로·크기·SHA-256을 담은 독립적인 per-file manifest 파일은 아직 생성하지 않았다. “archive 및 내용 검증 완료”와 “별도 per-file manifest 미생성”을 혼동하지 않는다.
+따라서 이 ZIP과 기록된 ZIP hash는 현재 `HOK_ORIGINAL` snapshot을 재식별할 수 있는 검증 기준이다. 2026-08-31 최초 조사 시점에는 독립 per-file manifest가 미생성이라고 기록했으나, 아래 2026-09-01 재검증에서 기존 manifest의 존재와 양쪽 대조를 확인해 이 blocker를 해소했다.
+
+2026-09-01 재검증에서 같은 폴더의 `SHA256SUMS.tsv`가 이미 존재함을 확인하고 Workshop 원본과 ZIP 양쪽에 다시 대조했다.
+
+- manifest: `<PROJECT>/.local-artifacts/baselines/HOK_ORIGINAL_2898629778_manifest-6685434440007626210/SHA256SUMS.tsv`
+- manifest 항목: 1,049 files / `224,994,293` bytes
+- manifest SHA-256: `6DDDC297229BD52C1D984E43BA1F313D2A508E488C107CC06A7FEA72120214AB`
+- Workshop 원본 대조: missing/extra/mismatch `0/0/0`
+- ZIP 대조: missing/extra/mismatch `0/0/0`
+
+따라서 독립 per-file manifest 상태는 2026-09-01 기준 CONFIRMED다.
 
 ## 구형 바닐라 `V_OLD`
 
@@ -176,10 +206,10 @@ Steam 관리 폴더를 그대로 불변 기준본으로 보지 않기 위해 다
 
 | 비교 대상 | CONFIRMED 결과 |
 |---|---|
-| `Korean Language` ↔ `V_TARGET` 동일 상대 경로 | 총 267개: localisation 186, gfx 78, interface 3 |
+| `Korean Language` ↔ `V_TARGET` 동일 상대 경로 | 재현 가능한 2026-09-01 scan 기준 총 270개: localisation 189, gfx 78, interface 3 |
 | `Korean Language` ↔ HoK 동일 상대 경로 | `descriptor.mod`, `Thumbnail.png` 2개 |
 | `Korean Language` ↔ HoK 동일 localisation key | 102개 |
-| 위 102개 중 map-ID 형태의 표시 문자열 key | 13개: `STATE_1017`–`STATE_1027`, `VP_13376`, `VP_13378` |
+| 위 102개 중 map-ID 형태의 표시 문자열 key | 13개: `STATE_1017`–`STATE_1027`, `VICTORY_POINTS_13376`, `VICTORY_POINTS_13378` |
 
 위 13개는 localisation key이지 province/state 정의나 membership 자체가 아니다. 따라서 “ID 이름 문자열 중첩”과 “맵 ID 데이터 충돌”을 같은 것으로 판정하지 않는다.
 
@@ -196,6 +226,20 @@ Steam 관리 폴더를 그대로 불변 기준본으로 보지 않기 위해 다
 - 의존 모드가 `1.19.2`에서 UI, 글꼴, localisation을 정상 로드하는지: `UNPROVEN`
 - `1.17.*` 선언만으로 `1.19.2` 비호환을 확정할 수 있는지: `UNPROVEN`
 - 목표 바닐라의 공식 Korean localisation/font만으로 HoK의 기존 언어 계약을 안전하게 대체할 수 있는지: `UNPROVEN`
+
+## HoK localisation 언어 계약
+
+현재 프로젝트의 localisation 구조를 별도로 대조한 결과는 다음과 같다.
+
+- HoK `.yml`은 19개이며 모두 `localisation/english/` 아래에 있다.
+- 19개 모두 파일명이 `*_l_english.yml`, 인코딩이 UTF-8 BOM이며 첫 header는 trim 기준 `l_english:`다. `korea_equipment_l_english.yml` 한 파일의 header 끝에는 공백 1개가 있다.
+- 19개 모두 Hangul 문자열을 포함한다.
+- 현재 사용자 설정은 `l_korean`이다.
+- `V_TARGET 1.19.2`에는 `localisation/korean/` 아래 `l_korean` `.yml` 206개와 Korean font 자산이 있다.
+
+이 구조는 HoK가 legacy `Korean Language` 계약을 전제로 작성됐을 가능성과 일치하지만, `l_korean` 실행에서 `l_english` 파일이 실제로 어떤 fallback·override 순서로 로드되는지는 런타임 미검증이다. 또한 “공식 Korean이 정확히 어느 버전에서 처음 추가됐다”는 역사 주장은 현재 로컬 증거로 확인하지 않았다.
+
+따라서 `l_english` → `l_korean` 일괄 rename, 디렉터리 이동, header 치환 또는 이중 복제는 현재 맵 크래시 수리 범위에 포함하지 않는다. legacy dependency 유지, native Korean 이관, dual 제공 중 어느 정책을 쓸지는 key 안정성·중복 precedence·B/C runtime 결과와 함께 별도 승인한다. 세부 판정은 [localisation 계약 사건](../incidents/2026-09-01-localisation-contract.md)에 기록한다.
 
 ## launcher와 현재 선택 상태
 
@@ -244,8 +288,8 @@ Paradox `launcher-v2.sqlite`에서 확인한 active playset:
    - 파일 목록과 SHA-256 manifest를 만든 뒤에야 3-way 비교를 production 판단에 사용할 수 있다.
 
 2. **원본 증거 manifest 완성**
-   - 검증 ZIP과 ZIP SHA-256은 확보됐다.
-   - 별도의 1,049개 per-file 경로·크기·SHA-256 manifest를 만들어 archive 검증을 재현 가능하게 고정한다.
+   - **완료** — 검증 ZIP, ZIP SHA-256과 별도의 1,049개 per-file 경로·크기·SHA-256 manifest를 확보하고 원본·ZIP 양쪽에 재검증했다.
+   - ZIP과 manifest에 NTFS read-only 속성을 설정했지만, 장기 이중 보존과 WORM 성격의 불변성은 별도 문제다.
    - archive를 프로젝트 밖에 이중 보존하려면 해당 외부 쓰기 위치에 대한 별도 승인을 받는다.
 
 3. **launcher 외부 설정 변경 승인**
@@ -275,6 +319,12 @@ Paradox `launcher-v2.sqlite`에서 확인한 active playset:
 - `<PROJECT>/.git`
 - `<PROJECT>/descriptor.mod`
 - `<PROJECT>/.local-artifacts/baselines/HOK_ORIGINAL_2898629778_manifest-6685434440007626210/HOK_ORIGINAL_2898629778_manifest-6685434440007626210.zip`
+- `<PROJECT>/.local-artifacts/baselines/HOK_ORIGINAL_2898629778_manifest-6685434440007626210/SHA256SUMS.tsv`
+- `<PROJECT>/.local-artifacts/baselines/KOREAN_LANGUAGE_2743487021_manifest-919612200712679333/SHA256SUMS.tsv`
+- `<PROJECT>/.local-artifacts/incidents/2026-08-31-startup-crash/D-PRE/`
+- `<PROJECT>/.local-artifacts/incidents/2026-08-31-startup-crash/PREFLIGHT-2026-09-01/`
+- `<PROJECT>/.local-artifacts/audits/2026-09-01-korean-language-static/`
+- `<PROJECT>/.local-artifacts/audits/2026-09-01-map-fresh-scan-v15/` (tool version 8; v16 byte-identical)
 - `<HOI4_INSTALL>/launcher-settings.json`
 - `<HOI4_INSTALL>`의 Korean localisation/font inventory
 - Steam App ID `394360`의 로컬 App State 및 appinfo branch 메타데이터
@@ -298,4 +348,4 @@ Paradox `launcher-v2.sqlite`에서 확인한 active playset:
 
 현재 작업 복사본은 descriptor를 제외하면 설치된 원본 HoK manifest의 콘텐츠와 정확히 일치하고, 검증된 원본 ZIP snapshot도 확보됐다. 목표 설치본은 HOI4 `1.19.2.0.a729 (d245)`로 확정됐다. active playset은 `하츠오브 코리아 테스트`이며 launcher DB와 `dlc_load.json` 모두 HoK 한 개만 활성화된 상태를 가리킨다. 그러나 HoK descriptor가 stale 경로를 사용하므로 현재 프로젝트의 실제 로드는 확인되지 않았고, 선언된 필수 `Korean Language`도 활성화되지 않았다.
 
-`Korean Language`에는 직접 map/history 데이터가 없어 맵 크래시의 직접 원인으로 보이지 않지만, 목표 바닐라와 267개 상대 경로가 겹치고 HoK와 102개 localisation key가 겹쳐 UI/font/localisation 호환성 사건으로는 별도 검증이 필요하다. `V_OLD = 1.16.8`은 가장 강한 후보지만 실제 파일이 없으므로 3-way 맵 이식은 아직 production 적용 단계가 아니다. 다음 안전한 구현 경계는 정확한 `V_OLD`와 per-file manifest 확보, launcher 지원 구성 및 언어 의존 계약 확정, 그리고 개별 ID 마이그레이션 승인이다.
+`Korean Language`에는 직접 map/history 데이터가 없어 맵 크래시의 직접 원인으로 보이지 않지만, 재실행한 정적 scan에서 목표 바닐라와 270개 상대 경로가 겹치고 HoK와 102개 localisation key가 겹쳐 UI/font/localisation 호환성 사건으로는 별도 검증이 필요하다. `V_OLD = 1.16.8`은 가장 강한 후보지만 실제 파일이 없으므로 3-way 맵 이식은 아직 production 적용 단계가 아니다. 원본과 의존 모드의 per-file manifest는 확보됐으며, 다음 안전한 구현 경계는 정확한 `V_OLD`, launcher 지원 구성 및 언어 의존 계약 확정, 그리고 개별 ID 마이그레이션 승인이다.

@@ -61,7 +61,7 @@
 6. 필수 의존 모드 기준본
 7. Git 저장소의 baseline commit 또는 그와 동등한 불변 snapshot
 
-현재 작업 폴더가 Git 저장소가 아니면 그 사실만 기록하고 넘어가지 않는다. 위 기준선이 없으면 맵 Implementation은 `BLOCKED`다. Git 초기화, commit 또는 저장소 구조 변경은 사용자의 별도 승인 없이 수행하지 않는다.
+현재 작업 폴더가 Git 저장소가 아니면 그 사실만 기록하고 넘어가지 않는다. 위 기준선이 없으면 원형 복원을 주장하는 맵 Implementation은 `BLOCKED`다. 정확한 `V_OLD`를 끝내 확보하지 못한 상태에서 진행하려면, 사용자가 원형 3-way 복원과 구분되는 **target-native reconstruction**을 별도 workstream으로 명시적으로 선택해야 한다. 이 경우에도 target 전역 데이터 보존, 검증된 로컬 geometry 제한, 개별 ID 매핑과 save/submod 정책 승인은 생략할 수 없다. Git 초기화, commit 또는 저장소 구조 변경은 사용자의 별도 승인 없이 수행하지 않는다.
 
 ### 2.2 연결 문서 확인
 
@@ -69,6 +69,8 @@
 
 - `EVIDENCE_RECORD_TEMPLATE.md`
 - `MAP_COMPATIBILITY_CHECKLIST.md`
+- `HOK_MAP_RECONSTRUCTION_PLAN.md`
+- `incidents/2026-09-01-fresh-map-isolation.md`
 
 파일이 없거나 경로가 다르면 누락으로 보고한다. 별도 생성 지시가 없으면 링크를 맞추기 위해 파일을 임의 생성하지 않는다.
 
@@ -83,6 +85,15 @@
 | C | Hearts of Korea + 필수 의존 모드 | 지원되는 실제 구성 재현 |
 | D | Hearts of Korea만 | 의존성 결손과 모드 자체 오류 분리 |
 | E | 다른 서브모드 추가 | 추가 모드가 원인인 경우에만 제한적으로 확인 |
+
+맵 원인 격리가 필요한 경우에만 다음 진단 변형을 추가한다. 이 변형은 지원 구성이나 배포 후보가 아니다.
+
+| 진단 실행 ID | 구성 | 판정 질문 |
+|---|---|---|
+| `D-NOMAP` | HoK에서 `map/`과 `history/states/`만 제외 | 원래 crash 경계가 map/state 묶음을 제거하면 사라지는가 |
+| `D-MAPONLY` | HoK의 `map/`과 `history/states/`만 포함 | map/state 묶음만으로 원래 crash 경계를 만들기에 충분한가 |
+
+`D-NOMAP`에서 HoK 국가의 영토·수도·state 구성이 사라지는 것은 예상된 control 동작이다. 이를 정상 플레이 후보로 해석하거나 map/state를 일부 되돌려 control의 의미를 바꾸지 않는다. 각 변형은 manifest로 고정하고 retained/excluded 파일 목록을 실행 증거에 포함한다.
 
 수정 전·후 비교에는 기본 ID 뒤에 접미사를 붙인다.
 
@@ -150,6 +161,14 @@
 - 검색 결과 수치를 보고할 때는 distinct ID 수, 전체 match 수, 첫 소속을 제외한 초과 membership 수를 구분한다.
 - 입력 파일, 검색 명령, 필터 조건과 전체 결과가 보존되지 않은 수치는 구현 근거로 사용하지 않는다.
 
+맵 증거는 다음 세 층을 분리해 기록한다.
+
+1. **관찰된 데이터 불일치**: 누락 ID, 중복 membership, ID 충돌처럼 파일·로그에서 직접 확인한 사실
+2. **root-cause family**: 해당 불일치들이 시작 크래시에 기여했다는 인과 분류
+3. **proximate engine failure**: 실제로 실패한 엔진 invariant, assert 또는 함수
+
+첫 번째 층이 `CONFIRMED`여도 두 번째와 세 번째 층이 자동으로 확정되지는 않는다. 같은 WER 코드·오프셋이 반복되는 것은 실행 경로의 안정성을 지지하지만 proximate engine failure를 특정하지 않는다.
+
 ## 7. 맵 크래시가 의심될 때
 
 [맵 호환성 점검표](MAP_COMPATIBILITY_CHECKLIST.md)를 사용한다. 특히 다음을 먼저 검사한다.
@@ -161,14 +180,20 @@
 - 바다·호수·육지 유형, coastal 플래그, adjacency가 일관적인지
 - 구버전의 전역 맵 파일이 현재 바닐라 데이터를 통째로 가리는지
 
-네 줄을 추가하는 식의 국소 처방은 전체 참조 관계가 검증되기 전에는 해결로 판정하지 않는다.
+`13410–13413` 같은 누락 정의 네 줄을 추가하는 국소 처방은 전체 참조 관계가 검증되기 전에는 해결로 판정하지 않는다. `definition.csv` 행만으로 `provinces.bmp`의 픽셀·기하가 생기지 않으며, RGB 충돌, state/strategic-region membership, 철도·보급·위치 데이터와 이미 존재하는 ID 충돌도 해결되지 않는다.
+
+네 줄 추가 시험이 필요하면 production fix가 아니라 **명시적으로 승인된 폐기용 진단 probe**로만 수행한다. 먼저 후보 RGB의 definition·bitmap 중복 여부를 확인하고, 별도 복사본과 별도 실행 ID를 사용한다. 결과는 다음과 같이 제한해서 해석한다.
+
+- malformed 네 줄만 사라지고 같은 경계·WER 서명이 반복되면 probe는 불충분하다.
+- 실패 경계나 서명이 이동하면 해당 불일치의 기여 가능성이 강화될 뿐 전체 수리가 증명되지는 않는다.
+- 메인 메뉴에 들어가도 맵 무결성, 새 게임, unpause와 save/load를 통과하기 전에는 수리로 판정하지 않는다.
 
 ### 7.1 필수 3-way 비교
 
 구버전 맵 모드를 현재 바닐라에 이식할 때는 다음 세 기준본을 비교한다.
 
 - `V_OLD`: 원본 모드가 마지막으로 지원한 정확한 Vanilla 1.16.x 빌드
-- `HOK_ORIGINAL`: 원본 Hearts of Korea `1.0.9(1)` 배포본
+- `HOK_ORIGINAL`: 검증된 원본 Workshop snapshot. 공개 릴리스 식별 `1.0.9(1)`은 descriptor의 `1.0.0`과 관계가 확정될 때까지 `STRONGLY_SUPPORTED`
 - `V_TARGET`: 현재 목표 Vanilla 빌드
 
 개념상 원작자가 의도한 변경분은 다음과 같다.
@@ -189,6 +214,8 @@ HOK_ORIGINAL과 V_TARGET의 모든 차이
 
 정확한 `V_OLD`를 확보하지 못하면 해당 차이의 의미는 `UNPROVEN`으로 남긴다. 이 상태에서는 파일 단위 자동 병합, 일괄 번호 이동, bitmap 자동 덮어쓰기를 승인하지 않는다.
 
+`V_OLD` 없이 별도의 target-native reconstruction을 선택하더라도 이를 `INTENDED_DELTA`의 확정 복원이라고 부르지 않는다. target bitmap에서 시작해 지리적 정체성과 변경 영역이 독립적으로 검증된 HoK 요소만 수동 후보로 올리고, [맵 재구성 설계](HOK_MAP_RECONSTRUCTION_PLAN.md)의 별도 승인 게이트를 적용한다.
+
 각 기준본에 대해 다음을 보존한다.
 
 - 정확한 버전·빌드·체크섬
@@ -196,6 +223,13 @@ HOK_ORIGINAL과 V_TARGET의 모든 차이
 - 파일 목록
 - SHA-256 manifest
 - `definition.csv`, `provinces.bmp`, states, strategic regions, railways, supply, adjacency 등 영향 파일의 비교 산출물
+
+bitmap 3-way는 RGB 집합 비교만으로 끝내지 않는다. 같은 좌표의 `V_OLD`, `HOK_ORIGINAL`, `V_TARGET` 픽셀을 비교해 다음을 분리한다.
+
+- `HOK_ORIGINAL`만 `V_OLD`와 다른 픽셀: 원작 변경 후보
+- `V_TARGET`만 `V_OLD`와 다른 픽셀: 이후 바닐라 변경 후보
+- `HOK_ORIGINAL`과 `V_TARGET`이 같은 원본 픽셀을 서로 다르게 바꾼 위치: 수동 해결이 필요한 geometry conflict
+- 검토된 변경 범위 밖의 차이: 자동 적용 금지 및 별도 조사
 
 ### 7.2 영구 ID 매핑
 
@@ -206,16 +240,17 @@ HOK_ORIGINAL과 V_TARGET의 모든 차이
 | 필드 | 내용 |
 |---|---|
 | Entity type | province / state / strategic region 등 |
-| Entity identity | 지역 이름, RGB, 기존 membership 또는 지리적 의미 |
+| Entity identity | 지역 이름, 원본 RGB·geometry/province 집합, 기존 membership 또는 지리적 의미 |
 | Old ID | 원본 모드 ID |
 | Proposed new ID | 후보 신규 ID |
+| V_TARGET counterpart | 목표 바닐라에서 대응하거나 겹치는 객체와 그 판정 근거 |
 | Collision reason | 현재 바닐라·의존 모드와의 충돌 근거 |
 | References | 파일명과 문맥별 참조 위치 |
 | Save/submod impact | 세이브·서브모드·스크립트 영향 |
 | Evidence grade | CONFIRMED / STRONGLY_SUPPORTED / UNPROVEN |
 | Approval status | 미승인 / 승인 / 적용 / 검증 |
 
-`+38`, `+65` 같은 오프셋을 전역 숫자 치환 규칙으로 사용하지 않는다. 같은 숫자가 province, state, 날짜, 수량 또는 다른 스크립트 값으로 등장할 수 있다.
+`+38`, `+65` 같은 오프셋을 전역 숫자 치환 규칙으로 사용하지 않는다. 각 숫자 occurrence를 최소한 `state_ref`, `province_ref`, `coordinate`, `date_or_count`, `other_numeric`, `unknown`으로 분류한다. `unknown`은 자동 변경하지 않는다.
 
 ## 8. 단계별 게이트
 
@@ -247,13 +282,17 @@ HOK_ORIGINAL과 V_TARGET의 모든 차이
 
 ### 8.4 Validation
 
-- 원래 실패를 재현한 `D-PRE`와 동일 조건의 `D-POST` 비교
-- 실제 지원 구성의 `C-POST` 검증
+- 원래 실패를 재현한 `D-PRE`와 동일 조건의 `D-POST`를 먼저 비교
+- `D-POST` 결과를 보존한 뒤 실제 지원 구성의 `C-POST` 검증
 - 정적 맵 무결성 검사
-- 새 게임 진입, 맵 표시, 국가 선택, unpause
+- 새 게임 진입, 맵 표시, 국가 선택, unpause 후 1일·7일·30일 진행
 - 영향 지역의 state, ownership, cores, victory points, supply, railway, adjacency, buildings, positions 확인
-- 승인된 경우 save/load 검증
+- persistent ID 또는 map 데이터가 바뀌었다면 저장, 프로세스 종료, 재실행, reload와 추가 진행 검증
+- 같은 구성의 clean start를 최소 두 번 반복해 일회성 성공과 구분
+- 선언된 언어 의존 계약을 유지한다면 `C-POST`에서 UI·font·localisation 표시도 확인
 - 새 WER, fatal, assert와 관련 로그 증가 여부 비교
+
+`D-POST`가 `D-PRE`와 같은 실패 경계·WER 서명으로 계속 실패하면 원래 root-cause family가 해결됐다고 판정하지 않는다. 이때 `C-POST`만 성공해도 그것은 구성 차이의 증거이며, 해당 맵 수리의 성공 증거로 대체할 수 없다.
 
 ## 9. 완료 판정
 
@@ -264,11 +303,13 @@ HOK_ORIGINAL과 V_TARGET의 모든 차이
 - 기존과 동일한 WER 서명이 다시 생성되지 않는다.
 - 새 fatal/assert/맵 무결성 오류가 없다.
 - 새 게임 진입, 맵 표시, 국가 선택 등 승인된 스모크 테스트를 통과한다.
+- unpause 후 1일·7일·30일 진행과 동일 구성 clean start 최소 2회가 통과한다.
 - 수정한 데이터에 대한 정적 무결성 검사가 통과한다.
 - 기준/control보다 새 관련 오류가 없고, 영향받는 ID·scope·localisation·dependency·load order를 검토했다.
 - diff에 무관한 정리, 대량 포맷, 인코딩 또는 줄바꿈 변환이 없다.
 - 관련 bookmark별 positive path와 중요한 blocked/negative path를 확인했다.
 - 영구 ID·map 변경이면 승인된 save/load 검사를, AI 변경이면 runtime 행동 검사를 수행했다.
+- persistent ID 또는 map 변경이면 저장 후 게임 프로세스를 종료하고 다시 실행해 reload·추가 진행까지 확인했다.
 - 멀티플레이 호환성을 주장하는 경우에만 동일 모드/DLC/load order의 checksum 및 동기화를 확인했다.
 - `supported_version`과 공개 제목의 호환성 표기가 실제 검증 결과와 일치한다.
 - 남은 경고와 미확인 위험을 별도로 보고한다.
