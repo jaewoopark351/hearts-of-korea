@@ -1177,6 +1177,10 @@ KOR_decision_CNDP_category = {
 			1082 = {
 				set_state_category = large_town
 				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = coal
+					amount = 1
+				}
 				add_victory_points = {
 					province = 13429
 					value = 1
@@ -1301,6 +1305,10 @@ KOR_decision_CNDP_category = {
 			527 = {
 				set_state_category = large_city
 				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = coal
+					amount = 1
+				}
 				add_victory_points = {
 					province = 9790 
 					value = 1
@@ -1328,6 +1336,10 @@ KOR_decision_CNDP_category = {
 			1029 = {
 				set_state_category = town
 				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = coal
+					amount = 3
+				}
 				add_victory_points = {
 					province = 1148 
 					value = 1

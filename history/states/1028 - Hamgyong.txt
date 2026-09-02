@@ -5,6 +5,8 @@ state={
 	resources={
 		steel=15.000
 		tungsten=28.000
+		coal=20.000#20260903_kpopmodder
+		chromium=4.000#20260903_kpopmodder
 	}
 
 	history={
