@@ -225,6 +225,22 @@ focus_tree = {
 			}
 		}
 
+		#20260909_kpopmodder: HIDE에서 HoK 민주 분기 선택 뒤 제국 영향력 패널을 가시 범위에 유지합니다.
+		override_position = {
+			x = 2000
+			y = 700
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				OR = {
+					has_completed_focus = HOK_JAP_strengthen_civilian_government
+					has_country_flag = HOK_JAP_democratic_branch_selected
+				}
+			}
+		}
+
 	}
 
 	default = no
