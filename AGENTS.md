@@ -280,7 +280,9 @@ Compatibility repair, refactoring, rebalance, and successor development are sepa
 - Do not apply broad search-and-replace without reviewing every affected context.
 - Do not reformat an entire file for a local fix.
 - Preserve comments explaining historical intent or engine quirks.
-- Add comments only for non-obvious compatibility constraints.
+- Any modified production text-code file must include a nearby contributor note in the exact form `#YYYYMMDD_kpopmodder: <brief reason/intent>`. Put it immediately above or at the end of the changed statement or block, keep one note per coherent change, preserve earlier notes, and do not add it to binary, generated, byte-exact, or documentation files.
+- For paired localisation files, put the identical contributor note immediately after each locale header and preserve UTF-8 BOM.
+- Except for the required contributor note above, add explanatory comments only for non-obvious compatibility constraints.
 - Do not delete an unknown key merely to quiet `error.log`; determine whether it was renamed, moved, DLC-gated, or replaced.
 - Preserve exact filename and path casing, including on Windows.
 - Check braces, quotes, list structure, and block placement after edits.
