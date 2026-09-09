@@ -1,0 +1,524 @@
+#20260909_kpopmodder: 원작 HoK 일본 민주화·내전·외교 연쇄를 1.19.2용 namespace로 이식합니다.
+add_namespace = hok_jap_democratic
+
+# Protest against the Peace Preservation Law.
+country_event = {
+	id = hok_jap_democratic.1
+	title = hok_jap_democratic.1.t
+	desc = hok_jap_democratic.1.d
+	picture = GFX_report_event_japanese_people_protest
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.1.a
+		ai_chance = { base = 10 }
+		add_popularity = { ideology = democratic popularity = 0.2 }
+		add_stability = -0.1
+		hidden_effect = { country_event = { id = hok_jap_democratic.2 days = 60 } }
+	}
+	option = {
+		name = hok_jap_democratic.1.b
+		ai_chance = { base = 10 }
+		add_popularity = { ideology = democratic popularity = 0.1 }
+		hidden_effect = { country_event = { id = hok_jap_democratic.2 days = 60 } }
+	}
+}
+
+# Arrest of Fuse Tatsuji.
+country_event = {
+	id = hok_jap_democratic.2
+	title = hok_jap_democratic.2.t
+	desc = hok_jap_democratic.2.d
+	picture = GFX_report_event_jap_fuse_tatsuji
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.2.a
+		ai_chance = { base = 10 }
+		add_popularity = { ideology = fascism popularity = -0.1 }
+	}
+}
+
+#20260909_kpopmodder: 1.19.2의 확대된 명단이 아니라 원작 HoK의 장교 8명만 만주로 이동시킵니다.
+country_event = {
+	id = hok_jap_democratic.3
+	title = hok_jap_democratic.3.t
+	desc = hok_jap_democratic.3.d
+	picture = GFX_report_event_japanese_officers
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.3.a
+		ai_chance = { base = 10 }
+		if = {
+			limit = { country_exists = MAN }
+			if = { limit = { has_character = JAP_hisaichi_terauchi } JAP_hisaichi_terauchi = { set_nationality = MAN } }
+			if = { limit = { has_character = JAP_shunroku_hata } JAP_shunroku_hata = { set_nationality = MAN } }
+			if = { limit = { has_character = JAP_kanji_ishiwara } JAP_kanji_ishiwara = { set_nationality = MAN } }
+			if = { limit = { has_character = JAP_naruhiko_higashikuni } JAP_naruhiko_higashikuni = { set_nationality = MAN } }
+			if = { limit = { has_character = JAP_seishiro_itagaki } JAP_seishiro_itagaki = { set_nationality = MAN } }
+			if = { limit = { has_character = JAP_hatazo_adachi } JAP_hatazo_adachi = { set_nationality = MAN } }
+			if = { limit = { has_character = JAP_sadao_araki } JAP_sadao_araki = { set_nationality = MAN } }
+			if = { limit = { has_character = JAP_kuniaki_koiso } JAP_kuniaki_koiso = { set_nationality = MAN } }
+			MAN = { country_event = { id = hok_jap_democratic.4 days = 1 } }
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.4
+	title = hok_jap_democratic.4.t
+	desc = hok_jap_democratic.4.d
+	picture = GFX_report_event_japanese_officers
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.4.a
+		ai_chance = { base = 10 }
+	}
+}
+
+#20260909_kpopmodder: 원작 민주 내전을 이식하며 MAN·MEN·CHI가 없으면 해당 후속 scope 호출을 건너뜁니다.
+country_event = {
+	id = hok_jap_democratic.5
+	title = hok_jap_democratic.5.t
+	desc = hok_jap_democratic.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.5.a
+		ai_chance = { base = 10 }
+
+		if = {
+			limit = {
+				country_exists = MAN
+				MAN = { is_subject_of = ROOT }
+			}
+			set_autonomy = { target = MAN autonomy_state = autonomy_free }
+		}
+		if = {
+			limit = {
+				country_exists = MAN
+				country_exists = MEN
+				MEN = { is_subject_of = ROOT }
+			}
+			MAN = { puppet = MEN }
+		}
+
+		add_popularity = { ideology = democratic popularity = 0.1 }
+		remove_ideas = state_shintoism
+
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = fascism
+			size = 0.5
+			army_ratio = 0.3
+			navy_ratio = 0.2
+			capital = 282
+			states = { 282 532 535 534 533 }
+		}
+
+		HOK_JAP_japanese_national_liberation_committee = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = { JAP_japanese_national_liberation_committee_trait }
+				}
+				promote_leader = yes
+			}
+		}
+
+		hidden_effect = {
+			news_event = { id = newsj.1 hours = 6 }
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_stability = 0.5
+
+			division_template = {
+				name = "Nihon Kokumin Kaihogun"
+				priority = 1
+				division_names_group = JAP_INF_01
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 531 }
+				create_unit = { division = "name = \"Dai 1 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+				create_unit = { division = "name = \"Dai 2 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+				create_unit = { division = "name = \"Dai 3 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+				create_unit = { division = "name = \"Dai 4 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+				create_unit = { division = "name = \"Dai 5 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+				create_unit = { division = "name = \"Dai 6 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+				create_unit = { division = "name = \"Dai 7 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+				create_unit = { division = "name = \"Dai 8 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+				create_unit = { division = "name = \"Dai 9 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+				create_unit = { division = "name = \"Dai 10 Nihon Kokumin Kaihogun\" division_template = \"Nihon Kokumin Kaihogun\" start_experience_factor = 0.2" owner = JAP }
+			}
+
+			if = {
+				limit = { country_exists = MAN }
+				MAN = { country_event = { id = hok_jap_democratic.6 days = 1 } }
+				MAN = { country_event = { id = hok_jap_democratic.7 days = 5 } }
+			}
+			if = {
+				limit = { country_exists = CHI }
+				CHI = { country_event = { id = hok_jap_democratic.9 days = 5 } }
+			}
+			country_event = { id = hok_jap_democratic.21 days = 3 }
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.6
+	title = hok_jap_democratic.6.t
+	desc = hok_jap_democratic.6.d
+	picture = GFX_report_event_manchukuo_army
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.6.a
+		ai_chance = { base = 10 }
+		if = {
+			limit = { has_idea = MAN_kwantung_veto }
+			remove_ideas = MAN_kwantung_veto
+		}
+		#20260909_kpopmodder: 원작의 man_restored 표기를 현행 MAN_restored cosmetic tag로 수정합니다.
+		set_cosmetic_tag = MAN_restored
+		add_country_leader_trait = nationalist_symbol
+		set_rule = { can_create_factions = yes }
+		create_faction = HoK_faction_name_greater_qing_empire
+		hidden_effect = {
+			remove_ideas = MAN_low_legitimacy_5
+			remove_ideas = MAN_low_legitimacy_4
+			remove_ideas = MAN_low_legitimacy_3
+			remove_ideas = MAN_low_legitimacy_2
+			remove_ideas = MAN_low_legitimacy_1
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.7
+	title = hok_jap_democratic.7.t
+	desc = hok_jap_democratic.7.d
+	picture = GFX_report_event_chinese_soldiers_02
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.7.a
+		ai_chance = { base = 10 }
+		transfer_state = 745
+		if = {
+			limit = { country_exists = JAP }
+			JAP = { country_event = { id = hok_jap_democratic.8 days = 1 } }
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.8
+	title = hok_jap_democratic.8.t
+	desc = hok_jap_democratic.8.d
+	picture = GFX_report_event_chinese_soldiers_02
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.8.a
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.9
+	title = hok_jap_democratic.9.t
+	desc = hok_jap_democratic.9.d
+	picture = GFX_report_event_nationalist_china_machinegun_firing
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.9.a
+		ai_chance = { base = 10 }
+		#20260909_kpopmodder: 현행 WTT 중국 지도자가 없으면 수신국 CHI 범위로 state 609를 반환합니다.
+		if = {
+			limit = { event_target:WTT_current_china_leader = { exists = yes } }
+			event_target:WTT_current_china_leader = { transfer_state = 609 }
+		}
+		else = { transfer_state = 609 }
+		if = {
+			limit = { country_exists = JAP }
+			JAP = { country_event = { id = hok_jap_democratic.10 days = 1 } }
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.10
+	title = hok_jap_democratic.10.t
+	desc = hok_jap_democratic.10.d
+	picture = GFX_report_event_nationalist_china_machinegun_firing
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.10.a
+		ai_chance = { base = 10 }
+	}
+}
+
+#20260909_kpopmodder: 원작 event 11은 호출자가 없어 의도적으로 이식하지 않습니다.
+
+country_event = {
+	id = hok_jap_democratic.12
+	title = hok_jap_democratic.12.t
+	desc = hok_jap_democratic.12.d
+	picture = GFX_report_event_jap_imperial_family
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.12.a
+		ai_chance = { base = 10 }
+		add_political_power = 100
+	}
+	option = {
+		name = hok_jap_democratic.12.b
+		ai_chance = { base = 10 }
+		add_popularity = { ideology = fascism popularity = 0.05 }
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.13
+	title = hok_jap_democratic.13.t
+	desc = hok_jap_democratic.13.d
+	picture = GFX_report_event_jap_rok_jpn_talks
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.13.a
+		ai_chance = { base = 10 }
+		add_ideas = HOK_KOR_rok_jpn_free_trade_agreement
+		if = {
+			limit = { country_exists = JAP }
+			JAP = { country_event = { id = hok_jap_democratic.14 days = 1 } }
+		}
+	}
+	option = {
+		name = hok_jap_democratic.13.b
+		ai_chance = { base = 0 }
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.14
+	title = hok_jap_democratic.14.t
+	desc = hok_jap_democratic.14.d
+	picture = GFX_report_event_jap_rok_jpn_talks
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.14.a
+		ai_chance = { base = 10 }
+		add_ideas = HOK_JAP_jpn_rok_free_trade_agreement
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.15
+	title = hok_jap_democratic.15.t
+	desc = hok_jap_democratic.15.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.15.a
+		ai_chance = { base = 10 }
+		hidden_effect = {
+			random_list = {
+				50 = { country_event = { id = hok_jap_democratic.16 days = 1 } }
+				50 = { country_event = { id = hok_jap_democratic.17 days = 1 } }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.16
+	title = hok_jap_democratic.16.t
+	desc = hok_jap_democratic.16.d
+	picture = GFX_report_event_ITA_democratic_parlament
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.16.a
+		ai_chance = { base = 10 }
+		524 = { add_core_of = JAP }
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.17
+	title = hok_jap_democratic.17.t
+	desc = hok_jap_democratic.17.d
+	picture = GFX_report_event_japanese_siam_politicians
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.17.a
+		ai_chance = { base = 10 }
+		#20260909_kpopmodder: 원작의 타이완 core·영토 이전·자치도 적용 순서를 유지합니다.
+		524 = { add_core_of = TWN }
+		TWN = { transfer_state = 524 }
+		set_autonomy = { target = TWN autonomous_state = autonomy_puppet }
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.18
+	title = hok_jap_democratic.18.t
+	desc = hok_jap_democratic.18.d
+	picture = GFX_report_event_soviet_japanese_pact
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.18.a
+		ai_chance = { base = 1 }
+		if = {
+			limit = { country_exists = JAP }
+			JAP = { country_event = { id = hok_jap_democratic.19 days = 1 } }
+		}
+	}
+	option = {
+		name = hok_jap_democratic.18.b
+		ai_chance = { base = 9 }
+		if = {
+			limit = { country_exists = JAP }
+			JAP = { country_event = { id = hok_jap_democratic.20 days = 1 } }
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.19
+	title = hok_jap_democratic.19.t
+	desc = hok_jap_democratic.19.d
+	picture = GFX_report_event_soviet_japanese_pact
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.19.a
+		ai_chance = { base = 10 }
+		#20260909_kpopmodder: 수락 시에도 소련 소유를 재검사해 제3국의 state 655를 빼앗지 않습니다.
+		if = {
+			limit = { 655 = { is_owned_by = SOV } }
+			transfer_state = 655
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.20
+	title = hok_jap_democratic.20.t
+	desc = hok_jap_democratic.20.d
+	picture = GFX_report_event_SOV_cossack_cavalry
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.20.a
+		ai_chance = { base = 10 }
+		create_wargoal = {
+			type = take_state_focus
+			target = SOV
+			generator = { 655 }
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.21
+	title = hok_jap_democratic.21.t
+	desc = hok_jap_democratic.21.d
+	picture = GFX_report_event_japanese_siam_politicians
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.21.a
+		ai_chance = { base = 10 }
+		#20260909_kpopmodder: 원작처럼 인물을 직접 지정해 내전 분할 뒤 야마시타를 JAP로 돌려보냅니다.
+		JAP_tomoyuki_yamashita = { set_nationality = JAP }
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.22
+	title = hok_jap_democratic.22.t
+	desc = hok_jap_democratic.22.d
+	picture = GFX_report_event_ITA_democratic_parlament
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.22.a
+		ai_chance = { base = 10 }
+		set_cosmetic_tag = JAP_yamato_kyowakoku
+		hidden_effect = {
+			country_event = { id = hok_jap_democratic.12 days = 7 }
+			news_event = { id = newsj.2 hours = 6 }
+		}
+	}
+	option = {
+		name = hok_jap_democratic.22.b
+		ai_chance = { base = 10 }
+		set_cosmetic_tag = JAP_daiwa_mingoku
+		hidden_effect = {
+			country_event = { id = hok_jap_democratic.12 days = 7 }
+			news_event = { id = newsj.2 hours = 6 }
+		}
+	}
+	option = {
+		name = hok_jap_democratic.22.c
+		ai_chance = { base = 10 }
+		set_cosmetic_tag = JAP_fuso_gasshukoku
+		hidden_effect = {
+			country_event = { id = hok_jap_democratic.12 days = 7 }
+			news_event = { id = newsj.2 hours = 6 }
+		}
+	}
+	option = {
+		name = hok_jap_democratic.22.e
+		ai_chance = { base = 10 }
+		hidden_effect = {
+			country_event = { id = hok_jap_democratic.12 days = 7 }
+			news_event = { id = newsj.2 hours = 6 }
+		}
+	}
+}
+
+country_event = {
+	id = hok_jap_democratic.23
+	title = hok_jap_democratic.23.t
+	desc = hok_jap_democratic.23.d
+	picture = GFX_report_event_japan_europe_pact
+	is_triggered_only = yes
+
+	option = {
+		name = hok_jap_democratic.23.a
+		ai_chance = { base = 10 }
+		if = {
+			limit = { country_exists = KOR }
+			KOR = { country_event = { id = generic.5 } }
+		}
+	}
+	option = {
+		name = hok_jap_democratic.23.b
+		ai_chance = { base = 0 }
+	}
+}

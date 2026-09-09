@@ -1,0 +1,1788 @@
+#20260909_kpopmodder: 원작 HoK 일본 민주주의 40개 중점을 1.19.2 일본 트리용 shared branch로 이식합니다.
+shared_focus = {
+	id = HOK_JAP_strengthen_civilian_government
+	icon = GFX_goal_support_democracy
+	#20260909_kpopmodder: HoK 민주 진입점과 바닐라 정치 시작점들을 양방향 상호배타로 고정합니다.
+	mutually_exclusive = {
+		focus = JAP_the_unthinkable_option
+		focus = JAP_strengthen_civilian_government
+		focus = JAP_support_the_kodoha_faction
+		focus = JAP_okadas_military_purge_speech
+		focus = JAP_revere_the_emperor_destroy_the_traitors
+		focus = JAP_sea_purge_the_kodoha_faction
+	}
+	#20260909_kpopmodder: 좌단 잘림을 막으면서 민주주의 분기 전체를 바닐라 일본 트리 왼쪽에 배치합니다.
+	#20260909_kpopmodder: 바닐라 WTT root를 위치 전용 앵커로 삼아 전역 좌표 이동 없이 HoK 분기를 함께 배치합니다.
+	#20260909_kpopmodder: 1.19.2가 shared→ordinary 상대참조를 거부하므로 위 앵커 시도를 계산값 절대좌표로 대체합니다.
+	x = 10
+	y = 0
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	allow_branch = {
+		has_dlc = "Waking the Tiger"
+		has_dlc = "No Compromise, No Surrender"
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+			NOT = {
+				has_completed_focus = JAP_the_unthinkable_option
+				has_completed_focus = JAP_strengthen_civilian_government
+				has_completed_focus = JAP_support_the_kodoha_faction
+				has_completed_focus = JAP_okadas_military_purge_speech
+				has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+				has_completed_focus = JAP_sea_purge_the_kodoha_faction
+			}
+		}
+	}
+
+	available = {
+		is_ai = no
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_political_power = 120
+		add_timed_idea = { idea = JAP_strengthen_civilian_government days = 1095 }
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = kijuro_shidehara
+		hidden_effect = {
+			#20260909_kpopmodder: focus 완료 판정 전에도 같은 reward의 relayout이 HoK 선택을 읽도록 flag를 먼저 설정합니다.
+			set_country_flag = HOK_JAP_democratic_branch_selected
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
+			recruit_character = HOK_JAP_japanese_national_liberation_committee
+			recruit_character = HOK_JAP_tatsuji_fuse
+			recruit_character = HOK_JAP_tadamichi_kuribayashi
+			recruit_character = HOK_JAP_sigesaburo_miyazaki
+			recruit_character = HOK_JAP_shin_yoshida
+			recruit_character = HOK_JAP_masatomi_kimura
+			recruit_character = HOK_JAP_renya_mutaguchi
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_ally_with_the_zaibatsus
+	icon = GFX_focus_jap_zaibatsu
+	prerequisite = { focus = HOK_JAP_strengthen_civilian_government }
+	x = -4
+	y = 1
+	relative_position_id = HOK_JAP_strengthen_civilian_government
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_full_control_of_state = 282
+		has_full_control_of_state = 529
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	complete_tooltip = {
+		random_state = {
+			limit = {
+				has_state_flag = JAP_zaibatsus_factories
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_state = {
+			limit = {
+				has_state_flag = JAP_zaibatsus_factories
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		swap_ideas = {
+			remove_idea = JAP_zaibatsus
+			add_idea = JAP_nationalize_the_zaibatsus
+		}
+	}
+
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				is_core_of = ROOT
+				not = {
+					OR = {
+						state = 646
+						state = 645
+						state = 555
+					}
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = JAP_zaibatsus_factories
+		}
+		random_owned_controlled_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				NOT = { has_state_flag = JAP_zaibatsus_factories }
+				is_core_of = ROOT
+				not = {
+					OR = {
+						state = 646
+						state = 645
+						state = 555
+					}
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = JAP_zaibatsus_factories
+		}
+		swap_ideas = {
+			add_idea = JAP_zaibatsus_empowered
+			remove_idea = JAP_zaibatsus
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_research_spending
+	icon = GFX_focus_research
+	prerequisite = { focus = HOK_JAP_strengthen_civilian_government }
+	x = -2
+	y = 1
+	relative_position_id = HOK_JAP_strengthen_civilian_government
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_returning_home_SMCR_elite
+	icon = GFX_focus_SOV_south_manchuria_railway
+	prerequisite = { focus = HOK_JAP_research_spending }
+	prerequisite = { focus = HOK_JAP_ally_with_the_zaibatsus }
+	x = -1
+	y = 1
+	relative_position_id = HOK_JAP_research_spending
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_ideas = HOK_JAP_returning_home_SMCR_elite
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_invest_nigo_project
+	icon = GFX_focus_wonderweapons
+	prerequisite = { focus = HOK_JAP_returning_home_SMCR_elite }
+	x = 0
+	y = 1
+	relative_position_id = HOK_JAP_returning_home_SMCR_elite
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+
+		#20260909_kpopmodder: 원작 HoK의 핵 돌파구 0.75와 1년 선행 감면 보상을 1.19.2에서도 유지합니다.
+		add_breakthrough_progress = {
+			specialization = specialization_nuclear
+			value = 0.75
+		}
+
+		add_tech_bonus = {
+			name = nuclear_bonus
+			ahead_reduction = 1
+			category = nuclear
+		}
+
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_oppose_peace_preservation_law
+	icon = GFX_focus_JAP_oppose_peace_preservation_law
+	prerequisite = { focus = HOK_JAP_strengthen_civilian_government }
+	x = 0
+	y = 1
+	relative_position_id = HOK_JAP_strengthen_civilian_government
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	bypass = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		country_event = { id = hok_jap_democratic.1 }
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_memories_of_taisho_democracy
+	icon = GFX_focus_JAP_memories_of_taisho_democracy
+	prerequisite = { focus = HOK_JAP_oppose_peace_preservation_law }
+	x = 1
+	y = 1
+	relative_position_id = HOK_JAP_oppose_peace_preservation_law
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	bypass = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.2
+		}
+		add_stability = -0.2
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_purge_the_militarists
+	icon = GFX_focus_JAP_purge_the_militarists
+	prerequisite = { focus = HOK_JAP_oppose_peace_preservation_law }
+	x = -1
+	y = 1
+	relative_position_id = HOK_JAP_oppose_peace_preservation_law
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+
+	completion_reward = {
+		country_event = { id = hok_jap_democratic.3 }
+		remove_ideas = JAP_militarism
+		if = {
+			limit = { country_exists = MAN }
+			MAN = { add_ideas = MAN_militarism }
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_pre_emptive_coup	#AKA Minshu Ikki
+	icon = GFX_focus_attack_japan
+	prerequisite = { focus = HOK_JAP_purge_the_militarists }
+	prerequisite = { focus = HOK_JAP_memories_of_taisho_democracy }
+	x = 1
+	y = 1
+	relative_position_id = HOK_JAP_purge_the_militarists
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		democratic > 0.3
+	}
+
+	bypass = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+			hidden_effect = {
+			if = {
+				limit = {
+					#20260909_kpopmodder: 원작 숫자 지도자 ID 700 대신 현행 히로히토 character ID를 검사합니다.
+					has_country_leader = {
+						ruling_only = yes
+						character = JAP_emperor_hirohito
+					}
+				}
+				remove_country_leader_trait = imperial_sanction
+			}
+		}
+		country_event = { id = hok_jap_democratic.5 }
+		effect_tooltip = {
+			if = {
+				limit = {
+					country_exists = MAN
+					MAN = { is_subject_of = ROOT }
+				}
+				set_autonomy = { target = MAN autonomy_state = autonomy_free }
+			}
+			if = {
+				limit = {
+					country_exists = MAN
+					MAN = { has_idea = MAN_kwantung_veto }
+				}
+				MAN = { remove_ideas = MAN_kwantung_veto }
+			}
+			if = {
+				limit = {
+					country_exists = MAN
+					country_exists = MEN
+					MEN = { is_subject_of = ROOT }
+				}
+				MAN = { puppet = MEN }
+			}
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = fascism
+				size = 0.5
+			}
+		}
+	}
+}
+
+
+
+shared_focus = {
+	id = HOK_JAP_the_showa_constitution
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	prerequisite = { focus = HOK_JAP_pre_emptive_coup }
+	mutually_exclusive = { focus = HOK_JAP_proclaim_the_republic }
+	x = 2
+	y = 1
+	relative_position_id = HOK_JAP_pre_emptive_coup
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_civil_war = no
+		has_government = democratic
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		hidden_effect = {
+			JAP_tetsu_katayama = {
+				promote_character = { ideology = liberalism }
+			}
+		}
+
+		add_ideas = HOK_JAP_democratic_hirohito_hok
+
+		hidden_effect = {
+			news_event = { id = newsj.3 hours = 6 }
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_proclaim_the_republic
+	icon = GFX_focus_JAP_proclaim_the_republic
+	prerequisite = { focus = HOK_JAP_pre_emptive_coup }
+	mutually_exclusive = { focus = HOK_JAP_the_showa_constitution }
+	x = -2
+	y = 1
+	relative_position_id = HOK_JAP_pre_emptive_coup
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_civil_war = no
+		has_government = democratic
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_country_leader_role = {
+			character = HOK_JAP_tatsuji_fuse
+			country_leader={
+				ideology=liberalism
+				traits={ JAP_champion }
+				expire="1965.1.1.1"
+			}
+			promote_leader = yes
+		}
+
+		country_event = { id = hok_jap_democratic.22 }
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_strength_civilian_control
+	icon = GFX_focus_generic_full_social_mobilization
+	prerequisite = { focus = HOK_JAP_proclaim_the_republic focus = HOK_JAP_the_showa_constitution }
+	x = -4
+	y = 2
+	relative_position_id = HOK_JAP_pre_emptive_coup
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		add_ideas = HOK_JAP_strength_civilian_control
+
+		custom_effect_tooltip = HOK_JAP_strength_civilian_control_tt
+		hidden_effect = {
+			every_army_leader = {
+				remove_trait = { trait = politically_connected }
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_new_officers
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = HOK_JAP_strength_civilian_control }
+	x = 0
+	y = 1
+	relative_position_id = HOK_JAP_strength_civilian_control
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		show_unit_leaders_tooltip = HOK_JAP_tadamichi_kuribayashi
+		show_unit_leaders_tooltip = HOK_JAP_sigesaburo_miyazaki
+		show_unit_leaders_tooltip = HOK_JAP_shin_yoshida
+		show_unit_leaders_tooltip = HOK_JAP_masatomi_kimura
+		show_unit_leaders_tooltip = HOK_JAP_renya_mutaguchi
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_joint_staff_office
+	icon = GFX_focus_JAP_joint_staff_office
+	prerequisite = { focus = HOK_JAP_new_officers }
+	x = 0
+	y = 2
+	relative_position_id = HOK_JAP_strength_civilian_control
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		add_ideas = HOK_JAP_joint_staff_office
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_citizen_in_uniform
+	icon = GFX_focus_ETH_peacekeeping_forces
+	prerequisite = { focus = HOK_JAP_joint_staff_office }
+	x = 0
+	y = 3
+	relative_position_id = HOK_JAP_strength_civilian_control
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		add_ideas = HOK_JAP_citizen_in_uniform
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_review_foreign_policy
+	icon = GFX_goal_generic_improve_relations
+	prerequisite = { focus = HOK_JAP_proclaim_the_republic focus = HOK_JAP_the_showa_constitution }
+	x = -1
+	y = 2
+	relative_position_id = HOK_JAP_pre_emptive_coup
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		add_political_power = 100
+
+		hidden_effect = {
+
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_datsuonyua
+	icon = GFX_focus_usa_focus_on_asia
+	prerequisite = { focus = HOK_JAP_review_foreign_policy }
+	mutually_exclusive = { focus = HOK_JAP_rebuild_anglo_japanese_alliance }
+	x = -1
+	y = 1
+	relative_position_id = HOK_JAP_review_foreign_policy
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			KOR = { has_government = democratic }
+		}
+	}
+
+	available = {
+		has_government = democratic
+		is_subject = no
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		set_rule = { can_create_factions = yes }
+		create_faction = "HoK_faction_name_asian_union"
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_go_with_korea
+	icon = GFX_focus_generic_befriend_korea
+	prerequisite = { focus = HOK_JAP_datsuonyua focus = HOK_JAP_rebuild_anglo_japanese_alliance }
+	x = 0
+	y = 1
+	relative_position_id = HOK_JAP_datsuonyua
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+
+	available = {
+		has_government = democratic
+		is_subject = no
+		KOR = { has_government = democratic }
+		NOT = { has_war_with = KOR }
+	}
+
+	bypass = {
+		KOR = { is_in_faction_with = JAP }
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		if = {
+			limit = { JAP = { is_faction_leader = yes } }
+			KOR = { country_event = generic.5 }
+		}
+		else_if = {
+			limit = { JAP = { is_faction_leader = no } }
+			random_country = {
+				limit = { is_in_faction_with = JAP is_faction_leader = yes }
+				country_event = { id = hok_jap_democratic.23 }
+			}
+		}
+		custom_effect_tooltip = HOK_JAP_go_with_korea_tt
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_rok_jpn_free_trade_agreement
+	#20260909_kpopmodder: KOR 소멸 시 자유무역 이벤트가 잘못 호출되지 않도록 시작 조건을 제한합니다.
+	icon = GFX_focus_JAP_rok_jpn_free_trade_agreement
+	prerequisite = { focus = HOK_JAP_go_with_korea }
+	x = 0
+	y = 2
+	relative_position_id = HOK_JAP_datsuonyua
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+		country_exists = KOR
+		NOT = { has_war_with = KOR }
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		KOR = { country_event = { id = hok_jap_democratic.13 } }
+		custom_effect_tooltip = if_they_accept_tt
+		effect_tooltip = {
+			JAP = { add_ideas = HOK_JAP_jpn_rok_free_trade_agreement }
+			KOR = { add_ideas = HOK_KOR_rok_jpn_free_trade_agreement }
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_rebuild_anglo_japanese_alliance
+	icon = GFX_focus_chi_british_cooperation
+	prerequisite = { focus = HOK_JAP_review_foreign_policy }
+	mutually_exclusive = { focus = HOK_JAP_datsuonyua }
+	x = 1
+	y = 1
+	relative_position_id = HOK_JAP_review_foreign_policy
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+		is_subject = no
+
+		ENG = { has_government = democratic }
+		NOT = { has_war_with = ENG }
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		if = {
+			limit = {
+				ENG = {
+					is_faction_leader = yes
+				}
+			}
+			ENG = { country_event = generic.2 }
+		}
+		else_if = {
+			limit = {
+				ENG = {
+					is_in_faction = yes
+					is_faction_leader = no
+				}
+			}
+			random_country = {
+				limit = {
+					is_in_faction_with = ENG
+					is_faction_leader = yes
+				}
+				country_event = generic.2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_pacific_guardian
+	icon = GFX_focus_jap_pacific_guardian
+	prerequisite = { focus = HOK_JAP_datsuonyua focus = HOK_JAP_rebuild_anglo_japanese_alliance }
+	x = 1
+	y = 2
+	relative_position_id = HOK_JAP_review_foreign_policy
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			JAP = { is_in_faction_with = KOR }
+		}
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+
+	completion_reward = {
+		set_rule = { can_declare_war_on_same_ideology = yes }
+		set_rule = { can_puppet = yes }
+		set_rule = { can_only_justify_war_on_threat_country = no }
+		unlock_decision_category_tooltip = HOK_JAP_pacific_guardian
+		hidden_effect = { news_event = { id = newsj.4 hours = 6 } }
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_anti_communist_bulwark
+	icon = GFX_goal_anti_comintern_pact
+	prerequisite = { focus = HOK_JAP_pacific_guardian }
+	x = 0
+	y = 1
+	relative_position_id = HOK_JAP_pacific_guardian
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			JAP = { is_in_faction_with = KOR }
+		}
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+
+	completion_reward = {
+		every_other_country = {
+			limit = {
+				OR = {
+					is_major = yes
+					tag = PRC
+				}
+				has_government = communism
+			}
+			add_opinion_modifier = { target = ROOT modifier = JAP_anti_communist_bulwark }
+			ROOT = { add_opinion_modifier = { target = PREV modifier = JAP_anti_communist_bulwark } }
+		}
+		# SOV = { add_opinion_modifier = { target = ROOT modifier = HOK_JAP_anti_communist_bulwark } }
+		# PRC = { add_opinion_modifier = { target = ROOT modifier = HOK_JAP_anti_communist_bulwark } }
+		# add_opinion_modifier = { target = SOV modifier = HOK_JAP_anti_communist_bulwark }
+		# add_opinion_modifier = { target = PRC modifier = HOK_JAP_anti_communist_bulwark }
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_liberation_of_manchuria
+	#20260909_kpopmodder: MAN이 존재할 때만 전쟁명분을 만들고 소멸한 경우 중점을 우회합니다.
+	icon = GFX_focus_attack_manchuria
+	prerequisite = { focus = HOK_JAP_anti_communist_bulwark }
+	x = -1
+	y = 1
+	relative_position_id = HOK_JAP_anti_communist_bulwark
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			JAP = { is_in_faction_with = KOR }
+		}
+	}
+
+	available = {
+		has_government = democratic
+		is_subject = no
+		MAN = {
+			exists = yes
+			NOT = { has_government = democratic }
+		}
+	}
+
+	bypass = {
+		MAN = { exists = no }
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = MAN
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_demand_sagaren
+	#20260909_kpopmodder: SOV가 state 655를 소유할 때만 요구하고 소멸·일본 소유 시 중점을 우회합니다.
+	icon = GFX_focus_JAP_demand_sagaren
+	prerequisite = { focus = HOK_JAP_anti_communist_bulwark }
+	x = 1
+	y = 1
+	relative_position_id = HOK_JAP_anti_communist_bulwark
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			factor = 2
+			SOV = { has_war = yes }
+		}
+	}
+
+	available = {
+		has_government = democratic
+		is_subject = no
+		SOV = {
+			exists = yes
+			owns_state = 655
+		}
+	}
+
+	bypass = {
+		OR = {
+			SOV = { exists = no }
+			owns_state = 655
+		}
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		SOV = { country_event = { id = hok_jap_democratic.18 } }
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_rebuild_the_goverment
+	icon = GFX_goal_generic_national_unity
+	prerequisite = { focus = HOK_JAP_proclaim_the_republic focus = HOK_JAP_the_showa_constitution }
+	x = 1
+	y = 2
+	relative_position_id = HOK_JAP_pre_emptive_coup
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		add_stability = 0.1
+		add_timed_idea = {
+			idea = FRA_strengthen_government_support_focus
+			days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_abolition_peace_preservation_law
+	icon = GFX_focus_SWE_refuge_from_war
+	prerequisite = { focus = HOK_JAP_proclaim_the_republic focus = HOK_JAP_the_showa_constitution }
+	x = 3
+	y = 2
+	relative_position_id = HOK_JAP_pre_emptive_coup
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.2
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_expansion_of_local_autonomy
+	icon = GFX_focus_generic_self_management
+	prerequisite = { focus = HOK_JAP_abolition_peace_preservation_law }
+	x = -1
+	y = 1
+	relative_position_id = HOK_JAP_abolition_peace_preservation_law
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		528 = { add_extra_state_shared_building_slots = 1 }
+		529 = { add_extra_state_shared_building_slots = 1 }
+		530 = { add_extra_state_shared_building_slots = 1 }
+		531 = { add_extra_state_shared_building_slots = 1 }
+		532 = { add_extra_state_shared_building_slots = 1 }
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_disband_takumusho
+	icon = GFX_focus_LAT_suspend_constitution_of_latvia
+	prerequisite = { focus = HOK_JAP_abolition_peace_preservation_law }
+	x = 1
+	y = 1
+	relative_position_id = HOK_JAP_abolition_peace_preservation_law
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		524 = { add_compliance = 30 } #taiwan
+		647 = { add_compliance = 30 } #palau
+		684 = { add_compliance = 30 } #caroline islands
+		633 = { add_compliance = 30 } #marshal islands
+		646 = { add_compliance = 30 } #saipan
+		648 = { add_compliance = 30 } #minamitorishima
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_free_election_in_taiwan
+	icon = GFX_focus_JAP_free_election_in_taiwan
+	prerequisite = { focus = HOK_JAP_disband_takumusho }
+	x = -1
+	y = 1
+	relative_position_id = HOK_JAP_disband_takumusho
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+		controls_state = 524
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		country_event = { id = hok_jap_democratic.15 }
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_develop_taiwan
+	icon = GFX_focus_generic_reorient_production
+	prerequisite = { focus = HOK_JAP_free_election_in_taiwan }
+	x = -1
+	y = 2
+	relative_position_id = HOK_JAP_disband_takumusho
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+		524 = { is_owned_or_subject_trigger = yes }
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		add_victory_points = { province = 7186 value = 10 }
+		524 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+			add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_integrate_nanyo_gunto
+	icon = GFX_focus_JAP_integrate_nanyo_gunto
+	prerequisite = { focus = HOK_JAP_disband_takumusho }
+	x = 1
+	y = 1
+	relative_position_id = HOK_JAP_disband_takumusho
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+		any_state = {
+			OR = {
+				state = 647
+				state = 684
+				state = 633
+				state = 646
+				state = 648
+			}
+			is_owned_or_subject_trigger = yes
+		}
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		647 = { add_core_of = JAP }	#palau
+		684 = { add_core_of = JAP } #caroline islands
+		633 = { add_core_of = JAP } #marshal islands
+		646 = { add_core_of = JAP } #saipan
+		648 = { add_core_of = JAP } #minamitorishima
+
+		if = { limit = { country_exists = GUM } annex_country = { target = GUM } }
+		if = { limit = { country_exists = FSM } annex_country = { target = FSM } }
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_develop_nanyo_gunto
+	icon = GFX_focus_POL_develop_polish_shipbuilding
+	prerequisite = { focus = HOK_JAP_integrate_nanyo_gunto }
+	x = 1
+	y = 2
+	relative_position_id = HOK_JAP_disband_takumusho
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_government = democratic
+		684 = { is_owned_or_subject_trigger = yes }
+		646 = { is_owned_or_subject_trigger = yes }
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		add_victory_points = { province = 2489 value = 10 }
+		684 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			add_building_construction = { type = dockyard level = 1 instant_build = yes }
+		}
+		646 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			add_building_construction = { type = dockyard level = 1 instant_build = yes }
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_develop_home_island
+	icon = GFX_focus_JAP_develop_home_island
+	prerequisite = { focus = HOK_JAP_strengthen_civilian_government }
+	x = 6
+	y = 1
+	relative_position_id = HOK_JAP_strengthen_civilian_government
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		has_completed_focus = HOK_JAP_strengthen_civilian_government
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { }
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 2
+			category = industry
+		}
+
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_making_use_of_our_islands
+	icon = GFX_goal_generic_construct_naval_dockyard
+	prerequisite = { focus = HOK_JAP_develop_home_island }
+	x = -2
+	y = 1
+	relative_position_id = HOK_JAP_develop_home_island
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		controls_state = 526
+		controls_state = 645
+		controls_state = 555
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { }
+	completion_reward = {
+		526 = {	#Okinawa
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			add_building_construction = { type = dockyard level = 1 instant_build = yes }
+		}
+
+		645 = {	#Iwoima
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = dockyard level = 1 instant_build = yes }
+		}
+
+		555 = {	#Kuril islands
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_karafuto_oil_field
+	icon = GFX_focus_generic_resource_extraction
+	prerequisite = { focus = HOK_JAP_making_use_of_our_islands }
+	x = 0
+	y = 1
+	relative_position_id = HOK_JAP_making_use_of_our_islands
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		controls_state = 537
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { }
+	completion_reward = {
+		537 = {
+			add_resource = {
+				type = oil
+				amount = 20
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_home_island_agriculture
+	icon = GFX_focus_generic_farmland
+	prerequisite = { focus = HOK_JAP_develop_home_island }
+	x = 0
+	y = 1
+	relative_position_id = HOK_JAP_develop_home_island
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { }
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_development_tohoku_region
+	icon = GFX_focus_generic_low_cost_housing
+	prerequisite = { focus = HOK_JAP_home_island_agriculture }
+	x = 0
+	y = 1
+	relative_position_id = HOK_JAP_home_island_agriculture
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		controls_state = 533
+		controls_state = 536
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { }
+	completion_reward = {
+		533 = {	add_extra_state_shared_building_slots = 3 }
+		536 = {	add_extra_state_shared_building_slots = 3 }
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_modernize_tatara_ironworks
+	icon = GFX_focus_CHL_silverworking
+	prerequisite = { focus = HOK_JAP_development_tohoku_region }
+	x = -1
+	y = 1
+	relative_position_id = HOK_JAP_development_tohoku_region
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		controls_state = 533
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { }
+	completion_reward = {
+		533 = {
+			add_resource = { type = steel amount = 36 }
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_tohoku_dairy_farming
+	icon = GFX_focus_ARG_capitalize_the_beef_industry
+	prerequisite = { focus = HOK_JAP_development_tohoku_region }
+	x = 1
+	y = 1
+	relative_position_id = HOK_JAP_development_tohoku_region
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		controls_state = 533
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { }
+	completion_reward = {
+		533 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+		}
+	}
+}
+
+shared_focus = {
+	id = HOK_JAP_sinkansen
+	icon = GFX_focus_generic_railroad
+	prerequisite = { focus = HOK_JAP_develop_home_island }
+	x = 2
+	y = 1
+	relative_position_id = HOK_JAP_develop_home_island
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		controls_state = 528
+		controls_state = 529
+		controls_state = 531
+		controls_state = 532
+		controls_state = 282
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { }
+	completion_reward = {
+		build_railway = {	#From Nakasaji to Kyoto
+			level = 2
+			path = {
+				9950 7110 1025 11985 10052 1092 11946 7212 12031 7072 11960
+			}
+		}
+		build_railway = {	#From Kyoto to Tokyo
+			level = 2
+			path = {
+				11960 4142 4172 7187 10125 12097 7087 7157 9998 1182
+			}
+		}
+		custom_effect_tooltip = HOK_JAP_sinkansen_tooltip
+	}
+}

@@ -1,0 +1,99 @@
+#20260909_kpopmodder: 원작 HoK 민주 루트의 북사할린·태평양 수호자 결정을 namespaced 파일로 복구합니다.
+HOK_JAP_gain_core_on_north_sakhalin_category = {
+	HOK_JAP_gain_core_on_north_sakhalin = {
+		icon = generic_form_nation
+
+		allowed = { original_tag = JAP }
+
+		visible = {
+			original_tag = JAP
+			has_completed_focus = HOK_JAP_demand_sagaren
+			NOT = { has_country_flag = HOK_JAP_gained_core_on_north_sakhalin_flag }
+		}
+
+		available = {
+			is_subject = no
+			controls_state = 655
+		}
+
+		complete_effect = {
+			655 = {
+				add_core_of = ROOT
+				set_state_name = "Sagaren"
+			}
+			set_country_flag = HOK_JAP_gained_core_on_north_sakhalin_flag
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+}
+
+HOK_JAP_pacific_guardian = {
+	HOK_JAP_guardian_of_INS = {
+		icon = jap_pacific_guardian
+
+		available = {
+			HOL = { NOT = { has_war_with = ROOT } }
+			"INS" = { is_puppet_of = HOL }
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = { factor = 1 }
+
+		complete_effect = {
+			HOL = {
+				country_event = { id = wtt_japan.1 hours = 6 }
+			}
+		}
+	}
+
+	HOK_JAP_guardian_of_MAL = {
+		icon = jap_pacific_guardian
+
+		available = {
+			ENG = { NOT = { has_war_with = ROOT } }
+			MAL = { is_puppet_of = ENG }
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = { factor = 1 }
+
+		complete_effect = {
+			ENG = {
+				country_event = { id = wtt_japan.1 hours = 6 }
+			}
+		}
+	}
+
+	HOK_JAP_guardian_of_indochina = {
+		icon = jap_pacific_guardian
+
+		available = {
+			FRA = {
+				NOT = { has_war_with = ROOT }
+				OR = {
+					has_full_control_of_state = 670
+					has_full_control_of_state = 671
+					has_full_control_of_state = 286
+					has_full_control_of_state = 741
+					has_full_control_of_state = 1066
+					has_full_control_of_state = 1067
+					has_full_control_of_state = 1068
+					has_full_control_of_state = 1069
+				}
+			}
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = { factor = 1 }
+
+		complete_effect = {
+			FRA = {
+				country_event = { id = wtt_japan.1 hours = 3 }
+			}
+		}
+	}
+}

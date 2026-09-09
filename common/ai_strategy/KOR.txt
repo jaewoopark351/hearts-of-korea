@@ -205,7 +205,13 @@ Japanese_want_annex_korea_since_they_fail = {
 			NOT = {
 				country_exists = KOR
 			}
-			JAP = { has_completed_focus = JAP_strengthen_civilian_government }
+			#20260909_kpopmodder: HoK 문민정부 루트 완료 시 대일 적대 전략을 중단합니다.
+			JAP = {
+				OR = {
+					has_completed_focus = JAP_strengthen_civilian_government
+					has_completed_focus = HOK_JAP_strengthen_civilian_government
+				}
+			}
 			KOR = {
 				OR = {
 					is_in_faction_with = JAP

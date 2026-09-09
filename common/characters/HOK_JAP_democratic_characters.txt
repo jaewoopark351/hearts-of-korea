@@ -1,0 +1,160 @@
+#20260909_kpopmodder: 원작 HoK 일본 민주주의 분기의 전용 인물 7명을 namespaced 파일로 이식합니다.
+characters = {
+	HOK_JAP_japanese_national_liberation_committee = {
+		name = HOK_JAP_japanese_national_liberation_committee
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_JAP_japanese_national_liberation_committee"
+			}
+		}
+	}
+
+	HOK_JAP_tatsuji_fuse = {
+		name = HOK_JAP_tatsuji_fuse
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_JAP_tatsuji_fuse"
+			}
+		}
+	}
+
+	HOK_JAP_tadamichi_kuribayashi = {
+		name = HOK_JAP_tadamichi_kuribayashi
+		portraits = {
+			army = {
+				large = "GFX_Portrait_JAP_tadamichi_kuribayashi"
+				small = "GFX_Portrait_JAP_tadamichi_kuribayashi_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HOK_JAP_tadamichi_kuribayashi
+			ledger = army
+			allowed = {
+				has_completed_focus = HOK_JAP_new_officers
+			}
+			traits = { army_entrenchment_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { career_officer inflexible_strategist trait_engineer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+			visible = {
+				has_completed_focus = HOK_JAP_new_officers
+			}
+		}
+	}
+
+	HOK_JAP_sigesaburo_miyazaki = {
+		name = HOK_JAP_sigesaburo_miyazaki
+		portraits = {
+			army = {
+				large = "GFX_Portrait_JAP_sigesaburo_miyazaki"
+				small = "GFX_Portrait_JAP_sigesaburo_miyazaki_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HOK_JAP_sigesaburo_miyazaki
+			ledger = army
+			allowed = {
+				has_completed_focus = HOK_JAP_new_officers
+			}
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { infantry_officer trait_cautious infantry_leader trickster }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+			visible = {
+				has_completed_focus = HOK_JAP_new_officers
+			}
+		}
+	}
+
+	HOK_JAP_shin_yoshida = {
+		name = HOK_JAP_shin_yoshida
+		portraits = {
+			army = {
+				large = "GFX_Portrait_JAP_shin_yoshida"
+				small = "GFX_Portrait_JAP_shin_yoshida_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HOK_JAP_shin_yoshida
+			ledger = army
+			allowed = {
+				has_completed_focus = HOK_JAP_new_officers
+			}
+			traits = { army_armored_1 }
+			cost = 50
+		}
+		corps_commander = {
+			traits = { armor_officer panzer_leader brilliant_strategist }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				has_completed_focus = HOK_JAP_new_officers
+			}
+		}
+	}
+
+	HOK_JAP_masatomi_kimura = {
+		name = HOK_JAP_masatomi_kimura
+		portraits = {
+			navy = {
+				large = "GFX_Portrait_JAP_masatomi_kimura"
+				small = "GFX_Portrait_JAP_masatomi_kimura_small"
+			}
+		}
+		navy_leader = {
+			traits = { destroyer_leader fleet_protector concealment_expert blockade_runner }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id = -1
+			visible = {
+				has_completed_focus = HOK_JAP_new_officers
+			}
+		}
+	}
+
+	HOK_JAP_renya_mutaguchi = {
+		name = HOK_JAP_renya_mutaguchi
+		portraits = {
+			army = {
+				large = "GFX_Portrait_JAP_renya_mutaguchi"
+				small = "GFX_Portrait_JAP_renya_mutaguchi_small"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				has_completed_focus = HOK_JAP_new_officers
+			}
+		}
+	}
+}

@@ -24,9 +24,21 @@ country_event = {
 
 	fire_only_once = yes
 	
+	#20260909_kpopmodder: HoK root 진행·완료 시 기존 2·26 사건 선택지 5개를 숨깁니다.
 	# We want to go for the historical option :/
 	option = { 
 		name = SEA_japan.1.a
+		trigger = {
+			NOT = {
+				OR = {
+					has_completed_focus = HOK_JAP_strengthen_civilian_government
+					focus_progress = {
+						focus = HOK_JAP_strengthen_civilian_government
+						progress > 0
+					}
+				}
+			}
+		}
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -92,6 +104,17 @@ country_event = {
 	# It's shougunating time heck yea
 	option = { 
 		name = SEA_japan.1.b
+		trigger = {
+			NOT = {
+				OR = {
+					has_completed_focus = HOK_JAP_strengthen_civilian_government
+					focus_progress = {
+						focus = HOK_JAP_strengthen_civilian_government
+						progress > 0
+					}
+				}
+			}
+		}
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -193,6 +216,15 @@ country_event = {
 		}
 		trigger = {
 			has_dlc = "No Compromise, No Surrender"
+			NOT = {
+				OR = {
+					has_completed_focus = HOK_JAP_strengthen_civilian_government
+					focus_progress = {
+						focus = HOK_JAP_strengthen_civilian_government
+						progress > 0
+					}
+				}
+			}
 		}
 
 		custom_effect_tooltip = JAP_kodoha_coup_will_fail_non_historically_tt
@@ -287,6 +319,15 @@ country_event = {
 			NOT = {
 				has_dlc = "No Compromise, No Surrender"
 			}
+			NOT = {
+				OR = {
+					has_completed_focus = HOK_JAP_strengthen_civilian_government
+					focus_progress = {
+						focus = HOK_JAP_strengthen_civilian_government
+						progress > 0
+					}
+				}
+			}
 		}
 
 		custom_effect_tooltip = JAP_kodoha_coup_will_fail_non_historically_tt
@@ -339,6 +380,15 @@ country_event = {
 			NOT = {
 				has_dlc = "No Compromise, No Surrender"
 			}
+			NOT = {
+				OR = {
+					has_completed_focus = HOK_JAP_strengthen_civilian_government
+					focus_progress = {
+						focus = HOK_JAP_strengthen_civilian_government
+						progress > 0
+					}
+				}
+			}
 		}
 
 		custom_effect_tooltip = JAP_kodoha_coup_will_fail_non_historically_tt
@@ -369,6 +419,58 @@ country_event = {
 			set_country_flag = JAP_aizawas_trial_over_flag
 		}
 
+	}
+
+	#20260909_kpopmodder: HoK 문민정부 루트는 바닐라 정치 노선을 강제하지 않고 2·26 사건을 억제합니다.
+	option = {
+		name = HOK_SEA_japan_1_civilian_government
+		trigger = {
+			OR = {
+				has_completed_focus = HOK_JAP_strengthen_civilian_government
+				focus_progress = {
+					focus = HOK_JAP_strengthen_civilian_government
+					progress > 0
+				}
+			}
+		}
+		ai_chance = { base = 100 }
+
+		custom_effect_tooltip = JAP_kodoha_coup_will_fail_non_historically_tt
+		IF = {
+			limit = { NOT = { has_country_flag = JAP_korekiyo_protected_flag } }
+			retire_character = JAP_takahashi_korekiyo
+			set_country_flag = JAP_takahashi_korekiyo_was_killed
+		}
+		IF = {
+			limit = { NOT = { has_country_flag = JAP_watanabe_protected_flag } }
+			retire_character = JAP_jotaro_watanabe
+			set_country_flag = JAP_jotaro_watanabe_was_killed
+		}
+		IF = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+				OR = {
+					has_country_flag = JAP_watanabe_protected_flag
+					has_country_flag = JAP_korekiyo_protected_flag
+				}
+			}
+			retire_character = JAP_saionji_kinmochi
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		if = {
+			limit = {
+				focus_progress = {
+					focus = HOK_JAP_strengthen_civilian_government
+					progress > 0
+				}
+				NOT = {
+					has_completed_focus = HOK_JAP_strengthen_civilian_government
+				}
+			}
+			complete_national_focus = HOK_JAP_strengthen_civilian_government
+		}
+		hidden_effect = { set_country_flag = JAP_aizawas_trial_over_flag }
 	}
 
 }
