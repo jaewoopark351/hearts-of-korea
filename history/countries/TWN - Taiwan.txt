@@ -1,5 +1,6 @@
 ﻿capital = 524 #Taiwan
 
+#20260909_kpopmodder: TWN 활성화 오류를 막기 위해 1.19.2에서 제거된 구형 교리 기술을 시작 기술에서 제외합니다.
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -12,9 +13,6 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	mobile_warfare = 1
-	trade_interdiction = 1
-	formation_flying = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	oil_processing = 1
@@ -93,6 +91,7 @@ set_stability = 0.75
 	#BUILDINGS
 	
 
+	#20260909_kpopmodder: 1939 시작 기술에서도 1.19.2에서 제거된 구형 교리를 제외합니다.
 	set_technology = {
 		improved_light_tank = 1 
 		basic_medium_tank = 1 
@@ -105,20 +104,6 @@ set_stability = 0.75
 		support_weapons = 1
 		support_weapons2 = 1
 		paratroopers = 1
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
