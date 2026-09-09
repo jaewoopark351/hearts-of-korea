@@ -21,6 +21,8 @@
 - [1.19.2 맵 재구성 설계](HOK_MAP_RECONSTRUCTION_PLAN.md)
 - [맵 호환성 점검표](MAP_COMPATIBILITY_CHECKLIST.md)
 - [수정 후 검증 점검표](VALIDATION_CHECKLIST.md)
+- [HoK 일본 민주주의 전체 분기 1.19.2 통합 설계](HOK_JAPAN_DEMOCRATIC_BRANCH_INTEGRATION_PLAN.md)
+- [HoK 일본 민주주의 전체 분기 구현 기록](incidents/2026-09-09-japan-democratic-focus-integration-implementation.md)
 - [target-native 맵 구현 기록](incidents/2026-09-01-target-native-map-implementation.md)
 - [중국·만주·일본 1.19.2 바닐라 정렬 구현 기록](incidents/2026-09-01-china-japan-vanilla-alignment-implementation.md)
 - [fresh 맵 격리 사건](incidents/2026-09-01-fresh-map-isolation.md)
@@ -57,7 +59,7 @@ V_TARGET 1.19.2 중국·만주·일본 데이터
 | 중국·만주 province bitmap/RGB | `INHERIT_TARGET` | 현재 target과 다른 1,889 pixel은 한국 crop 안에만 있다. 중국을 다시 칠하지 않는다. |
 | 중국·만주 국가 색상·cosmetic·name pool | `INHERIT_TARGET` + 한국 delta | stale 전역 snapshot을 제거하고 HoK 한국 정의만 분리한다. |
 | 중국·만주 국가 history·focus·AI·OOB | `INHERIT_TARGET` / 적용 | `jungppong`과 stale MAN OOB·CHI 함명 override를 제거했고, 한국을 직접 호출하는 승인된 접점만 target-derived로 유지했다. |
-| 일본 focus·decision·event·AI·character·MIO·history·OOB | `INHERIT_TARGET` + 최소 KOR bridge / 적용 | unchanged focus·AI·character는 삭제 상속하고, 독립 KOR·한국 9도에 필요한 파일만 target-derived로 유지했다. |
+| 일본 focus·decision·event·AI·character·MIO·history·OOB | `TARGET_DERIVED` + 최소 KOR bridge + 승인된 HoK 민주 delta / 적용 | 1.19.2 focus 448개를 보존한 host에 HoK 민주 shared branch만 연결한다. AI·MIO·OOB와 나머지 일본 시스템은 target 기준을 유지한다. |
 | 한국이 일본·중국을 상대하는 HoK 콘텐츠 | `PRESERVE_KOREA` 또는 최소 bridge / 적용 | 현행 바닐라 ID·scope와 호환되는 caller만 유지하고 끊어진 구형 ID는 정리했다. |
 | KJP·KCH·RKY·TWN HoK 고유 태그·cosmetic | `PRESERVE_KOREA` / 적용 | target-derived registry에 필요한 HoK 정의만 유지했다. target이 이미 정의하는 `ANU`의 HoK override는 제거했다. |
 
@@ -91,7 +93,7 @@ V_TARGET 1.19.2 중국·만주·일본 데이터
 
 | 관찰 | 판정 |
 |---|---|
-| 모드 `common/national_focus/japan.txt`는 target과 같은 tree ID `japan_wtt_focus`를 가진 구형 exact-path 파일이다. 모드는 JAP focus 128개, target은 449개다. | `CONFIRMED` |
+| 모드 `common/national_focus/japan.txt`는 target과 같은 tree ID `japan_wtt_focus`를 가진 구형 exact-path 파일이다. 모드는 JAP focus 128개, target은 448개다. | `CONFIRMED` |
 | 현행 `JAP_historical_strategy_plan.txt`가 요구하는 `JAP_reinforce_the_beijing_garrison` 등 다수 focus가 유효한 일본 트리에 등록되지 않는다. | `CONFIRMED` |
 | 모드 `common/ai_strategy/JAP.txt`는 구형 `JAP_intervene_in_china`를 사용하지만 target은 `JAP_reinforce_the_beijing_garrison` 중심의 현행 중국 구조를 사용한다. | `CONFIRMED` |
 | live `game.log`에서 일본은 1939.06.26 한국에 선전포고하고 1941년 남방전쟁을 시작했지만, 1942년까지 일본의 CHI·중국 군벌 상대 선전포고는 기록되지 않았다. | `CONFIRMED` — 이 실행의 동작에 한정한다. |
@@ -202,16 +204,21 @@ state 복구에서는 source state별 province 집합을 대조해 `1085–1087`
 
 ### 6.1 바닐라를 직접 상속하는 파일
 
-다음 stale exact-path snapshot은 제거했다. 저장소에 target 원본 복사본을 남기지 않았으므로 설치된 1.19.2 파일을 직접 상속한다.
+다음 stale exact-path snapshot은 초기 정렬에서 제거했다. 일본 focus는 2026-09-09 승인된 후속 구현으로 아래 목록에서 제외됐고, 나머지는 설치된 1.19.2 파일을 직접 상속한다.
 
-- `common/national_focus/japan.txt`
 - `common/ai_strategy/JAP.txt`
 - `common/ai_strategy_plans/JAP_alternate_strategy_plan.txt`
 - `common/characters/JAP.txt`
 - `common/units/names_divisions/JAP_names_divisions.txt`
 - 일본 state `282`, `530`, `531`, `536`, `537`
 
-특히 일본 focus는 내용이 동일한 바닐라 파일을 모드에 복사할 필요가 없다는 사용자의 결정을 따른다. 현행 `japan_wtt_focus`와 historical plan은 모드의 구형 128-focus snapshot이 아니라 target의 449-focus tree를 사용해야 한다. state `528`은 target을 기준으로 province `10011`을 state `1085` 쓰시마로 분리한 map delta만 유지한다. 이 숫자는 최초 정렬의 `1088`에서 후속 마이그레이션된 것이며, state 정의의 `name="STATE_1088"`과 localisation key `STATE_1088`은 번역·표시 호환성을 위해 그대로 유지한다.
+일본 focus는 현행 `japan_wtt_focus`와 historical plan이 구형 128-focus snapshot이 아니라 target의 448-focus tree를 사용한다는 원칙을 유지한다. 다만 2026-09-09 후속 승인으로 정확한 1.19.2 target 파일을 host 기준본으로 소유한다. host의 바닐라 root·imperial-influence inlay·continuous-focus 좌표는 target 원값과 일치하며, `JAP_the_unthinkable_option` 정의 뒤의 HoK 민주 shared root hook 하나, 정치 진입점 guard와 NCNS 정치 하위 자체 `allow_branch` 경계 guard만 gameplay delta로 둔다. HoK 선택 시 정상 SEA 산업·군부 공통 계통은 숨기지 않고 산업 root의 조건부 offset 하나로 HoK 오른쪽에 배치한다. HoK 40개 본문은 별도 shared-focus 파일로 격리하고 root는 바닐라 focus를 참조하지 않는 절대 `(10,0)`에 둔다. 나머지 39개는 root를 따라가는 내부 상대좌표 사슬을 유지해 전체 범위가 `x=6..18`, `y=0..9`다. state `528`은 target을 기준으로 province `10011`을 state `1085` 쓰시마로 분리한 map delta만 유지한다. 이 숫자는 최초 정렬의 `1088`에서 후속 마이그레이션된 것이며, state 정의의 `name="STATE_1088"`과 localisation key `STATE_1088`은 번역·표시 호환성을 위해 그대로 유지한다.
+
+> D-JAP-16 최초안은 SEA 산업·군부를 숨김 대상으로 잘못 분류해 롤백했다. 교정본은 정치 진입점 6개의 reciprocal lock/HIDE guard를 유지하고, 부모 숨김을 덮어쓰는 NCNS 정치 하위 자체 `allow_branch` 경계 9개에 동일한 HoK 조건을 병합한다. SEA 산업 34개와 군부 61개는 공통 계통으로 계속 사용할 수 있으며, `HIDE`에서 HoK가 선택됐을 때 산업 root에 `x=-83` offset을 적용해 두 계통을 HoK 오른쪽으로 함께 이동한다. 448개 정의·ID와 비HoK 경로는 보존했다.
+
+> D-JAP-15의 shared→ordinary 상대좌표안은 20:08 HOI4 1.19.2 실행에서 `relative_focus_id: JAP_the_unthinkable_option does not exist. Relative focus must be scripted before this.` 오류로 반증됐다. 현재 production은 HoK root를 절대 `(10,0)`에 두는 fallback을 적용했다. 20:18 fresh 실행에서는 관련 focus·위치 오류 없이 1936 single-player까지 로드됐고, 사용자 제공 완료 화면에서는 `HIDE` 상태의 HoK 분기와 SEA 공통 계통 유지 및 NCNS 정치 계통 제거를 확인했다. `SHOW`, 역방향 잠금과 save/load는 미검증이다.
+
+> 2026-09-09 수량 정정: 과거 구현 기록의 449는 `id = JAP_*` 행을 단순 집계해 UI용 `jap_imperial_influence_inlay_window`까지 포함한 값이다. 실제 `focus = { ... }` 정의는 448개다. 과거 incident 문서는 당시 기록으로 유지하고, 이후 검증은 448개 focus ID 집합을 기준으로 한다.
 
 ### 6.2 target-derived KOR bridge
 
@@ -242,6 +249,8 @@ state 복구에서는 source state별 province 집합을 대조해 `1085–1087`
 `common/on_actions/04_mtg_on_actions.txt`는 삭제 상속 예외다. target-derived 파일에서 `ASIA_DECOLONIZED`의 `JAP release = KOR`, JAP→KOR 전 부대 이전, KOR→JAP 전 부대 이전에 해당하는 12줄만 제거했다. 이는 독립 HoK KOR의 OOB가 왕복 처리 뒤 JAP에 넘어가는 것을 막는 최소 lifecycle 보호다. 나머지 MAN·MEN·중국·탈식민화 처리는 target을 유지한다.
 
 ### 6.3 HoK 일본 전용 additive 제거
+
+> 2026-09-09 후속 상태: 사용자는 1.19.2 바닐라 일본 중점 전체를 유지하면서 원작 HoK 민주주의 전체 분기를 화면 옆의 독립 구역으로 복구하는 production 구현을 승인했다. [통합 설계](HOK_JAPAN_DEMOCRATIC_BRANCH_INTEGRATION_PLAN.md)와 [구현 기록](incidents/2026-09-09-japan-democratic-focus-integration-implementation.md)이 아래 제거 상태를 민주 focus 40개와 그 필수 종속성에 한해서 supersede한다. 구형 일본 전체 snapshot·AI buff·MIO·평화회의 AI는 제거 상태를 유지한다.
 
 다음 비바닐라 일본 시스템은 초기 정렬에서 제거했다.
 
@@ -312,7 +321,7 @@ custom 일본 focus만 참조하는 GFX·flag·localisation은 엔진 동작에 
 - [x] regions `155`, `243` override를 제거해 target membership을 상속한다.
 - [x] `buildings.txt`의 비한국 rows를 target에 맞추고 한국 site·port 보정을 유지했다.
 - [x] Manchuria rail·supply delta 제거 결과가 allowlist와 일치한다.
-- [x] 현행 `JAP_historical_strategy_plan`이 target에서 상속되는 현행 일본 focus tree를 참조한다.
+- [x] 현행 `JAP_historical_strategy_plan`이 448개 target focus를 보존한 target-derived 일본 host를 참조한다. HoK root는 player-only다.
 - [x] residual source 감사에서 삭제한 구형 focus, decision category, character, division name group, idea와 MIO의 활성 caller가 0이다.
 - [x] 구형 `JAP_HoK` 전체 시스템과 buff caller는 제거 상태를 유지하고, 승인된 1939년 경고·최후통첩 decision 두 개만 target-derived 일본 decision에 복구했다.
 - [x] KOR ID·namespace·localisation과 한국 map registry의 정적 참조·중복 검사가 통과했다.

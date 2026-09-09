@@ -4,6 +4,8 @@
 
 중국·만주·일본을 1.19.2 target에 맞추는 후속 작업은 [중국·일본 바닐라 정렬 정책](CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md)의 파일 분류, 기능 손실과 행위 검증 조건을 함께 적용한다.
 
+원작 HoK 일본 민주주의 분기 구현은 [HoK 일본 민주주의 전체 분기 1.19.2 통합 설계](HOK_JAPAN_DEMOCRATIC_BRANCH_INTEGRATION_PLAN.md)의 ID migration, target host allowlist, AI·DLC 정책과 focus/event별 검증 계약을 추가로 적용한다. 실제 적용 범위와 아직 실행하지 않은 검사는 [2026-09-09 구현 기록](incidents/2026-09-09-japan-democratic-focus-integration-implementation.md)에 기록한다.
+
 ## 1. 변경 범위 확인
 
 - [ ] 수정한 파일 목록과 수정 이유가 있다.
@@ -19,8 +21,12 @@
 
 - [ ] Clausewitz 문법의 괄호, 따옴표, 키-값 구조를 검사했다.
 - [ ] 중복 정의와 존재하지 않는 참조를 검사했다.
+- [ ] HoK 일본 root는 `relative_position_id` 없이 절대 `x=10`, `y=0`이고, 하위 39개 HoK 상대좌표 사슬에 누락·순환 참조가 없다.
+- [ ] D-JAP-16 적용 시 정치 진입점 6개의 reciprocal mutex/HIDE guard와 NCNS 정치 하위 자체 `allow_branch` 경계 9개의 HoK guard가 정확히 대응한다.
+- [ ] HoK 본토경제 8개와 바닐라 SEA 산업 34개·군부 61개를 구분했고, 공통 SEA 계통에는 HoK mutex/HIDE guard가 남지 않았다.
 - [ ] 파일 인코딩과 줄바꿈이 엔진 요구사항에 맞는다.
 - [ ] localisation `.yml`의 UTF-8 BOM, 기존 locale header, `KEY:0` 형식, 중복·누락·정확한 casing을 검사했다.
+- [ ] dual localisation 대상은 English/Korean 대응 파일의 상대경로, key set과 표시 문자열 body가 1:1로 일치한다.
 - [ ] `$KEY$` 치환, scripted token, 색상 코드, icon token, `\n`, quote escaping이 보존됐다.
 - [ ] 일반 YAML formatter를 사용하지 않았고 BOM·줄바꿈·공백·Unicode를 일괄 정규화하지 않았다.
 - [ ] `Korean Language` 의존 계약과 load order를 보존하고, 승인된 경우 실제 게임에서 한국어 표시를 확인했다.
@@ -33,7 +39,9 @@
 - [ ] 목표 바닐라를 기준으로 변경 전·후 차이를 확인했다.
 - [ ] 변경 의도와 무관한 전역 데이터 차이가 없다.
 - [ ] 삭제한 stale override가 목표 버전 바닐라를 실제로 상속하며, 내용이 같은 불필요한 바닐라 복사본이 모드에 남지 않았다.
-- [ ] target-derived 파일의 target 대비 차이가 승인된 KOR bridge allowlist에만 한정된다.
+- [ ] target-derived 파일의 target 대비 차이가 승인된 KOR bridge와 명시적으로 승인된 HoK 일본 민주 host/delta allowlist에만 한정된다.
+- [ ] 일본 host의 WTT/NCNS root, imperial-influence inlay와 continuous-focus 절대좌표가 정확한 target 원값과 일치하고, HoK shared hook은 한 번만 존재한다.
+- [ ] D-JAP-16/17을 구현했다면 target 대비 host delta는 정치 entry 6개, NCNS 정치 하위 자체 `allow_branch` 경계 9개, timing-safe HoK 선택 flag와 HoK-HIDE용 SEA 산업 위치 offset 1개에 한정된다.
 - [ ] ID 마이그레이션 표의 모든 항목이 문맥별로 반영됐다.
 - [ ] 이전 ID가 잘못 남은 곳과 새 ID가 잘못 유입된 곳을 모두 검색했다.
 - [ ] 필수 의존 모드와의 충돌을 검사했다.
@@ -45,10 +53,18 @@
 
 - [ ] 바닐라 기준 실행 결과를 기록했다.
 - [ ] 필수 의존 모드만의 결과를 기록했다.
+- [ ] Hearts of Korea 단독 결과를 기록해 모드 자체 문제와 의존 모드 VFS 문제를 분리했다.
 - [ ] Hearts of Korea와 필수 의존 모드 조합을 같은 조건에서 실행했다.
 - [ ] exact playset, load order, DLC, language와 실행 ID를 기록했다.
 - [ ] 런처 진입, 데이터 초기화, 메인 메뉴, 관련 bookmark의 새 게임, 한국 국가 선택까지 승인된 범위를 통과했다.
 - [ ] 변경 지역의 줌, state 선택, 보급·철도·해군 경로 표시를 확인했다.
+- [ ] WTT·NCNS 활성 상태에서 `HIDE`와 `SHOW` 각각 1936 시작, HoK root 진행 중, 완료 후 dirty relayout과 save/load 뒤에도 절대 root와 하위 상대좌표 분기가 같은 위치에 남는다.
+- [ ] HoK root의 절대 위치 `(10,0)`과 전체 범위 `x=6..18`, `y=0..9`가 화면 경계, focus 아이콘·제목·연결선, branch UI, inlay와 충돌하지 않는다.
+- [ ] `error.log`에 `HOK_JAP_strengthen_civilian_government`의 `relative_focus_id` 또는 `Relative focus must be scripted before this` 오류가 다시 나타나지 않는다.
+- [ ] `HIDE`에서 HoK root 완료 직후 NCNS 정치 301개 구간이 자체 `allow_branch` 경계를 통해 재등장하지 않는다.
+- [ ] `SHOW`에서는 경쟁 정치 계통이 보여도 HoK와 동시에 진입할 수 없다.
+- [ ] SEA 산업 34개·군부 61개는 HoK 완료 전후 계속 표시·사용되며, `HIDE` 완료 후 각각 `x=20..37`, `x=39..65` 범위로 이동한다.
+- [ ] 경제·군부 shortcut과 `jap_imperial_influence_inlay_window`가 빈 위치로 이동시키거나 불필요한 가로 폭을 만들지 않는다.
 - [ ] 일시정지를 해제한 짧은 진행 중 즉시 크래시, 멈춤, event spam 또는 심각한 오류 증가가 없다.
 - [ ] 원래 실패의 positive 재현 경로와 중요한 blocked/negative 경로를 확인했다.
 - [ ] persistent ID, flag, variable, history 또는 map 변경이면 승인된 save/load 검사를 수행했다.
@@ -72,10 +88,12 @@
 - [ ] division name group과 OOB가 유효하다.
 - [ ] 주요 state의 owner/core/claim, victory point, resource가 유지된다.
 - [ ] HoK 한국 경계·명칭·핵심 콘텐츠가 유지된다.
-- [ ] 중국·만주·일본은 target control과 일치하며, 제거가 승인된 HoK 기능만 사라졌다.
+- [ ] 중국·만주는 target control과 일치하며, 일본은 명시적으로 승인된 HoK 민주 delta를 제외하고 target control과 일치한다.
 - [ ] `SND`를 포함한 중국 국가의 map/UI 색상과 owner·core가 target과 일치한다.
-- [ ] 현행 일본 focus·AI plan·decision·character·MIO·OOB가 유효하고 historical AI에서 중국전쟁 경로가 실제로 진행된다.
-- [ ] 독립 한국 때문에 필요한 1936·지원 대상 1939 일본 OOB 위치와 KOR caller 예외만 allowlist에 남았다.
+- [ ] 현행 일본 focus·AI plan·decision·character·MIO·OOB가 유효하고, 승인된 HoK 민주 분기와 공존하며, historical AI에서 중국전쟁 경로가 실제로 진행된다.
+- [ ] HoK 미선택 1936 플레이어·AI는 SEA 산업 34개와 군부 61개를 target과 동일하게 이용하며, HoK 선택 뒤에도 기능은 유지되고 위치만 D-JAP-17에 따라 바뀐다.
+- [ ] 1939 bookmark에서는 history상 완료된 경쟁 정치 root와의 배타성 및 기존 일본 history·OOB가 유지된다.
+- [ ] 독립 한국 때문에 필요한 1936·지원 대상 1939 일본 OOB 위치, KOR caller와 명시적으로 승인된 HoK 일본 민주 분기·필수 종속성만 allowlist에 남았다.
 - [ ] 한국 추가 state `1082–1084`가 target의 한국 전체·남부·북부 판정, 저항, decision와 WTT Japan 효과에 문맥별로 반영됐다.
 
 ## 7. 최종 보고
