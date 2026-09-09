@@ -472,7 +472,7 @@ target에 이미 있는 `JAP_tetsu_katayama`, `JAP_tomoyuki_yamashita`, `JAP_tam
 6. `HIDE`에서는 HoK 선택 flag를 먼저 설정하고 `mark_focus_tree_layout_dirty`를 호출해 정치 root와 위 9개 경계를 다시 평가한다. `SHOW`에서는 바닐라 UI 규칙에 따라 정치 계통이 보일 수 있으나 reciprocal mutex로 진입은 차단한다.
 7. SEA 산업·군부 95개의 효과·선행 조건·선택 가능성은 보존한다. 다만 `HIDE`에서 HoK가 선택되면 산업 root 하나에 `x=-83` 조건부 offset을 적용해 산업 범위를 `x=20..37`, 그 상대 자식인 군부 범위를 `x=39..65`로 함께 이동한다. HoK 범위 `x=6..18`과 최소 2열 간격을 둔다.
 
-20:18:25 fresh 실행은 HOI4 1.19.2 `(bd08)`, DLC 36개, 활성 Hearts of Korea 모드 1개를 기록했고 20:18:50에 1936 single-player로 진입했다. clean `error.log`에는 `relative_focus_id`, `Error in focus`, `allow_branch` 또는 위치 관련 오류가 0개였다. 이어 사용자가 제공한 1936-01-01 `HIDE` 화면은 `문민정부 강화` 완료 상태에서 HoK 40개와 정상 SEA 산업·군부 계통은 남고 NCNS 정치 계통은 사라진 결과를 보여 준다. 이 범위는 `RUNTIME_CONFIRMED_HIDE`이며 `SHOW`, 역방향 잠금, 자연 70일 완료와 save/load는 `NOT RUN`이다.
+20:18:25 fresh 실행은 HOI4 1.19.2 `(bd08)`, DLC 36개, 활성 Hearts of Korea 모드 1개를 기록했고 20:18:50에 1936 single-player로 진입했다. clean `error.log`에는 `relative_focus_id`, `Error in focus`, `allow_branch` 또는 위치 관련 오류가 0개였다. 이어 사용자가 제공한 1936-01-01 `HIDE` 화면은 `문민정부 강화` 완료 상태에서 HoK 40개와 정상 SEA 산업·군부 계통은 남고 NCNS 정치 계통은 사라진 결과를 보여 준다. 이 범위는 `RUNTIME_CONFIRMED_HIDE`이며 `SHOW`, 역방향 잠금, 실제 2·26 사건 완료 경로와 save/load는 `NOT RUN`이다.
 
 `ai_will_do = 0` 하나만으로 historical behavior 보존을 확정하지 않는다. 실제 AI plan, focus availability와 대안 가중치를 함께 검사해야 한다.
 
@@ -601,7 +601,7 @@ production 구현 승인에 따라 WP0과 WP2-WP6의 소스 작업을 적용했�
 - [ ] `SHOW`에서 HoK root 완료 뒤 경쟁 정치 계통은 표시되더라도 mutex로 선택할 수 없다.
 - [ ] SEA 산업 34개·군부 61개와 경제·군부 shortcut은 HoK 완료 전후 모두 표시·사용되며, HIDE 완료 후 산업 `x=20..37`, 군부 `x=39..65` 범위로 이동한다.
 - [ ] 후속 flag 변화, 저장 후 재접속과 구 save에서 고이소·도호카이·황후·불교사회주의 하위 경계가 다시 나타나지 않는다.
-- [ ] `jap_imperial_influence_inlay_window`와 가로 스크롤 범위가 target 공통 계통을 정상적으로 포함한다.
+- [ ] `jap_imperial_influence_inlay_window`와 가로 스크롤 범위가 target 공통 계통을 정상적으로 포함한다. **STARTUP ACCEPTED / UI CONFIRMATION PENDING (D-JAP-18):** `HIDE` 완료 후 화면 부재와 HoK용 위치 override 누락을 확인해 `x=2000`, `y=700`의 10번째 override를 추가했다. 정적 검사와 23:24 fresh startup·1936 진입은 통과했으나 실제 패널 배치는 아직 확인되지 않았다.
 
 ### 13.3 행동
 
@@ -674,6 +674,7 @@ production 구현 승인에 따라 WP0과 WP2-WP6의 소스 작업을 적용했�
 | D-JAP-15 | HoK root의 후속 배치 기준 | `JAP_the_unthinkable_option`을 참조한 shared→ordinary 상대좌표안은 20:08 런타임에서 `relative_focus_id ... does not exist`로 `DISPROVEN`. root를 절대 `(10,0)`으로 두는 fallback을 적용하고 하위 39개의 상대좌표 사슬은 유지. 전체 `x=6..18`; 20:18 startup과 HIDE 화면 `CONFIRMED` |
 | D-JAP-16 | HoK 완료 뒤 경쟁 정치 계통 처리 | 최초 SEA 산업·군부 분류는 오판으로 롤백. 정치 entry 6개의 mutex/HIDE guard를 유지하고 NCNS 정치 하위 자체 `allow_branch` 경계 9개에 같은 HoK 완료/선택 flag 조건을 전파. HoK 완료 후 `HIDE` 화면 `CONFIRMED`; `SHOW`·역방향 잠금·save/load `NOT RUN` |
 | D-JAP-17 | HoK 완료 뒤 공통 SEA 산업·군부 배치 | 기능은 보존하고 `HIDE`에서 산업 root에 `x=-83` offset 1개만 적용. 정적 범위 산업 `x=20..37`, 군부 `x=39..65`; 완료 후 공통 계통 유지·재배치 화면 `CONFIRMED` |
+| D-JAP-18 | HoK 완료 뒤 imperial-influence inlay 배치 | `HIDE` + HoK 완료/선택 flag 전용 10번째 override를 `x=2000`, `y=700`으로 최소 구현; 정적 검사와 23:24 fresh startup·1936 진입은 통과, 실제 UI 배치·`SHOW`·save/load `UNPROVEN / NOT RUN` |
 
 D-JAP-08의 첫 런타임에서는 HoK 범위 `x = -8..4`가 좌단에서 잘리는 것이 확인됐다. 이어 HoK와 바닐라 root·절대 UI 요소를 8열 평행 이동해 HoK를 `x = 0..12`로 옮겼지만 사용자 제공 화면에서 바닐라 구성요소 사이의 과도한 공백이 확인됐다. 이 중간안은 D-JAP-15의 절대 `(10,0)` fallback이 대체하며, 바닐라 좌표는 1.19.2 원값으로 복원한다.
 
@@ -692,7 +693,7 @@ D-JAP-08의 첫 런타임에서는 HoK 범위 `x = -8..4`가 좌단에서 잘리
 - `allow_branch` 숨김, `obsolete_focus_branches_visibility`의 `HIDE`/`SHOW`, 완료 후 `mark_focus_tree_layout_dirty`와 save/load 뒤에도 root와 하위 분기가 같은 위치에 남아야 한다.
 - focus 아이콘·제목·연결선, 분기 선택 UI, continuous-focus 창 및 inlay와 충돌하지 않아야 한다.
 
-target-derived `japan.txt`의 WTT root `x=12`, NCNS root `x=27`, continuous-focus `x=20`과 inlay 좌표 10개는 설치된 1.19.2 target 원값으로 복원하고 정적으로 일치함을 확인했다. 20:08 실행은 상대좌표안의 실패를 재현했고, 20:18 fresh 실행에서는 절대좌표 fallback이 새 focus/위치 오류 없이 1936 single-player까지 로드됐다. 이어 사용자 제공 완료 화면은 `HIDE`에서 HoK와 SEA 공통 계통의 배치를 확인했다. root 진행 중, `SHOW`, 역방향 잠금과 save/load는 후속 검증 대상으로 남는다.
+target-derived `japan.txt`의 WTT root `x=12`, NCNS root `x=27`, continuous-focus `x=20`과 기존 inlay 좌표 10개(기본 1개 + override 9개)는 설치된 1.19.2 target 원값으로 복원하고 정적으로 일치함을 확인했다. D-JAP-18은 이 좌표를 변경하지 않고 HoK 상태 전용 10번째 override만 추가한다. 20:08 실행은 상대좌표안의 실패를 재현했고, 20:18 fresh 실행에서는 절대좌표 fallback이 새 focus/위치 오류 없이 1936 single-player까지 로드됐다. 이어 사용자 제공 완료 화면은 `HIDE`에서 HoK와 SEA 공통 계통의 배치를 확인했다. root 진행 중, `SHOW`, 역방향 잠금과 save/load는 후속 검증 대상으로 남는다.
 
 정적 좌표 계산에서는 활성 NCNS focus와 HoK focus의 정확한 좌표 중복이 0이다. 다만 `HOK_JAP_develop_nanyo_gunto` `(15,8)`과 `JAP_the_lecture_group_ascendant` `(15,9)`가 한 칸 수직 인접하므로 아이콘·제목·연결선의 실제 가독성은 런타임 확인 대상으로 남긴다.
 
@@ -702,7 +703,13 @@ D-JAP-15 뒤 화면의 큰 잔존 묶음을 SEA 산업·군부 계통으로 분�
 
 교정 경계는 정치 entry 6개와 NCNS 정치 내부 자체 `allow_branch` 9개다. 보통 자식은 prerequisite 부모의 disallowed 상태를 상속하지만, 자체 `allow_branch`가 있으면 부모 조건을 덮어쓴다. 따라서 9개 경계의 기존 조건 안에 HoK 완료 및 `HOK_JAP_democratic_branch_selected`를 병합했고, 나머지 정치 focus는 prerequisite 전파에 맡겼다. 완료 reward에서 선택 flag를 먼저 설정한 뒤 relayout하는 timing-safe 순서는 유지한다.
 
-사용자 제공 완료 화면에서 `HIDE`의 NCNS 정치 구간이 보이지 않고 SEA 산업·군부 공통 계통이 유지·재배치된 것은 확인했다. 후속 UI 판정에서는 `SHOW`의 mutex 잠금, 반대 정치 root 선완료 시 HoK 역방향 잠금, save/load, 두 shortcut과 `jap_imperial_influence_inlay_window`가 빈 공간이나 유령 이동을 만들지 않는지를 검사한다.
+사용자 제공 완료 화면에서 `HIDE`의 NCNS 정치 구간이 보이지 않고 SEA 산업·군부 공통 계통이 유지·재배치된 것은 확인했다. 후속 D-JAP-18 화면에서는 완료 전 보이던 `jap_imperial_influence_inlay_window`가 완료 후 보이지 않는 회귀를 확인했다. 수정 전 source상 HoK 완료/선택 flag용 위치 override가 없어 기본 `X=10000`에 남는 결함은 `CONFIRMED`이며, 축소된 가로 스크롤 범위 밖으로 이탈한다는 메커니즘은 `STRONGLY_SUPPORTED`다. 현재는 HoK 상태 전용 `x=2000`, `y=700` override를 구현했고 정적 검사와 23:24 fresh startup·1936 진입을 통과했다. 실제 패널 배치, `SHOW`, 역방향 잠금, save/load 및 두 shortcut은 아직 검증하지 않았다. 상세 근거는 [D-JAP-18 진단·구현 기록](incidents/2026-09-09-japan-imperial-influence-inlay-offscreen.md)에 둔다.
+
+### 16.3 D-JAP-18 imperial-influence inlay 위치 회귀
+
+수정 전 production inlay block은 설치된 1.19.2 target 좌표와 기능적으로 일치하지만, target에는 HoK root가 없었다. 기존 9개 `override_position`은 바닐라 정치 focus만 검사하며, 기능상 대응하는 바닐라 문민정부 경로도 `JAP_strengthen_civilian_government`만 인식했다. 새 `HOK_JAP_strengthen_civilian_government`와 timing-safe `HOK_JAP_democratic_branch_selected`가 어떤 inlay 위치 조건에도 포함되지 않은 것이 직접 결함이었다.
+
+후속 구현은 기존 9개 override 뒤에 `HIDE` + HoK 완료/선택 flag 조건의 10번째 override를 추가하고 `x=2000`, `y=700`을 사용한다. target `nationalfocusview.gui`의 focus item `165x128`, spacing `96x130`, center offset `(130,32)`와 imperial-influence GUI `620x670`을 기준으로, y=700 구간의 HoK 우측 경계 약 1735px와 SEA/군부 좌측 경계 약 2914px 사이에 창 `2000..2620px`를 둔다. 좌우 정적 여유는 약 265px와 294px다. 기존 `x=1500`을 복사하거나 우측 끝을 넘기는 `x=6800`을 쓰지 않았다. 구현·정적 검사와 23:24 fresh startup은 통과했지만 실제 runtime 좌표 판정은 `UNPROVEN`이다.
 
 ## 17. 현재 판정
 
@@ -717,6 +724,7 @@ D-JAP-15 뒤 화면의 큰 잔존 묶음을 SEA 산업·군부 계통으로 분�
 - 정치 root를 숨겨도 자체 `allow_branch`를 가진 하위 경계가 부모 상태를 무시해 최대 135개의 정치 focus를 다시 표시할 수 있다: source graph와 1.19.2 규칙으로 `CONFIRMED`
 - D-JAP-16 교정안은 정치 entry 6개와 NCNS 하위 경계 9개에만 HoK guard를 적용한다: HoK 완료 후 HIDE 화면 `CONFIRMED`; SHOW·역방향 잠금·save/load `NOT RUN`
 - D-JAP-17은 복원한 SEA 공통 계통을 HIDE에서 HoK 오른쪽으로 이동한다: 정적 범위 산업 `x=20..37`, 군부 `x=39..65`; 완료 후 화면에서 공통 계통 유지·재배치 `CONFIRMED`
+- D-JAP-18에서 HoK 완료 후 imperial-influence inlay 화면 부재와 HoK용 위치 override 누락을 확인했다: 화면 부재·수정 전 source 누락 `CONFIRMED`; 기본 `X=10000`의 가로 범위 이탈 `STRONGLY_SUPPORTED`; HoK 전용 `x=2000`, `y=700` override 구현·정적 검증과 fresh startup `CONFIRMED`; 실제 UI 재검증 `UNPROVEN`
 - 원작 민주 분기 효과를 1.19.2에 그대로 복사해도 안전하다: `DISPROVEN`
 - HoK 민주 분기 통합의 production 소스 구현이 적용됐다: `CONFIRMED`
 - 구현의 초기 화면 표시는 사용자 제공 화면으로 확인됐다: `CONFIRMED`; 전체 분기 진행·이벤트·회귀 동작은 `UNPROVEN`

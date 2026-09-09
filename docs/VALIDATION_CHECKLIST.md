@@ -40,7 +40,7 @@
 - [ ] 변경 의도와 무관한 전역 데이터 차이가 없다.
 - [ ] 삭제한 stale override가 목표 버전 바닐라를 실제로 상속하며, 내용이 같은 불필요한 바닐라 복사본이 모드에 남지 않았다.
 - [ ] target-derived 파일의 target 대비 차이가 승인된 KOR bridge와 명시적으로 승인된 HoK 일본 민주 host/delta allowlist에만 한정된다.
-- [ ] 일본 host의 WTT/NCNS root, imperial-influence inlay와 continuous-focus 절대좌표가 정확한 target 원값과 일치하고, HoK shared hook은 한 번만 존재한다.
+- [ ] 일본 host의 WTT/NCNS root, imperial-influence inlay 기본 위치와 기존 바닐라 9개 override, continuous-focus 절대좌표가 정확한 target 원값과 일치하고, HoK shared hook과 HoK 전용 10번째 inlay override는 각각 한 번만 존재한다.
 - [ ] D-JAP-16/17을 구현했다면 target 대비 host delta는 정치 entry 6개, NCNS 정치 하위 자체 `allow_branch` 경계 9개, timing-safe HoK 선택 flag와 HoK-HIDE용 SEA 산업 위치 offset 1개에 한정된다.
 - [ ] ID 마이그레이션 표의 모든 항목이 문맥별로 반영됐다.
 - [ ] 이전 ID가 잘못 남은 곳과 새 ID가 잘못 유입된 곳을 모두 검색했다.
@@ -64,7 +64,8 @@
 - [ ] `HIDE`에서 HoK root 완료 직후 NCNS 정치 301개 구간이 자체 `allow_branch` 경계를 통해 재등장하지 않는다.
 - [ ] `SHOW`에서는 경쟁 정치 계통이 보여도 HoK와 동시에 진입할 수 없다.
 - [ ] SEA 산업 34개·군부 61개는 HoK 완료 전후 계속 표시·사용되며, `HIDE` 완료 후 각각 `x=20..37`, `x=39..65` 범위로 이동한다.
-- [ ] 경제·군부 shortcut과 `jap_imperial_influence_inlay_window`가 빈 위치로 이동시키거나 불필요한 가로 폭을 만들지 않는다.
+- [ ] 경제·군부 shortcut과 `jap_imperial_influence_inlay_window`가 빈 위치로 이동시키거나 불필요한 가로 폭을 만들지 않는다. **D-JAP-18 STARTUP ACCEPTED / UI CONFIRMATION PENDING:** `HIDE` 완료 후 inlay 화면 부재와 HoK용 위치 override 누락을 확인해 `x=2000`, `y=700`의 10번째 override를 추가했다. 정적 검사와 23:24 fresh startup·1936 진입은 통과했지만 [진단·구현 기록](incidents/2026-09-09-japan-imperial-influence-inlay-offscreen.md)의 실제 UI 항목은 아직 미검증이다.
+- [ ] D-JAP-18 수정 뒤 완료 직후 dirty relayout, focus 화면 재진입, save/load, `SHOW`, 여러 해상도·UI 배율·줌에서 inlay가 스크롤 범위 안에 남고 바닐라 9개 위치 override가 회귀하지 않는다.
 - [ ] 일시정지를 해제한 짧은 진행 중 즉시 크래시, 멈춤, event spam 또는 심각한 오류 증가가 없다.
 - [ ] 원래 실패의 positive 재현 경로와 중요한 blocked/negative 경로를 확인했다.
 - [ ] persistent ID, flag, variable, history 또는 map 변경이면 승인된 save/load 검사를 수행했다.

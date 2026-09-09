@@ -1,6 +1,6 @@
 # 2026-09-09 HoK 일본 민주주의 전체 분기 1.19.2 통합 구현 기록
 
-> 상태: **D-JAP-15 절대좌표 fallback 및 D-JAP-16/17 교정본 HIDE 완료 화면 확인 / SHOW·역방향 잠금·save/load 미검증**
+> 상태: **D-JAP-15 절대좌표 fallback 및 D-JAP-16/17 정치·SEA HIDE 동작 확인 / D-JAP-18 최소 수정·fresh startup 통과 및 UI 확인 대기 / SHOW·역방향 잠금·save/load 미검증**
 >
 > 목표 게임: HOI4 `Operation Postern v1.19.2.0.a729 (d245)`
 >
@@ -8,7 +8,7 @@
 >
 > 원작 Workshop item `2898629778`은 읽기 전용 출처이며 successor 업로드 대상이 아니다.
 
-이 문서는 [HoK 일본 민주주의 전체 분기 1.19.2 통합 설계](../HOK_JAPAN_DEMOCRATIC_BRANCH_INTEGRATION_PLAN.md)를 실제 production 소스에 적용한 결과를 기록한다. 사용자 제공 화면은 shared 분기의 로드와 이전 좌표 시안 문제뿐 아니라, 최초 D-JAP-16 적용 뒤 정상 SEA 산업·군부 계통만 사라지고 경쟁 NCNS 정치 하위 계통은 남는 역전 현상을 보여 준다. 19:32 로그와 source graph 재감사로 숨김 대상을 교정했고, 20:08 실행은 shared→ordinary 상대좌표안을 반증했다. 20:18 fresh 실행과 사용자 제공 완료 화면은 절대좌표 fallback의 로드 및 교정본의 `HIDE` 동작을 확인했다. `SHOW`, 역방향 잠금과 save/load는 아직 재검증하지 않았다.
+이 문서는 [HoK 일본 민주주의 전체 분기 1.19.2 통합 설계](../HOK_JAPAN_DEMOCRATIC_BRANCH_INTEGRATION_PLAN.md)를 실제 production 소스에 적용한 결과를 기록한다. 사용자 제공 화면은 shared 분기의 로드와 이전 좌표 시안 문제뿐 아니라, 최초 D-JAP-16 적용 뒤 정상 SEA 산업·군부 계통만 사라지고 경쟁 NCNS 정치 하위 계통은 남는 역전 현상을 보여 준다. 19:32 로그와 source graph 재감사로 숨김 대상을 교정했고, 20:08 실행은 shared→ordinary 상대좌표안을 반증했다. 20:18 fresh 실행과 사용자 제공 완료 화면은 절대좌표 fallback의 로드 및 D-JAP-16/17 정치 숨김·SEA 공통 계통 재배치를 확인했다. 후속 22:03 화면에서는 `제국의 영향력` inlay가 HoK 완료 후 보이지 않는 D-JAP-18 회귀를 확인했다. D-JAP-18은 HoK 상태 전용 10번째 위치 override로 최소 수정했으며, 23:24 fresh startup과 1936 진입은 통과했다. 실제 패널 배치와 `SHOW`, 역방향 잠금, save/load는 아직 재검증하지 않았다.
 
 ## 1. 승인 범위
 
@@ -23,6 +23,7 @@
 - Taiwan 독립 기능에 직접 필요한 `TWN` history의 제거된 doctrine-tech 참조 정리
 - NCNS 정치 하위 자체 `allow_branch` 경계 9개의 HoK HIDE guard
 - 완료 reward와 relayout 사이의 판정 시점을 제거하는 HoK 선택 flag
+- D-JAP-18의 `HIDE` + HoK 완료/선택 flag 전용 imperial-influence inlay 위치 override 1개
 
 구현하지 않은 범위:
 
@@ -30,8 +31,9 @@
 - `Minshu_ikki` 음악 조건 복구
 - 원작 일본 전체 focus/history/OOB/character/MIO/decision snapshot 복원
 - map/state/province/railway 데이터 변경
-- 교정본의 자연 완료, HIDE/SHOW UI, save/load, 멀티플레이와 성능 검증
-- SEA 산업·군부 및 그 shortcut·imperial-influence inlay의 HoK 전용 표시 변경
+- 교정본의 실제 2·26 사건 완료·진행 중 `HIDE` UI, `SHOW`, save/load, 멀티플레이와 성능 검증
+- SEA 산업·군부의 gameplay 또는 visibility 변경. D-JAP-17의 HoK-HIDE용 산업 root 위치 offset 1개만 예외
+- 경제·군부 shortcut 위치 변경과 D-JAP-18 범위 밖의 imperial-influence GUI·가시성·gameplay 변경
 - Git commit/push/tag, Workshop 업로드 또는 metadata 변경
 
 ## 2. 기준선과 증거
@@ -93,7 +95,7 @@ japan_wtt_focus (target 1.19.2 focus 448개)
 ```
 
 - host는 정확한 target `japan.txt`를 기준으로 추가했다.
-- host에는 바닐라 WTT root 정의 뒤 shared root hook 하나, 바닐라 정치 진입점 6개의 HoK 상호배타/HIDE guard와 NCNS 정치 하위 자체 `allow_branch` 경계 9개의 동일 HIDE guard만 추가했다. 바닐라 root·inlay·continuous-focus 좌표와 SEA 산업·군부 계통은 정확한 1.19.2 target 동작으로 복원했다.
+- host에는 바닐라 WTT root 정의 뒤 shared root hook 하나, 바닐라 정치 진입점 6개의 HoK 상호배타/HIDE guard, NCNS 정치 하위 자체 `allow_branch` 경계 9개의 동일 HIDE guard, HoK-HIDE용 SEA 산업 root 위치 offset 1개와 D-JAP-18 inlay 위치 override 1개만 추가했다. 바닐라 root·inlay 기본 위치와 기존 9개 override·continuous-focus 좌표 및 SEA 산업·군부 계통은 정확한 1.19.2 target 값을 유지한다. D-JAP-18 추가분은 target에 없는 HoK 완료/선택 상태만 처리한다.
 - HoK 본문은 `common/national_focus/HOK_JAP_democratic_shared.txt`에 격리했다.
 - 배치 이력은 우측 후보 `x=155` → 좌측 절대 `x=-4` → 전체 `+8` 이동과 HoK 절대 `x=4` → `JAP_the_unthinkable_option` 상대 `(-2,0)` 순서다. 사용자 화면에서 앞선 두 절대좌표안은 각각 좌단 잘림과 과도한 공백이 확인됐고, 상대좌표안은 20:08 HOI4 1.19.2 실행에서 shared→ordinary 참조 오류가 확인돼 폐기했다. 현재 HoK root는 절대 `(10,0)`이며, 하위 39개의 상대좌표 사슬은 유지해 전체 범위가 `x=6..18`, `y=0..9`로 남는다.
 - 본토경제 root는 HoK root의 prerequisite 자식 `x = 6`, `y = 1`로 연결했다. 따라서 host hook은 하나만 필요하다.
@@ -268,11 +270,12 @@ japan_wtt_focus (target 1.19.2 focus 448개)
 - localisation: 양쪽 UTF-8 BOM, 헤더 정상, 헤더 제외 body byte-decoded 동일
 - 신규 focus/event/idea/portrait/category의 직접 GFX 참조: 고유 70개, 누락 0
 - 관련 Paradox Script의 brace, quote와 comment-aware nesting: 이상 0
-- target host 동작 차이: WTT root 정의 뒤 shared hook 1개, 기존 정치 entry 6개의 reciprocal mutex/HIDE guard, NCNS 정치 하위 자체 `allow_branch` 경계 9개의 HIDE guard와 HoK-HIDE용 SEA 위치 offset 1개다. WTT root `x=12`, NCNS root `x=27`, continuous-focus `x=20`과 inlay 좌표 10개는 target 원값과 일치한다.
+- target host 동작 차이: WTT root 정의 뒤 shared hook 1개, 기존 정치 entry 6개의 reciprocal mutex/HIDE guard, NCNS 정치 하위 자체 `allow_branch` 경계 9개의 HIDE guard, HoK-HIDE용 SEA 위치 offset 1개와 D-JAP-18 inlay 위치 override 1개다. WTT root `x=12`, NCNS root `x=27`, continuous-focus `x=20`과 target inlay 좌표 10개(기본 1개 + override 9개)는 원값과 일치한다. 추가한 10번째 override만 HoK 완료/선택 flag를 검사한다.
 - D-JAP-16 감사: target/project host는 각각 448개 focus ID를 보존한다. NCNS 정치 구간은 top-root closure 297개와 독립 고이소 계통 4개이며, 부모 숨김을 덮는 자체 `allow_branch` 경계 9개를 모두 보강했다.
 - SEA 산업·군부의 HoK mutex/HIDE/선택 flag 변경은 모두 제거했다. 95개 focus의 기능상 차이는 없고 산업 root에 HIDE+HoK 위치 offset 1개만 남는다. HoK 선택 flag는 완료 reward의 relayout보다 먼저 설정된다.
 - 현재 HoK root는 `relative_position_id` 없이 절대 `x=10`, `y=0`이다. 하위 39개의 상대참조 누락·순환은 0이며 계산된 40개 범위는 `x=6..18`, `y=0..9`다.
 - 활성 NCNS focus와 HoK focus의 정확 좌표 충돌은 0이다. `HOK_JAP_develop_nanyo_gunto` `(15,8)`과 `JAP_the_lecture_group_ascendant` `(15,9)`의 한 칸 수직 인접은 실제 UI 가독성 검증 대상으로 남긴다.
+- D-JAP-18 좌표는 target focus item `165x128`, spacing `96x130`, center offset `(130,32)`와 inlay `620x670`을 사용해 산정했다. `y=700` 구간의 HoK 우측 경계 약 1735px와 SEA/군부 좌측 경계 약 2914px 사이에 창 `x=2000..2620`을 두며 정적 좌우 여유는 약 265px와 294px다.
 - cross-country negative path: `MAN`·`KOR`·`SOV` 소멸/소유권 guard와 야마시타 전역 character 복귀 scope 검토 완료
 - 제거 대상 stale ID/namespace: 활성 잔재 0
 - `descriptor.mod`: 신규 `replace_path` 0
@@ -292,12 +295,16 @@ japan_wtt_focus (target 1.19.2 focus 448개)
 
 2026-09-09 20:08의 후속 직접 실행에서는 상대좌표안을 포함한 소스가 로드됐고, `error.log`가 `HOK_JAP_strengthen_civilian_government`에 대해 `relative_focus_id: JAP_the_unthinkable_option does not exist. Relative focus must be scripted before this.`를 기록했다. 이 실행으로 top-level shared focus가 해당 ordinary focus를 직접 위치 기준으로 사용하는 D-JAP-15 상대좌표안은 `DISPROVEN`이다. production에서는 root의 `relative_position_id`를 제거하고 같은 계산 결과인 절대 `x=10`, `y=0` fallback을 적용했으며, 하위 39개 상대좌표 사슬은 유지했다. 20:08 실행은 fallback 적용 전 실패 재현이므로 fallback의 후속 startup이나 UI 성공을 증명하지 않는다.
 
-절대좌표 fallback 적용 뒤 20:18:25 fresh process를 시작했다. `system.log` 289행은 `Operation Postern v1.19.2.0.a729 (bd08)`, DLC 36개, 활성 모드 1개와 Hearts of Korea를 기록했고, `game.log`는 20:18:50에 1936 single-player가 시작됐음을 기록했다. clean `error.log`에는 `relative_focus_id`, `Error in focus`, `allow_branch` 또는 위치 관련 오류가 0개였다. 이어 사용자가 제공한 1936-01-01 화면은 121 정치력과 `문민정부 강화` 완료 상태에서 HoK 40개와 정상 SEA 산업·군부 계통이 남고 NCNS 정치 계통은 보이지 않는 결과를 보여 준다. 따라서 절대좌표 fallback startup과 D-JAP-16/17의 HoK 완료 후 `HIDE` 화면은 `CONFIRMED`다.
+절대좌표 fallback 적용 뒤 20:18:25 fresh process를 시작했다. `system.log` 289행은 `Operation Postern v1.19.2.0.a729 (bd08)`, DLC 36개, 활성 모드 1개와 Hearts of Korea를 기록했고, `game.log`는 20:18:50에 1936 single-player가 시작됐음을 기록했다. clean `error.log`에는 `relative_focus_id`, `Error in focus`, `allow_branch` 또는 위치 관련 오류가 0개였다. 이어 사용자가 제공한 1936-01-01 화면은 121 정치력과 `문민정부 강화` 완료 상태에서 HoK 40개와 정상 SEA 산업·군부 계통이 남고 NCNS 정치 계통은 보이지 않는 결과를 보여 준다. 따라서 절대좌표 fallback startup과 D-JAP-16/17의 정치 숨김·SEA 공통 계통 재배치는 `CONFIRMED`다. 이 판정은 inlay와 전체 가로 스크롤 계약의 통과를 뜻하지 않는다.
 
-다만 현재 자동화 세션은 브라우저 surface만 제공하고 native Windows app 제어 service가 없어 게임 화면을 직접 조작하거나 캡처할 수 없었다. 시험한 `-auto_run` 명령 파일도 실행 결과를 남기지 않아 사용하지 않았으며, 자동 실행한 일시정지 게임은 저장 없이 종료했다. 사용자 화면으로 완료 상태는 확인했지만 자연 70일 완료 과정, `list_hidden_focuses JAP`, `SHOW`, 역방향 잠금과 save/load는 `NOT RUN`이다. 아래 검증 항목을 갱신한다.
+다만 현재 자동화 세션은 브라우저 surface만 제공하고 native Windows app 제어 service가 없어 게임 화면을 직접 조작하거나 캡처할 수 없었다. 시험한 `-auto_run` 명령 파일도 실행 결과를 남기지 않아 사용하지 않았으며, 자동 실행한 일시정지 게임은 저장 없이 종료했다. 사용자 화면으로 완료 상태는 확인했지만 실제 2·26 사건 완료 과정, `list_hidden_focuses JAP`, `SHOW`, 역방향 잠금과 save/load는 `NOT RUN`이다.
+
+D-JAP-18 구현 시점에도 수정 전 데이터를 로드한 `hoi4.exe` PID 27032가 실행 중이었다. 미저장 상태를 해칠 수 있어 종료·reload·새 process 실행을 하지 않았고, 22:03 세션의 `system/setup/game/error/code_revisions` 로그를 `.local-artifacts/incidents/2026-09-09-d-jap-18/pre-implementation-2203-active/`에 먼저 보존했다. 그 시점에는 코드 diff와 구조 검사만 통과했고 fresh runtime은 시작하지 않았다.
+
+이후 사용자가 실행한 23:24 fresh 세션은 HOI4 1.19.2 `(68eb)`, DLC 36개, active mod 1개인 Hearts of Korea를 기록하고 1936 single-player에 세 번 진입했다. 새 inlay/focus/layout/parser 오류는 0건이며, 수정본 startup은 `CONFIRMED`다. 유일한 신규 오류 종류는 gamestate reset 때 OneDrive의 `random.log`를 `random_1.log`로 바꾸지 못한 6건으로 D-JAP-18과 연결되지 않는다. 최종 로그 5개는 `.local-artifacts/incidents/2026-09-09-d-jap-18/post-implementation-2324-final/`에 보존했다. 로그는 실제 패널 위치와 조작을 기록하지 않으므로 UI 성공은 `UNPROVEN`이다. 정상 clean 1936 positive path는 단순 70일 완료가 아니라 56일 뒤 아이자와 mission에서 이어지는 2·26 사건 HoK option이 `complete_national_focus`를 실행하는 경로다. `Focus.AutoComplete`는 빠른 probe로만 분리한다. 아래 검증 항목을 갱신한다.
 
 1. 절대 `(10,0)` root와 하위 상대좌표 사슬의 `SHOW`·save/load 배치 및 확대 화면에서 아이콘·제목·연결선 충돌이 없는지
-2. root 진행 중과 자연 70일 완료 과정, 완료 후 `SHOW`와 save/load에서 위치가 유지되는지
+2. root 진행 중과 실제 2·26 사건 완료 과정, 완료 후 `SHOW`와 save/load에서 위치가 유지되는지
 3. 2·26 사건이 진행 중 root를 정상 완료하고 다른 option이 동시에 보이지 않는지
 4. 민주 내전의 수도, state, 육·해군 분할, militia 10개와 인물 소속
 5. NCNS faction-tier ideas가 내전 뒤 어떤 상태로 남는지
@@ -314,11 +321,12 @@ japan_wtt_focus (target 1.19.2 focus 448개)
 16. D-JAP-16 교정 뒤 save/load한 `HIDE` 게임에서도 NCNS 정치 301개 구간이 자체 `allow_branch` 경계를 통해 재등장하지 않는지
 17. `SHOW`에서는 경쟁 정치 계통이 보이더라도 HoK와 동시에 진입할 수 없는지, 경쟁 정치 root를 먼저 완료하면 HoK가 잠기는지
 18. SEA 산업 34개·군부 61개의 실제 진행·효과가 유지되고 save/load 뒤에도 정적 범위 `x=20..37`, `x=39..65` 배치를 유지하는지
-19. 경제·군부 shortcut과 imperial-influence inlay가 빈 공간이나 유령 이동을 만들지 않는지
+19. D-JAP-18: 수정 전 `HIDE`의 HoK 완료 후 imperial-influence inlay 화면 부재와 HoK용 위치 override 누락은 `CONFIRMED`, 기본 `X=10000`의 스크롤 범위 이탈은 `STRONGLY_SUPPORTED`다. HoK 전용 `x=2000`, `y=700` override는 구현·정적 검증했고 23:24 fresh startup도 통과했다. 완료 직후 실제 UI·재진입·save/load·`SHOW`는 `UNPROVEN / NOT RUN`이다. 상세 근거는 [별도 진단·구현 기록](2026-09-09-japan-imperial-influence-inlay-offscreen.md)에 둔다.
+20. 경제·군부 shortcut이 빈 공간이나 유령 이동을 만들지 않는지
 
-따라서 D-JAP-15 상대좌표안과 최초 D-JAP-16의 대상 분류는 각각 엔진 로그와 사용자 런타임 화면으로 반증됐다. root 절대 `(10,0)` fallback, SEA rollback, 정치 하위 경계 9개 보강과 위치 offset 1개를 적용했다. fallback startup과 완료 후 `HIDE` 화면은 확인했지만 자연 완료 과정, `SHOW`, 역방향 잠금과 save/load는 남아 있으므로 전체 runtime 완료 또는 release-ready로 판정하지 않는다.
+따라서 D-JAP-15 상대좌표안과 최초 D-JAP-16의 대상 분류는 각각 엔진 로그와 사용자 런타임 화면으로 반증됐다. root 절대 `(10,0)` fallback, SEA rollback, 정치 하위 경계 9개 보강, SEA 위치 offset 1개와 D-JAP-18 inlay 위치 override 1개를 적용했다. fallback startup, D-JAP-16/17 정치·SEA `HIDE` 동작과 D-JAP-18 수정본의 fresh startup은 확인했지만, D-JAP-18 실제 UI와 2·26 사건 완료 과정, `SHOW`, 역방향 잠금과 save/load가 남아 있으므로 전체 runtime 완료 또는 release-ready로 판정하지 않는다.
 
-## 10. Git와 외부 작업
+## 10. 구현 당시 Git와 외부 작업
 
 - commit: 수행하지 않음
 - push/tag: 수행하지 않음
@@ -326,3 +334,14 @@ japan_wtt_focus (target 1.19.2 focus 448개)
 - launcher/playset/save/settings 변경: 수행하지 않음
 - 설치된 1.19.2 게임 파일 변경: 수행하지 않음
 - 원작 Workshop 파일 변경: 수행하지 않음
+
+### 10.1 2026-09-09 후속 Git 상태
+
+구현 뒤 사용자의 명시적 요청으로 관련 변경을 분리해 다음 commit을 `origin/main`에 push했다.
+
+- `b51df1e` — `feat(japan): restore HoK democratic focus branch for 1.19.2`
+- `f674c0b` — `fix(taiwan): remove obsolete doctrine technology references`
+- `8c300d8` — `docs(japan): record democratic branch integration and validation`
+- `494bc15` — `docs(repo): require contributor notes for production changes`
+
+D-JAP-18 문서화 시작 기준은 `main` / `494bc15` clean이었다. 후속 구현 요청에서는 기존 문서 변경을 보존한 채 `common/national_focus/japan.txt`에 HoK 전용 위치 override 1개를 추가했다. production 변경은 후속 Git 승인에 따라 `9a80c6f` (`fix(japan): keep imperial influence panel on HoK path`)로 별도 commit했으며, 이 문서 묶음은 별도 commit 대상으로 유지한다.
