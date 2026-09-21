@@ -22,6 +22,7 @@ KOR_historical_plan = {
 	}
 	
 
+	#20260921_kpopmodder: Preserve the Kim Gu route and integrate reachable expansion focuses in prerequisite order.
 	ai_national_focuses = {
 		KOR_future_of_the_republic
 		KOR_democracy_advance_forward
@@ -30,36 +31,90 @@ KOR_historical_plan = {
 		KOR_democracy_is_our_strength
 		KOR_ban_extremism
 		KOR_strengthen_government_support
+
+		#20260921_kpopmodder: Twelve 35-day focuses provide nominal 420-day work during the unchanged 365-day government-support spirit.
 		KOR_devalue_the_won
 		KOR_support_light_industry_export
 		KOR_ask_the_ifc_to_invest
 		KOR_seoul_national_university_expansion
+		HOK_KOR_technical_colleges
+		HOK_KOR_workshop_apprenticeships
+		HOK_KOR_workers_night_schools
+		HOK_KOR_parliamentary_committee
+		HOK_KOR_civil_service_audit
+		HOK_KOR_technical_civic_schools
+		HOK_KOR_rural_education_missions
+		HOK_KOR_public_accounts_committee
+
+		KOR_national_unity
+		KOR_prepare_for_the_next_war
+		KOR_expend_military_budget
+		KOR_call_up_the_rokrf
+		KOR_homeland_defence_special_act
+		KOR_begin_rearmament
+		KOR_daehanminguk_yuggun
+		KOR_army_augmentation
+
+		KOR_development_of_heavy_industry
+		HOK_KOR_production_review
+		HOK_KOR_standardized_mass_production
+		HOK_KOR_production_quality_assurance
+
+		HOK_KOR_procurement_contracts
+		HOK_KOR_ammunition_standards
+		HOK_KOR_ordnance_inspection
+		HOK_KOR_field_maintenance
+		HOK_KOR_distributed_ordnance_depots
+
+		KOR_daehanminguk_gonggun
+		KOR_new_fighter
+		KOR_korea_aerospace_industry
+		HOK_KOR_domestic_aircraft_designs
+		HOK_KOR_formation_flying
+		HOK_KOR_air_maintenance_school
+		HOK_KOR_combat_lessons_center
+
 		KOR_gyeongbu_expressway
 		KOR_gyeongui_expressway
 		KOR_first_new_city_plan
 		KOR_construction_boom
-		KOR_development_of_heavy_industry
+		HOK_KOR_university_industry_labs
+		HOK_KOR_skilled_workforce
+		HOK_KOR_integrated_production_planning
 		KOR_guro_industrial_complex
-		KOR_national_unity
-		KOR_expend_military_budget
 		KOR_pohang_iron__steel_company
 		KOR_namdong_imhae_industrial_complex
 		KOR_saemaeul_undong
-		KOR_prepare_for_the_next_war
 		KOR_industrialized_society
 		KOR_miracle_on_the_han_river
-		KOR_begin_rearmament
-		KOR_daehanminguk_yuggun
-		KOR_army_augmentation
+		KOR_attract_worldclass_scholars
+
 		KOR_build_the_gyeryongdae
 		KOR_establish_dasmfe
-		KOR_call_up_the_rokrf
-		KOR_homeland_defence_special_act
 		KOR_organization_rokasf
-		KOR_attract_worldclass_scholars
 		KOR_armored_focus
 		KOR_mobile_infantry
 		KOR_armored_vanguard
+		KOR_research_army_doctrine
+		HOK_KOR_staff_exercises
+		HOK_KOR_winter_training
+		HOK_KOR_mountain_reconnaissance
+		HOK_KOR_radio_coordination
+		HOK_KOR_joint_arms_exercises
+
+		KOR_daehanminguk_haegun
+		HOK_KOR_rapid_repairs
+		HOK_KOR_escort_school
+		HOK_KOR_archipelago_training
+		HOK_KOR_anti_submarine_school
+		HOK_KOR_coastal_fire_control
+
+		HOK_KOR_regional_industry_fund
+		HOK_KOR_pyeongan_machine_workshops
+		HOK_KOR_gangwon_electrical_workshops
+		HOK_KOR_chungcheong_supplier_network
+		HOK_KOR_gyeongsang_export_workshops
+
 		KOR_eight_province_development_committee
 		KOR_northern_development
 		KOR_develop_unsan_gold_mine
@@ -73,7 +128,26 @@ KOR_historical_plan = {
 		KOR_agricultural_support_in_jaeryeong_plain
 		KOR_gangwon_underground_resources
 		KOR_build_soyanggang_dam
-		KOR_daehanminguk_haegun
+		KOR_comprehensive_national_development_plan
+		HOK_KOR_link_power_grids
+		HOK_KOR_industrial_power_allocation
+		HOK_KOR_industrial_measurement_standards
+		HOK_KOR_factory_safety_inspections
+		HOK_KOR_national_power_coordination
+
+		KOR_invitation_of_foreign_naval_designers
+		KOR_commerce_raiding
+		HOK_KOR_fleet_staff_college
+		HOK_KOR_underway_replenishment
+		HOK_KOR_deck_training
+		HOK_KOR_naval_air_coordination
+		HOK_KOR_amphibious_rehearsals
+	}
+
+	#20260921_kpopmodder: Keep the approved mass-production and domestic-aircraft choices when this plan is active.
+	focus_factors = {
+		HOK_KOR_flexible_production_lines = 0
+		HOK_KOR_foreign_aircraft_designs = 0
 	}
 	
 	research = {
@@ -101,4 +175,180 @@ KOR_historical_plan = {
 		id = "USA"
 		value = 500
 	}
+}
+
+#20260921_kpopmodder: Boost the two existing defensive-war focuses only while the Kim Gu route can use them.
+HOK_KOR_historical_defense_plan = {
+	name = "Korean historical defensive emergency"
+	desc = "Conditional focus priorities supporting the existing Korean historical plan"
+	allowed = { original_tag = KOR }
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEFAULT }
+			}
+			has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEMOCRATIC }
+		}
+		has_completed_focus = KOR_president_kim_gu
+		has_government = democratic
+		has_defensive_war = yes
+		has_completed_focus = KOR_national_unity
+		has_completed_focus = KOR_expend_military_budget
+		NOT = {
+			AND = {
+				has_completed_focus = KOR_call_up_the_rokrf
+				has_completed_focus = KOR_homeland_defence_special_act
+			}
+		}
+	}
+	abort = {
+		NOT = {
+			AND = {
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEFAULT }
+					}
+					has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEMOCRATIC }
+				}
+				has_completed_focus = KOR_president_kim_gu
+				has_government = democratic
+				has_defensive_war = yes
+				has_completed_focus = KOR_national_unity
+				has_completed_focus = KOR_expend_military_budget
+				NOT = {
+					AND = {
+						has_completed_focus = KOR_call_up_the_rokrf
+						has_completed_focus = KOR_homeland_defence_special_act
+					}
+				}
+			}
+		}
+	}
+	focus_factors = {
+		KOR_call_up_the_rokrf = 50
+		KOR_homeland_defence_special_act = 50
+	}
+	weight = { factor = 1.0 }
+}
+
+#20260921_kpopmodder: After an existing Manchurian victory, prefer the unchanged Kim Gu route to founding the Asian Union.
+HOK_KOR_historical_asian_union_formation_plan = {
+	name = "Korean historical post-victory Asian Union"
+	desc = "Conditional focus priorities supporting the existing Korean historical plan"
+	allowed = { original_tag = KOR }
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEFAULT }
+			}
+			has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEMOCRATIC }
+		}
+		has_completed_focus = KOR_president_kim_gu
+		has_government = democratic
+		is_subject = no
+		is_in_faction = no
+		has_global_flag = kor_triumph_for_the_manchuria_flag
+		NOT = { has_completed_focus = KOR_founding_of_the_asian_union }
+		NOT = { has_completed_focus = KOR_liberation_of_the_europe }
+	}
+	abort = {
+		NOT = {
+			AND = {
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEFAULT }
+					}
+					has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEMOCRATIC }
+				}
+				has_completed_focus = KOR_president_kim_gu
+				has_government = democratic
+				is_subject = no
+				is_in_faction = no
+				has_global_flag = kor_triumph_for_the_manchuria_flag
+				NOT = { has_completed_focus = KOR_founding_of_the_asian_union }
+				NOT = { has_completed_focus = KOR_liberation_of_the_europe }
+			}
+		}
+	}
+	focus_factors = {
+		KOR_the_vanguard_of_asian_democracy = 20
+		KOR_stop_moderate_diplomacy = 20
+		KOR_war_on_pacifism = 20
+		KOR_claiming_northern_conquest = 20
+		KOR_preemptive_strike_on_manchuria = 20
+		KOR_founding_of_the_asian_union = 50
+	}
+	weight = { factor = 1.0 }
+}
+
+#20260921_kpopmodder: Prefer invitations and the five expansion focuses while Korea leads its founded Asian Union.
+HOK_KOR_historical_asian_cooperation_plan = {
+	name = "Korean historical Asian Union cooperation"
+	desc = "Conditional focus priorities supporting the existing Korean historical plan"
+	allowed = { original_tag = KOR }
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEFAULT }
+			}
+			has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEMOCRATIC }
+		}
+		has_completed_focus = KOR_president_kim_gu
+		has_government = democratic
+		is_subject = no
+		is_faction_leader = yes
+		has_completed_focus = KOR_founding_of_the_asian_union
+		NOT = {
+			AND = {
+				has_completed_focus = KOR_invitation_to_independent_asian_countries
+				has_completed_focus = HOK_KOR_asian_trade_secretariat
+				has_completed_focus = HOK_KOR_asian_customs_convention
+				has_completed_focus = HOK_KOR_asian_development_fund
+				has_completed_focus = HOK_KOR_asian_armaments_commission
+				has_completed_focus = HOK_KOR_asian_license_agreement
+			}
+		}
+	}
+	abort = {
+		NOT = {
+			AND = {
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEFAULT }
+					}
+					has_game_rule = { rule = KOR_AI_BEHAVIOR option = DEMOCRATIC }
+				}
+				has_completed_focus = KOR_president_kim_gu
+				has_government = democratic
+				is_subject = no
+				is_faction_leader = yes
+				has_completed_focus = KOR_founding_of_the_asian_union
+				NOT = {
+					AND = {
+						has_completed_focus = KOR_invitation_to_independent_asian_countries
+						has_completed_focus = HOK_KOR_asian_trade_secretariat
+						has_completed_focus = HOK_KOR_asian_customs_convention
+						has_completed_focus = HOK_KOR_asian_development_fund
+						has_completed_focus = HOK_KOR_asian_armaments_commission
+						has_completed_focus = HOK_KOR_asian_license_agreement
+					}
+				}
+			}
+		}
+	}
+	focus_factors = {
+		KOR_invitation_to_independent_asian_countries = 20
+		HOK_KOR_asian_trade_secretariat = 20
+		HOK_KOR_asian_customs_convention = 20
+		HOK_KOR_asian_development_fund = 20
+		HOK_KOR_asian_armaments_commission = 20
+		HOK_KOR_asian_license_agreement = 20
+	}
+	weight = { factor = 1.0 }
 }
