@@ -10,6 +10,15 @@
 
 ## 문서 목록
 
+- [한국 중점 보상 재조정 설계·적용 상태](docs/HOK_KOREAN_FOCUS_REBALANCE_PLAN.md): 보상 강화 적용, 게임 검증 진행 중; 보병장비 한정 생산량 +10%는 미적용·대안 응답 대기
+- [한국 중점 트리 보존·35일화·확장 설계](docs/HOK_KOREAN_FOCUS_EXPANSION_PLAN.md): 기존 266개 보존, 기간 단축 범위와 단계별 확장 제안
+- [한국 중점 좌표·연결선 재배치 설계](docs/HOK_KOREAN_FOCUS_LAYOUT_PLAN.md): x0~194·y0~24 압축 배치 적용; HIDE 초기 상태 전체 분야 화면 검수 완료, 조건별 검증 범위는 문서 참조
+- [한국 중점 압축 좌표표](docs/HOK_KOREAN_FOCUS_LAYOUT_COORDINATES.md): AA58→압축 배치 326개 전후 좌표; 절대 7/상대 319, offset 조건 유지·이동량 0
+- [한국 중점 압축 작업 기록](docs/incidents/2026-09-21-korean-focus-compact.md): 현재 압축 배치의 실행·화면 검증과 남은 범위
+- [한국 중점 첫 재배치 이력](docs/incidents/2026-09-21-korean-focus-layout.md): AA58 넓은 배치의 HIDE·SHOW, 만주 선 수정과 바로가기·최종 실행 관측
+- [한국 중점 1차 확장 구현 기록](docs/incidents/2026-09-21-korean-focus-expansion.md): 152개 35일화, 신규 60개와 검증 범위
+- [한국 중점 1차 60개 명세](docs/HOK_KOREAN_FOCUS_FIRST_60_SPEC.md): 실제 이름·연결·보상·원본 대응과 현재 압축 기본 절대좌표
+- [한국 중점용 바닐라 이식 후보](docs/HOK_KOREAN_FOCUS_DONOR_CATALOG.md): 원본 중점·의존성·한국 연결 지점과 이식 난도
 - [크래시 디버깅 런북](docs/CRASH_DEBUGGING_RUNBOOK.md): 재현부터 원인 격리까지의 표준 절차
 - [증거 기록 양식](docs/EVIDENCE_RECORD_TEMPLATE.md): 실행별 로그와 가설을 섞지 않고 기록하는 양식
 - [맵 호환성 점검표](docs/MAP_COMPATIBILITY_CHECKLIST.md): 맵 데이터 이식 전후의 필수 검사
