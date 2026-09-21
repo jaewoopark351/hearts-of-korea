@@ -1,0 +1,12 @@
+#20260921_kpopmodder: Extend the inherited volunteer corps with optional Korean support decisions using the French intervention-category structure.
+HOK_KOR_overseas_support_category = {
+	icon = generic_political_actions
+	allowed = { tag = KOR }
+	visible = { has_completed_focus = HOK_KOR_volunteer_liaison_bureau }
+}
+#20260921_kpopmodder: Provide consent-based economic follow-ups for the existing Asian Union without creating another faction.
+HOK_KOR_asian_cooperation_category = {
+	icon = generic_political_actions
+	allowed = { tag = KOR }
+	visible = { has_completed_focus = HOK_KOR_asian_trade_secretariat }
+}

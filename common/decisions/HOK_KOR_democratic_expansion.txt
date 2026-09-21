@@ -1,0 +1,305 @@
+#20260921_kpopmodder: Adapt French stockpile-funded aid for wartime allies or Korean volunteer hosts, with daily target prechecks and no generated equipment.
+HOK_KOR_overseas_support_category = {
+	HOK_KOR_send_medical_equipment = {
+		icon = generic_prepare_civil_war
+		target_array = global.countries
+		target_root_trigger = {
+			has_completed_focus = HOK_KOR_overseas_medical_detachments
+			has_government = democratic
+		}
+		target_trigger = {
+			FROM = {
+				exists = yes
+				NOT = { tag = KOR }
+				has_war = yes
+				OR = {
+					is_in_faction_with = ROOT
+					has_volunteers_amount_from = { tag = ROOT count > 0 }
+				}
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		visible = { has_completed_focus = HOK_KOR_overseas_medical_detachments }
+		available = {
+			has_government = democratic
+			has_capitulated = no
+			has_equipment = { support_equipment > 49 }
+		}
+		cost = 10
+		days_re_enable = 60
+		ai_will_do = {
+			factor = 1
+			modifier = { factor = 0 NOT = { has_equipment = { support_equipment > 299 } } }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_equipment = { support_equipment > 49 }
+					FROM = {
+						exists = yes
+						has_war = yes
+						NOT = { has_war_with = ROOT }
+						OR = {
+							is_in_faction_with = ROOT
+							has_volunteers_amount_from = { tag = ROOT count > 0 }
+						}
+					}
+				}
+				send_equipment = { type = support_equipment amount = 50 target = FROM }
+			}
+		}
+	}
+	HOK_KOR_send_relief_equipment = {
+		icon = generic_prepare_civil_war
+		target_array = global.countries
+		target_root_trigger = {
+			has_completed_focus = HOK_KOR_overseas_relief_network
+			has_government = democratic
+		}
+		target_trigger = {
+			FROM = {
+				exists = yes
+				NOT = { tag = KOR }
+				has_war = yes
+				OR = {
+					is_in_faction_with = ROOT
+					has_volunteers_amount_from = { tag = ROOT count > 0 }
+				}
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		visible = { has_completed_focus = HOK_KOR_overseas_relief_network }
+		available = {
+			has_government = democratic
+			has_capitulated = no
+			has_equipment = { infantry_equipment > 99 }
+		}
+		cost = 15
+		days_re_enable = 90
+		ai_will_do = {
+			factor = 1
+			modifier = { factor = 0 NOT = { has_equipment = { infantry_equipment > 999 } } }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_equipment = { infantry_equipment > 99 }
+					FROM = {
+						exists = yes
+						has_war = yes
+						NOT = { has_war_with = ROOT }
+						OR = {
+							is_in_faction_with = ROOT
+							has_volunteers_amount_from = { tag = ROOT count > 0 }
+						}
+					}
+				}
+				send_equipment = { type = infantry_equipment amount = 100 target = FROM }
+			}
+		}
+	}
+	#20260921_kpopmodder: Bound the optional field-experience exchange to one paid activity with real wartime or volunteer participation.
+	HOK_KOR_field_experience_conference = {
+		icon = generic_army_support
+		visible = { has_completed_focus = HOK_KOR_expeditionary_lessons }
+		available = {
+			has_government = democratic
+			has_capitulated = no
+			OR = {
+				has_war = yes
+				any_other_country = { has_volunteers_amount_from = { tag = ROOT count > 0 } }
+			}
+		}
+		cost = 35
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = { has_government = democratic }
+				AND = {
+					has_war = no
+					NOT = { any_other_country = { has_volunteers_amount_from = { tag = ROOT count > 0 } } }
+				}
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+					has_capitulated = no
+					OR = {
+						has_war = yes
+						any_other_country = { has_volunteers_amount_from = { tag = ROOT count > 0 } }
+					}
+				}
+				#20260921_kpopmodder: Strengthen the paid one-time field-experience conference without changing its participation or cancellation rules.
+				army_experience = 25
+			}
+		}
+	}
+}
+
+#20260921_kpopmodder: Adapt Japanese customs invitations for later or previously declining faction members; agreements remain voluntary and finite.
+HOK_KOR_asian_cooperation_category = {
+	HOK_KOR_offer_customs_convention = {
+		icon = generic_political_discourse
+		target_array = ROOT.allies
+		target_trigger = {
+			FROM = {
+				exists = yes
+				NOT = { tag = KOR }
+				is_in_faction_with = ROOT
+				NOT = { has_war_with = ROOT }
+				NOT = { has_idea = HOK_KOR_customs_participant_idea }
+				NOT = { has_country_flag = HOK_KOR_customs_offer_cooldown }
+			}
+		}
+		visible = { has_completed_focus = HOK_KOR_asian_customs_convention }
+		available = {
+			has_government = democratic
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+		}
+		cost = 25
+		days_re_enable = 180
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = HOK_KOR_customs_offers_tt
+			FROM = {
+				set_country_flag = { flag = HOK_KOR_customs_offer_cooldown value = 1 days = 180 }
+				country_event = { id = HOK_KOR_democratic_expansion.1 hours = 6 }
+			}
+		}
+	}
+	#20260921_kpopmodder: Offer reciprocal licensing only when the vanilla licensing DLC is available; acceptance and cleanup are owned by a treaty idea.
+	HOK_KOR_offer_license_agreement = {
+		icon = generic_political_discourse
+		target_array = ROOT.allies
+		target_trigger = {
+			FROM = {
+				exists = yes
+				NOT = { tag = KOR }
+				is_in_faction_with = ROOT
+				NOT = { has_war_with = ROOT }
+				NOT = { has_idea = HOK_KOR_license_participant_idea }
+				NOT = { has_country_flag = HOK_KOR_license_offer_cooldown }
+			}
+		}
+		visible = {
+			has_completed_focus = HOK_KOR_asian_license_agreement
+			has_dlc = "Death or Dishonor"
+		}
+		available = {
+			has_government = democratic
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+		}
+		cost = 25
+		days_re_enable = 180
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = HOK_KOR_license_offers_tt
+			FROM = {
+				set_country_flag = { flag = HOK_KOR_license_offer_cooldown value = 1 days = 180 }
+				country_event = { id = HOK_KOR_democratic_expansion.4 hours = 6 }
+			}
+		}
+	}
+	#20260921_kpopmodder: Adapt French allied investment into at most two paid projects, consuming each quota at commitment and rechecking ownership before construction.
+	#20260921_kpopmodder: Rebalance to repeatable 180-day contracts; engine decision lifetime controls active projects, while the existing counter and flags remain historical records rather than locks.
+	HOK_KOR_finance_allied_industry = {
+		icon = generic_industry
+		target_array = ROOT.allies
+		target_trigger = { FROM = { exists = yes NOT = { tag = KOR } } }
+		visible = { has_completed_focus = HOK_KOR_asian_development_fund }
+		available = {
+			has_government = democratic
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+			num_of_civilian_factories_available_for_projects > 1
+			FROM = {
+				exists = yes
+				has_capitulated = no
+				is_in_faction_with = ROOT
+				NOT = { has_war_with = ROOT }
+				has_idea = HOK_KOR_customs_participant_idea
+				any_owned_state = {
+					is_core_of = PREV
+					is_fully_controlled_by = PREV
+					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+				}
+			}
+		}
+		cost = 75
+		days_remove = 180
+		fire_only_once = no
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = { factor = 0.25 }
+		complete_effect = {
+			add_to_variable = { HOK_KOR_asian_projects_started = 1 }
+			FROM = { set_country_flag = HOK_KOR_industrial_project_committed }
+			custom_effect_tooltip = HOK_KOR_industrial_project_commitment_tt
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				is_subject = yes
+				is_faction_leader = no
+				NOT = { has_government = democratic }
+				FROM = {
+					OR = {
+						exists = no
+						has_capitulated = yes
+						NOT = { is_in_faction_with = ROOT }
+						has_war_with = ROOT
+						NOT = { has_idea = HOK_KOR_customs_participant_idea }
+						#20260921_kpopmodder: Cancel a repeatable investment when the recipient no longer has a controlled core with construction space.
+						NOT = {
+							any_owned_state = {
+								is_core_of = PREV
+								is_fully_controlled_by = PREV
+								free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+							}
+						}
+					}
+				}
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+					has_capitulated = no
+					is_subject = no
+					is_faction_leader = yes
+					FROM = {
+						exists = yes
+						has_capitulated = no
+						is_in_faction_with = ROOT
+						NOT = { has_war_with = ROOT }
+						has_idea = HOK_KOR_customs_participant_idea
+					}
+				}
+				FROM = {
+					random_owned_state = {
+						limit = {
+							is_core_of = PREV
+							is_fully_controlled_by = PREV
+							free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+						PREV = { set_country_flag = HOK_KOR_industrial_project_completed }
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,115 @@
+#20260921_kpopmodder: Adapt SEA_japan_foreign_policy.97-.102 into independent Korean consent and notification events.
+add_namespace = HOK_KOR_democratic_expansion
+
+country_event = {
+	id = HOK_KOR_democratic_expansion.1
+	title = HOK_KOR_democratic_expansion.1.t
+	desc = HOK_KOR_democratic_expansion.1.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = HOK_KOR_democratic_expansion.1.a
+		trigger = {
+			NOT = { tag = KOR }
+			FROM = { tag = KOR exists = yes is_faction_leader = yes has_government = democratic }
+			is_in_faction_with = FROM
+			NOT = { has_war_with = FROM }
+		}
+		ai_chance = { base = 80 }
+		if = {
+			limit = {
+				NOT = { tag = KOR }
+				FROM = { tag = KOR exists = yes is_faction_leader = yes has_government = democratic }
+				is_in_faction_with = FROM
+				NOT = { has_war_with = FROM }
+				NOT = { has_idea = HOK_KOR_customs_participant_idea }
+			}
+			add_timed_idea = { idea = HOK_KOR_customs_participant_idea days = 730 }
+			FROM = { country_event = { id = HOK_KOR_democratic_expansion.2 hours = 6 } }
+		}
+	}
+	option = {
+		name = HOK_KOR_democratic_expansion.1.b
+		ai_chance = { base = 20 }
+		if = {
+			limit = { FROM = { exists = yes } }
+			FROM = { country_event = { id = HOK_KOR_democratic_expansion.3 hours = 6 } }
+		}
+	}
+}
+
+country_event = {
+	id = HOK_KOR_democratic_expansion.2
+	title = HOK_KOR_democratic_expansion.2.t
+	desc = HOK_KOR_democratic_expansion.2.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = HOK_KOR_democratic_expansion.2.a }
+}
+
+country_event = {
+	id = HOK_KOR_democratic_expansion.3
+	title = HOK_KOR_democratic_expansion.3.t
+	desc = HOK_KOR_democratic_expansion.3.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = HOK_KOR_democratic_expansion.3.a }
+}
+
+#20260921_kpopmodder: Require a current peaceful faction relationship again when accepting the optional licensing treaty.
+country_event = {
+	id = HOK_KOR_democratic_expansion.4
+	title = HOK_KOR_democratic_expansion.4.t
+	desc = HOK_KOR_democratic_expansion.4.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = HOK_KOR_democratic_expansion.4.a
+		trigger = {
+			has_dlc = "Death or Dishonor"
+			NOT = { tag = KOR }
+			FROM = { tag = KOR exists = yes is_faction_leader = yes has_government = democratic }
+			is_in_faction_with = FROM
+			NOT = { has_war_with = FROM }
+		}
+		ai_chance = { base = 80 }
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+				NOT = { tag = KOR }
+				FROM = { tag = KOR exists = yes is_faction_leader = yes has_government = democratic }
+				is_in_faction_with = FROM
+				NOT = { has_war_with = FROM }
+				NOT = { has_idea = HOK_KOR_license_participant_idea }
+			}
+			add_timed_idea = { idea = HOK_KOR_license_participant_idea days = 730 }
+			FROM = { country_event = { id = HOK_KOR_democratic_expansion.5 hours = 6 } }
+		}
+	}
+	option = {
+		name = HOK_KOR_democratic_expansion.4.b
+		ai_chance = { base = 20 }
+		if = {
+			limit = { FROM = { exists = yes } }
+			FROM = { country_event = { id = HOK_KOR_democratic_expansion.6 hours = 6 } }
+		}
+	}
+}
+
+country_event = {
+	id = HOK_KOR_democratic_expansion.5
+	title = HOK_KOR_democratic_expansion.5.t
+	desc = HOK_KOR_democratic_expansion.5.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = HOK_KOR_democratic_expansion.5.a }
+}
+
+country_event = {
+	id = HOK_KOR_democratic_expansion.6
+	title = HOK_KOR_democratic_expansion.6.t
+	desc = HOK_KOR_democratic_expansion.6.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = HOK_KOR_democratic_expansion.6.a }
+}

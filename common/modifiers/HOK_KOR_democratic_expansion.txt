@@ -1,0 +1,14 @@
+#20260921_kpopmodder: Adapt FRA_coordinate_rearmament at reduced values for explicitly accepted bilateral Korean licensing treaties.
+HOK_KOR_asian_license_relation = {
+	valid_relation_trigger = {
+		FROM = {
+			is_in_faction_with = ROOT
+			NOT = { has_war_with = ROOT }
+		}
+	}
+	license_purchase_cost = 0
+	ai_license_acceptance = 20
+	#20260921_kpopmodder: Strengthen both accepted bilateral licensing speed modifiers to 30%, preserving acceptance and purchase-cost modifiers.
+	license_production_speed = 0.3
+	license_tech_difference_speed = 0.3
+}

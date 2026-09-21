@@ -1,0 +1,85 @@
+ideas = {
+	country = {
+		#20260921_kpopmodder: Adapt Chinese civil-administration reforms as a small Korean institution without importing Chinese corruption variables.
+		HOK_KOR_accountable_administration_idea = {
+			picture = generic_foreign_capital
+			allowed = { original_tag = KOR }
+			removal_cost = -1
+			cancel = { NOT = { has_government = democratic } }
+			#20260921_kpopmodder: Apply the approved flat daily political-power reward and retain democratic cancellation.
+			modifier = { political_power_gain = 0.25 }
+		}
+		#20260921_kpopmodder: Upgrade the optional administration institution while preserving the inherited government-recovery timer.
+		HOK_KOR_public_accounts_idea = {
+			picture = generic_foreign_capital
+			allowed = { original_tag = KOR }
+			removal_cost = -1
+			cancel = { NOT = { has_government = democratic } }
+			modifier = {
+				#20260921_kpopmodder: Preserve the strengthened daily political-power reward after the institution upgrade.
+				political_power_gain = 0.25
+				stability_factor = 0.02
+			}
+		}
+		#20260921_kpopmodder: Give rural education a bounded research benefit without China's initial countryside penalty.
+		HOK_KOR_rural_education_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = KOR }
+			removal_cost = -1
+			#20260921_kpopmodder: Strengthen rural research; permanent granting is handled by the focus reward.
+			modifier = { research_speed_factor = 0.10 }
+		}
+		#20260921_kpopmodder: Reward volunteer logistics with a small temporary army-wide benefit without changing volunteer permissions or limits.
+		HOK_KOR_volunteer_supply_idea = {
+			picture = generic_production_bonus
+			allowed = { original_tag = KOR }
+			removal_cost = -1
+			#20260921_kpopmodder: Strengthen army-wide volunteer supply; permanent granting remains in the focus reward.
+			modifier = { supply_consumption_factor = -0.10 }
+		}
+		#20260921_kpopmodder: Adapt Japan's accepted trade spirit to Korean partners with finite duration and faction/war cancellation, without offsite factories.
+		HOK_KOR_customs_participant_idea = {
+			picture = can_wartime_prices_and_trade_board
+			allowed = { always = no }
+			removal_cost = -1
+			cancel = {
+				OR = {
+					NOT = { country_exists = KOR }
+					NOT = { is_in_faction_with = KOR }
+					has_war_with = KOR
+					KOR = { is_faction_leader = no }
+					KOR = { NOT = { has_government = democratic } }
+				}
+			}
+			targeted_modifier = {
+				tag = KOR
+				#20260921_kpopmodder: Strengthen accepted partners' Korean import discount while preserving treaty cancellation.
+				trade_cost_for_target_factor = -0.30
+			}
+		}
+		#20260921_kpopmodder: Use a finite treaty idea to add and remove reciprocal French-style licensing relations through vanilla idea callbacks.
+		HOK_KOR_license_participant_idea = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			cancel = {
+				OR = {
+					NOT = { country_exists = KOR }
+					NOT = { is_in_faction_with = KOR }
+					has_war_with = KOR
+					KOR = { is_faction_leader = no }
+					KOR = { NOT = { has_government = democratic } }
+				}
+			}
+			on_add = {
+				add_relation_modifier = { target = KOR modifier = HOK_KOR_asian_license_relation }
+				KOR = { add_relation_modifier = { target = PREV modifier = HOK_KOR_asian_license_relation } }
+			}
+			on_remove = {
+				remove_relation_modifier = { target = KOR modifier = HOK_KOR_asian_license_relation }
+				KOR = { remove_relation_modifier = { target = PREV modifier = HOK_KOR_asian_license_relation } }
+			}
+			modifier = { custom_modifier_tooltip = HOK_KOR_license_participant_tt }
+		}
+	}
+}

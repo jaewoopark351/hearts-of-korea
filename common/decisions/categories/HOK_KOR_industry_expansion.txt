@@ -1,0 +1,6 @@
+#20260921_kpopmodder: Separate bounded factory contracts from inherited Korean province/resource development.
+HOK_KOR_regional_industry_projects = {
+	icon = generic_political_actions
+	allowed = { original_tag = KOR }
+	visible = { has_completed_focus = HOK_KOR_regional_industry_fund }
+}

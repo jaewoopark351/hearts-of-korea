@@ -519,6 +519,10 @@ ideas = {
 				generate_wargoal_tension = -1.00
 				join_faction_tension = -0.50
 				lend_lease_tension = -1.00
+				#20260921_kpopmodder: Remove the democratic volunteer tension requirement.
+				send_volunteers_tension = -0.50
+				#20260921_kpopmodder: Add five volunteer divisions to the existing diplomatic permission and tension effects.
+				send_volunteer_size = 5
 			}			
 			removal_cost = -1	
 		}
