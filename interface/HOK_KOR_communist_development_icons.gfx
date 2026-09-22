@@ -1,0 +1,71 @@
+#20260922_kpopmodder: Add local technical-development art with dedicated small decision textures.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_rural_service_survey"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_development/yeo_rural_service_survey.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_cooperative_advisers"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_development/yeo_cooperative_advisers.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_workshop_bulletins"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_development/yeo_workshop_bulletins.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_joint_service_accounts"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_development/yeo_joint_service_accounts.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_technical_extension"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_development/yeo_technical_extension.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_planning_secretariat"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_development/pak_planning_secretariat.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_provincial_plan_offices"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_development/pak_provincial_plan_offices.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_technical_delegates"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_development/pak_technical_delegates.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_plan_review_sessions"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_development/pak_plan_review_sessions.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_yeo_technical_extension_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/communist_development/yeo_technical_extension_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_yeo_technical_extension_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/communist_development/yeo_technical_extension_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_pak_planning_administration_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/communist_development/pak_planning_administration_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_pak_planning_administration_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/communist_development/pak_planning_administration_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_yeo_mobile_technical_training"
+        texturefile = "gfx/interface/decisions/HOK_KOR/communist_development/yeo_mobile_technical_training.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_yeo_rural_infrastructure"
+        texturefile = "gfx/interface/decisions/HOK_KOR/communist_development/yeo_rural_infrastructure.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_pak_process_conversion"
+        texturefile = "gfx/interface/decisions/HOK_KOR/communist_development/pak_process_conversion.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_pak_new_production_lines"
+        texturefile = "gfx/interface/decisions/HOK_KOR/communist_development/pak_new_production_lines.dds"
+    }
+}

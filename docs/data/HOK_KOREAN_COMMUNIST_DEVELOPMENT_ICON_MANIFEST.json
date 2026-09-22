@@ -1,0 +1,1502 @@
+{
+    "source_baseline":  {
+                            "branch":  "feat/korean-focus-expansion-ai",
+                            "commit":  "b300b4090b4a779878332c7ec463170bbe16f4d8",
+                            "date":  "2026-09-22",
+                            "working_tree_at_artwork_start":  "clean"
+                        },
+    "status":  "artwork_integrated_static_pass_runtime_not_run",
+    "scope":  "Y3 rural technical extension and P3 planning administration:9focuses+4spirits+4dedicated32x32decisions",
+    "method":  "Mixed permitted PNG pieces and continuation-authored clipboard, seal, network/relay, road and production-line geometry. No AI generation/download.",
+    "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+    "permission":  "CREDITS.txt declares contributor consent and all free to use; applies only to selected pack files, not entire contributing mods. No MIT/CC license inferred.",
+    "credits_path":  "docs/assets/korean-focus-icons/UPSTREAM_CREDITS.txt",
+    "source_working_directory":  ".local-artifacts/korean-focus-icons/sources/Ultimate-HOI4-GFX",
+    "pipeline":  {
+                     "renderer":  ".local-artifacts/korean-focus-icons/IconRenderer.cs",
+                     "renderer_sha256":  "5ce539624fc427fce2d0f4a553b970be1a53e159ce7550b89f5178d1071c0d16",
+                     "background_renderer":  ".local-artifacts/korean-focus-icon-colors/BackgroundColors.cs",
+                     "background_renderer_sha256":  "2f258e5a0f1cf2ba30c227d80d79d98bd5f2795e34eff38f6fc3a7dbb1a6b234",
+                     "marks":  ".local-artifacts/korean-communist-development-icons/DevelopmentMarks.cs",
+                     "marks_sha256":  "26cdfabdb7e0322e1868475a71bef20aaf9c1c1b98b07cf65c8f8fe21d17d5e9",
+                     "entrypoint":  ".local-artifacts/korean-communist-development-icons/build-icons.ps1"
+                 },
+    "palette":  {
+                    "id":  "communism",
+                    "reference_rgb":  [
+                                          116,
+                                          45,
+                                          48
+                                      ],
+                    "luminance_reference":  60,
+                    "mask_rule":  "A \u003e 0 and R-G \u003e 6 and R-B \u003e 3 and B-G \u003e= -4",
+                    "shading":  "pow((0.2126R+0.7152G+0.0722B)/60,0.9), clamp rounded reference RGB times shade; original alpha",
+                    "scope":  "Background alone; central source pieces and metallic border unfiltered"
+                },
+    "shared_runtime_assets":  [
+                                  {
+                                      "texture":  "gfx/interface/goals/HOK_KOR/shine_overlay.dds",
+                                      "sha256":  "bb416649358c73d34aacd46bad61bc44211fac8111627b56e25f385ad98f4448",
+                                      "source":  "HOI4 1.19.3 gfx/interface/goals/shine_overlay.dds",
+                                      "attribution":  "Paradox Interactive",
+                                      "reuse_basis":  "Existing internal byte-identical vanilla copy; not covered by pack CREDITS",
+                                      "modifications":  "None"
+                                  }
+                              ],
+    "small_decision_ui":  {
+                              "version":  "1.19.3",
+                              "canvas":  [
+                                             32,
+                                             32
+                                         ],
+                              "visible_circle_box":  [
+                                                         1,
+                                                         1,
+                                                         30,
+                                                         30
+                                                     ],
+                              "row_height":  41,
+                              "row_center":  [
+                                                 30,
+                                                 19
+                                             ],
+                              "label_start_x":  63,
+                              "timed_row_height":  40,
+                              "timed_row_center":  [
+                                                       32,
+                                                       20
+                                                   ],
+                              "timed_label_start_x":  62,
+                              "category":  "Existing communist governance category reused by root, no new category artwork",
+                              "reference":  "docs/incidents/2026-09-22-korean-decision-icon-size.md"
+                          },
+    "backgrounds":  [
+                        {
+                            "kind":  "focuses",
+                            "source":  "Focus Backgrounds/Circle with Ribbon2.png",
+                            "source_sha256":  "5bcf53259a04276b1586f6c83f7a35a14ba9d22742ea75fb4802911978db2f95",
+                            "derived_png":  ".local-artifacts/korean-communist-development-icons/backgrounds/focuses-communism.png",
+                            "sha256":  "0ce20004a7264e11abd7249daf5f25dc017fc2bec990b7ab4136ffa41f951fba",
+                            "mask_png":  ".local-artifacts/korean-communist-development-icons/backgrounds/focuses-communism-mask.png",
+                            "mask_sha256":  "396e2460eab7f0bd3978535a8db68b2967233b72b7dad23d201e944ceb273f58",
+                            "selected_pixels":  2847
+                        },
+                        {
+                            "kind":  "ideas",
+                            "source":  "National Spirit Backgrounds/Circle.png",
+                            "source_sha256":  "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+                            "derived_png":  ".local-artifacts/korean-communist-development-icons/backgrounds/ideas-communism.png",
+                            "sha256":  "3ce64196679d15aba39c45bf6079375bd26f12d2b807bddee635f2296584a3f4",
+                            "mask_png":  ".local-artifacts/korean-communist-development-icons/backgrounds/ideas-communism-mask.png",
+                            "mask_sha256":  "c2a39f32716b08dd1edace34401105f5ebfde6d6635cb7ab77dd408968c0706c",
+                            "selected_pixels":  1695
+                        }
+                    ],
+    "focuses":  [
+                    {
+                        "id":  "HOK_KOR_yeo_rural_service_survey",
+                        "name":  "농촌 공동업무 조사",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_rural_service_survey",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_rural_service_survey",
+                        "texture":  "gfx/interface/goals/HOK_KOR/communist_development/yeo_rural_service_survey.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "survey",
+                        "motif":  "Rural survey clipboard and grain",
+                        "color_palette":  "communism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Paper",
+                                           0.25,
+                                           0.11,
+                                           0.45,
+                                           0.73
+                                       ],
+                                       [
+                                           "Wheat2",
+                                           0.04,
+                                           0.27,
+                                           0.25,
+                                           0.68
+                                       ]
+                                   ],
+                        "geometry_recipe":  "DevelopmentMarks.Clipboard before source Paper; board(31,13,34,49), clip(40,9,17,8)",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper.png",
+                                              "Focus \u0026 National Spirits Pieces/Wheat2.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated deep-red background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "8b5dcf95eabb7fc901ade622f1bccaf43988db1bcc83e0106eaaeb41f275ae75",
+                        "preview":  ".local-artifacts/korean-communist-development-icons/rendered/focuses_yeo_rural_service_survey.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_yeo_cooperative_advisers",
+                        "name":  "조합 기술상담소",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_cooperative_advisers",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_cooperative_advisers",
+                        "texture":  "gfx/interface/goals/HOK_KOR/communist_development/yeo_cooperative_advisers.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "advisers",
+                        "motif":  "Technical manual and gear",
+                        "color_palette":  "communism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Cog Wheel",
+                                           0.36,
+                                           0,
+                                           0.59,
+                                           0.68
+                                       ],
+                                       [
+                                           "Book Open",
+                                           0.02,
+                                           0.43,
+                                           0.95,
+                                           0.55
+                                       ]
+                                   ],
+                        "geometry_recipe":  null,
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Cog Wheel.png",
+                                              "Focus \u0026 National Spirits Pieces/Book Open.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated deep-red background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "0401d02950a44c4bb364308f7db26b59a73fe8b3555a362c32eb33188cb08cfc",
+                        "preview":  ".local-artifacts/korean-communist-development-icons/rendered/focuses_yeo_cooperative_advisers.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_yeo_workshop_bulletins",
+                        "name":  "작업장 기술회보",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_workshop_bulletins",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_workshop_bulletins",
+                        "texture":  "gfx/interface/goals/HOK_KOR/communist_development/yeo_workshop_bulletins.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "bulletin",
+                        "motif":  "Engineering bulletin and diagram",
+                        "color_palette":  "communism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Paper",
+                                           0.16,
+                                           0,
+                                           0.62,
+                                           0.88
+                                       ],
+                                       [
+                                           "Blueprints",
+                                           0.47,
+                                           0.53,
+                                           0.52,
+                                           0.44
+                                       ]
+                                   ],
+                        "geometry_recipe":  null,
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper.png",
+                                              "Focus \u0026 National Spirits Pieces/Blueprints.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated deep-red background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "31a143b45f86ef5bbd9ce7da69058bb1db2134b4de7e867da9c1a92b29842995",
+                        "preview":  ".local-artifacts/korean-communist-development-icons/rendered/focuses_yeo_workshop_bulletins.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_yeo_joint_service_accounts",
+                        "name":  "공동업무 회계 공개",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_joint_service_accounts",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_joint_service_accounts",
+                        "texture":  "gfx/interface/goals/HOK_KOR/communist_development/yeo_joint_service_accounts.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "accounts",
+                        "motif":  "Open accounts and magnifying glass",
+                        "color_palette":  "communism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Book",
+                                           0,
+                                           0.01,
+                                           0.82,
+                                           0.72
+                                       ],
+                                       [
+                                           "Magnifying Glass",
+                                           0.39,
+                                           0.37,
+                                           0.6,
+                                           0.6
+                                       ]
+                                   ],
+                        "geometry_recipe":  null,
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Book.png",
+                                              "Focus \u0026 National Spirits Pieces/Magnifying Glass.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated deep-red background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "c0be3caccdd2a86933ffdabe7612059af1ab43fe657917f3f677bb9ef96dda06",
+                        "preview":  ".local-artifacts/korean-communist-development-icons/rendered/focuses_yeo_joint_service_accounts.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_yeo_technical_extension",
+                        "name":  "전국 조합 기술보급망",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_technical_extension",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_technical_extension",
+                        "texture":  "gfx/interface/goals/HOK_KOR/communist_development/yeo_technical_extension.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "extension",
+                        "motif":  "Manual-and-gear knowledge network",
+                        "color_palette":  "communism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Paper",
+                                           0.09,
+                                           0.03,
+                                           0.3,
+                                           0.49
+                                       ],
+                                       [
+                                           "Cog Wheel",
+                                           0.54,
+                                           0.03,
+                                           0.43,
+                                           0.5
+                                       ],
+                                       [
+                                           "Book Open",
+                                           0.08,
+                                           0.49,
+                                           0.89,
+                                           0.49
+                                       ]
+                                   ],
+                        "geometry_recipe":  "Focus only: DevelopmentMarks.Network golden edges/nodes at (31,32),(65,25),(63,56) before pieces",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper.png",
+                                              "Focus \u0026 National Spirits Pieces/Cog Wheel.png",
+                                              "Focus \u0026 National Spirits Pieces/Book Open.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated deep-red background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "ede044ee9034e2c1e74d7c6295edd0030c927f1576e9ec74dde2b69c01a25306",
+                        "preview":  ".local-artifacts/korean-communist-development-icons/rendered/focuses_yeo_technical_extension.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_pak_planning_secretariat",
+                        "name":  "국가계획 사무국",
+                        "new_reference":  "GFX_HOK_KOR_focus_pak_planning_secretariat",
+                        "sprite":  "GFX_HOK_KOR_focus_pak_planning_secretariat",
+                        "texture":  "gfx/interface/goals/HOK_KOR/communist_development/pak_planning_secretariat.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "secretariat",
+                        "motif":  "Planning ledger with administrative seal",
+                        "color_palette":  "communism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Book",
+                                           0.05,
+                                           0.16,
+                                           0.89,
+                                           0.73
+                                       ]
+                                   ],
+                        "geometry_recipe":  "DevelopmentMarks.Seal at (71,56), radius8 after Book",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Book.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated deep-red background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "33b31f6dda1662fe5769d3f56b68211cc8361ccd276750461b76113527cf5ed4",
+                        "preview":  ".local-artifacts/korean-communist-development-icons/rendered/focuses_pak_planning_secretariat.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_pak_provincial_plan_offices",
+                        "name":  "지방계획 연락소",
+                        "new_reference":  "GFX_HOK_KOR_focus_pak_provincial_plan_offices",
+                        "sprite":  "GFX_HOK_KOR_focus_pak_provincial_plan_offices",
+                        "texture":  "gfx/interface/goals/HOK_KOR/communist_development/pak_provincial_plan_offices.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "offices",
+                        "motif":  "Provincial map and document relays",
+                        "color_palette":  "communism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Map with Sextant",
+                                           0.1,
+                                           0.3,
+                                           0.78,
+                                           0.65
+                                       ],
+                                       [
+                                           "Paper",
+                                           0.05,
+                                           0,
+                                           0.32,
+                                           0.48
+                                       ],
+                                       [
+                                           "Paper",
+                                           0.65,
+                                           0,
+                                           0.3,
+                                           0.44
+                                       ]
+                                   ],
+                        "geometry_recipe":  "DevelopmentMarks.Relay edges (30,25)-(60,42)-(73,20) before pieces",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Map with Sextant.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated deep-red background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "64fd8c9d9658d53a0a9d86c7b65369cdd3ba81f04c436b2d864eea4a4710ea29",
+                        "preview":  ".local-artifacts/korean-communist-development-icons/rendered/focuses_pak_provincial_plan_offices.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_pak_technical_delegates",
+                        "name":  "현장 기술대표단",
+                        "new_reference":  "GFX_HOK_KOR_focus_pak_technical_delegates",
+                        "sprite":  "GFX_HOK_KOR_focus_pak_technical_delegates",
+                        "texture":  "gfx/interface/goals/HOK_KOR/communist_development/pak_technical_delegates.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "delegates",
+                        "motif":  "Field technical delegate and engineering plan",
+                        "color_palette":  "communism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Blueprints",
+                                           0.4,
+                                           0.39,
+                                           0.59,
+                                           0.55
+                                       ],
+                                       [
+                                           "Worker",
+                                           0.03,
+                                           0,
+                                           0.51,
+                                           0.99
+                                       ]
+                                   ],
+                        "geometry_recipe":  null,
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Blueprints.png",
+                                              "Focus \u0026 National Spirits Pieces/Worker.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated deep-red background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "88924e758a1c3f6d890f6fc1d44cf5f57800d6744e8d9ba2a40c8e9425c3e749",
+                        "preview":  ".local-artifacts/korean-communist-development-icons/rendered/focuses_pak_technical_delegates.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_pak_plan_review_sessions",
+                        "name":  "계획실적 검토회의",
+                        "new_reference":  "GFX_HOK_KOR_focus_pak_plan_review_sessions",
+                        "sprite":  "GFX_HOK_KOR_focus_pak_plan_review_sessions",
+                        "texture":  "gfx/interface/goals/HOK_KOR/communist_development/pak_plan_review_sessions.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "review",
+                        "motif":  "Plan review ledger, clock and seal",
+                        "color_palette":  "communism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Book",
+                                           0,
+                                           0.09,
+                                           0.79,
+                                           0.71
+                                       ],
+                                       [
+                                           "Clock",
+                                           0.51,
+                                           0.3,
+                                           0.46,
+                                           0.68
+                                       ]
+                                   ],
+                        "geometry_recipe":  "DevelopmentMarks.Seal at (31,59), radius6 after Book and Clock",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Book.png",
+                                              "Focus \u0026 National Spirits Pieces/Clock.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated deep-red background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "7f1b7ab68b29225bf6c882bf680b0cb7b6d29a96809ce795d9a7ca00a7bea923",
+                        "preview":  ".local-artifacts/korean-communist-development-icons/rendered/focuses_pak_plan_review_sessions.png"
+                    }
+                ],
+    "ideas":  [
+                  {
+                      "id":  "HOK_KOR_yeo_technical_extension_1",
+                      "name":  "조합 기술보급 I",
+                      "new_reference":  "HOK_KOR_icon_yeo_technical_extension_1",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_yeo_technical_extension_1",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/communist_development/yeo_technical_extension_1.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS; single frame; explicit alpha",
+                      "stage":  1,
+                      "family":  "extension",
+                      "motif":  "Manual-and-gear knowledge network",
+                      "color_palette":  "communism",
+                      "background_box":  [
+                                             3,
+                                             4,
+                                             54,
+                                             56
+                                         ],
+                      "composition_box":  [
+                                              6,
+                                              10,
+                                              48,
+                                              42
+                                          ],
+                      "recipe":  [
+                                     [
+                                         "Cog Wheel",
+                                         0.39,
+                                         0,
+                                         0.6,
+                                         0.65
+                                     ],
+                                     [
+                                         "Book Open",
+                                         0,
+                                         0.39,
+                                         0.98,
+                                         0.59
+                                     ]
+                                 ],
+                      "geometry_recipe":  null,
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Cog Wheel.png",
+                                            "Focus \u0026 National Spirits Pieces/Book Open.png"
+                                        ],
+                      "header_template":  "gfx/interface/ideas/HOK_KOR/energy_coordination_1.dds",
+                      "modifications":  [
+                                            "Original aspect ratios maintained",
+                                            "Native-size component composition",
+                                            "Isolated deep-red background recolor",
+                                            "Metal border/foreground colors preserved",
+                                            "BGRA32 export"
+                                        ],
+                      "sha256":  "6f04b64a968350068c76bd6e3c5670ddaaef354fa463e4977184eb991255d63b",
+                      "preview":  ".local-artifacts/korean-communist-development-icons/rendered/ideas_yeo_technical_extension_1.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_yeo_technical_extension_2",
+                      "name":  "조합 기술보급 II",
+                      "new_reference":  "HOK_KOR_icon_yeo_technical_extension_2",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_yeo_technical_extension_2",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/communist_development/yeo_technical_extension_2.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS; single frame; explicit alpha",
+                      "stage":  2,
+                      "family":  "extension",
+                      "motif":  "Manual-and-gear knowledge network",
+                      "color_palette":  "communism",
+                      "background_box":  [
+                                             3,
+                                             4,
+                                             54,
+                                             56
+                                         ],
+                      "composition_box":  [
+                                              6,
+                                              10,
+                                              48,
+                                              42
+                                          ],
+                      "recipe":  [
+                                     [
+                                         "Cog Wheel",
+                                         0.39,
+                                         0,
+                                         0.6,
+                                         0.65
+                                     ],
+                                     [
+                                         "Book Open",
+                                         0,
+                                         0.39,
+                                         0.98,
+                                         0.59
+                                     ]
+                                 ],
+                      "geometry_recipe":  null,
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Cog Wheel.png",
+                                            "Focus \u0026 National Spirits Pieces/Book Open.png"
+                                        ],
+                      "header_template":  "gfx/interface/ideas/HOK_KOR/energy_coordination_1.dds",
+                      "modifications":  [
+                                            "Original aspect ratios maintained",
+                                            "Native-size component composition",
+                                            "Isolated deep-red background recolor",
+                                            "Metal border/foreground colors preserved",
+                                            "BGRA32 export"
+                                        ],
+                      "sha256":  "e6b74f9697804551b0b69f56764f17c72545f3e06759ca4d17d165aa7571b053",
+                      "preview":  ".local-artifacts/korean-communist-development-icons/rendered/ideas_yeo_technical_extension_2.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_pak_planning_administration_1",
+                      "name":  "계획행정 I",
+                      "new_reference":  "HOK_KOR_icon_pak_planning_administration_1",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_pak_planning_administration_1",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/communist_development/pak_planning_administration_1.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS; single frame; explicit alpha",
+                      "stage":  1,
+                      "family":  "administration",
+                      "motif":  "Planning ledger with seal",
+                      "color_palette":  "communism",
+                      "background_box":  [
+                                             3,
+                                             4,
+                                             54,
+                                             56
+                                         ],
+                      "composition_box":  [
+                                              6,
+                                              10,
+                                              48,
+                                              42
+                                          ],
+                      "recipe":  [
+                                     [
+                                         "Book",
+                                         0.02,
+                                         0.16,
+                                         0.94,
+                                         0.75
+                                     ]
+                                 ],
+                      "geometry_recipe":  "Idea: DevelopmentMarks.Seal at (46,46), radius6 after Book",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Book.png"
+                                        ],
+                      "header_template":  "gfx/interface/ideas/HOK_KOR/energy_coordination_1.dds",
+                      "modifications":  [
+                                            "Original aspect ratios maintained",
+                                            "Native-size component composition",
+                                            "Isolated deep-red background recolor",
+                                            "Metal border/foreground colors preserved",
+                                            "BGRA32 export"
+                                        ],
+                      "sha256":  "57cc9b9d6de8822a1ff1091b6a421b85b6d5ee149c93628302f7107d0335bd00",
+                      "preview":  ".local-artifacts/korean-communist-development-icons/rendered/ideas_pak_planning_administration_1.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_pak_planning_administration_2",
+                      "name":  "계획행정 II",
+                      "new_reference":  "HOK_KOR_icon_pak_planning_administration_2",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_pak_planning_administration_2",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/communist_development/pak_planning_administration_2.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS; single frame; explicit alpha",
+                      "stage":  2,
+                      "family":  "administration",
+                      "motif":  "Planning ledger with seal",
+                      "color_palette":  "communism",
+                      "background_box":  [
+                                             3,
+                                             4,
+                                             54,
+                                             56
+                                         ],
+                      "composition_box":  [
+                                              6,
+                                              10,
+                                              48,
+                                              42
+                                          ],
+                      "recipe":  [
+                                     [
+                                         "Book",
+                                         0.02,
+                                         0.16,
+                                         0.94,
+                                         0.75
+                                     ]
+                                 ],
+                      "geometry_recipe":  "Idea: DevelopmentMarks.Seal at (46,46), radius6 after Book",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Book.png"
+                                        ],
+                      "header_template":  "gfx/interface/ideas/HOK_KOR/energy_coordination_1.dds",
+                      "modifications":  [
+                                            "Original aspect ratios maintained",
+                                            "Native-size component composition",
+                                            "Isolated deep-red background recolor",
+                                            "Metal border/foreground colors preserved",
+                                            "BGRA32 export"
+                                        ],
+                      "sha256":  "cb61d677f100925f915b9673a9964cf9f9c0fd6e09739f032f3b3657758a7a29",
+                      "preview":  ".local-artifacts/korean-communist-development-icons/rendered/ideas_pak_planning_administration_2.png"
+                  }
+              ],
+    "decisions":  [
+                      {
+                          "id":  "HOK_KOR_yeo_mobile_technical_training_project",
+                          "name":  "순회 기술교육",
+                          "new_reference":  "GFX_HOK_KOR_decision_yeo_mobile_technical_training",
+                          "sprite":  "GFX_HOK_KOR_decision_yeo_mobile_technical_training",
+                          "texture":  "gfx/interface/decisions/HOK_KOR/communist_development/yeo_mobile_technical_training.dds",
+                          "width":  32,
+                          "height":  32,
+                          "format":  "BGRA32 DDS; single frame; explicit alpha",
+                          "stage":  0,
+                          "family":  "training",
+                          "motif":  "Mobile technical manual and wrench",
+                          "color_palette":  "communism",
+                          "background_box":  [
+                                                 1,
+                                                 1,
+                                                 30,
+                                                 30
+                                             ],
+                          "composition_box":  [
+                                                  4,
+                                                  4,
+                                                  24,
+                                                  24
+                                              ],
+                          "recipe":  [
+                                         [
+                                             "Book Open",
+                                             0,
+                                             0.06,
+                                             0.96,
+                                             0.68
+                                         ],
+                                         [
+                                             "Wrench",
+                                             0.51,
+                                             0.35,
+                                             0.49,
+                                             0.65
+                                         ]
+                                     ],
+                          "geometry_recipe":  null,
+                          "asset_sources":  [
+                                                "National Spirit Backgrounds/Circle.png",
+                                                "Focus \u0026 National Spirits Pieces/Book Open.png",
+                                                "Focus \u0026 National Spirits Pieces/Wrench.png"
+                                            ],
+                          "header_template":  "gfx/interface/decisions/HOK_KOR/communist_governance/pak_production_retooling.dds",
+                          "modifications":  [
+                                                "Original aspect ratios maintained",
+                                                "Native-size component composition",
+                                                "Isolated deep-red background recolor",
+                                                "Metal border/foreground colors preserved",
+                                                "BGRA32 export"
+                                            ],
+                          "sha256":  "f602271a51f3fae27928a4461d449eb5c4f08e99b820417f0c536176fed8b553",
+                          "preview":  ".local-artifacts/korean-communist-development-icons/rendered/decisions_yeo_mobile_technical_training.png"
+                      },
+                      {
+                          "id":  "HOK_KOR_yeo_rural_infrastructure_project",
+                          "name":  "농촌 기반시설 지원",
+                          "new_reference":  "GFX_HOK_KOR_decision_yeo_rural_infrastructure",
+                          "sprite":  "GFX_HOK_KOR_decision_yeo_rural_infrastructure",
+                          "texture":  "gfx/interface/decisions/HOK_KOR/communist_development/yeo_rural_infrastructure.dds",
+                          "width":  32,
+                          "height":  32,
+                          "format":  "BGRA32 DDS; single frame; explicit alpha",
+                          "stage":  0,
+                          "family":  "infrastructure",
+                          "motif":  "Rural road and grain",
+                          "color_palette":  "communism",
+                          "background_box":  [
+                                                 1,
+                                                 1,
+                                                 30,
+                                                 30
+                                             ],
+                          "composition_box":  [
+                                                  4,
+                                                  4,
+                                                  24,
+                                                  24
+                                              ],
+                          "recipe":  [
+                                         [
+                                             "Wheat2",
+                                             0.69,
+                                             0.13,
+                                             0.24,
+                                             0.82
+                                         ]
+                                     ],
+                          "geometry_recipe":  "Decision: DevelopmentMarks.Road polygon (6,27),(11,5),(19,5),(24,27), light edges/dashed center before Wheat2",
+                          "asset_sources":  [
+                                                "National Spirit Backgrounds/Circle.png",
+                                                "Focus \u0026 National Spirits Pieces/Wheat2.png"
+                                            ],
+                          "header_template":  "gfx/interface/decisions/HOK_KOR/communist_governance/pak_production_retooling.dds",
+                          "modifications":  [
+                                                "Original aspect ratios maintained",
+                                                "Native-size component composition",
+                                                "Isolated deep-red background recolor",
+                                                "Metal border/foreground colors preserved",
+                                                "BGRA32 export"
+                                            ],
+                          "sha256":  "553c2654d6e7c46cb2669e880157ba18bf95baff81d7e7adc137043b2f4a2392",
+                          "preview":  ".local-artifacts/korean-communist-development-icons/rendered/decisions_yeo_rural_infrastructure.png"
+                      },
+                      {
+                          "id":  "HOK_KOR_pak_process_conversion_project",
+                          "name":  "생산공정 전환 관리",
+                          "new_reference":  "GFX_HOK_KOR_decision_pak_process_conversion",
+                          "sprite":  "GFX_HOK_KOR_decision_pak_process_conversion",
+                          "texture":  "gfx/interface/decisions/HOK_KOR/communist_development/pak_process_conversion.dds",
+                          "width":  32,
+                          "height":  32,
+                          "format":  "BGRA32 DDS; single frame; explicit alpha",
+                          "stage":  0,
+                          "family":  "conversion",
+                          "motif":  "Process-conversion arrows and gear",
+                          "color_palette":  "communism",
+                          "background_box":  [
+                                                 1,
+                                                 1,
+                                                 30,
+                                                 30
+                                             ],
+                          "composition_box":  [
+                                                  4,
+                                                  4,
+                                                  24,
+                                                  24
+                                              ],
+                          "recipe":  [
+                                         [
+                                             "Circular Arrows",
+                                             0,
+                                             0,
+                                             1,
+                                             1
+                                         ],
+                                         [
+                                             "Cog Wheel",
+                                             0.2,
+                                             0.21,
+                                             0.6,
+                                             0.61
+                                         ]
+                                     ],
+                          "geometry_recipe":  null,
+                          "asset_sources":  [
+                                                "National Spirit Backgrounds/Circle.png",
+                                                "Focus \u0026 National Spirits Pieces/Circular Arrows.png",
+                                                "Focus \u0026 National Spirits Pieces/Cog Wheel.png"
+                                            ],
+                          "header_template":  "gfx/interface/decisions/HOK_KOR/communist_governance/pak_production_retooling.dds",
+                          "modifications":  [
+                                                "Original aspect ratios maintained",
+                                                "Native-size component composition",
+                                                "Isolated deep-red background recolor",
+                                                "Metal border/foreground colors preserved",
+                                                "BGRA32 export"
+                                            ],
+                          "sha256":  "00b0da0698b32dd3901ba3ebf91dbdac2bf2f836d6791a4b11b982d26097d14c",
+                          "preview":  ".local-artifacts/korean-communist-development-icons/rendered/decisions_pak_process_conversion.png"
+                      },
+                      {
+                          "id":  "HOK_KOR_pak_new_production_lines_project",
+                          "name":  "신규 생산선 가동 지원",
+                          "new_reference":  "GFX_HOK_KOR_decision_pak_new_production_lines",
+                          "sprite":  "GFX_HOK_KOR_decision_pak_new_production_lines",
+                          "texture":  "gfx/interface/decisions/HOK_KOR/communist_development/pak_new_production_lines.dds",
+                          "width":  32,
+                          "height":  32,
+                          "format":  "BGRA32 DDS; single frame; explicit alpha",
+                          "stage":  0,
+                          "family":  "lines",
+                          "motif":  "Factory and parallel production lines",
+                          "color_palette":  "communism",
+                          "background_box":  [
+                                                 1,
+                                                 1,
+                                                 30,
+                                                 30
+                                             ],
+                          "composition_box":  [
+                                                  4,
+                                                  4,
+                                                  24,
+                                                  24
+                                              ],
+                          "recipe":  [
+                                         [
+                                             "Factories2",
+                                             0,
+                                             0.01,
+                                             1,
+                                             0.71
+                                         ]
+                                     ],
+                          "geometry_recipe":  "Decision: DevelopmentMarks.ProductionLines at y23/27, x5-26, three blocks per row after factory",
+                          "asset_sources":  [
+                                                "National Spirit Backgrounds/Circle.png",
+                                                "Focus \u0026 National Spirits Pieces/Factories2.png"
+                                            ],
+                          "header_template":  "gfx/interface/decisions/HOK_KOR/communist_governance/pak_production_retooling.dds",
+                          "modifications":  [
+                                                "Original aspect ratios maintained",
+                                                "Native-size component composition",
+                                                "Isolated deep-red background recolor",
+                                                "Metal border/foreground colors preserved",
+                                                "BGRA32 export"
+                                            ],
+                          "sha256":  "d85579d0fb97e42b319c4b3b79cdc586a2ffbdb8dcf34fdee49e631d562081a2",
+                          "preview":  ".local-artifacts/korean-communist-development-icons/rendered/decisions_pak_new_production_lines.png"
+                      }
+                  ],
+    "asset_sources":  [
+                          {
+                              "path":  "CREDITS.txt",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/CREDITS.txt",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "cf220dc66463d75163f7690ad77b02b662d0c05ca5d53dc62d33ed504512a7f5",
+                              "bytes":  1029,
+                              "git_blob_sha":  "83efbe5261113f933a16698783d6803dfd593152",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)"
+                          },
+                          {
+                              "path":  "Focus Backgrounds/Circle with Ribbon2.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20Backgrounds/Circle%20with%20Ribbon2.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "5bcf53259a04276b1586f6c83f7a35a14ba9d22742ea75fb4802911978db2f95",
+                              "bytes":  33322,
+                              "git_blob_sha":  "6f0ebeed856a2fdc3f25f1ea0c82418b60c3d605",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  100,
+                              "height":  88,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "National Spirit Backgrounds/Circle.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/National%20Spirit%20Backgrounds/Circle.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+                              "bytes":  25055,
+                              "git_blob_sha":  "ab1fa7b4a3a783fb528c496fcca2370001df1b52",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  64,
+                              "height":  64,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Paper.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Paper.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "f702a6971726ba0608f75cb71a90fc8f0ac0cc0474a2cd5ca172330dbf3c803c",
+                              "bytes":  19520,
+                              "git_blob_sha":  "61aae5d0b991ce881d97ba30af39093332b61fd9",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  47,
+                              "height":  51,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Wheat2.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Wheat2.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "14ba5dd63e9721ed74c55e0857fb2c2fbca82112da641127a97f7c3ae0e90d9f",
+                              "bytes":  6342,
+                              "git_blob_sha":  "d9e5b8f71d815ef17d0ed698539542aeb371491e",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  19,
+                              "height":  52,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Cog Wheel.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Cog%20Wheel.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "8765480f16fbfd54babe02163ad5db3a68e0472e18789c1880ee40c6b12a3ada",
+                              "bytes":  19167,
+                              "git_blob_sha":  "86926f5beeed004bc812f7146c7ab4bdc7060bfa",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  42,
+                              "height":  41,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Book Open.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Book%20Open.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "b8f601a26d8e0ad7f8eecdccca2c447a59921e15aa05bb0078142b803ed25e9d",
+                              "bytes":  8209,
+                              "git_blob_sha":  "ba3d34c99b5fe6fa748a9807c9cbcc34270d068e",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  73,
+                              "height":  55,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Blueprints.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Blueprints.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "1d75e423748392240bd246dc9681b2787c8f0c19c6200bf4a412a14809def3e4",
+                              "bytes":  5253,
+                              "git_blob_sha":  "cf715e719d6b44cd9e70944648479d6ab31e16fa",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  45,
+                              "height":  36,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Book.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Book.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "b2e7e51e79acaeaef614c430a33a0a4fb72b81f14bfc535f27ff7264b28802f9",
+                              "bytes":  18442,
+                              "git_blob_sha":  "2d4ae8f7e57b46dfe86496775c23daeebfe2ef82",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  52,
+                              "height":  39,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Magnifying Glass.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Magnifying%20Glass.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "bea177a67a7890adbdb4c79ad689e2d4e271a8db3216f77295e6c46aec7f8674",
+                              "bytes":  5505,
+                              "git_blob_sha":  "b5e00c7f2def1a956f4846053cb83c5678ac064e",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  39,
+                              "height":  34,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Map with Sextant.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Map%20with%20Sextant.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "4f89b8b062e3c3b7e4cd4d4dfe9affc860949cbb0b855a0347e622307e8d67a7",
+                              "bytes":  20082,
+                              "git_blob_sha":  "088ad0022abeebaa53a4dd1e14e003d51a4c0b4d",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  60,
+                              "height":  50,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Worker.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Worker.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "ce24044539a35f6355c012450c02910e5957281391ff85ca9d88f017ea0d87ff",
+                              "bytes":  17412,
+                              "git_blob_sha":  "8c01080c7fda2ec13aa7ebbaacf5039d6ea1badf",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  30,
+                              "height":  46,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Clock.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Clock.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "139708d9526db928325f05a60c70585a336bf0c70cea4fea119fa0ff4533d145",
+                              "bytes":  25521,
+                              "git_blob_sha":  "2e6de1d2d4cc06a2a509a29858bdabbb7fdf50e3",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  75,
+                              "height":  67,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Wrench.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Wrench.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "8bb9e9f9322f567f6ac8a8d50b2aa186845d56c3ffc638a16f8e6ff29a10d09f",
+                              "bytes":  18240,
+                              "git_blob_sha":  "398663ddcaf4529adec132e4dd2fd9763d4d90bc",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  59,
+                              "height":  53,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Circular Arrows.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Circular%20Arrows.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "49d17868495b84cabeef78c85a2111adf8d325a5b76a0cb72973f51f9150f4c4",
+                              "bytes":  22609,
+                              "git_blob_sha":  "b40b603e4987e2daff273b74ef2585ea2947e1d4",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  58,
+                              "height":  59,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Factories2.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Factories2.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "10898f9e4600558cd329d8bcb601cb453d89d8b46d90d079ce328294a96a31a7",
+                              "bytes":  19363,
+                              "git_blob_sha":  "05d83d5cb1839e5409fed48834321595d168aa43",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  49,
+                              "height":  37,
+                              "pixel_format":  "Format32bppArgb"
+                          }
+                      ],
+    "focus_recipes":  {
+                          "survey":  [
+                                         [
+                                             "Paper",
+                                             0.25,
+                                             0.11,
+                                             0.45,
+                                             0.73
+                                         ],
+                                         [
+                                             "Wheat2",
+                                             0.04,
+                                             0.27,
+                                             0.25,
+                                             0.68
+                                         ]
+                                     ],
+                          "advisers":  [
+                                           [
+                                               "Cog Wheel",
+                                               0.36,
+                                               0,
+                                               0.59,
+                                               0.68
+                                           ],
+                                           [
+                                               "Book Open",
+                                               0.02,
+                                               0.43,
+                                               0.95,
+                                               0.55
+                                           ]
+                                       ],
+                          "bulletin":  [
+                                           [
+                                               "Paper",
+                                               0.16,
+                                               0,
+                                               0.62,
+                                               0.88
+                                           ],
+                                           [
+                                               "Blueprints",
+                                               0.47,
+                                               0.53,
+                                               0.52,
+                                               0.44
+                                           ]
+                                       ],
+                          "accounts":  [
+                                           [
+                                               "Book",
+                                               0,
+                                               0.01,
+                                               0.82,
+                                               0.72
+                                           ],
+                                           [
+                                               "Magnifying Glass",
+                                               0.39,
+                                               0.37,
+                                               0.6,
+                                               0.6
+                                           ]
+                                       ],
+                          "extension":  [
+                                            [
+                                                "Paper",
+                                                0.09,
+                                                0.03,
+                                                0.3,
+                                                0.49
+                                            ],
+                                            [
+                                                "Cog Wheel",
+                                                0.54,
+                                                0.03,
+                                                0.43,
+                                                0.5
+                                            ],
+                                            [
+                                                "Book Open",
+                                                0.08,
+                                                0.49,
+                                                0.89,
+                                                0.49
+                                            ]
+                                        ],
+                          "secretariat":  [
+                                              [
+                                                  "Book",
+                                                  0.05,
+                                                  0.16,
+                                                  0.89,
+                                                  0.73
+                                              ]
+                                          ],
+                          "offices":  [
+                                          [
+                                              "Map with Sextant",
+                                              0.1,
+                                              0.3,
+                                              0.78,
+                                              0.65
+                                          ],
+                                          [
+                                              "Paper",
+                                              0.05,
+                                              0,
+                                              0.32,
+                                              0.48
+                                          ],
+                                          [
+                                              "Paper",
+                                              0.65,
+                                              0,
+                                              0.3,
+                                              0.44
+                                          ]
+                                      ],
+                          "delegates":  [
+                                            [
+                                                "Blueprints",
+                                                0.4,
+                                                0.39,
+                                                0.59,
+                                                0.55
+                                            ],
+                                            [
+                                                "Worker",
+                                                0.03,
+                                                0,
+                                                0.51,
+                                                0.99
+                                            ]
+                                        ],
+                          "review":  [
+                                         [
+                                             "Book",
+                                             0,
+                                             0.09,
+                                             0.79,
+                                             0.71
+                                         ],
+                                         [
+                                             "Clock",
+                                             0.51,
+                                             0.3,
+                                             0.46,
+                                             0.68
+                                         ]
+                                     ]
+                      },
+    "idea_recipes":  {
+                         "extension":  [
+                                           [
+                                               "Cog Wheel",
+                                               0.39,
+                                               0,
+                                               0.6,
+                                               0.65
+                                           ],
+                                           [
+                                               "Book Open",
+                                               0,
+                                               0.39,
+                                               0.98,
+                                               0.59
+                                           ]
+                                       ],
+                         "administration":  [
+                                                [
+                                                    "Book",
+                                                    0.02,
+                                                    0.16,
+                                                    0.94,
+                                                    0.75
+                                                ]
+                                            ]
+                     },
+    "decision_recipes":  {
+                             "training":  [
+                                              [
+                                                  "Book Open",
+                                                  0,
+                                                  0.06,
+                                                  0.96,
+                                                  0.68
+                                              ],
+                                              [
+                                                  "Wrench",
+                                                  0.51,
+                                                  0.35,
+                                                  0.49,
+                                                  0.65
+                                              ]
+                                          ],
+                             "infrastructure":  [
+                                                    [
+                                                        "Wheat2",
+                                                        0.69,
+                                                        0.13,
+                                                        0.24,
+                                                        0.82
+                                                    ]
+                                                ],
+                             "conversion":  [
+                                                [
+                                                    "Circular Arrows",
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    1
+                                                ],
+                                                [
+                                                    "Cog Wheel",
+                                                    0.2,
+                                                    0.21,
+                                                    0.6,
+                                                    0.61
+                                                ]
+                                            ],
+                             "lines":  [
+                                           [
+                                               "Factories2",
+                                               0,
+                                               0.01,
+                                               1,
+                                               0.71
+                                           ]
+                                       ]
+                         },
+    "geometry_recipes":  {
+                             "survey":  "DevelopmentMarks.Clipboard before source Paper; board(31,13,34,49), clip(40,9,17,8)",
+                             "extension":  "Focus only: DevelopmentMarks.Network golden edges/nodes at (31,32),(65,25),(63,56) before pieces",
+                             "secretariat":  "DevelopmentMarks.Seal at (71,56), radius8 after Book",
+                             "offices":  "DevelopmentMarks.Relay edges (30,25)-(60,42)-(73,20) before pieces",
+                             "review":  "DevelopmentMarks.Seal at (31,59), radius6 after Book and Clock",
+                             "administration":  "Idea: DevelopmentMarks.Seal at (46,46), radius6 after Book",
+                             "infrastructure":  "Decision: DevelopmentMarks.Road polygon (6,27),(11,5),(19,5),(24,27), light edges/dashed center before Wheat2",
+                             "lines":  "Decision: DevelopmentMarks.ProductionLines at y23/27, x5-26, three blocks per row after factory"
+                         },
+    "validation":  {
+                       "contact_sheet":  "docs/assets/korean-communist-development-icons/contact-sheet.png",
+                       "static":  "PASS: 17 DDS donor-identical headers/dimensions/alpha/hashes; 26 unique sprites; isolated background recoloring; two I/II pairs differ only within badge; 131 prior runtime DDS unchanged",
+                       "runtime":  "Not run by artwork subtask",
+                       "report":  ".local-artifacts/korean-communist-development-icons/validation.json",
+                       "visual_review":  "Native-size contact sheet reviewed by artwork agent and root on 2026-09-22; nine development motifs, red fields, frames, I/II and four dedicated32x32 decision icons readable"
+                   }
+}

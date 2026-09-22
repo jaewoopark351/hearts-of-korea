@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "date": "2026-09-22",
-  "status": "NINETEEN_APPLIED_REMAINDER_DESIGN_DRAFT",
+  "status": "TWENTY_EIGHT_APPLIED_REMAINDER_DESIGN_DRAFT",
   "count_target": [
     450,
     470
   ],
-  "current_total": 345,
+  "current_total": 354,
   "provisional_second_wave_allocation": 134,
-  "warning": "Unapplied candidates are proposals, not final implementation specifications. The 19 applied focuses follow their first-10 and governance specifications; the remaining 115 candidates still require design. The original one-off-reward draft critique is historical and does not prohibit meaningful single rewards.",
+  "warning": "Unapplied candidates are proposals, not final implementation specifications. The 28 applied communist focuses follow the first-10, governance and development specifications; the remaining 106 candidates still require design. The original one-off-reward draft critique is historical and does not prohibit meaningful single rewards.",
   "focuses": [
     {
       "id": "HOK_KOR_yeo_worker_peasant_congress",
@@ -30,12 +30,12 @@
       "continue_if_invalid": false,
       "status": "APPLIED_COMMUNIST_GOVERNANCE",
       "position": [
-        75,
+        73,
         14
       ],
       "anchor": "HOK_KOR_yeo_cooperative_federation",
       "relative_xy": [
-        0,
+        -2,
         1
       ],
       "sprite": "GFX_HOK_KOR_focus_yeo_worker_peasant_congress",
@@ -62,7 +62,7 @@
       "continue_if_invalid": false,
       "status": "APPLIED_COMMUNIST_GOVERNANCE",
       "position": [
-        75,
+        73,
         15
       ],
       "anchor": "HOK_KOR_yeo_worker_peasant_congress",
@@ -94,7 +94,7 @@
       "continue_if_invalid": false,
       "status": "APPLIED_COMMUNIST_GOVERNANCE",
       "position": [
-        75,
+        73,
         16
       ],
       "anchor": "HOK_KOR_yeo_workplace_arbitration",
@@ -126,7 +126,7 @@
       "continue_if_invalid": false,
       "status": "APPLIED_COMMUNIST_GOVERNANCE",
       "position": [
-        75,
+        73,
         17
       ],
       "anchor": "HOK_KOR_yeo_local_councils",
@@ -304,11 +304,11 @@
       "description": "지역마다 따로 처리하던 회계·설비 관리 업무를 조사하여 공동으로 지원할 수 있는 분야를 정하겠습니다.",
       "prerequisites": [
         [
-          "KOR_pain_sharing"
+          "HOK_KOR_yeo_cooperative_federation"
         ]
       ],
       "available": "has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader",
-      "reward": "add_political_power = 50",
+      "reward": "add_tech_bonus = { name = HOK_KOR_yeo_rural_service_survey bonus = 1.5 uses = 1 category = industry }",
       "palette": "communism",
       "motif": "Survey clipboard and village roofs",
       "module": "Y3",
@@ -316,7 +316,19 @@
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_COMMUNIST_DEVELOPMENT",
+      "position": [
+        77,
+        14
+      ],
+      "anchor": "HOK_KOR_yeo_cooperative_federation",
+      "relative_xy": [
+        2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_yeo_rural_service_survey",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_COMMUNIST_DEVELOPMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_yeo_cooperative_advisers",
@@ -336,7 +348,19 @@
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_COMMUNIST_DEVELOPMENT",
+      "position": [
+        77,
+        15
+      ],
+      "anchor": "HOK_KOR_yeo_rural_service_survey",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_yeo_cooperative_advisers",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_COMMUNIST_DEVELOPMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_yeo_workshop_bulletins",
@@ -348,7 +372,7 @@
         ]
       ],
       "available": "has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader",
-      "reward": "add_tech_bonus = { name = HOK_KOR_yeo_workshop_bulletins bonus = 0.5 uses = 1 category = industry }",
+      "reward": "add_tech_bonus = { name = HOK_KOR_yeo_workshop_bulletins bonus = 1.0 uses = 1 category = electronics }",
       "palette": "communism",
       "motif": "Illustrated engineering bulletin",
       "module": "Y3",
@@ -356,19 +380,31 @@
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_COMMUNIST_DEVELOPMENT",
+      "position": [
+        77,
+        16
+      ],
+      "anchor": "HOK_KOR_yeo_cooperative_advisers",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_yeo_workshop_bulletins",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_COMMUNIST_DEVELOPMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_yeo_joint_service_accounts",
       "name": "공동업무 회계 공개",
-      "description": "조합 지원 업무의 비용과 성과를 정기적으로 공개하여 지역 주민이 사업을 신뢰할 수 있도록 하겠습니다.",
+      "description": "조합 지원 업무의 비용과 성과를 정기적으로 공개하여 지역 주민이 사업을 신뢰할 수 있도록 하겠습니다. 공개된 재정을 바탕으로 순회 기술교육 또는 농촌 기반시설 지원 사업을 운영할 수 있습니다.",
       "prerequisites": [
         [
           "HOK_KOR_yeo_workshop_bulletins"
         ]
       ],
       "available": "has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader",
-      "reward": "add_stability = 0.02",
+      "reward": "add_political_power = 150\nunlock_decision_category_tooltip = HOK_KOR_communist_governance_programs\nunlock_decision_tooltip = HOK_KOR_yeo_mobile_technical_training_project\nunlock_decision_tooltip = HOK_KOR_yeo_rural_infrastructure_project",
       "palette": "communism",
       "motif": "Open account book and magnifying glass",
       "module": "Y3",
@@ -376,7 +412,19 @@
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_COMMUNIST_DEVELOPMENT",
+      "position": [
+        77,
+        17
+      ],
+      "anchor": "HOK_KOR_yeo_workshop_bulletins",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_yeo_joint_service_accounts",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_COMMUNIST_DEVELOPMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_yeo_technical_extension",
@@ -388,7 +436,7 @@
         ]
       ],
       "available": "has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader",
-      "reward": "if = { limit = { has_idea = HOK_KOR_yeo_technical_extension_1 } swap_ideas = { remove_idea = HOK_KOR_yeo_technical_extension_1 add_idea = HOK_KOR_yeo_technical_extension_2 } } else = { add_ideas = HOK_KOR_yeo_technical_extension_2 }",
+      "reward": "if = { limit = { has_idea = HOK_KOR_yeo_technical_extension_1 } swap_ideas = { remove_idea = HOK_KOR_yeo_technical_extension_1 add_idea = HOK_KOR_yeo_technical_extension_2 } }\nelse = { add_ideas = HOK_KOR_yeo_technical_extension_2 }",
       "palette": "communism",
       "motif": "Networked manuals and gear, II",
       "module": "Y3",
@@ -396,7 +444,19 @@
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_COMMUNIST_DEVELOPMENT",
+      "position": [
+        77,
+        18
+      ],
+      "anchor": "HOK_KOR_yeo_joint_service_accounts",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_yeo_technical_extension",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_COMMUNIST_DEVELOPMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_pak_national_asset_survey",
@@ -418,12 +478,12 @@
       "continue_if_invalid": false,
       "status": "APPLIED_COMMUNIST_GOVERNANCE",
       "position": [
-        98,
+        96,
         14
       ],
       "anchor": "HOK_KOR_pak_heavy_industry_dispatch",
       "relative_xy": [
-        0,
+        -2,
         1
       ],
       "sprite": "GFX_HOK_KOR_focus_pak_national_asset_survey",
@@ -450,7 +510,7 @@
       "continue_if_invalid": false,
       "status": "APPLIED_COMMUNIST_GOVERNANCE",
       "position": [
-        98,
+        96,
         15
       ],
       "anchor": "HOK_KOR_pak_national_asset_survey",
@@ -482,7 +542,7 @@
       "continue_if_invalid": false,
       "status": "APPLIED_COMMUNIST_GOVERNANCE",
       "position": [
-        98,
+        96,
         16
       ],
       "anchor": "HOK_KOR_pak_annual_output_targets",
@@ -514,7 +574,7 @@
       "continue_if_invalid": false,
       "status": "APPLIED_COMMUNIST_GOVERNANCE",
       "position": [
-        98,
+        96,
         17
       ],
       "anchor": "HOK_KOR_pak_material_balance",
@@ -546,7 +606,7 @@
       "continue_if_invalid": false,
       "status": "APPLIED_COMMUNIST_GOVERNANCE",
       "position": [
-        98,
+        96,
         18
       ],
       "anchor": "HOK_KOR_pak_capacity_reviews",
@@ -724,11 +784,11 @@
       "description": "각 기관이 따로 보관하던 계획과 보고를 모아 업무의 책임과 처리 순서를 명확히 하겠습니다.",
       "prerequisites": [
         [
-          "KOR_park_heon_young_as_the_leader"
+          "HOK_KOR_pak_heavy_industry_dispatch"
         ]
       ],
       "available": "has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader",
-      "reward": "add_political_power = 50",
+      "reward": "add_political_power = 150",
       "palette": "communism",
       "motif": "Red-bound plan ledger and seal",
       "module": "P3",
@@ -736,7 +796,19 @@
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_COMMUNIST_DEVELOPMENT",
+      "position": [
+        100,
+        14
+      ],
+      "anchor": "HOK_KOR_pak_heavy_industry_dispatch",
+      "relative_xy": [
+        2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_pak_planning_secretariat",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_COMMUNIST_DEVELOPMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_pak_provincial_plan_offices",
@@ -756,19 +828,31 @@
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_COMMUNIST_DEVELOPMENT",
+      "position": [
+        100,
+        15
+      ],
+      "anchor": "HOK_KOR_pak_planning_secretariat",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_pak_provincial_plan_offices",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_COMMUNIST_DEVELOPMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_pak_technical_delegates",
       "name": "현장 기술대표단",
-      "description": "생산 현장의 기술 담당자가 계획 검토에 참여하여 공정과 설비의 한계를 직접 설명하도록 하겠습니다.",
+      "description": "생산 현장의 기술 담당자가 계획 검토에 참여하여 공정과 설비의 한계를 직접 설명하도록 하겠습니다. 현장 경험을 산업 연구에 반영하고, 생산공정 전환 관리 또는 신규 생산선 가동 지원 사업을 운영할 수 있습니다.",
       "prerequisites": [
         [
           "HOK_KOR_pak_provincial_plan_offices"
         ]
       ],
       "available": "has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader",
-      "reward": "add_tech_bonus = { name = HOK_KOR_pak_technical_delegates bonus = 0.5 uses = 1 category = industry }",
+      "reward": "add_tech_bonus = { name = HOK_KOR_pak_technical_delegates bonus = 1.5 uses = 1 category = industry }\nunlock_decision_category_tooltip = HOK_KOR_communist_governance_programs\nunlock_decision_tooltip = HOK_KOR_pak_process_conversion_project\nunlock_decision_tooltip = HOK_KOR_pak_new_production_lines_project",
       "palette": "communism",
       "motif": "Engineer manual beside committee table",
       "module": "P3",
@@ -776,7 +860,19 @@
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_COMMUNIST_DEVELOPMENT",
+      "position": [
+        100,
+        16
+      ],
+      "anchor": "HOK_KOR_pak_provincial_plan_offices",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_pak_technical_delegates",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_COMMUNIST_DEVELOPMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_pak_plan_review_sessions",
@@ -788,7 +884,7 @@
         ]
       ],
       "available": "has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader",
-      "reward": "if = { limit = { has_idea = HOK_KOR_pak_planning_administration_1 } swap_ideas = { remove_idea = HOK_KOR_pak_planning_administration_1 add_idea = HOK_KOR_pak_planning_administration_2 } } else = { add_ideas = HOK_KOR_pak_planning_administration_2 }",
+      "reward": "if = { limit = { has_idea = HOK_KOR_pak_planning_administration_1 } swap_ideas = { remove_idea = HOK_KOR_pak_planning_administration_1 add_idea = HOK_KOR_pak_planning_administration_2 } }\nelse = { add_ideas = HOK_KOR_pak_planning_administration_2 }",
       "palette": "communism",
       "motif": "Review ledger, seal and clock, II",
       "module": "P3",
@@ -796,7 +892,19 @@
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_COMMUNIST_DEVELOPMENT",
+      "position": [
+        100,
+        17
+      ],
+      "anchor": "HOK_KOR_pak_technical_delegates",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_pak_plan_review_sessions",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_COMMUNIST_DEVELOPMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_procurement_board",

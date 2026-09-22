@@ -11702,8 +11702,9 @@ focus_tree = {
 	focus = {
 		id = HOK_KOR_yeo_worker_peasant_congress
 		icon = GFX_HOK_KOR_focus_yeo_worker_peasant_congress
+		#20260922_kpopmodder: Branch governance and technical administration side by side after the economic policy capstone.
 		relative_position_id = HOK_KOR_yeo_cooperative_federation
-		x = 0
+		x = -2
 		y = 1
 		cost = 5
 		prerequisite = { focus = HOK_KOR_yeo_cooperative_federation }
@@ -11790,8 +11791,9 @@ focus_tree = {
 	focus = {
 		id = HOK_KOR_pak_national_asset_survey
 		icon = GFX_HOK_KOR_focus_pak_national_asset_survey
+		#20260922_kpopmodder: Branch governance and technical administration side by side after the economic policy capstone.
 		relative_position_id = HOK_KOR_pak_heavy_industry_dispatch
-		x = 0
+		x = -2
 		y = 1
 		cost = 5
 		prerequisite = { focus = HOK_KOR_pak_heavy_industry_dispatch }
@@ -11890,6 +11892,197 @@ focus_tree = {
 				swap_ideas = { remove_idea = HOK_KOR_pak_output_plan_1 add_idea = HOK_KOR_pak_output_plan_2 }
 			}
 			else = { add_ideas = HOK_KOR_pak_output_plan_2 }
+		}
+	}
+	#20260922_kpopmodder: Extend communist domestic policy with technical diffusion and practical production administration.
+	focus = {
+		id = HOK_KOR_yeo_rural_service_survey
+		icon = GFX_HOK_KOR_focus_yeo_rural_service_survey
+		#20260922_kpopmodder: Branch governance and technical administration side by side after the economic policy capstone.
+		relative_position_id = HOK_KOR_yeo_cooperative_federation
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_cooperative_federation }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_yeo_rural_service_survey bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+
+	#20260922_kpopmodder: Extend communist domestic policy with technical diffusion and practical production administration.
+	focus = {
+		id = HOK_KOR_yeo_cooperative_advisers
+		icon = GFX_HOK_KOR_focus_yeo_cooperative_advisers
+		relative_position_id = HOK_KOR_yeo_rural_service_survey
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_rural_service_survey }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_yeo_technical_extension_1
+		}
+	}
+
+	#20260922_kpopmodder: Extend communist domestic policy with technical diffusion and practical production administration.
+	focus = {
+		id = HOK_KOR_yeo_workshop_bulletins
+		icon = GFX_HOK_KOR_focus_yeo_workshop_bulletins
+		relative_position_id = HOK_KOR_yeo_cooperative_advisers
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_cooperative_advisers }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_yeo_workshop_bulletins bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+
+	#20260922_kpopmodder: Extend communist domestic policy with technical diffusion and practical production administration.
+	focus = {
+		id = HOK_KOR_yeo_joint_service_accounts
+		icon = GFX_HOK_KOR_focus_yeo_joint_service_accounts
+		relative_position_id = HOK_KOR_yeo_workshop_bulletins
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_workshop_bulletins }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			#20260922_kpopmodder: Show the shared category unlock when this parallel module is completed first.
+			unlock_decision_category_tooltip = HOK_KOR_communist_governance_programs
+			unlock_decision_tooltip = HOK_KOR_yeo_mobile_technical_training_project
+			unlock_decision_tooltip = HOK_KOR_yeo_rural_infrastructure_project
+		}
+	}
+
+	#20260922_kpopmodder: Extend communist domestic policy with technical diffusion and practical production administration.
+	focus = {
+		id = HOK_KOR_yeo_technical_extension
+		icon = GFX_HOK_KOR_focus_yeo_technical_extension
+		relative_position_id = HOK_KOR_yeo_joint_service_accounts
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_joint_service_accounts }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_yeo_technical_extension_1 } swap_ideas = { remove_idea = HOK_KOR_yeo_technical_extension_1 add_idea = HOK_KOR_yeo_technical_extension_2 } }
+			else = { add_ideas = HOK_KOR_yeo_technical_extension_2 }
+		}
+	}
+
+	#20260922_kpopmodder: Extend communist domestic policy with technical diffusion and practical production administration.
+	focus = {
+		id = HOK_KOR_pak_planning_secretariat
+		icon = GFX_HOK_KOR_focus_pak_planning_secretariat
+		#20260922_kpopmodder: Branch governance and technical administration side by side after the economic policy capstone.
+		relative_position_id = HOK_KOR_pak_heavy_industry_dispatch
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_heavy_industry_dispatch }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#20260922_kpopmodder: Extend communist domestic policy with technical diffusion and practical production administration.
+	focus = {
+		id = HOK_KOR_pak_provincial_plan_offices
+		icon = GFX_HOK_KOR_focus_pak_provincial_plan_offices
+		relative_position_id = HOK_KOR_pak_planning_secretariat
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_planning_secretariat }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_pak_planning_administration_1
+		}
+	}
+
+	#20260922_kpopmodder: Extend communist domestic policy with technical diffusion and practical production administration.
+	focus = {
+		id = HOK_KOR_pak_technical_delegates
+		icon = GFX_HOK_KOR_focus_pak_technical_delegates
+		relative_position_id = HOK_KOR_pak_provincial_plan_offices
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_provincial_plan_offices }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_pak_technical_delegates bonus = 1.5 uses = 1 category = industry }
+			#20260922_kpopmodder: Show the shared category unlock when this parallel module is completed first.
+			unlock_decision_category_tooltip = HOK_KOR_communist_governance_programs
+			unlock_decision_tooltip = HOK_KOR_pak_process_conversion_project
+			unlock_decision_tooltip = HOK_KOR_pak_new_production_lines_project
+		}
+	}
+
+	#20260922_kpopmodder: Extend communist domestic policy with technical diffusion and practical production administration.
+	focus = {
+		id = HOK_KOR_pak_plan_review_sessions
+		icon = GFX_HOK_KOR_focus_pak_plan_review_sessions
+		relative_position_id = HOK_KOR_pak_technical_delegates
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_technical_delegates }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_pak_planning_administration_1 } swap_ideas = { remove_idea = HOK_KOR_pak_planning_administration_1 add_idea = HOK_KOR_pak_planning_administration_2 } }
+			else = { add_ideas = HOK_KOR_pak_planning_administration_2 }
 		}
 	}
 }

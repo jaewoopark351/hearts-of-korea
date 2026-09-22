@@ -3,11 +3,11 @@
   "documented_on": "2026-09-22",
   "status": "APPLIED_STATIC_CHECKED_RUNTIME_LAYOUT_UNVERIFIED",
   "source": "common/national_focus/korea.txt",
-  "source_sha256": "2a124ff35d4fb10e33619614470c03ce039324e8013d97237f8feb38c28c3cae",
-  "baseline_source_sha256": "830c58121c359cd48d9343f312eb8b05c5cceee37e308e86f0cc74eed98ec579",
-  "count": 345,
+  "source_sha256": "0f23dfdb61f390582c4b5c65cde7797cdc76a11382bea5424cbfc5bbf7580b98",
+  "baseline_source_sha256": "2a124ff35d4fb10e33619614470c03ce039324e8013d97237f8feb38c28c3cae",
+  "count": 354,
   "absolute_anchors": 7,
-  "relative_nodes": 338,
+  "relative_nodes": 347,
   "bounds": {
     "x_min": 0,
     "x_max": 204,
@@ -23,7 +23,9 @@
     "Four absolute political anchors move +10x; their relative descendants follow.",
     "Two forward-declared anchor references are replaced with an earlier anchor at unchanged resolved positions.",
     "Zero repeated centers or new-node rectangle collisions in a static model is not in-game line/nameplate validation.",
-    "2026-09-22 governance follow-up: 9 new relative descendants; all previous 336 focus definitions and coordinates are byte-preserved against d8558937. New Y1/P1 roots attach to the first policy capstones; those draft attachment changes do not alter existing prerequisites."
+    "2026-09-22 governance follow-up: 9 new relative descendants; all previous 336 focus definitions and coordinates are byte-preserved against d8558937. New Y1/P1 roots attach to the first policy capstones; those draft attachment changes do not alter existing prerequisites.",
+    "2026-09-22 technical development: Y3 five and P3 four relative descendants at x75/y18-22 and x98/y19-22; prior 345 focus blocks and coordinates preserved against b300b409. Static coordinates do not prove in-game branch visibility or connector rendering.",
+    "2026-09-22 parallel policy layout: supersedes the preceding sequential Y1/Y3 and P1/P3 positions. The first 10 policies stay fixed; Y1 is x73/y14-17, Y3 x77/y14-18, P1 x96/y14-18, P3 x100/y14-17. Two development roots now require the economic capstones. Both branches remain completable; rewards, costs and AI weights are preserved. See docs/incidents/2026-09-22-korean-communist-parallel.md. Runtime layout remains unverified."
   ],
   "nodes": [
     {
@@ -14397,11 +14399,11 @@
       "after": {
         "relative_position_id": "HOK_KOR_yeo_cooperative_federation",
         "script_xy": {
-          "x": 0,
+          "x": -2,
           "y": 1
         },
         "base_absolute": {
-          "x": 75,
+          "x": 73,
           "y": 14
         }
       }
@@ -14419,7 +14421,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 75,
+          "x": 73,
           "y": 15
         }
       }
@@ -14437,7 +14439,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 75,
+          "x": 73,
           "y": 16
         }
       }
@@ -14455,7 +14457,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 75,
+          "x": 73,
           "y": 17
         }
       }
@@ -14469,11 +14471,11 @@
       "after": {
         "relative_position_id": "HOK_KOR_pak_heavy_industry_dispatch",
         "script_xy": {
-          "x": 0,
+          "x": -2,
           "y": 1
         },
         "base_absolute": {
-          "x": 98,
+          "x": 96,
           "y": 14
         }
       }
@@ -14491,7 +14493,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 98,
+          "x": 96,
           "y": 15
         }
       }
@@ -14509,7 +14511,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 98,
+          "x": 96,
           "y": 16
         }
       }
@@ -14527,7 +14529,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 98,
+          "x": 96,
           "y": 17
         }
       }
@@ -14545,8 +14547,170 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 98,
+          "x": 96,
           "y": 18
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_yeo_rural_service_survey",
+      "name": "농촌 공동업무 조사",
+      "origin": "second_wave_communist_development",
+      "declaration_order": 345,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_yeo_cooperative_federation",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 77,
+          "y": 14
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_yeo_cooperative_advisers",
+      "name": "조합 기술상담소",
+      "origin": "second_wave_communist_development",
+      "declaration_order": 346,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_yeo_rural_service_survey",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 77,
+          "y": 15
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_yeo_workshop_bulletins",
+      "name": "작업장 기술회보",
+      "origin": "second_wave_communist_development",
+      "declaration_order": 347,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_yeo_cooperative_advisers",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 77,
+          "y": 16
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_yeo_joint_service_accounts",
+      "name": "공동업무 회계 공개",
+      "origin": "second_wave_communist_development",
+      "declaration_order": 348,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_yeo_workshop_bulletins",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 77,
+          "y": 17
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_yeo_technical_extension",
+      "name": "전국 조합 기술보급망",
+      "origin": "second_wave_communist_development",
+      "declaration_order": 349,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_yeo_joint_service_accounts",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 77,
+          "y": 18
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_pak_planning_secretariat",
+      "name": "국가계획 사무국",
+      "origin": "second_wave_communist_development",
+      "declaration_order": 350,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_pak_heavy_industry_dispatch",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 100,
+          "y": 14
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_pak_provincial_plan_offices",
+      "name": "지방계획 연락소",
+      "origin": "second_wave_communist_development",
+      "declaration_order": 351,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_pak_planning_secretariat",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 100,
+          "y": 15
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_pak_technical_delegates",
+      "name": "현장 기술대표단",
+      "origin": "second_wave_communist_development",
+      "declaration_order": 352,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_pak_provincial_plan_offices",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 100,
+          "y": 16
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_pak_plan_review_sessions",
+      "name": "계획실적 검토회의",
+      "origin": "second_wave_communist_development",
+      "declaration_order": 353,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_pak_technical_delegates",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 100,
+          "y": 17
         }
       }
     }

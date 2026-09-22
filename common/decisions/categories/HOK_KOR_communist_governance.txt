@@ -3,9 +3,12 @@ HOK_KOR_communist_governance_programs = {
 	icon = GFX_HOK_KOR_decision_category_communist_governance
 	allowed = { original_tag = KOR }
 	visible = {
+		#20260922_kpopmodder: Either parallel module may expose the shared category; individual programs keep their own unlocks.
 		OR = {
 			has_completed_focus = HOK_KOR_yeo_local_councils
 			has_completed_focus = HOK_KOR_pak_capacity_reviews
+			has_completed_focus = HOK_KOR_yeo_joint_service_accounts
+			has_completed_focus = HOK_KOR_pak_technical_delegates
 		}
 	}
 }
