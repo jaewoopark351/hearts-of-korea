@@ -1,0 +1,363 @@
+#20260923_kpopmodder: Use internal fascist follow-up masks and the shared local shine overlay.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_military_administration_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_military_administration.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_military_administration.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_military_administration.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_civil_supply_offices_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_civil_supply_offices.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_civil_supply_offices.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_civil_supply_offices.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_claims_accounts_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_claims_accounts.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_claims_accounts.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_claims_accounts.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_civil_administration_rules_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_civil_administration_rules.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_civil_administration_rules.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_civil_administration_rules.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_interservice_liaison_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_interservice_liaison.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_interservice_liaison.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_interservice_liaison.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_joint_logistics_board_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_joint_logistics_board.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_joint_logistics_board.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_joint_logistics_board.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_joint_dispatch_records_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_joint_dispatch_records.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_joint_dispatch_records.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_joint_dispatch_records.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_service_supply_rules_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_service_supply_rules.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_service_supply_rules.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_service_supply_rules.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_reconstruction_secretariat_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_reconstruction_secretariat.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_reconstruction_secretariat.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_reconstruction_secretariat.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_public_accounts_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_public_accounts.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_public_accounts.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_public_accounts.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_construction_practice_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_construction_practice.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_construction_practice.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_construction_practice.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_reconstruction_budget_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_reconstruction_budget.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_reconstruction_budget.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_reconstruction_budget.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+}

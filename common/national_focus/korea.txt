@@ -12380,4 +12380,245 @@ focus_tree = {
 			else = { add_ideas = HOK_KOR_nrsc_manpower_administration_2 }
 		}
 	}
+
+	#20260923_kpopmodder: Add occupation administration after staff regulations while requiring actual non-core control and preserving existing content.
+	focus = {
+		id = HOK_KOR_nrsc_military_administration
+		icon = GFX_HOK_KOR_focus_nrsc_military_administration
+		relative_position_id = HOK_KOR_nrsc_staff_regulations
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_staff_regulations }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add occupation administration after staff regulations while requiring actual non-core control and preserving existing content.
+	focus = {
+		id = HOK_KOR_nrsc_civil_supply_offices
+		icon = GFX_HOK_KOR_focus_nrsc_civil_supply_offices
+		relative_position_id = HOK_KOR_nrsc_military_administration
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_military_administration }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_nrsc_occupation_administration_1
+		}
+	}
+	#20260923_kpopmodder: Add occupation administration after staff regulations while requiring actual non-core control and preserving existing content.
+	focus = {
+		id = HOK_KOR_nrsc_claims_accounts
+		icon = GFX_HOK_KOR_focus_nrsc_claims_accounts
+		relative_position_id = HOK_KOR_nrsc_military_administration
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_military_administration }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add occupation administration after staff regulations while requiring actual non-core control and preserving existing content.
+	focus = {
+		id = HOK_KOR_nrsc_civil_administration_rules
+		icon = GFX_HOK_KOR_focus_nrsc_civil_administration_rules
+		relative_position_id = HOK_KOR_nrsc_military_administration
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_civil_supply_offices }
+		prerequisite = { focus = HOK_KOR_nrsc_claims_accounts }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_nrsc_occupation_administration_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_occupation_administration_1 add_idea = HOK_KOR_nrsc_occupation_administration_2 } }
+			else = { add_ideas = HOK_KOR_nrsc_occupation_administration_2 }
+		}
+	}
+	#20260923_kpopmodder: Add parallel interservice logistics near the political entry while retaining the completed military institution gate.
+	focus = {
+		id = HOK_KOR_nrsc_interservice_liaison
+		icon = GFX_HOK_KOR_focus_nrsc_interservice_liaison
+		relative_position_id = KOR_empowering_the_nrsc
+		x = -8
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_empowering_the_nrsc }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
+		}
+	}
+	#20260923_kpopmodder: Add parallel interservice logistics near the political entry while retaining the completed military institution gate.
+	focus = {
+		id = HOK_KOR_nrsc_joint_logistics_board
+		icon = GFX_HOK_KOR_focus_nrsc_joint_logistics_board
+		relative_position_id = HOK_KOR_nrsc_interservice_liaison
+		x = -1
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_interservice_liaison }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_nrsc_service_coordination_1
+		}
+	}
+	#20260923_kpopmodder: Add parallel interservice logistics near the political entry while retaining the completed military institution gate.
+	focus = {
+		id = HOK_KOR_nrsc_joint_dispatch_records
+		icon = GFX_HOK_KOR_focus_nrsc_joint_dispatch_records
+		relative_position_id = HOK_KOR_nrsc_interservice_liaison
+		x = 1
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_interservice_liaison }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			navy_experience = 25
+			air_experience = 25
+			add_tech_bonus = { name = HOK_KOR_nrsc_joint_dispatch_records bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+	#20260923_kpopmodder: Add parallel interservice logistics near the political entry while retaining the completed military institution gate.
+	focus = {
+		id = HOK_KOR_nrsc_service_supply_rules
+		icon = GFX_HOK_KOR_focus_nrsc_service_supply_rules
+		relative_position_id = HOK_KOR_nrsc_interservice_liaison
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_joint_logistics_board }
+		prerequisite = { focus = HOK_KOR_nrsc_joint_dispatch_records }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_nrsc_service_coordination_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_service_coordination_1 add_idea = HOK_KOR_nrsc_service_coordination_2 } }
+			else = { add_ideas = HOK_KOR_nrsc_service_coordination_2 }
+		}
+	}
+	#20260923_kpopmodder: Add post-coup reconstruction priorities with a genuine budget choice and peace-territory gates.
+	focus = {
+		id = HOK_KOR_nrsc_reconstruction_secretariat
+		icon = GFX_HOK_KOR_focus_nrsc_reconstruction_secretariat
+		relative_position_id = KOR_empowering_the_nrsc
+		x = -4
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_empowering_the_nrsc }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add post-coup reconstruction priorities with a genuine budget choice and peace-territory gates.
+	focus = {
+		id = HOK_KOR_nrsc_public_accounts
+		icon = GFX_HOK_KOR_focus_nrsc_public_accounts
+		relative_position_id = HOK_KOR_nrsc_reconstruction_secretariat
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_reconstruction_secretariat }
+		mutually_exclusive = { focus = HOK_KOR_nrsc_construction_practice }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_nrsc_administrative_budget_1
+		}
+	}
+	#20260923_kpopmodder: Add post-coup reconstruction priorities with a genuine budget choice and peace-territory gates.
+	focus = {
+		id = HOK_KOR_nrsc_construction_practice
+		icon = GFX_HOK_KOR_focus_nrsc_construction_practice
+		relative_position_id = HOK_KOR_nrsc_reconstruction_secretariat
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_reconstruction_secretariat }
+		mutually_exclusive = { focus = HOK_KOR_nrsc_public_accounts }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_nrsc_construction_budget_1
+		}
+	}
+	#20260923_kpopmodder: Add post-coup reconstruction priorities with a genuine budget choice and peace-territory gates.
+	focus = {
+		id = HOK_KOR_nrsc_reconstruction_budget
+		icon = GFX_HOK_KOR_focus_nrsc_reconstruction_budget
+		relative_position_id = HOK_KOR_nrsc_reconstruction_secretariat
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_public_accounts focus = HOK_KOR_nrsc_construction_practice }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_completed_focus = HOK_KOR_nrsc_public_accounts } if = { limit = { has_idea = HOK_KOR_nrsc_administrative_budget_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_administrative_budget_1 add_idea = HOK_KOR_nrsc_administrative_budget_2 } } else = { add_ideas = HOK_KOR_nrsc_administrative_budget_2 } }
+			else_if = { limit = { has_completed_focus = HOK_KOR_nrsc_construction_practice } if = { limit = { has_idea = HOK_KOR_nrsc_construction_budget_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_construction_budget_1 add_idea = HOK_KOR_nrsc_construction_budget_2 } } else = { add_ideas = HOK_KOR_nrsc_construction_budget_2 } }
+		}
+	}
 }

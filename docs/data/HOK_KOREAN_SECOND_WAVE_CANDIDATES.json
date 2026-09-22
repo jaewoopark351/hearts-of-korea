@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "date": "2026-09-22",
-  "status": "FORTY_APPLIED_REMAINDER_DESIGN_DRAFT",
+  "date": "2026-09-23",
+  "status": "FIFTY_TWO_APPLIED_REMAINDER_DESIGN_DRAFT",
   "count_target": [
     450,
     470
   ],
-  "current_total": 366,
+  "current_total": 378,
   "provisional_second_wave_allocation": 134,
-  "warning": "Unapplied candidates are proposals, not final implementation specifications. Applied: communist 28, fascist F1 procurement 4, F2 staff 4, F3 manpower 4. The remaining 94 candidates still require policy design. See each module specification; the historical draft critique does not prohibit meaningful single rewards.",
+  "warning": "Unapplied candidates remain proposals, not final implementation specifications. Applied: communist 28 and fascist F1-F6 24. Remaining 82 require detailed design. F4 intentionally follows F2 staff regulations; F5 and F6 use political completion gates and remain independent. See the current module specifications and source-specific validation records.",
   "focuses": [
     {
       "id": "HOK_KOR_yeo_worker_peasant_congress",
@@ -1305,19 +1305,28 @@
       "description": "점령이 발생했을 때 행정과 군 지휘의 책임이 혼동되지 않도록 군정 업무 절차를 정리하겠습니다.",
       "prerequisites": [
         [
-          "KOR_korea_reigns_above_the_world"
+          "HOK_KOR_nrsc_staff_regulations"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "add_political_power = 50",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT }",
+      "reward": "add_political_power = 150",
       "palette": "fascism",
       "motif": "Civil administration ledger and helmet",
       "module": "F4",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_staff_regulations",
+      "relative_xy": [
+        2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_military_administration",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_civil_supply_offices",
@@ -1328,16 +1337,25 @@
           "HOK_KOR_nrsc_military_administration"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT }",
       "reward": "add_ideas = HOK_KOR_nrsc_occupation_administration_1",
       "palette": "fascism",
       "motif": "Supply crate, civilian ledger and scales",
       "module": "F4",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_military_administration",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_civil_supply_offices",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_claims_accounts",
@@ -1345,19 +1363,28 @@
       "description": "현지 주민의 민원과 재산 관련 기록을 보존하여 행정기관의 책임 소재를 확인할 수 있도록 하겠습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_nrsc_civil_supply_offices"
+          "HOK_KOR_nrsc_military_administration"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "add_political_power = 50",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT }",
+      "reward": "add_political_power = 100\n\t\t\tadd_stability = 0.05",
       "palette": "fascism",
       "motif": "Petition ledger and document seal",
       "module": "F4",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_military_administration",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_claims_accounts",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_civil_administration_rules",
@@ -1365,19 +1392,31 @@
       "description": "생활물자·민원·행정 인계 절차를 통합하여 점령지 통치에서 발생하는 불필요한 마찰을 줄이겠습니다.",
       "prerequisites": [
         [
+          "HOK_KOR_nrsc_civil_supply_offices"
+        ],
+        [
           "HOK_KOR_nrsc_claims_accounts"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_occupation_administration_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_occupation_administration_1 add_idea = HOK_KOR_nrsc_occupation_administration_2 } } else = { add_ideas = HOK_KOR_nrsc_occupation_administration_2 }",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT }",
+      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_occupation_administration_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_occupation_administration_1 add_idea = HOK_KOR_nrsc_occupation_administration_2 } }\n\t\t\telse = { add_ideas = HOK_KOR_nrsc_occupation_administration_2 }",
       "palette": "fascism",
       "motif": "Administration manual and town seal, II",
       "module": "F4",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_military_administration",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_civil_administration_rules",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_interservice_liaison",
@@ -1385,19 +1424,28 @@
       "description": "육군·해군·공군의 행정 연락 창구를 정해 같은 요청이 반복되거나 누락되지 않도록 하겠습니다.",
       "prerequisites": [
         [
-          "KOR_prussia_in_the_far_east"
+          "KOR_empowering_the_nrsc"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "navy_experience = 15 air_experience = 15",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east",
+      "reward": "army_experience = 25\n\t\t\tnavy_experience = 25\n\t\t\tair_experience = 25",
       "palette": "fascism",
       "motif": "Anchor, wing and staff baton",
       "module": "F5",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "KOR_empowering_the_nrsc",
+      "relative_xy": [
+        -8,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_interservice_liaison",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_joint_logistics_board",
@@ -1408,16 +1456,25 @@
           "HOK_KOR_nrsc_interservice_liaison"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east",
       "reward": "add_ideas = HOK_KOR_nrsc_service_coordination_1",
       "palette": "fascism",
       "motif": "Three-service emblems around crate",
       "module": "F5",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_interservice_liaison",
+      "relative_xy": [
+        -1,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_joint_logistics_board",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_joint_dispatch_records",
@@ -1425,19 +1482,28 @@
       "description": "보급 청구와 발송 기록을 대조할 공통 명부를 마련하고 담당자의 실무 경험을 축적하겠습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_nrsc_joint_logistics_board"
+          "HOK_KOR_nrsc_interservice_liaison"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "army_experience = 15",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east",
+      "reward": "navy_experience = 25\n\t\t\tair_experience = 25\n\t\t\tadd_tech_bonus = { name = HOK_KOR_nrsc_joint_dispatch_records bonus = 1.0 uses = 1 category = electronics }",
       "palette": "fascism",
       "motif": "Shipping ledger with three seals",
       "module": "F5",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_interservice_liaison",
+      "relative_xy": [
+        1,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_joint_dispatch_records",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_service_supply_rules",
@@ -1445,19 +1511,31 @@
       "description": "군수조정회의의 합의 사항을 각 군의 일상 업무 절차에 반영하겠습니다.",
       "prerequisites": [
         [
+          "HOK_KOR_nrsc_joint_logistics_board"
+        ],
+        [
           "HOK_KOR_nrsc_joint_dispatch_records"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_service_coordination_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_service_coordination_1 add_idea = HOK_KOR_nrsc_service_coordination_2 } } else = { add_ideas = HOK_KOR_nrsc_service_coordination_2 }",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east",
+      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_service_coordination_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_service_coordination_1 add_idea = HOK_KOR_nrsc_service_coordination_2 } }\n\t\t\telse = { add_ideas = HOK_KOR_nrsc_service_coordination_2 }",
       "palette": "fascism",
       "motif": "Joint supply manual and crate, II",
       "module": "F5",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_interservice_liaison",
+      "relative_xy": [
+        0,
+        3
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_service_supply_rules",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_reconstruction_secretariat",
@@ -1465,19 +1543,28 @@
       "description": "중앙 각 기관의 재건 관련 업무를 집계해 서로 모순되는 지시와 중복 사업을 줄이겠습니다.",
       "prerequisites": [
         [
-          "KOR_korea_reigns_above_the_world"
+          "KOR_empowering_the_nrsc"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "add_political_power = 50",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world has_war = no owns_state = 525 has_full_control_of_state = 525",
+      "reward": "add_political_power = 150",
       "palette": "fascism",
       "motif": "Ministry document and construction compass",
       "module": "F6",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "KOR_empowering_the_nrsc",
+      "relative_xy": [
+        -4,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_reconstruction_secretariat",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_public_accounts",
@@ -1488,18 +1575,27 @@
           "HOK_KOR_nrsc_reconstruction_secretariat"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world has_war = no owns_state = 525 has_full_control_of_state = 525",
       "reward": "add_ideas = HOK_KOR_nrsc_administrative_budget_1",
       "palette": "fascism",
       "motif": "Account ledger with bronze seal",
       "module": "F6",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [
         "HOK_KOR_nrsc_construction_practice"
       ],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_reconstruction_secretariat",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_public_accounts",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_construction_practice",
@@ -1510,18 +1606,27 @@
           "HOK_KOR_nrsc_reconstruction_secretariat"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world has_war = no owns_state = 525 has_full_control_of_state = 525",
       "reward": "add_ideas = HOK_KOR_nrsc_construction_budget_1",
       "palette": "fascism",
       "motif": "Drafting compass over factory blueprint",
       "module": "F6",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [
         "HOK_KOR_nrsc_public_accounts"
       ],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_reconstruction_secretariat",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_construction_practice",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_reconstruction_budget",
@@ -1533,16 +1638,25 @@
           "HOK_KOR_nrsc_construction_practice"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "if = { limit = { has_completed_focus = HOK_KOR_nrsc_public_accounts } if = { limit = { has_idea = HOK_KOR_nrsc_administrative_budget_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_administrative_budget_1 add_idea = HOK_KOR_nrsc_administrative_budget_2 } } else = { add_ideas = HOK_KOR_nrsc_administrative_budget_2 } } else_if = { limit = { has_completed_focus = HOK_KOR_nrsc_construction_practice } if = { limit = { has_idea = HOK_KOR_nrsc_construction_budget_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_construction_budget_1 add_idea = HOK_KOR_nrsc_construction_budget_2 } } else = { add_ideas = HOK_KOR_nrsc_construction_budget_2 } }",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world has_war = no owns_state = 525 has_full_control_of_state = 525",
+      "reward": "if = { limit = { has_completed_focus = HOK_KOR_nrsc_public_accounts } if = { limit = { has_idea = HOK_KOR_nrsc_administrative_budget_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_administrative_budget_1 add_idea = HOK_KOR_nrsc_administrative_budget_2 } } else = { add_ideas = HOK_KOR_nrsc_administrative_budget_2 } }\n\t\t\telse_if = { limit = { has_completed_focus = HOK_KOR_nrsc_construction_practice } if = { limit = { has_idea = HOK_KOR_nrsc_construction_budget_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_construction_budget_1 add_idea = HOK_KOR_nrsc_construction_budget_2 } } else = { add_ideas = HOK_KOR_nrsc_construction_budget_2 } }",
       "palette": "fascism",
       "motif": "Budget book and factory silhouette, II",
       "module": "F6",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 country-focus/idea scope examples; see F4-F6 specification for precise files and intentional design.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED",
+      "cost": 5,
+      "anchor": "HOK_KOR_nrsc_reconstruction_secretariat",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_reconstruction_budget",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_parliamentary_questions",

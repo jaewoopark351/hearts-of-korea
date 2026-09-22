@@ -10,6 +10,8 @@
 
 ## 문서 목록
 
+- [한국 중점 2차 확장 현황](docs/HOK_KOREAN_SECOND_WAVE_PLAN.md): 현재 378개, 공산 28개·파시즘 24개 후속 구현; 실제 플레이 검증은 기록별로 구분
+- [파시즘 점령행정·삼군 조정·재건예산 명세](docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md): 신규 12개·국민정신 8개, 영토·평시 조건과 실제 예산 선택
 - [한국 중점 보상 재조정 설계·적용 상태](docs/HOK_KOREAN_FOCUS_REBALANCE_PLAN.md): 보상 강화 적용, 게임 검증 진행 중; 보병장비 한정 생산량 +10%는 미적용·대안 응답 대기
 - [한국 중점 트리 보존·35일화·확장 설계](docs/HOK_KOREAN_FOCUS_EXPANSION_PLAN.md): 기존 266개 보존, 기간 단축 범위와 단계별 확장 제안
 - [한국 중점 좌표·연결선 재배치 설계](docs/HOK_KOREAN_FOCUS_LAYOUT_PLAN.md): x0~194·y0~24 압축 배치 적용; HIDE 초기 상태 전체 분야 화면 검수 완료, 조건별 검증 범위는 문서 참조

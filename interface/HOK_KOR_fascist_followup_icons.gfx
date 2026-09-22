@@ -1,0 +1,83 @@
+#20260923_kpopmodder: Add local occupation, joint-service and reconstruction artwork with genuine spirit tiers.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_military_administration"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_military_administration.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_civil_supply_offices"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_civil_supply_offices.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_claims_accounts"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_claims_accounts.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_civil_administration_rules"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_civil_administration_rules.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_interservice_liaison"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_interservice_liaison.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_joint_logistics_board"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_joint_logistics_board.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_joint_dispatch_records"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_joint_dispatch_records.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_service_supply_rules"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_service_supply_rules.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_reconstruction_secretariat"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_reconstruction_secretariat.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_public_accounts"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_public_accounts.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_construction_practice"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_construction_practice.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_reconstruction_budget"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_followup/nrsc_reconstruction_budget.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_occupation_administration_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_followup/nrsc_occupation_administration_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_occupation_administration_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_followup/nrsc_occupation_administration_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_service_coordination_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_followup/nrsc_service_coordination_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_service_coordination_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_followup/nrsc_service_coordination_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_administrative_budget_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_followup/nrsc_administrative_budget_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_administrative_budget_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_followup/nrsc_administrative_budget_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_construction_budget_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_followup/nrsc_construction_budget_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_construction_budget_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_followup/nrsc_construction_budget_2.dds"
+    }
+}
