@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "documented_on": "2026-09-22",
-  "status": "APPLIED_STATIC_CHECKED_RUNTIME_LAYOUT_UNVERIFIED",
+  "documented_on": "2026-09-23",
+  "status": "APPLIED_366_FINAL_STATIC_REWARDS_CLEAN_LOAD_UPPER_UI_AND_ROOT_PROGRESSION_VERIFIED",
   "source": "common/national_focus/korea.txt",
-  "source_sha256": "0f23dfdb61f390582c4b5c65cde7797cdc76a11382bea5424cbfc5bbf7580b98",
+  "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
   "baseline_source_sha256": "2a124ff35d4fb10e33619614470c03ce039324e8013d97237f8feb38c28c3cae",
-  "count": 354,
+  "count": 366,
   "absolute_anchors": 7,
-  "relative_nodes": 347,
+  "relative_nodes": 359,
   "bounds": {
     "x_min": 0,
     "x_max": 204,
@@ -25,7 +25,11 @@
     "Zero repeated centers or new-node rectangle collisions in a static model is not in-game line/nameplate validation.",
     "2026-09-22 governance follow-up: 9 new relative descendants; all previous 336 focus definitions and coordinates are byte-preserved against d8558937. New Y1/P1 roots attach to the first policy capstones; those draft attachment changes do not alter existing prerequisites.",
     "2026-09-22 technical development: Y3 five and P3 four relative descendants at x75/y18-22 and x98/y19-22; prior 345 focus blocks and coordinates preserved against b300b409. Static coordinates do not prove in-game branch visibility or connector rendering.",
-    "2026-09-22 parallel policy layout: supersedes the preceding sequential Y1/Y3 and P1/P3 positions. The first 10 policies stay fixed; Y1 is x73/y14-17, Y3 x77/y14-18, P1 x96/y14-18, P3 x100/y14-17. Two development roots now require the economic capstones. Both branches remain completable; rewards, costs and AI weights are preserved. See docs/incidents/2026-09-22-korean-communist-parallel.md. Runtime layout remains unverified."
+    "2026-09-22 parallel policy layout: supersedes the preceding sequential Y1/Y3 and P1/P3 positions. The first 10 policies stay fixed; Y1 is x73/y14-17, Y3 x77/y14-18, P1 x96/y14-18, P3 x100/y14-17. Two development roots now require the economic capstones. Both branches remain completable; rewards, costs and AI weights are preserved. See docs/incidents/2026-09-22-korean-communist-parallel.md. Runtime layout remains unverified.",
+    "2026-09-22 fascist procurement F1: four relative nodes form a 3-row diamond at (160,7), (158,8), (162,8), (160,9), branching from KOR_taming_the_jaebeol at (165,6). All 354 preceding definitions and positions are byte-preserved against 691ffa37740237feddf0b44fc68cfa47b10d76bf. Whole bounds and zero-movement offsets are unchanged. The two sibling policies can be completed in either order; the capstone requires both. Static coordinates do not prove in-game UI rendering.",
+    "2026-09-22 fascist staff F2: four relative nodes form a 3-row parallel module at (172,6), (171,7), (173,7), (172,8), attached to KOR_prussia_in_the_far_east at (169,5). The prior 358 focus blocks and resolved positions, including uncommitted F1, are byte-preserved against source SHA256 8537c9b8df2ed75acd0f007aa00f8ebefcb80ac597d677eaf6e5c5ed06840a0b. F1 is not a prerequisite. Both middle policies are required by the capstone. Whole bounds and zero-movement offsets remain unchanged; static rectangle and connector models do not prove in-game rendering.",
+    "2026-09-22 political HIDE compaction: supersedes prior zero-movement offset notes without changing any base x/y or relative anchor. Only five absolute political/common roots change offsets; 362 non-offset definitions remain unchanged against SHA256 8a721a8739834bac5a0ed30f3d3335ced9ceaf4bc63439b1db8bfe2c14299aa8. Conditional final positions are specified separately below. Static results do not prove engine-rendered layout.",
+    "2026-09-22 F3 final upper layout supersedes the first lower placement: root (174,4), siblings (173,5)/(175,5), capstone (174,6), anchored/prerequisite to KOR_gathering_the_farright_in_the_military. Existing completed-coup availability gate remains; world-reign completion is no longer required by this new module. First lower placement produced an unrelated collinear F2 merge in the observed HIDE UI. Existing 362 blocks and all seven offsets remain byte-preserved. The new focuses inherit fascist -84x once. See the F3 incident for source-specific verification."
   ],
   "nodes": [
     {
@@ -14713,6 +14717,1067 @@
           "y": 17
         }
       }
+    },
+    {
+      "id": "HOK_KOR_nrsc_procurement_board",
+      "name": "군수조달 실무정비",
+      "origin": "second_wave_fascist_procurement",
+      "declaration_order": 354,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_taming_the_jaebeol",
+        "script_xy": {
+          "x": -5,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 160,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_contract_audits",
+      "name": "군수계약 원가심사",
+      "origin": "second_wave_fascist_procurement",
+      "declaration_order": 355,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_nrsc_procurement_board",
+        "script_xy": {
+          "x": -2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 158,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_delivery_schedules",
+      "name": "군수 납기 조정",
+      "origin": "second_wave_fascist_procurement",
+      "declaration_order": 356,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_nrsc_procurement_board",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 162,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_supply_contracts",
+      "name": "통합 군수계약 체계",
+      "origin": "second_wave_fascist_procurement",
+      "declaration_order": 357,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_nrsc_procurement_board",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 160,
+          "y": 9
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_staff_registry",
+      "name": "참모보직 정비",
+      "origin": "second_wave_fascist_staff",
+      "declaration_order": 358,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_prussia_in_the_far_east",
+        "script_xy": {
+          "x": 3,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 172,
+          "y": 6
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_operations_directorate",
+      "name": "작전기획국",
+      "origin": "second_wave_fascist_staff",
+      "declaration_order": 359,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_nrsc_staff_registry",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 171,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_field_report_system",
+      "name": "야전보고 체계",
+      "origin": "second_wave_fascist_staff",
+      "declaration_order": 360,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_nrsc_staff_registry",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 173,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_staff_regulations",
+      "name": "참모업무 규정",
+      "origin": "second_wave_fascist_staff",
+      "declaration_order": 361,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_nrsc_staff_registry",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 172,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_manpower_register",
+      "name": "병역행정 명부",
+      "origin": "second_wave_fascist_mobilization",
+      "declaration_order": 362,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_gathering_the_farright_in_the_military",
+        "script_xy": {
+          "x": 7,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 174,
+          "y": 4
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_reserve_rotations",
+      "name": "예비인력 소집계획",
+      "origin": "second_wave_fascist_mobilization",
+      "declaration_order": 363,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_nrsc_manpower_register",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 173,
+          "y": 5
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_skilled_worker_exemptions",
+      "name": "필수인력 배치기준",
+      "origin": "second_wave_fascist_mobilization",
+      "declaration_order": 364,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_nrsc_manpower_register",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 175,
+          "y": 5
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_nrsc_manpower_coordination",
+      "name": "병역행정 일원화",
+      "origin": "second_wave_fascist_mobilization",
+      "declaration_order": 365,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_nrsc_manpower_register",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 174,
+          "y": 6
+        }
+      }
     }
-  ]
+  ],
+  "conditional_layout": {
+    "documented_on": "2026-09-23",
+    "status": "IMPLEMENTED_STATIC_CHECKED_F3_REGION_OBSERVED_TRANSITIONS_UNVERIFIED",
+    "baseline_source_sha256": "8a721a8739834bac5a0ed30f3d3335ced9ceaf4bc63439b1db8bfe2c14299aa8",
+    "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
+    "coordinate_model": "after.base_absolute remains the pre-choice/SHOW grid. For a state, add the absolute root offset once to each relative descendant. The republic entry is an independent root. Hidden nodes are excluded from displayed bounds; internal political subroutes are retained conservatively.",
+    "direct_offset_count": 7,
+    "fixed_roots": [
+      "KOR_devalue_the_won",
+      "KOR_begin_rearmament"
+    ],
+    "fixed_node_count": 133,
+    "offset_rules": [
+      {
+        "focus_id": "KOR_future_of_the_republic",
+        "offsets": [
+          {
+            "x": -48,
+            "y": 0,
+            "trigger_ordered_pairs": [
+              [
+                "has_game_rule",
+                [
+                  [
+                    "rule",
+                    "obsolete_focus_branches_visibility"
+                  ],
+                  [
+                    "option",
+                    "HIDE"
+                  ]
+                ]
+              ],
+              [
+                "has_completed_focus",
+                "KOR_long_live_the_dictatorship_of_the_proletariat"
+              ],
+              [
+                "NOT",
+                [
+                  [
+                    "OR",
+                    [
+                      [
+                        "has_completed_focus",
+                        "KOR_democracy_advance_forward"
+                      ],
+                      [
+                        "has_completed_focus",
+                        "KOR_empowering_the_nrsc"
+                      ],
+                      [
+                        "has_completed_focus",
+                        "KOR_urihwangsilsaranghoe"
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "x": -35,
+            "y": 0,
+            "trigger_ordered_pairs": [
+              [
+                "has_game_rule",
+                [
+                  [
+                    "rule",
+                    "obsolete_focus_branches_visibility"
+                  ],
+                  [
+                    "option",
+                    "HIDE"
+                  ]
+                ]
+              ],
+              [
+                "has_completed_focus",
+                "KOR_democracy_advance_forward"
+              ],
+              [
+                "NOT",
+                [
+                  [
+                    "OR",
+                    [
+                      [
+                        "has_completed_focus",
+                        "KOR_long_live_the_dictatorship_of_the_proletariat"
+                      ],
+                      [
+                        "has_completed_focus",
+                        "KOR_empowering_the_nrsc"
+                      ],
+                      [
+                        "has_completed_focus",
+                        "KOR_urihwangsilsaranghoe"
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "x": -44,
+            "y": 0,
+            "trigger_ordered_pairs": [
+              [
+                "has_game_rule",
+                [
+                  [
+                    "rule",
+                    "obsolete_focus_branches_visibility"
+                  ],
+                  [
+                    "option",
+                    "HIDE"
+                  ]
+                ]
+              ],
+              [
+                "has_completed_focus",
+                "KOR_empowering_the_nrsc"
+              ],
+              [
+                "NOT",
+                [
+                  [
+                    "OR",
+                    [
+                      [
+                        "has_completed_focus",
+                        "KOR_long_live_the_dictatorship_of_the_proletariat"
+                      ],
+                      [
+                        "has_completed_focus",
+                        "KOR_democracy_advance_forward"
+                      ],
+                      [
+                        "has_completed_focus",
+                        "KOR_urihwangsilsaranghoe"
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "focus_id": "KOR_long_live_the_dictatorship_of_the_proletariat",
+        "offsets": [
+          {
+            "x": -5,
+            "y": 0,
+            "trigger_ordered_pairs": [
+              [
+                "has_game_rule",
+                [
+                  [
+                    "rule",
+                    "obsolete_focus_branches_visibility"
+                  ],
+                  [
+                    "option",
+                    "HIDE"
+                  ]
+                ]
+              ],
+              [
+                "has_completed_focus",
+                "KOR_long_live_the_dictatorship_of_the_proletariat"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "focus_id": "KOR_democracy_advance_forward",
+        "offsets": [
+          {
+            "x": -35,
+            "y": 0,
+            "trigger_ordered_pairs": [
+              [
+                "AND",
+                [
+                  [
+                    "has_game_rule",
+                    [
+                      [
+                        "rule",
+                        "obsolete_focus_branches_visibility"
+                      ],
+                      [
+                        "option",
+                        "HIDE"
+                      ]
+                    ]
+                  ],
+                  [
+                    "has_completed_focus",
+                    "KOR_democracy_advance_forward"
+                  ]
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "focus_id": "KOR_empowering_the_nrsc",
+        "offsets": [
+          {
+            "x": -84,
+            "y": 0,
+            "trigger_ordered_pairs": [
+              [
+                "AND",
+                [
+                  [
+                    "has_game_rule",
+                    [
+                      [
+                        "rule",
+                        "obsolete_focus_branches_visibility"
+                      ],
+                      [
+                        "option",
+                        "HIDE"
+                      ]
+                    ]
+                  ],
+                  [
+                    "has_completed_focus",
+                    "KOR_empowering_the_nrsc"
+                  ]
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "focus_id": "KOR_urihwangsilsaranghoe",
+        "offsets": [
+          {
+            "x": -101,
+            "y": 0,
+            "trigger_ordered_pairs": [
+              [
+                "AND",
+                [
+                  [
+                    "has_game_rule",
+                    [
+                      [
+                        "rule",
+                        "obsolete_focus_branches_visibility"
+                      ],
+                      [
+                        "option",
+                        "HIDE"
+                      ]
+                    ]
+                  ],
+                  [
+                    "has_completed_focus",
+                    "KOR_urihwangsilsaranghoe"
+                  ]
+                ]
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "states": [
+      {
+        "id": "show_initial",
+        "rule": "SHOW",
+        "completed": [],
+        "route": null,
+        "completeRoute": false,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_republic_only",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": null,
+        "completeRoute": false,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_communist_in_progress",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "communist",
+        "completeRoute": false,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_democratic_in_progress",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "democratic",
+        "completeRoute": false,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_fascist_in_progress",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "fascist",
+        "completeRoute": false,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_non_aligned_in_progress",
+        "rule": "SHOW",
+        "completed": [],
+        "route": "non_aligned",
+        "completeRoute": false,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_communist",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_long_live_the_dictatorship_of_the_proletariat"
+        ],
+        "route": "communist",
+        "completeRoute": true,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_democratic",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_democracy_advance_forward"
+        ],
+        "route": "democratic",
+        "completeRoute": true,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_fascist",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_empowering_the_nrsc"
+        ],
+        "route": "fascist",
+        "completeRoute": true,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_non_aligned",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_urihwangsilsaranghoe"
+        ],
+        "route": "non_aligned",
+        "completeRoute": true,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_initial",
+        "rule": "HIDE",
+        "completed": [],
+        "route": null,
+        "completeRoute": false,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_republic_only",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": null,
+        "completeRoute": false,
+        "visible_count": 317,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 175,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_communist_in_progress",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "communist",
+        "completeRoute": false,
+        "visible_count": 317,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 175,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_democratic_in_progress",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "democratic",
+        "completeRoute": false,
+        "visible_count": 317,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 175,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_fascist_in_progress",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "fascist",
+        "completeRoute": false,
+        "visible_count": 317,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 175,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_non_aligned_in_progress",
+        "rule": "HIDE",
+        "completed": [],
+        "route": "non_aligned",
+        "completeRoute": false,
+        "visible_count": 366,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 204,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_communist",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_long_live_the_dictatorship_of_the_proletariat"
+        ],
+        "route": "communist",
+        "completeRoute": true,
+        "visible_count": 190,
+        "moved_count": 57,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 95,
+          "min_y": 0,
+          "max_y": 19
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": [
+          {
+            "id": "KOR_future_of_the_republic",
+            "offset": {
+              "x": -48,
+              "y": 0
+            },
+            "final": {
+              "x": 79,
+              "y": 0
+            }
+          },
+          {
+            "id": "KOR_long_live_the_dictatorship_of_the_proletariat",
+            "offset": {
+              "x": -5,
+              "y": 0
+            },
+            "final": {
+              "x": 79,
+              "y": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "hide_democratic",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_democracy_advance_forward"
+        ],
+        "route": "democratic",
+        "completeRoute": true,
+        "visible_count": 217,
+        "moved_count": 84,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 123,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": [
+          {
+            "id": "KOR_future_of_the_republic",
+            "offset": {
+              "x": -35,
+              "y": 0
+            },
+            "final": {
+              "x": 92,
+              "y": 0
+            }
+          },
+          {
+            "id": "KOR_democracy_advance_forward",
+            "offset": {
+              "x": -35,
+              "y": 0
+            },
+            "final": {
+              "x": 92,
+              "y": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "hide_fascist",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_empowering_the_nrsc"
+        ],
+        "route": "fascist",
+        "completeRoute": true,
+        "visible_count": 178,
+        "moved_count": 45,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 91,
+          "min_y": 0,
+          "max_y": 19
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": [
+          {
+            "id": "KOR_future_of_the_republic",
+            "offset": {
+              "x": -44,
+              "y": 0
+            },
+            "final": {
+              "x": 83,
+              "y": 0
+            }
+          },
+          {
+            "id": "KOR_empowering_the_nrsc",
+            "offset": {
+              "x": -84,
+              "y": 0
+            },
+            "final": {
+              "x": 83,
+              "y": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "hide_non_aligned",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_urihwangsilsaranghoe"
+        ],
+        "route": "non_aligned",
+        "completeRoute": true,
+        "visible_count": 182,
+        "moved_count": 49,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 103,
+          "min_y": 0,
+          "max_y": 19
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": [
+          {
+            "id": "KOR_urihwangsilsaranghoe",
+            "offset": {
+              "x": -101,
+              "y": 0
+            },
+            "final": {
+              "x": 85,
+              "y": 0
+            }
+          }
+        ]
+      }
+    ],
+    "validation": {
+      "previous_source_sha256": "6a5d06e4548784454fa6a969e4c80b5e01d79726c84b837efdaf560bf8f17a5d",
+      "previous_static_checks": 50,
+      "previous_static_failures": 0,
+      "previous_reward_checks": 130,
+      "previous_reward_failures": 0,
+      "static_upper_layout": {
+        "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
+        "checks": 44,
+        "failures": 0,
+        "record": ".local-artifacts/korean-focus-expansion/fascist-mobilization-20260922/additional-final-layout-review.json"
+      },
+      "geometry": "Final upper layout: no new icon/nameplate overlaps, no node contact in three orthogonal edge models with actual DDS dimensions, no unrelated collinear horizontal edge. The static 8px guard retains a conservative candidate near the coup sibling. The 2026-09-23 HIDE/SHOW UI observations found no occlusion at the coup guard candidate; conservative static results remain unchanged.",
+      "runtime_visual": "2026-09-23: final upper F3 region observed in separate HIDE and SHOW synthetic-route-complete new games. No observed icon/nameplate occlusion or unrelated collinear connectors. Not a within-game transition or whole-tree validation.",
+      "clean_load": {
+        "status": "PASSED",
+        "date": "2026-09-23",
+        "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
+        "version": "1.19.3.0.c01a",
+        "checksum": "53b0",
+        "new_normalized_errors": 0,
+        "diagnostics_present": false,
+        "scope": "Diagnostic-free paused Korea 1936.1.1.12 load; not normal progression or final UI validation."
+      },
+      "save_reload": "UNVERIFIED",
+      "immediate_rewards": {
+        "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
+        "checks": 130,
+        "failures": 0,
+        "scenarios": [
+          "reserve-first-upper-01",
+          "worker-first-upper-01",
+          "missing-tier-fallback-upper-01"
+        ],
+        "scope": "Forced immediate rewards only; normal progression, research consumption and government cancellation not proved."
+      },
+      "runtime_visual_record": {
+        "earlier_source_sha256": "6a5d06e4548784454fa6a969e4c80b5e01d79726c84b837efdaf560bf8f17a5d",
+        "observed_before_revision": [
+          "HIDE political entry incomplete: completed F3 icons and spirits",
+          "HIDE fascist entry complete: unrelated F2/F3 collinear connector confirmed"
+        ],
+        "final_source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
+        "final_upper_UI": "OBSERVED_HIDE_AND_SHOW_AFFECTED_REGION_20260923",
+        "resolution": [
+          1600,
+          900
+        ],
+        "gui_scale": 1,
+        "focus_zoom": "Not measured; two observed scales",
+        "version": "1.19.3.0.c01a",
+        "checksum": "a0c1",
+        "evidence_directory": "docs/assets/korean-fascist-mobilization-validation-20260923"
+      },
+      "final_preservation": {
+        "production_files": 43,
+        "saves": 13,
+        "unchanged": true,
+        "temporary_diagnostics_remaining": 0,
+        "owned_game_processes_remaining": 0,
+        "user_settings_written_by_agent": false,
+        "settings_delta_against_turn_baseline": "2026-09-23 HIDE/SHOW sessions: settings byte-identical to their before-launch baseline after normal GUI exit. No agent settings write."
+      },
+      "normal_progression": {
+        "date": "2026-09-23",
+        "status": "OBSERVED_NORMAL_UI_COMPLETION_ONE_FOCUS",
+        "focus": "HOK_KOR_nrsc_manpower_register",
+        "nominal_days": 35,
+        "started_at": "1936.1.1.12",
+        "intermediate": {
+          "observed_at": "1936.1.15.03",
+          "displayed_progress": "15/35"
+        },
+        "completion_observed_by": "1936.2.4.03",
+        "forced_completion_used": false,
+        "date_change_used": false,
+        "child_start_buttons_available": [
+          "HOK_KOR_nrsc_reserve_rotations",
+          "HOK_KOR_nrsc_skilled_worker_exemptions"
+        ],
+        "scope": "Synthetic reward-free political prerequisites, AI disabled. Exact completion tick and initial banked progress were not separately measured. Remaining three focuses, AND blocking, full 140-day module, research consumption and AI remain unverified.",
+        "evidence": "docs/incidents/2026-09-22-korean-fascist-mobilization.md"
+      }
+    },
+    "previous_validation": {
+      "source_sha256": "e65e15f6b101d624e5838e15969eb3a6471ef72a5313dc3a6a53f80359795fc4",
+      "static_checks": 79,
+      "static_failures": 0,
+      "geometry": "Four selected HIDE states: zero new fixed-sector rectangle overlaps or connector candidates in three orthogonal models and conservative vertical corridors; not actual engine routing.",
+      "runtime_visual": "UNVERIFIED",
+      "save_reload": "UNVERIFIED",
+      "clean_load": {
+        "status": "PASS",
+        "version": "1.19.3.0.c01a",
+        "checksum": "c7e5",
+        "build": "25205862",
+        "active_dlc_count": 36,
+        "active_mod_count": 1,
+        "new_normalized_errors": 0,
+        "scope": "Paused 1936 Korea new game; not route completion, dynamic offsets, UI or save compatibility."
+      }
+    }
+  }
 }

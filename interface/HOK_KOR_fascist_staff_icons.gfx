@@ -1,0 +1,27 @@
+#20260922_kpopmodder: Add local fascist staff focus and staged national-spirit artwork.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_staff_registry"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_staff/nrsc_staff_registry.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_operations_directorate"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_staff/nrsc_operations_directorate.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_field_report_system"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_staff/nrsc_field_report_system.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_staff_regulations"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_staff/nrsc_staff_regulations.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_staff_administration_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_staff/nrsc_staff_administration_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_staff_administration_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_staff/nrsc_staff_administration_2.dds"
+    }
+}

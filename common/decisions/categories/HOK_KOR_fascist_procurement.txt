@@ -1,0 +1,9 @@
+#20260922_kpopmodder: Unlock procurement operations through delivery scheduling independently of contract audits.
+HOK_KOR_fascist_procurement_programs = {
+	icon = GFX_HOK_KOR_decision_category_fascist_procurement
+	allowed = { original_tag = KOR }
+	visible = {
+		has_completed_focus = KOR_establishment_of_the_national_salvation_army
+		has_completed_focus = HOK_KOR_nrsc_delivery_schedules
+	}
+}

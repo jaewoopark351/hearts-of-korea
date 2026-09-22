@@ -1,0 +1,124 @@
+#20260922_kpopmodder: Add mutually limited paid procurement programs without changing existing company orders.
+HOK_KOR_fascist_procurement_programs = {
+	#20260922_kpopmodder: Apply a 90-day program and enforce the shared active slot and post-project cooldown.
+	HOK_KOR_nrsc_emergency_deliveries_project = {
+		icon = GFX_HOK_KOR_decision_nrsc_emergency_deliveries
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_establishment_of_the_national_salvation_army
+			has_completed_focus = HOK_KOR_nrsc_delivery_schedules
+		}
+		available = {
+			original_tag = KOR
+			has_government = fascism
+			has_capitulated = no
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_fascist_procurement_no_active_program_tt
+				NOT = { has_country_flag = HOK_KOR_fascist_procurement_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_fascist_procurement_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_fascist_procurement_cooldown }
+			}
+		}
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		modifier = { industrial_capacity_factory = 0.15 }
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_fascist_procurement_active }
+			custom_effect_tooltip = HOK_KOR_fascist_procurement_program_start_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = fascism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+				NOT = { has_completed_focus = HOK_KOR_nrsc_delivery_schedules }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_fascist_procurement_active
+				set_country_flag = { flag = HOK_KOR_fascist_procurement_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_fascist_procurement_program_end_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_fascist_procurement_active
+				set_country_flag = { flag = HOK_KOR_fascist_procurement_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_fascist_procurement_program_end_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	#20260922_kpopmodder: Apply a 90-day program and enforce the shared active slot and post-project cooldown.
+	HOK_KOR_nrsc_material_contracts_project = {
+		icon = GFX_HOK_KOR_decision_nrsc_material_contracts
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_establishment_of_the_national_salvation_army
+			has_completed_focus = HOK_KOR_nrsc_delivery_schedules
+		}
+		available = {
+			original_tag = KOR
+			has_government = fascism
+			has_capitulated = no
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_fascist_procurement_no_active_program_tt
+				NOT = { has_country_flag = HOK_KOR_fascist_procurement_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_fascist_procurement_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_fascist_procurement_cooldown }
+			}
+		}
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		modifier = { production_lack_of_resource_penalty_factor = -0.20 }
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_fascist_procurement_active }
+			custom_effect_tooltip = HOK_KOR_fascist_procurement_program_start_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = fascism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+				NOT = { has_completed_focus = HOK_KOR_nrsc_delivery_schedules }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_fascist_procurement_active
+				set_country_flag = { flag = HOK_KOR_fascist_procurement_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_fascist_procurement_program_end_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_fascist_procurement_active
+				set_country_flag = { flag = HOK_KOR_fascist_procurement_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_fascist_procurement_program_end_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+}

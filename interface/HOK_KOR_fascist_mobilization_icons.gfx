@@ -1,0 +1,31 @@
+#20260922_kpopmodder: Add local mobilization focus and national-spirit artwork with genuine tier badges.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_manpower_register"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_mobilization/nrsc_manpower_register.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_reserve_rotations"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_mobilization/nrsc_reserve_rotations.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_skilled_worker_exemptions"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_mobilization/nrsc_skilled_worker_exemptions.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_manpower_coordination"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_mobilization/nrsc_manpower_coordination.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_manpower_administration_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_mobilization/nrsc_manpower_administration_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_manpower_administration_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_mobilization/nrsc_manpower_administration_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_essential_workforce"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_mobilization/nrsc_essential_workforce.dds"
+    }
+}

@@ -1,0 +1,568 @@
+{
+    "source_baseline":  {
+                            "branch":  "feat/korean-focus-expansion-ai",
+                            "commit":  "691ffa37740237feddf0b44fc68cfa47b10d76bf",
+                            "date":  "2026-09-22",
+                            "working_tree_at_artwork_start":  "Existing uncommitted F1 procurement implementation and documentation; preserved during F2 artwork"
+                        },
+    "status":  "artwork_integrated_static_pass_clean_load_checked_ui_pending",
+    "scope":  "Fascist staff F2:4focuses+2spirits;no decisions or categories",
+    "method":  "Mixed permitted PNG pieces and continuation-authored crossed staff batons and field-radio geometry. No AI generation/download.",
+    "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+    "permission":  "CREDITS.txt declares contributor consent and all free to use; applies only to selected pack files, not entire contributing mods. No MIT/CC license inferred.",
+    "credits_path":  "docs/assets/korean-focus-icons/UPSTREAM_CREDITS.txt",
+    "source_working_directory":  ".local-artifacts/korean-focus-icons/sources/Ultimate-HOI4-GFX",
+    "pipeline":  {
+                     "renderer":  ".local-artifacts/korean-focus-icons/IconRenderer.cs",
+                     "renderer_sha256":  "5ce539624fc427fce2d0f4a553b970be1a53e159ce7550b89f5178d1071c0d16",
+                     "background_renderer":  ".local-artifacts/korean-focus-icon-colors/BackgroundColors.cs",
+                     "background_renderer_sha256":  "2f258e5a0f1cf2ba30c227d80d79d98bd5f2795e34eff38f6fc3a7dbb1a6b234",
+                     "marks":  ".local-artifacts/korean-fascist-staff-icons/StaffMarks.cs",
+                     "marks_sha256":  "00f151ae0cef30c47b3d3190e4a032aa9028955062bb56a83eb749604bb01a9d",
+                     "entrypoint":  ".local-artifacts/korean-fascist-staff-icons/build-icons.ps1"
+                 },
+    "palette":  {
+                    "id":  "fascism",
+                    "reference_rgb":  [
+                                          70,
+                                          60,
+                                          48
+                                      ],
+                    "luminance_reference":  60,
+                    "mask_rule":  "A \u003e 0 and R-G \u003e 6 and R-B \u003e 3 and B-G \u003e= -4",
+                    "shading":  "pow((0.2126R+0.7152G+0.0722B)/60,0.9), clamp rounded reference RGB times shade; original alpha",
+                    "scope":  "Background alone; central source pieces and metallic border unfiltered"
+                },
+    "shared_runtime_assets":  [
+                                  {
+                                      "texture":  "gfx/interface/goals/HOK_KOR/shine_overlay.dds",
+                                      "sha256":  "bb416649358c73d34aacd46bad61bc44211fac8111627b56e25f385ad98f4448",
+                                      "source":  "HOI4 1.19.3 gfx/interface/goals/shine_overlay.dds",
+                                      "attribution":  "Paradox Interactive",
+                                      "reuse_basis":  "Existing internal byte-identical vanilla copy; not covered by pack CREDITS",
+                                      "modifications":  "None"
+                                  }
+                              ],
+    "backgrounds":  [
+                        {
+                            "kind":  "focuses",
+                            "source":  "Focus Backgrounds/Circle with Ribbon2.png",
+                            "source_sha256":  "5bcf53259a04276b1586f6c83f7a35a14ba9d22742ea75fb4802911978db2f95",
+                            "derived_png":  ".local-artifacts/korean-fascist-staff-icons/backgrounds/focuses-fascism.png",
+                            "sha256":  "dcd497563971e6e8d7425c008b0efd586a2c00bd692ef5f84f97ebf9e5d6a521",
+                            "mask_png":  ".local-artifacts/korean-fascist-staff-icons/backgrounds/focuses-fascism-mask.png",
+                            "mask_sha256":  "396e2460eab7f0bd3978535a8db68b2967233b72b7dad23d201e944ceb273f58",
+                            "selected_pixels":  2847
+                        },
+                        {
+                            "kind":  "ideas",
+                            "source":  "National Spirit Backgrounds/Circle.png",
+                            "source_sha256":  "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+                            "derived_png":  ".local-artifacts/korean-fascist-staff-icons/backgrounds/ideas-fascism.png",
+                            "sha256":  "8a3c505e6c99d6999f94f417486a37c4e1d999964a2bbd87de2f68903135779d",
+                            "mask_png":  ".local-artifacts/korean-fascist-staff-icons/backgrounds/ideas-fascism-mask.png",
+                            "mask_sha256":  "c2a39f32716b08dd1edace34401105f5ebfde6d6635cb7ab77dd408968c0706c",
+                            "selected_pixels":  1695
+                        }
+                    ],
+    "focuses":  [
+                    {
+                        "id":  "HOK_KOR_nrsc_staff_registry",
+                        "name":  "참모보직 정비",
+                        "new_reference":  "GFX_HOK_KOR_focus_nrsc_staff_registry",
+                        "sprite":  "GFX_HOK_KOR_focus_nrsc_staff_registry",
+                        "texture":  "gfx/interface/goals/HOK_KOR/fascist_staff/nrsc_staff_registry.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "registry",
+                        "motif":  "Officer roster and crossed command batons",
+                        "color_palette":  "fascism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Paper",
+                                           0.17,
+                                           0,
+                                           0.65,
+                                           0.89
+                                       ]
+                                   ],
+                        "geometry_recipe":  "StaffMarks.Batons after Paper: crossed endpoints(50,40)-(71,59) and(71,40)-(50,59), 5px dark edge/3.1px bronze shaft/1px light edge/4px metal end caps",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated charcoal-brown background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "8ae2de8e272e229d54837a9306a23463e5ed13b9105a7bd3d36e27cd3d953207",
+                        "preview":  ".local-artifacts/korean-fascist-staff-icons/rendered/focuses_nrsc_staff_registry.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_nrsc_operations_directorate",
+                        "name":  "작전기획국",
+                        "new_reference":  "GFX_HOK_KOR_focus_nrsc_operations_directorate",
+                        "sprite":  "GFX_HOK_KOR_focus_nrsc_operations_directorate",
+                        "texture":  "gfx/interface/goals/HOK_KOR/fascist_staff/nrsc_operations_directorate.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "operations",
+                        "motif":  "Operations map with dividers and drafting plans",
+                        "color_palette":  "fascism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Map with Sextant",
+                                           0.03,
+                                           0,
+                                           0.73,
+                                           0.88
+                                       ],
+                                       [
+                                           "Blueprints",
+                                           0.53,
+                                           0.56,
+                                           0.46,
+                                           0.42
+                                       ]
+                                   ],
+                        "geometry_recipe":  null,
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Map with Sextant.png",
+                                              "Focus \u0026 National Spirits Pieces/Blueprints.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated charcoal-brown background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "61455754c2c5b7ea74ad5528029091e2e80f56bf4ce84d3ef32dc3c3c8eaea8f",
+                        "preview":  ".local-artifacts/korean-fascist-staff-icons/rendered/focuses_nrsc_operations_directorate.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_nrsc_field_report_system",
+                        "name":  "야전보고 체계",
+                        "new_reference":  "GFX_HOK_KOR_focus_nrsc_field_report_system",
+                        "sprite":  "GFX_HOK_KOR_focus_nrsc_field_report_system",
+                        "texture":  "gfx/interface/goals/HOK_KOR/fascist_staff/nrsc_field_report_system.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "reports",
+                        "motif":  "Field radio with handset and operations map",
+                        "color_palette":  "fascism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Map with Sextant",
+                                           0.45,
+                                           0.06,
+                                           0.55,
+                                           0.69
+                                       ]
+                                   ],
+                        "geometry_recipe":  "StaffMarks.Radio after map: body(23,24,30,34), 35-degree olive gray gradient(129,134,103)-(54,64,54), metal edge, antenna(28,23)-(22,11), display(27,29,12,7), control knobs, speaker grille, handset and curved cord; exact geometry retained in StaffMarks.cs",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Map with Sextant.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated charcoal-brown background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "8791d59017bf11e86a52b9a0917fb367ec007bf10906cc15154050cd7347da95",
+                        "preview":  ".local-artifacts/korean-fascist-staff-icons/rendered/focuses_nrsc_field_report_system.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_nrsc_staff_regulations",
+                        "name":  "참모업무 규정",
+                        "new_reference":  "GFX_HOK_KOR_focus_nrsc_staff_regulations",
+                        "sprite":  "GFX_HOK_KOR_focus_nrsc_staff_regulations",
+                        "texture":  "gfx/interface/goals/HOK_KOR/fascist_staff/nrsc_staff_regulations.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "regulations",
+                        "motif":  "Staff manual and operations map",
+                        "color_palette":  "fascism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Map with Sextant",
+                                           0.4,
+                                           0,
+                                           0.57,
+                                           0.58
+                                       ],
+                                       [
+                                           "Book Open",
+                                           0.02,
+                                           0.38,
+                                           0.95,
+                                           0.58
+                                       ]
+                                   ],
+                        "geometry_recipe":  null,
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Map with Sextant.png",
+                                              "Focus \u0026 National Spirits Pieces/Book Open.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated charcoal-brown background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "29878f698119d180439beebd29004c004e9cc5cec4a60afce7766ee2664420e9",
+                        "preview":  ".local-artifacts/korean-fascist-staff-icons/rendered/focuses_nrsc_staff_regulations.png"
+                    }
+                ],
+    "ideas":  [
+                  {
+                      "id":  "HOK_KOR_nrsc_staff_administration_1",
+                      "name":  "참모업무 체계 I",
+                      "new_reference":  "HOK_KOR_icon_nrsc_staff_administration_1",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_nrsc_staff_administration_1",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/fascist_staff/nrsc_staff_administration_1.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS; single frame; explicit alpha",
+                      "stage":  1,
+                      "family":  "regulations",
+                      "motif":  "Staff manual and operations map",
+                      "color_palette":  "fascism",
+                      "background_box":  [
+                                             3,
+                                             4,
+                                             54,
+                                             56
+                                         ],
+                      "composition_box":  [
+                                              6,
+                                              10,
+                                              48,
+                                              42
+                                          ],
+                      "recipe":  [
+                                     [
+                                         "Map with Sextant",
+                                         0.4,
+                                         0,
+                                         0.58,
+                                         0.58
+                                     ],
+                                     [
+                                         "Book Open",
+                                         0,
+                                         0.38,
+                                         0.98,
+                                         0.6
+                                     ]
+                                 ],
+                      "geometry_recipe":  null,
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Map with Sextant.png",
+                                            "Focus \u0026 National Spirits Pieces/Book Open.png"
+                                        ],
+                      "header_template":  "gfx/interface/ideas/HOK_KOR/energy_coordination_1.dds",
+                      "modifications":  [
+                                            "Original aspect ratios maintained",
+                                            "Native-size component composition",
+                                            "Isolated charcoal-brown background recolor",
+                                            "Metal border/foreground colors preserved",
+                                            "BGRA32 export"
+                                        ],
+                      "sha256":  "9d0b1e96176ff371fd0a56bba29bf4779c6a2e91938d52d569fedce888689eae",
+                      "preview":  ".local-artifacts/korean-fascist-staff-icons/rendered/ideas_nrsc_staff_administration_1.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_nrsc_staff_administration_2",
+                      "name":  "참모업무 체계 II",
+                      "new_reference":  "HOK_KOR_icon_nrsc_staff_administration_2",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_nrsc_staff_administration_2",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/fascist_staff/nrsc_staff_administration_2.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS; single frame; explicit alpha",
+                      "stage":  2,
+                      "family":  "regulations",
+                      "motif":  "Staff manual and operations map",
+                      "color_palette":  "fascism",
+                      "background_box":  [
+                                             3,
+                                             4,
+                                             54,
+                                             56
+                                         ],
+                      "composition_box":  [
+                                              6,
+                                              10,
+                                              48,
+                                              42
+                                          ],
+                      "recipe":  [
+                                     [
+                                         "Map with Sextant",
+                                         0.4,
+                                         0,
+                                         0.58,
+                                         0.58
+                                     ],
+                                     [
+                                         "Book Open",
+                                         0,
+                                         0.38,
+                                         0.98,
+                                         0.6
+                                     ]
+                                 ],
+                      "geometry_recipe":  null,
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Map with Sextant.png",
+                                            "Focus \u0026 National Spirits Pieces/Book Open.png"
+                                        ],
+                      "header_template":  "gfx/interface/ideas/HOK_KOR/energy_coordination_1.dds",
+                      "modifications":  [
+                                            "Original aspect ratios maintained",
+                                            "Native-size component composition",
+                                            "Isolated charcoal-brown background recolor",
+                                            "Metal border/foreground colors preserved",
+                                            "BGRA32 export"
+                                        ],
+                      "sha256":  "52fc9f70234a6c95206fc1d2a3ad8f0b44da774a833bed120b66618406233351",
+                      "preview":  ".local-artifacts/korean-fascist-staff-icons/rendered/ideas_nrsc_staff_administration_2.png"
+                  }
+              ],
+    "asset_sources":  [
+                          {
+                              "path":  "CREDITS.txt",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/CREDITS.txt",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "cf220dc66463d75163f7690ad77b02b662d0c05ca5d53dc62d33ed504512a7f5",
+                              "bytes":  1029,
+                              "git_blob_sha":  "83efbe5261113f933a16698783d6803dfd593152",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)"
+                          },
+                          {
+                              "path":  "Focus Backgrounds/Circle with Ribbon2.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20Backgrounds/Circle%20with%20Ribbon2.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "5bcf53259a04276b1586f6c83f7a35a14ba9d22742ea75fb4802911978db2f95",
+                              "bytes":  33322,
+                              "git_blob_sha":  "6f0ebeed856a2fdc3f25f1ea0c82418b60c3d605",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  100,
+                              "height":  88,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "National Spirit Backgrounds/Circle.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/National%20Spirit%20Backgrounds/Circle.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+                              "bytes":  25055,
+                              "git_blob_sha":  "ab1fa7b4a3a783fb528c496fcca2370001df1b52",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  64,
+                              "height":  64,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Paper.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Paper.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "f702a6971726ba0608f75cb71a90fc8f0ac0cc0474a2cd5ca172330dbf3c803c",
+                              "bytes":  19520,
+                              "git_blob_sha":  "61aae5d0b991ce881d97ba30af39093332b61fd9",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  47,
+                              "height":  51,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Map with Sextant.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Map%20with%20Sextant.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "4f89b8b062e3c3b7e4cd4d4dfe9affc860949cbb0b855a0347e622307e8d67a7",
+                              "bytes":  20082,
+                              "git_blob_sha":  "088ad0022abeebaa53a4dd1e14e003d51a4c0b4d",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  60,
+                              "height":  50,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Blueprints.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Blueprints.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "1d75e423748392240bd246dc9681b2787c8f0c19c6200bf4a412a14809def3e4",
+                              "bytes":  5253,
+                              "git_blob_sha":  "cf715e719d6b44cd9e70944648479d6ab31e16fa",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  45,
+                              "height":  36,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Book Open.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Book%20Open.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "b8f601a26d8e0ad7f8eecdccca2c447a59921e15aa05bb0078142b803ed25e9d",
+                              "bytes":  8209,
+                              "git_blob_sha":  "ba3d34c99b5fe6fa748a9807c9cbcc34270d068e",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  73,
+                              "height":  55,
+                              "pixel_format":  "Format32bppArgb"
+                          }
+                      ],
+    "focus_recipes":  {
+                          "registry":  [
+                                           [
+                                               "Paper",
+                                               0.17,
+                                               0,
+                                               0.65,
+                                               0.89
+                                           ]
+                                       ],
+                          "operations":  [
+                                             [
+                                                 "Map with Sextant",
+                                                 0.03,
+                                                 0,
+                                                 0.73,
+                                                 0.88
+                                             ],
+                                             [
+                                                 "Blueprints",
+                                                 0.53,
+                                                 0.56,
+                                                 0.46,
+                                                 0.42
+                                             ]
+                                         ],
+                          "reports":  [
+                                          [
+                                              "Map with Sextant",
+                                              0.45,
+                                              0.06,
+                                              0.55,
+                                              0.69
+                                          ]
+                                      ],
+                          "regulations":  [
+                                              [
+                                                  "Map with Sextant",
+                                                  0.4,
+                                                  0,
+                                                  0.57,
+                                                  0.58
+                                              ],
+                                              [
+                                                  "Book Open",
+                                                  0.02,
+                                                  0.38,
+                                                  0.95,
+                                                  0.58
+                                              ]
+                                          ]
+                      },
+    "idea_recipes":  {
+                         "regulations":  [
+                                             [
+                                                 "Map with Sextant",
+                                                 0.4,
+                                                 0,
+                                                 0.58,
+                                                 0.58
+                                             ],
+                                             [
+                                                 "Book Open",
+                                                 0,
+                                                 0.38,
+                                                 0.98,
+                                                 0.6
+                                             ]
+                                         ]
+                     },
+    "geometry_recipes":  {
+                             "registry":  "StaffMarks.Batons after Paper: crossed endpoints(50,40)-(71,59) and(71,40)-(50,59), 5px dark edge/3.1px bronze shaft/1px light edge/4px metal end caps",
+                             "reports":  "StaffMarks.Radio after map: body(23,24,30,34), 35-degree olive gray gradient(129,134,103)-(54,64,54), metal edge, antenna(28,23)-(22,11), display(27,29,12,7), control knobs, speaker grille, handset and curved cord; exact geometry retained in StaffMarks.cs"
+                         },
+    "validation":  {
+                       "contact_sheet":  "docs/assets/korean-fascist-staff-icons/contact-sheet.png",
+                       "static":  "PASS:6 DDS headers/dimensions/alpha/hashes;10 unique sprites;isolated background recoloring;one I/II pair differs only within badge;157 previous runtime DDS unchanged",
+                       "runtime":  "Root completed a clean HOI4 1.19.3 new-game load (ee60) after immediate reward checks; actual icon states, shine and UI rendering remain unverified. See docs/incidents/2026-09-22-korean-fascist-staff.md.",
+                       "report":  ".local-artifacts/korean-fascist-staff-icons/validation.json",
+                       "visual_review":  "Native-size contact sheet reviewed by artwork agent on 2026-09-22; four staff motifs, charcoal-brown fields and frames, one linked manual/map spirit I/II pair readable"
+                   }
+}

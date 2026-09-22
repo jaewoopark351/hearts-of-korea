@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "date": "2026-09-22",
-  "status": "TWENTY_EIGHT_APPLIED_REMAINDER_DESIGN_DRAFT",
+  "status": "FORTY_APPLIED_REMAINDER_DESIGN_DRAFT",
   "count_target": [
     450,
     470
   ],
-  "current_total": 354,
+  "current_total": 366,
   "provisional_second_wave_allocation": 134,
-  "warning": "Unapplied candidates are proposals, not final implementation specifications. The 28 applied communist focuses follow the first-10, governance and development specifications; the remaining 106 candidates still require design. The original one-off-reward draft critique is historical and does not prohibit meaningful single rewards.",
+  "warning": "Unapplied candidates are proposals, not final implementation specifications. Applied: communist 28, fascist F1 procurement 4, F2 staff 4, F3 manpower 4. The remaining 94 candidates still require policy design. See each module specification; the historical draft critique does not prohibit meaningful single rewards.",
   "focuses": [
     {
       "id": "HOK_KOR_yeo_worker_peasant_congress",
@@ -908,28 +908,40 @@
     },
     {
       "id": "HOK_KOR_nrsc_procurement_board",
-      "name": "군수조달본부",
-      "description": "기존 군수 주문을 한 기관에서 집계해 군과 기업 사이의 책임 창구를 정리하겠습니다.",
+      "name": "군수조달 실무정비",
+      "description": "재벌에 내린 기존 주문을 군수조달 담당 조직이 함께 관리하도록 실무를 정비합니다. 기업별 주문 권한을 유지하면서 계약의 원가와 납기를 감독할 행정 기반을 마련합니다.",
       "prerequisites": [
         [
           "KOR_taming_the_jaebeol"
         ]
       ],
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "add_political_power = 50",
+      "reward": "add_political_power = 150",
       "palette": "fascism",
-      "motif": "Armaments contract and official seal",
+      "motif": "Contract clipboard and approval form",
       "module": "F1",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 national spirits and timed decisions; exact context evidence in the procurement specification",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_PROCUREMENT",
+      "position": [
+        160,
+        7
+      ],
+      "anchor": "KOR_taming_the_jaebeol",
+      "relative_xy": [
+        -5,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_procurement_board",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_PROCUREMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_contract_audits",
       "name": "군수계약 원가심사",
-      "description": "계약 원가와 납품 실적을 대조하여 같은 설비로 더 안정적인 군수 생산을 유지하겠습니다.",
+      "description": "군수계약의 원가 산정과 집행 실적을 대조하여 낭비와 생산 차질을 줄입니다. 기존 기업과 생산시설을 활용하는 계약 감독으로 군수공장의 산출을 높입니다.",
       "prerequisites": [
         [
           "HOK_KOR_nrsc_procurement_board"
@@ -938,78 +950,129 @@
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
       "reward": "add_ideas = HOK_KOR_nrsc_procurement_oversight_1",
       "palette": "fascism",
-      "motif": "Magnifying glass over shell ledger",
+      "motif": "Cost ledger and magnifying glass",
       "module": "F1",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 national spirits and timed decisions; exact context evidence in the procurement specification",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_PROCUREMENT",
+      "position": [
+        158,
+        8
+      ],
+      "anchor": "HOK_KOR_nrsc_procurement_board",
+      "relative_xy": [
+        -2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_contract_audits",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_PROCUREMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_delivery_schedules",
       "name": "군수 납기 조정",
-      "description": "서로 경쟁하던 주문의 납기를 조정하고 공정 개선 사례를 기업 간에 공유하겠습니다.",
+      "description": "주문 물량과 공정별 납기를 대조하여 군수품 인도 계획을 정비합니다. 산업 기술의 도입을 지원하고, 긴급 납품 또는 원자재 계약조정 중 필요한 사업을 선택해 운영합니다.",
       "prerequisites": [
         [
-          "HOK_KOR_nrsc_contract_audits"
+          "HOK_KOR_nrsc_procurement_board"
         ]
       ],
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "add_tech_bonus = { name = HOK_KOR_nrsc_delivery_schedules bonus = 0.5 uses = 1 category = industry }",
+      "reward": "add_tech_bonus = { name = HOK_KOR_nrsc_delivery_schedules bonus = 1.5 uses = 1 category = industry }\nunlock_decision_category_tooltip = HOK_KOR_fascist_procurement_programs\nunlock_decision_tooltip = HOK_KOR_nrsc_emergency_deliveries_project\nunlock_decision_tooltip = HOK_KOR_nrsc_material_contracts_project",
       "palette": "fascism",
-      "motif": "Gear, crate and calendar",
+      "motif": "Cargo crate and delivery clock",
       "module": "F1",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 national spirits and timed decisions; exact context evidence in the procurement specification",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_PROCUREMENT",
+      "position": [
+        162,
+        8
+      ],
+      "anchor": "HOK_KOR_nrsc_procurement_board",
+      "relative_xy": [
+        2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_delivery_schedules",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_PROCUREMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_supply_contracts",
       "name": "통합 군수계약 체계",
-      "description": "군수조달본부의 심사와 납기 관리 절차를 정착시켜 기존 군수 주문의 생산 성과를 높이겠습니다.",
+      "description": "원가심사와 납기조정의 결과를 통합하여 계약 감독을 정례화합니다. 군수공장 산출의 기존 혜택을 강화하고 원자재 부족에 따른 생산 손실을 줄이며, 재벌별 주문 사업은 유지합니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_nrsc_contract_audits"
+        ],
         [
           "HOK_KOR_nrsc_delivery_schedules"
         ]
       ],
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_procurement_oversight_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_procurement_oversight_1 add_idea = HOK_KOR_nrsc_procurement_oversight_2 } } else = { add_ideas = HOK_KOR_nrsc_procurement_oversight_2 }",
+      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_procurement_oversight_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_procurement_oversight_1 add_idea = HOK_KOR_nrsc_procurement_oversight_2 } }\nelse = { add_ideas = HOK_KOR_nrsc_procurement_oversight_2 }",
       "palette": "fascism",
-      "motif": "Contract bundle and steel gear, II",
+      "motif": "Factory and approved contract",
       "module": "F1",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed HOI4 1.19.3 national spirits and timed decisions; exact context evidence in the procurement specification",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_PROCUREMENT",
+      "position": [
+        160,
+        9
+      ],
+      "anchor": "HOK_KOR_nrsc_procurement_board",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_supply_contracts",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_PROCUREMENT_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_staff_registry",
       "name": "참모보직 정비",
-      "description": "참모 장교의 보직과 담당 업무를 기록하여 부대 간 협의가 특정 인물에게만 의존하지 않게 하겠습니다.",
+      "description": "참모 장교의 담당 부대와 전문 분야를 기록하고 보직 인수인계 절차를 정비합니다. 기존 지휘기관을 활용하면서 담당자의 실무 경험을 축적하고 작전기획과 야전보고를 개선할 기반을 마련합니다.",
       "prerequisites": [
         [
           "KOR_prussia_in_the_far_east"
         ]
       ],
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "army_experience = 15",
+      "reward": "army_experience = 50",
       "palette": "fascism",
-      "motif": "Officer roster and crossed batons",
+      "motif": "Officer roster and crossed command batons",
       "module": "F2",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed vanilla 1.19.3 country ideas, focus rewards and electronics research bonuses; see staff specification for exact contexts.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_STAFF",
+      "position": [
+        172,
+        6
+      ],
+      "anchor": "KOR_prussia_in_the_far_east",
+      "relative_xy": [
+        3,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_staff_registry",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_STAFF_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_operations_directorate",
       "name": "작전기획국",
-      "description": "작전 초안과 정보 보고를 같은 절차로 검토할 전담 기구를 두겠습니다.",
+      "description": "참모조직 안의 작전기획 담당 업무를 정례화하여 작전 초안과 정보 보고를 같은 절차로 검토합니다. 공통 참모훈련과 기존 장군참모의 역할을 유지하면서 계획 준비 속도와 최대 계획 보너스를 높입니다.",
       "prerequisites": [
         [
           "HOK_KOR_nrsc_staff_registry"
@@ -1018,78 +1081,129 @@
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
       "reward": "add_ideas = HOK_KOR_nrsc_staff_administration_1",
       "palette": "fascism",
-      "motif": "Operations map and drafting tools",
+      "motif": "Operations map with dividers and drafting plans",
       "module": "F2",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed vanilla 1.19.3 country ideas, focus rewards and electronics research bonuses; see staff specification for exact contexts.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_STAFF",
+      "position": [
+        171,
+        7
+      ],
+      "anchor": "HOK_KOR_nrsc_staff_registry",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_operations_directorate",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_STAFF_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_field_report_system",
       "name": "야전보고 체계",
-      "description": "야전 부대의 보고 형식을 통일하고 필요한 내용이 참모기관에 제때 전달되도록 하겠습니다.",
+      "description": "야전 부대의 통신·보고 양식을 통일하고 작전 담당자가 필요한 정보를 제때 받도록 합니다. 전자공학 연구와 실무 경험을 지원하며 작전기획국 정비와 독립적으로 추진할 수 있습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_nrsc_operations_directorate"
+          "HOK_KOR_nrsc_staff_registry"
         ]
       ],
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "army_experience = 15",
+      "reward": "add_tech_bonus = { name = HOK_KOR_nrsc_field_report_system bonus = 1.0 uses = 1 category = electronics }\narmy_experience = 25",
       "palette": "fascism",
-      "motif": "Field message case and map",
+      "motif": "Field radio with handset and operations map",
       "module": "F2",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed vanilla 1.19.3 country ideas, focus rewards and electronics research bonuses; see staff specification for exact contexts.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_STAFF",
+      "position": [
+        173,
+        7
+      ],
+      "anchor": "HOK_KOR_nrsc_staff_registry",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_field_report_system",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_STAFF_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_staff_regulations",
       "name": "참모업무 규정",
-      "description": "기획·보고·승인 절차를 정식 업무 규정으로 정리하여 작전 준비의 지연을 줄이겠습니다.",
+      "description": "작전기획과 야전보고의 성과를 정식 업무 규정으로 정리합니다. 기존 참모업무 체계의 계획 보너스를 승계·강화하여 보고 검토와 승인 절차의 지연을 줄입니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_nrsc_operations_directorate"
+        ],
         [
           "HOK_KOR_nrsc_field_report_system"
         ]
       ],
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_staff_administration_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_staff_administration_1 add_idea = HOK_KOR_nrsc_staff_administration_2 } } else = { add_ideas = HOK_KOR_nrsc_staff_administration_2 }",
+      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_staff_administration_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_staff_administration_1 add_idea = HOK_KOR_nrsc_staff_administration_2 } }\nelse = { add_ideas = HOK_KOR_nrsc_staff_administration_2 }",
       "palette": "fascism",
-      "motif": "Bound staff manual and map, II",
+      "motif": "Staff manual and operations map",
       "module": "F2",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed vanilla 1.19.3 country ideas, focus rewards and electronics research bonuses; see staff specification for exact contexts.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_STAFF",
+      "position": [
+        172,
+        8
+      ],
+      "anchor": "HOK_KOR_nrsc_staff_registry",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_staff_regulations",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_STAFF_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_manpower_register",
       "name": "병역행정 명부",
-      "description": "병역 대상자와 예비 인력의 기록을 정비하여 명부 누락과 중복 소집을 줄이겠습니다.",
+      "description": "병역 대상자와 예비 인력의 기록을 대조하고 누락된 인원을 보충 명부에 등록합니다. 소집과 필수 업무 배치를 함께 정비할 행정 기반을 마련하고, 확인된 예비 인력을 확보합니다.",
       "prerequisites": [
         [
-          "KOR_stop_democracy"
+          "KOR_gathering_the_farright_in_the_military"
         ]
       ],
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "add_political_power = 50",
+      "reward": "add_manpower = 25000\nadd_political_power = 100",
       "palette": "fascism",
       "motif": "Reserve roster and identity tags",
       "module": "F3",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed vanilla 1.19.3 manpower, country-idea modifiers and industry research reward contexts; see mobilization specification.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_MOBILIZATION",
+      "position": [
+        174,
+        4
+      ],
+      "anchor": "KOR_gathering_the_farright_in_the_military",
+      "relative_xy": [
+        7,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_manpower_register",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_MOBILIZATION_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_reserve_rotations",
       "name": "예비인력 소집계획",
-      "description": "인력의 소집 순서와 보충 일정을 정해 필요한 부대에 보충이 원활히 이루어지도록 하겠습니다.",
+      "description": "예비 인력의 소집 순서와 부대별 보충 일정을 정합니다. 기존 징병법을 유지하면서 징병 가능 인구 계수와 동원 속도를 높이며, 필수인력 배치기준과 어느 순서로도 추진할 수 있습니다.",
       "prerequisites": [
         [
           "HOK_KOR_nrsc_manpower_register"
@@ -1100,51 +1214,90 @@
       "palette": "fascism",
       "motif": "Calendar and reserve helmet",
       "module": "F3",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed vanilla 1.19.3 manpower, country-idea modifiers and industry research reward contexts; see mobilization specification.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_MOBILIZATION",
+      "position": [
+        173,
+        5
+      ],
+      "anchor": "HOK_KOR_nrsc_manpower_register",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_reserve_rotations",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_MOBILIZATION_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_skilled_worker_exemptions",
       "name": "필수인력 배치기준",
-      "description": "생산시설과 군 부대가 같은 인력을 중복 요구하지 않도록 필수 업무의 인력 배치 기준을 정하겠습니다.",
+      "description": "생산시설과 군 부대가 같은 인력을 중복 요구하지 않도록 필수 업무의 배치 기준을 정합니다. 숙련 인력의 생산 현장 유지를 통해 생산효율 증가를 지원하고, 산업 연구에 자원을 투입합니다.",
       "prerequisites": [
         [
-          "HOK_KOR_nrsc_reserve_rotations"
+          "HOK_KOR_nrsc_manpower_register"
         ]
       ],
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "add_stability = 0.02",
+      "reward": "add_tech_bonus = { name = HOK_KOR_nrsc_skilled_worker_exemptions bonus = 1.5 uses = 1 category = industry }\nadd_ideas = HOK_KOR_nrsc_essential_workforce",
       "palette": "fascism",
       "motif": "Factory worker and service roster",
       "module": "F3",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed vanilla 1.19.3 manpower, country-idea modifiers and industry research reward contexts; see mobilization specification.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_MOBILIZATION",
+      "position": [
+        175,
+        5
+      ],
+      "anchor": "HOK_KOR_nrsc_manpower_register",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_skilled_worker_exemptions",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_MOBILIZATION_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_manpower_coordination",
       "name": "병역행정 일원화",
-      "description": "소집·보충·훈련 기록을 연결해 병역 행정의 처리 지연을 줄이겠습니다.",
+      "description": "예비인력 소집과 필수인력 배치의 성과를 통합하여 소집·보충 기록의 처리 지연을 줄입니다. 병역행정의 인구·동원 혜택을 강화하고 필수인력 정책의 생산효율 혜택도 유지합니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_nrsc_reserve_rotations"
+        ],
         [
           "HOK_KOR_nrsc_skilled_worker_exemptions"
         ]
       ],
       "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
-      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_manpower_administration_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_manpower_administration_1 add_idea = HOK_KOR_nrsc_manpower_administration_2 } } else = { add_ideas = HOK_KOR_nrsc_manpower_administration_2 }",
+      "reward": "if = { limit = { has_idea = HOK_KOR_nrsc_manpower_administration_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_manpower_administration_1 add_idea = HOK_KOR_nrsc_manpower_administration_2 } }\nelse = { add_ideas = HOK_KOR_nrsc_manpower_administration_2 }",
       "palette": "fascism",
       "motif": "Linked personnel ledgers, II",
       "module": "F3",
-      "donor": "Installed vanilla japan.txt staged national institutions; exact syntax and attachment evidence in sibling Markdown",
+      "donor": "Installed vanilla 1.19.3 manpower, country-idea modifiers and industry research reward contexts; see mobilization specification.",
       "mutually_exclusive": [],
       "cancel_if_invalid": true,
       "continue_if_invalid": false,
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_FASCIST_MOBILIZATION",
+      "position": [
+        174,
+        6
+      ],
+      "anchor": "HOK_KOR_nrsc_manpower_register",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_nrsc_manpower_coordination",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_FASCIST_MOBILIZATION_SPEC.md"
     },
     {
       "id": "HOK_KOR_nrsc_military_administration",

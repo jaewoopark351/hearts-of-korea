@@ -1,0 +1,39 @@
+#20260922_kpopmodder: Add local fascist procurement art and dedicated small decision/category textures.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_procurement_board"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_procurement_board.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_contract_audits"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_contract_audits.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_delivery_schedules"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_delivery_schedules.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_supply_contracts"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_supply_contracts.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_procurement_oversight_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_procurement/nrsc_procurement_oversight_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_nrsc_procurement_oversight_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/fascist_procurement/nrsc_procurement_oversight_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_nrsc_emergency_deliveries"
+        texturefile = "gfx/interface/decisions/HOK_KOR/fascist_procurement/nrsc_emergency_deliveries.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_nrsc_material_contracts"
+        texturefile = "gfx/interface/decisions/HOK_KOR/fascist_procurement/nrsc_material_contracts.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_category_fascist_procurement"
+        texturefile = "gfx/interface/decisions/HOK_KOR/fascist_procurement/category.dds"
+    }
+}

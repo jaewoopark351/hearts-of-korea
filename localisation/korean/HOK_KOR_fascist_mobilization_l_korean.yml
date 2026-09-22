@@ -1,0 +1,16 @@
+﻿l_korean:
+#20260922_kpopmodder: Describe parallel manpower and essential-workforce policies with their separate benefits and upgrades.
+ HOK_KOR_nrsc_manpower_register:0 "병역행정 명부"
+ HOK_KOR_nrsc_manpower_register_desc:0 "병역 대상자와 예비 인력의 기록을 대조하고 누락된 인원을 보충 명부에 등록합니다. 소집과 필수 업무 배치를 함께 정비할 행정 기반을 마련하고, 확인된 예비 인력을 확보합니다."
+ HOK_KOR_nrsc_reserve_rotations:0 "예비인력 소집계획"
+ HOK_KOR_nrsc_reserve_rotations_desc:0 "예비 인력의 소집 순서와 부대별 보충 일정을 정합니다. 기존 징병법을 유지하면서 징병 가능 인구 계수와 동원 속도를 높이며, 필수인력 배치기준과 어느 순서로도 추진할 수 있습니다."
+ HOK_KOR_nrsc_skilled_worker_exemptions:0 "필수인력 배치기준"
+ HOK_KOR_nrsc_skilled_worker_exemptions_desc:0 "생산시설과 군 부대가 같은 인력을 중복 요구하지 않도록 필수 업무의 배치 기준을 정합니다. 숙련 인력의 생산 현장 유지를 통해 생산효율 증가를 지원하고, 산업 연구에 자원을 투입합니다."
+ HOK_KOR_nrsc_manpower_coordination:0 "병역행정 일원화"
+ HOK_KOR_nrsc_manpower_coordination_desc:0 "예비인력 소집과 필수인력 배치의 성과를 통합하여 소집·보충 기록의 처리 지연을 줄입니다. 병역행정의 인구·동원 혜택을 강화하고 필수인력 정책의 생산효율 혜택도 유지합니다."
+ HOK_KOR_nrsc_manpower_administration_1:0 "병역행정 체계 I"
+ HOK_KOR_nrsc_manpower_administration_1_desc:0 "예비 인력의 소집과 보충 절차를 정비한 병역행정 체계입니다. 기존 징병법 및 다른 인력 정책과 함께 적용되며, 파시즘 정부를 잃으면 제거됩니다."
+ HOK_KOR_nrsc_manpower_administration_2:0 "병역행정 체계 II"
+ HOK_KOR_nrsc_manpower_administration_2_desc:0 "소집 기록과 필수 업무 배치를 연계한 병역행정 체계입니다. 하위 체계의 징병 가능 인구 계수와 동원 속도를 강화하여 승계하며, 파시즘 정부를 잃으면 제거됩니다."
+ HOK_KOR_nrsc_essential_workforce:0 "필수인력 배치정책"
+ HOK_KOR_nrsc_essential_workforce_desc:0 "생산에 필요한 숙련 인력의 배치를 유지하여 생산효율 증가를 지원하는 정책입니다. 병역행정 체계가 강화되어도 별도로 유지되며, 파시즘 정부를 잃으면 제거됩니다."

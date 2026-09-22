@@ -3493,19 +3493,48 @@ focus_tree = {
 			factor = 1
 		}
 		#20260921_kpopmodder: Keep compact sectors stationary when obsolete branches are hidden.
+		#20260922_kpopmodder: Align the republic entry with the completed HIDE route; exclude conflicting route completions.
 		offset = {
-			x = 0
+			x = -48
 			y = 0
 			trigger = {
-				AND = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+				has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE }
+				has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat
+				NOT = {
+					OR = {
+						has_completed_focus = KOR_democracy_advance_forward
+						has_completed_focus = KOR_empowering_the_nrsc
+						has_completed_focus = KOR_urihwangsilsaranghoe
 					}
+				}
+			}
+		}
+		offset = {
+			x = -35
+			y = 0
+			trigger = {
+				has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE }
+				has_completed_focus = KOR_democracy_advance_forward
+				NOT = {
+					OR = {
+						has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat
+						has_completed_focus = KOR_empowering_the_nrsc
+						has_completed_focus = KOR_urihwangsilsaranghoe
+					}
+				}
+			}
+		}
+		offset = {
+			x = -44
+			y = 0
+			trigger = {
+				has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE }
+				has_completed_focus = KOR_empowering_the_nrsc
+				NOT = {
 					OR = {
 						has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat
 						has_completed_focus = KOR_democracy_advance_forward
-						has_completed_focus = KOR_empowering_the_nrsc
+						has_completed_focus = KOR_urihwangsilsaranghoe
 					}
 				}
 			}
@@ -3542,6 +3571,15 @@ focus_tree = {
 		mutually_exclusive = { focus = KOR_empowering_the_nrsc }
 		ai_will_do = {
 			factor = 1
+		}
+		#20260922_kpopmodder: Compact this political sector only after its route focus completes under HIDE.
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE }
+				has_completed_focus = KOR_long_live_the_dictatorship_of_the_proletariat
+			}
 		}
 		allow_branch = {
 			if = {
@@ -3599,8 +3637,9 @@ focus_tree = {
 			factor = 1
 		}
 		#20260921_kpopmodder: Keep compact sectors stationary when obsolete branches are hidden.
+		#20260922_kpopmodder: Compact this political sector only after its route focus completes under HIDE.
 		offset = {
-			x = 0
+			x = -35
 			y = 0
 			trigger = {
 				AND = {
@@ -3665,8 +3704,9 @@ focus_tree = {
 			factor = 1
 		}
 		#20260921_kpopmodder: Keep compact sectors stationary when obsolete branches are hidden.
+		#20260922_kpopmodder: Compact this political sector only after its route focus completes under HIDE.
 		offset = {
-			x = 0
+			x = -84
 			y = 0
 			trigger = {
 				AND = {
@@ -8202,8 +8242,9 @@ focus_tree = {
 			factor = 1
 		}
 		#20260921_kpopmodder: Keep compact sectors stationary when obsolete branches are hidden.
+		#20260922_kpopmodder: Compact this political sector only after its route focus completes under HIDE.
 		offset = {
-			x = 0
+			x = -101
 			y = 0
 			trigger = {
 				AND = {
@@ -12083,6 +12124,260 @@ focus_tree = {
 		completion_reward = {
 			if = { limit = { has_idea = HOK_KOR_pak_planning_administration_1 } swap_ideas = { remove_idea = HOK_KOR_pak_planning_administration_1 add_idea = HOK_KOR_pak_planning_administration_2 } }
 			else = { add_ideas = HOK_KOR_pak_planning_administration_2 }
+		}
+	}
+
+	#20260922_kpopmodder: Add a compact procurement policy module while preserving existing orders and political routes.
+	focus = {
+		id = HOK_KOR_nrsc_procurement_board
+		icon = GFX_HOK_KOR_focus_nrsc_procurement_board
+		relative_position_id = KOR_taming_the_jaebeol
+		x = -5
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_taming_the_jaebeol }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#20260922_kpopmodder: Add a compact procurement policy module while preserving existing orders and political routes.
+	focus = {
+		id = HOK_KOR_nrsc_contract_audits
+		icon = GFX_HOK_KOR_focus_nrsc_contract_audits
+		relative_position_id = HOK_KOR_nrsc_procurement_board
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_procurement_board }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_nrsc_procurement_oversight_1
+		}
+	}
+
+	#20260922_kpopmodder: Add a compact procurement policy module while preserving existing orders and political routes.
+	focus = {
+		id = HOK_KOR_nrsc_delivery_schedules
+		icon = GFX_HOK_KOR_focus_nrsc_delivery_schedules
+		relative_position_id = HOK_KOR_nrsc_procurement_board
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_procurement_board }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_nrsc_delivery_schedules bonus = 1.5 uses = 1 category = industry }
+			unlock_decision_category_tooltip = HOK_KOR_fascist_procurement_programs
+			unlock_decision_tooltip = HOK_KOR_nrsc_emergency_deliveries_project
+			unlock_decision_tooltip = HOK_KOR_nrsc_material_contracts_project
+		}
+	}
+
+	#20260922_kpopmodder: Add a compact procurement policy module while preserving existing orders and political routes.
+	focus = {
+		id = HOK_KOR_nrsc_supply_contracts
+		icon = GFX_HOK_KOR_focus_nrsc_supply_contracts
+		relative_position_id = HOK_KOR_nrsc_procurement_board
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_contract_audits }
+		prerequisite = { focus = HOK_KOR_nrsc_delivery_schedules }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_nrsc_procurement_oversight_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_procurement_oversight_1 add_idea = HOK_KOR_nrsc_procurement_oversight_2 } }
+			else = { add_ideas = HOK_KOR_nrsc_procurement_oversight_2 }
+		}
+	}
+
+	#20260922_kpopmodder: Add independent parallel staff policies while preserving existing military institutions and rewards.
+	focus = {
+		id = HOK_KOR_nrsc_staff_registry
+		icon = GFX_HOK_KOR_focus_nrsc_staff_registry
+		relative_position_id = KOR_prussia_in_the_far_east
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_prussia_in_the_far_east }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+	#20260922_kpopmodder: Add independent parallel staff policies while preserving existing military institutions and rewards.
+	focus = {
+		id = HOK_KOR_nrsc_operations_directorate
+		icon = GFX_HOK_KOR_focus_nrsc_operations_directorate
+		relative_position_id = HOK_KOR_nrsc_staff_registry
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_staff_registry }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_nrsc_staff_administration_1
+		}
+	}
+
+	#20260922_kpopmodder: Add independent parallel staff policies while preserving existing military institutions and rewards.
+	focus = {
+		id = HOK_KOR_nrsc_field_report_system
+		icon = GFX_HOK_KOR_focus_nrsc_field_report_system
+		relative_position_id = HOK_KOR_nrsc_staff_registry
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_staff_registry }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_nrsc_field_report_system bonus = 1.0 uses = 1 category = electronics }
+			army_experience = 25
+		}
+	}
+
+	#20260922_kpopmodder: Add independent parallel staff policies while preserving existing military institutions and rewards.
+	focus = {
+		id = HOK_KOR_nrsc_staff_regulations
+		icon = GFX_HOK_KOR_focus_nrsc_staff_regulations
+		relative_position_id = HOK_KOR_nrsc_staff_registry
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_operations_directorate }
+		prerequisite = { focus = HOK_KOR_nrsc_field_report_system }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_nrsc_staff_administration_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_staff_administration_1 add_idea = HOK_KOR_nrsc_staff_administration_2 } }
+			else = { add_ideas = HOK_KOR_nrsc_staff_administration_2 }
+		}
+	}
+
+	#20260922_kpopmodder: Add an independent parallel manpower policy while preserving existing focus progression and layout.
+	focus = {
+		id = HOK_KOR_nrsc_manpower_register
+		icon = GFX_HOK_KOR_focus_nrsc_manpower_register
+		#20260922_kpopmodder: Separate the new mobilization branch from staff merge lines; retain the completed-coup gate.
+		relative_position_id = KOR_gathering_the_farright_in_the_military
+		x = 7
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_gathering_the_farright_in_the_military }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_manpower = 25000
+			add_political_power = 100
+		}
+	}
+
+	#20260922_kpopmodder: Add an independent parallel manpower policy while preserving existing focus progression and layout.
+	focus = {
+		id = HOK_KOR_nrsc_reserve_rotations
+		icon = GFX_HOK_KOR_focus_nrsc_reserve_rotations
+		relative_position_id = HOK_KOR_nrsc_manpower_register
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_manpower_register }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_nrsc_manpower_administration_1
+		}
+	}
+
+	#20260922_kpopmodder: Add an independent parallel manpower policy while preserving existing focus progression and layout.
+	focus = {
+		id = HOK_KOR_nrsc_skilled_worker_exemptions
+		icon = GFX_HOK_KOR_focus_nrsc_skilled_worker_exemptions
+		relative_position_id = HOK_KOR_nrsc_manpower_register
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_manpower_register }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_nrsc_skilled_worker_exemptions bonus = 1.5 uses = 1 category = industry }
+			add_ideas = HOK_KOR_nrsc_essential_workforce
+		}
+	}
+
+	#20260922_kpopmodder: Add an independent parallel manpower policy while preserving existing focus progression and layout.
+	focus = {
+		id = HOK_KOR_nrsc_manpower_coordination
+		icon = GFX_HOK_KOR_focus_nrsc_manpower_coordination
+		relative_position_id = HOK_KOR_nrsc_manpower_register
+		#20260922_kpopmodder: Center the final merge in the upper three-row policy module.
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_nrsc_reserve_rotations }
+		prerequisite = { focus = HOK_KOR_nrsc_skilled_worker_exemptions }
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_nrsc_manpower_administration_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_manpower_administration_1 add_idea = HOK_KOR_nrsc_manpower_administration_2 } }
+			else = { add_ideas = HOK_KOR_nrsc_manpower_administration_2 }
 		}
 	}
 }

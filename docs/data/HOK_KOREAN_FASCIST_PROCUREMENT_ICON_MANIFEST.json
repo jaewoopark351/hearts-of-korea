@@ -1,0 +1,916 @@
+{
+    "source_baseline":  {
+                            "branch":  "feat/korean-focus-expansion-ai",
+                            "commit":  "691ffa37740237feddf0b44fc68cfa47b10d76bf",
+                            "date":  "2026-09-22",
+                            "working_tree_at_artwork_start":  "clean"
+                        },
+    "status":  "artwork_integrated_static_pass_runtime_not_run",
+    "scope":  "Fascist procurement F1:4focuses+2spirits+2dedicated32x32decisions+1dedicated51x40category",
+    "method":  "Mixed permitted PNG pieces and continuation-authored contract clipboard and connecting line geometry. No AI generation/download.",
+    "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+    "permission":  "CREDITS.txt declares contributor consent and all free to use; applies only to selected pack files, not entire contributing mods. No MIT/CC license inferred.",
+    "credits_path":  "docs/assets/korean-focus-icons/UPSTREAM_CREDITS.txt",
+    "source_working_directory":  ".local-artifacts/korean-focus-icons/sources/Ultimate-HOI4-GFX",
+    "pipeline":  {
+                     "renderer":  ".local-artifacts/korean-focus-icons/IconRenderer.cs",
+                     "renderer_sha256":  "5ce539624fc427fce2d0f4a553b970be1a53e159ce7550b89f5178d1071c0d16",
+                     "background_renderer":  ".local-artifacts/korean-focus-icon-colors/BackgroundColors.cs",
+                     "background_renderer_sha256":  "2f258e5a0f1cf2ba30c227d80d79d98bd5f2795e34eff38f6fc3a7dbb1a6b234",
+                     "marks":  ".local-artifacts/korean-fascist-procurement-icons/ProcurementMarks.cs",
+                     "marks_sha256":  "783da9a01045dd3b8d5983a0b7ce3629d7c5d882745863fbe9c0a0d54a568290",
+                     "entrypoint":  ".local-artifacts/korean-fascist-procurement-icons/build-icons.ps1"
+                 },
+    "palette":  {
+                    "id":  "fascism",
+                    "reference_rgb":  [
+                                          70,
+                                          60,
+                                          48
+                                      ],
+                    "luminance_reference":  60,
+                    "mask_rule":  "A \u003e 0 and R-G \u003e 6 and R-B \u003e 3 and B-G \u003e= -4",
+                    "shading":  "pow((0.2126R+0.7152G+0.0722B)/60,0.9), clamp rounded reference RGB times shade; original alpha",
+                    "scope":  "Background alone; central source pieces and metallic border unfiltered"
+                },
+    "shared_runtime_assets":  [
+                                  {
+                                      "texture":  "gfx/interface/goals/HOK_KOR/shine_overlay.dds",
+                                      "sha256":  "bb416649358c73d34aacd46bad61bc44211fac8111627b56e25f385ad98f4448",
+                                      "source":  "HOI4 1.19.3 gfx/interface/goals/shine_overlay.dds",
+                                      "attribution":  "Paradox Interactive",
+                                      "reuse_basis":  "Existing internal byte-identical vanilla copy; not covered by pack CREDITS",
+                                      "modifications":  "None"
+                                  }
+                              ],
+    "small_decision_ui":  {
+                              "version":  "1.19.3",
+                              "canvas":  [
+                                             32,
+                                             32
+                                         ],
+                              "visible_circle_box":  [
+                                                         1,
+                                                         1,
+                                                         30,
+                                                         30
+                                                     ],
+                              "row_height":  41,
+                              "row_center":  [
+                                                 30,
+                                                 19
+                                             ],
+                              "label_start_x":  63,
+                              "timed_row_height":  40,
+                              "timed_row_center":  [
+                                                       32,
+                                                       20
+                                                   ],
+                              "timed_label_start_x":  62,
+                              "category_canvas":  [
+                                                      51,
+                                                      40
+                                                  ],
+                              "category_visible_circle_box":  [
+                                                                  6,
+                                                                  1,
+                                                                  38,
+                                                                  38
+                                                              ],
+                              "category_header_height":  58,
+                              "category_icon_anchor":  [
+                                                           10,
+                                                           16
+                                                       ],
+                              "category_title_x":  74,
+                              "reference":  "docs/incidents/2026-09-22-korean-decision-icon-size.md"
+                          },
+    "backgrounds":  [
+                        {
+                            "kind":  "focuses",
+                            "source":  "Focus Backgrounds/Circle with Ribbon2.png",
+                            "source_sha256":  "5bcf53259a04276b1586f6c83f7a35a14ba9d22742ea75fb4802911978db2f95",
+                            "derived_png":  ".local-artifacts/korean-fascist-procurement-icons/backgrounds/focuses-fascism.png",
+                            "sha256":  "dcd497563971e6e8d7425c008b0efd586a2c00bd692ef5f84f97ebf9e5d6a521",
+                            "mask_png":  ".local-artifacts/korean-fascist-procurement-icons/backgrounds/focuses-fascism-mask.png",
+                            "mask_sha256":  "396e2460eab7f0bd3978535a8db68b2967233b72b7dad23d201e944ceb273f58",
+                            "selected_pixels":  2847
+                        },
+                        {
+                            "kind":  "ideas",
+                            "source":  "National Spirit Backgrounds/Circle.png",
+                            "source_sha256":  "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+                            "derived_png":  ".local-artifacts/korean-fascist-procurement-icons/backgrounds/ideas-fascism.png",
+                            "sha256":  "8a3c505e6c99d6999f94f417486a37c4e1d999964a2bbd87de2f68903135779d",
+                            "mask_png":  ".local-artifacts/korean-fascist-procurement-icons/backgrounds/ideas-fascism-mask.png",
+                            "mask_sha256":  "c2a39f32716b08dd1edace34401105f5ebfde6d6635cb7ab77dd408968c0706c",
+                            "selected_pixels":  1695
+                        }
+                    ],
+    "focuses":  [
+                    {
+                        "id":  "HOK_KOR_nrsc_procurement_board",
+                        "name":  "군수조달 실무정비",
+                        "new_reference":  "GFX_HOK_KOR_focus_nrsc_procurement_board",
+                        "sprite":  "GFX_HOK_KOR_focus_nrsc_procurement_board",
+                        "texture":  "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_procurement_board.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "board",
+                        "motif":  "Contract clipboard and signing hand",
+                        "color_palette":  "fascism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Paper",
+                                           0.24,
+                                           0.07,
+                                           0.45,
+                                           0.71
+                                       ],
+                                       [
+                                           "Paper Sign",
+                                           0.39,
+                                           0.61,
+                                           0.58,
+                                           0.38
+                                       ]
+                                   ],
+                        "geometry_recipe":  "ProcurementMarks.Clipboard before Paper: board(31,12,35,49), clip(40,9,17,8), brown board and visible bronze/steel outline",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper Sign.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated charcoal-brown background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "31369d3f68021173f44d0eea1359077f55ecdc7aeda6721edadcd37c673cbf96",
+                        "preview":  ".local-artifacts/korean-fascist-procurement-icons/rendered/focuses_nrsc_procurement_board.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_nrsc_contract_audits",
+                        "name":  "군수계약 원가심사",
+                        "new_reference":  "GFX_HOK_KOR_focus_nrsc_contract_audits",
+                        "sprite":  "GFX_HOK_KOR_focus_nrsc_contract_audits",
+                        "texture":  "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_contract_audits.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "audit",
+                        "motif":  "Cost ledger and magnifying glass",
+                        "color_palette":  "fascism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Book",
+                                           0.01,
+                                           0.01,
+                                           0.84,
+                                           0.72
+                                       ],
+                                       [
+                                           "Magnifying Glass",
+                                           0.4,
+                                           0.36,
+                                           0.6,
+                                           0.63
+                                       ]
+                                   ],
+                        "geometry_recipe":  null,
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Book.png",
+                                              "Focus \u0026 National Spirits Pieces/Magnifying Glass.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated charcoal-brown background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "9b15252d622258db1869dac18ad33487e4a35a3b1e5737217e97eb5deb5f08d2",
+                        "preview":  ".local-artifacts/korean-fascist-procurement-icons/rendered/focuses_nrsc_contract_audits.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_nrsc_delivery_schedules",
+                        "name":  "군수 납기 조정",
+                        "new_reference":  "GFX_HOK_KOR_focus_nrsc_delivery_schedules",
+                        "sprite":  "GFX_HOK_KOR_focus_nrsc_delivery_schedules",
+                        "texture":  "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_delivery_schedules.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "schedule",
+                        "motif":  "Shipment crate and delivery clock",
+                        "color_palette":  "fascism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Crate",
+                                           0.02,
+                                           0.25,
+                                           0.63,
+                                           0.7
+                                       ],
+                                       [
+                                           "Clock",
+                                           0.52,
+                                           0.02,
+                                           0.47,
+                                           0.69
+                                       ]
+                                   ],
+                        "geometry_recipe":  null,
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Crate.png",
+                                              "Focus \u0026 National Spirits Pieces/Clock.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated charcoal-brown background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "9db7b3127489cef257fbb71142d7ce2c75312aabddd9bad11c9337e18864ebb2",
+                        "preview":  ".local-artifacts/korean-fascist-procurement-icons/rendered/focuses_nrsc_delivery_schedules.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_nrsc_supply_contracts",
+                        "name":  "통합 군수계약 체계",
+                        "new_reference":  "GFX_HOK_KOR_focus_nrsc_supply_contracts",
+                        "sprite":  "GFX_HOK_KOR_focus_nrsc_supply_contracts",
+                        "texture":  "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_supply_contracts.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS; single frame; explicit alpha",
+                        "stage":  0,
+                        "family":  "contracts",
+                        "motif":  "Factory linked to signed supply contract",
+                        "color_palette":  "fascism",
+                        "background_box":  [
+                                               2,
+                                               2,
+                                               96,
+                                               84
+                                           ],
+                        "composition_box":  [
+                                                16,
+                                                10,
+                                                68,
+                                                58
+                                            ],
+                        "recipe":  [
+                                       [
+                                           "Factories2",
+                                           0.01,
+                                           0.01,
+                                           0.66,
+                                           0.72
+                                       ],
+                                       [
+                                           "Paper Sign",
+                                           0.27,
+                                           0.52,
+                                           0.72,
+                                           0.44
+                                       ]
+                                   ],
+                        "geometry_recipe":  "ProcurementMarks.ContractLinks before components: focus elbow from(32,40)to(69,40)to(69,48); idea from(16,37)to(41,37)to(41,45); bronze 1.8px",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Factories2.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper Sign.png"
+                                          ],
+                        "header_template":  "gfx/interface/goals/HOK_KOR/link_power_grids.dds",
+                        "modifications":  [
+                                              "Original aspect ratios maintained",
+                                              "Native-size component composition",
+                                              "Isolated charcoal-brown background recolor",
+                                              "Metal border/foreground colors preserved",
+                                              "BGRA32 export"
+                                          ],
+                        "sha256":  "e43d77b01cff4dac780624ba91c1f10df373bb564a4e806e0a345f9e2f028d77",
+                        "preview":  ".local-artifacts/korean-fascist-procurement-icons/rendered/focuses_nrsc_supply_contracts.png"
+                    }
+                ],
+    "ideas":  [
+                  {
+                      "id":  "HOK_KOR_nrsc_procurement_oversight_1",
+                      "name":  "군수계약 감독 I",
+                      "new_reference":  "HOK_KOR_icon_nrsc_procurement_oversight_1",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_nrsc_procurement_oversight_1",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/fascist_procurement/nrsc_procurement_oversight_1.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS; single frame; explicit alpha",
+                      "stage":  1,
+                      "family":  "contracts",
+                      "motif":  "Factory linked to signed supply contract",
+                      "color_palette":  "fascism",
+                      "background_box":  [
+                                             3,
+                                             4,
+                                             54,
+                                             56
+                                         ],
+                      "composition_box":  [
+                                              6,
+                                              10,
+                                              48,
+                                              42
+                                          ],
+                      "recipe":  [
+                                     [
+                                         "Factories2",
+                                         0.02,
+                                         0.01,
+                                         0.72,
+                                         0.7
+                                     ],
+                                     [
+                                         "Paper Sign",
+                                         0.25,
+                                         0.53,
+                                         0.75,
+                                         0.44
+                                     ]
+                                 ],
+                      "geometry_recipe":  "ProcurementMarks.ContractLinks before components: focus elbow from(32,40)to(69,40)to(69,48); idea from(16,37)to(41,37)to(41,45); bronze 1.8px",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Factories2.png",
+                                            "Focus \u0026 National Spirits Pieces/Paper Sign.png"
+                                        ],
+                      "header_template":  "gfx/interface/ideas/HOK_KOR/energy_coordination_1.dds",
+                      "modifications":  [
+                                            "Original aspect ratios maintained",
+                                            "Native-size component composition",
+                                            "Isolated charcoal-brown background recolor",
+                                            "Metal border/foreground colors preserved",
+                                            "BGRA32 export"
+                                        ],
+                      "sha256":  "14eb63ac77b624b9111c50d6bdafc839b5b3ccc499c4d1606be87486c5ffb6c9",
+                      "preview":  ".local-artifacts/korean-fascist-procurement-icons/rendered/ideas_nrsc_procurement_oversight_1.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_nrsc_procurement_oversight_2",
+                      "name":  "군수계약 감독 II",
+                      "new_reference":  "HOK_KOR_icon_nrsc_procurement_oversight_2",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_nrsc_procurement_oversight_2",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/fascist_procurement/nrsc_procurement_oversight_2.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS; single frame; explicit alpha",
+                      "stage":  2,
+                      "family":  "contracts",
+                      "motif":  "Factory linked to signed supply contract",
+                      "color_palette":  "fascism",
+                      "background_box":  [
+                                             3,
+                                             4,
+                                             54,
+                                             56
+                                         ],
+                      "composition_box":  [
+                                              6,
+                                              10,
+                                              48,
+                                              42
+                                          ],
+                      "recipe":  [
+                                     [
+                                         "Factories2",
+                                         0.02,
+                                         0.01,
+                                         0.72,
+                                         0.7
+                                     ],
+                                     [
+                                         "Paper Sign",
+                                         0.25,
+                                         0.53,
+                                         0.75,
+                                         0.44
+                                     ]
+                                 ],
+                      "geometry_recipe":  "ProcurementMarks.ContractLinks before components: focus elbow from(32,40)to(69,40)to(69,48); idea from(16,37)to(41,37)to(41,45); bronze 1.8px",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Factories2.png",
+                                            "Focus \u0026 National Spirits Pieces/Paper Sign.png"
+                                        ],
+                      "header_template":  "gfx/interface/ideas/HOK_KOR/energy_coordination_1.dds",
+                      "modifications":  [
+                                            "Original aspect ratios maintained",
+                                            "Native-size component composition",
+                                            "Isolated charcoal-brown background recolor",
+                                            "Metal border/foreground colors preserved",
+                                            "BGRA32 export"
+                                        ],
+                      "sha256":  "5353db4eed7329a452e4004606498024305540b251d0b566827381e90c0e7978",
+                      "preview":  ".local-artifacts/korean-fascist-procurement-icons/rendered/ideas_nrsc_procurement_oversight_2.png"
+                  }
+              ],
+    "decisions":  [
+                      {
+                          "id":  "HOK_KOR_nrsc_emergency_deliveries_project",
+                          "name":  "긴급 군수납품",
+                          "new_reference":  "GFX_HOK_KOR_decision_nrsc_emergency_deliveries",
+                          "sprite":  "GFX_HOK_KOR_decision_nrsc_emergency_deliveries",
+                          "texture":  "gfx/interface/decisions/HOK_KOR/fascist_procurement/nrsc_emergency_deliveries.dds",
+                          "width":  32,
+                          "height":  32,
+                          "format":  "BGRA32 DDS; single frame; explicit alpha",
+                          "stage":  0,
+                          "family":  "emergency",
+                          "motif":  "Urgent delivery crate and clock",
+                          "color_palette":  "fascism",
+                          "background_box":  [
+                                                 1,
+                                                 1,
+                                                 30,
+                                                 30
+                                             ],
+                          "composition_box":  [
+                                                  4,
+                                                  4,
+                                                  24,
+                                                  24
+                                              ],
+                          "recipe":  [
+                                         [
+                                             "Crate",
+                                             0,
+                                             0.17,
+                                             0.66,
+                                             0.76
+                                         ],
+                                         [
+                                             "Clock",
+                                             0.55,
+                                             0,
+                                             0.45,
+                                             0.66
+                                         ]
+                                     ],
+                          "geometry_recipe":  null,
+                          "asset_sources":  [
+                                                "National Spirit Backgrounds/Circle.png",
+                                                "Focus \u0026 National Spirits Pieces/Crate.png",
+                                                "Focus \u0026 National Spirits Pieces/Clock.png"
+                                            ],
+                          "header_template":  "gfx/interface/decisions/HOK_KOR/communist_governance/pak_production_retooling.dds",
+                          "modifications":  [
+                                                "Original aspect ratios maintained",
+                                                "Native-size component composition",
+                                                "Isolated charcoal-brown background recolor",
+                                                "Metal border/foreground colors preserved",
+                                                "BGRA32 export"
+                                            ],
+                          "sha256":  "ed3078236e853d5867a2dfe0fb6555d8f764cec2eda37aa7bd9e101334df89f0",
+                          "preview":  ".local-artifacts/korean-fascist-procurement-icons/rendered/decisions_nrsc_emergency_deliveries.png"
+                      },
+                      {
+                          "id":  "HOK_KOR_nrsc_material_contracts_project",
+                          "name":  "원자재 계약조정",
+                          "new_reference":  "GFX_HOK_KOR_decision_nrsc_material_contracts",
+                          "sprite":  "GFX_HOK_KOR_decision_nrsc_material_contracts",
+                          "texture":  "gfx/interface/decisions/HOK_KOR/fascist_procurement/nrsc_material_contracts.dds",
+                          "width":  32,
+                          "height":  32,
+                          "format":  "BGRA32 DDS; single frame; explicit alpha",
+                          "stage":  0,
+                          "family":  "materials",
+                          "motif":  "Materials contract and steel ingot",
+                          "color_palette":  "fascism",
+                          "background_box":  [
+                                                 1,
+                                                 1,
+                                                 30,
+                                                 30
+                                             ],
+                          "composition_box":  [
+                                                  4,
+                                                  4,
+                                                  24,
+                                                  24
+                                              ],
+                          "recipe":  [
+                                         [
+                                             "Paper",
+                                             0.02,
+                                             0,
+                                             0.48,
+                                             0.7
+                                         ],
+                                         [
+                                             "Steel",
+                                             0.28,
+                                             0.45,
+                                             0.71,
+                                             0.52
+                                         ]
+                                     ],
+                          "geometry_recipe":  null,
+                          "asset_sources":  [
+                                                "National Spirit Backgrounds/Circle.png",
+                                                "Focus \u0026 National Spirits Pieces/Paper.png",
+                                                "Focus \u0026 National Spirits Pieces/Steel.png"
+                                            ],
+                          "header_template":  "gfx/interface/decisions/HOK_KOR/communist_governance/pak_production_retooling.dds",
+                          "modifications":  [
+                                                "Original aspect ratios maintained",
+                                                "Native-size component composition",
+                                                "Isolated charcoal-brown background recolor",
+                                                "Metal border/foreground colors preserved",
+                                                "BGRA32 export"
+                                            ],
+                          "sha256":  "b1884485d74f096f029931c9e33bdd65a5af90cca7ea5aacf3cf156fd9e78754",
+                          "preview":  ".local-artifacts/korean-fascist-procurement-icons/rendered/decisions_nrsc_material_contracts.png"
+                      }
+                  ],
+    "categories":  [
+                       {
+                           "id":  "HOK_KOR_fascist_procurement_programs",
+                           "name":  "구국군 군수계약 사업",
+                           "new_reference":  "GFX_HOK_KOR_decision_category_fascist_procurement",
+                           "sprite":  "GFX_HOK_KOR_decision_category_fascist_procurement",
+                           "texture":  "gfx/interface/decisions/HOK_KOR/fascist_procurement/category.dds",
+                           "width":  51,
+                           "height":  40,
+                           "format":  "BGRA32 DDS; single frame; explicit alpha",
+                           "stage":  0,
+                           "family":  "category",
+                           "motif":  "Factory and supply-contract signature",
+                           "color_palette":  "fascism",
+                           "background_box":  [
+                                                  6,
+                                                  1,
+                                                  38,
+                                                  38
+                                              ],
+                           "composition_box":  [
+                                                   11,
+                                                   5,
+                                                   29,
+                                                   29
+                                               ],
+                           "recipe":  [
+                                          [
+                                              "Factories2",
+                                              0.02,
+                                              0,
+                                              0.72,
+                                              0.73
+                                          ],
+                                          [
+                                              "Paper Sign",
+                                              0.21,
+                                              0.52,
+                                              0.78,
+                                              0.45
+                                          ]
+                                      ],
+                           "geometry_recipe":  null,
+                           "asset_sources":  [
+                                                 "National Spirit Backgrounds/Circle.png",
+                                                 "Focus \u0026 National Spirits Pieces/Factories2.png",
+                                                 "Focus \u0026 National Spirits Pieces/Paper Sign.png"
+                                             ],
+                           "header_template":  "gfx/interface/decisions/HOK_KOR/communist_governance/category.dds",
+                           "modifications":  [
+                                                 "Original aspect ratios maintained",
+                                                 "Native-size component composition",
+                                                 "Isolated charcoal-brown background recolor",
+                                                 "Metal border/foreground colors preserved",
+                                                 "BGRA32 export"
+                                             ],
+                           "sha256":  "ba072735a97396ce1772cd9fa84419c2609a4be4ad7ebced84689349143f5799",
+                           "preview":  ".local-artifacts/korean-fascist-procurement-icons/rendered/categories_category.png"
+                       }
+                   ],
+    "asset_sources":  [
+                          {
+                              "path":  "CREDITS.txt",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/CREDITS.txt",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "cf220dc66463d75163f7690ad77b02b662d0c05ca5d53dc62d33ed504512a7f5",
+                              "bytes":  1029,
+                              "git_blob_sha":  "83efbe5261113f933a16698783d6803dfd593152",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)"
+                          },
+                          {
+                              "path":  "Focus Backgrounds/Circle with Ribbon2.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20Backgrounds/Circle%20with%20Ribbon2.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "5bcf53259a04276b1586f6c83f7a35a14ba9d22742ea75fb4802911978db2f95",
+                              "bytes":  33322,
+                              "git_blob_sha":  "6f0ebeed856a2fdc3f25f1ea0c82418b60c3d605",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  100,
+                              "height":  88,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "National Spirit Backgrounds/Circle.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/National%20Spirit%20Backgrounds/Circle.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+                              "bytes":  25055,
+                              "git_blob_sha":  "ab1fa7b4a3a783fb528c496fcca2370001df1b52",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  64,
+                              "height":  64,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Paper.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Paper.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "f702a6971726ba0608f75cb71a90fc8f0ac0cc0474a2cd5ca172330dbf3c803c",
+                              "bytes":  19520,
+                              "git_blob_sha":  "61aae5d0b991ce881d97ba30af39093332b61fd9",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  47,
+                              "height":  51,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Paper Sign.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Paper%20Sign.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "e623b233c2ba688421edd3048ce4940073014ed6b423039b77c9e35c6006a8b0",
+                              "bytes":  18909,
+                              "git_blob_sha":  "cc6e99cc059670531751d96b1e0c6a6491530eeb",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  68,
+                              "height":  35,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Book.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Book.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "b2e7e51e79acaeaef614c430a33a0a4fb72b81f14bfc535f27ff7264b28802f9",
+                              "bytes":  18442,
+                              "git_blob_sha":  "2d4ae8f7e57b46dfe86496775c23daeebfe2ef82",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  52,
+                              "height":  39,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Magnifying Glass.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Magnifying%20Glass.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "bea177a67a7890adbdb4c79ad689e2d4e271a8db3216f77295e6c46aec7f8674",
+                              "bytes":  5505,
+                              "git_blob_sha":  "b5e00c7f2def1a956f4846053cb83c5678ac064e",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  39,
+                              "height":  34,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Crate.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Crate.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "4efdb13ea21e1fc35019c1efdb2b7594739f47d8c4d7a8ce43060a2c2860dd17",
+                              "bytes":  10597,
+                              "git_blob_sha":  "6c95393c0ce074f5635ab93e3839129437b23903",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  75,
+                              "height":  75,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Clock.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Clock.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "139708d9526db928325f05a60c70585a336bf0c70cea4fea119fa0ff4533d145",
+                              "bytes":  25521,
+                              "git_blob_sha":  "2e6de1d2d4cc06a2a509a29858bdabbb7fdf50e3",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  75,
+                              "height":  67,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Factories2.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Factories2.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "10898f9e4600558cd329d8bcb601cb453d89d8b46d90d079ce328294a96a31a7",
+                              "bytes":  19363,
+                              "git_blob_sha":  "05d83d5cb1839e5409fed48834321595d168aa43",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  49,
+                              "height":  37,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Steel.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Steel.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "1b118fdadfd2d4b0f1bb3b16735913c5cacb428a0ae4dde490f747160236294a",
+                              "bytes":  18109,
+                              "git_blob_sha":  "e0844faa835571698718320a47ff77cd97f4eb58",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  51,
+                              "height":  36,
+                              "pixel_format":  "Format32bppArgb"
+                          }
+                      ],
+    "focus_recipes":  {
+                          "board":  [
+                                        [
+                                            "Paper",
+                                            0.24,
+                                            0.07,
+                                            0.45,
+                                            0.71
+                                        ],
+                                        [
+                                            "Paper Sign",
+                                            0.39,
+                                            0.61,
+                                            0.58,
+                                            0.38
+                                        ]
+                                    ],
+                          "audit":  [
+                                        [
+                                            "Book",
+                                            0.01,
+                                            0.01,
+                                            0.84,
+                                            0.72
+                                        ],
+                                        [
+                                            "Magnifying Glass",
+                                            0.4,
+                                            0.36,
+                                            0.6,
+                                            0.63
+                                        ]
+                                    ],
+                          "schedule":  [
+                                           [
+                                               "Crate",
+                                               0.02,
+                                               0.25,
+                                               0.63,
+                                               0.7
+                                           ],
+                                           [
+                                               "Clock",
+                                               0.52,
+                                               0.02,
+                                               0.47,
+                                               0.69
+                                           ]
+                                       ],
+                          "contracts":  [
+                                            [
+                                                "Factories2",
+                                                0.01,
+                                                0.01,
+                                                0.66,
+                                                0.72
+                                            ],
+                                            [
+                                                "Paper Sign",
+                                                0.27,
+                                                0.52,
+                                                0.72,
+                                                0.44
+                                            ]
+                                        ]
+                      },
+    "idea_recipes":  {
+                         "contracts":  [
+                                           [
+                                               "Factories2",
+                                               0.02,
+                                               0.01,
+                                               0.72,
+                                               0.7
+                                           ],
+                                           [
+                                               "Paper Sign",
+                                               0.25,
+                                               0.53,
+                                               0.75,
+                                               0.44
+                                           ]
+                                       ]
+                     },
+    "decision_recipes":  {
+                             "emergency":  [
+                                               [
+                                                   "Crate",
+                                                   0,
+                                                   0.17,
+                                                   0.66,
+                                                   0.76
+                                               ],
+                                               [
+                                                   "Clock",
+                                                   0.55,
+                                                   0,
+                                                   0.45,
+                                                   0.66
+                                               ]
+                                           ],
+                             "materials":  [
+                                               [
+                                                   "Paper",
+                                                   0.02,
+                                                   0,
+                                                   0.48,
+                                                   0.7
+                                               ],
+                                               [
+                                                   "Steel",
+                                                   0.28,
+                                                   0.45,
+                                                   0.71,
+                                                   0.52
+                                               ]
+                                           ]
+                         },
+    "category_recipe":  [
+                            [
+                                "Factories2",
+                                0.02,
+                                0,
+                                0.72,
+                                0.73
+                            ],
+                            [
+                                "Paper Sign",
+                                0.21,
+                                0.52,
+                                0.78,
+                                0.45
+                            ]
+                        ],
+    "geometry_recipes":  {
+                             "board":  "ProcurementMarks.Clipboard before Paper: board(31,12,35,49), clip(40,9,17,8), brown board and visible bronze/steel outline",
+                             "contracts":  "ProcurementMarks.ContractLinks before components: focus elbow from(32,40)to(69,40)to(69,48); idea from(16,37)to(41,37)to(41,45); bronze 1.8px"
+                         },
+    "validation":  {
+                       "contact_sheet":  "docs/assets/korean-fascist-procurement-icons/contact-sheet.png",
+                       "static":  "PASS:9 DDS headers/dimensions/alpha/hashes;13 unique sprites;isolated background recoloring;one I/II pair differs only within badge;148 previous runtime DDS unchanged",
+                       "runtime":  "Not run by artwork subtask",
+                       "report":  ".local-artifacts/korean-fascist-procurement-icons/validation.json",
+                       "visual_review":  "Native-size contact sheet reviewed by artwork agent on 2026-09-22; four procurement motifs, charcoal-brown fields and frames, I/II, two32x32 decisions and one51x40 category readable"
+                   }
+}

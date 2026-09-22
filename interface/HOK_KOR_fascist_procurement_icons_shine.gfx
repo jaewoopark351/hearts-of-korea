@@ -1,0 +1,123 @@
+#20260922_kpopmodder: Use internal procurement focus masks and the shared local shine overlay.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_procurement_board_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_procurement_board.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_procurement_board.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_procurement_board.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_contract_audits_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_contract_audits.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_contract_audits.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_contract_audits.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_delivery_schedules_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_delivery_schedules.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_delivery_schedules.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_delivery_schedules.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_nrsc_supply_contracts_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_supply_contracts.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_supply_contracts.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/fascist_procurement/nrsc_supply_contracts.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+}

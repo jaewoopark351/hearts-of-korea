@@ -3,7 +3,7 @@
   "documented_on": "2026-09-21",
   "status": "HISTORICAL_326_BASELINE_SUPERSEDED_20260922",
   "current_coordinate_specification": "docs/data/HOK_KOREAN_SECOND_WAVE_COORDINATES.json",
-  "historical_scope_note": "Coordinates, current_* labels and validation claims below describe the 2026-09-21 snapshot only; use current_coordinate_specification for the implemented 354-focus layout.",
+  "historical_scope_note": "Coordinates, current_* labels and validation claims below describe the 2026-09-21 snapshot only; use current_coordinate_specification for the implemented 366-focus layout.",
   "purpose": "한국 중점 326개 압축 재배치의 AA58 기준선과 적용 좌표·연결 명세. 실행용 게임 파일이 아니다.",
   "source": "common/national_focus/korea.txt",
   "evidence": {
