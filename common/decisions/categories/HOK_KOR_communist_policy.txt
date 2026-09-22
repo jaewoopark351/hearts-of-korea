@@ -1,0 +1,11 @@
+#20260922_kpopmodder: Expose the chosen communist policy projects after the matching route capstone.
+HOK_KOR_communist_policy_projects = {
+	icon = GFX_HOK_KOR_decision_category_communist_policy
+	allowed = { original_tag = KOR }
+	visible = {
+		OR = {
+			has_completed_focus = HOK_KOR_yeo_cooperative_federation
+			has_completed_focus = HOK_KOR_pak_heavy_industry_dispatch
+		}
+	}
+}

@@ -1,0 +1,1329 @@
+{
+    "source_baseline":  {
+                            "commit":  "f43769cd9957d4f331b4d591506d52f5da485f79",
+                            "date":  "2026-09-22"
+                        },
+    "status":  "artwork_and_overlay_integrated_static_pass_in_game_visual_review_pending",
+    "scope":  "Y2 cooperative policy and P2 capital goods allocation: 10 focuses and 8 idea stages only",
+    "method":  "Reused permitted PNG components; new continuation composition and isolated background recoloring. No AI-generated artwork.",
+    "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+    "upstream_permission":  "CREDITS.txt declares contributors consent and all free to use; applies only to files in this pack, not contributing mods as a whole.",
+    "credits_path":  "docs/assets/korean-focus-icons/UPSTREAM_CREDITS.txt",
+    "recipe_artifact":  ".local-artifacts/korean-second-wave-icons/build-icons.ps1",
+    "source_working_directory":  ".local-artifacts/korean-focus-icons/sources/Ultimate-HOI4-GFX",
+    "shared_runtime_assets":  [
+                                  {
+                                      "type":  "vanilla shine overlay",
+                                      "source":  "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/goals/shine_overlay.dds",
+                                      "source_version":  "1.19.3",
+                                      "source_sha256":  "bb416649358c73d34aacd46bad61bc44211fac8111627b56e25f385ad98f4448",
+                                      "texture":  "gfx/interface/goals/HOK_KOR/shine_overlay.dds",
+                                      "sha256":  "bb416649358c73d34aacd46bad61bc44211fac8111627b56e25f385ad98f4448",
+                                      "attribution":  "Paradox Interactive",
+                                      "reuse_basis":  "HOI4 vanilla asset reused inside this HOI4 mod; not covered by Ultimate HOI4 GFX CREDITS",
+                                      "modifications":  "Byte-identical local copy made by root integration task",
+                                      "integration_owner":  "root"
+                                  }
+                              ],
+    "palette":  {
+                    "id":  "communism",
+                    "reference_rgb":  [
+                                          116,
+                                          45,
+                                          48
+                                      ],
+                    "luminance_reference":  60,
+                    "mask_rule":  "A \u003e 0 and R-G \u003e 6 and R-B \u003e 3 and B-G \u003e= -4",
+                    "shading":  "pow((0.2126R+0.7152G+0.0722B)/60,0.9); clamp(round(reference_rgb*shade)); original alpha",
+                    "scope":  "Background layer only; metal frame, central pieces and stage marks unfiltered"
+                },
+    "backgrounds":  [
+                        {
+                            "kind":  "focuses",
+                            "source":  "Focus Backgrounds/Circle with Ribbon2.png",
+                            "source_sha256":  "5bcf53259a04276b1586f6c83f7a35a14ba9d22742ea75fb4802911978db2f95",
+                            "derived_png":  ".local-artifacts/korean-second-wave-icons/backgrounds/focuses-communism.png",
+                            "mask_png":  ".local-artifacts/korean-second-wave-icons/backgrounds/focuses-communism-mask.png",
+                            "selected_pixels":  2847,
+                            "sha256":  "0ce20004a7264e11abd7249daf5f25dc017fc2bec990b7ab4136ffa41f951fba",
+                            "mask_sha256":  "396e2460eab7f0bd3978535a8db68b2967233b72b7dad23d201e944ceb273f58"
+                        },
+                        {
+                            "kind":  "ideas",
+                            "source":  "National Spirit Backgrounds/Circle.png",
+                            "source_sha256":  "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+                            "derived_png":  ".local-artifacts/korean-second-wave-icons/backgrounds/ideas-communism.png",
+                            "mask_png":  ".local-artifacts/korean-second-wave-icons/backgrounds/ideas-communism-mask.png",
+                            "selected_pixels":  1695,
+                            "sha256":  "3ce64196679d15aba39c45bf6079375bd26f12d2b807bddee635f2296584a3f4",
+                            "mask_sha256":  "c2a39f32716b08dd1edace34401105f5ebfde6d6635cb7ab77dd408968c0706c"
+                        }
+                    ],
+    "focuses":  [
+                    {
+                        "id":  "HOK_KOR_yeo_cooperative_registry",
+                        "name":  "협동조합 등록망",
+                        "module":  "Y2",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_cooperative_registry",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_cooperative_registry",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_registry.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "registry",
+                        "motif":  "Registry paper with wheat",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper.png",
+                                              "Focus \u0026 National Spirits Pieces/Wheat2.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Paper",
+                                           0.18,
+                                           0,
+                                           0.6,
+                                           0.91
+                                       ],
+                                       [
+                                           "Wheat2",
+                                           0.58,
+                                           0.31,
+                                           0.33,
+                                           0.67
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "9443c5a49d0e5927c211df8ff94f52bec4ca56119752fa2f7c148e88a29995fc",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_yeo_cooperative_registry.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_yeo_joint_purchasing",
+                        "name":  "연합 공동구매 우선",
+                        "module":  "Y2",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_joint_purchasing",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_joint_purchasing",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_joint_purchasing.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "purchasing",
+                        "motif":  "Shared equipment crate and wrench",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Crate.png",
+                                              "Focus \u0026 National Spirits Pieces/Wrench.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Crate",
+                                           0.08,
+                                           0.15,
+                                           0.69,
+                                           0.77
+                                       ],
+                                       [
+                                           "Wrench",
+                                           0.45,
+                                           0,
+                                           0.54,
+                                           0.81
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "2b3c9f54a80fc1ff2d0f8f6a8315de2465663157d7b7fc60d3bd2ebc727c0cf3",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_yeo_joint_purchasing.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_yeo_cooperative_workshops",
+                        "name":  "협동 작업장",
+                        "module":  "Y2",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_cooperative_workshops",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_cooperative_workshops",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_workshops.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "workshops",
+                        "motif":  "Worker and workshop cog",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Cog Wheel.png",
+                                              "Focus \u0026 National Spirits Pieces/Worker.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Cog Wheel",
+                                           0.36,
+                                           0.13,
+                                           0.63,
+                                           0.78
+                                       ],
+                                       [
+                                           "Worker",
+                                           0.02,
+                                           0,
+                                           0.57,
+                                           0.97
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "89dc9428298af11945de7421e9f554490addc7a276d4f7e116781410bd4a57d6",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_yeo_cooperative_workshops.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_yeo_rural_credit",
+                        "name":  "지역 자율금융 우선",
+                        "module":  "Y2",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_rural_credit",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_rural_credit",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_rural_credit.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "credit",
+                        "motif":  "Cooperative account book and coins",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Book.png",
+                                              "Focus \u0026 National Spirits Pieces/Coins.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Book",
+                                           0.03,
+                                           0.02,
+                                           0.93,
+                                           0.69
+                                       ],
+                                       [
+                                           "Coins",
+                                           0.13,
+                                           0.57,
+                                           0.79,
+                                           0.36
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "a9496ed6a32cad2ee574b0ba1f345acff565b8f3fc5d37006debf859dbd37999",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_yeo_rural_credit.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_yeo_cooperative_federation",
+                        "name":  "전국 협동조합 연합",
+                        "module":  "Y2",
+                        "new_reference":  "GFX_HOK_KOR_focus_yeo_cooperative_federation",
+                        "sprite":  "GFX_HOK_KOR_focus_yeo_cooperative_federation",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_federation.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "federation",
+                        "motif":  "Joined hands framed by wheat",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Wheat2.png",
+                                              "Focus \u0026 National Spirits Pieces/Hands Shaking.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Wheat2",
+                                           0.03,
+                                           0,
+                                           0.26,
+                                           0.9
+                                       ],
+                                       [
+                                           "Wheat2",
+                                           0.73,
+                                           0,
+                                           0.26,
+                                           0.9
+                                       ],
+                                       [
+                                           "Hands Shaking",
+                                           0.13,
+                                           0.19,
+                                           0.74,
+                                           0.69
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "5fb0c438294571c559b68a3b61795b152abd6aa3b7b229eeec5d2e28ec47a3ca",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_yeo_cooperative_federation.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_pak_machine_tool_allocation",
+                        "name":  "공작기계 배치계획",
+                        "module":  "P2",
+                        "new_reference":  "GFX_HOK_KOR_focus_pak_machine_tool_allocation",
+                        "sprite":  "GFX_HOK_KOR_focus_pak_machine_tool_allocation",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_machine_tool_allocation.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "allocation",
+                        "motif":  "Machine cog and allocation wrench",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Cog Wheel.png",
+                                              "Focus \u0026 National Spirits Pieces/Wrench.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Cog Wheel",
+                                           0.04,
+                                           0,
+                                           0.7,
+                                           0.79
+                                       ],
+                                       [
+                                           "Wrench",
+                                           0.42,
+                                           0.31,
+                                           0.57,
+                                           0.68
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "94ddf271f879c123a71328bc17c88e327f1687d9d4f1a09d19e5c1f199802060",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_pak_machine_tool_allocation.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_pak_capital_goods_board",
+                        "name":  "군수설비 확충 우선",
+                        "module":  "P2",
+                        "new_reference":  "GFX_HOK_KOR_focus_pak_capital_goods_board",
+                        "sprite":  "GFX_HOK_KOR_focus_pak_capital_goods_board",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_capital_goods_board.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "plant",
+                        "motif":  "Factory construction blueprint",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Blueprints.png",
+                                              "Focus \u0026 National Spirits Pieces/Factories2.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Blueprints",
+                                           0.02,
+                                           0.29,
+                                           0.8,
+                                           0.69
+                                       ],
+                                       [
+                                           "Factories2",
+                                           0.34,
+                                           0,
+                                           0.64,
+                                           0.62
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "ce877c52163d0b8a8742b485b8aee7ac7c38ca1947961e5e8818e33de12857f1",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_pak_capital_goods_board.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_pak_steel_delivery_schedules",
+                        "name":  "현행 생산계획 우선",
+                        "module":  "P2",
+                        "new_reference":  "GFX_HOK_KOR_focus_pak_steel_delivery_schedules",
+                        "sprite":  "GFX_HOK_KOR_focus_pak_steel_delivery_schedules",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_steel_delivery_schedules.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "output",
+                        "motif":  "Operating factory and steel ingot",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Factories2.png",
+                                              "Focus \u0026 National Spirits Pieces/Steel.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Factories2",
+                                           0.04,
+                                           0,
+                                           0.91,
+                                           0.66
+                                       ],
+                                       [
+                                           "Steel",
+                                           0.23,
+                                           0.52,
+                                           0.75,
+                                           0.45
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "4435dd10240b8c74ccc7a2adc2396d7cec132ef191e7aad89010f0f944681d46",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_pak_steel_delivery_schedules.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_pak_industrial_reporting",
+                        "name":  "공업통계 보고망",
+                        "module":  "P2",
+                        "new_reference":  "GFX_HOK_KOR_focus_pak_industrial_reporting",
+                        "sprite":  "GFX_HOK_KOR_focus_pak_industrial_reporting",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_industrial_reporting.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "reporting",
+                        "motif":  "Written production reports with factory",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Paper.png",
+                                              "Focus \u0026 National Spirits Pieces/Hand Writing.png",
+                                              "Focus \u0026 National Spirits Pieces/Factories2.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Paper",
+                                           0.02,
+                                           0,
+                                           0.58,
+                                           0.85
+                                       ],
+                                       [
+                                           "Hand Writing",
+                                           0.4,
+                                           0.37,
+                                           0.56,
+                                           0.53
+                                       ],
+                                       [
+                                           "Factories2",
+                                           0.54,
+                                           0.02,
+                                           0.44,
+                                           0.35
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "6505f3f55152425ce0312ab76fd492257421aab0c949e418d9ef538bd0578131",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_pak_industrial_reporting.png"
+                    },
+                    {
+                        "id":  "HOK_KOR_pak_heavy_industry_dispatch",
+                        "name":  "중공업 종합배정",
+                        "module":  "P2",
+                        "new_reference":  "GFX_HOK_KOR_focus_pak_heavy_industry_dispatch",
+                        "sprite":  "GFX_HOK_KOR_focus_pak_heavy_industry_dispatch",
+                        "texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_heavy_industry_dispatch.dds",
+                        "width":  100,
+                        "height":  88,
+                        "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                        "family":  "dispatch",
+                        "motif":  "Circular allocation arrows and steel",
+                        "stage":  0,
+                        "color_palette":  "communism",
+                        "asset_sources":  [
+                                              "Focus Backgrounds/Circle with Ribbon2.png",
+                                              "Focus \u0026 National Spirits Pieces/Circular Arrows.png",
+                                              "Focus \u0026 National Spirits Pieces/Steel.png"
+                                          ],
+                        "recipe":  [
+                                       [
+                                           "Circular Arrows",
+                                           0.11,
+                                           0,
+                                           0.81,
+                                           0.86
+                                       ],
+                                       [
+                                           "Steel",
+                                           0.23,
+                                           0.58,
+                                           0.55,
+                                           0.36
+                                       ]
+                                   ],
+                        "modifications":  [
+                                              "alpha crop",
+                                              "aspect-preserving resize",
+                                              "new policy-specific layer composition",
+                                              "background-only deep-red palette",
+                                              "BGRA32 DDS export"
+                                          ],
+                        "sha256":  "137dc2a6f414b4cd22cb10ac4641776927860ee360f5a72963768125fe494e20",
+                        "preview":  ".local-artifacts/korean-second-wave-icons/rendered/focuses_pak_heavy_industry_dispatch.png"
+                    }
+                ],
+    "ideas":  [
+                  {
+                      "id":  "HOK_KOR_yeo_joint_purchasing_1",
+                      "name":  "연합 공동구매 I",
+                      "module":  "Y2",
+                      "new_reference":  "HOK_KOR_icon_yeo_joint_purchasing_1",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_yeo_joint_purchasing_1",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/second_wave/yeo_joint_purchasing_1.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                      "family":  "purchasing",
+                      "motif":  "Shared equipment crate and wrench",
+                      "stage":  1,
+                      "color_palette":  "communism",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Crate.png",
+                                            "Focus \u0026 National Spirits Pieces/Wrench.png"
+                                        ],
+                      "recipe":  [
+                                     [
+                                         "Crate",
+                                         0.08,
+                                         0.15,
+                                         0.69,
+                                         0.77
+                                     ],
+                                     [
+                                         "Wrench",
+                                         0.45,
+                                         0,
+                                         0.54,
+                                         0.81
+                                     ]
+                                 ],
+                      "modifications":  [
+                                            "alpha crop",
+                                            "aspect-preserving resize",
+                                            "new policy-specific layer composition",
+                                            "background-only deep-red palette",
+                                            "BGRA32 DDS export",
+                                            "continuation Roman badge I"
+                                        ],
+                      "sha256":  "8e70d15788c367b9cd4f0e84dcae8429691f034e47b41f15706debc564bf38a1",
+                      "preview":  ".local-artifacts/korean-second-wave-icons/rendered/ideas_yeo_joint_purchasing_1.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_yeo_joint_purchasing_2",
+                      "name":  "연합 공동구매 II",
+                      "module":  "Y2",
+                      "new_reference":  "HOK_KOR_icon_yeo_joint_purchasing_2",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_yeo_joint_purchasing_2",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/second_wave/yeo_joint_purchasing_2.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                      "family":  "purchasing",
+                      "motif":  "Shared equipment crate and wrench",
+                      "stage":  2,
+                      "color_palette":  "communism",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Crate.png",
+                                            "Focus \u0026 National Spirits Pieces/Wrench.png"
+                                        ],
+                      "recipe":  [
+                                     [
+                                         "Crate",
+                                         0.08,
+                                         0.15,
+                                         0.69,
+                                         0.77
+                                     ],
+                                     [
+                                         "Wrench",
+                                         0.45,
+                                         0,
+                                         0.54,
+                                         0.81
+                                     ]
+                                 ],
+                      "modifications":  [
+                                            "alpha crop",
+                                            "aspect-preserving resize",
+                                            "new policy-specific layer composition",
+                                            "background-only deep-red palette",
+                                            "BGRA32 DDS export",
+                                            "continuation Roman badge II"
+                                        ],
+                      "sha256":  "7eb2899850ad398ab0c3f96becfcff5e8a2c79b92e5d3440c7140a24f2ace8bf",
+                      "preview":  ".local-artifacts/korean-second-wave-icons/rendered/ideas_yeo_joint_purchasing_2.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_yeo_local_credit_1",
+                      "name":  "지역 자율금융 I",
+                      "module":  "Y2",
+                      "new_reference":  "HOK_KOR_icon_yeo_local_credit_1",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_yeo_local_credit_1",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/second_wave/yeo_local_credit_1.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                      "family":  "credit",
+                      "motif":  "Cooperative account book and coins",
+                      "stage":  1,
+                      "color_palette":  "communism",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Book.png",
+                                            "Focus \u0026 National Spirits Pieces/Coins.png"
+                                        ],
+                      "recipe":  [
+                                     [
+                                         "Book",
+                                         0.03,
+                                         0.02,
+                                         0.93,
+                                         0.69
+                                     ],
+                                     [
+                                         "Coins",
+                                         0.13,
+                                         0.57,
+                                         0.79,
+                                         0.36
+                                     ]
+                                 ],
+                      "modifications":  [
+                                            "alpha crop",
+                                            "aspect-preserving resize",
+                                            "new policy-specific layer composition",
+                                            "background-only deep-red palette",
+                                            "BGRA32 DDS export",
+                                            "continuation Roman badge I"
+                                        ],
+                      "sha256":  "a6b14f45565f3bddd26855318411b037c08d6dfc0c0d50eca63a1f312932fda0",
+                      "preview":  ".local-artifacts/korean-second-wave-icons/rendered/ideas_yeo_local_credit_1.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_yeo_local_credit_2",
+                      "name":  "지역 자율금융 II",
+                      "module":  "Y2",
+                      "new_reference":  "HOK_KOR_icon_yeo_local_credit_2",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_yeo_local_credit_2",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/second_wave/yeo_local_credit_2.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                      "family":  "credit",
+                      "motif":  "Cooperative account book and coins",
+                      "stage":  2,
+                      "color_palette":  "communism",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Book.png",
+                                            "Focus \u0026 National Spirits Pieces/Coins.png"
+                                        ],
+                      "recipe":  [
+                                     [
+                                         "Book",
+                                         0.03,
+                                         0.02,
+                                         0.93,
+                                         0.69
+                                     ],
+                                     [
+                                         "Coins",
+                                         0.13,
+                                         0.57,
+                                         0.79,
+                                         0.36
+                                     ]
+                                 ],
+                      "modifications":  [
+                                            "alpha crop",
+                                            "aspect-preserving resize",
+                                            "new policy-specific layer composition",
+                                            "background-only deep-red palette",
+                                            "BGRA32 DDS export",
+                                            "continuation Roman badge II"
+                                        ],
+                      "sha256":  "f7d41cb73871411a3cdd38be68bcec573643056eeda5caffbae45304b3141ae4",
+                      "preview":  ".local-artifacts/korean-second-wave-icons/rendered/ideas_yeo_local_credit_2.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_pak_plant_expansion_1",
+                      "name":  "군수설비 확충 I",
+                      "module":  "P2",
+                      "new_reference":  "HOK_KOR_icon_pak_plant_expansion_1",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_pak_plant_expansion_1",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/second_wave/pak_plant_expansion_1.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                      "family":  "plant",
+                      "motif":  "Factory construction blueprint",
+                      "stage":  1,
+                      "color_palette":  "communism",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Blueprints.png",
+                                            "Focus \u0026 National Spirits Pieces/Factories2.png"
+                                        ],
+                      "recipe":  [
+                                     [
+                                         "Blueprints",
+                                         0.02,
+                                         0.29,
+                                         0.8,
+                                         0.69
+                                     ],
+                                     [
+                                         "Factories2",
+                                         0.34,
+                                         0,
+                                         0.64,
+                                         0.62
+                                     ]
+                                 ],
+                      "modifications":  [
+                                            "alpha crop",
+                                            "aspect-preserving resize",
+                                            "new policy-specific layer composition",
+                                            "background-only deep-red palette",
+                                            "BGRA32 DDS export",
+                                            "continuation Roman badge I"
+                                        ],
+                      "sha256":  "51ebde236ef984db94394a64b0a1b01c0f79f00d3cfe706d66fe1c098e5ca5a6",
+                      "preview":  ".local-artifacts/korean-second-wave-icons/rendered/ideas_pak_plant_expansion_1.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_pak_plant_expansion_2",
+                      "name":  "군수설비 확충 II",
+                      "module":  "P2",
+                      "new_reference":  "HOK_KOR_icon_pak_plant_expansion_2",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_pak_plant_expansion_2",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/second_wave/pak_plant_expansion_2.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                      "family":  "plant",
+                      "motif":  "Factory construction blueprint",
+                      "stage":  2,
+                      "color_palette":  "communism",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Blueprints.png",
+                                            "Focus \u0026 National Spirits Pieces/Factories2.png"
+                                        ],
+                      "recipe":  [
+                                     [
+                                         "Blueprints",
+                                         0.02,
+                                         0.29,
+                                         0.8,
+                                         0.69
+                                     ],
+                                     [
+                                         "Factories2",
+                                         0.34,
+                                         0,
+                                         0.64,
+                                         0.62
+                                     ]
+                                 ],
+                      "modifications":  [
+                                            "alpha crop",
+                                            "aspect-preserving resize",
+                                            "new policy-specific layer composition",
+                                            "background-only deep-red palette",
+                                            "BGRA32 DDS export",
+                                            "continuation Roman badge II"
+                                        ],
+                      "sha256":  "c0f1b7e173ac47d0376eabe0b6faf6eb30d047e3e21ad7fd49b97924bdf6d84d",
+                      "preview":  ".local-artifacts/korean-second-wave-icons/rendered/ideas_pak_plant_expansion_2.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_pak_current_output_1",
+                      "name":  "현행 생산계획 I",
+                      "module":  "P2",
+                      "new_reference":  "HOK_KOR_icon_pak_current_output_1",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_pak_current_output_1",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/second_wave/pak_current_output_1.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                      "family":  "output",
+                      "motif":  "Operating factory and steel ingot",
+                      "stage":  1,
+                      "color_palette":  "communism",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Factories2.png",
+                                            "Focus \u0026 National Spirits Pieces/Steel.png"
+                                        ],
+                      "recipe":  [
+                                     [
+                                         "Factories2",
+                                         0.04,
+                                         0,
+                                         0.91,
+                                         0.66
+                                     ],
+                                     [
+                                         "Steel",
+                                         0.23,
+                                         0.52,
+                                         0.75,
+                                         0.45
+                                     ]
+                                 ],
+                      "modifications":  [
+                                            "alpha crop",
+                                            "aspect-preserving resize",
+                                            "new policy-specific layer composition",
+                                            "background-only deep-red palette",
+                                            "BGRA32 DDS export",
+                                            "continuation Roman badge I"
+                                        ],
+                      "sha256":  "54c2bf7f70389f91ee233b2f8805d1bd7b070480524563d764a47193e731ff84",
+                      "preview":  ".local-artifacts/korean-second-wave-icons/rendered/ideas_pak_current_output_1.png"
+                  },
+                  {
+                      "id":  "HOK_KOR_pak_current_output_2",
+                      "name":  "현행 생산계획 II",
+                      "module":  "P2",
+                      "new_reference":  "HOK_KOR_icon_pak_current_output_2",
+                      "sprite":  "GFX_idea_HOK_KOR_icon_pak_current_output_2",
+                      "texture":  "gfx/interface/ideas/HOK_KOR/second_wave/pak_current_output_2.dds",
+                      "width":  60,
+                      "height":  68,
+                      "format":  "BGRA32 DDS, 1 frame, explicit alpha",
+                      "family":  "output",
+                      "motif":  "Operating factory and steel ingot",
+                      "stage":  2,
+                      "color_palette":  "communism",
+                      "asset_sources":  [
+                                            "National Spirit Backgrounds/Circle.png",
+                                            "Focus \u0026 National Spirits Pieces/Factories2.png",
+                                            "Focus \u0026 National Spirits Pieces/Steel.png"
+                                        ],
+                      "recipe":  [
+                                     [
+                                         "Factories2",
+                                         0.04,
+                                         0,
+                                         0.91,
+                                         0.66
+                                     ],
+                                     [
+                                         "Steel",
+                                         0.23,
+                                         0.52,
+                                         0.75,
+                                         0.45
+                                     ]
+                                 ],
+                      "modifications":  [
+                                            "alpha crop",
+                                            "aspect-preserving resize",
+                                            "new policy-specific layer composition",
+                                            "background-only deep-red palette",
+                                            "BGRA32 DDS export",
+                                            "continuation Roman badge II"
+                                        ],
+                      "sha256":  "b1ea99a722bbb5a5b094cb6dcbd04cf1034916682a6119fe1d6aca64faad24cb",
+                      "preview":  ".local-artifacts/korean-second-wave-icons/rendered/ideas_pak_current_output_2.png"
+                  }
+              ],
+    "decision_sprites":  [
+                             {
+                                 "sprite":  "GFX_HOK_KOR_decision_category_communist_policy",
+                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_registry.dds",
+                                 "reused_focus_id":  "HOK_KOR_yeo_cooperative_registry",
+                                 "sha256":  "9443c5a49d0e5927c211df8ff94f52bec4ca56119752fa2f7c148e88a29995fc",
+                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                             },
+                             {
+                                 "sprite":  "GFX_HOK_KOR_decision_yeo_joint_purchasing",
+                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_joint_purchasing.dds",
+                                 "reused_focus_id":  "HOK_KOR_yeo_joint_purchasing",
+                                 "sha256":  "2b3c9f54a80fc1ff2d0f8f6a8315de2465663157d7b7fc60d3bd2ebc727c0cf3",
+                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                             },
+                             {
+                                 "sprite":  "GFX_HOK_KOR_decision_yeo_rural_credit",
+                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_rural_credit.dds",
+                                 "reused_focus_id":  "HOK_KOR_yeo_rural_credit",
+                                 "sha256":  "a9496ed6a32cad2ee574b0ba1f345acff565b8f3fc5d37006debf859dbd37999",
+                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                             },
+                             {
+                                 "sprite":  "GFX_HOK_KOR_decision_pak_plant_expansion",
+                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_capital_goods_board.dds",
+                                 "reused_focus_id":  "HOK_KOR_pak_capital_goods_board",
+                                 "sha256":  "ce877c52163d0b8a8742b485b8aee7ac7c38ca1947961e5e8818e33de12857f1",
+                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                             },
+                             {
+                                 "sprite":  "GFX_HOK_KOR_decision_pak_current_output",
+                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_steel_delivery_schedules.dds",
+                                 "reused_focus_id":  "HOK_KOR_pak_steel_delivery_schedules",
+                                 "sha256":  "4435dd10240b8c74ccc7a2adc2396d7cec132ef191e7aad89010f0f944681d46",
+                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                             }
+                         ],
+    "asset_sources":  [
+                          {
+                              "path":  "CREDITS.txt",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/CREDITS.txt",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "cf220dc66463d75163f7690ad77b02b662d0c05ca5d53dc62d33ed504512a7f5",
+                              "bytes":  1029,
+                              "git_blob_sha":  "83efbe5261113f933a16698783d6803dfd593152",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)"
+                          },
+                          {
+                              "path":  "Focus Backgrounds/Circle with Ribbon2.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20Backgrounds/Circle%20with%20Ribbon2.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "5bcf53259a04276b1586f6c83f7a35a14ba9d22742ea75fb4802911978db2f95",
+                              "bytes":  33322,
+                              "git_blob_sha":  "6f0ebeed856a2fdc3f25f1ea0c82418b60c3d605",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  100,
+                              "height":  88,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "National Spirit Backgrounds/Circle.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/National%20Spirit%20Backgrounds/Circle.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+                              "bytes":  25055,
+                              "git_blob_sha":  "ab1fa7b4a3a783fb528c496fcca2370001df1b52",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  64,
+                              "height":  64,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Paper.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Paper.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "f702a6971726ba0608f75cb71a90fc8f0ac0cc0474a2cd5ca172330dbf3c803c",
+                              "bytes":  19520,
+                              "git_blob_sha":  "61aae5d0b991ce881d97ba30af39093332b61fd9",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  47,
+                              "height":  51,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Wheat2.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Wheat2.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "14ba5dd63e9721ed74c55e0857fb2c2fbca82112da641127a97f7c3ae0e90d9f",
+                              "bytes":  6342,
+                              "git_blob_sha":  "d9e5b8f71d815ef17d0ed698539542aeb371491e",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  19,
+                              "height":  52,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Crate.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Crate.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "4efdb13ea21e1fc35019c1efdb2b7594739f47d8c4d7a8ce43060a2c2860dd17",
+                              "bytes":  10597,
+                              "git_blob_sha":  "6c95393c0ce074f5635ab93e3839129437b23903",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  75,
+                              "height":  75,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Wrench.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Wrench.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "8bb9e9f9322f567f6ac8a8d50b2aa186845d56c3ffc638a16f8e6ff29a10d09f",
+                              "bytes":  18240,
+                              "git_blob_sha":  "398663ddcaf4529adec132e4dd2fd9763d4d90bc",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  59,
+                              "height":  53,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Cog Wheel.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Cog%20Wheel.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "8765480f16fbfd54babe02163ad5db3a68e0472e18789c1880ee40c6b12a3ada",
+                              "bytes":  19167,
+                              "git_blob_sha":  "86926f5beeed004bc812f7146c7ab4bdc7060bfa",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  42,
+                              "height":  41,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Worker.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Worker.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "ce24044539a35f6355c012450c02910e5957281391ff85ca9d88f017ea0d87ff",
+                              "bytes":  17412,
+                              "git_blob_sha":  "8c01080c7fda2ec13aa7ebbaacf5039d6ea1badf",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  30,
+                              "height":  46,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Book.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Book.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "b2e7e51e79acaeaef614c430a33a0a4fb72b81f14bfc535f27ff7264b28802f9",
+                              "bytes":  18442,
+                              "git_blob_sha":  "2d4ae8f7e57b46dfe86496775c23daeebfe2ef82",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  52,
+                              "height":  39,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Coins.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Coins.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "545398fd3cf250a89a03d4a92e7f1bcebe3b28c7b3196894243af19d5a728407",
+                              "bytes":  1913,
+                              "git_blob_sha":  "fcc5e9e54fa99a642c50486e6764e4be89c5e3c2",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  43,
+                              "height":  22,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Hands Shaking.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Hands%20Shaking.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "33da602c5a3ff1ee05077afdb7d12f13b7a94a0cbc296bb97330f0becd5cbb25",
+                              "bytes":  18080,
+                              "git_blob_sha":  "16d4c0dde52d8a21b76f8e6aaafbc8c6b87ec87e",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  47,
+                              "height":  39,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Blueprints.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Blueprints.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "1d75e423748392240bd246dc9681b2787c8f0c19c6200bf4a412a14809def3e4",
+                              "bytes":  5253,
+                              "git_blob_sha":  "cf715e719d6b44cd9e70944648479d6ab31e16fa",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  45,
+                              "height":  36,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Factories2.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Factories2.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "10898f9e4600558cd329d8bcb601cb453d89d8b46d90d079ce328294a96a31a7",
+                              "bytes":  19363,
+                              "git_blob_sha":  "05d83d5cb1839e5409fed48834321595d168aa43",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  49,
+                              "height":  37,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Steel.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Steel.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "1b118fdadfd2d4b0f1bb3b16735913c5cacb428a0ae4dde490f747160236294a",
+                              "bytes":  18109,
+                              "git_blob_sha":  "e0844faa835571698718320a47ff77cd97f4eb58",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  51,
+                              "height":  36,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Hand Writing.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Hand%20Writing.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "7bffca5437c42ebbc75cee8374e0fb1fb3c083c0ee45b8e24636410211a6a72e",
+                              "bytes":  17299,
+                              "git_blob_sha":  "64d7d184b8b34f3fac364841b9bd899022c06b1f",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  41,
+                              "height":  38,
+                              "pixel_format":  "Format32bppArgb"
+                          },
+                          {
+                              "path":  "Focus \u0026 National Spirits Pieces/Circular Arrows.png",
+                              "source_url":  "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Circular%20Arrows.png",
+                              "upstream_commit":  "3626dc83c8573d6603fa497138090b04b64a15ba",
+                              "sha256":  "49d17868495b84cabeef78c85a2111adf8d325a5b76a0cb72973f51f9150f4c4",
+                              "bytes":  22609,
+                              "git_blob_sha":  "b40b603e4987e2daff273b74ef2585ea2947e1d4",
+                              "attribution":  "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+                              "width":  58,
+                              "height":  59,
+                              "pixel_format":  "Format32bppArgb"
+                          }
+                      ],
+    "composition_recipes":  {
+                                "registry":  [
+                                                 [
+                                                     "Paper",
+                                                     0.18,
+                                                     0,
+                                                     0.6,
+                                                     0.91
+                                                 ],
+                                                 [
+                                                     "Wheat2",
+                                                     0.58,
+                                                     0.31,
+                                                     0.33,
+                                                     0.67
+                                                 ]
+                                             ],
+                                "purchasing":  [
+                                                   [
+                                                       "Crate",
+                                                       0.08,
+                                                       0.15,
+                                                       0.69,
+                                                       0.77
+                                                   ],
+                                                   [
+                                                       "Wrench",
+                                                       0.45,
+                                                       0,
+                                                       0.54,
+                                                       0.81
+                                                   ]
+                                               ],
+                                "workshops":  [
+                                                  [
+                                                      "Cog Wheel",
+                                                      0.36,
+                                                      0.13,
+                                                      0.63,
+                                                      0.78
+                                                  ],
+                                                  [
+                                                      "Worker",
+                                                      0.02,
+                                                      0,
+                                                      0.57,
+                                                      0.97
+                                                  ]
+                                              ],
+                                "credit":  [
+                                               [
+                                                   "Book",
+                                                   0.03,
+                                                   0.02,
+                                                   0.93,
+                                                   0.69
+                                               ],
+                                               [
+                                                   "Coins",
+                                                   0.13,
+                                                   0.57,
+                                                   0.79,
+                                                   0.36
+                                               ]
+                                           ],
+                                "federation":  [
+                                                   [
+                                                       "Wheat2",
+                                                       0.03,
+                                                       0,
+                                                       0.26,
+                                                       0.9
+                                                   ],
+                                                   [
+                                                       "Wheat2",
+                                                       0.73,
+                                                       0,
+                                                       0.26,
+                                                       0.9
+                                                   ],
+                                                   [
+                                                       "Hands Shaking",
+                                                       0.13,
+                                                       0.19,
+                                                       0.74,
+                                                       0.69
+                                                   ]
+                                               ],
+                                "allocation":  [
+                                                   [
+                                                       "Cog Wheel",
+                                                       0.04,
+                                                       0,
+                                                       0.7,
+                                                       0.79
+                                                   ],
+                                                   [
+                                                       "Wrench",
+                                                       0.42,
+                                                       0.31,
+                                                       0.57,
+                                                       0.68
+                                                   ]
+                                               ],
+                                "plant":  [
+                                              [
+                                                  "Blueprints",
+                                                  0.02,
+                                                  0.29,
+                                                  0.8,
+                                                  0.69
+                                              ],
+                                              [
+                                                  "Factories2",
+                                                  0.34,
+                                                  0,
+                                                  0.64,
+                                                  0.62
+                                              ]
+                                          ],
+                                "output":  [
+                                               [
+                                                   "Factories2",
+                                                   0.04,
+                                                   0,
+                                                   0.91,
+                                                   0.66
+                                               ],
+                                               [
+                                                   "Steel",
+                                                   0.23,
+                                                   0.52,
+                                                   0.75,
+                                                   0.45
+                                               ]
+                                           ],
+                                "reporting":  [
+                                                  [
+                                                      "Paper",
+                                                      0.02,
+                                                      0,
+                                                      0.58,
+                                                      0.85
+                                                  ],
+                                                  [
+                                                      "Hand Writing",
+                                                      0.4,
+                                                      0.37,
+                                                      0.56,
+                                                      0.53
+                                                  ],
+                                                  [
+                                                      "Factories2",
+                                                      0.54,
+                                                      0.02,
+                                                      0.44,
+                                                      0.35
+                                                  ]
+                                              ],
+                                "dispatch":  [
+                                                 [
+                                                     "Circular Arrows",
+                                                     0.11,
+                                                     0,
+                                                     0.81,
+                                                     0.86
+                                                 ],
+                                                 [
+                                                     "Steel",
+                                                     0.23,
+                                                     0.58,
+                                                     0.55,
+                                                     0.36
+                                                 ]
+                                             ]
+                            },
+    "validation":  {
+                       "contact_sheet":  ".local-artifacts/korean-second-wave-icons/contact-sheet.png",
+                       "static":  "PASS: 18 DDS headers/dimensions/alpha/hashes; 33 unique sprites; isolated background recoloring; four I/II pairs differ only within badge",
+                       "runtime":  "not run by artwork subtask",
+                       "report":  ".local-artifacts/korean-second-wave-icons/validation.json",
+                       "visual_review":  "Native-size contact sheet reviewed by artwork agent and root on 2026-09-22; four policy pairs, motifs, red fields and I/II readable"
+                   },
+    "pipeline":  {
+                     "renderer":  ".local-artifacts/korean-focus-icons/IconRenderer.cs",
+                     "renderer_sha256":  "5ce539624fc427fce2d0f4a553b970be1a53e159ce7550b89f5178d1071c0d16",
+                     "background_renderer":  ".local-artifacts/korean-focus-icon-colors/BackgroundColors.cs",
+                     "background_renderer_sha256":  "2f258e5a0f1cf2ba30c227d80d79d98bd5f2795e34eff38f6fc3a7dbb1a6b234",
+                     "entrypoint":  ".local-artifacts/korean-second-wave-icons/build-icons.ps1"
+                 }
+}

@@ -265,10 +265,11 @@ focus_tree = {
 		id = KOR_support_gaema_plateau
 		icon = GFX_focus_generic_horse_studs
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
-		relative_position_id = KOR_hamgyeong_underground_resources
+		relative_position_id = KOR_devalue_the_won
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 0
-		y = 1
+		#20260922_kpopmodder: Use an earlier declared anchor while preserving the resolved base position.
+		x = -13
+		y = 5
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
 		available_if_capitulated = no
@@ -438,10 +439,11 @@ focus_tree = {
 		id = KOR_build_soyanggang_dam
 		icon = GFX_focus_generic_hydroelectric_energy
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
-		relative_position_id = KOR_gangwon_underground_resources
+		relative_position_id = KOR_devalue_the_won
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 0
-		y = 1
+		#20260922_kpopmodder: Use an earlier declared anchor while preserving the resolved base position.
+		x = -7
+		y = 5
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
 		available_if_capitulated = no
@@ -3470,7 +3472,8 @@ focus_tree = {
 		icon = GFX_focus_kor_future_of_the_republic
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 117
+		#20260922_kpopmodder: Reserve compact space for the two communist policy branches.
+		x = 127
 		y = 0
 		cost = 1
 		available_if_capitulated = no
@@ -3584,7 +3587,8 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 117
+		#20260922_kpopmodder: Reserve compact space for the two communist policy branches.
+		x = 127
 		y = 2
 		cost = 4
 		available_if_capitulated = no
@@ -3649,7 +3653,8 @@ focus_tree = {
 		icon = GFX_focus_generic_strike_at_democracy2
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 157
+		#20260922_kpopmodder: Reserve compact space for the two communist policy branches.
+		x = 167
 		y = 2
 		cost = 4
 		available_if_capitulated = no
@@ -8187,7 +8192,8 @@ focus_tree = {
 		icon = GFX_focus_kor_urihwangsilsaranghoe
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 176
+		#20260922_kpopmodder: Reserve compact space for the two communist policy branches.
+		x = 186
 		y = 0
 		cost = 1
 		available_if_capitulated = yes
@@ -11476,6 +11482,220 @@ focus_tree = {
 				unlock_decision_tooltip = HOK_KOR_offer_license_agreement
 			}
 			else = { army_experience = 50 }
+		}
+	}
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_yeo_cooperative_registry
+		icon = GFX_HOK_KOR_focus_yeo_cooperative_registry
+		relative_position_id = KOR_rural_support_plan
+		x = -5
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_rural_support_plan }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		#20260922_kpopmodder: Raise the requested single-use industry research bonus while retaining the existing focus contract.
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_yeo_cooperative_registry bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_yeo_joint_purchasing
+		icon = GFX_HOK_KOR_focus_yeo_joint_purchasing
+		relative_position_id = HOK_KOR_yeo_cooperative_registry
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_cooperative_registry }
+		mutually_exclusive = { focus = HOK_KOR_yeo_rural_credit }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+		completion_reward = {
+			add_ideas = HOK_KOR_yeo_joint_purchasing_1
+		}
+	}
+
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_yeo_rural_credit
+		icon = GFX_HOK_KOR_focus_yeo_rural_credit
+		relative_position_id = HOK_KOR_yeo_cooperative_registry
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_cooperative_registry }
+		mutually_exclusive = { focus = HOK_KOR_yeo_joint_purchasing }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 modifier = { factor = 2 has_war = no } }
+		completion_reward = {
+			add_ideas = HOK_KOR_yeo_local_credit_1
+		}
+	}
+
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_yeo_cooperative_workshops
+		icon = GFX_HOK_KOR_focus_yeo_cooperative_workshops
+		relative_position_id = HOK_KOR_yeo_joint_purchasing
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_joint_purchasing focus = HOK_KOR_yeo_rural_credit }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		#20260922_kpopmodder: Preserve the purchasing-path industry bonus and give both paths the requested electronics bonus under a distinct name.
+		completion_reward = {
+			if = { limit = { has_completed_focus = HOK_KOR_yeo_joint_purchasing } add_tech_bonus = { name = HOK_KOR_yeo_cooperative_workshops bonus = 0.75 uses = 1 category = industry } }
+			add_tech_bonus = { name = HOK_KOR_yeo_cooperative_workshops_electronics_bonus bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_yeo_cooperative_federation
+		icon = GFX_HOK_KOR_focus_yeo_cooperative_federation
+		relative_position_id = HOK_KOR_yeo_cooperative_workshops
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_cooperative_workshops }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_completed_focus = HOK_KOR_yeo_joint_purchasing } if = { limit = { has_idea = HOK_KOR_yeo_joint_purchasing_1 } swap_ideas = { remove_idea = HOK_KOR_yeo_joint_purchasing_1 add_idea = HOK_KOR_yeo_joint_purchasing_2 } } else = { add_ideas = HOK_KOR_yeo_joint_purchasing_2 } } else_if = { limit = { has_completed_focus = HOK_KOR_yeo_rural_credit } if = { limit = { has_idea = HOK_KOR_yeo_local_credit_1 } swap_ideas = { remove_idea = HOK_KOR_yeo_local_credit_1 add_idea = HOK_KOR_yeo_local_credit_2 } } else = { add_ideas = HOK_KOR_yeo_local_credit_2 } }
+			unlock_decision_category_tooltip = HOK_KOR_communist_policy_projects
+			if = { limit = { has_completed_focus = HOK_KOR_yeo_joint_purchasing } unlock_decision_tooltip = HOK_KOR_yeo_joint_purchasing_project }
+			if = { limit = { has_completed_focus = HOK_KOR_yeo_rural_credit } unlock_decision_tooltip = HOK_KOR_yeo_rural_credit_project }
+		}
+	}
+
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_pak_machine_tool_allocation
+		icon = GFX_HOK_KOR_focus_pak_machine_tool_allocation
+		relative_position_id = KOR_heavy_industry_concentration
+		x = 10
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_heavy_industry_concentration }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		#20260922_kpopmodder: Raise the requested single-use industry research bonus while retaining the existing focus contract.
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_pak_machine_tool_allocation bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_pak_capital_goods_board
+		icon = GFX_HOK_KOR_focus_pak_capital_goods_board
+		relative_position_id = HOK_KOR_pak_machine_tool_allocation
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_machine_tool_allocation }
+		mutually_exclusive = { focus = HOK_KOR_pak_steel_delivery_schedules }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 modifier = { factor = 2 has_war = no } }
+		completion_reward = {
+			add_ideas = HOK_KOR_pak_plant_expansion_1
+		}
+	}
+
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_pak_steel_delivery_schedules
+		icon = GFX_HOK_KOR_focus_pak_steel_delivery_schedules
+		relative_position_id = HOK_KOR_pak_machine_tool_allocation
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_machine_tool_allocation }
+		mutually_exclusive = { focus = HOK_KOR_pak_capital_goods_board }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+		completion_reward = {
+			add_ideas = HOK_KOR_pak_current_output_1
+		}
+	}
+
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_pak_industrial_reporting
+		icon = GFX_HOK_KOR_focus_pak_industrial_reporting
+		relative_position_id = HOK_KOR_pak_capital_goods_board
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_capital_goods_board focus = HOK_KOR_pak_steel_delivery_schedules }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		#20260922_kpopmodder: Raise the requested single-use electronics research bonus.
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_pak_industrial_reporting bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+
+	#20260922_kpopmodder: Add a selectable communist economic policy without changing existing prerequisites.
+	focus = {
+		id = HOK_KOR_pak_heavy_industry_dispatch
+		icon = GFX_HOK_KOR_focus_pak_heavy_industry_dispatch
+		relative_position_id = HOK_KOR_pak_industrial_reporting
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_industrial_reporting }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_completed_focus = HOK_KOR_pak_capital_goods_board } if = { limit = { has_idea = HOK_KOR_pak_plant_expansion_1 } swap_ideas = { remove_idea = HOK_KOR_pak_plant_expansion_1 add_idea = HOK_KOR_pak_plant_expansion_2 } } else = { add_ideas = HOK_KOR_pak_plant_expansion_2 } } else_if = { limit = { has_completed_focus = HOK_KOR_pak_steel_delivery_schedules } if = { limit = { has_idea = HOK_KOR_pak_current_output_1 } swap_ideas = { remove_idea = HOK_KOR_pak_current_output_1 add_idea = HOK_KOR_pak_current_output_2 } } else = { add_ideas = HOK_KOR_pak_current_output_2 } }
+			unlock_decision_category_tooltip = HOK_KOR_communist_policy_projects
+			if = { limit = { has_completed_focus = HOK_KOR_pak_capital_goods_board } unlock_decision_tooltip = HOK_KOR_pak_plant_expansion_project }
+			if = { limit = { has_completed_focus = HOK_KOR_pak_steel_delivery_schedules } unlock_decision_tooltip = HOK_KOR_pak_current_output_project }
 		}
 	}
 }

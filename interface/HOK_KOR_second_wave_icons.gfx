@@ -1,0 +1,95 @@
+#20260922_kpopmodder: Add locally composed art for the cooperative and capital-allocation policy choices.
+spriteTypes = {
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_cooperative_registry"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_registry.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_joint_purchasing"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_joint_purchasing.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_cooperative_workshops"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_workshops.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_rural_credit"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_rural_credit.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_cooperative_federation"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_federation.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_machine_tool_allocation"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/pak_machine_tool_allocation.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_capital_goods_board"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/pak_capital_goods_board.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_steel_delivery_schedules"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/pak_steel_delivery_schedules.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_industrial_reporting"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/pak_industrial_reporting.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_heavy_industry_dispatch"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/pak_heavy_industry_dispatch.dds"
+	}
+	SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_yeo_joint_purchasing_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/second_wave/yeo_joint_purchasing_1.dds"
+	}
+	SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_yeo_joint_purchasing_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/second_wave/yeo_joint_purchasing_2.dds"
+	}
+	SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_yeo_local_credit_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/second_wave/yeo_local_credit_1.dds"
+	}
+	SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_yeo_local_credit_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/second_wave/yeo_local_credit_2.dds"
+	}
+	SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_pak_plant_expansion_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/second_wave/pak_plant_expansion_1.dds"
+	}
+	SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_pak_plant_expansion_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/second_wave/pak_plant_expansion_2.dds"
+	}
+	SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_pak_current_output_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/second_wave/pak_current_output_1.dds"
+	}
+	SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_pak_current_output_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/second_wave/pak_current_output_2.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_decision_category_communist_policy"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_registry.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_decision_yeo_joint_purchasing"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_joint_purchasing.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_decision_yeo_rural_credit"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_rural_credit.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_decision_pak_plant_expansion"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/pak_capital_goods_board.dds"
+	}
+	SpriteType = {
+        name = "GFX_HOK_KOR_decision_pak_current_output"
+        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/pak_steel_delivery_schedules.dds"
+	}
+}

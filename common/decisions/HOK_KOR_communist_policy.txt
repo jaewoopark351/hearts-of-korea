@@ -1,0 +1,259 @@
+#20260922_kpopmodder: Implement mutually bounded 90-day communist policy projects with temporary decision modifiers and a shared post-project cooldown.
+HOK_KOR_communist_policy_projects = {
+	#20260922_kpopmodder: Use only 150 political power for this project; remove civilian-factory occupancy and human/AI factory gates.
+	HOK_KOR_yeo_joint_purchasing_project = {
+		icon = GFX_HOK_KOR_decision_yeo_joint_purchasing
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_yeo_woon_hyung_as_the_leader
+			has_completed_focus = HOK_KOR_yeo_joint_purchasing
+			has_completed_focus = HOK_KOR_yeo_cooperative_federation
+		}
+		available = {
+			original_tag = KOR
+			has_government = communism
+			has_capitulated = no
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_policy_no_active_project_tt
+				NOT = { has_country_flag = HOK_KOR_communist_policy_project_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_policy_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_communist_policy_project_cooldown }
+			}
+		}
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		modifier = {
+			production_speed_industrial_complex_factor = 0.15
+		}
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_communist_policy_project_active }
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_start_pp_only_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = communism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+				NOT = { has_completed_focus = HOK_KOR_yeo_joint_purchasing }
+				NOT = { has_completed_focus = HOK_KOR_yeo_cooperative_federation }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_policy_project_active
+				set_country_flag = { flag = HOK_KOR_communist_policy_project_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_end_pp_only_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_policy_project_active
+				set_country_flag = { flag = HOK_KOR_communist_policy_project_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_end_pp_only_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+		}
+	}
+	HOK_KOR_yeo_rural_credit_project = {
+		icon = GFX_HOK_KOR_decision_yeo_rural_credit
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_yeo_woon_hyung_as_the_leader
+			has_completed_focus = HOK_KOR_yeo_rural_credit
+			has_completed_focus = HOK_KOR_yeo_cooperative_federation
+		}
+		available = {
+			original_tag = KOR
+			has_government = communism
+			has_capitulated = no
+			has_civil_war = no
+			num_of_civilian_factories_available_for_projects > 1
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_policy_no_active_project_tt
+				NOT = { has_country_flag = HOK_KOR_communist_policy_project_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_policy_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_communist_policy_project_cooldown }
+			}
+		}
+		cost = 75
+		days_remove = 90
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 2
+			production_speed_buildings_factor = 0.10
+		}
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_communist_policy_project_active }
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_start_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = communism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+				NOT = { has_completed_focus = HOK_KOR_yeo_rural_credit }
+				NOT = { has_completed_focus = HOK_KOR_yeo_cooperative_federation }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_policy_project_active
+				set_country_flag = { flag = HOK_KOR_communist_policy_project_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_end_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_policy_project_active
+				set_country_flag = { flag = HOK_KOR_communist_policy_project_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_end_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+			modifier = { factor = 0 NOT = { num_of_civilian_factories_available_for_projects > 23 } }
+		}
+	}
+	#20260922_kpopmodder: Use only 150 political power for this project; remove civilian-factory occupancy and human/AI factory gates.
+	HOK_KOR_pak_plant_expansion_project = {
+		icon = GFX_HOK_KOR_decision_pak_plant_expansion
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_park_heon_young_as_the_leader
+			has_completed_focus = HOK_KOR_pak_capital_goods_board
+			has_completed_focus = HOK_KOR_pak_heavy_industry_dispatch
+		}
+		available = {
+			original_tag = KOR
+			has_government = communism
+			has_capitulated = no
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_policy_no_active_project_tt
+				NOT = { has_country_flag = HOK_KOR_communist_policy_project_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_policy_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_communist_policy_project_cooldown }
+			}
+		}
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		modifier = {
+			production_speed_arms_factory_factor = 0.15
+		}
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_communist_policy_project_active }
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_start_pp_only_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = communism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_park_heon_young_as_the_leader }
+				NOT = { has_completed_focus = HOK_KOR_pak_capital_goods_board }
+				NOT = { has_completed_focus = HOK_KOR_pak_heavy_industry_dispatch }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_policy_project_active
+				set_country_flag = { flag = HOK_KOR_communist_policy_project_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_end_pp_only_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_policy_project_active
+				set_country_flag = { flag = HOK_KOR_communist_policy_project_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_end_pp_only_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+		}
+	}
+	HOK_KOR_pak_current_output_project = {
+		icon = GFX_HOK_KOR_decision_pak_current_output
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_park_heon_young_as_the_leader
+			has_completed_focus = HOK_KOR_pak_steel_delivery_schedules
+			has_completed_focus = HOK_KOR_pak_heavy_industry_dispatch
+		}
+		available = {
+			original_tag = KOR
+			has_government = communism
+			has_capitulated = no
+			has_civil_war = no
+			num_of_civilian_factories_available_for_projects > 1
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_policy_no_active_project_tt
+				NOT = { has_country_flag = HOK_KOR_communist_policy_project_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_policy_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_communist_policy_project_cooldown }
+			}
+		}
+		cost = 75
+		days_remove = 90
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 2
+			industrial_capacity_factory = 0.10
+		}
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_communist_policy_project_active }
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_start_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = communism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_park_heon_young_as_the_leader }
+				NOT = { has_completed_focus = HOK_KOR_pak_steel_delivery_schedules }
+				NOT = { has_completed_focus = HOK_KOR_pak_heavy_industry_dispatch }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_policy_project_active
+				set_country_flag = { flag = HOK_KOR_communist_policy_project_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_end_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_policy_project_active
+				set_country_flag = { flag = HOK_KOR_communist_policy_project_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_policy_project_end_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+			modifier = { factor = 0 NOT = { num_of_civilian_factories_available_for_projects > 5 } }
+		}
+	}
+}
