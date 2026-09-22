@@ -899,38 +899,63 @@
     "decision_sprites":  [
                              {
                                  "sprite":  "GFX_HOK_KOR_decision_category_communist_policy",
-                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_registry.dds",
-                                 "reused_focus_id":  "HOK_KOR_yeo_cooperative_registry",
-                                 "sha256":  "9443c5a49d0e5927c211df8ff94f52bec4ca56119752fa2f7c148e88a29995fc",
-                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                                 "texture":  "gfx/interface/decisions/HOK_KOR/communist_policy/category.dds",
+                                 "related_focus_id":  "HOK_KOR_yeo_cooperative_registry",
+                                 "sha256":  "df05e53f20b3b58304c46ceba458b362e22803ee95f4d2c2ee0897a47e67d499",
+                                 "width":  51,
+                                 "height":  40,
+                                 "previous_focus_texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_registry.dds",
+                                 "previous_focus_sha256":  "9443c5a49d0e5927c211df8ff94f52bec4ca56119752fa2f7c148e88a29995fc",
+                                 "artwork_manifest":  "docs/data/HOK_KOREAN_SMALL_DECISION_ICON_MANIFEST.json",
+                                 "runtime_display":  "Dedicated compact artwork; native-size static preview inspected; in-game display pending."
                              },
                              {
                                  "sprite":  "GFX_HOK_KOR_decision_yeo_joint_purchasing",
-                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_joint_purchasing.dds",
-                                 "reused_focus_id":  "HOK_KOR_yeo_joint_purchasing",
-                                 "sha256":  "2b3c9f54a80fc1ff2d0f8f6a8315de2465663157d7b7fc60d3bd2ebc727c0cf3",
-                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                                 "texture":  "gfx/interface/decisions/HOK_KOR/communist_policy/yeo_joint_purchasing.dds",
+                                 "related_focus_id":  "HOK_KOR_yeo_joint_purchasing",
+                                 "sha256":  "91979b5d669ff04fbaeae081dadba66a9eab2f194749957163ffba7e8b0b44b8",
+                                 "width":  32,
+                                 "height":  32,
+                                 "previous_focus_texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_joint_purchasing.dds",
+                                 "previous_focus_sha256":  "2b3c9f54a80fc1ff2d0f8f6a8315de2465663157d7b7fc60d3bd2ebc727c0cf3",
+                                 "artwork_manifest":  "docs/data/HOK_KOREAN_SMALL_DECISION_ICON_MANIFEST.json",
+                                 "runtime_display":  "Dedicated compact artwork; native-size static preview inspected; in-game display pending."
                              },
                              {
                                  "sprite":  "GFX_HOK_KOR_decision_yeo_rural_credit",
-                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_rural_credit.dds",
-                                 "reused_focus_id":  "HOK_KOR_yeo_rural_credit",
-                                 "sha256":  "a9496ed6a32cad2ee574b0ba1f345acff565b8f3fc5d37006debf859dbd37999",
-                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                                 "texture":  "gfx/interface/decisions/HOK_KOR/communist_policy/yeo_rural_credit.dds",
+                                 "related_focus_id":  "HOK_KOR_yeo_rural_credit",
+                                 "sha256":  "0b7adaa284774e8a2a1d4c09c96dffc1b79f6f6829b069c8d25eb986a7123a1a",
+                                 "width":  32,
+                                 "height":  32,
+                                 "previous_focus_texture":  "gfx/interface/goals/HOK_KOR/second_wave/yeo_rural_credit.dds",
+                                 "previous_focus_sha256":  "a9496ed6a32cad2ee574b0ba1f345acff565b8f3fc5d37006debf859dbd37999",
+                                 "artwork_manifest":  "docs/data/HOK_KOREAN_SMALL_DECISION_ICON_MANIFEST.json",
+                                 "runtime_display":  "Dedicated compact artwork; native-size static preview inspected; in-game display pending."
                              },
                              {
                                  "sprite":  "GFX_HOK_KOR_decision_pak_plant_expansion",
-                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_capital_goods_board.dds",
-                                 "reused_focus_id":  "HOK_KOR_pak_capital_goods_board",
-                                 "sha256":  "ce877c52163d0b8a8742b485b8aee7ac7c38ca1947961e5e8818e33de12857f1",
-                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                                 "texture":  "gfx/interface/decisions/HOK_KOR/communist_policy/pak_plant_expansion.dds",
+                                 "related_focus_id":  "HOK_KOR_pak_capital_goods_board",
+                                 "sha256":  "e37cba7668435119e1a66441ae832613fc267cf220b18d4319e6c26274c2b3b4",
+                                 "width":  32,
+                                 "height":  32,
+                                 "previous_focus_texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_capital_goods_board.dds",
+                                 "previous_focus_sha256":  "ce877c52163d0b8a8742b485b8aee7ac7c38ca1947961e5e8818e33de12857f1",
+                                 "artwork_manifest":  "docs/data/HOK_KOREAN_SMALL_DECISION_ICON_MANIFEST.json",
+                                 "runtime_display":  "Dedicated compact artwork; native-size static preview inspected; in-game display pending."
                              },
                              {
                                  "sprite":  "GFX_HOK_KOR_decision_pak_current_output",
-                                 "texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_steel_delivery_schedules.dds",
-                                 "reused_focus_id":  "HOK_KOR_pak_steel_delivery_schedules",
-                                 "sha256":  "4435dd10240b8c74ccc7a2adc2396d7cec132ef191e7aad89010f0f944681d46",
-                                 "runtime_display":  "Not yet inspected in decision/category UI; reuses project-local focus texture without new image."
+                                 "texture":  "gfx/interface/decisions/HOK_KOR/communist_policy/pak_current_output.dds",
+                                 "related_focus_id":  "HOK_KOR_pak_steel_delivery_schedules",
+                                 "sha256":  "cbcc6f9085e990b780a7aa4febef789908575c573ad421df0d329af237b7b02f",
+                                 "width":  32,
+                                 "height":  32,
+                                 "previous_focus_texture":  "gfx/interface/goals/HOK_KOR/second_wave/pak_steel_delivery_schedules.dds",
+                                 "previous_focus_sha256":  "4435dd10240b8c74ccc7a2adc2396d7cec132ef191e7aad89010f0f944681d46",
+                                 "artwork_manifest":  "docs/data/HOK_KOREAN_SMALL_DECISION_ICON_MANIFEST.json",
+                                 "runtime_display":  "Dedicated compact artwork; native-size static preview inspected; in-game display pending."
                              }
                          ],
     "asset_sources":  [

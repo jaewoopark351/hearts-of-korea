@@ -72,24 +72,25 @@ spriteTypes = {
         name = "GFX_idea_HOK_KOR_icon_pak_current_output_2"
         texturefile = "gfx/interface/ideas/HOK_KOR/second_wave/pak_current_output_2.dds"
 	}
+	#20260922_kpopmodder: Use dedicated small textures that fit decision category headers and rows.
 	SpriteType = {
         name = "GFX_HOK_KOR_decision_category_communist_policy"
-        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_cooperative_registry.dds"
+        texturefile = "gfx/interface/decisions/HOK_KOR/communist_policy/category.dds"
 	}
 	SpriteType = {
         name = "GFX_HOK_KOR_decision_yeo_joint_purchasing"
-        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_joint_purchasing.dds"
+        texturefile = "gfx/interface/decisions/HOK_KOR/communist_policy/yeo_joint_purchasing.dds"
 	}
 	SpriteType = {
         name = "GFX_HOK_KOR_decision_yeo_rural_credit"
-        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/yeo_rural_credit.dds"
+        texturefile = "gfx/interface/decisions/HOK_KOR/communist_policy/yeo_rural_credit.dds"
 	}
 	SpriteType = {
         name = "GFX_HOK_KOR_decision_pak_plant_expansion"
-        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/pak_capital_goods_board.dds"
+        texturefile = "gfx/interface/decisions/HOK_KOR/communist_policy/pak_plant_expansion.dds"
 	}
 	SpriteType = {
         name = "GFX_HOK_KOR_decision_pak_current_output"
-        texturefile = "gfx/interface/goals/HOK_KOR/second_wave/pak_steel_delivery_schedules.dds"
+        texturefile = "gfx/interface/decisions/HOK_KOR/communist_policy/pak_current_output.dds"
 	}
 }

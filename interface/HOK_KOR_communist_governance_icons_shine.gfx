@@ -1,0 +1,273 @@
+#20260922_kpopmodder: Match governance focus shine to project-owned masks and the existing local vanilla overlay.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_worker_peasant_congress_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_worker_peasant_congress.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_worker_peasant_congress.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_worker_peasant_congress.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_workplace_arbitration_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_workplace_arbitration.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_workplace_arbitration.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_workplace_arbitration.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_local_councils_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_local_councils.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_local_councils.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_local_councils.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_yeo_social_compact_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_social_compact.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_social_compact.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/yeo_social_compact.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_national_asset_survey_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_national_asset_survey.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_national_asset_survey.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_national_asset_survey.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_annual_output_targets_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_annual_output_targets.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_annual_output_targets.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_annual_output_targets.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_material_balance_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_material_balance.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_material_balance.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_material_balance.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_capacity_reviews_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_capacity_reviews.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_capacity_reviews.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_capacity_reviews.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_pak_integrated_output_plan_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_integrated_output_plan.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_integrated_output_plan.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/communist_governance/pak_integrated_output_plan.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+}

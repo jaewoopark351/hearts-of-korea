@@ -1,0 +1,11 @@
+#20260922_kpopmodder: Expose follow-up governance programs after the matching route's operating focus while retaining their cancellation information after a government change.
+HOK_KOR_communist_governance_programs = {
+	icon = GFX_HOK_KOR_decision_category_communist_governance
+	allowed = { original_tag = KOR }
+	visible = {
+		OR = {
+			has_completed_focus = HOK_KOR_yeo_local_councils
+			has_completed_focus = HOK_KOR_pak_capacity_reviews
+		}
+	}
+}

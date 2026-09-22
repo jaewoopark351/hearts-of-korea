@@ -33,11 +33,11 @@
 
 계속개발 **kpopmodder**의 기여는 정책별 소재 선정, 새 레이어 구성, 투명 여백 정리, 비율 유지 크기 조정, 배경색 조정과 DDS 변환이다. 기존 `IconRenderer.cs`·`BackgroundColors.cs`를 그대로 재사용했다. 실제 교체되는 국민정신 4계열에만 기존 방식의 I·II 배지를 붙였고 중점에는 장식용 단계를 만들지 않았다.
 
-모든 중점은 100×88, 국민정신은 60×68의 단일 프레임 BGRA32 DDS와 알파를 가진다. 최종 이미지는 각각 `gfx/interface/goals/HOK_KOR/second_wave/`, `gfx/interface/ideas/HOK_KOR/second_wave/` 아래에 있다. `interface/HOK_KOR_second_wave_icons.gfx`가 일반 중점·국민정신·결정 재사용 스프라이트를, `_shine.gfx`가 중점 광택 스프라이트를 정의한다.
+모든 중점은 100×88, 국민정신은 60×68의 단일 프레임 BGRA32 DDS와 알파를 가진다. 최종 이미지는 각각 `gfx/interface/goals/HOK_KOR/second_wave/`, `gfx/interface/ideas/HOK_KOR/second_wave/` 아래에 있다. `interface/HOK_KOR_second_wave_icons.gfx`가 일반 중점·국민정신·결정 스프라이트를, `_shine.gfx`가 중점 광택 스프라이트를 정의한다.
 
 ## 결정 그림 및 바닐라 광택 레이어
 
-4개 유료 정책 사업의 결정 그림은 각각 관련 선택 중점의 로컬 DDS를 재사용한다. 결정 카테고리는 협동조합 등록망 DDS를 재사용한다. 신규 DDS를 중복 생성하지 않고 전용 `GFX_HOK_KOR_decision_*` 5개를 연결했다. 결정 UI의 실제 표시 크기와 카테고리 배치는 중점/정신 접촉표 검수와 별도로 게임에서 확인해야 한다.
+최초 구현은 관련 중점의 100×88 DDS를 결정 4개와 카테고리 1개에 직접 재사용했으나, 사용자 화면에서 행·설명과 겹치는 문제가 확인됐다. 2026-09-22 크기 수정에서는 같은 중심 소재를 작은 원판에 다시 구성하여 **카테고리 51×40, 결정 32×32의 전용 DDS 5개**로 교체했다. 경로는 `gfx/interface/decisions/HOK_KOR/communist_policy/`이며 기존 `GFX_HOK_KOR_decision_*` 이름과 중점·정신 원본은 유지한다. 새 소재 구성·해시는 [소형 아이콘 매니페스트](data/HOK_KOREAN_SMALL_DECISION_ICON_MANIFEST.json), 원인·UI 규격·검증 한계는 [수정 기록](incidents/2026-09-22-korean-decision-icon-size.md)을 따른다.
 
 공유 광택 오버레이는 **Paradox Interactive의 설치된 HOI4 1.19.3 바닐라 이미지**다. 원본 `gfx/interface/goals/shine_overlay.dds`를 프로젝트 `gfx/interface/goals/HOK_KOR/shine_overlay.dds`에 바이트 그대로 복사했고 SHA-256은 양쪽 모두 `bb416649358c73d34aacd46bad61bc44211fac8111627b56e25f385ad98f4448`이다. HOI4 모드 안에서 사용하는 바닐라 자산이며 Ultimate HOI4 GFX 팩의 CREDITS 허가에 포함시키지 않는다. 2026-09-22 통합에서 복사와 기존 60개 광택 참조 정리를 완료했고 원본·프로젝트 해시 일치를 확인했다. 새 중점의 마스크는 각각의 로컬 DDS이며, 오버레이 경로도 프로젝트 소유 상대 경로다.
 

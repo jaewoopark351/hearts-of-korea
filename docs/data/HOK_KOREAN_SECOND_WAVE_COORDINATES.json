@@ -3,11 +3,11 @@
   "documented_on": "2026-09-22",
   "status": "APPLIED_STATIC_CHECKED_RUNTIME_LAYOUT_UNVERIFIED",
   "source": "common/national_focus/korea.txt",
-  "source_sha256": "ba9d02efef7cd8a02d778cd8cb0c384fbfb5eacdff9583cff34b7e11110827fe",
+  "source_sha256": "2a124ff35d4fb10e33619614470c03ce039324e8013d97237f8feb38c28c3cae",
   "baseline_source_sha256": "830c58121c359cd48d9343f312eb8b05c5cceee37e308e86f0cc74eed98ec579",
-  "count": 336,
+  "count": 345,
   "absolute_anchors": 7,
-  "relative_nodes": 329,
+  "relative_nodes": 338,
   "bounds": {
     "x_min": 0,
     "x_max": 204,
@@ -22,7 +22,8 @@
     "All 326 existing gameplay blocks are preserved after excluding comments and layout fields.",
     "Four absolute political anchors move +10x; their relative descendants follow.",
     "Two forward-declared anchor references are replaced with an earlier anchor at unchanged resolved positions.",
-    "Zero repeated centers or new-node rectangle collisions in a static model is not in-game line/nameplate validation."
+    "Zero repeated centers or new-node rectangle collisions in a static model is not in-game line/nameplate validation.",
+    "2026-09-22 governance follow-up: 9 new relative descendants; all previous 336 focus definitions and coordinates are byte-preserved against d8558937. New Y1/P1 roots attach to the first policy capstones; those draft attachment changes do not alter existing prerequisites."
   ],
   "nodes": [
     {
@@ -14384,6 +14385,168 @@
         "base_absolute": {
           "x": 98,
           "y": 13
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_yeo_worker_peasant_congress",
+      "name": "노농 협의대회",
+      "origin": "second_wave_communist_governance",
+      "declaration_order": 336,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_yeo_cooperative_federation",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 75,
+          "y": 14
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_yeo_workplace_arbitration",
+      "name": "산업분쟁 조정위원회",
+      "origin": "second_wave_communist_governance",
+      "declaration_order": 337,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_yeo_worker_peasant_congress",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 75,
+          "y": 15
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_yeo_local_councils",
+      "name": "지방협의회 정례화",
+      "origin": "second_wave_communist_governance",
+      "declaration_order": 338,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_yeo_workplace_arbitration",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 75,
+          "y": 16
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_yeo_social_compact",
+      "name": "노농 협약 정착",
+      "origin": "second_wave_communist_governance",
+      "declaration_order": 339,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_yeo_local_councils",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 75,
+          "y": 17
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_pak_national_asset_survey",
+      "name": "국유자산 실태조사",
+      "origin": "second_wave_communist_governance",
+      "declaration_order": 340,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_pak_heavy_industry_dispatch",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 98,
+          "y": 14
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_pak_annual_output_targets",
+      "name": "연간 생산계획",
+      "origin": "second_wave_communist_governance",
+      "declaration_order": 341,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_pak_national_asset_survey",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 98,
+          "y": 15
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_pak_material_balance",
+      "name": "물자수급 대조표",
+      "origin": "second_wave_communist_governance",
+      "declaration_order": 342,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_pak_annual_output_targets",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 98,
+          "y": 16
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_pak_capacity_reviews",
+      "name": "생산능력 정기점검",
+      "origin": "second_wave_communist_governance",
+      "declaration_order": 343,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_pak_material_balance",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 98,
+          "y": 17
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_pak_integrated_output_plan",
+      "name": "국가 생산계획 조정",
+      "origin": "second_wave_communist_governance",
+      "declaration_order": 344,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_pak_capacity_reviews",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 98,
+          "y": 18
         }
       }
     }

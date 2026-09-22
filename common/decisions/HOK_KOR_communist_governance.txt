@@ -1,0 +1,256 @@
+#20260922_kpopmodder: Add bounded communist governance programs with a separate shared active flag and 90-day cooldown.
+HOK_KOR_communist_governance_programs = {
+	#20260922_kpopmodder: Apply the selected governance program for 90 days and recover all temporary effects on cancellation or expiry.
+	HOK_KOR_yeo_labor_compact_project = {
+		icon = GFX_HOK_KOR_decision_yeo_labor_compact
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_yeo_woon_hyung_as_the_leader
+			has_completed_focus = HOK_KOR_yeo_local_councils
+		}
+		available = {
+			original_tag = KOR
+			has_government = communism
+			has_capitulated = no
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_governance_no_active_program_tt
+				NOT = { has_country_flag = HOK_KOR_communist_governance_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_governance_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_communist_governance_cooldown }
+			}
+		}
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		modifier = {
+			stability_factor = 0.10
+			industrial_capacity_factory = 0.10
+		}
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_communist_governance_active }
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_start_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = communism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+				NOT = { has_completed_focus = HOK_KOR_yeo_local_councils }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_governance_active
+				set_country_flag = { flag = HOK_KOR_communist_governance_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_end_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_governance_active
+				set_country_flag = { flag = HOK_KOR_communist_governance_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_end_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	#20260922_kpopmodder: Apply the selected governance program for 90 days and recover all temporary effects on cancellation or expiry.
+	HOK_KOR_yeo_community_welfare_project = {
+		icon = GFX_HOK_KOR_decision_yeo_community_welfare
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_yeo_woon_hyung_as_the_leader
+			has_completed_focus = HOK_KOR_yeo_local_councils
+		}
+		available = {
+			original_tag = KOR
+			has_government = communism
+			has_capitulated = no
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_governance_no_active_program_tt
+				NOT = { has_country_flag = HOK_KOR_communist_governance_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_governance_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_communist_governance_cooldown }
+			}
+		}
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		modifier = {
+			stability_factor = 0.10
+			production_speed_buildings_factor = 0.10
+		}
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_communist_governance_active }
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_start_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = communism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+				NOT = { has_completed_focus = HOK_KOR_yeo_local_councils }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_governance_active
+				set_country_flag = { flag = HOK_KOR_communist_governance_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_end_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_governance_active
+				set_country_flag = { flag = HOK_KOR_communist_governance_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_end_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+			modifier = { factor = 2 has_war = no }
+		}
+	}
+
+	#20260922_kpopmodder: Apply the selected governance program for 90 days and recover all temporary effects on cancellation or expiry.
+	HOK_KOR_pak_material_reallocation_project = {
+		icon = GFX_HOK_KOR_decision_pak_material_reallocation
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_park_heon_young_as_the_leader
+			has_completed_focus = HOK_KOR_pak_capacity_reviews
+		}
+		available = {
+			original_tag = KOR
+			has_government = communism
+			has_capitulated = no
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_governance_no_active_program_tt
+				NOT = { has_country_flag = HOK_KOR_communist_governance_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_governance_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_communist_governance_cooldown }
+			}
+		}
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		modifier = {
+			production_lack_of_resource_penalty_factor = -0.20
+		}
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_communist_governance_active }
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_start_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = communism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_park_heon_young_as_the_leader }
+				NOT = { has_completed_focus = HOK_KOR_pak_capacity_reviews }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_governance_active
+				set_country_flag = { flag = HOK_KOR_communist_governance_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_end_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_governance_active
+				set_country_flag = { flag = HOK_KOR_communist_governance_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_end_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	#20260922_kpopmodder: Apply the selected governance program for 90 days and recover all temporary effects on cancellation or expiry.
+	HOK_KOR_pak_production_retooling_project = {
+		icon = GFX_HOK_KOR_decision_pak_production_retooling
+		allowed = { original_tag = KOR }
+		visible = {
+			has_completed_focus = KOR_park_heon_young_as_the_leader
+			has_completed_focus = HOK_KOR_pak_capacity_reviews
+		}
+		available = {
+			original_tag = KOR
+			has_government = communism
+			has_capitulated = no
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_governance_no_active_program_tt
+				NOT = { has_country_flag = HOK_KOR_communist_governance_active }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_communist_governance_cooldown_finished_tt
+				NOT = { has_country_flag = HOK_KOR_communist_governance_cooldown }
+			}
+		}
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.25
+		}
+		complete_effect = {
+			hidden_effect = { set_country_flag = HOK_KOR_communist_governance_active }
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_start_tt
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { original_tag = KOR }
+				NOT = { has_government = communism }
+				has_capitulated = yes
+				has_civil_war = yes
+				NOT = { has_completed_focus = KOR_park_heon_young_as_the_leader }
+				NOT = { has_completed_focus = HOK_KOR_pak_capacity_reviews }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_governance_active
+				set_country_flag = { flag = HOK_KOR_communist_governance_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_end_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = HOK_KOR_communist_governance_active
+				set_country_flag = { flag = HOK_KOR_communist_governance_cooldown value = 1 days = 90 }
+			}
+			custom_effect_tooltip = HOK_KOR_communist_governance_program_end_tt
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+			modifier = { factor = 2 has_war = no }
+		}
+	}
+}

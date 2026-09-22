@@ -11698,4 +11698,198 @@ focus_tree = {
 			if = { limit = { has_completed_focus = HOK_KOR_pak_steel_delivery_schedules } unlock_decision_tooltip = HOK_KOR_pak_current_output_project }
 		}
 	}
+	#20260922_kpopmodder: Extend the completed communist economic policy with a rewarding domestic governance focus.
+	focus = {
+		id = HOK_KOR_yeo_worker_peasant_congress
+		icon = GFX_HOK_KOR_focus_yeo_worker_peasant_congress
+		relative_position_id = HOK_KOR_yeo_cooperative_federation
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_cooperative_federation }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.10
+		}
+	}
+
+	#20260922_kpopmodder: Extend the completed communist economic policy with a rewarding domestic governance focus.
+	focus = {
+		id = HOK_KOR_yeo_workplace_arbitration
+		icon = GFX_HOK_KOR_focus_yeo_workplace_arbitration
+		relative_position_id = HOK_KOR_yeo_worker_peasant_congress
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_worker_peasant_congress }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_yeo_social_compact_1
+		}
+	}
+
+	#20260922_kpopmodder: Extend the completed communist economic policy with a rewarding domestic governance focus.
+	focus = {
+		id = HOK_KOR_yeo_local_councils
+		icon = GFX_HOK_KOR_focus_yeo_local_councils
+		relative_position_id = HOK_KOR_yeo_workplace_arbitration
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_workplace_arbitration }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_yeo_local_councils bonus = 1.0 uses = 1 category = electronics }
+			unlock_decision_category_tooltip = HOK_KOR_communist_governance_programs
+			unlock_decision_tooltip = HOK_KOR_yeo_labor_compact_project
+			unlock_decision_tooltip = HOK_KOR_yeo_community_welfare_project
+		}
+	}
+
+	#20260922_kpopmodder: Extend the completed communist economic policy with a rewarding domestic governance focus.
+	focus = {
+		id = HOK_KOR_yeo_social_compact
+		icon = GFX_HOK_KOR_focus_yeo_social_compact
+		relative_position_id = HOK_KOR_yeo_local_councils
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_yeo_local_councils }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_yeo_woon_hyung_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = {
+				limit = { has_idea = HOK_KOR_yeo_social_compact_1 }
+				swap_ideas = { remove_idea = HOK_KOR_yeo_social_compact_1 add_idea = HOK_KOR_yeo_social_compact_2 }
+			}
+			else = { add_ideas = HOK_KOR_yeo_social_compact_2 }
+		}
+	}
+
+	#20260922_kpopmodder: Extend the completed communist economic policy with a rewarding domestic governance focus.
+	focus = {
+		id = HOK_KOR_pak_national_asset_survey
+		icon = GFX_HOK_KOR_focus_pak_national_asset_survey
+		relative_position_id = HOK_KOR_pak_heavy_industry_dispatch
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_heavy_industry_dispatch }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_pak_national_asset_survey bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+
+	#20260922_kpopmodder: Extend the completed communist economic policy with a rewarding domestic governance focus.
+	focus = {
+		id = HOK_KOR_pak_annual_output_targets
+		icon = GFX_HOK_KOR_focus_pak_annual_output_targets
+		relative_position_id = HOK_KOR_pak_national_asset_survey
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_national_asset_survey }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_pak_output_plan_1
+		}
+	}
+
+	#20260922_kpopmodder: Extend the completed communist economic policy with a rewarding domestic governance focus.
+	focus = {
+		id = HOK_KOR_pak_material_balance
+		icon = GFX_HOK_KOR_focus_pak_material_balance
+		relative_position_id = HOK_KOR_pak_annual_output_targets
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_annual_output_targets }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_pak_material_balance bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+
+	#20260922_kpopmodder: Extend the completed communist economic policy with a rewarding domestic governance focus.
+	focus = {
+		id = HOK_KOR_pak_capacity_reviews
+		icon = GFX_HOK_KOR_focus_pak_capacity_reviews
+		relative_position_id = HOK_KOR_pak_material_balance
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_material_balance }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			unlock_decision_category_tooltip = HOK_KOR_communist_governance_programs
+			unlock_decision_tooltip = HOK_KOR_pak_material_reallocation_project
+			unlock_decision_tooltip = HOK_KOR_pak_production_retooling_project
+		}
+	}
+
+	#20260922_kpopmodder: Extend the completed communist economic policy with a rewarding domestic governance focus.
+	focus = {
+		id = HOK_KOR_pak_integrated_output_plan
+		icon = GFX_HOK_KOR_focus_pak_integrated_output_plan
+		relative_position_id = HOK_KOR_pak_capacity_reviews
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_pak_capacity_reviews }
+		available = { has_government = communism has_civil_war = no has_completed_focus = KOR_park_heon_young_as_the_leader }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = {
+				limit = { has_idea = HOK_KOR_pak_output_plan_1 }
+				swap_ideas = { remove_idea = HOK_KOR_pak_output_plan_1 add_idea = HOK_KOR_pak_output_plan_2 }
+			}
+			else = { add_ideas = HOK_KOR_pak_output_plan_2 }
+		}
+	}
 }

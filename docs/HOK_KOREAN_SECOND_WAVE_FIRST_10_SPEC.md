@@ -1,6 +1,6 @@
 # 2차 첫 정책 묶음 — 공산 경제 중점 10개
 
-작성: 2026-09-22. 구현 대상 HOI4 1.19.3. 전체 중점 336개 중 신규 10개를 정의한다. 아래 ID는 `HOK_KOR_` 접두사만 생략한다. 기간은 모두 cost5·기본 35일이다.
+작성: 2026-09-22. 구현 대상 HOI4 1.19.3. 이 첫 묶음 적용 당시 전체 중점은 336개였으며, 본 문서는 그중 신규 10개를 정의한다. 이후 [후속 내정 9개](HOK_KOREAN_COMMUNIST_GOVERNANCE_SPEC.md)를 추가한 현재 전체는 345개다. 아래 ID는 `HOK_KOR_` 접두사만 생략한다. 기간은 모두 cost5·기본 35일이다.
 
 공통 조건: 공산정부, 내전 없음, 해당 기존 지도자 선택 완료, 항복 중 진행 불가. 조건 상실 시 진행을 취소한다. 기존 경로의 중점 보상·선행·상호배타는 보존한다.
 
@@ -57,7 +57,7 @@
 - `common/ideas/HOK_KOR_communist_policy.txt`: 단계 정신8개.
 - `common/decisions/HOK_KOR_communist_policy.txt` 및 `categories/HOK_KOR_communist_policy.txt`: 사업4개·카테고리1개.
 - `localisation/korean/HOK_KOR_communist_policy_l_korean.yml` 및 영어 채널 대응 파일: 한국어 본문 53키, UTF-8 BOM 유지.
-- `interface/HOK_KOR_second_wave_icons.gfx`, `interface/HOK_KOR_second_wave_icons_shine.gfx`: 새 이미지 및 결정 재사용 매핑.
+- `interface/HOK_KOR_second_wave_icons.gfx`, `interface/HOK_KOR_second_wave_icons_shine.gfx`: 새 이미지 및 결정 매핑. 결정은 [크기 수정](incidents/2026-09-22-korean-decision-icon-size.md)에 따라 카테고리 51×40·개별 결정 32×32의 전용 DDS를 사용한다.
 - [이미지 매니페스트](data/HOK_KOREAN_SECOND_WAVE_ICON_MANIFEST.json), [좌표 데이터](data/HOK_KOREAN_SECOND_WAVE_COORDINATES.json), [검증 기록](incidents/2026-09-22-korean-second-wave-first-policies.md).
 
 설치본 근거: `common/decisions/AST.txt:3135`·`ENG.txt:1807`·`HOL.txt:139`의 기간제 수정치, `GER.txt:1568`의 민공 사용·취소 처리. 이식한 것은 문맥과 생애주기 구조이며 다른 국가의 사건·변수·보상 체계를 복제하지 않았다. 기존 한국의 단계 교체 및 연구 보너스 구조와 대조했다.
