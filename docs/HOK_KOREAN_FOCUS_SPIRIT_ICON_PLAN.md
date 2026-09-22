@@ -1,0 +1,203 @@
+# 한국 신규 중점·국민정신 아이콘 개선 계획
+
+> 후속 상태 — 2026-09-22: 사용자의 구현 요청으로 아래 계획의 신규 중점 60개·국민정신 29개 이미지 교체를 적용했다. [구현·검증 기록](incidents/2026-09-22-korean-focus-icons.md), [실제 전후 비교](assets/korean-focus-icons/index.html), [사용 소재·크레딧](HOK_KOREAN_FOCUS_ICON_CREDITS.md)을 따른다. 아래의 미승인·미실행 표기는 최초 문서화 시점의 기록으로 보존한다.
+
+> 후속 색상 구현 — 2026-09-22: [색상 재구성 계획](HOK_KOREAN_FOCUS_ICON_COLOR_PLAN.md)에 따라 신규 60개·29개의 배경색 분류를 적용했다. DDS 82개를 수정하고 기존 해군·공군 국민정신 7개를 유지했다. [색상 구현·검증 기록](incidents/2026-09-22-korean-focus-icon-colors.md)과 [새 색상 비교](assets/korean-focus-icon-colors/index.html)를 따른다. 정적 검증은 통과했으며, 이번 색상의 게임 실행은 하지 않았다. 앞선 UI 표본은 새 색상의 검증 증거가 아니다. 아래 본문은 최초 문서화 시점의 기록으로 보존한다.
+
+작성·자료 확인일: 2026-09-22. 상태: **문서화 완료 / 이미지 선정·제작·코드 적용 미승인·미실행**.
+
+사용자는 새로 추가한 중점과 국민정신에서 같은 이미지가 반복되는 문제를 지적했고, 외부 모드·공개 자료의 재사용 가능성을 조사한 뒤 문서화를 요청했다. 이 문서는 현재 참조 현황과 개선 제안을 기록한다. 이미지 자체를 내려받거나 수정하지 않았으며, 게임 코드·밸런스·중점 배치도 변경하지 않았다.
+
+## 1. 범위와 기준선
+
+| 항목 | 기준 |
+|---|---|
+| 저장소 기준 | `feat/korean-focus-expansion-ai` / `698b6eb160efbaa04a4d43846330ba002f5e8cc7` |
+| 작업 시작 상태 | 작업 트리 깨끗함 |
+| 대상 중점 | [1차 확장 60개](HOK_KOREAN_FOCUS_FIRST_60_SPEC.md): 산업·교육 20, 군사 25, 민주 내정·외교 15 |
+| 중점 소스 | [common/national_focus/korea.txt](../common/national_focus/korea.txt), `HOK_KOR_` 신규 ID 60개 |
+| 대상 국민정신 | 아래 산업 11·군사 12·민주 6개 정의, 총 29개. 단계별 교체판과 협정 수혜국용 정의 포함 |
+| 관련 게임 기준 | 기존 구현·명세의 HOI4 1.19.3. 이번 문서 작업에서는 게임 버전·플레이셋을 새로 검증하거나 게임을 실행하지 않음 |
+| 조사 방법 | 저장소의 `icon`·`picture` 참조와 한국어 현지화, 외부 제작자의 공개 자료·사용 조건을 읽음 |
+| 적용 대상에서 제외 | 기존 원작 266개 중점, 기존 국민정신, 인물 초상화·장비·지도·UI 배치·게임 효과·번역 키 |
+
+국민정신 소스:
+
+- [산업 확장](../common/ideas/HOK_KOR_industry_expansion.txt)
+- [군사 확장](../common/ideas/HOK_KOR_military_expansion.txt)
+- [민주 확장](../common/ideas/HOK_KOR_democratic_expansion.txt)
+
+[최초 확장 구현 기록](incidents/2026-09-21-korean-focus-expansion.md)의 28개는 당시 수량이다. 현재는 산업 파일에 `HOK_KOR_night_school_spirit`가 포함되어 29개다. 과거 기록을 현재 수량으로 덮어쓰지 않는다. 29개가 한국에 동시에 활성화된다는 뜻도 아니다.
+
+[바닐라 원본 목록](HOK_KOREAN_FOCUS_DONOR_CATALOG.md)은 게임 로직의 이식 후보 문서다. 해당 문서에서 원본으로 언급됐다는 사실은 이미지 재배포 허가의 근거가 아니다.
+
+## 2. 확인한 반복 현황
+
+`CONFIRMED`: 아래 수량은 지정된 소스의 참조 문자열을 기준으로 한다. 서로 다른 이름이 실제로 같은 텍스처를 가리키는 경우까지 대조한 자산 감사는 아니다. 이번에 전체 이미지를 시각적으로 열람하거나 게임에서 비교하지 않았으므로, 미적 품질과 실제 가독성 평가는 `UNPROVEN`으로 남긴다.
+
+### 신규 중점
+
+60개 정의에서 서로 다른 `icon` 참조는 29종이다. 그중 3회 이상 반복되는 참조는 다음과 같다. 모든 반복을 결함으로 보지는 않으며, 같은 정책의 단계 표현과 서로 다른 주제의 혼동을 구분한다.
+
+| 현재 아이콘 | 사용 수 | 주요 용도 |
+|---|---:|---|
+| `GFX_focus_generic_education` | 6 | 실업전문학교, 도제교육, 야간학교, 숙련공, 시민교육, 농촌교육 |
+| `GFX_goal_generic_production` | 5 | 계량규격, 안전검사, 생산조사, 품질보증, 통합 생산계획 |
+| `GFX_goal_generic_construct_civ_factory` | 4 | 지역 투자기금, 강원·충청 공업, 아시아 공동개발기금 |
+| `GFX_goal_generic_special_forces` | 4 | 동계훈련, 산악 정찰, 상륙지원, 해외 의료지원 |
+| `GFX_focus_generic_electrification` | 3 | 전력망 연계, 산업용 전력 배분, 전력조정위원회 |
+| `GFX_goal_generic_military_deal` | 3 | 조달계약, 분산 군수창, 해상 보급 |
+| `GFX_goal_generic_navy_battleship` | 3 | 호위전대 학교, 함포지원, 함대 참모학교 |
+| `GFX_focus_generic_multi_role_aircraft` | 3 | 해공 연락, 편대전술, 항공정비학교 |
+| `GFX_focus_generic_treaty` | 3 | 국정 협의위원회, 통상사무국, 관세협약 |
+
+위 표는 3회 이상인 9종만 나열한다. 나머지 20종까지 합쳐 29종이다. 전체 60개 ID·이름·연결은 기존 명세를 기준으로 하며, 이 문서에서 별도의 게임플레이 명세를 만들지 않는다.
+
+### 신규 국민정신
+
+29개 정의에서 서로 다른 `picture` 참조는 9종이다. 특히 산업 11개 중 10개가 `generic_production_bonus`를 사용하여 전력·숙련·양산·유연생산·품질보증의 구분이 약하다.
+
+| 현재 그림 | 산업 | 군사 | 민주 | 합계 |
+|---|---:|---:|---:|---:|
+| `generic_production_bonus` | 10 | 2 | 2 | 14 |
+| `generic_army_war_college` | 1 | 0 | 1 | 2 |
+| `generic_intel_bonus` | 0 | 2 | 0 | 2 |
+| `generic_volunteer_expedition_bonus` | 0 | 1 | 0 | 1 |
+| `generic_navy_bonus` | 0 | 3 | 0 | 3 |
+| `generic_coastal_defense_ships` | 0 | 1 | 0 | 1 |
+| `generic_air_payment` | 0 | 3 | 0 | 3 |
+| `generic_foreign_capital` | 0 | 0 | 2 | 2 |
+| `can_wartime_prices_and_trade_board` | 0 | 0 | 1 | 1 |
+| **합계** | **11** | **12** | **6** | **29** |
+
+## 3. 재사용 자료와 확인된 조건
+
+확인일은 2026-09-22이며, 아래 허용 상태는 연결한 출처가 설명하는 자료 범위에 한정한다. 실제 채택 단계에서 선택 파일의 원저자·현재 조건·제3자 소재를 다시 확인한다. 제작자에게 연락하거나 별도 사용 승인을 받은 사실은 없다.
+
+| 자료 | 확인한 내용 | 재사용 판단 | 이번 계획에서의 용도 |
+|---|---|---|---|
+| [Ultimate HOI4 GFX](https://github.com/Globvs/Ultimate-HOI4-GFX) | 중점·국민정신 공용 부품과 각각의 배경·프레임. 저장소 소개는 부품 400개 이상을 안내 | `CONFIRMED`: [CREDITS](https://github.com/Globvs/Ultimate-HOI4-GFX/blob/master/CREDITS.txt)가 기여자 동의와 자유로운 사용을 명시 | 우선 후보. PNG 소재·배경을 조합하는 방식; 원본 기여자 크레딧 보존 |
+| [Europe Anew 제작자의 공개 중점 아이콘 팩](https://www.reddit.com/r/hoi4modding/comments/k109f0/mediocre_focus_icons/) | 작성자가 자신의 모드용 아이콘을 공개. 완성 DDS와 PNG 미리보기 링크 제공 | `CONFIRMED`: 공개한 팩의 타 모드 사용을 허용하며 크레딧은 권장하지만 필수는 아니라고 설명 | 완성 중점 아이콘 후보. Europe Anew 전체 자산에 대한 허가로 확대하지 않음 |
+| [Kaiserreich Icons](https://github.com/Kaiserreich/Icons/blob/master/README.md) | 바닐라와 KR 아이콘의 제작 주체를 설명하는 검색용 저장소 | `UNPROVEN`: 읽은 README에서 포괄적 재배포 허가를 확인하지 못함. [Usage Policy](https://kaiserreich.wiki/Usage_Policy)는 접근 오류로 본문 미확인 | 열람·비교 후보. 사용 가능 목록에 넣지 않음 |
+| [Road to 56 공식 Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=820260968) | 설명 말미가 콘텐츠 일부·전체의 재배포를 제한 | `CONFIRMED`: 공개 배포에는 명시적 서면 허락 요구 | 해당 허락이 확인되기 전 채택 보류. 출처 표기만으로 허가를 대체하지 않음 |
+
+공개 저장소·검색기·Workshop에서 볼 수 있다는 사실 자체를 재사용 허가로 취급하지 않는다. Ultimate HOI4 GFX의 기여자 목록에 특정 모드 출신 제작자나 일부 제공 소재가 있어도, 그 모드 전체의 아이콘이 허용된다는 뜻은 아니다. 원작 HoK의 계승 권한도 다른 모드의 그림까지 포함하지 않는다.
+
+### 구체적으로 확인한 공개 소재
+
+아래 파일은 [Focus & National Spirits Pieces](https://github.com/Globvs/Ultimate-HOI4-GFX/tree/master/Focus%20%26%20National%20Spirits%20Pieces)의 파일 목록에서 존재를 확인했다. 오른쪽 대응은 제안이며, 파일의 실제 그림·시대 적합성·크기·투명도·품질을 확인한 최종 선정 결과가 아니다.
+
+| 확인한 파일 | 대응 가능한 주제 제안 |
+|---|---|
+| `Book Open.png`, `Book.png`, `Brain.png` | 교육·야간학교·숙련 인력 |
+| `Blueprints.png`, `Blurprints2.png` | 공업 설계·규격·생산 정책. `Blurprints2.png`는 원본에 있는 철자 |
+| `Anchor.png`, `Anchor2.png`, `Battleship.png` | 해군·함대·조선 분야 |
+| `Box Open.png`, `Box Closed.png`, `Barrel.png` | 군수창·보급·항만 지원 |
+| `Aircraft Fighter.png`, `Aircraft Fighter2.png`, `Biplane.png` | 항공 설계·훈련 분야; 실제 기종과 시대 확인 필요 |
+| `Binoculars.png` | 정찰·관측 분야 |
+
+[National Spirit Backgrounds](https://github.com/Globvs/Ultimate-HOI4-GFX/tree/master/National%20Spirit%20Backgrounds)에서 `Naval.png`, `Naval2.png`, `Airforce.png`, `Upgrade.png`, `Shield Blue.png`도 확인했다. 이들은 배경·부품이므로 완성 DDS 아이콘처럼 바로 참조만 바꾸면 된다고 설명하지 않는다.
+
+전력 설비·정비 도구·의료 장비·회계 장부에 정확히 대응하는 외부 파일은 아직 선정하지 않았다. 해당 소재의 이름을 추측하여 다운로드 목록이나 확정 자산 목록에 넣지 않는다. Europe Anew 팩도 게시자의 안내만 확인했으며 개별 DDS 다운로드·정상 열기·1:1 대응 선정은 미실행이다.
+
+## 4. 시각 개선 원칙
+
+1. **정책 계열을 먼저 구분한다.** 전력·숙련·양산·유연생산·품질보증은 각기 다른 중심 소재를 제안한다. 서로 다른 국민정신에 생산 아이콘 하나를 반복하는 문제를 우선 줄인다.
+2. **단계는 같은 계열로 읽히게 한다.** 전력 1·2·3단계처럼 교체되는 정의는 공통 중심 그림을 유지하고 작은 배지·테두리·단계 표시로 구분할 수 있다. 색상만으로 단계 차이를 전달하지 않는다. 모든 강화판에 전혀 다른 그림을 만들 필요는 없다.
+3. **같은 보상 계열의 중점과 국민정신을 연결한다.** 중점에는 중심 소재와 프레임을, 국민정신에는 같은 소재의 간결한 구성을 제안한다. 단순 크기 축소로 가독성이 확보된다고 가정하지 않는다.
+4. **분야 안에서 역할을 나눈다.** 해군의 수리·호위·보급, 공군의 전술·정비, 민정의 교육·행정·회계를 각각 구분한다. 해군 배경이나 공군 배경만 바꾸는 것으로 역할 차이를 해결했다고 보지 않는다.
+5. **HoK의 표현을 유지한다.** 다른 나라의 국기·지도·문장·인물·이념 표지가 붙은 완성품은 한국 중점의 뜻과 맞는지 확인한다. 한국 상징을 추가하는 편집은 별도 이미지 작업 승인 범위에서 수행한다.
+6. **혼합한 자료의 인상을 맞춘다.** 테두리 두께, 밝기·채도, 그림 크기, 여백, 광택을 검토한다. 국민정신의 작은 표시 크기와 중점의 축소 화면 모두에서 중심 소재가 읽혀야 한다.
+
+이는 제안이며 특정 색상·프레임·완성품이 확정되거나 승인됐다는 뜻이 아니다.
+
+## 5. 국민정신별 교체 방향
+
+이 표의 ID는 모두 `HOK_KOR_` 접두사를 생략했다. 범위 표기는 명시한 단계만 뜻한다. 현재 게임 ID는 유지하며 신규 자산 ID는 아직 확정하지 않는다. 아래 모든 그림 방향은 `PROPOSED`다.
+
+| 분야·정의 ID | 수 | 현재 그림 | 제안하는 구분 |
+|---|---:|---|---|
+| 산업 `energy_coordination_1`, `_2`, `_3` | 3 | `generic_production_bonus` | 전력망·발전 설비의 공통 그림과 3단계 표시. 정확한 외부 소재 미선정 |
+| 산업 `workforce_1`, `_2` | 2 | `generic_production_bonus` | 기술교육·숙련공 계열; 양산 계열과 구분 |
+| 산업 `night_school_spirit` | 1 | `generic_army_war_college` | 책과 야간교육 소재; 농촌교육과 구분 |
+| 산업 `mass_production_1`, `_2` | 2 | `generic_production_bonus` | 규격화·반복 생산을 나타내는 설계·생산 소재 |
+| 산업 `flexible_production_1`, `_2` | 2 | `generic_production_bonus` | 생산 전환·조정 소재; 양산과 한눈에 구분 |
+| 산업 `quality_control` | 1 | `generic_production_bonus` | 검사·측정·인증 소재; 정확한 검사 소재 미선정 |
+| 군사 `procurement_spirit_1`, `_2` | 2 | `generic_production_bonus` | 군수 규격·납품·보급상자 계열 |
+| 군사 `staff_spirit_1`, `_2` | 2 | `generic_intel_bonus` | 지도·계획·협동 지휘의 공통 소재 |
+| 군사 `winter_training_spirit` | 1 | `generic_volunteer_expedition_bonus` | 겨울·산악·훈련을 나타내는 소재 |
+| 군사 `rapid_repairs_spirit` | 1 | `generic_navy_bonus` | 함대 수리·조선소 소재; 정비 도구 미선정 |
+| 군사 `escort_spirit` | 1 | `generic_navy_bonus` | 수송선 보호·호위 소재; 수리와 구분 |
+| 군사 `coastal_fire_control_spirit` | 1 | `generic_coastal_defense_ships` | 함포·연락·연안 지원 소재 |
+| 군사 `naval_logistics_spirit` | 1 | `generic_navy_bonus` | 해군 배경과 보급상자·연료 소재 |
+| 군사 `formation_spirit_1`, `_2` | 2 | `generic_air_payment` | 편대·전훈 공유의 공통 항공 소재 |
+| 군사 `air_maintenance_spirit` | 1 | `generic_air_payment` | 항공기와 정비 소재; 편대 계열과 구분 |
+| 민주 `accountable_administration_idea`, `public_accounts_idea` | 2 | `generic_foreign_capital` | 행정·회계 계열의 단계적 변화; 장부·감찰 소재 미선정 |
+| 민주 `rural_education_idea` | 1 | `generic_army_war_college` | 책과 농촌·순회교육 소재 |
+| 민주 `volunteer_supply_idea` | 1 | `generic_production_bonus` | 해외 보급상자·수송 소재 |
+| 민주 `customs_participant_idea` | 1 | `can_wartime_prices_and_trade_board` | 관세·무역 서류·항만 소재 |
+| 민주 `license_participant_idea` | 1 | `generic_production_bonus` | 설계도·생산허가 소재; 일반 생산과 구분 |
+
+교체 단계의 보상 로직과 동시 적용 여부는 원본 `swap_ideas`·`add_ideas`·이벤트를 따른다. 그림의 단계를 만들기 위해 효과 수치나 정의의 개수를 바꾸지 않는다. 관세·면허생산 협정은 수혜국 표시도 검토 대상이다.
+
+## 6. 중점 교체 우선순위
+
+우선순위는 변경 승인이나 일괄 교체 지시가 아니다. 먼저 기존·후보 미리보기를 나란히 놓고 검토할 대상을 정한 것이다. 행 번호는 위 기준 커밋의 `common/national_focus/korea.txt` 기준이며 이후 변경 시 ID로 다시 찾는다.
+
+| 순서 | 중점 ID·이름 | 현재 근거 | 개선 제안 |
+|---|---|---|---|
+| 1 | `HOK_KOR_overseas_medical_detachments` 해외 의료지원반 | 11213행, `GFX_goal_generic_special_forces` | 의료가방·들것·야전진료 소재. 동계훈련·상륙지원과 분리 |
+| 1 | `HOK_KOR_air_maintenance_school` 항공정비학교 | 11018행, `GFX_focus_generic_multi_role_aircraft` | 정비를 드러내는 항공기·도구 소재. 편대전술과 분리 |
+| 1 | `HOK_KOR_factory_safety_inspections` 공장 안전검사제 | 10024행, `GFX_goal_generic_production` | 검사·안전·측정 소재. 일반 생산과 분리 |
+| 2 | `HOK_KOR_workers_night_schools` 노동자 야간학교 | 10114행, `GFX_focus_generic_education` | 책·야간교육 소재와 연결된 국민정신 구성 |
+| 2 | `HOK_KOR_mountain_reconnaissance` 산악 정찰학교 | 10590행, `GFX_goal_generic_special_forces` | 쌍안경·산악·관측 소재 |
+| 2 | `HOK_KOR_asian_customs_convention` 아시아 관세협약 | 11323행, `GFX_focus_generic_treaty` | 관세·통상 소재. 국정 협의와 분리 |
+| 3 | 교육·전력·생산·해군·항공의 나머지 반복 중점 | 2절 참조 수량, 기존 60개 명세 | 연결되는 국민정신의 공통 소재를 정한 뒤 일관되게 조정 |
+
+실행 순서 제안은 **국민정신 정책 계열 구분 → 관련 중점과 소재 연결 → 같은 계열의 단계 표현 → 전체 화면 통일성 확인**이다. 중점 60개와 국민정신 29개를 모두 서로 다른 그림으로 만들어야 한다는 목표는 두지 않는다.
+
+## 7. 자산 선정 기록
+
+채택할 파일마다 다음 정보를 기록한다. 현재는 어떤 개별 파일도 최종 채택하지 않았고 원본 파일을 다운로드하지 않았으므로, 해시·최종 경로·허가 사본을 채워 넣지 않는다.
+
+| 기록 항목 | 기재 내용 |
+|---|---|
+| 대상 | 기존 중점 또는 국민정신 ID, 현재 아이콘·그림 참조 |
+| 원본 | 팩·모드 이름, 정확한 원본 파일 경로, 원저자·기여자 |
+| 출처 고정 | 직접 URL, 저장소 커밋 또는 배포 버전, 확인일, 원본 파일 해시 |
+| 사용 근거 | 해당 파일에 적용되는 라이선스·공개 사용 선언·개별 허가와 그 범위 |
+| 기여 표시 | 원 제작자와 후속 편집자를 구분한 크레딧 문구 |
+| 가공 | 그대로 재사용·크기 조정·합성·색 조정·한국 상징 추가 중 수행한 사항 |
+| 적용 | 최종 파일 경로·스프라이트 ID·연결된 정의, 확정 전에는 미정 표시 |
+| 검수 | 원본·후보 비교, 실제 UI 확인, 남은 제한 |
+
+## 8. 추후 구현·검수 기준
+
+아래는 향후 이미지 교체가 승인된 경우의 작업 기준이며, 이번 문서화에서 실행한 절차가 아니다.
+
+- 승인된 신규 60개 중점·29개 국민정신의 시각 참조만 대상으로 삼는다. 기존 원작 콘텐츠와 게임 효과는 별도 범위다.
+- 원본 파일·기여자·사용 근거를 먼저 기록하고, 필요한 이미지와 정의만 도입한다. 타 모드의 전체 `gfx`·`interface` 폴더를 복사하거나 광범위한 `replace_path`를 추가하지 않는다.
+- 게임 ID·현지화 키·보상·AI·선행조건·상호배타·기간·배치·국민정신 취소와 교체 조건을 보존한다. 아이콘 적용을 이유로 새 모드 의존성을 묵시적으로 추가하지 않는다.
+- 새 이미지 파일명과 스프라이트 ID는 기존 프로젝트 관례·중복 여부를 확인한 뒤 확정한다. 기존 아이콘 정의를 전역 덮어써 다른 중점까지 바꾸지 않는다.
+- 중점의 일반·광택 표시와 국민정신의 그림 연결은 실제 대상 버전의 작동 사례를 대조한다. 정확한 경로·대소문자·크기·프레임·텍스처 형식·투명도·알파 가장자리를 확인한다. PNG 소재를 준비된 DDS로 오인하지 않는다.
+- 변경한 프로덕션 텍스트에는 저장소 규칙의 기여자 주석을 가까이 둔다. 문서나 바이너리 이미지에는 해당 코드 주석을 삽입하지 않는다.
+- 같은 계열의 1·2·3단계가 실제 작은 크기에서도 구별되는지, 양산과 유연생산 같은 상호배타 정책이 구별되는지 확인한다.
+- 중점은 선택 가능·진행 중·완료·잠금 상태에서, 국민정신은 국가 화면·툴팁·교체 후 상태에서 확인한다. 연결된 협정 수혜국의 그림도 포함한다.
+- 대상 게임 버전·빌드·플레이셋·언어·DLC를 기록하고, 게임 실행 전에 관련 기존 로그를 보존한다. 전체 재시작 후 영향 범위의 UI와 로그를 확인한다. 기존 화면 검수나 다른 버전 결과를 새 아이콘 검증으로 재사용하지 않는다.
+- 최종 diff에서 그래픽 참조·필요 자산·크레딧 외 게임플레이 변화가 없는지 확인한다. 자산 변경만으로 기존 저장·멀티플레이 호환성을 입증했다고 보고하지 않는다.
+
+## 9. 이번 작업의 완료 상태와 남은 일
+
+| 항목 | 상태 |
+|---|---|
+| 신규 콘텐츠 참조 현황·반복 수량 기록 | 완료, 소스 기준 `CONFIRMED` |
+| 공개 자료·사용 조건·접근 실패 구분 | 완료, 개별 판단은 3절 참조 |
+| 정책 계열·우선순위·자산 기록 방식 제안 | 문서화 완료, 디자인·구현 확정 아님 |
+| 후보 원본 다운로드·파일 해시 기록 | 미실행 |
+| 개별 이미지 시각 비교·최종 선정 | 미실행 |
+| 이미지 제작·편집·변환·코드 적용 | 미실행 |
+| 게임 실행·그래픽 런타임 검증 | 미실행 |
+| 제작자 연락·외부 업로드·Workshop 변경 | 미실행 |
+| 커밋·푸시 | 미실행 |
+
+다음 단계의 산출물은 **대상 ID별 현재 그림과 후보 미리보기, 원본 출처·사용 근거, 필요한 편집을 함께 보여 주는 선정안**이다. 이번 문서화 요청을 그 선정안의 적용 승인으로 간주하지 않는다.

@@ -2,7 +2,8 @@ ideas = {
 	country = {
 		#20260921_kpopmodder: Add the Korean procurement spirit 1 military program.
 		HOK_KOR_procurement_spirit_1 = {
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish procurement with a dedicated policy icon.
+			picture = HOK_KOR_icon_procurement_spirit_1
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -13,7 +14,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean procurement spirit 2 military program.
 		HOK_KOR_procurement_spirit_2 = {
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish procurement with a dedicated policy icon.
+			picture = HOK_KOR_icon_procurement_spirit_2
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -26,7 +28,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean staff spirit 1 military program.
 		HOK_KOR_staff_spirit_1 = {
-			picture = generic_intel_bonus
+			#20260922_kpopmodder: Distinguish staff with a dedicated policy icon.
+			picture = HOK_KOR_icon_staff_spirit_1
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -38,7 +41,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean staff spirit 2 military program.
 		HOK_KOR_staff_spirit_2 = {
-			picture = generic_intel_bonus
+			#20260922_kpopmodder: Distinguish staff with a dedicated policy icon.
+			picture = HOK_KOR_icon_staff_spirit_2
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -51,7 +55,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean winter training spirit military program.
 		HOK_KOR_winter_training_spirit = {
-			picture = generic_volunteer_expedition_bonus
+			#20260922_kpopmodder: Distinguish winter with a dedicated policy icon.
+			picture = HOK_KOR_icon_winter_training_spirit
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -63,7 +68,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean rapid repairs spirit military program.
 		HOK_KOR_rapid_repairs_spirit = {
-			picture = generic_navy_bonus
+			#20260922_kpopmodder: Distinguish naval repair with a dedicated policy icon.
+			picture = HOK_KOR_icon_rapid_repairs_spirit
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -75,7 +81,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean escort spirit military program.
 		HOK_KOR_escort_spirit = {
-			picture = generic_navy_bonus
+			#20260922_kpopmodder: Distinguish escort with a dedicated policy icon.
+			picture = HOK_KOR_icon_escort_spirit
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -87,7 +94,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean coastal fire control spirit military program.
 		HOK_KOR_coastal_fire_control_spirit = {
-			picture = generic_coastal_defense_ships
+			#20260922_kpopmodder: Distinguish coastal fire with a dedicated policy icon.
+			picture = HOK_KOR_icon_coastal_fire_control_spirit
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -100,7 +108,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean naval logistics spirit military program.
 		HOK_KOR_naval_logistics_spirit = {
-			picture = generic_navy_bonus
+			#20260922_kpopmodder: Distinguish naval logistics with a dedicated policy icon.
+			picture = HOK_KOR_icon_naval_logistics_spirit
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -113,7 +122,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean formation spirit 1 military program.
 		HOK_KOR_formation_spirit_1 = {
-			picture = generic_air_payment
+			#20260922_kpopmodder: Distinguish formation with a dedicated policy icon.
+			picture = HOK_KOR_icon_formation_spirit_1
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -125,7 +135,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean formation spirit 2 military program.
 		HOK_KOR_formation_spirit_2 = {
-			picture = generic_air_payment
+			#20260922_kpopmodder: Distinguish formation with a dedicated policy icon.
+			picture = HOK_KOR_icon_formation_spirit_2
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -137,7 +148,8 @@ ideas = {
 
 		#20260921_kpopmodder: Add the Korean air maintenance spirit military program.
 		HOK_KOR_air_maintenance_spirit = {
-			picture = generic_air_payment
+			#20260922_kpopmodder: Distinguish air maintenance with a dedicated policy icon.
+			picture = HOK_KOR_icon_air_maintenance_spirit
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1

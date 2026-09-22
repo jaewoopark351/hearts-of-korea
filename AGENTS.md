@@ -342,6 +342,52 @@ For `descriptor.mod` and launcher `.mod` files:
 - Do not replace missing art with placeholders unless requested.
 - Keep asset compatibility changes separate from gameplay changes unless evidence connects them.
 
+#### Images must be stored in this project and referenced by relative path
+
+- Every image explicitly used by this project's content must exist as a physical file inside the repository's runtime asset directories. This includes focus and national-spirit icons, portraits, interface textures, image masks, and image overlays.
+- When using an image from vanilla HOI4, a Workshop mod, a dependency, a public asset pack, or any other external location, first copy the selected image into the appropriate project directory, such as `gfx/interface/goals/HOK_KOR/` or `gfx/interface/ideas/HOK_KOR/`. Reference the project copy; do not rely on the external image at runtime. Keep the source installation and Workshop files read-only, and copy only the assets needed for the scoped task.
+- Set `texturefile`, `animationmaskfile`, `animationtexturefile`, and equivalent image references to mod-root-relative paths such as `gfx/interface/goals/HOK_KOR/example.dds`. Do not use absolute filesystem paths, external URLs, paths that escape the repository with `..`, or links that resolve to files outside the project.
+- Focus `icon = GFX_...` and idea `picture = ...` references must resolve through project-owned sprite definitions to images stored in this project. Merely selecting an existing vanilla or dependency sprite name without a local image and sprite mapping does not satisfy this rule. A relative-looking `gfx/...` path is also insufficient if the file is supplied only by vanilla or another mod.
+- Follow the existing `HOK_KOR_` sprite naming convention for new mappings, check for collisions, and avoid overriding a global vanilla sprite merely to redirect one icon. Preserve gameplay IDs and keep image-reference changes separate from behavior changes.
+- Preserve the copied image's format, dimensions, alpha, frame layout, and exact path casing unless an intentional asset conversion is part of the task. Record the original source path, applicable reuse basis, original credits, and any subsequent edits; copying an image does not change its authorship or grant additional rights.
+- Verify the complete sprite-to-image reference chain, including image masks and overlays: each relative path must resolve to an existing file inside this repository with exact casing. Treat missing project copies as incomplete asset integration, even if the game can find an external fallback.
+
+#### Create and integrate artwork when adding content
+
+When an authorized implementation adds focuses, national spirits, decisions, or other content that needs an image, include suitable artwork creation and integration in that implementation. Follow the established new-icon workflow: search reusable public sources, select relevant components, compose the image, save it inside this project, and connect it through project-owned GFX and relative paths. Routine source research, permitted downloads, composition, and integration do not require a separate artwork request. Review-only tasks remain read-only.
+
+1. Identify the content's meaning, branch or policy field, central motif, linked focus/spirit relationship, and genuine upgrade stages before selecting artwork. Follow the background-color rules below. Avoid repeating one generic icon for unrelated policies merely because it already exists.
+2. Search open-source or explicitly reusable public image packs and original creators' repositories for suitable materials. Start with the project's documented sources, such as the Ultimate HOI4 GFX components recorded in [the icon credits](docs/HOK_KOREAN_FOCUS_ICON_CREDITS.md), and broaden the search when needed. Existing downloaded components may be reused when their recorded terms cover the intended use; do not download duplicates unnecessarily.
+3. Verify that the selected material's actual licence or explicit permission covers the intended reuse, modification, and distribution. Public visibility or availability for download alone is not permission. A repository's code licence does not automatically cover its artwork; check artwork-specific terms and third-party exceptions. Keep permission limited to the identified pack/files; do not infer permission for an entire mod or invent a licence. If a candidate cannot be used, find a permitted alternative and report any remaining asset blocker rather than silently using it.
+4. Copy the selected source files into a project-local working directory and create the final artwork using the existing component and layer composition workflow. Separate background, frame, central illustration, and stage marks; use policy-specific motifs and the agreed colors. This source-based composition is the default requested method, as in the current 60-focus/29-spirit work. Preserve source attribution and distinguish original artwork from continuation selection, composition, recoloring, and added marks.
+5. Export the finished image to the appropriate runtime directory inside the repository, using the dimensions, alpha, frame layout, and DDS format required by the target-version UI. Keep source downloads and temporary working files separate from runtime outputs. Add or update project-owned sprite mappings, including required local image masks and overlays, and connect the content using the internal relative-path rules above. Do not leave delivery at external sprite references, unintegrated previews, or unrequested placeholders.
+6. Update the relevant credits and asset manifest with the content ID, original source URL/path, fixed revision when available, reuse evidence, contributor information, original hash, composition/recoloring details, final project path, sprite reference, and output hash. Reuse [the current icon manifest](docs/data/HOK_KOREAN_FOCUS_ICON_MANIFEST.json) and its documentation pattern where applicable; do not overwrite earlier attribution or manufacture an individual artist credit.
+7. Inspect the finished artwork at actual display size, compare related focuses and spirits, and check background contrast, central motifs, stage readability, transparency, exact paths, file format, and sprite collisions. Validate in-game states when runtime execution is authorized and record untested states honestly. Keep gameplay logic, existing legacy artwork, and unrelated assets outside the image change unless the task explicitly includes them.
+
+#### Focus and national-spirit background colors
+
+Use the following background color families for focus and national-spirit artwork. Color represents the focus's political branch or policy field, not the country's current ruling ideology. Shared industry and military icons must not change color when the government changes.
+
+| Political branch or policy field | Background and ornament direction |
+|---|---|
+| Democracy | Muted deep blue |
+| Communism | Deep red rather than vivid primary red |
+| Fascism | Brown with black ornaments, or charcoal with bronze ornaments |
+| Non-aligned | Light gray and silver rather than pure white |
+| Industry and production | Neutral gray with bronze or gold ornaments |
+| Education and research | Light gray and silver |
+| Army, ordnance, logistics, and staff | Dark green and olive |
+| Navy | Navy blue and slate blue-gray |
+| Air force | Silver and pale blue |
+
+- Apply political-branch color first to content belonging to a political route. For example, democratic civic/rural education, medical aid, volunteer support, and economic or armaments agreements remain blue. Foreign agreement participant spirits retain the originating branch's color regardless of the recipient's ideology; do not add ideology conditions to implement artwork choices.
+- For shared content, use its policy field. Schools, research, and maintenance belonging to a military service retain that service's color. Resolve overlaps from the actual branch, policy, and linked spirit, and record the assignment explicitly; do not infer color solely from an asset recipe's `family` or `category`. The regional Gyeongsang shipbuilding-industry focus uses industry colors.
+- Keep linked focuses and national spirits in the same color family and preserve their shared central motif. Use the existing `I`, `II`, and `III` marks for genuine upgrade chains; preserve intentional badge omissions and do not invent stages for unrelated content.
+- Edit the background as a separate layer. Preserve the central illustration, metal border, ornaments, stage marks, alpha, and recognizable symbols; do not apply a hue filter to the entire finished icon. Color must complement the central image and shape rather than serve as the only identifier.
+- Keep dark backgrounds outlined so they remain visible against the game UI. Preserve shading, contrast, and metallic texture in light gray/silver backgrounds so they do not resemble disabled icons. Distinguish overlapping color families through motifs and frame shapes, including democracy versus navy and education versus air force.
+- Record exact palette values, per-ID assignments, original sources, color-processing details, and output hashes in the asset documentation and manifest. Follow [the color plan and applied palette](docs/HOK_KOREAN_FOCUS_ICON_COLOR_PLAN.md) and [the icon manifest](docs/data/HOK_KOREAN_FOCUS_ICON_MANIFEST.json). Check actual-size previews; report in-game locked, available, active, completed, shine, and spirit-display validation separately from static inspection.
+- The applied color-work scope is the new 60 focuses and 29 national-spirit definitions. Existing original communist, fascist, and non-aligned focuses and existing spirits remain outside that work. Their palette entries are standards for future explicitly scoped artwork, not authorization to recolor legacy content or change gameplay.
+
 ---
 
 ## 8. Localisation and encoding

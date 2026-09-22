@@ -1,0 +1,303 @@
+#20260922_kpopmodder: Distinguish new Korean focus policies with dedicated icon sprites.
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_link_power_grids"
+		texturefile = "gfx/interface/goals/HOK_KOR/link_power_grids.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_industrial_power_allocation"
+		texturefile = "gfx/interface/goals/HOK_KOR/industrial_power_allocation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_industrial_measurement_standards"
+		texturefile = "gfx/interface/goals/HOK_KOR/industrial_measurement_standards.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_factory_safety_inspections"
+		texturefile = "gfx/interface/goals/HOK_KOR/factory_safety_inspections.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_national_power_coordination"
+		texturefile = "gfx/interface/goals/HOK_KOR/national_power_coordination.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_technical_colleges"
+		texturefile = "gfx/interface/goals/HOK_KOR/technical_colleges.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_workshop_apprenticeships"
+		texturefile = "gfx/interface/goals/HOK_KOR/workshop_apprenticeships.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_workers_night_schools"
+		texturefile = "gfx/interface/goals/HOK_KOR/workers_night_schools.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_university_industry_labs"
+		texturefile = "gfx/interface/goals/HOK_KOR/university_industry_labs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_skilled_workforce"
+		texturefile = "gfx/interface/goals/HOK_KOR/skilled_workforce.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_production_review"
+		texturefile = "gfx/interface/goals/HOK_KOR/production_review.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_standardized_mass_production"
+		texturefile = "gfx/interface/goals/HOK_KOR/standardized_mass_production.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_flexible_production_lines"
+		texturefile = "gfx/interface/goals/HOK_KOR/flexible_production_lines.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_production_quality_assurance"
+		texturefile = "gfx/interface/goals/HOK_KOR/production_quality_assurance.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_integrated_production_planning"
+		texturefile = "gfx/interface/goals/HOK_KOR/integrated_production_planning.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_regional_industry_fund"
+		texturefile = "gfx/interface/goals/HOK_KOR/regional_industry_fund.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_pyeongan_machine_workshops"
+		texturefile = "gfx/interface/goals/HOK_KOR/pyeongan_machine_workshops.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_gangwon_electrical_workshops"
+		texturefile = "gfx/interface/goals/HOK_KOR/gangwon_electrical_workshops.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_chungcheong_supplier_network"
+		texturefile = "gfx/interface/goals/HOK_KOR/chungcheong_supplier_network.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_gyeongsang_export_workshops"
+		texturefile = "gfx/interface/goals/HOK_KOR/gyeongsang_export_workshops.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_procurement_contracts"
+		texturefile = "gfx/interface/goals/HOK_KOR/procurement_contracts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_ammunition_standards"
+		texturefile = "gfx/interface/goals/HOK_KOR/ammunition_standards.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_ordnance_inspection"
+		texturefile = "gfx/interface/goals/HOK_KOR/ordnance_inspection.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_field_maintenance"
+		texturefile = "gfx/interface/goals/HOK_KOR/field_maintenance.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_distributed_ordnance_depots"
+		texturefile = "gfx/interface/goals/HOK_KOR/distributed_ordnance_depots.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_staff_exercises"
+		texturefile = "gfx/interface/goals/HOK_KOR/staff_exercises.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_winter_training"
+		texturefile = "gfx/interface/goals/HOK_KOR/winter_training.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_mountain_reconnaissance"
+		texturefile = "gfx/interface/goals/HOK_KOR/mountain_reconnaissance.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_radio_coordination"
+		texturefile = "gfx/interface/goals/HOK_KOR/radio_coordination.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_joint_arms_exercises"
+		texturefile = "gfx/interface/goals/HOK_KOR/joint_arms_exercises.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_rapid_repairs"
+		texturefile = "gfx/interface/goals/HOK_KOR/rapid_repairs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_archipelago_training"
+		texturefile = "gfx/interface/goals/HOK_KOR/archipelago_training.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_escort_school"
+		texturefile = "gfx/interface/goals/HOK_KOR/escort_school.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_anti_submarine_school"
+		texturefile = "gfx/interface/goals/HOK_KOR/anti_submarine_school.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_coastal_fire_control"
+		texturefile = "gfx/interface/goals/HOK_KOR/coastal_fire_control.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_fleet_staff_college"
+		texturefile = "gfx/interface/goals/HOK_KOR/fleet_staff_college.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_underway_replenishment"
+		texturefile = "gfx/interface/goals/HOK_KOR/underway_replenishment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_deck_training"
+		texturefile = "gfx/interface/goals/HOK_KOR/deck_training.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_naval_air_coordination"
+		texturefile = "gfx/interface/goals/HOK_KOR/naval_air_coordination.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_amphibious_rehearsals"
+		texturefile = "gfx/interface/goals/HOK_KOR/amphibious_rehearsals.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_domestic_aircraft_designs"
+		texturefile = "gfx/interface/goals/HOK_KOR/domestic_aircraft_designs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_foreign_aircraft_designs"
+		texturefile = "gfx/interface/goals/HOK_KOR/foreign_aircraft_designs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_formation_flying"
+		texturefile = "gfx/interface/goals/HOK_KOR/formation_flying.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_air_maintenance_school"
+		texturefile = "gfx/interface/goals/HOK_KOR/air_maintenance_school.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_combat_lessons_center"
+		texturefile = "gfx/interface/goals/HOK_KOR/combat_lessons_center.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_parliamentary_committee"
+		texturefile = "gfx/interface/goals/HOK_KOR/parliamentary_committee.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civil_service_audit"
+		texturefile = "gfx/interface/goals/HOK_KOR/civil_service_audit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_technical_civic_schools"
+		texturefile = "gfx/interface/goals/HOK_KOR/technical_civic_schools.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_rural_education_missions"
+		texturefile = "gfx/interface/goals/HOK_KOR/rural_education_missions.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_public_accounts_committee"
+		texturefile = "gfx/interface/goals/HOK_KOR/public_accounts_committee.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_volunteer_liaison_bureau"
+		texturefile = "gfx/interface/goals/HOK_KOR/volunteer_liaison_bureau.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_overseas_medical_detachments"
+		texturefile = "gfx/interface/goals/HOK_KOR/overseas_medical_detachments.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_volunteer_supply_depots"
+		texturefile = "gfx/interface/goals/HOK_KOR/volunteer_supply_depots.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_expeditionary_lessons"
+		texturefile = "gfx/interface/goals/HOK_KOR/expeditionary_lessons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_overseas_relief_network"
+		texturefile = "gfx/interface/goals/HOK_KOR/overseas_relief_network.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_asian_trade_secretariat"
+		texturefile = "gfx/interface/goals/HOK_KOR/asian_trade_secretariat.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_asian_customs_convention"
+		texturefile = "gfx/interface/goals/HOK_KOR/asian_customs_convention.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_asian_development_fund"
+		texturefile = "gfx/interface/goals/HOK_KOR/asian_development_fund.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_asian_armaments_commission"
+		texturefile = "gfx/interface/goals/HOK_KOR/asian_armaments_commission.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_asian_license_agreement"
+		texturefile = "gfx/interface/goals/HOK_KOR/asian_license_agreement.dds"
+	}
+}

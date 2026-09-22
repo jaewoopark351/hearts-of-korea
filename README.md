@@ -18,6 +18,10 @@
 - [한국 중점 첫 재배치 이력](docs/incidents/2026-09-21-korean-focus-layout.md): AA58 넓은 배치의 HIDE·SHOW, 만주 선 수정과 바로가기·최종 실행 관측
 - [한국 중점 1차 확장 구현 기록](docs/incidents/2026-09-21-korean-focus-expansion.md): 152개 35일화, 신규 60개와 검증 범위
 - [한국 중점 1차 60개 명세](docs/HOK_KOREAN_FOCUS_FIRST_60_SPEC.md): 실제 이름·연결·보상·원본 대응과 현재 압축 기본 절대좌표
+- [한국 신규 중점·국민정신 아이콘 개선 계획](docs/HOK_KOREAN_FOCUS_SPIRIT_ICON_PLAN.md): 신규 중점 60개·국민정신 29개 반복 현황, 재사용 자료·조건과 교체 우선순위; 문서화만 완료
+- [한국 신규 아이콘 구현·검증 기록](docs/incidents/2026-09-22-korean-focus-icons.md): 위 초기 계획의 후속 구현, 중점 60개·국민정신 29개 이미지 적용 및 실제 검증 범위
+- [한국 신규 아이콘 색상 재구성 계획](docs/HOK_KOREAN_FOCUS_ICON_COLOR_PLAN.md): 신규 60개·29개를 정치 계열·정책 용도별로 구분; DDS 82개 배경색 수정, 기존 군종색 7개 유지. [구현·검증 기록](docs/incidents/2026-09-22-korean-focus-icon-colors.md) · [색상 전후 비교](docs/assets/korean-focus-icon-colors/index.html). 정적 검증 통과, 이번 색상 런타임 미실행
+- [아이콘 전후 비교](docs/assets/korean-focus-icons/index.html) · [사용 소재·크레딧](docs/HOK_KOREAN_FOCUS_ICON_CREDITS.md) · [대상별 출처·가공·해시](docs/data/HOK_KOREAN_FOCUS_ICON_MANIFEST.json)
 - [한국 중점용 바닐라 이식 후보](docs/HOK_KOREAN_FOCUS_DONOR_CATALOG.md): 원본 중점·의존성·한국 연결 지점과 이식 난도
 - [크래시 디버깅 런북](docs/CRASH_DEBUGGING_RUNBOOK.md): 재현부터 원인 격리까지의 표준 절차
 - [증거 기록 양식](docs/EVIDENCE_RECORD_TEMPLATE.md): 실행별 로그와 가설을 섞지 않고 기록하는 양식

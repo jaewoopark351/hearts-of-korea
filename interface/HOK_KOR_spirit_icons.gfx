@@ -1,0 +1,148 @@
+#20260922_kpopmodder: Distinguish new Korean national spirit policies and upgrade stages.
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_energy_coordination_1"
+		texturefile = "gfx/interface/ideas/HOK_KOR/energy_coordination_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_energy_coordination_2"
+		texturefile = "gfx/interface/ideas/HOK_KOR/energy_coordination_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_energy_coordination_3"
+		texturefile = "gfx/interface/ideas/HOK_KOR/energy_coordination_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_workforce_1"
+		texturefile = "gfx/interface/ideas/HOK_KOR/workforce_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_workforce_2"
+		texturefile = "gfx/interface/ideas/HOK_KOR/workforce_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_night_school_spirit"
+		texturefile = "gfx/interface/ideas/HOK_KOR/night_school_spirit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_mass_production_1"
+		texturefile = "gfx/interface/ideas/HOK_KOR/mass_production_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_mass_production_2"
+		texturefile = "gfx/interface/ideas/HOK_KOR/mass_production_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_flexible_production_1"
+		texturefile = "gfx/interface/ideas/HOK_KOR/flexible_production_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_flexible_production_2"
+		texturefile = "gfx/interface/ideas/HOK_KOR/flexible_production_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_quality_control"
+		texturefile = "gfx/interface/ideas/HOK_KOR/quality_control.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_procurement_spirit_1"
+		texturefile = "gfx/interface/ideas/HOK_KOR/procurement_spirit_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_procurement_spirit_2"
+		texturefile = "gfx/interface/ideas/HOK_KOR/procurement_spirit_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_staff_spirit_1"
+		texturefile = "gfx/interface/ideas/HOK_KOR/staff_spirit_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_staff_spirit_2"
+		texturefile = "gfx/interface/ideas/HOK_KOR/staff_spirit_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_winter_training_spirit"
+		texturefile = "gfx/interface/ideas/HOK_KOR/winter_training_spirit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_rapid_repairs_spirit"
+		texturefile = "gfx/interface/ideas/HOK_KOR/rapid_repairs_spirit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_escort_spirit"
+		texturefile = "gfx/interface/ideas/HOK_KOR/escort_spirit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_coastal_fire_control_spirit"
+		texturefile = "gfx/interface/ideas/HOK_KOR/coastal_fire_control_spirit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_naval_logistics_spirit"
+		texturefile = "gfx/interface/ideas/HOK_KOR/naval_logistics_spirit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_formation_spirit_1"
+		texturefile = "gfx/interface/ideas/HOK_KOR/formation_spirit_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_formation_spirit_2"
+		texturefile = "gfx/interface/ideas/HOK_KOR/formation_spirit_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_air_maintenance_spirit"
+		texturefile = "gfx/interface/ideas/HOK_KOR/air_maintenance_spirit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_accountable_administration_idea"
+		texturefile = "gfx/interface/ideas/HOK_KOR/accountable_administration_idea.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_public_accounts_idea"
+		texturefile = "gfx/interface/ideas/HOK_KOR/public_accounts_idea.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_rural_education_idea"
+		texturefile = "gfx/interface/ideas/HOK_KOR/rural_education_idea.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_volunteer_supply_idea"
+		texturefile = "gfx/interface/ideas/HOK_KOR/volunteer_supply_idea.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_customs_participant_idea"
+		texturefile = "gfx/interface/ideas/HOK_KOR/customs_participant_idea.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_HOK_KOR_icon_license_participant_idea"
+		texturefile = "gfx/interface/ideas/HOK_KOR/license_participant_idea.dds"
+	}
+}

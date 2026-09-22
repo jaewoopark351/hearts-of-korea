@@ -4,7 +4,8 @@ ideas = {
 		HOK_KOR_energy_coordination_1 = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish power with a dedicated policy icon.
+			picture = HOK_KOR_icon_energy_coordination_1
 			removal_cost = -1
 			modifier = {
 				factory_energy_consumption = -0.10 #20260921_kpopmodder: Preserve the user-selected industry modifier value.
@@ -15,7 +16,8 @@ ideas = {
 		HOK_KOR_energy_coordination_2 = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish power with a dedicated policy icon.
+			picture = HOK_KOR_icon_energy_coordination_2
 			removal_cost = -1
 			modifier = {
 				factory_energy_consumption = -0.20 #20260921_kpopmodder: Preserve the user-selected industry modifier value.
@@ -26,7 +28,8 @@ ideas = {
 		HOK_KOR_energy_coordination_3 = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish power with a dedicated policy icon.
+			picture = HOK_KOR_icon_energy_coordination_3
 			removal_cost = -1
 			modifier = {
 				factory_energy_consumption = -0.30 #20260921_kpopmodder: Preserve the user-selected industry modifier value.
@@ -37,7 +40,8 @@ ideas = {
 		HOK_KOR_workforce_1 = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish workforce with a dedicated policy icon.
+			picture = HOK_KOR_icon_workforce_1
 			removal_cost = -1
 			modifier = {
 				#20260921_kpopmodder: Apply the approved apprenticeship rebalance to thirty-percent efficiency growth.
@@ -49,7 +53,8 @@ ideas = {
 		HOK_KOR_workforce_2 = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish workforce with a dedicated policy icon.
+			picture = HOK_KOR_icon_workforce_2
 			removal_cost = -1
 			modifier = {
 				#20260921_kpopmodder: Upgrade the replacement workforce spirit to sixty-percent efficiency growth.
@@ -61,7 +66,8 @@ ideas = {
 		HOK_KOR_night_school_spirit = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_army_war_college
+			#20260922_kpopmodder: Distinguish night school with a dedicated policy icon.
+			picture = HOK_KOR_icon_night_school_spirit
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.10
@@ -72,7 +78,8 @@ ideas = {
 		HOK_KOR_mass_production_1 = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish mass production with a dedicated policy icon.
+			picture = HOK_KOR_icon_mass_production_1
 			removal_cost = -1
 			modifier = {
 				#20260921_kpopmodder: Strengthen the approved mass-production reward while retaining its switching penalty.
@@ -85,7 +92,8 @@ ideas = {
 		HOK_KOR_mass_production_2 = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish mass production with a dedicated policy icon.
+			picture = HOK_KOR_icon_mass_production_2
 			removal_cost = -1
 			modifier = {
 				#20260921_kpopmodder: Set the replacement mass-production stage to thirty-percent maximum efficiency.
@@ -98,7 +106,8 @@ ideas = {
 		HOK_KOR_flexible_production_1 = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish flexible production with a dedicated policy icon.
+			picture = HOK_KOR_icon_flexible_production_1
 			removal_cost = -1
 			modifier = {
 				#20260921_kpopmodder: Strengthen flexible production while retaining its efficiency-cap penalty.
@@ -111,7 +120,8 @@ ideas = {
 		HOK_KOR_flexible_production_2 = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish flexible production with a dedicated policy icon.
+			picture = HOK_KOR_icon_flexible_production_2
 			removal_cost = -1
 			modifier = {
 				#20260921_kpopmodder: Set the replacement flexible-production stage to forty-percent retention.
@@ -124,7 +134,8 @@ ideas = {
 		HOK_KOR_quality_control = {
 			allowed = { original_tag = KOR }
 			allowed_civil_war = { always = yes }
-			picture = generic_production_bonus
+			#20260922_kpopmodder: Distinguish quality with a dedicated policy icon.
+			picture = HOK_KOR_icon_quality_control
 			removal_cost = -1
 			modifier = {
 				#20260921_kpopmodder: Apply the approved ten-percent base production-efficiency reward.
