@@ -18,6 +18,8 @@
 
 표의 안정도 획득은 완료 즉시 지급하는 %p이고 국민정신의 안정도 보정과 별개다. 상위 국민정신의 최종값은 이전 단계와 중첩되지 않는다. 야간교육과 농촌교육의 연구 속도 보정은 서로 별도이며, 두 보정의 합은 +20%다. 통합 군수체계와 해외 보급업무 개선의 보급 소모 보정 합은 -20%다. 연구 보너스의 횟수는 지정 범위에만 사용되며, 대상 기술을 이미 연구했다면 모두 소진하지 못할 수 있다.
 
+2026-09-23 결정 비용 변경: 사용자 요청으로 아래 지역 투자 4종과 동맹국 민간공장 건설 지원을 **회당 정치력 150만 사용하고 민간공장은 점유하지 않는 사업**으로 변경했다. 사람과 AI의 가용 민간공장 수량 요건도 제거했다. 90일/180일 기간, 건물·슬롯 보상, 반복 구조와 소유·통제·부지·외교 조건은 유지한다. 공산 경제정책의 지역 금융 순환·현행 생산 집중 지원을 포함한 총 7종이 이번 변경 대상이다. 앞선 검증 결과는 이 비용 변경의 런타임 검증을 뜻하지 않는다.
+
 ## 산업·교육 20개
 
 | ID (`HOK_KOR_` 접두사) | 한국 이름 | 선행 중점 | 기본 절대 x,y | 보상·연결 기능 | 바닐라 기반 |
@@ -38,10 +40,10 @@
 | `production_quality_assurance` | 생산품 품질보증 | (standardized_mass_production 또는 flexible_production_lines) | 18,5 | 기본 생산효율 +10% | I3 |
 | `integrated_production_planning` | 통합 생산계획 | (production_quality_assurance) | 18,6 | 선택 정책만 교체: 양산 최종 생산효율 상한 +30%·전환 유지 -5% 또는 유연 최종 전환 유지 +40%·상한 -2.5%; 이전 단계와 중첩 안 됨 | I3 |
 | `regional_industry_fund` | 지역 공업 투자기금 | (KOR_first_new_city_plan) | 30,5 | 정치력 +150; 지역 공업 투자 카테고리 | I4 |
-| `pyeongan_machine_workshops` | 평안 기계공업 육성 | (regional_industry_fund) | 30,6 | 평안 군수공장 1개·슬롯 1개 유료 건설 결정; PP150·민공5·90일, 순차 반복 | I4 |
-| `gangwon_electrical_workshops` | 강원 전기기기 공업 | (pyeongan_machine_workshops) | 30,7 | 강원 민간공장 1개·슬롯 1개 유료 건설 결정; PP150·민공5·90일, 순차 반복 | I4 |
-| `chungcheong_supplier_network` | 충청 부품공급망 | (gangwon_electrical_workshops) | 30,8 | 충청 민간공장 1개·슬롯 1개 유료 건설 결정; PP150·민공5·90일, 순차 반복 | I4 |
-| `gyeongsang_export_workshops` | 경상 수출조선 지원 | (chungcheong_supplier_network) | 30,9 | 경상 조선소 1개·슬롯 1개 유료 건설 결정; PP150·민공5·90일, 순차 반복 | I4 |
+| `pyeongan_machine_workshops` | 평안 기계공업 육성 | (regional_industry_fund) | 30,6 | 평안 군수공장 1개·슬롯 1개 유료 건설 결정; PP150만·민공 점유 없음·90일, 순차 반복 | I4 |
+| `gangwon_electrical_workshops` | 강원 전기기기 공업 | (pyeongan_machine_workshops) | 30,7 | 강원 민간공장 1개·슬롯 1개 유료 건설 결정; PP150만·민공 점유 없음·90일, 순차 반복 | I4 |
+| `chungcheong_supplier_network` | 충청 부품공급망 | (gangwon_electrical_workshops) | 30,8 | 충청 민간공장 1개·슬롯 1개 유료 건설 결정; PP150만·민공 점유 없음·90일, 순차 반복 | I4 |
+| `gyeongsang_export_workshops` | 경상 수출조선 지원 | (chungcheong_supplier_network) | 30,9 | 경상 조선소 1개·슬롯 1개 유료 건설 결정; PP150만·민공 점유 없음·90일, 순차 반복 | I4 |
 
 ## 육해공군 25개
 
@@ -78,10 +80,10 @@
 | ID (`HOK_KOR_` 접두사) | 한국 이름 | 선행 중점 | 기본 절대 x,y | 보상·연결 기능 | 바닐라 기반 |
 |---|---|---|---|---|---|
 | `parliamentary_committee` | 국정 협의위원회 | (KOR_strengthen_government_support) | 107,9 | 정치력 +100; 즉시 안정도 +10%p | D1 |
-| `civil_service_audit` | 공직 감찰 정비 | (parliamentary_committee) | 106,11 | 민주정부 동안 일일 정치력 +0.25 | D1 |
+| `civil_service_audit` | 공직 감찰 정비 | (parliamentary_committee) | 106,11 | 민주정부 동안 일일 정치력 +1.0 | D1 |
 | `technical_civic_schools` | 실업·시민교육 확대 | (parliamentary_committee) | 109,11 | 전자공학 연구 25% 보너스 1회 유지; 소유·완전통제·부지 조건을 갖춘 경기525·전라1082·충청1031에 민간공장과 슬롯 각 2개(공장 총 6개) | D1 |
 | `rural_education_missions` | 농촌 순회교육 | (technical_civic_schools) | 109,13 | 연구 속도 +10%, 영구; 야간교육과 별도 | D1 |
-| `public_accounts_committee` | 국회 결산위원회 | (civil_service_audit) 및 (rural_education_missions) | 107,14 | 즉시 안정도 +10%p; 행정 국민정신 교체 후 일일 정치력 +0.25 유지·안정도 +2% | D1 |
+| `public_accounts_committee` | 국회 결산위원회 | (civil_service_audit) 및 (rural_education_missions) | 107,14 | 즉시 안정도 +10%p; 행정 국민정신 교체 후 일일 정치력 +1.0 유지·안정도 +2% | D1 |
 | `volunteer_liaison_bureau` | 의용군 연락본부 | (KOR_korean_volunteer_corps) | 138,11 | 육군 경험치 +50; 정치력 +100; 해외 지원 결정 카테고리 | D2 |
 | `overseas_medical_detachments` | 해외 의료지원반 | (volunteer_liaison_bureau) | 136,13 | 지원기술 연구 100% 2회; 한국 비축 지원장비 50개 기부 결정 | D2 |
 | `volunteer_supply_depots` | 의용군 보급계획 | (volunteer_liaison_bureau) | 140,13 | 한국 육군 전체 보급 소모 -10%, 영구; 통합 군수체계와 별도 | D2 |
@@ -89,7 +91,7 @@
 | `overseas_relief_network` | 해외 구호망 | (expeditionary_lessons) | 138,16 | 즉시 안정도 +10%p; 정치력 +100; 한국 비축 보병장비 100개 기부 결정 | D2 |
 | `asian_trade_secretariat` | 아시아 공동통상사무국 | (KOR_founding_of_the_asian_union) | 116,17 | 정치력 +150; 아시아 공동사업 카테고리 | D3 |
 | `asian_customs_convention` | 아시아 관세협약 | (asian_trade_secretariat) | 114,19 | 동맹에 수락·거절 이벤트 발송; 수락국의 대한국 수입 비용 -30%, 730일; PP25·대상별 180일 간격 재제안, 횟수 상한 없음 | D3 |
-| `asian_development_fund` | 아시아 공동개발기금 | (asian_customs_convention) | 114,21 | 관세협약 동맹 민간공장 1개·슬롯 1개 사업 해금; PP75·민공2·180일, 같은 대상에도 순차 반복 | D3 |
+| `asian_development_fund` | 아시아 공동개발기금 | (asian_customs_convention) | 114,21 | 관세협약 동맹 민간공장 1개·슬롯 1개 사업 해금; PP150만·민공 점유 없음·180일, 같은 대상에도 순차 반복 | D3 |
 | `asian_armaments_commission` | 아시아 공동군수위원회 | (asian_trade_secretariat) | 118,19 | 육군 경험치 +50; 포병 연구 100% 2회 | D3 |
 | `asian_license_agreement` | 아시아 면허생산협정 | (asian_armaments_commission) | 118,21 | DOD: 수락국↔한국에 730일 면허생산 속도·기술 격차 보정 각 +30%, AI 수락 의향 +20 유지; 재제안 결정; DOD 없으면 육군 경험치 +50 | D3 |
 
@@ -102,7 +104,7 @@
 | I1 | national_focus/japan.txt:26133, JAP_establish_nippon_hassoden; ideas/czechoslovakia_skoda.txt:48 이후 | 직접 전력 국민정신 3단계; 석탄 지급과 일본 동적 변수 제외 |
 | I2 | national_focus/china_nationalist_sea.txt:14458, CHI_extend_compulsory_education; ideas/bulgaria.txt:675, canada.txt:264 | 교육 연구 및 숙련 성장; 중국 초기 불이익·농촌 변수 제외 |
 | I3 | national_focus/finland.txt:13671/13767, FIN_expand_production_lines/FIN_modernize_production_lines; ideas/sweden.txt:661 | 생산 정책 상호배타 및 장단점; 한국용 수치 조합 |
-| I4 | decisions/SWE.txt:349의 SWE_urbanization_decision 및 decisions/resource_prospecting.txt:8657의 deeper_swedish_mines; 기존 HoK 팔도개발 | PP150·민공5·90일, 현재 한국 주에 순차 반복 건설; 소유·완전통제·부지 조건 유지 |
+| I4 | decisions/SWE.txt:349의 SWE_urbanization_decision 및 decisions/resource_prospecting.txt:8657의 deeper_swedish_mines; 기존 HoK 팔도개발 | PP150만·민공 점유 없음·90일, 현재 한국 주에 순차 반복 건설; 소유·완전통제·부지 조건 유지 |
 | M1 | national_focus/sweden.txt:390/434, 정부 조달·장비 규격화 | 기존 한국 MIO와 연구 보너스; 초기 스웨덴 불이익 제외 |
 | M2 | national_focus/finland.txt:11413; japan.txt:30815/30863; usa.txt:5640/5673 | 동계훈련·무전·제병협동, 직접 국민정신·경험치·기술 보너스 |
 | M3 | national_focus/sweden.txt:1962/2387; ideas/sweden.txt:556/587; australia.txt:1155 | 수리·다도해·호위·대잠 및 MTG 대체 보상 |

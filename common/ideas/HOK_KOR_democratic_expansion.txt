@@ -8,7 +8,8 @@ ideas = {
 			removal_cost = -1
 			cancel = { NOT = { has_government = democratic } }
 			#20260921_kpopmodder: Apply the approved flat daily political-power reward and retain democratic cancellation.
-			modifier = { political_power_gain = 0.25 }
+			#20260923_kpopmodder: Raise the requested flat daily political-power reward to 1.0.
+			modifier = { political_power_gain = 1.0 }
 		}
 		#20260921_kpopmodder: Upgrade the optional administration institution while preserving the inherited government-recovery timer.
 		HOK_KOR_public_accounts_idea = {
@@ -19,7 +20,8 @@ ideas = {
 			cancel = { NOT = { has_government = democratic } }
 			modifier = {
 				#20260921_kpopmodder: Preserve the strengthened daily political-power reward after the institution upgrade.
-				political_power_gain = 0.25
+				#20260923_kpopmodder: Carry daily political power 1.0 into the upgrade and retain stability.
+				political_power_gain = 1.0
 				stability_factor = 0.02
 			}
 		}

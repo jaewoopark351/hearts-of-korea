@@ -1,4 +1,5 @@
 ﻿l_korean:
+#20260923_kpopmodder: 요청한 반복 디시전 7종의 민간공장 비용을 제거하고 정치력 150 비용에 맞춰 설명을 동기화합니다.
  #20260922_kpopmodder: Describe preserved research benefits and distinguish the two political-power-only projects.
  #20260922_kpopmodder: Localise the two communist policy choices and their bounded paid projects.
  HOK_KOR_yeo_cooperative_registry:0 "협동조합 등록망"
@@ -38,19 +39,19 @@
  HOK_KOR_pak_current_output_2:0 "현행 생산계획 II"
  HOK_KOR_pak_current_output_2_desc:0 "국가계획의 물자 배정을 현재 가동 중인 군수공장의 생산에 집중합니다. 공산정부를 잃으면 제거되며 정권 복귀만으로 자동 복구되지 않습니다."
  HOK_KOR_communist_policy_projects:0 "공산 경제정책 실행"
- HOK_KOR_communist_policy_projects_desc:0 "선택한 협동조합 정책 또는 중공업 배정 원칙을 기간제 사업으로 실행합니다. 공동구매 조달 사업과 군수설비 집중 건설은 정치력 150만 사용하며 민간공장을 점유하지 않습니다. 지역 금융 순환 사업과 현행 생산 집중 지원은 정치력 75와 민간공장 2개를 사용합니다. 각 사업의 효과는 진행 중인 90일 동안만 적용됩니다. 모든 사업을 통틀어 한 번에 하나만 실행할 수 있으며 종료 또는 취소 후 90일 동안 재착수할 수 없습니다. 정부 변경, 항복, 내전 또는 해당 정책 경로의 상실로 취소되면 효과와 해당 사업의 민간공장 사용이 끝나며 정치력은 환급되지 않습니다."
+ HOK_KOR_communist_policy_projects_desc:0 "선택한 협동조합 정책 또는 중공업 배정 원칙을 기간제 사업으로 실행합니다. 모든 사업은 정치력 150만 사용하며 민간공장을 점유하지 않습니다. 각 사업의 효과는 진행 중인 90일 동안만 적용됩니다. 모든 사업을 통틀어 한 번에 하나만 실행할 수 있으며 종료 또는 취소 후 90일 동안 재착수할 수 없습니다. 정부 변경, 항복, 내전 또는 해당 정책 경로의 상실로 취소되면 사업 효과가 끝나며 정치력은 환급되지 않습니다."
  HOK_KOR_communist_policy_no_active_project_tt:0 "다른 공산 경제정책 사업을 진행하고 있지 않음"
  HOK_KOR_communist_policy_cooldown_finished_tt:0 "이전 공산 경제정책 사업의 종료 또는 취소 후 90일이 지남"
- HOK_KOR_communist_policy_project_start_tt:0 "§Y90일§! 동안 민간공장 §Y2개§!를 사용하여 선택한 정책 효과를 적용합니다. 동시에 다른 공산 경제정책 사업을 실행할 수 없습니다. 종료 또는 취소 후 §Y90일§! 동안 재착수할 수 없으며, 취소 시 정치력은 환급되지 않습니다."
- HOK_KOR_communist_policy_project_end_tt:0 "사업 효과와 민간공장 사용이 끝납니다. 모든 공산 경제정책 사업은 §Y90일§! 동안 재착수할 수 없습니다. 정치력은 환급되지 않습니다."
+ HOK_KOR_communist_policy_project_start_tt:0 "정치력 §Y150§!만 사용하여 §Y90일§! 동안 선택한 정책 효과를 적용합니다. 민간공장은 점유하지 않습니다. 동시에 다른 공산 경제정책 사업을 실행할 수 없습니다. 종료 또는 취소 후 §Y90일§! 동안 재착수할 수 없으며, 취소 시 정치력은 환급되지 않습니다."
+ HOK_KOR_communist_policy_project_end_tt:0 "사업 효과가 끝납니다. 모든 공산 경제정책 사업은 §Y90일§! 동안 재착수할 수 없습니다. 정치력은 환급되지 않습니다."
  HOK_KOR_yeo_joint_purchasing_project:0 "공동구매 조달 사업"
  HOK_KOR_yeo_joint_purchasing_project_desc:0 "협동조합의 주문을 모아 건축 자재와 기계를 공동 조달합니다. 민간공장 건설을 위한 집중 사업입니다.\n\n정치력 §Y150§!만 사용하며 민간공장을 점유하지 않습니다. 효과는 §Y90일§! 동안 적용됩니다. 종료 또는 취소 후 §Y90일§!의 공통 재착수 대기기간이 적용됩니다. 정부 변경, 항복, 내전 또는 해당 정책 경로의 상실로 취소되면 정치력은 환급되지 않습니다."
  HOK_KOR_yeo_rural_credit_project:0 "지역 금융 순환 사업"
- HOK_KOR_yeo_rural_credit_project_desc:0 "지역의 협동금융을 통해 건설 자금과 자재 대금을 연결합니다. 여러 종류의 건설 수요에 유연하게 대응하는 사업입니다.\n\n정치력 §Y75§!와 민간공장 §Y2개§!를 사용하며 효과는 §Y90일§! 동안 적용됩니다. 종료 또는 취소 후 §Y90일§!의 공통 재착수 대기기간이 적용됩니다. 정부 변경, 항복, 내전 또는 해당 정책 경로의 상실로 취소되면 정치력은 환급되지 않습니다."
+ HOK_KOR_yeo_rural_credit_project_desc:0 "지역의 협동금융을 통해 건설 자금과 자재 대금을 연결합니다. 여러 종류의 건설 수요에 유연하게 대응하는 사업입니다.\n\n정치력 §Y150§!만 사용하며 민간공장을 점유하지 않습니다. 효과는 §Y90일§! 동안 적용됩니다. 종료 또는 취소 후 §Y90일§!의 공통 재착수 대기기간이 적용됩니다. 정부 변경, 항복, 내전 또는 해당 정책 경로의 상실로 취소되면 정치력은 환급되지 않습니다."
  HOK_KOR_pak_plant_expansion_project:0 "군수설비 집중 건설"
  HOK_KOR_pak_plant_expansion_project_desc:0 "중공업 배정 계획에 따라 공작기계와 건설 인력을 군수설비 확충에 집중합니다. 설비를 직접 지급하지 않고 진행 중인 군수공장 건설을 지원합니다.\n\n정치력 §Y150§!만 사용하며 민간공장을 점유하지 않습니다. 효과는 §Y90일§! 동안 적용됩니다. 종료 또는 취소 후 §Y90일§!의 공통 재착수 대기기간이 적용됩니다. 정부 변경, 항복, 내전 또는 해당 정책 경로의 상실로 취소되면 정치력은 환급되지 않습니다."
  HOK_KOR_pak_current_output_project:0 "현행 생산 집중 지원"
- HOK_KOR_pak_current_output_project_desc:0 "현재 가동 중인 군수공장에 자재 공급과 정비 인력을 우선 배정합니다. 새 설비의 건설보다 기존 생산계획 이행에 집중합니다.\n\n정치력 §Y75§!와 민간공장 §Y2개§!를 사용하며 효과는 §Y90일§! 동안 적용됩니다. 종료 또는 취소 후 §Y90일§!의 공통 재착수 대기기간이 적용됩니다. 정부 변경, 항복, 내전 또는 해당 정책 경로의 상실로 취소되면 정치력은 환급되지 않습니다."
+ HOK_KOR_pak_current_output_project_desc:0 "현재 가동 중인 군수공장에 자재 공급과 정비 인력을 우선 배정합니다. 새 설비의 건설보다 기존 생산계획 이행에 집중합니다.\n\n정치력 §Y150§!만 사용하며 민간공장을 점유하지 않습니다. 효과는 §Y90일§! 동안 적용됩니다. 종료 또는 취소 후 §Y90일§!의 공통 재착수 대기기간이 적용됩니다. 정부 변경, 항복, 내전 또는 해당 정책 경로의 상실로 취소되면 정치력은 환급되지 않습니다."
  HOK_KOR_yeo_cooperative_workshops_electronics_bonus:0 "협동 작업장 전자공학 연구"
  HOK_KOR_communist_policy_project_start_pp_only_tt:0 "정치력 §Y150§!을 사용하여 §Y90일§! 동안 선택한 정책 효과를 적용합니다. 민간공장은 사용하지 않습니다. 동시에 다른 공산 경제정책 사업을 실행할 수 없으며 종료 또는 취소 후 §Y90일§! 동안 재착수할 수 없습니다."
  HOK_KOR_communist_policy_project_end_pp_only_tt:0 "사업 효과가 끝납니다. 모든 공산 경제정책 사업은 §Y90일§! 동안 재착수할 수 없습니다. 정치력은 환급되지 않습니다."
