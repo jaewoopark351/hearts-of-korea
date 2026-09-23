@@ -491,6 +491,14 @@ Required rules:
 
 ## 10. Diagnostics and logs
 
+### Test-file storage
+
+- Store all newly created test and diagnostic files under `C:\hoi\test\<task-or-run-id>\`. This includes test scripts, fixtures, generated reports, copied logs, screenshots, crash dumps, test saves, and save backups.
+- Set test helpers' output and backup paths to that external location before running them. Do not store new test files in this repository, including `.local-artifacts`, or in a Steam Workshop upload/package directory. Historical records referencing `.local-artifacts` do not authorize reusing it for new tests.
+- Keep production mod files and maintained documentation in their normal repository locations. Game-generated originals remain in the actual HOI4 user-data directory; place any test/evidence copies in `C:\hoi\test`. This storage rule does not itself authorize moving or deleting existing files, changing game settings, or running tests.
+
+### Runtime evidence
+
 The common Windows user-data location is:
 
 `\<Documents>/Paradox Interactive/Hearts of Iron IV/`
