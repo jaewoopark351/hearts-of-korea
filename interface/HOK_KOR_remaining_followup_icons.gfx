@@ -1,0 +1,527 @@
+#20260923_kpopmodder: Integrate local royal, regional and shared-policy artwork with genuine stages and compact decision variants.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_parliamentary_questions"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_parliamentary_questions.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_countersigned_orders"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_countersigned_orders.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_ministerial_reports"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_ministerial_reports.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_cabinet_confidence"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_cabinet_confidence.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_court_clerks"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_court_clerks.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_public_legal_notices"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_public_legal_notices.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_rural_legal_aid"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_rural_legal_aid.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_appeal_docket"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_appeal_docket.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_public_patronage"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_public_patronage.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_municipal_clinics"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_municipal_clinics.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_welfare_accounts"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_welfare_accounts.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_allied_observers"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_allied_observers.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_bilingual_manuals"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_bilingual_manuals.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cm_liaison_rotation"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cm_liaison_rotation.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_bibyeonsa_dockets"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_bibyeonsa_dockets.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_provincial_returns"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_provincial_returns.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_inspector_itineraries"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_inspector_itineraries.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_execution_registers"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_execution_registers.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_petition_calendar"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_petition_calendar.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_granary_ledgers"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_granary_ledgers.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_relief_dispatches"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_relief_dispatches.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_regimental_returns"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_regimental_returns.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_nco_examinations"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_nco_examinations.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_reserve_cadre"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_reserve_cadre.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_mobilization_review"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_mobilization_review.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_technical_memorials"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_technical_memorials.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_civil_service_practicum"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_civil_service_practicum.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_am_merit_registers"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/am_merit_registers.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_provincial_inventory"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_provincial_inventory.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_provision_accounts"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_provision_accounts.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_inspection_circuits"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_inspection_circuits.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_supply_returns"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_supply_returns.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_dispatch_codes"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_dispatch_codes.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_courier_relays"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_courier_relays.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_signal_logs"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_signal_logs.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_relay_exercises"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_relay_exercises.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_postwar_dockets"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_postwar_dockets.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_reconstruction_priorities"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_reconstruction_priorities.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_civil_accountability"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_civil_accountability.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_veteran_rolls"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_veteran_rolls.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_demobilization_schedule"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_demobilization_schedule.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_hw_peacetime_training"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/hw_peacetime_training.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_county_dossiers"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_county_dossiers.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_payroll_registers"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_payroll_registers.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_service_counters"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_service_counters.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_dispute_records"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_dispute_records.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_service_calendar"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_service_calendar.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_interpreter_desks"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_interpreter_desks.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_residence_certificates"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_residence_certificates.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_municipal_consultation"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_municipal_consultation.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_shared_service_manuals"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_shared_service_manuals.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_community_mediation"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_community_mediation.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_workshop_inventory"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_workshop_inventory.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_metallurgical_trials"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_metallurgical_trials.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_material_recovery"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_material_recovery.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_foundry_batches"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_foundry_batches.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_integrated_recovery"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_integrated_recovery.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_tenancy_records"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_tenancy_records.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_sanitation_rounds"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_sanitation_rounds.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_housing_repairs"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_housing_repairs.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_market_inspections"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_market_inspections.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_mc_settled_municipality"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/mc_settled_municipality.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_export_invoices"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_export_invoices.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_commercial_arbitration"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_commercial_arbitration.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_shipping_documents"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_shipping_documents.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_market_sampling"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_market_sampling.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_export_settlement"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_export_settlement.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_ore_classification"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_ore_classification.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_scrap_collection"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_scrap_collection.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_coke_testing"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_coke_testing.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_foundry_exchange"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_foundry_exchange.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_closed_material_cycle"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_closed_material_cycle.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_motor_driver_courses"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_motor_driver_courses.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_mechanized_loading"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_mechanized_loading.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_march_discipline"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_march_discipline.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_mobile_unit_recovery"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_mobile_unit_recovery.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_emergency_turn_drills"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_emergency_turn_drills.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_smoke_screen_procedures"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_smoke_screen_procedures.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_rescue_station_drills"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_rescue_station_drills.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_flight_weather_logs"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_flight_weather_logs.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_instrument_approaches"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_instrument_approaches.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_cmn_adverse_weather_flying"
+        texturefile = "gfx/interface/goals/HOK_KOR/remaining_followup/cmn_adverse_weather_flying.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cm_responsible_cabinet_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cm_responsible_cabinet_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cm_responsible_cabinet_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cm_responsible_cabinet_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cm_accessible_justice_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cm_accessible_justice_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cm_accessible_justice_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cm_accessible_justice_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cm_public_welfare_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cm_public_welfare_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cm_public_welfare_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cm_public_welfare_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cm_allied_liaison"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cm_allied_liaison.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_am_ordered_administration_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/am_ordered_administration_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_am_ordered_administration_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/am_ordered_administration_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_am_relief_protocol_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/am_relief_protocol_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_am_relief_protocol_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/am_relief_protocol_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_am_reserve_cadre_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/am_reserve_cadre_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_am_reserve_cadre_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/am_reserve_cadre_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_am_practical_bureaucracy"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/am_practical_bureaucracy.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_hw_provision_accounts_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/hw_provision_accounts_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_hw_provision_accounts_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/hw_provision_accounts_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_hw_courier_service_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/hw_courier_service_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_hw_courier_service_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/hw_courier_service_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_hw_civil_recovery_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/hw_civil_recovery_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_hw_civil_recovery_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/hw_civil_recovery_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_hw_reserve_training_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/hw_reserve_training_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_hw_reserve_training_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/hw_reserve_training_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_export_practice_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_export_practice_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_export_practice_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_export_practice_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_material_cycle_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_material_cycle_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_material_cycle_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_material_cycle_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_mobile_operations_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_mobile_operations_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_mobile_operations_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_mobile_operations_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_smoke_withdrawal"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_smoke_withdrawal.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_maritime_rescue"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_maritime_rescue.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_instrument_flying"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_instrument_flying.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_weather_flying"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/cmn_weather_flying.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_local_services_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_local_services_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_local_services_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_local_services_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_local_services_concentrated"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_local_services_concentrated.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_community_services_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_community_services_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_community_services_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_community_services_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_community_services_concentrated"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_community_services_concentrated.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_material_recovery_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_material_recovery_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_material_recovery_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_material_recovery_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_material_recovery_concentrated"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_material_recovery_concentrated.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_municipal_routine_1"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_municipal_routine_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_municipal_routine_2"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_municipal_routine_2.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_mc_municipal_routine_concentrated"
+        texturefile = "gfx/interface/ideas/HOK_KOR/remaining_followup/mc_municipal_routine_concentrated.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_mc_local_services_project"
+        texturefile = "gfx/interface/decisions/HOK_KOR/remaining_followup/mc_local_services_project.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_mc_community_services_project"
+        texturefile = "gfx/interface/decisions/HOK_KOR/remaining_followup/mc_community_services_project.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_mc_material_recovery_project"
+        texturefile = "gfx/interface/decisions/HOK_KOR/remaining_followup/mc_material_recovery_project.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_mc_municipal_routine_project"
+        texturefile = "gfx/interface/decisions/HOK_KOR/remaining_followup/mc_municipal_routine_project.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_category_manchurian_followup"
+        texturefile = "gfx/interface/decisions/HOK_KOR/remaining_followup/manchurian_followup_programs.dds"
+    }
+}

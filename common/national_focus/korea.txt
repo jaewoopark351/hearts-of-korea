@@ -12621,4 +12621,1614 @@ focus_tree = {
 			else_if = { limit = { has_completed_focus = HOK_KOR_nrsc_construction_practice } if = { limit = { has_idea = HOK_KOR_nrsc_construction_budget_1 } swap_ideas = { remove_idea = HOK_KOR_nrsc_construction_budget_1 add_idea = HOK_KOR_nrsc_construction_budget_2 } } else = { add_ideas = HOK_KOR_nrsc_construction_budget_2 } }
 		}
 	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_parliamentary_questions
+		icon = GFX_HOK_KOR_focus_cm_parliamentary_questions
+		relative_position_id = KOR_confucian_democracy
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_confucian_democracy }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_countersigned_orders
+		icon = GFX_HOK_KOR_focus_cm_countersigned_orders
+		relative_position_id = HOK_KOR_cm_parliamentary_questions
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_parliamentary_questions }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cm_responsible_cabinet_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_ministerial_reports
+		icon = GFX_HOK_KOR_focus_cm_ministerial_reports
+		relative_position_id = HOK_KOR_cm_parliamentary_questions
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_parliamentary_questions }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 100
+			add_tech_bonus = { name = HOK_KOR_cm_ministerial_reports bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_cabinet_confidence
+		icon = GFX_HOK_KOR_focus_cm_cabinet_confidence
+		relative_position_id = HOK_KOR_cm_parliamentary_questions
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_countersigned_orders }
+		prerequisite = { focus = HOK_KOR_cm_ministerial_reports }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_cm_responsible_cabinet_1 } swap_ideas = { remove_idea = HOK_KOR_cm_responsible_cabinet_1 add_idea = HOK_KOR_cm_responsible_cabinet_2 } }
+			else = { add_ideas = HOK_KOR_cm_responsible_cabinet_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_court_clerks
+		icon = GFX_HOK_KOR_focus_cm_court_clerks
+		relative_position_id = KOR_nomination_prime_minister
+		x = 8
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_nomination_prime_minister }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister has_completed_focus = KOR_reaffirming_the_independence_of_the_judiciary }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cm_accessible_justice_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_public_legal_notices
+		icon = GFX_HOK_KOR_focus_cm_public_legal_notices
+		relative_position_id = HOK_KOR_cm_court_clerks
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_court_clerks }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			add_tech_bonus = { name = HOK_KOR_cm_public_legal_notices bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_rural_legal_aid
+		icon = GFX_HOK_KOR_focus_cm_rural_legal_aid
+		relative_position_id = HOK_KOR_cm_court_clerks
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_court_clerks }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_appeal_docket
+		icon = GFX_HOK_KOR_focus_cm_appeal_docket
+		relative_position_id = HOK_KOR_cm_court_clerks
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_public_legal_notices }
+		prerequisite = { focus = HOK_KOR_cm_rural_legal_aid }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_cm_accessible_justice_1 } swap_ideas = { remove_idea = HOK_KOR_cm_accessible_justice_1 add_idea = HOK_KOR_cm_accessible_justice_2 } }
+			else = { add_ideas = HOK_KOR_cm_accessible_justice_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_public_patronage
+		icon = GFX_HOK_KOR_focus_cm_public_patronage
+		relative_position_id = KOR_nomination_prime_minister
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_nomination_prime_minister }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister has_completed_focus = KOR_modern_sejong_the_great }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cm_public_welfare_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_municipal_clinics
+		icon = GFX_HOK_KOR_focus_cm_municipal_clinics
+		relative_position_id = HOK_KOR_cm_public_patronage
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_public_patronage }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_cm_public_welfare_1 } swap_ideas = { remove_idea = HOK_KOR_cm_public_welfare_1 add_idea = HOK_KOR_cm_public_welfare_2 } }
+			else = { add_ideas = HOK_KOR_cm_public_welfare_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_welfare_accounts
+		icon = GFX_HOK_KOR_focus_cm_welfare_accounts
+		relative_position_id = HOK_KOR_cm_public_patronage
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_public_patronage }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 100
+			add_tech_bonus = { name = HOK_KOR_cm_welfare_accounts bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_allied_observers
+		icon = GFX_HOK_KOR_focus_cm_allied_observers
+		relative_position_id = KOR_joint_military_practice
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_joint_military_practice }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister is_in_faction = yes }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			army_experience = 50
+			navy_experience = 25
+			air_experience = 25
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_bilingual_manuals
+		icon = GFX_HOK_KOR_focus_cm_bilingual_manuals
+		relative_position_id = HOK_KOR_cm_allied_observers
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_allied_observers }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister is_in_faction = yes }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = { name = HOK_KOR_cm_bilingual_manuals bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cm_liaison_rotation
+		icon = GFX_HOK_KOR_focus_cm_liaison_rotation
+		relative_position_id = HOK_KOR_cm_allied_observers
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cm_allied_observers }
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister is_in_faction = yes }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cm_allied_liaison
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_bibyeonsa_dockets
+		icon = GFX_HOK_KOR_focus_am_bibyeonsa_dockets
+		relative_position_id = KOR_urihwangsilsaranghoe
+		x = 20
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_urihwangsilsaranghoe }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order has_completed_focus = KOR_revive_bibyeonsa }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_provincial_returns
+		icon = GFX_HOK_KOR_focus_am_provincial_returns
+		relative_position_id = HOK_KOR_am_bibyeonsa_dockets
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_bibyeonsa_dockets }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_am_ordered_administration_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_inspector_itineraries
+		icon = GFX_HOK_KOR_focus_am_inspector_itineraries
+		relative_position_id = HOK_KOR_am_bibyeonsa_dockets
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_bibyeonsa_dockets }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_execution_registers
+		icon = GFX_HOK_KOR_focus_am_execution_registers
+		relative_position_id = HOK_KOR_am_bibyeonsa_dockets
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_provincial_returns }
+		prerequisite = { focus = HOK_KOR_am_inspector_itineraries }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_am_ordered_administration_1 } swap_ideas = { remove_idea = HOK_KOR_am_ordered_administration_1 add_idea = HOK_KOR_am_ordered_administration_2 } } else = { add_ideas = HOK_KOR_am_ordered_administration_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_petition_calendar
+		icon = GFX_HOK_KOR_focus_am_petition_calendar
+		relative_position_id = KOR_urihwangsilsaranghoe
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_urihwangsilsaranghoe }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_granary_ledgers
+		icon = GFX_HOK_KOR_focus_am_granary_ledgers
+		relative_position_id = HOK_KOR_am_petition_calendar
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_petition_calendar }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_am_relief_protocol_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_relief_dispatches
+		icon = GFX_HOK_KOR_focus_am_relief_dispatches
+		relative_position_id = HOK_KOR_am_petition_calendar
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_granary_ledgers }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_am_relief_protocol_1 } swap_ideas = { remove_idea = HOK_KOR_am_relief_protocol_1 add_idea = HOK_KOR_am_relief_protocol_2 } } else = { add_ideas = HOK_KOR_am_relief_protocol_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_regimental_returns
+		icon = GFX_HOK_KOR_focus_am_regimental_returns
+		relative_position_id = KOR_urihwangsilsaranghoe
+		x = 12
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_urihwangsilsaranghoe }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order has_completed_focus = KOR_reform_military }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_nco_examinations
+		icon = GFX_HOK_KOR_focus_am_nco_examinations
+		relative_position_id = HOK_KOR_am_regimental_returns
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_regimental_returns }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_am_reserve_cadre_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_reserve_cadre
+		icon = GFX_HOK_KOR_focus_am_reserve_cadre
+		relative_position_id = HOK_KOR_am_regimental_returns
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_regimental_returns }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_am_reserve_cadre bonus = 1.0 uses = 1 category = infantry_weapons }
+			army_experience = 25
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_mobilization_review
+		icon = GFX_HOK_KOR_focus_am_mobilization_review
+		relative_position_id = HOK_KOR_am_regimental_returns
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_nco_examinations }
+		prerequisite = { focus = HOK_KOR_am_reserve_cadre }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_am_reserve_cadre_1 } swap_ideas = { remove_idea = HOK_KOR_am_reserve_cadre_1 add_idea = HOK_KOR_am_reserve_cadre_2 } } else = { add_ideas = HOK_KOR_am_reserve_cadre_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_technical_memorials
+		icon = GFX_HOK_KOR_focus_am_technical_memorials
+		relative_position_id = KOR_urihwangsilsaranghoe
+		x = 8
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_urihwangsilsaranghoe }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order has_completed_focus = KOR_revive_bibyeonsa }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_am_technical_memorials bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_civil_service_practicum
+		icon = GFX_HOK_KOR_focus_am_civil_service_practicum
+		relative_position_id = HOK_KOR_am_technical_memorials
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_technical_memorials }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_am_civil_service_practicum bonus = 1.0 uses = 1 category = electronics }
+			add_political_power = 100
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_am_merit_registers
+		icon = GFX_HOK_KOR_focus_am_merit_registers
+		relative_position_id = HOK_KOR_am_technical_memorials
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_am_civil_service_practicum }
+		available = { original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_am_practical_bureaucracy
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_provincial_inventory
+		icon = GFX_HOK_KOR_focus_hw_provincial_inventory
+		#20260923_kpopmodder: Move the Hwan supply module clear of the royal exclusion line and adjacent focus plates.
+		relative_position_id = KOR_return_of_the_king
+		#20260923_kpopmodder: Place the Hwan supply branch in the upper-right space, clear of the court branch entry line.
+		x = 25
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_return_of_the_king }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_hw_provincial_inventory bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_provision_accounts
+		icon = GFX_HOK_KOR_focus_hw_provision_accounts
+		relative_position_id = HOK_KOR_hw_provincial_inventory
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_provincial_inventory }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_hw_provision_accounts_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_inspection_circuits
+		icon = GFX_HOK_KOR_focus_hw_inspection_circuits
+		relative_position_id = HOK_KOR_hw_provincial_inventory
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_provincial_inventory }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_supply_returns
+		icon = GFX_HOK_KOR_focus_hw_supply_returns
+		relative_position_id = HOK_KOR_hw_provincial_inventory
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_provision_accounts }
+		prerequisite = { focus = HOK_KOR_hw_inspection_circuits }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_hw_provision_accounts_1 } swap_ideas = { remove_idea = HOK_KOR_hw_provision_accounts_1 add_idea = HOK_KOR_hw_provision_accounts_2 } } else = { add_ideas = HOK_KOR_hw_provision_accounts_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_dispatch_codes
+		icon = GFX_HOK_KOR_focus_hw_dispatch_codes
+		relative_position_id = KOR_urihwangsilsaranghoe
+		x = -6
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_urihwangsilsaranghoe }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_courier_relays
+		icon = GFX_HOK_KOR_focus_hw_courier_relays
+		relative_position_id = HOK_KOR_hw_dispatch_codes
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_dispatch_codes }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_hw_courier_service_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_signal_logs
+		icon = GFX_HOK_KOR_focus_hw_signal_logs
+		relative_position_id = HOK_KOR_hw_dispatch_codes
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_dispatch_codes }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_hw_signal_logs bonus = 1.0 uses = 1 category = electronics }
+			army_experience = 25
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_relay_exercises
+		icon = GFX_HOK_KOR_focus_hw_relay_exercises
+		relative_position_id = HOK_KOR_hw_dispatch_codes
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_courier_relays }
+		prerequisite = { focus = HOK_KOR_hw_signal_logs }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_hw_courier_service_1 } swap_ideas = { remove_idea = HOK_KOR_hw_courier_service_1 add_idea = HOK_KOR_hw_courier_service_2 } } else = { add_ideas = HOK_KOR_hw_courier_service_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_postwar_dockets
+		icon = GFX_HOK_KOR_focus_hw_postwar_dockets
+		relative_position_id = KOR_hwan_world_order
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_hwan_world_order }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_reconstruction_priorities
+		icon = GFX_HOK_KOR_focus_hw_reconstruction_priorities
+		relative_position_id = HOK_KOR_hw_postwar_dockets
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_postwar_dockets }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_hw_reconstruction_priorities bonus = 1.5 uses = 1 category = construction_tech }
+			add_ideas = HOK_KOR_hw_civil_recovery_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_civil_accountability
+		icon = GFX_HOK_KOR_focus_hw_civil_accountability
+		relative_position_id = HOK_KOR_hw_postwar_dockets
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_reconstruction_priorities }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_hw_civil_recovery_1 } swap_ideas = { remove_idea = HOK_KOR_hw_civil_recovery_1 add_idea = HOK_KOR_hw_civil_recovery_2 } } else = { add_ideas = HOK_KOR_hw_civil_recovery_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_veteran_rolls
+		icon = GFX_HOK_KOR_focus_hw_veteran_rolls
+		relative_position_id = KOR_hwan_world_order
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_hwan_world_order }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_manpower = 25000
+			army_experience = 25
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_demobilization_schedule
+		icon = GFX_HOK_KOR_focus_hw_demobilization_schedule
+		relative_position_id = HOK_KOR_hw_veteran_rolls
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_veteran_rolls }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_hw_reserve_training_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_hw_peacetime_training
+		icon = GFX_HOK_KOR_focus_hw_peacetime_training
+		relative_position_id = HOK_KOR_hw_veteran_rolls
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_hw_demobilization_schedule }
+		available = { original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_hw_reserve_training_1 } swap_ideas = { remove_idea = HOK_KOR_hw_reserve_training_1 add_idea = HOK_KOR_hw_reserve_training_2 } } else = { add_ideas = HOK_KOR_hw_reserve_training_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_county_dossiers
+		icon = GFX_HOK_KOR_focus_mc_county_dossiers
+		relative_position_id = KOR_the_manchurian_project
+		x = 6
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_the_manchurian_project }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_payroll_registers
+		icon = GFX_HOK_KOR_focus_mc_payroll_registers
+		relative_position_id = HOK_KOR_mc_county_dossiers
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_county_dossiers }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_1 } } }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_service_counters
+		icon = GFX_HOK_KOR_focus_mc_service_counters
+		relative_position_id = HOK_KOR_mc_county_dossiers
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_county_dossiers }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_mc_service_counters bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_dispute_records
+		icon = GFX_HOK_KOR_focus_mc_dispute_records
+		relative_position_id = HOK_KOR_mc_county_dossiers
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_payroll_registers }
+		prerequisite = { focus = HOK_KOR_mc_service_counters }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_service_calendar
+		icon = GFX_HOK_KOR_focus_mc_service_calendar
+		relative_position_id = HOK_KOR_mc_county_dossiers
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_dispute_records }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_2 } } }
+			unlock_decision_category_tooltip = HOK_KOR_manchurian_followup_programs
+			unlock_decision_tooltip = HOK_KOR_mc_local_services_project
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_interpreter_desks
+		icon = GFX_HOK_KOR_focus_mc_interpreter_desks
+		relative_position_id = KOR_multiethnic_embrace
+		x = -4
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_multiethnic_embrace }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_residence_certificates
+		icon = GFX_HOK_KOR_focus_mc_residence_certificates
+		relative_position_id = HOK_KOR_mc_interpreter_desks
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_interpreter_desks }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_1 } } }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_municipal_consultation
+		icon = GFX_HOK_KOR_focus_mc_municipal_consultation
+		relative_position_id = HOK_KOR_mc_interpreter_desks
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_interpreter_desks }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_mc_municipal_consultation bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_shared_service_manuals
+		icon = GFX_HOK_KOR_focus_mc_shared_service_manuals
+		relative_position_id = HOK_KOR_mc_interpreter_desks
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_residence_certificates }
+		prerequisite = { focus = HOK_KOR_mc_municipal_consultation }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_community_mediation
+		icon = GFX_HOK_KOR_focus_mc_community_mediation
+		relative_position_id = HOK_KOR_mc_interpreter_desks
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_shared_service_manuals }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_2 } } }
+			unlock_decision_category_tooltip = HOK_KOR_manchurian_followup_programs
+			unlock_decision_tooltip = HOK_KOR_mc_community_services_project
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_workshop_inventory
+		icon = GFX_HOK_KOR_focus_mc_workshop_inventory
+		relative_position_id = KOR_resource_exploration_in_manchuria
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_resource_exploration_in_manchuria }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_completed_focus = KOR_arsenal_of_far_east }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_metallurgical_trials
+		icon = GFX_HOK_KOR_focus_mc_metallurgical_trials
+		relative_position_id = HOK_KOR_mc_workshop_inventory
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_workshop_inventory }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } }
+			714 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } }
+			717 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_material_recovery
+		icon = GFX_HOK_KOR_focus_mc_material_recovery
+		relative_position_id = HOK_KOR_mc_workshop_inventory
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_workshop_inventory }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_mc_material_recovery bonus = 1.5 uses = 1 category = excavation_tech }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_foundry_batches
+		icon = GFX_HOK_KOR_focus_mc_foundry_batches
+		relative_position_id = HOK_KOR_mc_workshop_inventory
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_metallurgical_trials }
+		prerequisite = { focus = HOK_KOR_mc_material_recovery }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_integrated_recovery
+		icon = GFX_HOK_KOR_focus_mc_integrated_recovery
+		relative_position_id = HOK_KOR_mc_workshop_inventory
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_foundry_batches }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } } }
+			714 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } } }
+			717 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } } }
+			unlock_decision_category_tooltip = HOK_KOR_manchurian_followup_programs
+			unlock_decision_tooltip = HOK_KOR_mc_material_recovery_project
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_tenancy_records
+		icon = GFX_HOK_KOR_focus_mc_tenancy_records
+		relative_position_id = KOR_rebuild_guknaeseong_as_new_city
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_rebuild_guknaeseong_as_new_city }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_sanitation_rounds
+		icon = GFX_HOK_KOR_focus_mc_sanitation_rounds
+		relative_position_id = HOK_KOR_mc_tenancy_records
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_tenancy_records }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_1 } } }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_housing_repairs
+		icon = GFX_HOK_KOR_focus_mc_housing_repairs
+		relative_position_id = HOK_KOR_mc_tenancy_records
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_tenancy_records }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_mc_housing_repairs bonus = 1.0 uses = 1 category = construction_tech }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_market_inspections
+		icon = GFX_HOK_KOR_focus_mc_market_inspections
+		relative_position_id = HOK_KOR_mc_tenancy_records
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_sanitation_rounds }
+		prerequisite = { focus = HOK_KOR_mc_housing_repairs }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_mc_settled_municipality
+		icon = GFX_HOK_KOR_focus_mc_settled_municipality
+		relative_position_id = HOK_KOR_mc_tenancy_records
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = HOK_KOR_mc_market_inspections }
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_2 } } }
+			unlock_decision_category_tooltip = HOK_KOR_manchurian_followup_programs
+			unlock_decision_tooltip = HOK_KOR_mc_municipal_routine_project
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_export_invoices
+		icon = GFX_HOK_KOR_focus_cmn_export_invoices
+		relative_position_id = KOR_devalue_the_won
+		x = 17
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_devalue_the_won }
+		available = { has_civil_war = no has_completed_focus = KOR_support_light_industry_export }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_commercial_arbitration
+		icon = GFX_HOK_KOR_focus_cmn_commercial_arbitration
+		relative_position_id = HOK_KOR_cmn_export_invoices
+		x = -1
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_export_invoices }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cmn_export_practice_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_shipping_documents
+		icon = GFX_HOK_KOR_focus_cmn_shipping_documents
+		relative_position_id = HOK_KOR_cmn_export_invoices
+		x = 1
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_export_invoices }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_cmn_shipping_documents bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_market_sampling
+		icon = GFX_HOK_KOR_focus_cmn_market_sampling
+		relative_position_id = HOK_KOR_cmn_export_invoices
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_commercial_arbitration }
+		prerequisite = { focus = HOK_KOR_cmn_shipping_documents }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_export_settlement
+		icon = GFX_HOK_KOR_focus_cmn_export_settlement
+		relative_position_id = HOK_KOR_cmn_export_invoices
+		x = 0
+		y = 4
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_market_sampling }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_cmn_export_practice_1 } swap_ideas = { remove_idea = HOK_KOR_cmn_export_practice_1 add_idea = HOK_KOR_cmn_export_practice_2 } } else = { add_ideas = HOK_KOR_cmn_export_practice_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_ore_classification
+		icon = GFX_HOK_KOR_focus_cmn_ore_classification
+		relative_position_id = KOR_develop_unsan_gold_mine
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = KOR_develop_unsan_gold_mine }
+		available = { has_civil_war = no has_completed_focus = KOR_hamgyeong_underground_resources }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_cmn_ore_classification bonus = 1.5 uses = 1 category = industry }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_scrap_collection
+		icon = GFX_HOK_KOR_focus_cmn_scrap_collection
+		relative_position_id = HOK_KOR_cmn_ore_classification
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_ore_classification }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cmn_material_cycle_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_coke_testing
+		icon = GFX_HOK_KOR_focus_cmn_coke_testing
+		relative_position_id = HOK_KOR_cmn_ore_classification
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_ore_classification }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_cmn_coke_testing bonus = 1.0 uses = 1 category = excavation_tech }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_foundry_exchange
+		icon = GFX_HOK_KOR_focus_cmn_foundry_exchange
+		relative_position_id = HOK_KOR_cmn_ore_classification
+		x = 1
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_scrap_collection }
+		prerequisite = { focus = HOK_KOR_cmn_coke_testing }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_closed_material_cycle
+		icon = GFX_HOK_KOR_focus_cmn_closed_material_cycle
+		relative_position_id = HOK_KOR_cmn_ore_classification
+		x = 1
+		y = 3
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_foundry_exchange }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_cmn_material_cycle_1 } swap_ideas = { remove_idea = HOK_KOR_cmn_material_cycle_1 add_idea = HOK_KOR_cmn_material_cycle_2 } } else = { add_ideas = HOK_KOR_cmn_material_cycle_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_motor_driver_courses
+		icon = GFX_HOK_KOR_focus_cmn_motor_driver_courses
+		relative_position_id = KOR_mobile_infantry
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_mobile_infantry }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_mechanized_loading
+		icon = GFX_HOK_KOR_focus_cmn_mechanized_loading
+		relative_position_id = HOK_KOR_cmn_motor_driver_courses
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_motor_driver_courses }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cmn_mobile_operations_1
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_march_discipline
+		icon = GFX_HOK_KOR_focus_cmn_march_discipline
+		relative_position_id = HOK_KOR_cmn_motor_driver_courses
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_motor_driver_courses }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_cmn_march_discipline bonus = 1.0 uses = 1 category = electronics }
+			army_experience = 25
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_mobile_unit_recovery
+		icon = GFX_HOK_KOR_focus_cmn_mobile_unit_recovery
+		relative_position_id = HOK_KOR_cmn_motor_driver_courses
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_mechanized_loading }
+		prerequisite = { focus = HOK_KOR_cmn_march_discipline }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { has_idea = HOK_KOR_cmn_mobile_operations_1 } swap_ideas = { remove_idea = HOK_KOR_cmn_mobile_operations_1 add_idea = HOK_KOR_cmn_mobile_operations_2 } } else = { add_ideas = HOK_KOR_cmn_mobile_operations_2 }
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_emergency_turn_drills
+		icon = GFX_HOK_KOR_focus_cmn_emergency_turn_drills
+		relative_position_id = KOR_large_surface_fleet
+		x = -4
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_large_surface_fleet }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_smoke_screen_procedures
+		icon = GFX_HOK_KOR_focus_cmn_smoke_screen_procedures
+		relative_position_id = HOK_KOR_cmn_emergency_turn_drills
+		x = -1
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_emergency_turn_drills }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cmn_smoke_withdrawal
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_rescue_station_drills
+		icon = GFX_HOK_KOR_focus_cmn_rescue_station_drills
+		relative_position_id = HOK_KOR_cmn_emergency_turn_drills
+		x = 1
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_emergency_turn_drills }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cmn_maritime_rescue
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_flight_weather_logs
+		icon = GFX_HOK_KOR_focus_cmn_flight_weather_logs
+		relative_position_id = KOR_establishment_of_the_afoc
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = KOR_establishment_of_the_afoc }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_cmn_flight_weather_logs bonus = 1.0 uses = 1 category = electronics }
+			air_experience = 25
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_instrument_approaches
+		icon = GFX_HOK_KOR_focus_cmn_instrument_approaches
+		relative_position_id = HOK_KOR_cmn_flight_weather_logs
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_flight_weather_logs }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cmn_instrument_flying
+		}
+	}
+	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
+	focus = {
+		id = HOK_KOR_cmn_adverse_weather_flying
+		icon = GFX_HOK_KOR_focus_cmn_adverse_weather_flying
+		relative_position_id = HOK_KOR_cmn_flight_weather_logs
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_cmn_flight_weather_logs }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = HOK_KOR_cmn_weather_flying
+		}
+	}
 }

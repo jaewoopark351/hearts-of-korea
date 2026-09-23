@@ -1,0 +1,6 @@
+#20260923_kpopmodder: Expose each independently unlocked regional operating program.
+HOK_KOR_manchurian_followup_programs = {
+	icon = GFX_HOK_KOR_decision_category_manchurian_followup
+	allowed = { original_tag = KOR }
+	visible = { OR = { has_completed_focus = HOK_KOR_mc_service_calendar has_completed_focus = HOK_KOR_mc_community_mediation has_completed_focus = HOK_KOR_mc_integrated_recovery has_completed_focus = HOK_KOR_mc_settled_municipality } }
+}

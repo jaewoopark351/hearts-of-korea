@@ -1,0 +1,105 @@
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_local_services_1 = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_local_services_1
+	state_production_speed_buildings_factor = 0.15
+	local_supplies = 0.1
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_local_services_2 = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_local_services_2
+	state_production_speed_buildings_factor = 0.2
+	local_supplies = 0.2
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_local_services_concentrated = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_local_services_concentrated
+	state_production_speed_rail_way_factor = 0.25
+	local_supplies = 0.25
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_community_services_1 = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no has_government = democratic } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } KOR = { NOT = { has_government = democratic } } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_community_services_1
+	local_manpower = 0.15
+	state_production_speed_buildings_factor = 0.1
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_community_services_2 = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no has_government = democratic } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } KOR = { NOT = { has_government = democratic } } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_community_services_2
+	local_manpower = 0.25
+	state_production_speed_buildings_factor = 0.15
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_community_services_concentrated = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no has_government = democratic } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } KOR = { NOT = { has_government = democratic } } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_community_services_concentrated
+	local_manpower = 0.25
+	state_production_speed_buildings_factor = 0.25
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_material_recovery_1 = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_material_recovery_1
+	state_resources_factor = 0.15
+	state_production_speed_arms_factory_factor = 0.15
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_material_recovery_2 = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_material_recovery_2
+	state_resources_factor = 0.25
+	state_production_speed_arms_factory_factor = 0.2
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_material_recovery_concentrated = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_material_recovery_concentrated
+	state_resources_factor = 0.25
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_municipal_routine_1 = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_municipal_routine_1
+	local_building_slots_factor = 0.1
+	state_production_speed_industrial_complex_factor = 0.15
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_municipal_routine_2 = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_municipal_routine_2
+	local_building_slots_factor = 0.2
+	state_production_speed_industrial_complex_factor = 0.2
+}
+
+#20260923_kpopmodder: Apply regional benefits only to an eligible Korean-owned and fully controlled state.
+HOK_KOR_mc_municipal_routine_concentrated = {
+	enable = { ROOT = { is_owned_by = KOR is_fully_controlled_by = KOR KOR = { has_capitulated = no } } }
+	remove_trigger = { ROOT = { OR = { NOT = { is_owned_by = KOR } NOT = { is_fully_controlled_by = KOR } KOR = { has_capitulated = yes } } } }
+	icon = GFX_idea_HOK_KOR_icon_mc_municipal_routine_concentrated
+	state_production_speed_buildings_factor = 0.25
+}

@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "documented_on": "2026-09-23",
-  "status": "APPLIED_378_FINAL_CLEAN_LOAD_AND_PARTIAL_RUNTIME_VALIDATION",
+  "status": "APPLIED_460_H1_RIGHT_SPACE_STATIC_CHECKED_UI_BLOCKED",
   "source": "common/national_focus/korea.txt",
-  "source_sha256": "4cb9406bc55617b0d3f6a7c4d471c86def024b4fed702d9527ed2e451bfa8856",
+  "source_sha256": "1cedaf78903db31d15e3837e20069b71bca8fc674212b1d033f0d721b2b6735c",
   "baseline_source_sha256": "2a124ff35d4fb10e33619614470c03ce039324e8013d97237f8feb38c28c3cae",
-  "count": 378,
+  "count": 460,
   "absolute_anchors": 7,
-  "relative_nodes": 371,
+  "relative_nodes": 453,
   "bounds": {
     "x_min": 0,
-    "x_max": 204,
+    "x_max": 212,
     "y_min": 0,
     "y_max": 24
   },
@@ -30,7 +30,10 @@
     "2026-09-22 fascist staff F2: four relative nodes form a 3-row parallel module at (172,6), (171,7), (173,7), (172,8), attached to KOR_prussia_in_the_far_east at (169,5). The prior 358 focus blocks and resolved positions, including uncommitted F1, are byte-preserved against source SHA256 8537c9b8df2ed75acd0f007aa00f8ebefcb80ac597d677eaf6e5c5ed06840a0b. F1 is not a prerequisite. Both middle policies are required by the capstone. Whole bounds and zero-movement offsets remain unchanged; static rectangle and connector models do not prove in-game rendering.",
     "2026-09-22 political HIDE compaction: supersedes prior zero-movement offset notes without changing any base x/y or relative anchor. Only five absolute political/common roots change offsets; 362 non-offset definitions remain unchanged against SHA256 8a721a8739834bac5a0ed30f3d3335ced9ceaf4bc63439b1db8bfe2c14299aa8. Conditional final positions are specified separately below. Static results do not prove engine-rendered layout.",
     "2026-09-22 F3 final upper layout supersedes the first lower placement: root (174,4), siblings (173,5)/(175,5), capstone (174,6), anchored/prerequisite to KOR_gathering_the_farright_in_the_military. Existing completed-coup availability gate remains; world-reign completion is no longer required by this new module. First lower placement produced an unrelated collinear F2 merge in the observed HIDE UI. Existing 362 blocks and all seven offsets remain byte-preserved. The new focuses inherit fascist -84x once. See the F3 incident for source-specific verification.",
-    "2026-09-23 F4/F5/F6 add twelve relative focuses while preserving all 366 previous focus blocks, base coordinates, seven offset blocks and whole bounds. F4 requires existing F2 staff regulations and actual occupied non-core territory; its root (174,9), middle (173,10)/(175,10), merge (174,11) keep the entry clear of F2 nameplates. F5 and F6 use the NRSC placement/prerequisite root with transparent later-availability gates (Prussia and world-reign respectively). F5 (159,3), (158,5)/(160,5), (159,6) reserves row4 for routing past the fixed air sector under HIDE; F6 (163,3), (162,4)/(164,4), (163,5) retains a genuine budget exclusion and OR capstone. All twelve inherit -84x once. Static geometric checks do not prove engine UI, exclusion marks, movement or normal progression. See docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md."
+    "2026-09-23 F4/F5/F6 add twelve relative focuses while preserving all 366 previous focus blocks, base coordinates, seven offset blocks and whole bounds. F4 requires existing F2 staff regulations and actual occupied non-core territory; its root (174,9), middle (173,10)/(175,10), merge (174,11) keep the entry clear of F2 nameplates. F5 and F6 use the NRSC placement/prerequisite root with transparent later-availability gates (Prussia and world-reign respectively). F5 (159,3), (158,5)/(160,5), (159,6) reserves row4 for routing past the fixed air sector under HIDE; F6 (163,3), (162,4)/(164,4), (163,5) retains a genuine budget exclusion and OR capstone. All twelve inherit -84x once. Static geometric checks do not prove engine UI, exclusion marks, movement or normal progression. See docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md.",
+    "2026-09-23 remaining 82: constitutional monarchy 14, absolute monarchy 14, Hwan Empire 14, Manchuria 20 and common industry/military 20 are arranged as 21 short policy modules. All 378 previous focus blocks, placement fields, seven direct offsets, continuous-focus panel and shortcuts are preserved against 4cb9406bc55617b0d3f6a7c4d471c86def024b4fed702d9527ed2e451bfa8856. Base bounds extend only x204 to x211; y0-24 is unchanged. C/A/H inherit royal -101x once even when constitutional government is democratic or Hwan government has another ideology; M/G stay fixed. Some module roots use an earlier visible entry with the intended later policy completion retained in availability. M3 additionally requires existing Manchurian resource exploration; G2 additionally requires existing Unsan gold-mine development, each an intentional 35-day existing prerequisite for the new resource-policy scope. Three orthogonal connection models across all 20 documented political states find no new icon/title rectangle overlaps, line contacts or unrelated horizontal collinearity; this is not engine UI or progression proof.",
+    "2026-09-23 H1 repair supersedes only the H1 coordinates in the previous82-node note: user screenshot confirmed an existing mutually-exclusive wire through the H1 root title, omitted from the former prerequisite-line model. Move root relative(-3,1) to(-1,6) under the unchanged king-return anchor, yielding(185,10)->(184,11)/(186,11)->(185,12). Child relative values and all gameplay unchanged; other456 positions and bounds preserved. Previous905a runtime evidence remains historical, not a rerun of currentdd2334a0. See the dedicated H1 repair incident.",
+    "2026-09-23 H1 requested upper-right relocation supersedes only H1 placement in the previous repair: root relative(-1,6) to(25,1) under king-return(186,4), giving(211,5)->(210,6)/(212,6)->(211,7). All other456 positions and all gameplay are unchanged. Base maximumx rises211 to212 only; HIDE maximum110 to111. Inside-width candidates208..210 flagged a possible court-entry-wire/nameplate contact;211 clears all20 conservative modeled states. Actual UI remains blocked by unavailable native computer-use pipe; prior dd2334a0 observations are historical."
   ],
   "nodes": [
     {
@@ -15150,20 +15153,1578 @@
           "y": 5
         }
       }
+    },
+    {
+      "id": "HOK_KOR_cm_parliamentary_questions",
+      "name": "정례 대정부 질문",
+      "origin": "second_wave_remaining_82",
+      "module": "C1",
+      "declaration_order": 378,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_confucian_democracy",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 204,
+          "y": 10
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_countersigned_orders",
+      "name": "부서명령 책임서명",
+      "origin": "second_wave_remaining_82",
+      "module": "C1",
+      "declaration_order": 379,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_parliamentary_questions",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 203,
+          "y": 11
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_ministerial_reports",
+      "name": "내각 정보행정",
+      "origin": "second_wave_remaining_82",
+      "module": "C1",
+      "declaration_order": 380,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_parliamentary_questions",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 205,
+          "y": 11
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_cabinet_confidence",
+      "name": "책임내각의 정착",
+      "origin": "second_wave_remaining_82",
+      "module": "C1",
+      "declaration_order": 381,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_parliamentary_questions",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 204,
+          "y": 12
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_court_clerks",
+      "name": "국민 법률구조망",
+      "origin": "second_wave_remaining_82",
+      "module": "C2",
+      "declaration_order": 382,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_nomination_prime_minister",
+        "script_xy": {
+          "x": 8,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 210,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_public_legal_notices",
+      "name": "노사 분쟁 조정",
+      "origin": "second_wave_remaining_82",
+      "module": "C2",
+      "declaration_order": 383,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_court_clerks",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 209,
+          "y": 9
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_rural_legal_aid",
+      "name": "지방 순회재판",
+      "origin": "second_wave_remaining_82",
+      "module": "C2",
+      "declaration_order": 384,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_court_clerks",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 211,
+          "y": 9
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_appeal_docket",
+      "name": "권리구제 제도화",
+      "origin": "second_wave_remaining_82",
+      "module": "C2",
+      "declaration_order": 385,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_court_clerks",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 210,
+          "y": 10
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_public_patronage",
+      "name": "황실 공익후원",
+      "origin": "second_wave_remaining_82",
+      "module": "C3",
+      "declaration_order": 386,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_nomination_prime_minister",
+        "script_xy": {
+          "x": 4,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 206,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_municipal_clinics",
+      "name": "시군 진료지원",
+      "origin": "second_wave_remaining_82",
+      "module": "C3",
+      "declaration_order": 387,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_public_patronage",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 205,
+          "y": 9
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_welfare_accounts",
+      "name": "공익시설 개선기금",
+      "origin": "second_wave_remaining_82",
+      "module": "C3",
+      "declaration_order": 388,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_public_patronage",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 207,
+          "y": 9
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_allied_observers",
+      "name": "연합군 훈련 참관",
+      "origin": "second_wave_remaining_82",
+      "module": "C4",
+      "declaration_order": 389,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_joint_military_practice",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 202,
+          "y": 14
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_bilingual_manuals",
+      "name": "합동훈련 교범 번역",
+      "origin": "second_wave_remaining_82",
+      "module": "C4",
+      "declaration_order": 390,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_allied_observers",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 201,
+          "y": 15
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cm_liaison_rotation",
+      "name": "순환 연락장교",
+      "origin": "second_wave_remaining_82",
+      "module": "C4",
+      "declaration_order": 391,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cm_allied_observers",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 203,
+          "y": 15
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_bibyeonsa_dockets",
+      "name": "비변사 집행예산",
+      "origin": "second_wave_remaining_82",
+      "module": "A1",
+      "declaration_order": 392,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_urihwangsilsaranghoe",
+        "script_xy": {
+          "x": 20,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 206,
+          "y": 1
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_provincial_returns",
+      "name": "지방 보고체계",
+      "origin": "second_wave_remaining_82",
+      "module": "A1",
+      "declaration_order": 393,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_bibyeonsa_dockets",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 205,
+          "y": 2
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_inspector_itineraries",
+      "name": "순찰관 현장감사",
+      "origin": "second_wave_remaining_82",
+      "module": "A1",
+      "declaration_order": 394,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_bibyeonsa_dockets",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 207,
+          "y": 2
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_execution_registers",
+      "name": "조정 집행 일원화",
+      "origin": "second_wave_remaining_82",
+      "module": "A1",
+      "declaration_order": 395,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_bibyeonsa_dockets",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 206,
+          "y": 3
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_petition_calendar",
+      "name": "백성의 상언",
+      "origin": "second_wave_remaining_82",
+      "module": "A2",
+      "declaration_order": 396,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_urihwangsilsaranghoe",
+        "script_xy": {
+          "x": 4,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 190,
+          "y": 1
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_granary_ledgers",
+      "name": "구휼·민생 예산",
+      "origin": "second_wave_remaining_82",
+      "module": "A2",
+      "declaration_order": 397,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_petition_calendar",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 190,
+          "y": 2
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_relief_dispatches",
+      "name": "구휼 집행규정",
+      "origin": "second_wave_remaining_82",
+      "module": "A2",
+      "declaration_order": 398,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_petition_calendar",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 190,
+          "y": 3
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_regimental_returns",
+      "name": "연대 병적대조",
+      "origin": "second_wave_remaining_82",
+      "module": "A3",
+      "declaration_order": 399,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_urihwangsilsaranghoe",
+        "script_xy": {
+          "x": 12,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 198,
+          "y": 1
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_nco_examinations",
+      "name": "하사관 실무교육",
+      "origin": "second_wave_remaining_82",
+      "module": "A3",
+      "declaration_order": 400,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_regimental_returns",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 197,
+          "y": 2
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_reserve_cadre",
+      "name": "예비 간부명부",
+      "origin": "second_wave_remaining_82",
+      "module": "A3",
+      "declaration_order": 401,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_regimental_returns",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 199,
+          "y": 2
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_mobilization_review",
+      "name": "동원체계 종합연습",
+      "origin": "second_wave_remaining_82",
+      "module": "A3",
+      "declaration_order": 402,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_regimental_returns",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 198,
+          "y": 3
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_technical_memorials",
+      "name": "기술 상주문",
+      "origin": "second_wave_remaining_82",
+      "module": "A4",
+      "declaration_order": 403,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_urihwangsilsaranghoe",
+        "script_xy": {
+          "x": 8,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 194,
+          "y": 1
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_civil_service_practicum",
+      "name": "관료 현장수습",
+      "origin": "second_wave_remaining_82",
+      "module": "A4",
+      "declaration_order": 404,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_technical_memorials",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 194,
+          "y": 2
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_am_merit_registers",
+      "name": "기술관료 전문화",
+      "origin": "second_wave_remaining_82",
+      "module": "A4",
+      "declaration_order": 405,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_am_technical_memorials",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 194,
+          "y": 3
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_provincial_inventory",
+      "name": "환국 지방실사",
+      "origin": "second_wave_remaining_82",
+      "module": "H1",
+      "declaration_order": 406,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_return_of_the_king",
+        "script_xy": {
+          "x": 25,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 211,
+          "y": 5
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_provision_accounts",
+      "name": "지방 물자관리",
+      "origin": "second_wave_remaining_82",
+      "module": "H1",
+      "declaration_order": 407,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_provincial_inventory",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 210,
+          "y": 6
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_inspection_circuits",
+      "name": "제국 지방 순찰",
+      "origin": "second_wave_remaining_82",
+      "module": "H1",
+      "declaration_order": 408,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_provincial_inventory",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 212,
+          "y": 6
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_supply_returns",
+      "name": "물자 결산통일",
+      "origin": "second_wave_remaining_82",
+      "module": "H1",
+      "declaration_order": 409,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_provincial_inventory",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 211,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_dispatch_codes",
+      "name": "제국 공문부호",
+      "origin": "second_wave_remaining_82",
+      "module": "H2",
+      "declaration_order": 410,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_urihwangsilsaranghoe",
+        "script_xy": {
+          "x": -6,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 180,
+          "y": 1
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_courier_relays",
+      "name": "군정 연락인계",
+      "origin": "second_wave_remaining_82",
+      "module": "H2",
+      "declaration_order": 411,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_dispatch_codes",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 179,
+          "y": 2
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_signal_logs",
+      "name": "전선 통신기록",
+      "origin": "second_wave_remaining_82",
+      "module": "H2",
+      "declaration_order": 412,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_dispatch_codes",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 181,
+          "y": 2
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_relay_exercises",
+      "name": "연락망 종합연습",
+      "origin": "second_wave_remaining_82",
+      "module": "H2",
+      "declaration_order": 413,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_dispatch_codes",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 180,
+          "y": 3
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_postwar_dockets",
+      "name": "전후 민정예산",
+      "origin": "second_wave_remaining_82",
+      "module": "H3",
+      "declaration_order": 414,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_hwan_world_order",
+        "script_xy": {
+          "x": -2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 176,
+          "y": 15
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_reconstruction_priorities",
+      "name": "복구 우선순위",
+      "origin": "second_wave_remaining_82",
+      "module": "H3",
+      "declaration_order": 415,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_postwar_dockets",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 176,
+          "y": 16
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_civil_accountability",
+      "name": "복구행정 정례화",
+      "origin": "second_wave_remaining_82",
+      "module": "H3",
+      "declaration_order": 416,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_postwar_dockets",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 176,
+          "y": 17
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_veteran_rolls",
+      "name": "귀환 장병 지원",
+      "origin": "second_wave_remaining_82",
+      "module": "H4",
+      "declaration_order": 417,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_hwan_world_order",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 180,
+          "y": 15
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_demobilization_schedule",
+      "name": "장병 복귀지원 체계",
+      "origin": "second_wave_remaining_82",
+      "module": "H4",
+      "declaration_order": 418,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_veteran_rolls",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 180,
+          "y": 16
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_hw_peacetime_training",
+      "name": "평시 예비훈련",
+      "origin": "second_wave_remaining_82",
+      "module": "H4",
+      "declaration_order": 419,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_hw_veteran_rolls",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 180,
+          "y": 17
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_county_dossiers",
+      "name": "만주 지방행정 조사",
+      "origin": "second_wave_remaining_82",
+      "module": "M1",
+      "declaration_order": 420,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_the_manchurian_project",
+        "script_xy": {
+          "x": 6,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 30,
+          "y": 15
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_payroll_registers",
+      "name": "지방 공공서비스",
+      "origin": "second_wave_remaining_82",
+      "module": "M1",
+      "declaration_order": 421,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_county_dossiers",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 29,
+          "y": 16
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_service_counters",
+      "name": "행정 통신망",
+      "origin": "second_wave_remaining_82",
+      "module": "M1",
+      "declaration_order": 422,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_county_dossiers",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 31,
+          "y": 16
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_dispute_records",
+      "name": "민원·물자 조정",
+      "origin": "second_wave_remaining_82",
+      "module": "M1",
+      "declaration_order": 423,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_county_dossiers",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 30,
+          "y": 17
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_service_calendar",
+      "name": "지방행정 정례화",
+      "origin": "second_wave_remaining_82",
+      "module": "M1",
+      "declaration_order": 424,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_county_dossiers",
+        "script_xy": {
+          "x": 0,
+          "y": 3
+        },
+        "base_absolute": {
+          "x": 30,
+          "y": 18
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_interpreter_desks",
+      "name": "다언어 행정 창구",
+      "origin": "second_wave_remaining_82",
+      "module": "M2",
+      "declaration_order": 425,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_multiethnic_embrace",
+        "script_xy": {
+          "x": -4,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 17,
+          "y": 16
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_residence_certificates",
+      "name": "주민 정착 지원",
+      "origin": "second_wave_remaining_82",
+      "module": "M2",
+      "declaration_order": 426,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_interpreter_desks",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 16,
+          "y": 17
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_municipal_consultation",
+      "name": "지역 보건·교육",
+      "origin": "second_wave_remaining_82",
+      "module": "M2",
+      "declaration_order": 427,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_interpreter_desks",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 18,
+          "y": 17
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_shared_service_manuals",
+      "name": "공동행정 협약",
+      "origin": "second_wave_remaining_82",
+      "module": "M2",
+      "declaration_order": 428,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_interpreter_desks",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 17,
+          "y": 18
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_community_mediation",
+      "name": "공동체 지원 정례화",
+      "origin": "second_wave_remaining_82",
+      "module": "M2",
+      "declaration_order": 429,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_interpreter_desks",
+        "script_xy": {
+          "x": 0,
+          "y": 3
+        },
+        "base_absolute": {
+          "x": 17,
+          "y": 19
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_workshop_inventory",
+      "name": "만주 공업재고 조사",
+      "origin": "second_wave_remaining_82",
+      "module": "M3",
+      "declaration_order": 430,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_resource_exploration_in_manchuria",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 24,
+          "y": 20
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_metallurgical_trials",
+      "name": "부산물 회수 체계",
+      "origin": "second_wave_remaining_82",
+      "module": "M3",
+      "declaration_order": 431,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_workshop_inventory",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 23,
+          "y": 21
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_material_recovery",
+      "name": "광물 선별시험",
+      "origin": "second_wave_remaining_82",
+      "module": "M3",
+      "declaration_order": 432,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_workshop_inventory",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 25,
+          "y": 21
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_foundry_batches",
+      "name": "제련 현장교류",
+      "origin": "second_wave_remaining_82",
+      "module": "M3",
+      "declaration_order": 433,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_workshop_inventory",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 24,
+          "y": 22
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_integrated_recovery",
+      "name": "원료 회수협업",
+      "origin": "second_wave_remaining_82",
+      "module": "M3",
+      "declaration_order": 434,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_workshop_inventory",
+        "script_xy": {
+          "x": 0,
+          "y": 3
+        },
+        "base_absolute": {
+          "x": 24,
+          "y": 23
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_tenancy_records",
+      "name": "국내성 주거 실태조사",
+      "origin": "second_wave_remaining_82",
+      "module": "M4",
+      "declaration_order": 435,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_rebuild_guknaeseong_as_new_city",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 29,
+          "y": 19
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_sanitation_rounds",
+      "name": "시가지 기반시설",
+      "origin": "second_wave_remaining_82",
+      "module": "M4",
+      "declaration_order": 436,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_tenancy_records",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 28,
+          "y": 20
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_housing_repairs",
+      "name": "주택 보수기술",
+      "origin": "second_wave_remaining_82",
+      "module": "M4",
+      "declaration_order": 437,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_tenancy_records",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 30,
+          "y": 20
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_market_inspections",
+      "name": "시장·위생 정비",
+      "origin": "second_wave_remaining_82",
+      "module": "M4",
+      "declaration_order": 438,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_tenancy_records",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 29,
+          "y": 21
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_mc_settled_municipality",
+      "name": "정착도시의 일상",
+      "origin": "second_wave_remaining_82",
+      "module": "M4",
+      "declaration_order": 439,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_mc_tenancy_records",
+        "script_xy": {
+          "x": 0,
+          "y": 3
+        },
+        "base_absolute": {
+          "x": 29,
+          "y": 22
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_export_invoices",
+      "name": "수출거래 명세",
+      "origin": "second_wave_remaining_82",
+      "module": "G1",
+      "declaration_order": 440,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_devalue_the_won",
+        "script_xy": {
+          "x": 17,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 32,
+          "y": 1
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_commercial_arbitration",
+      "name": "상거래 중재절차",
+      "origin": "second_wave_remaining_82",
+      "module": "G1",
+      "declaration_order": 441,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_export_invoices",
+        "script_xy": {
+          "x": -1,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 31,
+          "y": 3
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_shipping_documents",
+      "name": "선적서류 통일",
+      "origin": "second_wave_remaining_82",
+      "module": "G1",
+      "declaration_order": 442,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_export_invoices",
+        "script_xy": {
+          "x": 1,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 33,
+          "y": 3
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_market_sampling",
+      "name": "해외시장 견본",
+      "origin": "second_wave_remaining_82",
+      "module": "G1",
+      "declaration_order": 443,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_export_invoices",
+        "script_xy": {
+          "x": 0,
+          "y": 3
+        },
+        "base_absolute": {
+          "x": 32,
+          "y": 4
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_export_settlement",
+      "name": "수출대금 결제관행",
+      "origin": "second_wave_remaining_82",
+      "module": "G1",
+      "declaration_order": 444,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_export_invoices",
+        "script_xy": {
+          "x": 0,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 32,
+          "y": 5
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_ore_classification",
+      "name": "원료 광종분류",
+      "origin": "second_wave_remaining_82",
+      "module": "G2",
+      "declaration_order": 445,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_develop_unsan_gold_mine",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 0,
+          "y": 6
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_scrap_collection",
+      "name": "폐금속 수거망",
+      "origin": "second_wave_remaining_82",
+      "module": "G2",
+      "declaration_order": 446,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_ore_classification",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 0,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_coke_testing",
+      "name": "코크스 품질시험",
+      "origin": "second_wave_remaining_82",
+      "module": "G2",
+      "declaration_order": 447,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_ore_classification",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 2,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_foundry_exchange",
+      "name": "제련 현장교류",
+      "origin": "second_wave_remaining_82",
+      "module": "G2",
+      "declaration_order": 448,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_ore_classification",
+        "script_xy": {
+          "x": 1,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 1,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_closed_material_cycle",
+      "name": "원료 순환체계",
+      "origin": "second_wave_remaining_82",
+      "module": "G2",
+      "declaration_order": 449,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_ore_classification",
+        "script_xy": {
+          "x": 1,
+          "y": 3
+        },
+        "base_absolute": {
+          "x": 1,
+          "y": 9
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_motor_driver_courses",
+      "name": "기동부대 운전과정",
+      "origin": "second_wave_remaining_82",
+      "module": "G3",
+      "declaration_order": 450,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_mobile_infantry",
+        "script_xy": {
+          "x": -2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 34,
+          "y": 5
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_mechanized_loading",
+      "name": "기계화 승하차훈련",
+      "origin": "second_wave_remaining_82",
+      "module": "G3",
+      "declaration_order": 451,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_motor_driver_courses",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 33,
+          "y": 6
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_march_discipline",
+      "name": "기동종대 규율",
+      "origin": "second_wave_remaining_82",
+      "module": "G3",
+      "declaration_order": 452,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_motor_driver_courses",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 35,
+          "y": 6
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_mobile_unit_recovery",
+      "name": "기동부대 재정렬",
+      "origin": "second_wave_remaining_82",
+      "module": "G3",
+      "declaration_order": 453,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_motor_driver_courses",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 34,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_emergency_turn_drills",
+      "name": "긴급변침 연습",
+      "origin": "second_wave_remaining_82",
+      "module": "G4",
+      "declaration_order": 454,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_large_surface_fleet",
+        "script_xy": {
+          "x": -4,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 48,
+          "y": 4
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_smoke_screen_procedures",
+      "name": "연막 이탈절차",
+      "origin": "second_wave_remaining_82",
+      "module": "G4",
+      "declaration_order": 455,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_emergency_turn_drills",
+        "script_xy": {
+          "x": -1,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 47,
+          "y": 6
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_rescue_station_drills",
+      "name": "해상구조 당직",
+      "origin": "second_wave_remaining_82",
+      "module": "G4",
+      "declaration_order": 456,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_emergency_turn_drills",
+        "script_xy": {
+          "x": 1,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 49,
+          "y": 6
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_flight_weather_logs",
+      "name": "비행기상 일지",
+      "origin": "second_wave_remaining_82",
+      "module": "G5",
+      "declaration_order": 457,
+      "before": null,
+      "after": {
+        "relative_position_id": "KOR_establishment_of_the_afoc",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 68,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_instrument_approaches",
+      "name": "계기접근 절차",
+      "origin": "second_wave_remaining_82",
+      "module": "G5",
+      "declaration_order": 458,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_flight_weather_logs",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 67,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "HOK_KOR_cmn_adverse_weather_flying",
+      "name": "악천후 비행규정",
+      "origin": "second_wave_remaining_82",
+      "module": "G5",
+      "declaration_order": 459,
+      "before": null,
+      "after": {
+        "relative_position_id": "HOK_KOR_cmn_flight_weather_logs",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 69,
+          "y": 8
+        }
+      }
     }
   ],
   "conditional_layout": {
     "documented_on": "2026-09-23",
-    "status": "IMPLEMENTED_378_FINAL_LOAD_CHECKED_PARTIAL_RUNTIME_OBSERVED_TRANSITIONS_UNVERIFIED",
+    "status": "IMPLEMENTED_460_H1_RIGHT_SPACE_STATIC_CHECKED_UI_BLOCKED",
     "baseline_source_sha256": "8a721a8739834bac5a0ed30f3d3335ced9ceaf4bc63439b1db8bfe2c14299aa8",
-    "source_sha256": "4cb9406bc55617b0d3f6a7c4d471c86def024b4fed702d9527ed2e451bfa8856",
+    "source_sha256": "1cedaf78903db31d15e3837e20069b71bca8fc674212b1d033f0d721b2b6735c",
     "coordinate_model": "after.base_absolute remains the pre-choice/SHOW grid. For a state, add the absolute root offset once to each relative descendant. The republic entry is an independent root. Hidden nodes are excluded from displayed bounds; internal political subroutes are retained conservatively.",
     "direct_offset_count": 7,
     "fixed_roots": [
       "KOR_devalue_the_won",
       "KOR_begin_rearmament"
     ],
-    "fixed_node_count": 133,
+    "fixed_node_count": 173,
     "offset_rules": [
       {
         "focus_id": "KOR_future_of_the_republic",
@@ -15440,11 +17001,11 @@
         "completed": [],
         "route": null,
         "completeRoute": false,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15459,11 +17020,11 @@
         ],
         "route": null,
         "completeRoute": false,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15478,11 +17039,11 @@
         ],
         "route": "communist",
         "completeRoute": false,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15497,11 +17058,11 @@
         ],
         "route": "democratic",
         "completeRoute": false,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15516,11 +17077,11 @@
         ],
         "route": "fascist",
         "completeRoute": false,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15533,11 +17094,11 @@
         "completed": [],
         "route": "non_aligned",
         "completeRoute": false,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15553,11 +17114,11 @@
         ],
         "route": "communist",
         "completeRoute": true,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15573,11 +17134,11 @@
         ],
         "route": "democratic",
         "completeRoute": true,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15593,11 +17154,11 @@
         ],
         "route": "fascist",
         "completeRoute": true,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15612,11 +17173,11 @@
         ],
         "route": "non_aligned",
         "completeRoute": true,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15629,11 +17190,11 @@
         "completed": [],
         "route": null,
         "completeRoute": false,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15648,7 +17209,7 @@
         ],
         "route": null,
         "completeRoute": false,
-        "visible_count": 329,
+        "visible_count": 369,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
@@ -15667,7 +17228,7 @@
         ],
         "route": "communist",
         "completeRoute": false,
-        "visible_count": 329,
+        "visible_count": 369,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
@@ -15686,7 +17247,7 @@
         ],
         "route": "democratic",
         "completeRoute": false,
-        "visible_count": 329,
+        "visible_count": 369,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
@@ -15705,7 +17266,7 @@
         ],
         "route": "fascist",
         "completeRoute": false,
-        "visible_count": 329,
+        "visible_count": 369,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
@@ -15722,11 +17283,11 @@
         "completed": [],
         "route": "non_aligned",
         "completeRoute": false,
-        "visible_count": 378,
+        "visible_count": 460,
         "moved_count": 0,
         "bounds": {
           "min_x": 0,
-          "max_x": 204,
+          "max_x": 212,
           "min_y": 0,
           "max_y": 24
         },
@@ -15742,13 +17303,13 @@
         ],
         "route": "communist",
         "completeRoute": true,
-        "visible_count": 190,
+        "visible_count": 230,
         "moved_count": 57,
         "bounds": {
           "min_x": 0,
           "max_x": 95,
           "min_y": 0,
-          "max_y": 19
+          "max_y": 23
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
         "root_position_overrides": [
@@ -15785,7 +17346,7 @@
         ],
         "route": "democratic",
         "completeRoute": true,
-        "visible_count": 217,
+        "visible_count": 257,
         "moved_count": 84,
         "bounds": {
           "min_x": 0,
@@ -15828,13 +17389,13 @@
         ],
         "route": "fascist",
         "completeRoute": true,
-        "visible_count": 190,
+        "visible_count": 230,
         "moved_count": 57,
         "bounds": {
           "min_x": 0,
           "max_x": 91,
           "min_y": 0,
-          "max_y": 19
+          "max_y": 23
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
         "root_position_overrides": [
@@ -15870,13 +17431,13 @@
         ],
         "route": "non_aligned",
         "completeRoute": true,
-        "visible_count": 182,
-        "moved_count": 49,
+        "visible_count": 264,
+        "moved_count": 91,
         "bounds": {
           "min_x": 0,
-          "max_x": 103,
+          "max_x": 111,
           "min_y": 0,
-          "max_y": 19
+          "max_y": 23
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
         "root_position_overrides": [
@@ -15895,6 +17456,232 @@
       }
     ],
     "validation": {
+      "source_sha256": "1cedaf78903db31d15e3837e20069b71bca8fc674212b1d033f0d721b2b6735c",
+      "baseline_source_sha256": "dd2334a0f5be074c0e52adb280b6cbeb80a20412ccbcee62f754adf4e85613b4",
+      "incident": "docs/incidents/2026-09-23-hwan-focus-right.md",
+      "status": "LAYOUT_APPLIED_STATIC_AND_CLEAN_LOAD_CHECKED_UI_BLOCKED",
+      "before_h1_base_positions": {
+        "HOK_KOR_hw_provincial_inventory": [
+          185,
+          10
+        ],
+        "HOK_KOR_hw_provision_accounts": [
+          184,
+          11
+        ],
+        "HOK_KOR_hw_inspection_circuits": [
+          186,
+          11
+        ],
+        "HOK_KOR_hw_supply_returns": [
+          185,
+          12
+        ]
+      },
+      "after_h1_base_positions": {
+        "HOK_KOR_hw_provincial_inventory": [
+          211,
+          5
+        ],
+        "HOK_KOR_hw_provision_accounts": [
+          210,
+          6
+        ],
+        "HOK_KOR_hw_inspection_circuits": [
+          212,
+          6
+        ],
+        "HOK_KOR_hw_supply_returns": [
+          211,
+          7
+        ]
+      },
+      "production_preservation": {
+        "passed": 10,
+        "failed": 0,
+        "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-right/preservation.json",
+        "scope": "Only root x/y and one nearby contributor note changed; other459 focus blocks byte-identical, other456 resolved positions unchanged. Seven offsets, anchors, panel, shortcuts and all ordered gameplay tokens preserved."
+      },
+      "geometry": {
+        "record": ".local-artifacts/korean-focus-expansion/remaining-20260923/h1-rightedge211-review-agent.json",
+        "script": ".local-artifacts/korean-focus-expansion/remaining-20260923/h1-rightedge211-review-agent.py",
+        "selected_h1_override_matches_applied_source": true,
+        "states": 20,
+        "guard_pixels": 8,
+        "overlaps": 0,
+        "prerequisite_line_contacts": 0,
+        "unrelated_horizontal_collinearity": 0,
+        "mutually_exclusive_title_band_contacts": 0,
+        "bounds_change": "Base max_x211 to212; royal-completed HIDE max_x110 to111; y unchanged.",
+        "limits": "Conservative static rectangle/three-wire/exclusion-band models do not prove engine rendering, full political transitions, hidden-anchor display or click targets."
+      },
+      "runtime_visual": {
+        "status": "BLOCKED_NATIVE_COMPUTER_USE_CONNECTION",
+        "error": "Computer Use native pipe is unavailable: failed to connect native pipe (os error2)",
+        "attempts": "Initialization and window inventory failed; reset, reinitialize and fresh inventory failed again. No window input or UI observation.",
+        "required_states": [
+          "initial SHOW/HIDE",
+          "royal-completed SHOW/HIDE",
+          "normal initial-to-completed political transition"
+        ],
+        "prior_source_evidence": "dd2334a0 SHOW/HIDE observations retained only in previous_h1_layout_validation; they do not validate this relocation."
+      },
+      "clean_load": {
+        "status": "PASSED_DIAGNOSTIC_FREE_PAUSED_NEW_GAME_LOG_CHECK",
+        "run": "clean-hide-final",
+        "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-right/runtime-results/clean-hide-final/run.json",
+        "checksum": "8a72",
+        "version": "Operation Postern v1.19.3.0.c01a",
+        "steam_build": "25205862",
+        "visibility": "HIDE",
+        "date": "1936.1.1.12",
+        "active_dlc_count": 36,
+        "active_mod_count": 1,
+        "diagnostic_files_added": [],
+        "completed": true,
+        "elapsed_seconds": 34.42199999999957,
+        "scope": "Fresh paused Korea startup inferred from current-run log markers; no screen observation, route completion, normal progression or rewards."
+      },
+      "normal_progression": "NOT_RERUN_GAMEPLAY_UNCHANGED",
+      "save_reload": "UNVERIFIED_FOR_RELOCATED_SOURCE",
+      "dlc_multiplayer_ai": "NOT_RERUN",
+      "log_comparison": {
+        "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-right/log-comparison.json",
+        "baseline_kind": "Preserved prior user-session log; not a fresh control run",
+        "normalization": "Remove only two leading timestamp fields",
+        "baseline_nonempty_lines": 130,
+        "baseline_unique_messages": 41,
+        "current_nonempty_lines": 128,
+        "current_unique_messages": 40,
+        "new_messages": 0,
+        "increased_counts": 0,
+        "removed_message_note": "Two prior random.log rename warnings absent; not attributed to this layout edit."
+      },
+      "environment_preservation": {
+        "SavesUnchanged": true,
+        "SettingsUnchanged": false,
+        "OnlyGracefulExitChanged": true,
+        "SettingsAcceptable": true,
+        "PlaysetUnchanged": true,
+        "LauncherUnchanged": true,
+        "ProductionUnchanged": true,
+        "CleanupIssues": [],
+        "ProcessRetainedForUI": false,
+        "save_count": 13,
+        "production_file_count": 150,
+        "settings_note": "Only engine-added graceful_exit=no; no tool write or restore."
+      },
+      "metadata_consistency": {
+        "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-right/documentation-consistency.json",
+        "coordinate_nodes": 460,
+        "candidate_explicit_positions": 122,
+        "all_match_source": true,
+        "prior_h1_UI_evidence_preserved": true
+      }
+    },
+    "previous_validation": {
+      "source_sha256": "e65e15f6b101d624e5838e15969eb3a6471ef72a5313dc3a6a53f80359795fc4",
+      "static_checks": 79,
+      "static_failures": 0,
+      "geometry": "Four selected HIDE states: zero new fixed-sector rectangle overlaps or connector candidates in three orthogonal models and conservative vertical corridors; not actual engine routing.",
+      "runtime_visual": "UNVERIFIED",
+      "save_reload": "UNVERIFIED",
+      "clean_load": {
+        "status": "PASS",
+        "version": "1.19.3.0.c01a",
+        "checksum": "c7e5",
+        "build": "25205862",
+        "active_dlc_count": 36,
+        "active_mod_count": 1,
+        "new_normalized_errors": 0,
+        "scope": "Paused 1936 Korea new game; not route completion, dynamic offsets, UI or save compatibility."
+      }
+    },
+    "previous_f3_validation": {
+      "previous_source_sha256": "6a5d06e4548784454fa6a969e4c80b5e01d79726c84b837efdaf560bf8f17a5d",
+      "previous_static_checks": 50,
+      "previous_static_failures": 0,
+      "previous_reward_checks": 130,
+      "previous_reward_failures": 0,
+      "static_upper_layout": {
+        "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
+        "checks": 44,
+        "failures": 0,
+        "record": ".local-artifacts/korean-focus-expansion/fascist-mobilization-20260922/additional-final-layout-review.json"
+      },
+      "geometry": "Final upper layout: no new icon/nameplate overlaps, no node contact in three orthogonal edge models with actual DDS dimensions, no unrelated collinear horizontal edge. The static 8px guard retains a conservative candidate near the coup sibling. The 2026-09-23 HIDE/SHOW UI observations found no occlusion at the coup guard candidate; conservative static results remain unchanged.",
+      "runtime_visual": "2026-09-23: final upper F3 region observed in separate HIDE and SHOW synthetic-route-complete new games. No observed icon/nameplate occlusion or unrelated collinear connectors. Not a within-game transition or whole-tree validation.",
+      "clean_load": {
+        "status": "PASSED",
+        "date": "2026-09-23",
+        "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
+        "version": "1.19.3.0.c01a",
+        "checksum": "53b0",
+        "new_normalized_errors": 0,
+        "diagnostics_present": false,
+        "scope": "Diagnostic-free paused Korea 1936.1.1.12 load; not normal progression or final UI validation."
+      },
+      "save_reload": "UNVERIFIED",
+      "immediate_rewards": {
+        "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
+        "checks": 130,
+        "failures": 0,
+        "scenarios": [
+          "reserve-first-upper-01",
+          "worker-first-upper-01",
+          "missing-tier-fallback-upper-01"
+        ],
+        "scope": "Forced immediate rewards only; normal progression, research consumption and government cancellation not proved."
+      },
+      "runtime_visual_record": {
+        "earlier_source_sha256": "6a5d06e4548784454fa6a969e4c80b5e01d79726c84b837efdaf560bf8f17a5d",
+        "observed_before_revision": [
+          "HIDE political entry incomplete: completed F3 icons and spirits",
+          "HIDE fascist entry complete: unrelated F2/F3 collinear connector confirmed"
+        ],
+        "final_source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
+        "final_upper_UI": "OBSERVED_HIDE_AND_SHOW_AFFECTED_REGION_20260923",
+        "resolution": [
+          1600,
+          900
+        ],
+        "gui_scale": 1,
+        "focus_zoom": "Not measured; two observed scales",
+        "version": "1.19.3.0.c01a",
+        "checksum": "a0c1",
+        "evidence_directory": "docs/assets/korean-fascist-mobilization-validation-20260923"
+      },
+      "final_preservation": {
+        "production_files": 43,
+        "saves": 13,
+        "unchanged": true,
+        "temporary_diagnostics_remaining": 0,
+        "owned_game_processes_remaining": 0,
+        "user_settings_written_by_agent": false,
+        "settings_delta_against_turn_baseline": "2026-09-23 HIDE/SHOW sessions: settings byte-identical to their before-launch baseline after normal GUI exit. No agent settings write."
+      },
+      "normal_progression": {
+        "date": "2026-09-23",
+        "status": "OBSERVED_NORMAL_UI_COMPLETION_ONE_FOCUS",
+        "focus": "HOK_KOR_nrsc_manpower_register",
+        "nominal_days": 35,
+        "started_at": "1936.1.1.12",
+        "intermediate": {
+          "observed_at": "1936.1.15.03",
+          "displayed_progress": "15/35"
+        },
+        "completion_observed_by": "1936.2.4.03",
+        "forced_completion_used": false,
+        "date_change_used": false,
+        "child_start_buttons_available": [
+          "HOK_KOR_nrsc_reserve_rotations",
+          "HOK_KOR_nrsc_skilled_worker_exemptions"
+        ],
+        "scope": "Synthetic reward-free political prerequisites, AI disabled. Exact completion tick and initial banked progress were not separately measured. Remaining three focuses, AND blocking, full 140-day module, research consumption and AI remain unverified.",
+        "evidence": "docs/incidents/2026-09-22-korean-fascist-mobilization.md"
+      }
+    },
+    "previous_378_validation": {
       "source_sha256": "4cb9406bc55617b0d3f6a7c4d471c86def024b4fed702d9527ed2e451bfa8856",
       "static_coordinate_record": ".local-artifacts/korean-focus-expansion/fascist-followup-20260923/coordinate-validation.json",
       "geometry_record": ".local-artifacts/korean-focus-expansion/fascist-followup-20260923/layout-proposal.json",
@@ -16033,106 +17820,306 @@
         "scope": "Final diagnostic-free paused UI observation only; no post-filter natural progression or political-route movement transition claimed."
       }
     },
-    "previous_validation": {
-      "source_sha256": "e65e15f6b101d624e5838e15969eb3a6471ef72a5313dc3a6a53f80359795fc4",
-      "static_checks": 79,
-      "static_failures": 0,
-      "geometry": "Four selected HIDE states: zero new fixed-sector rectangle overlaps or connector candidates in three orthogonal models and conservative vertical corridors; not actual engine routing.",
-      "runtime_visual": "UNVERIFIED",
-      "save_reload": "UNVERIFIED",
-      "clean_load": {
-        "status": "PASS",
-        "version": "1.19.3.0.c01a",
-        "checksum": "c7e5",
-        "build": "25205862",
-        "active_dlc_count": 36,
-        "active_mod_count": 1,
-        "new_normalized_errors": 0,
-        "scope": "Paused 1936 Korea new game; not route completion, dynamic offsets, UI or save compatibility."
-      }
-    },
-    "previous_f3_validation": {
-      "previous_source_sha256": "6a5d06e4548784454fa6a969e4c80b5e01d79726c84b837efdaf560bf8f17a5d",
-      "previous_static_checks": 50,
-      "previous_static_failures": 0,
-      "previous_reward_checks": 130,
-      "previous_reward_failures": 0,
-      "static_upper_layout": {
-        "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
-        "checks": 44,
-        "failures": 0,
-        "record": ".local-artifacts/korean-focus-expansion/fascist-mobilization-20260922/additional-final-layout-review.json"
-      },
-      "geometry": "Final upper layout: no new icon/nameplate overlaps, no node contact in three orthogonal edge models with actual DDS dimensions, no unrelated collinear horizontal edge. The static 8px guard retains a conservative candidate near the coup sibling. The 2026-09-23 HIDE/SHOW UI observations found no occlusion at the coup guard candidate; conservative static results remain unchanged.",
-      "runtime_visual": "2026-09-23: final upper F3 region observed in separate HIDE and SHOW synthetic-route-complete new games. No observed icon/nameplate occlusion or unrelated collinear connectors. Not a within-game transition or whole-tree validation.",
-      "clean_load": {
-        "status": "PASSED",
-        "date": "2026-09-23",
-        "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
-        "version": "1.19.3.0.c01a",
-        "checksum": "53b0",
-        "new_normalized_errors": 0,
-        "diagnostics_present": false,
-        "scope": "Diagnostic-free paused Korea 1936.1.1.12 load; not normal progression or final UI validation."
-      },
-      "save_reload": "UNVERIFIED",
-      "immediate_rewards": {
-        "source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
-        "checks": 130,
-        "failures": 0,
-        "scenarios": [
-          "reserve-first-upper-01",
-          "worker-first-upper-01",
-          "missing-tier-fallback-upper-01"
-        ],
-        "scope": "Forced immediate rewards only; normal progression, research consumption and government cancellation not proved."
-      },
-      "runtime_visual_record": {
-        "earlier_source_sha256": "6a5d06e4548784454fa6a969e4c80b5e01d79726c84b837efdaf560bf8f17a5d",
-        "observed_before_revision": [
-          "HIDE political entry incomplete: completed F3 icons and spirits",
-          "HIDE fascist entry complete: unrelated F2/F3 collinear connector confirmed"
-        ],
-        "final_source_sha256": "91520275c5ce45e670e921355603b860fec524372ce0ee58c622b4c6d049b61f",
-        "final_upper_UI": "OBSERVED_HIDE_AND_SHOW_AFFECTED_REGION_20260923",
+    "previous_460_validation": {
+      "source_sha256": "905a3868776f4b5aedc1e5f41bda0568bf279f38a48343888114e985f1ccf852",
+      "static_coordinate_record": ".local-artifacts/korean-focus-expansion/remaining-20260923/coordinate-validation.json",
+      "geometry_record": ".local-artifacts/korean-focus-expansion/remaining-20260923/layout-all-states.json",
+      "geometry": "All twenty documented SHOW/HIDE initial, republican-entry, in-progress and route-complete states: no new icon/nameplate overlaps, line contacts in three orthogonal routing approximations or unrelated horizontal collinearity. Existing literal icons and new100x88 sprites use actual dimensions; five existing dynamic icons use a100x88 fallback. Static models do not prove engine routing, click areas, hidden anchors, continuous panel or shortcuts.",
+      "runtime_visual": {
+        "status": "PARTIAL_HIDE_UI_OBSERVED",
+        "source_sha256": "905a3868776f4b5aedc1e5f41bda0568bf279f38a48343888114e985f1ccf852",
+        "record": "docs/incidents/2026-09-23-korean-remaining-followup.md",
         "resolution": [
           1600,
           900
         ],
-        "gui_scale": 1,
-        "focus_zoom": "Not measured; two observed scales",
-        "version": "1.19.3.0.c01a",
-        "checksum": "a0c1",
-        "evidence_directory": "docs/assets/korean-fascist-mobilization-validation-20260923"
+        "gui_scale": 1.0,
+        "visibility_rule": "HIDE",
+        "setup": "normal-01 inspected some royal areas after synthetic royal-route completion. lifecycle-control-02 and lifecycle-ownership-01 inspected initial HIDE without a completed political route. Neither proves the initial-to-completed movement transition.",
+        "full_modules_observed": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "H2",
+          "H3",
+          "H4",
+          "M1",
+          "M2",
+          "M3",
+          "M4",
+          "G3"
+        ],
+        "partial_modules_observed": {
+          "A1": "partial",
+          "A2": "upper",
+          "A3": "partial",
+          "A4": "upper",
+          "G1": "All branch connections observed; root icon at top viewport boundary."
+        },
+        "modules_not_fully_observed": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "H1",
+          "G1",
+          "G2",
+          "G4",
+          "G5"
+        ],
+        "finding": "No new icon/nameplate/connector overlap observed in the inspected regions; not a whole-tree/all-state guarantee.",
+        "manchurian_shortcut": "Existing destination title partly clipped at bottom immediately after shortcut; additional scrolling reaches all new M1-M4. Existing shortcut and panel settings unchanged.",
+        "not_verified": [
+          "SHOW for new 82",
+          "initial-to-completed political movement",
+          "all hidden-anchor states",
+          "full continuous-focus panel clearance",
+          "all icon/shine states"
+        ],
+        "ui_observation_records": [
+          ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/normal-01/ui-observations.json",
+          ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/lifecycle-control-01/ui-observations.json",
+          ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/lifecycle-control-02/ui-observations.json",
+          ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/lifecycle-ownership-01/ui-observations.json"
+        ]
       },
-      "final_preservation": {
-        "production_files": 43,
-        "saves": 13,
-        "unchanged": true,
-        "temporary_diagnostics_remaining": 0,
-        "owned_game_processes_remaining": 0,
-        "user_settings_written_by_agent": false,
-        "settings_delta_against_turn_baseline": "2026-09-23 HIDE/SHOW sessions: settings byte-identical to their before-launch baseline after normal GUI exit. No agent settings write."
+      "clean_load": {
+        "status": "PASSED_DIAGNOSTIC_FREE_NEW_GAME",
+        "run": "clean-03",
+        "checksum": "9787",
+        "active_dlc_count": 36,
+        "active_mod_count": 1,
+        "baseline_unique_errors": 40,
+        "current_unique_errors": 40,
+        "new_unique_errors": 0,
+        "baseline_kind": "Preserved prior user log, not a fresh control run",
+        "record": ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/clean-03/run.json"
       },
       "normal_progression": {
-        "date": "2026-09-23",
-        "status": "OBSERVED_NORMAL_UI_COMPLETION_ONE_FOCUS",
-        "focus": "HOK_KOR_nrsc_manpower_register",
-        "nominal_days": 35,
-        "started_at": "1936.1.1.12",
-        "intermediate": {
-          "observed_at": "1936.1.15.03",
-          "displayed_progress": "15/35"
+        "passed": 10,
+        "failed": 0,
+        "record": ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/normal-01/normal-result/run.json",
+        "scope": "C1 first focus ordinary UI start and 35-day completion; M1 UI PP150 payment and natural 90-day expiry, temporary removal, II retention and cooldown creation. Legacy politics and territory synthetically prepared."
+      },
+      "save_reload": "UNVERIFIED_FOR_460_SOURCE",
+      "static_checks": 335,
+      "static_failures": 0,
+      "eight_pixel_guard_candidates": {},
+      "runtime_record": "docs/incidents/2026-09-23-korean-remaining-followup.md",
+      "forced_reward_checks": {
+        "left_first": {
+          "passed": 400,
+          "failed": 0,
+          "run": "rewards-left-final"
         },
-        "completion_observed_by": "1936.2.4.03",
-        "forced_completion_used": false,
-        "date_change_used": false,
-        "child_start_buttons_available": [
-          "HOK_KOR_nrsc_reserve_rotations",
-          "HOK_KOR_nrsc_skilled_worker_exemptions"
+        "right_first": {
+          "passed": 400,
+          "failed": 0,
+          "run": "rewards-right-final"
+        },
+        "missing_tier": {
+          "passed": 413,
+          "failed": 0,
+          "run": "rewards-missing-final"
+        },
+        "scope": "Immediate forced completions, amounts and tier replacement; not normal access, timing or research consumption."
+      },
+      "regional_immediate": {
+        "passed": 147,
+        "failed": 0,
+        "run": "projects-02",
+        "scope": "Four isolated projects; activation effects, eligibility/cancel predicates and directly invoked cancel body. Not daily cancellation or elapsed 90-day proof."
+      },
+      "government_faction_lifecycle": {
+        "passed": 7,
+        "failed": 0,
+        "run": "lifecycle-government-01",
+        "scope": "Actual daily C4 removal after faction exit, M2 survival of faction exit then cancellation/removal after government loss; restoring democracy alone does not restore II. Startup and condition changes synthetic; M2 initial activation not UI."
+      },
+      "control_loss_lifecycle": {
+        "passed": 15,
+        "failed": 0,
+        "run": "lifecycle-control-02",
+        "scope": "M1 UI PP500 to350; injected control loss day3, natural cancellation day4, reclaim day6 without automatic restoration, 90-day shared cooldown ended day94, UI restart on Apr12 11:00 PP468 to318 with90days, actual daily II/temporary restoration. War/territory setup synthetic."
+      },
+      "ownership_loss_lifecycle": {
+        "passed": 8,
+        "failed": 0,
+        "run": "lifecycle-ownership-01",
+        "scope": "M1 ordinary UI activation on Jan1 12:00 PP500 to350 and90days; synthetic ownership loss followed by actual daily cancellation on day4 and modifier removal; reclaim does not automatically restore II. Separate from control-loss case."
+      },
+      "runtime_limits": [
+        "All remaining focuses through normal progression",
+        "Research bonus consumption",
+        "M2-M4 complete ordinary UI and90-day lifecycles",
+        "All M3 multi-state loss combinations",
+        "Unobserved UI regions and states",
+        "Long-term AI",
+        "New-save round trip and old-save compatibility",
+        "Alternative DLC configurations",
+        "Multiplayer"
+      ],
+      "preservation": "Final clean-03, three final reward runs, projects-02 and three successful lifecycle runs confirm original13 saves, settings, playset, launcher and production files unchanged, with zero cleanup issues. normal-01 final result also confirms saves/settings/playset preserved. Earlier clean-02 added only the engine graceful_exit=no settings line; tools did not write or restore user settings. Do not claim all historical runs were byte-identical.",
+      "cleanup": "Final verification processes closed and owned temporary diagnostic files removed."
+    },
+    "previous_h1_layout_validation": {
+      "source_sha256": "dd2334a0f5be074c0e52adb280b6cbeb80a20412ccbcee62f754adf4e85613b4",
+      "baseline_source_sha256": "905a3868776f4b5aedc1e5f41bda0568bf279f38a48343888114e985f1ccf852",
+      "incident": "docs/incidents/2026-09-23-hwan-focus-layout.md",
+      "status": "LAYOUT_REPAIR_SHOW_HIDE_OBSERVED",
+      "confirmed_defect": "User screenshot shows pre-repair H1 root title crossed by the existing imperial-regent/opposition mutually-exclusive wire. Prior geometry checked prerequisite wires but omitted exclusion wires.",
+      "before_h1_base_positions": {
+        "HOK_KOR_hw_provincial_inventory": [
+          183,
+          5
         ],
-        "scope": "Synthetic reward-free political prerequisites, AI disabled. Exact completion tick and initial banked progress were not separately measured. Remaining three focuses, AND blocking, full 140-day module, research consumption and AI remain unverified.",
-        "evidence": "docs/incidents/2026-09-22-korean-fascist-mobilization.md"
+        "HOK_KOR_hw_provision_accounts": [
+          182,
+          6
+        ],
+        "HOK_KOR_hw_inspection_circuits": [
+          184,
+          6
+        ],
+        "HOK_KOR_hw_supply_returns": [
+          183,
+          7
+        ]
+      },
+      "after_h1_base_positions": {
+        "HOK_KOR_hw_provincial_inventory": [
+          185,
+          10
+        ],
+        "HOK_KOR_hw_provision_accounts": [
+          184,
+          11
+        ],
+        "HOK_KOR_hw_inspection_circuits": [
+          186,
+          11
+        ],
+        "HOK_KOR_hw_supply_returns": [
+          185,
+          12
+        ]
+      },
+      "production_preservation": {
+        "passed": 10,
+        "failed": 0,
+        "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-layout/preservation.json",
+        "scope": "Only root x/y and contributor note changed;459 other blocks and456 other resolved positions unchanged. Gameplay, anchor, offsets, bounds, panel and shortcuts preserved."
+      },
+      "geometry": {
+        "record": ".local-artifacts/korean-focus-expansion/remaining-20260923/h1-layout-review.json",
+        "script": ".local-artifacts/korean-focus-expansion/remaining-20260923/h1-layout-review.py",
+        "source_sha256": "dd2334a0f5be074c0e52adb280b6cbeb80a20412ccbcee62f754adf4e85613b4",
+        "coordinate_input_sha256": "905a3868776f4b5aedc1e5f41bda0568bf279f38a48343888114e985f1ccf852",
+        "selected_h1_override_matches_applied_source": true,
+        "states": 20,
+        "guard_pixels": 8,
+        "overlaps": 0,
+        "prerequisite_line_contacts": 0,
+        "unrelated_horizontal_collinearity": 0,
+        "mutually_exclusive_title_band_contacts": 0,
+        "old_root_exclusion_defect_reproduced": true,
+        "exclusion_height_model": "Conservative band20..70px below grid center motivated by user screenshot; not a calibrated engine raster measurement.",
+        "limits": "Static models do not establish engine routing/click targets; perpendicular line crossings are not prohibited; longer entry wire requires UI inspection.",
+        "scope": "Four relocated H1 focuses and their prerequisite edges against all visible neighbors and mutual-exclusion title-height bands."
+      },
+      "runtime_visual": {
+        "initial_show": {
+          "status": "OBSERVED_PASS_FOR_INSPECTED_H1_AREA",
+          "run": "show-01",
+          "setup_passed": 1,
+          "setup_failed": 0,
+          "checksum": "565a",
+          "resolution": [
+            1600,
+            900
+          ],
+          "gui_scale": 1,
+          "view": "Royal shortcut scale0.65 and three zoom-in button clicks",
+          "observed": [
+            "Royal parent and original exclusion row have no H1 title in their path",
+            "All four relocated H1 icons and nameplates are separate from neighboring legacy focuses",
+            "Vertical entry line passes beside Kaiserreich and across existing branch lines without hiding focus rectangles",
+            "H1 split and merge are readable",
+            "Clicking the new root title opens the correct focus with unchanged 35-day and industry150% reward"
+          ],
+          "evidence": ".local-artifacts/incidents/2026-09-23-hwan-focus-layout/runtime-results/show-01/ui-observations.json",
+          "limits": "Not normal focus completion or a live political transition; no claim that every line intersection is removed",
+          "preservation": {
+            "SavesUnchanged": true,
+            "SettingsUnchanged": false,
+            "OnlyGracefulExitChanged": true,
+            "SettingsAcceptable": true,
+            "PlaysetUnchanged": true,
+            "LauncherUnchanged": true,
+            "ProductionUnchanged": true,
+            "CleanupIssues": []
+          }
+        },
+        "royal_completed_hide": {
+          "status": "OBSERVED_PASS_FOR_INSPECTED_H1_AREA",
+          "run": "hide-01",
+          "setup_passed": 1,
+          "setup_failed": 0,
+          "checksum": "820a",
+          "resolution": [
+            1600,
+            900
+          ],
+          "gui_scale": 1,
+          "view": "Two direct views of the royal sector at different zoom/scroll positions",
+          "observed": [
+            "Royal route is displayed in the synthetic completed-root HIDE state",
+            "Original royal exclusion row is clear of the H1 title",
+            "All four relocated H1 icons and nameplates remain separate from neighboring legacy focuses",
+            "The H1 entry line, split and merge are visible without covering neighboring focus rectangles"
+          ],
+          "evidence": ".local-artifacts/incidents/2026-09-23-hwan-focus-layout/runtime-results/hide-01/ui-observations.json",
+          "limits": "Royal root unlocked without rewards for setup; no normal political transition or focus completion. User input interrupted two attempted clicks; latest screenshots were reacquired and inspected without overriding that input.",
+          "preservation": {
+            "SavesUnchanged": true,
+            "SettingsUnchanged": true,
+            "OnlyGracefulExitChanged": false,
+            "SettingsAcceptable": true,
+            "PlaysetUnchanged": true,
+            "LauncherUnchanged": true,
+            "ProductionUnchanged": true,
+            "CleanupIssues": []
+          }
+        },
+        "source_sha256": "dd2334a0f5be074c0e52adb280b6cbeb80a20412ccbcee62f754adf4e85613b4",
+        "limits": "Separate paused synthetic display states do not prove normal political transition or new reward progression."
+      },
+      "prior_runtime_evidence": "All82 rewards/normal/lifecycle records in previous460 validation belong to905a. Gameplay preservation supports reference to them; they were not rerun ondd2334a0 and did not cover pre-repair H1 UI.",
+      "clean_load": "NOT_RERUN_FOR_LAYOUT_ONLY_REPAIR",
+      "save_reload": "UNVERIFIED_FOR_REPAIRED_SOURCE",
+      "normal_progression": "NOT_RERUN_GAMEPLAY_UNCHANGED",
+      "cleanup": "Both owned UI-test processes closed and temporary owned diagnostic removed; no cleanup issues.",
+      "log_comparison": {
+        "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-layout/log-comparison.json",
+        "baseline_kind": "Preserved prior user-session error log, not a fresh diagnostic-free control",
+        "baseline_nonempty_lines": 128,
+        "baseline_unique_messages": 40,
+        "normalization": "Remove both timestamp fields",
+        "runs": {
+          "show-01": {
+            "nonempty_lines": 128,
+            "unique_messages": 40,
+            "new_messages": 0,
+            "increased_counts": 0
+          },
+          "hide-01": {
+            "nonempty_lines": 128,
+            "unique_messages": 40,
+            "new_messages": 0,
+            "increased_counts": 0
+          }
+        }
       }
     }
   },

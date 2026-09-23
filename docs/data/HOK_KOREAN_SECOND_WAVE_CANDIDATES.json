@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "date": "2026-09-23",
-  "status": "FIFTY_TWO_APPLIED_REMAINDER_DESIGN_DRAFT",
+  "status": "ALL_134_APPLIED_H1_RIGHT_SPACE_STATIC_CHECKED_UI_BLOCKED",
   "count_target": [
     450,
     470
   ],
-  "current_total": 378,
+  "current_total": 460,
   "provisional_second_wave_allocation": 134,
-  "warning": "Unapplied candidates remain proposals, not final implementation specifications. Applied: communist 28 and fascist F1-F6 24. Remaining 82 require detailed design. F4 intentionally follows F2 staff regulations; F5 and F6 use political completion gates and remain independent. See the current module specifications and source-specific validation records.",
+  "warning": "All 134 second-wave candidates are implemented under detailed module specifications, not their original draft chains or rewards. Existing 378 focuses are preserved. Current implementation includes constitutional 14, absolute monarchy 14, Hwan 14, Manchurian 20 and shared field 20. Static, forced-reward and normal-play evidence must be reported separately.",
   "focuses": [
     {
       "id": "HOK_KOR_yeo_worker_peasant_congress",
@@ -1661,1947 +1661,3422 @@
     {
       "id": "HOK_KOR_cm_parliamentary_questions",
       "name": "정례 대정부 질문",
-      "description": "국정의 답변을 정해진 회기에 공개해 내각이 의회의 신뢰를 유지하게 한다.",
+      "description": "의회에 국정의 집행 결과를 정기적으로 설명하고 공개 질의에 답변하여 책임내각의 토대를 다집니다.",
       "prerequisites": [
         [
           "KOR_confucian_democracy"
         ]
       ],
       "placement_anchor": "KOR_confucian_democracy",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "add_political_power = 50",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
+      "reward": "add_political_power = 150",
       "palette": "democracy",
-      "motif": "의사봉·질의서",
+      "motif": "의사봉과 질의서",
       "module": "C1",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_parliamentary_questions",
+      "position": [
+        204,
+        10
+      ],
+      "anchor": "KOR_confucian_democracy",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_countersigned_orders",
       "name": "부서명령 책임서명",
-      "description": "황실의 명령과 부처 집행 문서에 담당 대신의 책임을 분명히 남긴다.",
+      "description": "군주의 재가와 각 부처의 집행 책임을 구분합니다. 담당 대신이 명령에 책임을 지고 전문 보좌진을 꾸릴 수 있게 합니다.",
       "prerequisites": [
         [
           "HOK_KOR_cm_parliamentary_questions"
         ]
       ],
       "placement_anchor": "HOK_KOR_cm_parliamentary_questions",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
       "reward": "add_ideas = HOK_KOR_cm_responsible_cabinet_1",
       "palette": "democracy",
-      "motif": "봉인 문서·깃펜 I",
+      "motif": "봉인 문서와 깃펜",
       "module": "C1",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_cm_responsible_cabinet_1"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_countersigned_orders",
+      "position": [
+        203,
+        11
+      ],
+      "anchor": "HOK_KOR_cm_parliamentary_questions",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_ministerial_reports",
-      "name": "대신 업무보고",
-      "description": "장관별 집행 실적을 제출해 의회가 예산과 행정의 결과를 함께 살핀다.",
+      "name": "내각 정보행정",
+      "description": "부처마다 흩어진 보고를 통일하고 통계·통신 장비를 보급하여 의회의 예산 심의와 내각의 정책 집행을 뒷받침합니다.",
       "prerequisites": [
         [
-          "HOK_KOR_cm_countersigned_orders"
+          "HOK_KOR_cm_parliamentary_questions"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cm_countersigned_orders",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "add_political_power = 25\nadd_stability = 0.02",
+      "placement_anchor": "HOK_KOR_cm_parliamentary_questions",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
+      "reward": "add_political_power = 100\nadd_tech_bonus = { name = HOK_KOR_cm_ministerial_reports bonus = 1.0 uses = 1 category = electronics }",
       "palette": "democracy",
-      "motif": "장부·의회",
+      "motif": "통신기와 장부",
       "module": "C1",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_ministerial_reports",
+      "position": [
+        205,
+        11
+      ],
+      "anchor": "HOK_KOR_cm_parliamentary_questions",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_cabinet_confidence",
-      "name": "책임내각의 관행",
-      "description": "정례 질문과 서명 책임을 하나의 관행으로 정착시켜 군주와 내각의 역할을 구분한다.",
+      "name": "책임내각의 정착",
+      "description": "책임서명과 정보행정을 함께 정착시킵니다. 의회의 신임을 받는 내각이 일관되게 정책을 집행하고 필요한 인재를 등용하게 됩니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_cm_countersigned_orders"
+        ],
         [
           "HOK_KOR_cm_ministerial_reports"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cm_ministerial_reports",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "if = { limit = { has_idea = HOK_KOR_cm_responsible_cabinet_1 } swap_ideas = { remove_idea = HOK_KOR_cm_responsible_cabinet_1 add_idea = HOK_KOR_cm_responsible_cabinet_2 } } else = { add_ideas = HOK_KOR_cm_responsible_cabinet_2 }",
+      "placement_anchor": "HOK_KOR_cm_parliamentary_questions",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
+      "reward": "if = { limit = { has_idea = HOK_KOR_cm_responsible_cabinet_1 } swap_ideas = { remove_idea = HOK_KOR_cm_responsible_cabinet_1 add_idea = HOK_KOR_cm_responsible_cabinet_2 } }\nelse = { add_ideas = HOK_KOR_cm_responsible_cabinet_2 }",
       "palette": "democracy",
-      "motif": "봉인 문서·깃펜 II",
+      "motif": "봉인 문서와 깃펜",
       "module": "C1",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
+        "HOK_KOR_cm_responsible_cabinet_1",
         "HOK_KOR_cm_responsible_cabinet_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_cabinet_confidence",
+      "position": [
+        204,
+        12
+      ],
+      "anchor": "HOK_KOR_cm_parliamentary_questions",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_court_clerks",
-      "name": "법원 서기 실무",
-      "description": "독립된 법원이 제때 판결하려면 사건 기록을 다루는 서기의 실무가 뒷받침되어야 한다.",
+      "name": "국민 법률구조망",
+      "description": "독립된 사법부를 국민이 실제로 이용할 수 있어야 합니다. 비용과 거리 때문에 권리구제를 포기하지 않도록 공공 법률구조망을 세웁니다.",
       "prerequisites": [
         [
-          "KOR_reaffirming_the_independence_of_the_judiciary"
+          "KOR_nomination_prime_minister"
         ]
       ],
-      "placement_anchor": "KOR_reaffirming_the_independence_of_the_judiciary",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "KOR_nomination_prime_minister",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister has_completed_focus = KOR_reaffirming_the_independence_of_the_judiciary",
+      "reward": "add_ideas = HOK_KOR_cm_accessible_justice_1",
       "palette": "democracy",
-      "motif": "법전·서류함",
+      "motif": "법전과 저울",
       "module": "C2",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "linked_ideas": [
+        "HOK_KOR_cm_accessible_justice_1"
+      ],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        8,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_court_clerks",
+      "position": [
+        210,
+        8
+      ],
+      "anchor": "KOR_nomination_prime_minister",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_public_legal_notices",
-      "name": "판결 공시 절차",
-      "description": "판결과 절차를 알기 쉽게 공시하여 법정 밖의 오해를 줄인다.",
+      "name": "노사 분쟁 조정",
+      "description": "노동자와 기업이 분쟁을 폭력이나 장기 조업 중단 대신 법적 조정으로 해결하도록 지원합니다. 현장의 협의와 생산기술 개선을 함께 추진합니다.",
       "prerequisites": [
         [
           "HOK_KOR_cm_court_clerks"
         ]
       ],
       "placement_anchor": "HOK_KOR_cm_court_clerks",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "add_stability = 0.02",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
+      "reward": "add_political_power = 150\nadd_tech_bonus = { name = HOK_KOR_cm_public_legal_notices bonus = 1.5 uses = 1 category = industry }",
       "palette": "democracy",
-      "motif": "저울·공고문",
+      "motif": "법전과 톱니바퀴",
       "module": "C2",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_public_legal_notices",
+      "position": [
+        209,
+        9
+      ],
+      "anchor": "HOK_KOR_cm_court_clerks",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_rural_legal_aid",
-      "name": "지방 법률상담",
-      "description": "먼 고을의 주민도 절차를 몰라 권리를 포기하지 않도록 순회 상담을 운영한다.",
+      "name": "지방 순회재판",
+      "description": "먼 고을까지 순회재판과 상담 창구를 확대해 토지·채무·생활 분쟁을 처리합니다. 중앙에 갈 수 없는 주민도 권리를 보장받게 합니다.",
       "prerequisites": [
         [
-          "HOK_KOR_cm_public_legal_notices"
+          "HOK_KOR_cm_court_clerks"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cm_public_legal_notices",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "add_political_power = 25\nadd_stability = 0.01",
+      "placement_anchor": "HOK_KOR_cm_court_clerks",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
+      "reward": "add_political_power = 100\nadd_stability = 0.05",
       "palette": "democracy",
-      "motif": "저울·촌락",
+      "motif": "저울과 작은 지붕",
       "module": "C2",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_rural_legal_aid",
+      "position": [
+        211,
+        9
+      ],
+      "anchor": "HOK_KOR_cm_court_clerks",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_appeal_docket",
-      "name": "상소 사건 정리",
-      "description": "심급별 사건 대장을 통일해 재심사가 필요한 사건을 차례대로 처리한다.",
+      "name": "권리구제 제도화",
+      "description": "노사 조정과 지방 순회재판을 상시 제도로 정착시킵니다. 분쟁 처리의 부담을 줄이고 국민의 신뢰를 높여 민간 경제가 안정적으로 활동하게 합니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_cm_public_legal_notices"
+        ],
         [
           "HOK_KOR_cm_rural_legal_aid"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cm_rural_legal_aid",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "add_timed_idea = { idea = HOK_KOR_cm_accessible_justice days = 730 }",
+      "placement_anchor": "HOK_KOR_cm_court_clerks",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
+      "reward": "if = { limit = { has_idea = HOK_KOR_cm_accessible_justice_1 } swap_ideas = { remove_idea = HOK_KOR_cm_accessible_justice_1 add_idea = HOK_KOR_cm_accessible_justice_2 } }\nelse = { add_ideas = HOK_KOR_cm_accessible_justice_2 }",
       "palette": "democracy",
-      "motif": "저울·책갈피",
+      "motif": "저울과 법전",
       "module": "C2",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
-        "HOK_KOR_cm_accessible_justice"
+        "HOK_KOR_cm_accessible_justice_1",
+        "HOK_KOR_cm_accessible_justice_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_appeal_docket",
+      "position": [
+        210,
+        10
+      ],
+      "anchor": "HOK_KOR_cm_court_clerks",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_public_patronage",
       "name": "황실 공익후원",
-      "description": "황실의 후원을 공개된 공익사업에 배분하여 사적 은전과 공공 지출을 구분한다.",
+      "description": "황실의 후원을 공개된 민생사업에 배분합니다. 긴급 생활 지원으로 가계의 부담을 덜고 사적 은전과 공공 지출을 구분합니다.",
       "prerequisites": [
-        [
-          "KOR_modern_sejong_the_great"
-        ],
         [
           "KOR_nomination_prime_minister"
         ]
       ],
-      "placement_anchor": "KOR_modern_sejong_the_great",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "KOR_nomination_prime_minister",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister has_completed_focus = KOR_modern_sejong_the_great",
+      "reward": "add_ideas = HOK_KOR_cm_public_welfare_1",
       "palette": "democracy",
-      "motif": "이화문·열린 손",
+      "motif": "왕관과 열린 손",
       "module": "C3",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "linked_ideas": [
+        "HOK_KOR_cm_public_welfare_1"
+      ],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        4,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_public_patronage",
+      "position": [
+        206,
+        8
+      ],
+      "anchor": "KOR_nomination_prime_minister",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_municipal_clinics",
       "name": "시군 진료지원",
-      "description": "기존 시군 행정과 협력해 주민이 가까운 곳에서 기본 진료를 받을 수 있게 한다.",
+      "description": "시군의 기본 진료와 구호망을 확충하여 질병과 생계 위기가 가정을 무너뜨리지 않도록 합니다. 기존 공익후원을 지속적인 공공 서비스로 넓힙니다.",
       "prerequisites": [
         [
           "HOK_KOR_cm_public_patronage"
         ]
       ],
       "placement_anchor": "HOK_KOR_cm_public_patronage",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "add_stability = 0.03",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
+      "reward": "if = { limit = { has_idea = HOK_KOR_cm_public_welfare_1 } swap_ideas = { remove_idea = HOK_KOR_cm_public_welfare_1 add_idea = HOK_KOR_cm_public_welfare_2 } }\nelse = { add_ideas = HOK_KOR_cm_public_welfare_2 }",
       "palette": "democracy",
-      "motif": "의료가방·작은 지붕",
+      "motif": "의료가방과 작은 지붕",
       "module": "C3",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
-      "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
-      "cost": 5,
-      "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
-    },
-    {
-      "id": "HOK_KOR_cm_welfare_accounts",
-      "name": "공익후원 결산",
-      "description": "후원금의 사용처를 공개하고 긴급 구호비를 지속 가능한 규모로 확보한다.",
-      "prerequisites": [
-        [
-          "HOK_KOR_cm_municipal_clinics"
-        ]
-      ],
-      "placement_anchor": "HOK_KOR_cm_municipal_clinics",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister",
-      "reward": "add_timed_idea = { idea = HOK_KOR_cm_public_welfare days = 730 }",
-      "palette": "democracy",
-      "motif": "장부·의료가방",
-      "module": "C3",
-      "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
-        "HOK_KOR_cm_public_welfare"
+        "HOK_KOR_cm_public_welfare_1",
+        "HOK_KOR_cm_public_welfare_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_municipal_clinics",
+      "position": [
+        205,
+        9
+      ],
+      "anchor": "HOK_KOR_cm_public_patronage",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
+    },
+    {
+      "id": "HOK_KOR_cm_welfare_accounts",
+      "name": "공익시설 개선기금",
+      "description": "후원금의 집행을 공개하고 진료소와 구호시설에 필요한 장비·설비를 개선합니다. 지역의 생산기술을 활용해 공익사업의 유지 비용을 줄입니다.",
+      "prerequisites": [
+        [
+          "HOK_KOR_cm_public_patronage"
+        ]
+      ],
+      "placement_anchor": "HOK_KOR_cm_public_patronage",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
+      "reward": "add_political_power = 100\nadd_tech_bonus = { name = HOK_KOR_cm_welfare_accounts bonus = 1.5 uses = 1 category = industry }",
+      "palette": "democracy",
+      "motif": "장부와 건축도구",
+      "module": "C3",
+      "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
+      "ai_factor": 2,
+      "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
+      "cost": 5,
+      "mutually_exclusive": [],
+      "linked_ideas": [],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_welfare_accounts",
+      "position": [
+        207,
+        9
+      ],
+      "anchor": "HOK_KOR_cm_public_patronage",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_allied_observers",
       "name": "연합군 훈련 참관",
-      "description": "기존 합동훈련에 참관단을 보내 서로 다른 지휘 절차가 만나는 지점을 살핀다.",
+      "description": "기존 합동훈련에 육해공군 참관단을 보내 연합 작전의 지휘와 협력 절차를 익힙니다. 세력에 실제 참여한 상태에서 경험을 공유합니다.",
       "prerequisites": [
         [
           "KOR_joint_military_practice"
         ]
       ],
       "placement_anchor": "KOR_joint_military_practice",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister\nis_in_faction = yes",
-      "reward": "army_experience = 15",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister is_in_faction = yes",
+      "reward": "army_experience = 50\nnavy_experience = 25\nair_experience = 25",
       "palette": "democracy",
-      "motif": "관측안경·왕관",
+      "motif": "관측안경과 왕관",
       "module": "C4",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_allied_observers",
+      "position": [
+        202,
+        14
+      ],
+      "anchor": "KOR_joint_military_practice",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_bilingual_manuals",
       "name": "합동훈련 교범 번역",
-      "description": "훈련에서 확인한 절차를 한국군의 용어로 정리하여 일선 부대에 전달한다.",
+      "description": "참관에서 확인한 절차를 한국군 교범과 통신체계로 옮깁니다. 용어와 신호를 통일하여 외국 부대와의 실무 협력을 지원합니다.",
       "prerequisites": [
         [
           "HOK_KOR_cm_allied_observers"
         ]
       ],
       "placement_anchor": "HOK_KOR_cm_allied_observers",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister\nis_in_faction = yes",
-      "reward": "army_experience = 10\nnavy_experience = 10",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister is_in_faction = yes",
+      "reward": "army_experience = 25\nadd_tech_bonus = { name = HOK_KOR_cm_bilingual_manuals bonus = 1.0 uses = 1 category = electronics }",
       "palette": "democracy",
-      "motif": "두 권의 교범",
+      "motif": "두 권의 교범과 무전기",
       "module": "C4",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_bilingual_manuals",
+      "position": [
+        201,
+        15
+      ],
+      "anchor": "HOK_KOR_cm_allied_observers",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cm_liaison_rotation",
       "name": "순환 연락장교",
-      "description": "연락장교가 한 번의 훈련 경험에 머물지 않고 각 부대의 실무를 익히게 한다.",
+      "description": "연락장교를 일선 부대와 연합 지휘부에 순환 배치해 공동 계획과 지휘 협력을 지속합니다. 이 제도는 세력에 참여하는 동안 유지됩니다.",
       "prerequisites": [
         [
-          "HOK_KOR_cm_bilingual_manuals"
+          "HOK_KOR_cm_allied_observers"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cm_bilingual_manuals",
-      "available": "has_government = democratic\nhas_completed_focus = KOR_nomination_prime_minister\nis_in_faction = yes",
-      "reward": "add_timed_idea = { idea = HOK_KOR_cm_allied_liaison days = 365 }",
+      "placement_anchor": "HOK_KOR_cm_allied_observers",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister is_in_faction = yes",
+      "reward": "add_ideas = HOK_KOR_cm_allied_liaison",
       "palette": "democracy",
-      "motif": "견장·연결 화살표",
+      "motif": "견장과 연결 화살표",
       "module": "C4",
       "donor": "Installed vanilla common/national_focus/france.txt:7543 FRA_guarantee_the_constitution; 7607 FRA_counter_action; 7747 FRA_public_welfare; existing KOR constitutional branch only, no French character/faction effects.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_cm_allied_liaison"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cm_liaison_rotation",
+      "position": [
+        203,
+        15
+      ],
+      "anchor": "HOK_KOR_cm_allied_observers",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_CONSTITUTIONAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_bibyeonsa_dockets",
-      "name": "비변사 안건대장",
-      "description": "부활한 비변사의 명령이 접수와 집행 사이에서 사라지지 않도록 안건별 기록을 남긴다.",
+      "name": "비변사 집행예산",
+      "description": "비변사의 집행 예산과 안건 책임을 정리합니다. 기존 비변사의 외교 권한과 황제 특성은 그대로 유지합니다.",
       "prerequisites": [
         [
-          "KOR_revive_bibyeonsa"
+          "KOR_urihwangsilsaranghoe"
         ]
       ],
-      "placement_anchor": "KOR_revive_bibyeonsa",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "KOR_urihwangsilsaranghoe",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order has_completed_focus = KOR_revive_bibyeonsa",
+      "reward": "add_political_power = 150",
       "palette": "non_aligned",
-      "motif": "용문 인장·문서함",
+      "motif": "용문 인장·예산 장부",
       "module": "A1",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        20,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_bibyeonsa_dockets",
+      "position": [
+        206,
+        1
+      ],
+      "anchor": "KOR_urihwangsilsaranghoe",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_provincial_returns",
-      "name": "지방 보고기한",
-      "description": "각 도의 보고 항목과 제출 기한을 정하여 조정이 현지 사정을 같은 기준으로 파악한다.",
+      "name": "지방 보고체계",
+      "description": "지방 보고기한과 책임자를 정하여 조정 행정체계 I을 도입합니다.",
       "prerequisites": [
         [
           "HOK_KOR_am_bibyeonsa_dockets"
         ]
       ],
       "placement_anchor": "HOK_KOR_am_bibyeonsa_dockets",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
       "reward": "add_ideas = HOK_KOR_am_ordered_administration_1",
       "palette": "non_aligned",
-      "motif": "인장·보고표 I",
+      "motif": "인장·보고표",
       "module": "A1",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_am_ordered_administration_1"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_provincial_returns",
+      "position": [
+        205,
+        2
+      ],
+      "anchor": "HOK_KOR_am_bibyeonsa_dockets",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_inspector_itineraries",
-      "name": "순찰관 순회일정",
-      "description": "중복 순찰을 줄이고 보고가 늦은 고을부터 살펴 행정 누락을 바로잡는다.",
+      "name": "순찰관 현장감사",
+      "description": "지방의 실제 집행을 감사해 보고와 현장의 차이를 바로잡습니다. 지방 보고체계와 어느 순서로든 진행할 수 있습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_am_provincial_returns"
+          "HOK_KOR_am_bibyeonsa_dockets"
         ]
       ],
-      "placement_anchor": "HOK_KOR_am_provincial_returns",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_political_power = 25\nadd_stability = 0.01",
+      "placement_anchor": "HOK_KOR_am_bibyeonsa_dockets",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "reward": "add_political_power = 100\nadd_stability = 0.05",
       "palette": "non_aligned",
-      "motif": "두루마리·나침반",
+      "motif": "나침반·봉인 문서",
       "module": "A1",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_inspector_itineraries",
+      "position": [
+        207,
+        2
+      ],
+      "anchor": "HOK_KOR_am_bibyeonsa_dockets",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_execution_registers",
-      "name": "교지 집행대조",
-      "description": "내려간 교지와 실제 조치의 결과를 대조하여 명령의 책임을 끝까지 확인한다.",
+      "name": "조정 집행 일원화",
+      "description": "보고체계와 현장감사를 모두 정착시킨 뒤 행정체계를 II로 강화합니다. 이미 확보한 다른 국민정신은 유지합니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_am_provincial_returns"
+        ],
         [
           "HOK_KOR_am_inspector_itineraries"
         ]
       ],
-      "placement_anchor": "HOK_KOR_am_inspector_itineraries",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
+      "placement_anchor": "HOK_KOR_am_bibyeonsa_dockets",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
       "reward": "if = { limit = { has_idea = HOK_KOR_am_ordered_administration_1 } swap_ideas = { remove_idea = HOK_KOR_am_ordered_administration_1 add_idea = HOK_KOR_am_ordered_administration_2 } } else = { add_ideas = HOK_KOR_am_ordered_administration_2 }",
       "palette": "non_aligned",
-      "motif": "인장·보고표 II",
+      "motif": "용문 인장·행정 규정",
       "module": "A1",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_am_ordered_administration_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_execution_registers",
+      "position": [
+        206,
+        3
+      ],
+      "anchor": "HOK_KOR_am_bibyeonsa_dockets",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_petition_calendar",
-      "name": "상언 접수일",
-      "description": "정해진 날에 백성의 상언을 접수하여 궁정의 통치가 실제 불편을 놓치지 않게 한다.",
+      "name": "백성의 상언",
+      "description": "백성의 요청을 받아 구휼과 민생 복구가 필요한 지역에 예산을 배정합니다.",
       "prerequisites": [
         [
-          "KOR_reconstruction_confusian_order"
+          "KOR_urihwangsilsaranghoe"
         ]
       ],
-      "placement_anchor": "KOR_reconstruction_confusian_order",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_stability = 0.02",
+      "placement_anchor": "KOR_urihwangsilsaranghoe",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "reward": "add_political_power = 150\nadd_stability = 0.05",
       "palette": "non_aligned",
-      "motif": "두루마리·궁문",
+      "motif": "궁문·상언 두루마리",
       "module": "A2",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        4,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_petition_calendar",
+      "position": [
+        190,
+        1
+      ],
+      "anchor": "KOR_urihwangsilsaranghoe",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_granary_ledgers",
-      "name": "구휼곡 장부",
-      "description": "기존 구휼 재원의 수입과 지출을 기록하여 흉작 때 필요한 물자를 보존한다.",
+      "name": "구휼·민생 예산",
+      "description": "구휼곡과 민생 예산을 함께 관리하여 민간 건설과 건물 수리를 지원합니다.",
       "prerequisites": [
         [
           "HOK_KOR_am_petition_calendar"
         ]
       ],
       "placement_anchor": "HOK_KOR_am_petition_calendar",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_political_power = 50",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "reward": "add_ideas = HOK_KOR_am_relief_protocol_1",
       "palette": "non_aligned",
-      "motif": "쌀자루·장부",
+      "motif": "곡물 자루·민가",
       "module": "A2",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "linked_ideas": [
+        "HOK_KOR_am_relief_protocol_1"
+      ],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_granary_ledgers",
+      "position": [
+        190,
+        2
+      ],
+      "anchor": "HOK_KOR_am_petition_calendar",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_relief_dispatches",
       "name": "구휼 집행규정",
-      "description": "지방의 요청을 표준 절차로 처리하되 일시적 구호가 상시 낭비가 되지 않도록 관리한다.",
+      "description": "지역 요청과 예산 집행을 정례화해 기존 구휼·민생 혜택을 강화합니다.",
       "prerequisites": [
         [
           "HOK_KOR_am_granary_ledgers"
         ]
       ],
-      "placement_anchor": "HOK_KOR_am_granary_ledgers",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_timed_idea = { idea = HOK_KOR_am_relief_protocol days = 540 }",
+      "placement_anchor": "HOK_KOR_am_petition_calendar",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "reward": "if = { limit = { has_idea = HOK_KOR_am_relief_protocol_1 } swap_ideas = { remove_idea = HOK_KOR_am_relief_protocol_1 add_idea = HOK_KOR_am_relief_protocol_2 } } else = { add_ideas = HOK_KOR_am_relief_protocol_2 }",
       "palette": "non_aligned",
-      "motif": "곡식·봉인 서류",
+      "motif": "곡물·봉인 장부",
       "module": "A2",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
-        "HOK_KOR_am_relief_protocol"
+        "HOK_KOR_am_relief_protocol_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_relief_dispatches",
+      "position": [
+        190,
+        3
+      ],
+      "anchor": "HOK_KOR_am_petition_calendar",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_regimental_returns",
       "name": "연대 병적대조",
-      "description": "군제개혁 이후 각 연대의 병적과 실제 편제를 맞춰 지휘계통의 빈틈을 줄인다.",
+      "description": "이미 개혁된 군제 안에서 병적과 실제 편제를 대조합니다. 기존 군제개혁의 교리 혜택과 부대는 보존합니다.",
       "prerequisites": [
         [
-          "KOR_reform_military"
+          "KOR_urihwangsilsaranghoe"
         ]
       ],
-      "placement_anchor": "KOR_reform_military",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "army_experience = 15",
+      "placement_anchor": "KOR_urihwangsilsaranghoe",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order has_completed_focus = KOR_reform_military",
+      "reward": "army_experience = 50",
       "palette": "non_aligned",
       "motif": "병적부·견장",
       "module": "A3",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        12,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_regimental_returns",
+      "position": [
+        198,
+        1
+      ],
+      "anchor": "KOR_urihwangsilsaranghoe",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_nco_examinations",
-      "name": "하사관 실무고시",
-      "description": "출신보다 야전 실무를 확인하는 평가를 도입하여 개혁된 군제의 하급 지휘를 보강한다.",
+      "name": "하사관 실무교육",
+      "description": "출신보다 야전 실무를 중심으로 하사관을 교육하여 군제 전문화 I을 도입합니다.",
       "prerequisites": [
         [
           "HOK_KOR_am_regimental_returns"
         ]
       ],
       "placement_anchor": "HOK_KOR_am_regimental_returns",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "army_experience = 15",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "reward": "add_ideas = HOK_KOR_am_reserve_cadre_1",
       "palette": "non_aligned",
-      "motif": "견장·시험지",
+      "motif": "견장·교육 교범",
       "module": "A3",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 1,
-      "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
-      "cost": 5,
-      "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
-    },
-    {
-      "id": "HOK_KOR_am_reserve_cadre",
-      "name": "예비 간부명부",
-      "description": "현역 지휘부의 빈자리를 메울 숙련 간부를 정리해 동원 때의 혼선을 줄인다.",
-      "prerequisites": [
-        [
-          "HOK_KOR_am_nco_examinations"
-        ]
-      ],
-      "placement_anchor": "HOK_KOR_am_nco_examinations",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_timed_idea = { idea = HOK_KOR_am_reserve_cadre_idea days = 730 }",
-      "palette": "non_aligned",
-      "motif": "예비 명부·견장",
-      "module": "A3",
-      "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
-        "HOK_KOR_am_reserve_cadre_idea"
+        "HOK_KOR_am_reserve_cadre_1"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_nco_examinations",
+      "position": [
+        197,
+        2
+      ],
+      "anchor": "HOK_KOR_am_regimental_returns",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
+    },
+    {
+      "id": "HOK_KOR_am_reserve_cadre",
+      "name": "예비 간부명부",
+      "description": "숙련 간부의 경험을 보병 장비 연구와 예비 지휘에 연결합니다. 하사관 교육과 어느 순서로든 진행할 수 있습니다.",
+      "prerequisites": [
+        [
+          "HOK_KOR_am_regimental_returns"
+        ]
+      ],
+      "placement_anchor": "HOK_KOR_am_regimental_returns",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "reward": "add_tech_bonus = { name = HOK_KOR_am_reserve_cadre bonus = 1.0 uses = 1 category = infantry_weapons }\narmy_experience = 25",
+      "palette": "non_aligned",
+      "motif": "철모·예비 명부",
+      "module": "A3",
+      "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
+      "ai_factor": 2,
+      "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
+      "cost": 5,
+      "mutually_exclusive": [],
+      "linked_ideas": [],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_reserve_cadre",
+      "position": [
+        199,
+        2
+      ],
+      "anchor": "HOK_KOR_am_regimental_returns",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_mobilization_review",
-      "name": "동원명령 대조연습",
-      "description": "병적과 간부명부를 모의 동원에서 대조해 서류상의 조직을 실제로 움직인다.",
+      "name": "동원체계 종합연습",
+      "description": "하사관 교육과 간부명부를 함께 활용하는 동원연습으로 군제 전문화를 강화합니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_am_nco_examinations"
+        ],
         [
           "HOK_KOR_am_reserve_cadre"
         ]
       ],
-      "placement_anchor": "HOK_KOR_am_reserve_cadre",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_war_support = 0.02\narmy_experience = 20",
+      "placement_anchor": "HOK_KOR_am_regimental_returns",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "reward": "if = { limit = { has_idea = HOK_KOR_am_reserve_cadre_1 } swap_ideas = { remove_idea = HOK_KOR_am_reserve_cadre_1 add_idea = HOK_KOR_am_reserve_cadre_2 } } else = { add_ideas = HOK_KOR_am_reserve_cadre_2 }",
       "palette": "non_aligned",
-      "motif": "명령서·회중시계",
+      "motif": "회중시계·동원 명령",
       "module": "A3",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "linked_ideas": [
+        "HOK_KOR_am_reserve_cadre_2"
+      ],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_mobilization_review",
+      "position": [
+        198,
+        3
+      ],
+      "anchor": "HOK_KOR_am_regimental_returns",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_technical_memorials",
       "name": "기술 상주문",
-      "description": "광산과 공장의 기술 제안을 조정이 이해할 수 있는 실무 보고로 정리한다.",
+      "description": "광산과 공장의 기술 제안을 실무 보고로 모아 산업 연구를 집중 지원합니다.",
       "prerequisites": [
         [
-          "KOR_revive_bibyeonsa"
+          "KOR_urihwangsilsaranghoe"
         ]
       ],
-      "placement_anchor": "KOR_revive_bibyeonsa",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_tech_bonus = { name = HOK_KOR_am_technical_memorials bonus = 0.5 uses = 1 category = industry }",
+      "placement_anchor": "KOR_urihwangsilsaranghoe",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order has_completed_focus = KOR_revive_bibyeonsa",
+      "reward": "add_tech_bonus = { name = HOK_KOR_am_technical_memorials bonus = 1.5 uses = 1 category = industry }",
       "palette": "non_aligned",
       "motif": "톱니·두루마리",
       "module": "A4",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        8,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_technical_memorials",
+      "position": [
+        194,
+        1
+      ],
+      "anchor": "KOR_urihwangsilsaranghoe",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_civil_service_practicum",
-      "name": "관료 실지수습",
-      "description": "장부와 경전에 익숙한 관료를 현장 행정에 배치하여 보고와 집행의 간극을 줄인다.",
+      "name": "관료 현장수습",
+      "description": "관료를 현장에 배치하고 전자공학 지식을 행정에 도입해 집행 능력을 높입니다.",
       "prerequisites": [
         [
           "HOK_KOR_am_technical_memorials"
         ]
       ],
       "placement_anchor": "HOK_KOR_am_technical_memorials",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_political_power = 50",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "reward": "add_tech_bonus = { name = HOK_KOR_am_civil_service_practicum bonus = 1.0 uses = 1 category = electronics }\nadd_political_power = 100",
       "palette": "non_aligned",
       "motif": "붓·작은 공장",
       "module": "A4",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_civil_service_practicum",
+      "position": [
+        194,
+        2
+      ],
+      "anchor": "HOK_KOR_am_technical_memorials",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_am_merit_registers",
-      "name": "실무 공적대장",
-      "description": "수행한 과제를 기록하여 인사와 업무 배분이 확인 가능한 성과를 따르도록 한다.",
+      "name": "기술관료 전문화",
+      "description": "연구와 생산의 실적을 기준으로 기술관료를 전문화합니다. 기존 기관과 국민정신의 혜택은 유지합니다.",
       "prerequisites": [
         [
           "HOK_KOR_am_civil_service_practicum"
         ]
       ],
-      "placement_anchor": "HOK_KOR_am_civil_service_practicum",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_reconstruction_confusian_order",
-      "reward": "add_timed_idea = { idea = HOK_KOR_am_practical_bureaucracy days = 730 }",
+      "placement_anchor": "HOK_KOR_am_technical_memorials",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "reward": "add_ideas = HOK_KOR_am_practical_bureaucracy",
       "palette": "non_aligned",
-      "motif": "인사대장·봉인",
+      "motif": "기술 보고서·봉인",
       "module": "A4",
       "donor": "Existing KOR_revive_bibyeonsa and KOR_reform_military; installed vanilla common/ideas/sweden.txt:826-827,906; common/ideas/finland.txt:1219; no additional army or institution creation.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_am_practical_bureaucracy"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_am_merit_registers",
+      "position": [
+        194,
+        3
+      ],
+      "anchor": "HOK_KOR_am_technical_memorials",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_provincial_inventory",
       "name": "환국 지방실사",
-      "description": "광대한 이름을 내건 제국도 각 지방에서 무엇을 집행할 수 있는지부터 알아야 한다.",
+      "description": "형성된 제국이 실제로 소유하고 완전히 통제하는 만주 지방을 조사해 산업 연구를 지원합니다.",
       "prerequisites": [
         [
-          "KOR_empire_of_hwan"
+          "KOR_return_of_the_king"
         ]
       ],
-      "placement_anchor": "KOR_empire_of_hwan",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "KOR_return_of_the_king",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "reward": "add_tech_bonus = { name = HOK_KOR_hw_provincial_inventory bonus = 1.5 uses = 1 category = industry }",
       "palette": "non_aligned",
-      "motif": "삼족오·대장",
+      "motif": "삼족오·지방 지도",
       "module": "H1",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        25,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_provincial_inventory",
+      "position": [
+        211,
+        5
+      ],
+      "anchor": "KOR_return_of_the_king",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_provision_accounts",
-      "name": "지방 물자대장",
-      "description": "수복 이후 각 행정기관이 보유한 물자를 기록하여 같은 물자를 거듭 요구하는 낭비를 줄인다.",
+      "name": "지방 물자관리",
+      "description": "지방의 물자 현황을 통일된 기준으로 관리하여 보급 소비와 자원 채굴을 개선합니다.",
       "prerequisites": [
         [
           "HOK_KOR_hw_provincial_inventory"
         ]
       ],
       "placement_anchor": "HOK_KOR_hw_provincial_inventory",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
       "reward": "add_ideas = HOK_KOR_hw_provision_accounts_1",
       "palette": "non_aligned",
-      "motif": "삼족오·상자 I",
+      "motif": "삼족오·보급 상자",
       "module": "H1",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_hw_provision_accounts_1"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_provision_accounts",
+      "position": [
+        210,
+        6
+      ],
+      "anchor": "HOK_KOR_hw_provincial_inventory",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_inspection_circuits",
-      "name": "지방 순찰노선",
-      "description": "현지 장부와 중앙 보고를 순회 점검하여 제국의 주장과 행정의 현실을 대조한다.",
+      "name": "제국 지방 순찰",
+      "description": "지방 장부를 현장에서 확인하여 행정 공백을 줄입니다. 물자관리와 어느 순서로든 진행할 수 있습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_hw_provision_accounts"
+          "HOK_KOR_hw_provincial_inventory"
         ]
       ],
-      "placement_anchor": "HOK_KOR_hw_provision_accounts",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan",
-      "reward": "add_political_power = 25\nadd_stability = 0.01",
+      "placement_anchor": "HOK_KOR_hw_provincial_inventory",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "reward": "add_political_power = 150\nadd_stability = 0.05",
       "palette": "non_aligned",
       "motif": "삼족오·나침반",
       "module": "H1",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_inspection_circuits",
+      "position": [
+        212,
+        6
+      ],
+      "anchor": "HOK_KOR_hw_provincial_inventory",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_supply_returns",
       "name": "물자 결산통일",
-      "description": "지방 물자 보고를 정기 결산으로 묶어 장거리 작전의 준비가 끊기지 않게 한다.",
+      "description": "물자관리와 지방 순찰을 결산체계로 묶어 보급·자원 혜택을 강화합니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_hw_provision_accounts"
+        ],
         [
           "HOK_KOR_hw_inspection_circuits"
         ]
       ],
-      "placement_anchor": "HOK_KOR_hw_inspection_circuits",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan",
+      "placement_anchor": "HOK_KOR_hw_provincial_inventory",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
       "reward": "if = { limit = { has_idea = HOK_KOR_hw_provision_accounts_1 } swap_ideas = { remove_idea = HOK_KOR_hw_provision_accounts_1 add_idea = HOK_KOR_hw_provision_accounts_2 } } else = { add_ideas = HOK_KOR_hw_provision_accounts_2 }",
       "palette": "non_aligned",
-      "motif": "삼족오·상자 II",
+      "motif": "삼족오·물자 장부",
       "module": "H1",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_hw_provision_accounts_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_supply_returns",
+      "position": [
+        211,
+        7
+      ],
+      "anchor": "HOK_KOR_hw_provincial_inventory",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_dispatch_codes",
-      "name": "역참 공문부호",
-      "description": "각지의 명령과 보고에 공통 부호를 붙여 서로 다른 전선의 문서가 뒤섞이지 않게 한다.",
+      "name": "제국 공문부호",
+      "description": "중앙과 지방의 공문부호를 통일하여 명령이 전선에서 오인되지 않게 합니다.",
       "prerequisites": [
         [
-          "KOR_empire_of_hwan"
+          "KOR_urihwangsilsaranghoe"
         ]
       ],
-      "placement_anchor": "KOR_empire_of_hwan",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "KOR_urihwangsilsaranghoe",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "reward": "army_experience = 50",
       "palette": "non_aligned",
-      "motif": "봉인·통신문",
+      "motif": "삼족오·통신문",
       "module": "H2",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -6,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_dispatch_codes",
+      "position": [
+        180,
+        1
+      ],
+      "anchor": "KOR_urihwangsilsaranghoe",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_courier_relays",
       "name": "군정 연락인계",
-      "description": "장거리 연락을 담당한 인원이 바뀌어도 중요한 보고가 인계되도록 절차를 정한다.",
+      "description": "담당자가 바뀌어도 명령과 보고가 이어지도록 연락인계 절차를 마련합니다.",
       "prerequisites": [
         [
           "HOK_KOR_hw_dispatch_codes"
         ]
       ],
       "placement_anchor": "HOK_KOR_hw_dispatch_codes",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan",
-      "reward": "army_experience = 15",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "reward": "add_ideas = HOK_KOR_hw_courier_service_1",
       "palette": "non_aligned",
-      "motif": "통신문·교차 화살표",
+      "motif": "전신기·교차 화살표",
       "module": "H2",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 1,
-      "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
-      "cost": 5,
-      "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
-    },
-    {
-      "id": "HOK_KOR_hw_signal_logs",
-      "name": "전선 통신기록",
-      "description": "도착한 보고와 내려간 명령의 시각을 남겨 지연과 오인을 훈련에서 바로잡는다.",
-      "prerequisites": [
-        [
-          "HOK_KOR_hw_courier_relays"
-        ]
-      ],
-      "placement_anchor": "HOK_KOR_hw_courier_relays",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan",
-      "reward": "add_tech_bonus = { name = HOK_KOR_hw_signal_logs bonus = 0.5 uses = 1 category = electronics }",
-      "palette": "non_aligned",
-      "motif": "전신기·장부",
-      "module": "H2",
-      "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 1,
-      "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
-      "cost": 5,
-      "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
-    },
-    {
-      "id": "HOK_KOR_hw_relay_exercises",
-      "name": "연락망 종합연습",
-      "description": "지방과 전선의 연락을 한 차례 종합 점검하여 명령이 현장에서 이해되는지 확인한다.",
-      "prerequisites": [
-        [
-          "HOK_KOR_hw_signal_logs"
-        ]
-      ],
-      "placement_anchor": "HOK_KOR_hw_signal_logs",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan",
-      "reward": "add_timed_idea = { idea = HOK_KOR_hw_courier_service days = 730 }",
-      "palette": "non_aligned",
-      "motif": "삼족오·전신기",
-      "module": "H2",
-      "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
-        "HOK_KOR_hw_courier_service"
+        "HOK_KOR_hw_courier_service_1"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_courier_relays",
+      "position": [
+        179,
+        2
+      ],
+      "anchor": "HOK_KOR_hw_dispatch_codes",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
+    },
+    {
+      "id": "HOK_KOR_hw_signal_logs",
+      "name": "전선 통신기록",
+      "description": "통신 지연을 기록하고 전자공학 연구에 반영합니다. 연락인계 제도와 어느 순서로든 진행할 수 있습니다.",
+      "prerequisites": [
+        [
+          "HOK_KOR_hw_dispatch_codes"
+        ]
+      ],
+      "placement_anchor": "HOK_KOR_hw_dispatch_codes",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "reward": "add_tech_bonus = { name = HOK_KOR_hw_signal_logs bonus = 1.0 uses = 1 category = electronics }\narmy_experience = 25",
+      "palette": "non_aligned",
+      "motif": "전신기·통신 장부",
+      "module": "H2",
+      "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
+      "ai_factor": 2,
+      "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
+      "cost": 5,
+      "mutually_exclusive": [],
+      "linked_ideas": [],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_signal_logs",
+      "position": [
+        181,
+        2
+      ],
+      "anchor": "HOK_KOR_hw_dispatch_codes",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
+    },
+    {
+      "id": "HOK_KOR_hw_relay_exercises",
+      "name": "연락망 종합연습",
+      "description": "인계 절차와 통신 기록을 함께 점검하는 종합연습으로 연락망을 강화합니다.",
+      "prerequisites": [
+        [
+          "HOK_KOR_hw_courier_relays"
+        ],
+        [
+          "HOK_KOR_hw_signal_logs"
+        ]
+      ],
+      "placement_anchor": "HOK_KOR_hw_dispatch_codes",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "reward": "if = { limit = { has_idea = HOK_KOR_hw_courier_service_1 } swap_ideas = { remove_idea = HOK_KOR_hw_courier_service_1 add_idea = HOK_KOR_hw_courier_service_2 } } else = { add_ideas = HOK_KOR_hw_courier_service_2 }",
+      "palette": "non_aligned",
+      "motif": "삼족오·연락 지도",
+      "module": "H2",
+      "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
+      "ai_factor": 2,
+      "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
+      "cost": 5,
+      "mutually_exclusive": [],
+      "linked_ideas": [
+        "HOK_KOR_hw_courier_service_2"
+      ],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_relay_exercises",
+      "position": [
+        180,
+        3
+      ],
+      "anchor": "HOK_KOR_hw_dispatch_codes",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_postwar_dockets",
-      "name": "전후 민정대장",
-      "description": "전쟁이 멎은 뒤 남은 민원과 복구 과제를 정리하여 군정의 임시 처리가 계속되지 않게 한다.",
+      "name": "전후 민정예산",
+      "description": "기존 세계질서 경로 이후 평시에 민정 예산을 확보합니다. 경기와 만주 운영 거점의 소유·완전 통제가 필요합니다.",
       "prerequisites": [
         [
           "KOR_hwan_world_order"
         ]
       ],
       "placement_anchor": "KOR_hwan_world_order",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan\nhas_war = no",
-      "reward": "add_political_power = 50",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525",
+      "reward": "add_political_power = 150",
       "palette": "non_aligned",
-      "motif": "삼족오·서류함",
+      "motif": "삼족오·민정 장부",
       "module": "H3",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_postwar_dockets",
+      "position": [
+        176,
+        15
+      ],
+      "anchor": "KOR_hwan_world_order",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_reconstruction_priorities",
-      "name": "복구 순서협의",
-      "description": "모든 사업을 한꺼번에 선언하는 대신 당장 필요한 과제부터 순서를 정한다.",
+      "name": "복구 우선순위",
+      "description": "건설 연구를 지원하고 건물 수리와 민간 건설을 돕는 복구행정 I을 수립합니다.",
       "prerequisites": [
         [
           "HOK_KOR_hw_postwar_dockets"
         ]
       ],
       "placement_anchor": "HOK_KOR_hw_postwar_dockets",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan\nhas_war = no",
-      "reward": "add_tech_bonus = { name = HOK_KOR_hw_reconstruction_priorities bonus = 0.5 uses = 1 category = construction_tech }",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525",
+      "reward": "add_tech_bonus = { name = HOK_KOR_hw_reconstruction_priorities bonus = 1.5 uses = 1 category = construction_tech }\nadd_ideas = HOK_KOR_hw_civil_recovery_1",
       "palette": "non_aligned",
       "motif": "삼족오·설계도",
       "module": "H3",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "linked_ideas": [
+        "HOK_KOR_hw_civil_recovery_1"
+      ],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_reconstruction_priorities",
+      "position": [
+        176,
+        16
+      ],
+      "anchor": "HOK_KOR_hw_postwar_dockets",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_civil_accountability",
-      "name": "민정 집행보고",
-      "description": "제국의 질서를 선언한 뒤에도 생활을 지탱하는 일상 행정은 계속되어야 한다.",
+      "name": "복구행정 정례화",
+      "description": "복구 예산과 집행 결과를 정기적으로 대조하여 하위 복구 혜택을 강화합니다.",
       "prerequisites": [
         [
           "HOK_KOR_hw_reconstruction_priorities"
         ]
       ],
-      "placement_anchor": "HOK_KOR_hw_reconstruction_priorities",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan\nhas_war = no",
-      "reward": "add_timed_idea = { idea = HOK_KOR_hw_civil_recovery days = 730 }",
+      "placement_anchor": "HOK_KOR_hw_postwar_dockets",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525",
+      "reward": "if = { limit = { has_idea = HOK_KOR_hw_civil_recovery_1 } swap_ideas = { remove_idea = HOK_KOR_hw_civil_recovery_1 add_idea = HOK_KOR_hw_civil_recovery_2 } } else = { add_ideas = HOK_KOR_hw_civil_recovery_2 }",
       "palette": "non_aligned",
-      "motif": "저울·삼족오",
+      "motif": "삼족오·민가·망치",
       "module": "H3",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
-        "HOK_KOR_hw_civil_recovery"
+        "HOK_KOR_hw_civil_recovery_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_civil_accountability",
+      "position": [
+        176,
+        17
+      ],
+      "anchor": "HOK_KOR_hw_postwar_dockets",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_veteran_rolls",
-      "name": "귀환 장병명부",
-      "description": "평시에 돌아온 장병의 경력과 필요한 지원을 정리하여 군과 사회의 연결을 잇는다.",
+      "name": "귀환 장병 지원",
+      "description": "평시에 귀환 장병을 지원하고 그 경험을 예비훈련에 연결합니다. 기존 사단이나 인력을 제거하는 효과는 없습니다.",
       "prerequisites": [
         [
           "KOR_hwan_world_order"
         ]
       ],
       "placement_anchor": "KOR_hwan_world_order",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan\nhas_war = no",
-      "reward": "add_stability = 0.02",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525",
+      "reward": "add_manpower = 25000\narmy_experience = 25",
       "palette": "non_aligned",
-      "motif": "철모·명부",
+      "motif": "삼족오·철모·명부",
       "module": "H4",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_veteran_rolls",
+      "position": [
+        180,
+        15
+      ],
+      "anchor": "KOR_hwan_world_order",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_demobilization_schedule",
-      "name": "단계적 복귀일정",
-      "description": "전후 복귀가 한꺼번에 몰려 생산과 행정이 흔들리지 않도록 일정을 조정한다.",
+      "name": "장병 복귀지원 체계",
+      "description": "장병의 사회 복귀와 예비훈련을 함께 지원하는 상설 체계를 마련합니다. 징병법이나 기존 편제는 바꾸지 않습니다.",
       "prerequisites": [
         [
           "HOK_KOR_hw_veteran_rolls"
         ]
       ],
       "placement_anchor": "HOK_KOR_hw_veteran_rolls",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan\nhas_war = no",
-      "reward": "add_political_power = 50",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525",
+      "reward": "add_ideas = HOK_KOR_hw_reserve_training_1",
       "palette": "non_aligned",
-      "motif": "회중시계·철모",
+      "motif": "철모·회중시계",
       "module": "H4",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
-      "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "linked_ideas": [
+        "HOK_KOR_hw_reserve_training_1"
+      ],
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_demobilization_schedule",
+      "position": [
+        180,
+        16
+      ],
+      "anchor": "HOK_KOR_hw_veteran_rolls",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_hw_peacetime_training",
       "name": "평시 예비훈련",
-      "description": "대규모 동원이 끝난 뒤에도 경험을 보존할 제한된 훈련 일정을 마련한다.",
+      "description": "평시에 훈련 체계를 정례화해 경험 전수와 증원을 강화합니다. 수립한 제도는 재전쟁 뒤에도 유지됩니다.",
       "prerequisites": [
         [
           "HOK_KOR_hw_demobilization_schedule"
         ]
       ],
-      "placement_anchor": "HOK_KOR_hw_demobilization_schedule",
-      "available": "has_government = neutrality\nhas_completed_focus = KOR_empire_of_hwan\nhas_war = no",
-      "reward": "add_timed_idea = { idea = HOK_KOR_hw_reserve_training days = 730 }",
+      "placement_anchor": "HOK_KOR_hw_veteran_rolls",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } } has_completed_focus = KOR_hwan_world_order has_war = no owns_state = 525 has_full_control_of_state = 525",
+      "reward": "if = { limit = { has_idea = HOK_KOR_hw_reserve_training_1 } swap_ideas = { remove_idea = HOK_KOR_hw_reserve_training_1 add_idea = HOK_KOR_hw_reserve_training_2 } } else = { add_ideas = HOK_KOR_hw_reserve_training_2 }",
       "palette": "non_aligned",
-      "motif": "철모·교범",
+      "motif": "삼족오·훈련 교범",
       "module": "H4",
       "donor": "Existing KOR_empire_of_hwan/KOR_hwan_world_order; installed vanilla France timed ideas and Japan construction_tech bonus 25748; preserve existing faction rules and mythology as fictional route.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
-        "HOK_KOR_hw_reserve_training"
+        "HOK_KOR_hw_reserve_training_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_hw_peacetime_training",
+      "position": [
+        180,
+        17
+      ],
+      "anchor": "HOK_KOR_hw_veteran_rolls",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_county_dossiers",
-      "name": "만주 군현자료",
-      "description": "기존 만주 개발 담당자가 각지의 행정 자료를 한곳에서 찾을 수 있도록 목록을 정리한다.",
+      "name": "만주 지방행정 조사",
+      "description": "기존 만주 개발의 성과를 바탕으로 실제 소유하고 완전히 통제하는 지역의 후속 운영을 준비합니다. 관련 지역을 잃으면 진행 중인 중점은 취소됩니다.",
       "prerequisites": [
         [
           "KOR_the_manchurian_project"
         ]
       ],
       "placement_anchor": "KOR_the_manchurian_project",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_political_power = 50",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "add_political_power = 150",
       "palette": "industry",
-      "motif": "지도·문서함",
+      "motif": "civic service desk and regional map",
       "module": "M1",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        6,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_county_dossiers",
+      "position": [
+        30,
+        15
+      ],
+      "anchor": "KOR_the_manchurian_project",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_payroll_registers",
-      "name": "지방 급여대장",
-      "description": "행정 인력과 급여의 대조표를 마련하여 중복 지출과 지급 누락을 줄인다.",
+      "name": "지방 공공서비스",
+      "description": "만주 공공서비스 I을 해당 지역에 적용합니다. 지역을 소유·완전 통제하는 동안만 유지되며 다른 지역이나 새 소유국에는 효과를 넘기지 않습니다.",
       "prerequisites": [
         [
           "HOK_KOR_mc_county_dossiers"
         ]
       ],
       "placement_anchor": "HOK_KOR_mc_county_dossiers",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_ideas = HOK_KOR_mc_local_services_1",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_1 } } }",
       "palette": "industry",
-      "motif": "대장·동전 I",
+      "motif": "civic desk and gear",
       "module": "M1",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_mc_local_services_1"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_payroll_registers",
+      "position": [
+        29,
+        16
+      ],
+      "anchor": "HOK_KOR_mc_county_dossiers",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_service_counters",
-      "name": "주민 민원창구",
-      "description": "주민이 어느 기관에 요청해야 하는지 알 수 있도록 기존 관청의 접수 창구를 정리한다.",
+      "name": "행정 통신망",
+      "description": "지역의 시설과 기술 운용을 지원하는 연구 혜택을 제공합니다. 다른 병렬 정책과 어느 순서로도 추진할 수 있습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_mc_payroll_registers"
+          "HOK_KOR_mc_county_dossiers"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_payroll_registers",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_stability = 0.02",
+      "placement_anchor": "HOK_KOR_mc_county_dossiers",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "add_tech_bonus = { name = HOK_KOR_mc_service_counters bonus = 1.0 uses = 1 category = electronics }",
       "palette": "industry",
-      "motif": "관청·문서",
+      "motif": "research book and tools",
       "module": "M1",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_service_counters",
+      "position": [
+        31,
+        16
+      ],
+      "anchor": "HOK_KOR_mc_county_dossiers",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_dispute_records",
-      "name": "민원 조정기록",
-      "description": "서로 다른 관할에서 반복되는 민원을 기록하여 책임을 미루는 관행을 줄인다.",
+      "name": "민원·물자 조정",
+      "description": "두 병렬 정책의 성과를 통합하고 지역의 운영 기준과 주민 지원을 정착시킵니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_mc_payroll_registers"
+        ],
         [
           "HOK_KOR_mc_service_counters"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_service_counters",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "HOK_KOR_mc_county_dossiers",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "add_political_power = 150\nadd_stability = 0.05",
       "palette": "industry",
-      "motif": "저울·색인",
+      "motif": "scales and records",
       "module": "M1",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_dispute_records",
+      "position": [
+        30,
+        17
+      ],
+      "anchor": "HOK_KOR_mc_county_dossiers",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_service_calendar",
       "name": "지방행정 정례화",
-      "description": "급여·민원·조정 업무의 기한을 맞춰 새 행정이 일상적으로 작동하게 한다.",
+      "description": "만주 공공서비스의 기존 혜택을 II로 강화하고 정치력 150을 사용하는 90일 집중 사업을 엽니다. 영토 상실로 제거된 제도는 해당 지역을 되찾은 뒤 사업을 재개하여 복구할 수 있습니다.",
       "prerequisites": [
         [
           "HOK_KOR_mc_dispute_records"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_dispute_records",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "if = { limit = { has_idea = HOK_KOR_mc_local_services_1 } swap_ideas = { remove_idea = HOK_KOR_mc_local_services_1 add_idea = HOK_KOR_mc_local_services_2 } } else = { add_ideas = HOK_KOR_mc_local_services_2 }",
+      "placement_anchor": "HOK_KOR_mc_county_dossiers",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_2 } } }\nunlock_decision_category_tooltip = HOK_KOR_manchurian_followup_programs\nunlock_decision_tooltip = HOK_KOR_mc_local_services_project",
       "palette": "industry",
-      "motif": "대장·동전 II",
+      "motif": "civic service desk and regional map",
       "module": "M1",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_mc_local_services_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        3
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_service_calendar",
+      "position": [
+        30,
+        18
+      ],
+      "anchor": "HOK_KOR_mc_county_dossiers",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_interpreter_desks",
-      "name": "다언어 통역창구",
-      "description": "다문화 수용 원칙을 실제 민원 처리에서도 지킬 수 있도록 통역 실무를 갖춘다.",
+      "name": "다언어 행정 창구",
+      "description": "기존 만주 개발의 성과를 바탕으로 실제 소유하고 완전히 통제하는 지역의 후속 운영을 준비합니다. 관련 지역을 잃으면 진행 중인 중점은 취소됩니다.",
       "prerequisites": [
         [
           "KOR_multiethnic_embrace"
         ]
       ],
       "placement_anchor": "KOR_multiethnic_embrace",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\nhas_government = democratic",
-      "reward": "add_stability = 0.02",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic",
+      "reward": "add_political_power = 150",
       "palette": "democracy",
-      "motif": "두 언어 책·손",
+      "motif": "two people, papers and civic seal",
       "module": "M2",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -4,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_interpreter_desks",
+      "position": [
+        17,
+        16
+      ],
+      "anchor": "KOR_multiethnic_embrace",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_residence_certificates",
-      "name": "거주증명 정리",
-      "description": "주민이 출신과 언어 때문에 같은 서류를 반복 제출하지 않도록 증명 절차를 통일한다.",
+      "name": "주민 정착 지원",
+      "description": "만주 공동체 지원 I을 해당 지역에 적용합니다. 지역을 소유·완전 통제하는 동안만 유지되며 다른 지역이나 새 소유국에는 효과를 넘기지 않습니다.",
       "prerequisites": [
         [
           "HOK_KOR_mc_interpreter_desks"
         ]
       ],
       "placement_anchor": "HOK_KOR_mc_interpreter_desks",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\nhas_government = democratic",
-      "reward": "add_political_power = 50",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic",
+      "reward": "328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_1 } } }",
       "palette": "democracy",
-      "motif": "증명서·펜",
+      "motif": "civic desk and gear",
       "module": "M2",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_residence_certificates",
+      "position": [
+        16,
+        17
+      ],
+      "anchor": "HOK_KOR_mc_interpreter_desks",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_municipal_consultation",
-      "name": "시정 협의회기",
-      "description": "이미 인정한 자치가 실제 생활 문제를 논의할 수 있도록 정례 협의 일정을 마련한다.",
+      "name": "지역 보건·교육",
+      "description": "지역의 시설과 기술 운용을 지원하는 연구 혜택을 제공합니다. 다른 병렬 정책과 어느 순서로도 추진할 수 있습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_mc_residence_certificates"
+          "HOK_KOR_mc_interpreter_desks"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_residence_certificates",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\nhas_government = democratic",
-      "reward": "add_stability = 0.02",
+      "placement_anchor": "HOK_KOR_mc_interpreter_desks",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic",
+      "reward": "add_tech_bonus = { name = HOK_KOR_mc_municipal_consultation bonus = 1.0 uses = 1 category = electronics }",
       "palette": "democracy",
-      "motif": "회의탁자·열린 책",
+      "motif": "research book and tools",
       "module": "M2",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_municipal_consultation",
+      "position": [
+        18,
+        17
+      ],
+      "anchor": "HOK_KOR_mc_interpreter_desks",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_shared_service_manuals",
-      "name": "공동행정 실무편람",
-      "description": "여러 공동체가 사용하는 행정 절차를 함께 정리하여 현장에서의 오해를 줄인다.",
+      "name": "공동행정 협약",
+      "description": "두 병렬 정책의 성과를 통합하고 지역의 운영 기준과 주민 지원을 정착시킵니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_mc_residence_certificates"
+        ],
         [
           "HOK_KOR_mc_municipal_consultation"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_municipal_consultation",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\nhas_government = democratic",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "HOK_KOR_mc_interpreter_desks",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic",
+      "reward": "add_political_power = 150\nadd_stability = 0.05",
       "palette": "democracy",
-      "motif": "교차 책갈피·서류",
+      "motif": "scales and records",
       "module": "M2",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_shared_service_manuals",
+      "position": [
+        17,
+        18
+      ],
+      "anchor": "HOK_KOR_mc_interpreter_desks",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_community_mediation",
-      "name": "공동체 분쟁조정",
-      "description": "자치와 공동행정이 충돌하는 문제를 협의로 처리할 담당 절차를 정착시킨다.",
+      "name": "공동체 지원 정례화",
+      "description": "만주 공동체 지원의 기존 혜택을 II로 강화하고 정치력 150을 사용하는 90일 집중 사업을 엽니다. 영토 상실로 제거된 제도는 해당 지역을 되찾은 뒤 사업을 재개하여 복구할 수 있습니다.",
       "prerequisites": [
         [
           "HOK_KOR_mc_shared_service_manuals"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_shared_service_manuals",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\nhas_government = democratic",
-      "reward": "add_timed_idea = { idea = HOK_KOR_mc_community_mediation_idea days = 730 }",
+      "placement_anchor": "HOK_KOR_mc_interpreter_desks",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic",
+      "reward": "328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_2 } } }\nunlock_decision_category_tooltip = HOK_KOR_manchurian_followup_programs\nunlock_decision_tooltip = HOK_KOR_mc_community_services_project",
       "palette": "democracy",
-      "motif": "악수·저울",
+      "motif": "two people, papers and civic seal",
       "module": "M2",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_mc_community_mediation_idea"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        3
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_community_mediation",
+      "position": [
+        17,
+        19
+      ],
+      "anchor": "HOK_KOR_mc_interpreter_desks",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_workshop_inventory",
-      "name": "만주 공업재고",
-      "description": "기존 극동 병기창과 중공업 시설의 재고를 조사하여 필요한 물자의 흐름을 확인한다.",
+      "name": "만주 공업재고 조사",
+      "description": "기존 만주 개발의 성과를 바탕으로 실제 소유하고 완전히 통제하는 지역의 후속 운영을 준비합니다. 관련 지역을 잃으면 진행 중인 중점은 취소됩니다.",
       "prerequisites": [
         [
-          "KOR_arsenal_of_far_east"
+          "KOR_resource_exploration_in_manchuria"
         ]
       ],
-      "placement_anchor": "KOR_arsenal_of_far_east",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "KOR_resource_exploration_in_manchuria",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_completed_focus = KOR_arsenal_of_far_east",
+      "reward": "add_political_power = 150",
       "palette": "industry",
-      "motif": "공장·재고표",
+      "motif": "ore, furnace and recycling gear",
       "module": "M3",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_workshop_inventory",
+      "position": [
+        24,
+        20
+      ],
+      "anchor": "KOR_resource_exploration_in_manchuria",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_metallurgical_trials",
-      "name": "광물 선별시험",
-      "description": "확인한 광물의 성질에 맞는 선별 공정을 시험하여 채굴량을 늘리기 전에 낭비부터 줄인다.",
+      "name": "부산물 회수 체계",
+      "description": "만주 원료 회수 I을 해당 지역에 적용합니다. 지역을 소유·완전 통제하는 동안만 유지되며 다른 지역이나 새 소유국에는 효과를 넘기지 않습니다.",
       "prerequisites": [
         [
           "HOK_KOR_mc_workshop_inventory"
         ]
       ],
       "placement_anchor": "HOK_KOR_mc_workshop_inventory",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_tech_bonus = { name = HOK_KOR_mc_metallurgical_trials bonus = 0.5 uses = 1 category = excavation_tech }",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } }\n714 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } }\n717 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } }",
       "palette": "industry",
-      "motif": "광석·시험관",
+      "motif": "civic desk and gear",
       "module": "M3",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_metallurgical_trials",
+      "position": [
+        23,
+        21
+      ],
+      "anchor": "HOK_KOR_mc_workshop_inventory",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_material_recovery",
-      "name": "부산물 회수반",
-      "description": "기존 시설의 부산물에서 재사용할 수 있는 원료를 회수한다.",
+      "name": "광물 선별시험",
+      "description": "지역의 시설과 기술 운용을 지원하는 연구 혜택을 제공합니다. 다른 병렬 정책과 어느 순서로도 추진할 수 있습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_mc_metallurgical_trials"
+          "HOK_KOR_mc_workshop_inventory"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_metallurgical_trials",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_ideas = HOK_KOR_mc_material_recovery_1",
+      "placement_anchor": "HOK_KOR_mc_workshop_inventory",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "add_tech_bonus = { name = HOK_KOR_mc_material_recovery bonus = 1.5 uses = 1 category = excavation_tech }",
       "palette": "industry",
-      "motif": "광석·순환화살표 I",
+      "motif": "research book and tools",
       "module": "M3",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_mc_material_recovery_1"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_material_recovery",
+      "position": [
+        25,
+        21
+      ],
+      "anchor": "HOK_KOR_mc_workshop_inventory",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_foundry_batches",
-      "name": "용광로 배합기록",
-      "description": "각 공장의 배합과 회수 결과를 비교하여 안정적인 원료 사용법을 공유한다.",
+      "name": "제련 현장교류",
+      "description": "두 병렬 정책의 성과를 통합하고 지역의 운영 기준과 주민 지원을 정착시킵니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_mc_metallurgical_trials"
+        ],
         [
           "HOK_KOR_mc_material_recovery"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_material_recovery",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_tech_bonus = { name = HOK_KOR_mc_foundry_batches bonus = 0.5 uses = 1 category = industry }",
+      "placement_anchor": "HOK_KOR_mc_workshop_inventory",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "add_political_power = 150\nadd_stability = 0.05",
       "palette": "industry",
-      "motif": "용광로·기록지",
+      "motif": "scales and records",
       "module": "M3",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_foundry_batches",
+      "position": [
+        24,
+        22
+      ],
+      "anchor": "HOK_KOR_mc_workshop_inventory",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_integrated_recovery",
       "name": "원료 회수협업",
-      "description": "광산과 공장의 회수 작업을 연결하여 같은 원료를 끝까지 효율적으로 사용한다.",
+      "description": "만주 원료 회수의 기존 혜택을 II로 강화하고 정치력 150을 사용하는 90일 집중 사업을 엽니다. 영토 상실로 제거된 제도는 해당 지역을 되찾은 뒤 사업을 재개하여 복구할 수 있습니다.",
       "prerequisites": [
         [
           "HOK_KOR_mc_foundry_batches"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_foundry_batches",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }\n717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "if = { limit = { has_idea = HOK_KOR_mc_material_recovery_1 } swap_ideas = { remove_idea = HOK_KOR_mc_material_recovery_1 add_idea = HOK_KOR_mc_material_recovery_2 } } else = { add_ideas = HOK_KOR_mc_material_recovery_2 }",
+      "placement_anchor": "HOK_KOR_mc_workshop_inventory",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } } }\n714 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } } }\n717 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } } }\nunlock_decision_category_tooltip = HOK_KOR_manchurian_followup_programs\nunlock_decision_tooltip = HOK_KOR_mc_material_recovery_project",
       "palette": "industry",
-      "motif": "광석·순환화살표 II",
+      "motif": "ore, furnace and recycling gear",
       "module": "M3",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_mc_material_recovery_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        3
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_integrated_recovery",
+      "position": [
+        24,
+        23
+      ],
+      "anchor": "HOK_KOR_mc_workshop_inventory",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_tenancy_records",
-      "name": "국내성 주거대장",
-      "description": "이미 조성한 도시의 주거 계약과 사용 현황을 정리하여 일상적인 행정 기반을 갖춘다.",
+      "name": "국내성 주거 실태조사",
+      "description": "기존 만주 개발의 성과를 바탕으로 실제 소유하고 완전히 통제하는 지역의 후속 운영을 준비합니다. 관련 지역을 잃으면 진행 중인 중점은 취소됩니다.",
       "prerequisites": [
         [
           "KOR_rebuild_guknaeseong_as_new_city"
         ]
       ],
       "placement_anchor": "KOR_rebuild_guknaeseong_as_new_city",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_political_power = 50",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "add_political_power = 150",
       "palette": "industry",
-      "motif": "집·서류",
+      "motif": "houses and municipal blueprint",
       "module": "M4",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_tenancy_records",
+      "position": [
+        29,
+        19
+      ],
+      "anchor": "KOR_rebuild_guknaeseong_as_new_city",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_sanitation_rounds",
-      "name": "시가지 위생순찰",
-      "description": "새 도시의 공공 위생을 정기 점검하여 급속한 정착 뒤의 생활 불편을 줄인다.",
+      "name": "시가지 기반시설",
+      "description": "국내성 도시 운영 I을 해당 지역에 적용합니다. 지역을 소유·완전 통제하는 동안만 유지되며 다른 지역이나 새 소유국에는 효과를 넘기지 않습니다.",
       "prerequisites": [
         [
           "HOK_KOR_mc_tenancy_records"
         ]
       ],
       "placement_anchor": "HOK_KOR_mc_tenancy_records",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_stability = 0.02",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } add_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_1 } } }",
       "palette": "industry",
-      "motif": "물동이·집",
+      "motif": "civic desk and gear",
       "module": "M4",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_sanitation_rounds",
+      "position": [
+        28,
+        20
+      ],
+      "anchor": "HOK_KOR_mc_tenancy_records",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_housing_repairs",
       "name": "주택 보수기술",
-      "description": "기존 주택의 유지보수 사례를 정리하여 생활 기반의 마모에 대응한다.",
+      "description": "지역의 시설과 기술 운용을 지원하는 연구 혜택을 제공합니다. 다른 병렬 정책과 어느 순서로도 추진할 수 있습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_mc_sanitation_rounds"
+          "HOK_KOR_mc_tenancy_records"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_sanitation_rounds",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_tech_bonus = { name = HOK_KOR_mc_housing_repairs bonus = 0.5 uses = 1 category = construction_tech }",
+      "placement_anchor": "HOK_KOR_mc_tenancy_records",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "add_tech_bonus = { name = HOK_KOR_mc_housing_repairs bonus = 1.0 uses = 1 category = construction_tech }",
       "palette": "industry",
-      "motif": "지붕·렌치",
+      "motif": "research book and tools",
       "module": "M4",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_housing_repairs",
+      "position": [
+        30,
+        20
+      ],
+      "anchor": "HOK_KOR_mc_tenancy_records",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_market_inspections",
-      "name": "시장 운영점검",
-      "description": "정착민과 기존 주민이 이용하는 시장의 장부와 위생 절차를 점검한다.",
+      "name": "시장·위생 정비",
+      "description": "두 병렬 정책의 성과를 통합하고 지역의 운영 기준과 주민 지원을 정착시킵니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_mc_sanitation_rounds"
+        ],
         [
           "HOK_KOR_mc_housing_repairs"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_housing_repairs",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_political_power = 25\nadd_stability = 0.01",
+      "placement_anchor": "HOK_KOR_mc_tenancy_records",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "add_political_power = 150\nadd_stability = 0.05",
       "palette": "industry",
-      "motif": "시장 저울·장부",
+      "motif": "scales and records",
       "module": "M4",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_market_inspections",
+      "position": [
+        29,
+        21
+      ],
+      "anchor": "HOK_KOR_mc_tenancy_records",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_mc_settled_municipality",
       "name": "정착도시의 일상",
-      "description": "임시적 정착 지원을 일상적인 도시 행정으로 정리하여 도시가 스스로 생활을 유지하게 한다.",
+      "description": "국내성 도시 운영의 기존 혜택을 II로 강화하고 정치력 150을 사용하는 90일 집중 사업을 엽니다. 영토 상실로 제거된 제도는 해당 지역을 되찾은 뒤 사업을 재개하여 복구할 수 있습니다.",
       "prerequisites": [
         [
           "HOK_KOR_mc_market_inspections"
         ]
       ],
-      "placement_anchor": "HOK_KOR_mc_market_inspections",
-      "available": "328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
-      "reward": "add_timed_idea = { idea = HOK_KOR_mc_municipal_routine days = 730 }",
+      "placement_anchor": "HOK_KOR_mc_tenancy_records",
+      "available": "has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }",
+      "reward": "328 = { if = { limit = { is_owned_by = ROOT is_fully_controlled_by = ROOT } if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_1 } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_1 } } add_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_2 } } }\nunlock_decision_category_tooltip = HOK_KOR_manchurian_followup_programs\nunlock_decision_tooltip = HOK_KOR_mc_municipal_routine_project",
       "palette": "industry",
-      "motif": "시계·집",
+      "motif": "houses and municipal blueprint",
       "module": "M4",
       "donor": "Existing common/national_focus/korea.txt:1155-1682 and decision ownership/full-control guards; installed vanilla Sweden 1576 excavation_tech; Argentina ideas 251 local_resources_factor; no state mutation or automatic core.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable. Regional ideas cancel on lost ownership/full control. Permanent M1/M3 stages can be restored after recovery by HOK_KOR_mc_reinstate_services for 50 PP, highest earned missing stage only; timed M2/M4 benefits are finite and cannot be renewed.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_mc_municipal_routine"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        3
+      ],
+      "sprite": "GFX_HOK_KOR_focus_mc_settled_municipality",
+      "position": [
+        29,
+        22
+      ],
+      "anchor": "HOK_KOR_mc_tenancy_records",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_export_invoices",
       "name": "수출거래 명세",
-      "description": "기존 수출산업이 거래 조건을 분명히 제시할 수 있도록 명세 작성과 결제 서류를 정리한다.",
+      "description": "수출 계약과 결제 기록을 정비하여 국내 생산시설이 안정적으로 해외 거래를 이어갈 기반을 마련합니다.",
       "prerequisites": [
         [
-          "KOR_support_light_industry_export"
+          "KOR_devalue_the_won"
         ]
       ],
-      "placement_anchor": "KOR_support_light_industry_export",
-      "available": "",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "KOR_devalue_the_won",
+      "available": "has_civil_war = no has_completed_focus = KOR_support_light_industry_export",
+      "reward": "add_political_power = 150",
       "palette": "industry",
-      "motif": "수출상자·송장",
+      "motif": "trade invoice and crate",
       "module": "G1",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        17,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_export_invoices",
+      "position": [
+        32,
+        1
+      ],
+      "anchor": "KOR_devalue_the_won",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_commercial_arbitration",
       "name": "상거래 중재절차",
-      "description": "계약 해석의 차이가 거래 중단으로 번지기 전에 분쟁을 조정할 실무 절차를 마련한다.",
+      "description": "거래 분쟁의 조정 기준을 정하고 수출업체의 설비 투자를 지원합니다.",
       "prerequisites": [
         [
           "HOK_KOR_cmn_export_invoices"
         ]
       ],
       "placement_anchor": "HOK_KOR_cmn_export_invoices",
-      "available": "",
-      "reward": "add_ideas = HOK_KOR_cmn_export_services_1",
+      "available": "has_civil_war = no",
+      "reward": "add_ideas = HOK_KOR_cmn_export_practice_1",
       "palette": "industry",
-      "motif": "저울·상자 I",
+      "motif": "scales and cargo",
       "module": "G1",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_cmn_export_services_1"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_commercial_arbitration",
+      "position": [
+        31,
+        3
+      ],
+      "anchor": "HOK_KOR_cmn_export_invoices",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_shipping_documents",
       "name": "선적서류 통일",
-      "description": "항구와 업체에서 사용하는 서류를 맞춰 이미 건설한 자유무역지대의 처리 흐름을 개선한다.",
+      "description": "선적 서류와 통신 절차를 통일하고 전자 장비를 연구하여 납품 지연을 줄입니다.",
       "prerequisites": [
         [
-          "HOK_KOR_cmn_commercial_arbitration"
+          "HOK_KOR_cmn_export_invoices"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_commercial_arbitration",
-      "available": "",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "HOK_KOR_cmn_export_invoices",
+      "available": "has_civil_war = no",
+      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_shipping_documents bonus = 1.0 uses = 1 category = electronics }",
       "palette": "industry",
-      "motif": "선적서류·배",
+      "motif": "ship manifest and stamp",
       "module": "G1",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_shipping_documents",
+      "position": [
+        33,
+        3
+      ],
+      "anchor": "HOK_KOR_cmn_export_invoices",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_market_sampling",
       "name": "해외시장 견본",
-      "description": "생산품의 견본과 사용 정보를 정리해 주문 조건을 더 정확히 파악한다.",
+      "description": "거래 조정과 선적 체계를 모두 갖춘 뒤 해외 견본 전시와 시장 개척을 지원합니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_cmn_commercial_arbitration"
+        ],
         [
           "HOK_KOR_cmn_shipping_documents"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_shipping_documents",
-      "available": "",
-      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_market_sampling bonus = 0.5 uses = 1 category = industry }",
+      "placement_anchor": "HOK_KOR_cmn_export_invoices",
+      "available": "has_civil_war = no",
+      "reward": "add_political_power = 150\nadd_stability = 0.05",
       "palette": "industry",
-      "motif": "견본상자·돋보기",
+      "motif": "globe and sample crate",
       "module": "G1",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        3
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_market_sampling",
+      "position": [
+        32,
+        4
+      ],
+      "anchor": "HOK_KOR_cmn_export_invoices",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_export_settlement",
       "name": "수출대금 결제관행",
-      "description": "거래와 운송 서류를 하나의 결제 과정으로 연결하여 계약의 신뢰를 높인다.",
+      "description": "수출대금 결제와 국내 투자의 연결을 정착시켜 기존 수출거래 체계를 강화합니다.",
       "prerequisites": [
         [
           "HOK_KOR_cmn_market_sampling"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_market_sampling",
-      "available": "",
-      "reward": "if = { limit = { has_idea = HOK_KOR_cmn_export_services_1 } swap_ideas = { remove_idea = HOK_KOR_cmn_export_services_1 add_idea = HOK_KOR_cmn_export_services_2 } } else = { add_ideas = HOK_KOR_cmn_export_services_2 }",
+      "placement_anchor": "HOK_KOR_cmn_export_invoices",
+      "available": "has_civil_war = no",
+      "reward": "if = { limit = { has_idea = HOK_KOR_cmn_export_practice_1 } swap_ideas = { remove_idea = HOK_KOR_cmn_export_practice_1 add_idea = HOK_KOR_cmn_export_practice_2 } } else = { add_ideas = HOK_KOR_cmn_export_practice_2 }",
       "palette": "industry",
-      "motif": "저울·상자 II",
+      "motif": "coins and trade book",
       "module": "G1",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_cmn_export_services_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        4
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_export_settlement",
+      "position": [
+        32,
+        5
+      ],
+      "anchor": "HOK_KOR_cmn_export_invoices",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_ore_classification",
       "name": "원료 광종분류",
-      "description": "기존 자원개발의 성과를 광종별로 분류하여 제련시설이 적절한 원료를 선택하게 한다.",
+      "description": "광종과 공정별 투입 원료를 조사하고 산업 기술 연구를 지원합니다.",
       "prerequisites": [
         [
-          "KOR_hamgyeong_underground_resources"
+          "KOR_develop_unsan_gold_mine"
         ]
       ],
-      "placement_anchor": "KOR_hamgyeong_underground_resources",
-      "available": "",
-      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_ore_classification bonus = 0.5 uses = 1 category = excavation_tech }",
+      "placement_anchor": "KOR_develop_unsan_gold_mine",
+      "available": "has_civil_war = no has_completed_focus = KOR_hamgyeong_underground_resources",
+      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_ore_classification bonus = 1.5 uses = 1 category = industry }",
       "palette": "industry",
-      "motif": "광석·분류표",
+      "motif": "ore and magnifying glass",
       "module": "G2",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_ore_classification",
+      "position": [
+        0,
+        6
+      ],
+      "anchor": "KOR_develop_unsan_gold_mine",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_scrap_collection",
       "name": "폐금속 수거망",
-      "description": "공장과 생활 현장에서 나오는 폐금속을 선별해 기존 제철소에 공급한다.",
+      "description": "폐금속과 공정 부산물을 다시 투입할 수거망을 마련하여 자원 생산과 원료 부족 대응을 개선합니다.",
       "prerequisites": [
         [
           "HOK_KOR_cmn_ore_classification"
         ]
       ],
       "placement_anchor": "HOK_KOR_cmn_ore_classification",
-      "available": "",
-      "reward": "add_ideas = HOK_KOR_cmn_recycled_materials_1",
+      "available": "has_civil_war = no",
+      "reward": "add_ideas = HOK_KOR_cmn_material_cycle_1",
       "palette": "industry",
-      "motif": "고철·순환화살표 I",
+      "motif": "scrap and recycling gear",
       "module": "G2",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_cmn_recycled_materials_1"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_scrap_collection",
+      "position": [
+        0,
+        7
+      ],
+      "anchor": "HOK_KOR_cmn_ore_classification",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_coke_testing",
       "name": "코크스 품질시험",
-      "description": "제련용 연료의 성질을 시험해 원료 배합의 불필요한 손실을 줄인다.",
+      "description": "연료와 광물의 품질시험을 지원하여 채굴 기술을 발전시킵니다.",
       "prerequisites": [
         [
-          "HOK_KOR_cmn_scrap_collection"
+          "HOK_KOR_cmn_ore_classification"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_scrap_collection",
-      "available": "",
-      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_coke_testing bonus = 0.5 uses = 1 category = industry }",
+      "placement_anchor": "HOK_KOR_cmn_ore_classification",
+      "available": "has_civil_war = no",
+      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_coke_testing bonus = 1.0 uses = 1 category = excavation_tech }",
       "palette": "industry",
-      "motif": "석탄·시험관",
+      "motif": "furnace and coal",
       "module": "G2",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_coke_testing",
+      "position": [
+        2,
+        7
+      ],
+      "anchor": "HOK_KOR_cmn_ore_classification",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_foundry_exchange",
       "name": "제련 현장교류",
-      "description": "이미 운영 중인 제철소의 기술자들이 회수와 재용해 사례를 비교한다.",
+      "description": "수거망과 품질시험을 모두 갖춘 뒤 제련 현장의 작업 경험을 공유하고 재투자를 지원합니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_cmn_scrap_collection"
+        ],
         [
           "HOK_KOR_cmn_coke_testing"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_coke_testing",
-      "available": "",
-      "reward": "add_political_power = 50",
+      "placement_anchor": "HOK_KOR_cmn_ore_classification",
+      "available": "has_civil_war = no",
+      "reward": "add_political_power = 150",
       "palette": "industry",
-      "motif": "용광로·악수",
+      "motif": "workers and foundry",
       "module": "G2",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_foundry_exchange",
+      "position": [
+        1,
+        8
+      ],
+      "anchor": "HOK_KOR_cmn_ore_classification",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_closed_material_cycle",
       "name": "원료 순환체계",
-      "description": "수거와 선별, 제련을 잇는 절차를 정착시켜 국내 원료를 더 효율적으로 사용한다.",
+      "description": "원료의 수거·품질시험·재투입을 연결하여 자원 생산과 원료 부족 대응의 기존 혜택을 강화합니다.",
       "prerequisites": [
         [
           "HOK_KOR_cmn_foundry_exchange"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_foundry_exchange",
-      "available": "",
-      "reward": "if = { limit = { has_idea = HOK_KOR_cmn_recycled_materials_1 } swap_ideas = { remove_idea = HOK_KOR_cmn_recycled_materials_1 add_idea = HOK_KOR_cmn_recycled_materials_2 } } else = { add_ideas = HOK_KOR_cmn_recycled_materials_2 }",
+      "placement_anchor": "HOK_KOR_cmn_ore_classification",
+      "available": "has_civil_war = no",
+      "reward": "if = { limit = { has_idea = HOK_KOR_cmn_material_cycle_1 } swap_ideas = { remove_idea = HOK_KOR_cmn_material_cycle_1 add_idea = HOK_KOR_cmn_material_cycle_2 } } else = { add_ideas = HOK_KOR_cmn_material_cycle_2 }",
       "palette": "industry",
-      "motif": "고철·순환화살표 II",
+      "motif": "ore and recycling gear",
       "module": "G2",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 0.5,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_cmn_recycled_materials_2"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        3
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_closed_material_cycle",
+      "position": [
+        1,
+        9
+      ],
+      "anchor": "HOK_KOR_cmn_ore_classification",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_motor_driver_courses",
       "name": "기동부대 운전과정",
-      "description": "기존 차량화보병이 험한 길에서도 대형을 유지할 수 있도록 운전 실무를 훈련한다.",
+      "description": "기동부대 운전과정을 정비하고 육군의 차량 운용 경험을 축적합니다.",
       "prerequisites": [
         [
           "KOR_mobile_infantry"
         ]
       ],
       "placement_anchor": "KOR_mobile_infantry",
-      "available": "",
-      "reward": "army_experience = 15",
+      "available": "has_civil_war = no",
+      "reward": "army_experience = 50",
       "palette": "army",
-      "motif": "핸들·철모",
+      "motif": "truck and driving manual",
       "module": "G3",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_motor_driver_courses",
+      "position": [
+        34,
+        5
+      ],
+      "anchor": "KOR_mobile_infantry",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_mechanized_loading",
       "name": "기계화 승하차훈련",
-      "description": "장갑수송과 보병 전개 사이의 시간을 줄이도록 반복 훈련을 실시한다.",
+      "description": "기계화부대의 승하차·정비 절차를 통일하여 기동 속도와 연료 운용을 개선합니다.",
       "prerequisites": [
         [
           "HOK_KOR_cmn_motor_driver_courses"
         ]
       ],
       "placement_anchor": "HOK_KOR_cmn_motor_driver_courses",
-      "available": "",
-      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_mechanized_loading bonus = 0.5 uses = 1 category = cat_mechanized_equipment }",
+      "available": "has_civil_war = no",
+      "reward": "add_ideas = HOK_KOR_cmn_mobile_operations_1",
       "palette": "army",
-      "motif": "반궤도차·화살표",
+      "motif": "armored transport and soldiers",
       "module": "G3",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_mechanized_loading",
+      "position": [
+        33,
+        6
+      ],
+      "anchor": "HOK_KOR_cmn_motor_driver_courses",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_march_discipline",
       "name": "기동종대 규율",
-      "description": "행군 중 차량 간격과 교차로 통과 절차를 맞춰 좁은 도로에서의 혼선을 줄인다.",
+      "description": "무선 연락과 기동종대의 행군 기록을 표준화합니다. 전자공학 연구와 육군의 실무 경험을 지원합니다.",
       "prerequisites": [
         [
-          "HOK_KOR_cmn_mechanized_loading"
+          "HOK_KOR_cmn_motor_driver_courses"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_mechanized_loading",
-      "available": "",
-      "reward": "army_experience = 20",
+      "placement_anchor": "HOK_KOR_cmn_motor_driver_courses",
+      "available": "has_civil_war = no",
+      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_march_discipline bonus = 1.0 uses = 1 category = electronics }\narmy_experience = 25",
       "palette": "army",
-      "motif": "차량종대·회중시계",
+      "motif": "convoy route map",
       "module": "G3",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_march_discipline",
+      "position": [
+        35,
+        6
+      ],
+      "anchor": "HOK_KOR_cmn_motor_driver_courses",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_mobile_unit_recovery",
       "name": "기동부대 재정렬",
-      "description": "전개가 끝난 차량과 보병이 다시 한 부대로 움직이도록 집결 절차를 훈련한다.",
+      "description": "기계화 운용과 행군 규율을 함께 정착시켜 육군 이동과 연료 절감의 기존 혜택을 강화합니다.",
       "prerequisites": [
+        [
+          "HOK_KOR_cmn_mechanized_loading"
+        ],
         [
           "HOK_KOR_cmn_march_discipline"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_march_discipline",
-      "available": "",
-      "reward": "add_timed_idea = { idea = HOK_KOR_cmn_mobile_recovery days = 730 }",
+      "placement_anchor": "HOK_KOR_cmn_motor_driver_courses",
+      "available": "has_civil_war = no",
+      "reward": "if = { limit = { has_idea = HOK_KOR_cmn_mobile_operations_1 } swap_ideas = { remove_idea = HOK_KOR_cmn_mobile_operations_1 add_idea = HOK_KOR_cmn_mobile_operations_2 } } else = { add_ideas = HOK_KOR_cmn_mobile_operations_2 }",
       "palette": "army",
-      "motif": "차량·집결 깃발",
+      "motif": "truck and route map",
       "module": "G3",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_cmn_mobile_recovery"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        0,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_mobile_unit_recovery",
+      "position": [
+        34,
+        7
+      ],
+      "anchor": "HOK_KOR_cmn_motor_driver_courses",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_emergency_turn_drills",
       "name": "긴급변침 연습",
-      "description": "기존 수상함대가 위험한 교전에서 질서를 유지하며 방향을 바꾸도록 훈련한다.",
+      "description": "함대의 긴급변침과 손상 함정의 이탈을 훈련하여 해군 경험을 축적합니다.",
       "prerequisites": [
         [
           "KOR_large_surface_fleet"
         ]
       ],
       "placement_anchor": "KOR_large_surface_fleet",
-      "available": "",
-      "reward": "navy_experience = 20",
+      "available": "has_civil_war = no",
+      "reward": "navy_experience = 50",
       "palette": "navy",
-      "motif": "함선·곡선 화살표",
+      "motif": "warship turning",
       "module": "G4",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -4,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_emergency_turn_drills",
+      "position": [
+        48,
+        4
+      ],
+      "anchor": "KOR_large_surface_fleet",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_smoke_screen_procedures",
       "name": "연막 이탈절차",
-      "description": "연막 전개와 함대 이탈의 신호를 일치시켜 퇴각 때의 혼선을 줄인다.",
+      "description": "초기 교전 이후 연막을 이용한 이탈 절차를 마련해 철수 확률과 철수 속도를 높입니다.",
       "prerequisites": [
         [
           "HOK_KOR_cmn_emergency_turn_drills"
         ]
       ],
       "placement_anchor": "HOK_KOR_cmn_emergency_turn_drills",
-      "available": "",
-      "reward": "add_timed_idea = { idea = HOK_KOR_cmn_naval_disengagement days = 730 }",
+      "available": "has_civil_war = no",
+      "reward": "add_ideas = HOK_KOR_cmn_smoke_withdrawal",
       "palette": "navy",
-      "motif": "함선·연막",
+      "motif": "warship behind smoke",
       "module": "G4",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_cmn_naval_disengagement"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_smoke_screen_procedures",
+      "position": [
+        47,
+        6
+      ],
+      "anchor": "HOK_KOR_cmn_emergency_turn_drills",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_rescue_station_drills",
       "name": "해상구조 당직",
-      "description": "교전 뒤 구조와 인원 확인 절차를 훈련하여 함대가 손실을 질서 있게 수습하게 한다.",
+      "description": "해상구조 당직과 지원 함정의 활동을 정비하여 해군의 작전 범위와 함선 수리를 개선합니다.",
       "prerequisites": [
         [
-          "HOK_KOR_cmn_smoke_screen_procedures"
+          "HOK_KOR_cmn_emergency_turn_drills"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_smoke_screen_procedures",
-      "available": "",
-      "reward": "add_war_support = 0.02\nnavy_experience = 15",
+      "placement_anchor": "HOK_KOR_cmn_emergency_turn_drills",
+      "available": "has_civil_war = no",
+      "reward": "add_ideas = HOK_KOR_cmn_maritime_rescue",
       "palette": "navy",
-      "motif": "구명환·닻",
+      "motif": "anchor and lifebuoy",
       "module": "G4",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        2
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_rescue_station_drills",
+      "position": [
+        49,
+        6
+      ],
+      "anchor": "HOK_KOR_cmn_emergency_turn_drills",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_flight_weather_logs",
       "name": "비행기상 일지",
-      "description": "기존 공군 교육기관에서 비행과 기상의 관계를 기록해 출격 판단의 근거를 축적한다.",
+      "description": "비행장별 기상 기록과 통신 장비를 보급하고 공군 경험을 축적합니다.",
       "prerequisites": [
         [
           "KOR_establishment_of_the_afoc"
         ]
       ],
       "placement_anchor": "KOR_establishment_of_the_afoc",
-      "available": "",
-      "reward": "air_experience = 15",
+      "available": "has_civil_war = no",
+      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_flight_weather_logs bonus = 1.0 uses = 1 category = electronics }\nair_experience = 25",
       "palette": "air",
-      "motif": "항공기·기압계",
+      "motif": "weather chart and aircraft",
       "module": "G5",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        2,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_flight_weather_logs",
+      "position": [
+        68,
+        7
+      ],
+      "anchor": "KOR_establishment_of_the_afoc",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_instrument_approaches",
       "name": "계기접근 절차",
-      "description": "시야가 나쁜 조건에서도 비행대가 같은 계기와 접근 순서를 사용하도록 훈련한다.",
+      "description": "계기에 의존한 접근과 착륙을 훈련하여 비행 사고를 줄입니다.",
       "prerequisites": [
         [
           "HOK_KOR_cmn_flight_weather_logs"
         ]
       ],
       "placement_anchor": "HOK_KOR_cmn_flight_weather_logs",
-      "available": "",
-      "reward": "add_tech_bonus = { name = HOK_KOR_cmn_instrument_approaches bonus = 0.5 uses = 1 category = electronics }",
+      "available": "has_civil_war = no",
+      "reward": "add_ideas = HOK_KOR_cmn_instrument_flying",
       "palette": "air",
-      "motif": "계기판·날개",
+      "motif": "aircraft instrument dial",
       "module": "G5",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_instrument_approaches",
+      "position": [
+        67,
+        8
+      ],
+      "anchor": "HOK_KOR_cmn_flight_weather_logs",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     },
     {
       "id": "HOK_KOR_cmn_adverse_weather_flying",
       "name": "악천후 비행규정",
-      "description": "기상 기록과 계기 절차를 모아 무리한 출격과 불필요한 임무 손실을 줄인다.",
+      "description": "관측 자료와 운용 교범으로 악천후의 불이익을 줄입니다. 계기비행 가지와 함께 추진할 수 있습니다.",
       "prerequisites": [
         [
-          "HOK_KOR_cmn_instrument_approaches"
+          "HOK_KOR_cmn_flight_weather_logs"
         ]
       ],
-      "placement_anchor": "HOK_KOR_cmn_instrument_approaches",
-      "available": "",
-      "reward": "add_timed_idea = { idea = HOK_KOR_cmn_weather_flying days = 730 }",
+      "placement_anchor": "HOK_KOR_cmn_flight_weather_logs",
+      "available": "has_civil_war = no",
+      "reward": "add_ideas = HOK_KOR_cmn_weather_flying",
       "palette": "air",
-      "motif": "날개·구름",
+      "motif": "aircraft and storm cloud",
       "module": "G5",
       "donor": "Installed vanilla Sweden focus 858/884 cat_mechanized_equipment, 1547/1576 excavation_tech; Sweden ideas551 naval_retreat_speed,827 army_morale_factor; Finland ideas187 air_weather_penalty; Denmark ideas496 trade_opinion_factor; Argentina ideas251 local_resources_factor.",
-      "ai_factor": 1,
+      "ai_factor": 2,
       "lifecycle": "Single completion; direct PP/stability/experience is not reversed; research bonuses remain until used; no repeat event or variable.",
       "cost": 5,
       "mutually_exclusive": [],
       "linked_ideas": [
         "HOK_KOR_cmn_weather_flying"
       ],
-      "status": "DRAFT_REQUIRES_POLICY_DESIGN"
+      "status": "APPLIED_REMAINING_FOLLOWUP",
+      "relative_xy": [
+        1,
+        1
+      ],
+      "sprite": "GFX_HOK_KOR_focus_cmn_adverse_weather_flying",
+      "position": [
+        69,
+        8
+      ],
+      "anchor": "HOK_KOR_cmn_flight_weather_logs",
+      "ai": "factor = 2",
+      "implementation_spec": "docs/HOK_KOREAN_REGIONAL_COMMON_FOLLOWUP_SPEC.md"
     }
-  ]
+  ],
+  "runtime_validation_remaining_82": {
+    "scope": "New remaining 82 focuses only; previous 52 second-wave validation is not reclassified.",
+    "source_sha256": "905a3868776f4b5aedc1e5f41bda0568bf279f38a48343888114e985f1ccf852",
+    "incident": "docs/incidents/2026-09-23-korean-remaining-followup.md",
+    "static": {
+      "passed": 896,
+      "failed": 0
+    },
+    "coordinates": {
+      "passed": 335,
+      "failed": 0
+    },
+    "clean_load": {
+      "status": "PASSED_DIAGNOSTIC_FREE_NEW_GAME",
+      "run": "clean-03",
+      "checksum": "9787",
+      "active_dlc_count": 36,
+      "active_mod_count": 1,
+      "baseline_unique_errors": 40,
+      "current_unique_errors": 40,
+      "new_unique_errors": 0,
+      "baseline_kind": "Preserved prior user log, not a fresh control run",
+      "record": ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/clean-03/run.json"
+    },
+    "forced_rewards": {
+      "left_first": {
+        "passed": 400,
+        "failed": 0,
+        "run": "rewards-left-final"
+      },
+      "right_first": {
+        "passed": 400,
+        "failed": 0,
+        "run": "rewards-right-final"
+      },
+      "missing_tier": {
+        "passed": 413,
+        "failed": 0,
+        "run": "rewards-missing-final"
+      },
+      "scope": "Immediate forced completions, amounts and tier replacement; not normal access, timing or research consumption."
+    },
+    "regional_immediate": {
+      "passed": 147,
+      "failed": 0,
+      "run": "projects-02",
+      "scope": "Four isolated projects; activation effects, eligibility/cancel predicates and directly invoked cancel body. Not daily cancellation or elapsed 90-day proof."
+    },
+    "immediate_total": {
+      "passed": 1360,
+      "failed": 0
+    },
+    "measurement_probe": {
+      "passed": 8,
+      "failed": 0,
+      "run": "probe-01",
+      "unresolved": "A1 PP150-only root showed +0.05 aggregate stability refresh in earlier forced runs before a new spirit. Exact engine cause remains unproven; final idea checks compare immediately before/after each reward without changing expected values or production."
+    },
+    "normal_progression": {
+      "passed": 10,
+      "failed": 0,
+      "record": ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/normal-01/normal-result/run.json",
+      "scope": "C1 first focus ordinary UI start and 35-day completion; M1 UI PP150 payment and natural 90-day expiry, temporary removal, II retention and cooldown creation. Legacy politics and territory synthetically prepared."
+    },
+    "government_faction_lifecycle": {
+      "passed": 7,
+      "failed": 0,
+      "run": "lifecycle-government-01",
+      "scope": "Actual daily C4 removal after faction exit, M2 survival of faction exit then cancellation/removal after government loss; restoring democracy alone does not restore II. Startup and condition changes synthetic; M2 initial activation not UI."
+    },
+    "control_loss_lifecycle": {
+      "passed": 15,
+      "failed": 0,
+      "run": "lifecycle-control-02",
+      "scope": "M1 UI PP500 to350; injected control loss day3, natural cancellation day4, reclaim day6 without automatic restoration, 90-day shared cooldown ended day94, UI restart on Apr12 11:00 PP468 to318 with90days, actual daily II/temporary restoration. War/territory setup synthetic."
+    },
+    "ownership_loss_lifecycle": {
+      "passed": 8,
+      "failed": 0,
+      "run": "lifecycle-ownership-01",
+      "scope": "M1 ordinary UI activation on Jan1 12:00 PP500 to350 and90days; synthetic ownership loss followed by actual daily cancellation on day4 and modifier removal; reclaim does not automatically restore II. Separate from control-loss case."
+    },
+    "runtime_visual": {
+      "status": "PARTIAL_HIDE_UI_OBSERVED",
+      "source_sha256": "905a3868776f4b5aedc1e5f41bda0568bf279f38a48343888114e985f1ccf852",
+      "record": "docs/incidents/2026-09-23-korean-remaining-followup.md",
+      "resolution": [
+        1600,
+        900
+      ],
+      "gui_scale": 1.0,
+      "visibility_rule": "HIDE",
+      "setup": "normal-01 inspected some royal areas after synthetic royal-route completion. lifecycle-control-02 and lifecycle-ownership-01 inspected initial HIDE without a completed political route. Neither proves the initial-to-completed movement transition.",
+      "full_modules_observed": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "H2",
+        "H3",
+        "H4",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "G3"
+      ],
+      "partial_modules_observed": {
+        "A1": "partial",
+        "A2": "upper",
+        "A3": "partial",
+        "A4": "upper",
+        "G1": "All branch connections observed; root icon at top viewport boundary."
+      },
+      "modules_not_fully_observed": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "H1",
+        "G1",
+        "G2",
+        "G4",
+        "G5"
+      ],
+      "finding": "No new icon/nameplate/connector overlap observed in the inspected regions; not a whole-tree/all-state guarantee.",
+      "manchurian_shortcut": "Existing destination title partly clipped at bottom immediately after shortcut; additional scrolling reaches all new M1-M4. Existing shortcut and panel settings unchanged.",
+      "not_verified": [
+        "SHOW for new 82",
+        "initial-to-completed political movement",
+        "all hidden-anchor states",
+        "full continuous-focus panel clearance",
+        "all icon/shine states"
+      ],
+      "ui_observation_records": [
+        ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/normal-01/ui-observations.json",
+        ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/lifecycle-control-01/ui-observations.json",
+        ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/lifecycle-control-02/ui-observations.json",
+        ".local-artifacts/korean-focus-expansion/remaining-20260923/runtime-results/lifecycle-ownership-01/ui-observations.json"
+      ]
+    },
+    "preservation": "Final clean-03, three final reward runs, projects-02 and three successful lifecycle runs confirm original13 saves, settings, playset, launcher and production files unchanged, with zero cleanup issues. normal-01 final result also confirms saves/settings/playset preserved. Earlier clean-02 added only the engine graceful_exit=no settings line; tools did not write or restore user settings. Do not claim all historical runs were byte-identical.",
+    "unverified": [
+      "All remaining focuses through normal progression",
+      "Research bonus consumption",
+      "M2-M4 complete ordinary UI and90-day lifecycles",
+      "All M3 multi-state loss combinations",
+      "Unobserved UI regions and states",
+      "Long-term AI",
+      "New-save round trip and old-save compatibility",
+      "Alternative DLC configurations",
+      "Multiplayer"
+    ],
+    "cleanup": "Final verification processes closed and owned temporary diagnostic files removed."
+  },
+  "previous_layout_repair_validation": {
+    "source_sha256": "dd2334a0f5be074c0e52adb280b6cbeb80a20412ccbcee62f754adf4e85613b4",
+    "baseline_source_sha256": "905a3868776f4b5aedc1e5f41bda0568bf279f38a48343888114e985f1ccf852",
+    "incident": "docs/incidents/2026-09-23-hwan-focus-layout.md",
+    "status": "LAYOUT_REPAIR_SHOW_HIDE_OBSERVED",
+    "confirmed_defect": "User screenshot shows pre-repair H1 root title crossed by the existing imperial-regent/opposition mutually-exclusive wire. Prior geometry checked prerequisite wires but omitted exclusion wires.",
+    "before_h1_base_positions": {
+      "HOK_KOR_hw_provincial_inventory": [
+        183,
+        5
+      ],
+      "HOK_KOR_hw_provision_accounts": [
+        182,
+        6
+      ],
+      "HOK_KOR_hw_inspection_circuits": [
+        184,
+        6
+      ],
+      "HOK_KOR_hw_supply_returns": [
+        183,
+        7
+      ]
+    },
+    "after_h1_base_positions": {
+      "HOK_KOR_hw_provincial_inventory": [
+        185,
+        10
+      ],
+      "HOK_KOR_hw_provision_accounts": [
+        184,
+        11
+      ],
+      "HOK_KOR_hw_inspection_circuits": [
+        186,
+        11
+      ],
+      "HOK_KOR_hw_supply_returns": [
+        185,
+        12
+      ]
+    },
+    "production_preservation": {
+      "passed": 10,
+      "failed": 0,
+      "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-layout/preservation.json",
+      "scope": "Only root x/y and contributor note changed;459 other blocks and456 other resolved positions unchanged. Gameplay, anchor, offsets, bounds, panel and shortcuts preserved."
+    },
+    "geometry": {
+      "record": ".local-artifacts/korean-focus-expansion/remaining-20260923/h1-layout-review.json",
+      "script": ".local-artifacts/korean-focus-expansion/remaining-20260923/h1-layout-review.py",
+      "source_sha256": "dd2334a0f5be074c0e52adb280b6cbeb80a20412ccbcee62f754adf4e85613b4",
+      "coordinate_input_sha256": "905a3868776f4b5aedc1e5f41bda0568bf279f38a48343888114e985f1ccf852",
+      "selected_h1_override_matches_applied_source": true,
+      "states": 20,
+      "guard_pixels": 8,
+      "overlaps": 0,
+      "prerequisite_line_contacts": 0,
+      "unrelated_horizontal_collinearity": 0,
+      "mutually_exclusive_title_band_contacts": 0,
+      "old_root_exclusion_defect_reproduced": true,
+      "exclusion_height_model": "Conservative band20..70px below grid center motivated by user screenshot; not a calibrated engine raster measurement.",
+      "limits": "Static models do not establish engine routing/click targets; perpendicular line crossings are not prohibited; longer entry wire requires UI inspection.",
+      "scope": "Four relocated H1 focuses and their prerequisite edges against all visible neighbors and mutual-exclusion title-height bands."
+    },
+    "runtime_visual": {
+      "initial_show": {
+        "status": "OBSERVED_PASS_FOR_INSPECTED_H1_AREA",
+        "run": "show-01",
+        "setup_passed": 1,
+        "setup_failed": 0,
+        "checksum": "565a",
+        "resolution": [
+          1600,
+          900
+        ],
+        "gui_scale": 1,
+        "view": "Royal shortcut scale0.65 and three zoom-in button clicks",
+        "observed": [
+          "Royal parent and original exclusion row have no H1 title in their path",
+          "All four relocated H1 icons and nameplates are separate from neighboring legacy focuses",
+          "Vertical entry line passes beside Kaiserreich and across existing branch lines without hiding focus rectangles",
+          "H1 split and merge are readable",
+          "Clicking the new root title opens the correct focus with unchanged 35-day and industry150% reward"
+        ],
+        "evidence": ".local-artifacts/incidents/2026-09-23-hwan-focus-layout/runtime-results/show-01/ui-observations.json",
+        "limits": "Not normal focus completion or a live political transition; no claim that every line intersection is removed",
+        "preservation": {
+          "SavesUnchanged": true,
+          "SettingsUnchanged": false,
+          "OnlyGracefulExitChanged": true,
+          "SettingsAcceptable": true,
+          "PlaysetUnchanged": true,
+          "LauncherUnchanged": true,
+          "ProductionUnchanged": true,
+          "CleanupIssues": []
+        }
+      },
+      "royal_completed_hide": {
+        "status": "OBSERVED_PASS_FOR_INSPECTED_H1_AREA",
+        "run": "hide-01",
+        "setup_passed": 1,
+        "setup_failed": 0,
+        "checksum": "820a",
+        "resolution": [
+          1600,
+          900
+        ],
+        "gui_scale": 1,
+        "view": "Two direct views of the royal sector at different zoom/scroll positions",
+        "observed": [
+          "Royal route is displayed in the synthetic completed-root HIDE state",
+          "Original royal exclusion row is clear of the H1 title",
+          "All four relocated H1 icons and nameplates remain separate from neighboring legacy focuses",
+          "The H1 entry line, split and merge are visible without covering neighboring focus rectangles"
+        ],
+        "evidence": ".local-artifacts/incidents/2026-09-23-hwan-focus-layout/runtime-results/hide-01/ui-observations.json",
+        "limits": "Royal root unlocked without rewards for setup; no normal political transition or focus completion. User input interrupted two attempted clicks; latest screenshots were reacquired and inspected without overriding that input.",
+        "preservation": {
+          "SavesUnchanged": true,
+          "SettingsUnchanged": true,
+          "OnlyGracefulExitChanged": false,
+          "SettingsAcceptable": true,
+          "PlaysetUnchanged": true,
+          "LauncherUnchanged": true,
+          "ProductionUnchanged": true,
+          "CleanupIssues": []
+        }
+      },
+      "source_sha256": "dd2334a0f5be074c0e52adb280b6cbeb80a20412ccbcee62f754adf4e85613b4",
+      "limits": "Separate paused synthetic display states do not prove normal political transition or new reward progression."
+    },
+    "prior_runtime_evidence": "All82 rewards/normal/lifecycle records in previous460 validation belong to905a. Gameplay preservation supports reference to them; they were not rerun ondd2334a0 and did not cover pre-repair H1 UI.",
+    "clean_load": "NOT_RERUN_FOR_LAYOUT_ONLY_REPAIR",
+    "save_reload": "UNVERIFIED_FOR_REPAIRED_SOURCE",
+    "normal_progression": "NOT_RERUN_GAMEPLAY_UNCHANGED",
+    "cleanup": "Both owned UI-test processes closed and temporary owned diagnostic removed; no cleanup issues.",
+    "log_comparison": {
+      "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-layout/log-comparison.json",
+      "baseline_kind": "Preserved prior user-session error log, not a fresh diagnostic-free control",
+      "baseline_nonempty_lines": 128,
+      "baseline_unique_messages": 40,
+      "normalization": "Remove both timestamp fields",
+      "runs": {
+        "show-01": {
+          "nonempty_lines": 128,
+          "unique_messages": 40,
+          "new_messages": 0,
+          "increased_counts": 0
+        },
+        "hide-01": {
+          "nonempty_lines": 128,
+          "unique_messages": 40,
+          "new_messages": 0,
+          "increased_counts": 0
+        }
+      }
+    }
+  },
+  "layout_right_validation": {
+    "source_sha256": "1cedaf78903db31d15e3837e20069b71bca8fc674212b1d033f0d721b2b6735c",
+    "baseline_source_sha256": "dd2334a0f5be074c0e52adb280b6cbeb80a20412ccbcee62f754adf4e85613b4",
+    "incident": "docs/incidents/2026-09-23-hwan-focus-right.md",
+    "status": "LAYOUT_APPLIED_STATIC_AND_CLEAN_LOAD_CHECKED_UI_BLOCKED",
+    "before_h1_base_positions": {
+      "HOK_KOR_hw_provincial_inventory": [
+        185,
+        10
+      ],
+      "HOK_KOR_hw_provision_accounts": [
+        184,
+        11
+      ],
+      "HOK_KOR_hw_inspection_circuits": [
+        186,
+        11
+      ],
+      "HOK_KOR_hw_supply_returns": [
+        185,
+        12
+      ]
+    },
+    "after_h1_base_positions": {
+      "HOK_KOR_hw_provincial_inventory": [
+        211,
+        5
+      ],
+      "HOK_KOR_hw_provision_accounts": [
+        210,
+        6
+      ],
+      "HOK_KOR_hw_inspection_circuits": [
+        212,
+        6
+      ],
+      "HOK_KOR_hw_supply_returns": [
+        211,
+        7
+      ]
+    },
+    "production_preservation": {
+      "passed": 10,
+      "failed": 0,
+      "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-right/preservation.json",
+      "scope": "Only root x/y and one nearby contributor note changed; other459 focus blocks byte-identical, other456 resolved positions unchanged. Seven offsets, anchors, panel, shortcuts and all ordered gameplay tokens preserved."
+    },
+    "geometry": {
+      "record": ".local-artifacts/korean-focus-expansion/remaining-20260923/h1-rightedge211-review-agent.json",
+      "script": ".local-artifacts/korean-focus-expansion/remaining-20260923/h1-rightedge211-review-agent.py",
+      "selected_h1_override_matches_applied_source": true,
+      "states": 20,
+      "guard_pixels": 8,
+      "overlaps": 0,
+      "prerequisite_line_contacts": 0,
+      "unrelated_horizontal_collinearity": 0,
+      "mutually_exclusive_title_band_contacts": 0,
+      "bounds_change": "Base max_x211 to212; royal-completed HIDE max_x110 to111; y unchanged.",
+      "limits": "Conservative static rectangle/three-wire/exclusion-band models do not prove engine rendering, full political transitions, hidden-anchor display or click targets."
+    },
+    "runtime_visual": {
+      "status": "BLOCKED_NATIVE_COMPUTER_USE_CONNECTION",
+      "error": "Computer Use native pipe is unavailable: failed to connect native pipe (os error2)",
+      "attempts": "Initialization and window inventory failed; reset, reinitialize and fresh inventory failed again. No window input or UI observation.",
+      "required_states": [
+        "initial SHOW/HIDE",
+        "royal-completed SHOW/HIDE",
+        "normal initial-to-completed political transition"
+      ],
+      "prior_source_evidence": "dd2334a0 SHOW/HIDE observations retained only in previous_h1_layout_validation; they do not validate this relocation."
+    },
+    "clean_load": {
+      "status": "PASSED_DIAGNOSTIC_FREE_PAUSED_NEW_GAME_LOG_CHECK",
+      "run": "clean-hide-final",
+      "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-right/runtime-results/clean-hide-final/run.json",
+      "checksum": "8a72",
+      "version": "Operation Postern v1.19.3.0.c01a",
+      "steam_build": "25205862",
+      "visibility": "HIDE",
+      "date": "1936.1.1.12",
+      "active_dlc_count": 36,
+      "active_mod_count": 1,
+      "diagnostic_files_added": [],
+      "completed": true,
+      "elapsed_seconds": 34.42199999999957,
+      "scope": "Fresh paused Korea startup inferred from current-run log markers; no screen observation, route completion, normal progression or rewards."
+    },
+    "normal_progression": "NOT_RERUN_GAMEPLAY_UNCHANGED",
+    "save_reload": "UNVERIFIED_FOR_RELOCATED_SOURCE",
+    "dlc_multiplayer_ai": "NOT_RERUN",
+    "log_comparison": {
+      "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-right/log-comparison.json",
+      "baseline_kind": "Preserved prior user-session log; not a fresh control run",
+      "normalization": "Remove only two leading timestamp fields",
+      "baseline_nonempty_lines": 130,
+      "baseline_unique_messages": 41,
+      "current_nonempty_lines": 128,
+      "current_unique_messages": 40,
+      "new_messages": 0,
+      "increased_counts": 0,
+      "removed_message_note": "Two prior random.log rename warnings absent; not attributed to this layout edit."
+    },
+    "environment_preservation": {
+      "SavesUnchanged": true,
+      "SettingsUnchanged": false,
+      "OnlyGracefulExitChanged": true,
+      "SettingsAcceptable": true,
+      "PlaysetUnchanged": true,
+      "LauncherUnchanged": true,
+      "ProductionUnchanged": true,
+      "CleanupIssues": [],
+      "ProcessRetainedForUI": false,
+      "save_count": 13,
+      "production_file_count": 150,
+      "settings_note": "Only engine-added graceful_exit=no; no tool write or restore."
+    },
+    "metadata_consistency": {
+      "record": ".local-artifacts/incidents/2026-09-23-hwan-focus-right/documentation-consistency.json",
+      "coordinate_nodes": 460,
+      "candidate_explicit_positions": 122,
+      "all_match_source": true,
+      "prior_h1_UI_evidence_preserved": true
+    }
+  }
 }

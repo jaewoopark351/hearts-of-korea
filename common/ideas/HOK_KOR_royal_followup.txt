@@ -1,0 +1,201 @@
+ideas = {
+	country = {
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_am_ordered_administration_1 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_am_ordered_administration_1
+			removal_cost = -1
+			cancel = { NOT = { has_government = neutrality } }
+			modifier = {
+				political_power_gain = 0.50
+				stability_factor = 0.05
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_am_ordered_administration_2 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_am_ordered_administration_2
+			removal_cost = -1
+			cancel = { NOT = { has_government = neutrality } }
+			modifier = {
+				political_power_gain = 1.20
+				stability_factor = 0.10
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_am_relief_protocol_1 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_am_relief_protocol_1
+			removal_cost = -1
+			cancel = { NOT = { has_government = neutrality } }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				industry_repair_factor = 0.15
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_am_relief_protocol_2 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_am_relief_protocol_2
+			removal_cost = -1
+			cancel = { NOT = { has_government = neutrality } }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+				industry_repair_factor = 0.25
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_am_reserve_cadre_1 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_am_reserve_cadre_1
+			removal_cost = -1
+			cancel = { NOT = { has_government = neutrality } }
+			modifier = {
+				training_time_factor = -0.10
+				land_reinforce_rate = 0.02
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_am_reserve_cadre_2 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_am_reserve_cadre_2
+			removal_cost = -1
+			cancel = { NOT = { has_government = neutrality } }
+			modifier = {
+				training_time_factor = -0.15
+				land_reinforce_rate = 0.03
+				mobilization_speed = 0.20
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_am_practical_bureaucracy = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_am_practical_bureaucracy
+			removal_cost = -1
+			cancel = { NOT = { has_government = neutrality } }
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_hw_provision_accounts_1 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_hw_provision_accounts_1
+			removal_cost = -1
+			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			modifier = {
+				supply_consumption_factor = -0.10
+				local_resources_factor = 0.10
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_hw_provision_accounts_2 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_hw_provision_accounts_2
+			removal_cost = -1
+			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			modifier = {
+				supply_consumption_factor = -0.15
+				local_resources_factor = 0.15
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_hw_courier_service_1 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_hw_courier_service_1
+			removal_cost = -1
+			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			modifier = {
+				initiative_factor = 0.10
+				army_speed_factor = 0.05
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_hw_courier_service_2 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_hw_courier_service_2
+			removal_cost = -1
+			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			modifier = {
+				initiative_factor = 0.15
+				army_speed_factor = 0.10
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_hw_civil_recovery_1 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_hw_civil_recovery_1
+			removal_cost = -1
+			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			modifier = {
+				industry_repair_factor = 0.25
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_hw_civil_recovery_2 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_hw_civil_recovery_2
+			removal_cost = -1
+			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			modifier = {
+				industry_repair_factor = 0.35
+				production_speed_industrial_complex_factor = 0.20
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_hw_reserve_training_1 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_hw_reserve_training_1
+			removal_cost = -1
+			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			modifier = {
+				training_time_factor = -0.10
+				experience_gain_army_factor = 0.15
+			}
+		}
+
+		#20260923_kpopmodder: Add independently accessible royal policy modules and preserve existing route rewards.
+		HOK_KOR_hw_reserve_training_2 = {
+			allowed = { original_tag = KOR }
+			allowed_civil_war = { always = yes }
+			picture = HOK_KOR_icon_hw_reserve_training_2
+			removal_cost = -1
+			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			modifier = {
+				training_time_factor = -0.15
+				experience_gain_army_factor = 0.20
+				land_reinforce_rate = 0.02
+			}
+		}
+
+	}
+}

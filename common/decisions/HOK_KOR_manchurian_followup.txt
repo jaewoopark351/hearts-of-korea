@@ -1,0 +1,139 @@
+#20260923_kpopmodder: Provide regional operating projects with one shared active slot and a 90-day cooldown.
+HOK_KOR_manchurian_followup_programs = {
+	#20260923_kpopmodder: Restore the earned local institution and apply a bounded regional project without factory occupation.
+	HOK_KOR_mc_local_services_project = {
+		icon = GFX_HOK_KOR_decision_mc_local_services_project
+		allowed = { original_tag = KOR }
+		visible = { has_completed_focus = HOK_KOR_mc_service_calendar }
+		#20260923_kpopmodder: Localize shared project gates while preserving their flag conditions.
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_capitulated = no has_completed_focus = HOK_KOR_mc_service_calendar custom_trigger_tooltip = { tooltip = HOK_KOR_mc_followup_no_active_project_tt NOT = { has_country_flag = HOK_KOR_mc_followup_active } } custom_trigger_tooltip = { tooltip = HOK_KOR_mc_followup_cooldown_finished_tt NOT = { has_country_flag = HOK_KOR_mc_followup_cooldown } } }
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		highlight_states = { highlight_state_targets = { state = 328 } }
+		complete_effect = {
+			set_country_flag = HOK_KOR_mc_followup_active
+			328 = {
+				if = { limit = { NOT = { has_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_2 } } } add_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_2 } }
+				add_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_concentrated days = 90 }
+			}
+		}
+		cancel_trigger = { OR = { has_civil_war = yes NOT = { tag = KOR } has_capitulated = yes NOT = { has_completed_focus = HOK_KOR_mc_service_calendar } 328 = { OR = { NOT = { is_owned_by = ROOT } NOT = { is_fully_controlled_by = ROOT } } } } }
+		cancel_effect = {
+			328 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_concentrated } } }
+			clr_country_flag = HOK_KOR_mc_followup_active
+			set_country_flag = { flag = HOK_KOR_mc_followup_cooldown value = 1 days = 90 }
+		}
+		remove_effect = {
+			328 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_local_services_concentrated } } }
+			clr_country_flag = HOK_KOR_mc_followup_active
+			set_country_flag = { flag = HOK_KOR_mc_followup_cooldown value = 1 days = 90 }
+		}
+		ai_will_do = { factor = 0.5 modifier = { factor = 0 NOT = { has_political_power > 149 } } }
+	}
+	#20260923_kpopmodder: Restore the earned local institution and apply a bounded regional project without factory occupation.
+	HOK_KOR_mc_community_services_project = {
+		icon = GFX_HOK_KOR_decision_mc_community_services_project
+		allowed = { original_tag = KOR }
+		visible = { has_completed_focus = HOK_KOR_mc_community_mediation }
+		#20260923_kpopmodder: Localize shared project gates while preserving their flag conditions.
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_government = democratic has_capitulated = no has_completed_focus = HOK_KOR_mc_community_mediation custom_trigger_tooltip = { tooltip = HOK_KOR_mc_followup_no_active_project_tt NOT = { has_country_flag = HOK_KOR_mc_followup_active } } custom_trigger_tooltip = { tooltip = HOK_KOR_mc_followup_cooldown_finished_tt NOT = { has_country_flag = HOK_KOR_mc_followup_cooldown } } }
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		highlight_states = { highlight_state_targets = { state = 328 } }
+		complete_effect = {
+			set_country_flag = HOK_KOR_mc_followup_active
+			328 = {
+				if = { limit = { NOT = { has_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_2 } } } add_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_2 } }
+				add_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_concentrated days = 90 }
+			}
+		}
+		cancel_trigger = { OR = { has_civil_war = yes NOT = { tag = KOR } has_capitulated = yes NOT = { has_completed_focus = HOK_KOR_mc_community_mediation } 328 = { OR = { NOT = { is_owned_by = ROOT } NOT = { is_fully_controlled_by = ROOT } } } NOT = { has_government = democratic } } }
+		cancel_effect = {
+			328 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_concentrated } } }
+			clr_country_flag = HOK_KOR_mc_followup_active
+			set_country_flag = { flag = HOK_KOR_mc_followup_cooldown value = 1 days = 90 }
+		}
+		remove_effect = {
+			328 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_community_services_concentrated } } }
+			clr_country_flag = HOK_KOR_mc_followup_active
+			set_country_flag = { flag = HOK_KOR_mc_followup_cooldown value = 1 days = 90 }
+		}
+		ai_will_do = { factor = 0.5 modifier = { factor = 0 NOT = { has_political_power > 149 } } }
+	}
+	#20260923_kpopmodder: Restore the earned local institution and apply a bounded regional project without factory occupation.
+	HOK_KOR_mc_material_recovery_project = {
+		icon = GFX_HOK_KOR_decision_mc_material_recovery_project
+		allowed = { original_tag = KOR }
+		visible = { has_completed_focus = HOK_KOR_mc_integrated_recovery }
+		#20260923_kpopmodder: Localize shared project gates while preserving their flag conditions.
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 714 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } 717 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_capitulated = no has_completed_focus = HOK_KOR_mc_integrated_recovery custom_trigger_tooltip = { tooltip = HOK_KOR_mc_followup_no_active_project_tt NOT = { has_country_flag = HOK_KOR_mc_followup_active } } custom_trigger_tooltip = { tooltip = HOK_KOR_mc_followup_cooldown_finished_tt NOT = { has_country_flag = HOK_KOR_mc_followup_cooldown } } }
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		highlight_states = { highlight_state_targets = { state = 328 state = 714 state = 717 } }
+		complete_effect = {
+			set_country_flag = HOK_KOR_mc_followup_active
+			328 = {
+				if = { limit = { NOT = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } } } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } }
+				add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated days = 90 }
+			}
+			714 = {
+				if = { limit = { NOT = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } } } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } }
+				add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated days = 90 }
+			}
+			717 = {
+				if = { limit = { NOT = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } } } add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_2 } }
+				add_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated days = 90 }
+			}
+		}
+		cancel_trigger = { OR = { has_civil_war = yes NOT = { tag = KOR } has_capitulated = yes NOT = { has_completed_focus = HOK_KOR_mc_integrated_recovery } 328 = { OR = { NOT = { is_owned_by = ROOT } NOT = { is_fully_controlled_by = ROOT } } } 714 = { OR = { NOT = { is_owned_by = ROOT } NOT = { is_fully_controlled_by = ROOT } } } 717 = { OR = { NOT = { is_owned_by = ROOT } NOT = { is_fully_controlled_by = ROOT } } } } }
+		cancel_effect = {
+			328 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } }
+			714 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } }
+			717 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } }
+			clr_country_flag = HOK_KOR_mc_followup_active
+			set_country_flag = { flag = HOK_KOR_mc_followup_cooldown value = 1 days = 90 }
+		}
+		remove_effect = {
+			328 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } }
+			714 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } }
+			717 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_material_recovery_concentrated } } }
+			clr_country_flag = HOK_KOR_mc_followup_active
+			set_country_flag = { flag = HOK_KOR_mc_followup_cooldown value = 1 days = 90 }
+		}
+		ai_will_do = { factor = 0.5 modifier = { factor = 0 NOT = { has_political_power > 149 } } }
+	}
+	#20260923_kpopmodder: Restore the earned local institution and apply a bounded regional project without factory occupation.
+	HOK_KOR_mc_municipal_routine_project = {
+		icon = GFX_HOK_KOR_decision_mc_municipal_routine_project
+		allowed = { original_tag = KOR }
+		visible = { has_completed_focus = HOK_KOR_mc_settled_municipality }
+		#20260923_kpopmodder: Localize shared project gates while preserving their flag conditions.
+		available = { has_civil_war = no tag = KOR 328 = { is_owned_by = ROOT is_fully_controlled_by = ROOT } has_capitulated = no has_completed_focus = HOK_KOR_mc_settled_municipality custom_trigger_tooltip = { tooltip = HOK_KOR_mc_followup_no_active_project_tt NOT = { has_country_flag = HOK_KOR_mc_followup_active } } custom_trigger_tooltip = { tooltip = HOK_KOR_mc_followup_cooldown_finished_tt NOT = { has_country_flag = HOK_KOR_mc_followup_cooldown } } }
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		highlight_states = { highlight_state_targets = { state = 328 } }
+		complete_effect = {
+			set_country_flag = HOK_KOR_mc_followup_active
+			328 = {
+				if = { limit = { NOT = { has_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_2 } } } add_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_2 } }
+				add_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_concentrated days = 90 }
+			}
+		}
+		cancel_trigger = { OR = { has_civil_war = yes NOT = { tag = KOR } has_capitulated = yes NOT = { has_completed_focus = HOK_KOR_mc_settled_municipality } 328 = { OR = { NOT = { is_owned_by = ROOT } NOT = { is_fully_controlled_by = ROOT } } } } }
+		cancel_effect = {
+			328 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_concentrated } } }
+			clr_country_flag = HOK_KOR_mc_followup_active
+			set_country_flag = { flag = HOK_KOR_mc_followup_cooldown value = 1 days = 90 }
+		}
+		remove_effect = {
+			328 = { if = { limit = { has_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_concentrated } } remove_dynamic_modifier = { modifier = HOK_KOR_mc_municipal_routine_concentrated } } }
+			clr_country_flag = HOK_KOR_mc_followup_active
+			set_country_flag = { flag = HOK_KOR_mc_followup_cooldown value = 1 days = 90 }
+		}
+		ai_will_do = { factor = 0.5 modifier = { factor = 0 NOT = { has_political_power > 149 } } }
+	}
+}
