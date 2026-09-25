@@ -1,13 +1,17 @@
 ﻿l_korean:
+#20260926_kpopmodder: Use escaped ASCII dialogue quotes and compact decision UI text; preserve gameplay and explicit lifecycle warnings.
+#20260926_kpopmodder: Compact new focus descriptions for the fixed-height UI; preserve gameplay and non-focus localisation.
+#20260926_kpopmodder: Restore fictional NRSC command and conscription black comedy while preserving all gameplay rules.
+#20260925_kpopmodder: Rewrite focus, decision and event prose with grounded voices; preserve keys, gameplay rules and paired Korean text.
 #20260922_kpopmodder: Describe parallel fascist staff policies and their matching national-spirit upgrades.
  HOK_KOR_nrsc_staff_registry:0 "참모보직 정비"
- HOK_KOR_nrsc_staff_registry_desc:0 "참모 장교의 담당 부대와 전문 분야를 기록하고 보직 인수인계 절차를 정비합니다. 기존 지휘기관을 활용하면서 담당자의 실무 경험을 축적하고 작전기획과 야전보고를 개선할 기반을 마련합니다."
+ HOK_KOR_nrsc_staff_registry_desc:0 "\"이 보직은 자원자입니까?\"\n\"아니. 아직 통보하지 않은 사람이다.\"\n구국군의 참모 명부에 전문 분야와 인수인계 책임을 함께 적겠습니다."
  HOK_KOR_nrsc_operations_directorate:0 "작전기획국"
- HOK_KOR_nrsc_operations_directorate_desc:0 "참모조직 안의 작전기획 담당 업무를 정례화하여 작전 초안과 정보 보고를 같은 절차로 검토합니다. 공통 참모훈련과 기존 장군참모의 역할을 유지하면서 계획 준비 속도와 최대 계획 보너스를 높입니다."
+ HOK_KOR_nrsc_operations_directorate_desc:0 "\"그때까지 준비가 됩니까?\"\n\"되도록 계획을 세우라는 명령입니다.\"\n기존 참모 체계에 작전기획을 더해 준비 속도와 최대 계획 보너스를 높입니다."
  HOK_KOR_nrsc_field_report_system:0 "야전보고 체계"
- HOK_KOR_nrsc_field_report_system_desc:0 "야전 부대의 통신·보고 양식을 통일하고 작전 담당자가 필요한 정보를 제때 받도록 합니다. 전자공학 연구와 실무 경험을 지원하며 작전기획국 정비와 독립적으로 추진할 수 있습니다."
+ HOK_KOR_nrsc_field_report_system_desc:0 "\"보고의 현재 위치는?\" \"사단장님 책상입니다.\"\n\"부대 위치 말이다!\"\n통신·보고를 통일합니다. 작전기획국과 독립적으로 추진할 수 있습니다."
  HOK_KOR_nrsc_staff_regulations:0 "참모업무 규정"
- HOK_KOR_nrsc_staff_regulations_desc:0 "작전기획과 야전보고의 성과를 정식 업무 규정으로 정리합니다. 기존 참모업무 체계의 계획 보너스를 승계·강화하여 보고 검토와 승인 절차의 지연을 줄입니다."
+ HOK_KOR_nrsc_staff_regulations_desc:0 "\"부재중이면 누가 책임집니까?\"\n\"그 아래 적힌 사람. 자네 이름도 있군.\"\n작전기획과 야전보고를 묶어 기존 계획 혜택을 강화하겠습니다."
  HOK_KOR_nrsc_staff_administration_1:0 "참모업무 체계 I"
  HOK_KOR_nrsc_staff_administration_1_desc:0 "작전기획의 담당 업무와 보고 절차를 정비한 참모업무 체계입니다. 기존 군 지휘기관 및 다른 참모 정책의 효과와 함께 적용되며, 파시즘 정부를 잃으면 제거됩니다."
  HOK_KOR_nrsc_staff_administration_2:0 "참모업무 체계 II"
