@@ -1,0 +1,15 @@
+#20261002_kpopmodder: Integrate dedicated material-recovery facility artwork with a temporary clock badge and compact decision images.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_icon_cmn_emergency_material_cycle_boost"
+        texturefile = "gfx/interface/ideas/HOK_KOR/material_cycle/cmn_emergency_material_cycle_boost.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cmn_emergency_material_cycle"
+        texturefile = "gfx/interface/decisions/HOK_KOR/material_cycle/cmn_emergency_material_cycle.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_category_cmn_material_cycle_projects"
+        texturefile = "gfx/interface/decisions/HOK_KOR/material_cycle/cmn_material_cycle_projects.dds"
+    }
+}

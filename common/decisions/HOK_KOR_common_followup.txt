@@ -1,0 +1,39 @@
+#20261002_kpopmodder: Add a repeatable 90-day material-cycle boost with no stacking or post-expiry cooldown.
+HOK_KOR_cmn_material_cycle_projects = {
+	HOK_KOR_cmn_emergency_material_cycle = {
+		icon = GFX_HOK_KOR_decision_cmn_emergency_material_cycle
+		allowed = { original_tag = KOR }
+		visible = { has_completed_focus = HOK_KOR_cmn_closed_material_cycle }
+		available = {
+			has_completed_focus = HOK_KOR_cmn_closed_material_cycle
+			has_idea = HOK_KOR_cmn_material_cycle_2
+			has_civil_war = no
+			has_capitulated = no
+			NOT = { has_idea = HOK_KOR_cmn_emergency_material_cycle_boost }
+		}
+		cost = 150
+		days_remove = 90
+		days_re_enable = 0
+		fire_only_once = no
+		complete_effect = {
+			add_timed_idea = { idea = HOK_KOR_cmn_emergency_material_cycle_boost days = 90 }
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { has_idea = HOK_KOR_cmn_material_cycle_2 }
+				has_civil_war = yes
+				has_capitulated = yes
+			}
+		}
+		cancel_effect = {
+			if = { limit = { has_idea = HOK_KOR_cmn_emergency_material_cycle_boost } remove_ideas = HOK_KOR_cmn_emergency_material_cycle_boost }
+		}
+		remove_effect = {
+			if = { limit = { has_idea = HOK_KOR_cmn_emergency_material_cycle_boost } remove_ideas = HOK_KOR_cmn_emergency_material_cycle_boost }
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = { factor = 0 NOT = { has_political_power > 149 } }
+		}
+	}
+}

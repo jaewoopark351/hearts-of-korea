@@ -1,0 +1,6 @@
+#20261002_kpopmodder: Expose the independent common material-cycle program after its permanent policy is completed.
+HOK_KOR_cmn_material_cycle_projects = {
+	icon = GFX_HOK_KOR_decision_category_cmn_material_cycle_projects
+	allowed = { original_tag = KOR }
+	visible = { has_completed_focus = HOK_KOR_cmn_closed_material_cycle }
+}

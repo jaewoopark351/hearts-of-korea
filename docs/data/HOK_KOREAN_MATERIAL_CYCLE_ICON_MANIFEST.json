@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "baseline_branch": "feat/korean-focus-expansion-ai",
+  "baseline_commit": "8609d0b61e4c00e6be6c204dcf31cfa41150664e",
+  "method": "Reused permitted public PNG components with background-only recolor, native-size recomposition and new continuation-authored clock badge; no AI generation.",
+  "permission": {
+    "basis": "Fixed-revision Ultimate HOI4 GFX CREDITS confirms contributor consent and free use. Selected pack files only.",
+    "credits_sha256": "cf220dc66463d75163f7690ad77b02b662d0c05ca5d53dc62d33ed504512a7f5",
+    "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/CREDITS.txt",
+    "contributors": "Globvs / Ultimate HOI4 GFX contributors; individual source artists not mapped per file by upstream.",
+    "continuation": "kpopmodder: component selection, background-only industry recolor, dedicated native-size recomposition, drawn clock badge and GFX integration."
+  },
+  "palette": {
+    "family": "industry",
+    "reference_rgb": [
+      100,
+      100,
+      95
+    ],
+    "rule": "A > 0, R-G > 6, R-B > 3, B-G >= -4; pow(luminance/60,0.9) times palette RGB; alpha and metal pixels preserved.",
+    "selected_background_pixels": 1695
+  },
+  "source_directory_project": "docs/assets/korean-material-cycle-icons/sources",
+  "sources": [
+    {
+      "source": "National Spirit Backgrounds/Circle.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/National%20Spirit%20Backgrounds/Circle.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "selected_project_path": "docs/assets/korean-material-cycle-icons/sources/Circle.png",
+      "sha256": "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+      "bytes": 25055,
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "Focus & National Spirits Pieces/Circular Arrows.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Circular%20Arrows.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "selected_project_path": "docs/assets/korean-material-cycle-icons/sources/Circular Arrows.png",
+      "sha256": "49d17868495b84cabeef78c85a2111adf8d325a5b76a0cb72973f51f9150f4c4",
+      "bytes": 22609,
+      "width": 58,
+      "height": 59
+    },
+    {
+      "source": "Focus & National Spirits Pieces/Steel.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Steel.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "selected_project_path": "docs/assets/korean-material-cycle-icons/sources/Steel.png",
+      "sha256": "1b118fdadfd2d4b0f1bb3b16735913c5cacb428a0ae4dde490f747160236294a",
+      "bytes": 18109,
+      "width": 51,
+      "height": 36
+    },
+    {
+      "source": "Focus & National Spirits Pieces/Factories2.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Factories2.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "selected_project_path": "docs/assets/korean-material-cycle-icons/sources/Factories2.png",
+      "sha256": "10898f9e4600558cd329d8bcb601cb453d89d8b46d90d079ce328294a96a31a7",
+      "bytes": 19363,
+      "width": 49,
+      "height": 37
+    },
+    {
+      "source": "CREDITS.txt",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/CREDITS.txt",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "selected_project_path": "docs/assets/korean-material-cycle-icons/sources/CREDITS.txt",
+      "sha256": "cf220dc66463d75163f7690ad77b02b662d0c05ca5d53dc62d33ed504512a7f5",
+      "bytes": 1029,
+      "width": null,
+      "height": null
+    }
+  ],
+  "clock_original": {
+    "path_project": "docs/assets/korean-material-cycle-icons/sources/clock-original.png",
+    "sha256": "c3e1c0f0392a062d5de4c155a779449526fe405421adf09b394157c46e8fdfc9",
+    "tool": "Pillow ImageDraw",
+    "authorship": "continuation-authored clock drawn from circles, tick marks and hands; no external reference image"
+  },
+  "items": [
+    {
+      "kind": "idea",
+      "id": "HOK_KOR_cmn_emergency_material_cycle_boost",
+      "sprite": "GFX_idea_HOK_KOR_icon_cmn_emergency_material_cycle_boost",
+      "picture": "HOK_KOR_icon_cmn_emergency_material_cycle_boost",
+      "texture": "gfx/interface/ideas/HOK_KOR/material_cycle/cmn_emergency_material_cycle_boost.dds",
+      "size": [
+        60,
+        68
+      ],
+      "circle": [
+        3,
+        4,
+        54,
+        56
+      ],
+      "parts": [
+        [
+          "Circular Arrows",
+          11,
+          10,
+          36,
+          27
+        ],
+        [
+          "Factories2",
+          13,
+          29,
+          35,
+          23
+        ],
+        [
+          "Steel",
+          7,
+          43,
+          19,
+          13
+        ]
+      ],
+      "clock": [
+        43,
+        48,
+        12,
+        12
+      ],
+      "sha256": "386b9f24720bcdd04eb8176a1aa3458f42f6d5aa691e89cb5dbaf5e97b0d6d2f",
+      "format": "BGRA32 DDS, uncompressed, one base-level image, explicit alpha",
+      "alpha": {
+        "alpha_bbox": [
+          3,
+          5,
+          58,
+          63
+        ],
+        "transparent_pixels": 1671,
+        "partial_alpha_pixels": 1003,
+        "opaque_pixels": 1406
+      }
+    },
+    {
+      "kind": "decision",
+      "id": "HOK_KOR_cmn_emergency_material_cycle",
+      "sprite": "GFX_HOK_KOR_decision_cmn_emergency_material_cycle",
+      "picture": null,
+      "texture": "gfx/interface/decisions/HOK_KOR/material_cycle/cmn_emergency_material_cycle.dds",
+      "size": [
+        32,
+        32
+      ],
+      "circle": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "parts": [
+        [
+          "Circular Arrows",
+          6,
+          3,
+          20,
+          17
+        ],
+        [
+          "Factories2",
+          4,
+          14,
+          23,
+          16
+        ]
+      ],
+      "clock": [
+        22,
+        23,
+        8,
+        8
+      ],
+      "sha256": "8de32fbdd83fe1d5137906dac2ad9070aa56dcf1ce7975ead397d27c61867ac7",
+      "format": "BGRA32 DDS, uncompressed, one base-level image, explicit alpha",
+      "alpha": {
+        "alpha_bbox": [
+          1,
+          1,
+          32,
+          32
+        ],
+        "transparent_pixels": 261,
+        "partial_alpha_pixels": 357,
+        "opaque_pixels": 406
+      }
+    },
+    {
+      "kind": "category",
+      "id": "HOK_KOR_cmn_material_cycle_projects",
+      "sprite": "GFX_HOK_KOR_decision_category_cmn_material_cycle_projects",
+      "picture": null,
+      "texture": "gfx/interface/decisions/HOK_KOR/material_cycle/cmn_material_cycle_projects.dds",
+      "size": [
+        51,
+        40
+      ],
+      "circle": [
+        7,
+        1,
+        38,
+        38
+      ],
+      "parts": [
+        [
+          "Circular Arrows",
+          14,
+          4,
+          25,
+          20
+        ],
+        [
+          "Steel",
+          10,
+          21,
+          20,
+          13
+        ],
+        [
+          "Factories2",
+          24,
+          21,
+          19,
+          14
+        ]
+      ],
+      "clock": null,
+      "sha256": "5ca46c1b4b2247487eda7d41aa6580bfbead10f642911014c912182775754dc3",
+      "format": "BGRA32 DDS, uncompressed, one base-level image, explicit alpha",
+      "alpha": {
+        "alpha_bbox": [
+          7,
+          1,
+          45,
+          39
+        ],
+        "transparent_pixels": 897,
+        "partial_alpha_pixels": 491,
+        "opaque_pixels": 652
+      }
+    }
+  ],
+  "gfx": {
+    "path": "interface/HOK_KOR_material_cycle_icons.gfx",
+    "sha256": "570a2799b06acc6cc0047cfdfc1c4c47733e07910c563a22c8af16bf98095ca5"
+  },
+  "verification": {
+    "static_artwork_checks": "37 PASS / 0 FAIL",
+    "independent_content_checks": "238 PASS / 0 FAIL",
+    "native_size_preview": "Inspected outside the game at C:/hoi/test/material-cycle-20261002/art/native-contact-sheet.png",
+    "engine_ui_status": "Fresh paused Korea new-game load confirmed at checksum 4e60; normalized new errors 0. Content icons, decision tooltip and active spirit UI remain unverified because automated keyboard input did not open the console."
+  }
+}

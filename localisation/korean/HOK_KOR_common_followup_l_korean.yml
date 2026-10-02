@@ -1,4 +1,7 @@
 ﻿l_korean:
+#20261002_kpopmodder: Explain the scrap-collection tier through discarded metal and the need to recover scarce raw materials.
+#20261002_kpopmodder: Explain the need for permanent and emergency material recycling in spirit prose instead of repeating mechanics.
+#20261002_kpopmodder: Describe the strengthened material-cycle tiers and the repeatable 90-day emergency program.
 #20260926_kpopmodder: Use escaped ASCII dialogue quotes and compact decision UI text; preserve gameplay and explicit lifecycle warnings.
 #20260926_kpopmodder: Compact new focus descriptions for the fixed-height UI; preserve gameplay and non-focus localisation.
 #20260925_kpopmodder: Rewrite focus, decision and event prose with grounded voices; preserve keys, gameplay rules and paired Korean text.
@@ -48,9 +51,9 @@
  HOK_KOR_cmn_export_practice_2:0 "수출거래 체계 II"
  HOK_KOR_cmn_export_practice_2_desc:0 "수출거래 체계 II의 운용 기준을 정착시킨 제도입니다. 공통 분야 정책이므로 집권 이념이 바뀌어도 유지됩니다."
  HOK_KOR_cmn_material_cycle_1:0 "원료 순환체계 I"
- HOK_KOR_cmn_material_cycle_1_desc:0 "원료 순환체계 I의 운용 기준을 정착시킨 제도입니다. 공통 분야 정책이므로 집권 이념이 바뀌어도 유지됩니다."
+ HOK_KOR_cmn_material_cycle_1_desc:0 "공장 뒤편에 버려진 쇳조각과 수명을 다한 기계 부품에도 다시 쓸 금속이 남아 있습니다. 새 원료가 부족할수록 한 번 들여온 자재를 끝까지 써야 합니다. 수거망은 작업장마다 흩어진 폐금속을 모으고, 다시 쓸 금속을 가려 제련소로 보냅니다. 버려지던 금속이 다시 용광로로 돌아갈 때, 원료를 기다리던 공장도 다음 작업을 이어 갈 수 있습니다."
  HOK_KOR_cmn_material_cycle_2:0 "원료 순환체계 II"
- HOK_KOR_cmn_material_cycle_2_desc:0 "원료 순환체계 II의 운용 기준을 정착시킨 제도입니다. 공통 분야 정책이므로 집권 이념이 바뀌어도 유지됩니다."
+ HOK_KOR_cmn_material_cycle_2_desc:0 "광산에서 캐내는 원료만으로는 늘어나는 공장의 수요를 감당하기 어렵습니다. 수입에만 기대면 먼바다의 사정 하나로 용광로와 작업대가 멈출 수 있습니다. 공장에서 잘려 나온 쇳조각과 닳아서 버린 기계 부품에도 다시 쓸 금속이 남아 있습니다. 이를 재질별로 가려내고 녹여 필요한 공장으로 돌려보내는 순환망은 새 원료가 제때 들어오지 않아도 생산을 이어 갈 바탕이 됩니다."
  HOK_KOR_cmn_mobile_operations_1:0 "기동부대 운용 I"
  HOK_KOR_cmn_mobile_operations_1_desc:0 "기동부대 운용 I의 운용 기준을 정착시킨 제도입니다. 공통 분야 정책이므로 집권 이념이 바뀌어도 유지됩니다."
  HOK_KOR_cmn_mobile_operations_2:0 "기동부대 운용 II"
@@ -63,3 +66,9 @@
  HOK_KOR_cmn_instrument_flying_desc:0 "계기비행 체계의 운용 기준을 정착시킨 제도입니다. 공통 분야 정책이므로 집권 이념이 바뀌어도 유지됩니다."
  HOK_KOR_cmn_weather_flying:0 "악천후 비행교범"
  HOK_KOR_cmn_weather_flying_desc:0 "악천후 비행교범의 운용 기준을 정착시킨 제도입니다. 공통 분야 정책이므로 집권 이념이 바뀌어도 유지됩니다."
+ HOK_KOR_cmn_material_cycle_projects:0 "원료 순환 집중 지원"
+ HOK_KOR_cmn_material_cycle_projects_desc:0 "상설 원료 순환체계를 바탕으로 회수·선별·재투입 시설의 처리 능력을 집중적으로 지원합니다. 긴급 시설 확충은 별도 90일 국민정신으로 적용되며, 다른 지역 사업의 실행 슬롯이나 대기시간을 사용하지 않습니다."
+ HOK_KOR_cmn_emergency_material_cycle:0 "긴급 원료 순환체계 시설 확충"
+ HOK_KOR_cmn_emergency_material_cycle_desc:0 "원료를 확보하는 일은 광산에서 새로운 광석을 캐내는 것으로 끝나지 않습니다. 공장에 쌓인 금속 절삭편, 수명을 다한 기계 부품, 폐차량과 철거 자재에도 산업을 다시 움직일 원료가 남아 있습니다. 그러나 기존 수거망과 평상시의 처리 능력만으로는 급증하는 생산 수요에 맞춰 이러한 자재를 빠짐없이 회수하고, 필요한 공장에 제때 공급하기 어렵습니다. 원료 부족이 생산 현장의 병목으로 이어지기 전에 집하장과 선별 시설, 재용해 설비의 처리 능력을 집중적으로 확충하고 철도·창고·제련소 사이의 운송을 조정해야 합니다.\n\n정부는 90일 동안 긴급 행정 지원을 투입하여 지역별 수거 계약과 운송 배정을 정비하고, 회수 원료의 품질 검사와 재투입 기준을 통일할 것입니다. 혼합된 폐금속은 용도에 따라 분리하고, 재사용할 수 있는 부품과 다시 녹여야 하는 자재는 각각 적합한 시설로 보내겠습니다. 공장별 원료 수요와 회수 자재의 공급을 함께 파악하여 창고에 묶인 물자를 줄이고, 원료가 부족한 생산 현장에 우선 공급함으로써 기존 순환체계의 역량을 일시적으로 끌어올릴 것입니다.\n\n이번 사업은 상설 원료 순환체계에 더해 시행하는 한시적인 집중 확충·운영 조치입니다. 긴급 지원이 끝나면 추가 처리와 운송 지원은 종료되지만, 이미 정착한 기본 원료 순환체계는 유지됩니다. 다시 수요가 높아지거나 공급에 압박이 생기면 새로운 정치적·행정적 지원을 투입하여 같은 사업을 재개할 수 있습니다. 진행 중인 사업을 겹쳐 시행하기보다, 정해진 기간 동안 회수와 재투입에 역량을 집중하여 자원 확보를 늘리고 원료 부족에 따른 생산 차질을 줄이겠습니다.\n\n§Y정치력 150§!을 소모하여 §Y90일 동안§! 별도 국민정신으로 자원 획득 효율 §G+30%§!, 자원 부족 불이익 §G-30%§!를 추가합니다. 원료 순환체계 II와 합친 이 정책의 효과는 §G+90%/-90%§!이며, 종료 후 기본 §Y+60%/-60%§!로 돌아갑니다. 활성 중에는 재사용할 수 없으며, 종료 후 별도 대기 없이 다시 사용할 수 있습니다. 사용 횟수에 따른 중첩이나 영구 누적은 없습니다. 내전·항복 또는 기본 국민정신 상실 시 긴급 지원을 종료하며 정치력은 환급하지 않습니다."
+ HOK_KOR_cmn_emergency_material_cycle_boost:0 "긴급 원료 순환체계 시설 확충"
+ HOK_KOR_cmn_emergency_material_cycle_boost_desc:0 "제련소에서는 녹일 금속을 기다리는데, 다른 공장의 뒤뜰에는 아직 쓸 수 있는 쇳조각이 쌓여 있습니다. 생산이 갑자기 늘어나면 평소의 수거차량과 선별장만으로는 이 자재를 제때 회수하기 어렵습니다. 집하장과 재용해 설비를 서둘러 확충하고 운송편을 늘려 흩어진 금속을 원료가 모자란 공장으로 보내고 있습니다. 새 광산을 열고 먼바다에서 원료가 도착하기를 기다리는 동안에도 용광로의 불은 꺼뜨릴 수 없습니다."
