@@ -467,6 +467,12 @@ HOI4 localisation files are not ordinary YAML. Do not run a generic YAML formatt
 
 Missing text may be a reference or load-order failure rather than a missing string. Trace the caller, key, language header, loaded file, and dependency order.
 
+### National-spirit and decision description prose
+
+- For national spirits, describe the concrete circumstances they represent and explain why any associated policy or institution is needed. Do not unnecessarily repeat numeric effects already shown automatically in the tooltip.
+- For decisions, describe the background and purpose of the action. Keep costs, duration, reuse restrictions, cancellation and refund rules clear in a short separate paragraph when the automatic tooltip does not adequately explain them.
+- Use concrete workplaces, people and situations to convey the policy's necessity. Avoid bureaucratic boilerplate and lists of rewards in narrative prose.
+
 ---
 
 ## 9. Map and state work is high risk
@@ -667,7 +673,8 @@ Not sufficient by itself:
 - Do not commit logs, crash dumps, saves, caches, credentials, account data, or personal launcher data unless requested as sanitized fixtures.
 - Do not use destructive Git commands such as `git reset --hard`, `git clean`, forced checkout, or force-push.
 - Do not discard pre-existing user changes, rename large trees for aesthetics, or mass-convert binary assets.
-- When commits are explicitly requested, write every commit subject and body in English. Commit or push only within the requested scope; a completed earlier commit/push request is not standing authorization for later work.
+- All Git commit messages MUST be written in English, including both the subject and body. Do not use Korean or mixed-language prose in commit messages.
+- Commit or push only when explicitly requested and within the requested scope; a completed earlier commit/push request is not standing authorization for later work.
 - Do not add tools, dependencies, generators, or formatters unless approved and materially useful.
 - Keep restoration patches small; keep intentional successor changes separately attributable whenever practical.
 - Publication of a new continuation item is permitted when explicitly directed.
