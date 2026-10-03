@@ -1,4 +1,5 @@
 ﻿l_english:
+#20261003_kpopmodder: Explain new decision and spirit policies through concrete circumstances; preserve gameplay and lifecycle rules.
 #20260926_kpopmodder: Use escaped ASCII dialogue quotes and compact decision UI text; preserve gameplay and explicit lifecycle warnings.
 #20260926_kpopmodder: Compact new focus descriptions for the fixed-height UI; preserve gameplay and non-focus localisation.
 #20260925_kpopmodder: Rewrite focus, decision and event prose with grounded voices; preserve keys, gameplay rules and paired Korean text.
@@ -55,27 +56,27 @@
  HOK_KOR_combat_lessons_center:0 "항공전훈 연구반"
  HOK_KOR_combat_lessons_center_desc:0 "한 편대의 시행착오를 다음 편대에 전하겠습니다. 전훈 공유체계로 교체해 공군 임무 효율 +30%를 얻습니다. 이전 단계와 중첩되지 않습니다."
  HOK_KOR_procurement_spirit_1:0 "군수 규격화"
- HOK_KOR_procurement_spirit_1_desc:0 "통일된 탄약과 부품 규격은 병기창의 생산 혼란을 줄입니다."
+ HOK_KOR_procurement_spirit_1_desc:0 "상자마다 탄약과 부품의 규격이 다르면 병기창은 납품할 물건을 만들고도 다시 손봐야 합니다. 통일된 규격으로 가공과 조립의 기준을 맞추어 생산 현장의 혼란을 줄이고 있습니다."
  HOK_KOR_procurement_spirit_2:0 "통합 군수체계"
- HOK_KOR_procurement_spirit_2_desc:0 "공통 규격과 분산 군수창이 생산에서 전선 보급까지 이어지는 체계를 이룹니다."
+ HOK_KOR_procurement_spirit_2_desc:0 "규격이 맞는 물건을 생산해도 군수창과 전선의 요구가 따로 움직이면 필요한 부품은 다른 창고에 남습니다. 공통 규격과 분산 군수창이 생산에서 전선 보급까지 이어지는 체계를 이룹니다.\n\n§Y군수 규격화§!를 대체하며 이전 단계와 중첩되지 않습니다."
  HOK_KOR_staff_spirit_1:0 "참모부 훈련체계"
- HOK_KOR_staff_spirit_1_desc:0 "정기적인 도상훈련으로 작전 계획과 명령 전달 절차를 숙달하고 있습니다."
+ HOK_KOR_staff_spirit_1_desc:0 "부대마다 지도에 적은 이동 시각과 명령 전달 방식이 다르면 계획은 시작부터 어긋납니다. 정기적인 도상훈련으로 작전 계획과 명령 전달 절차를 숙달하고 있습니다."
  HOK_KOR_staff_spirit_2:0 "제병협동 참모체계"
- HOK_KOR_staff_spirit_2_desc:0 "병과별 운용과 무선 연락망이 하나의 작전 계획으로 연결되어 있습니다."
+ HOK_KOR_staff_spirit_2_desc:0 "보병의 이동, 포병의 지원과 다른 병과의 임무를 각자 정하면 한 부대가 준비되는 동안 다른 부대는 기다립니다. 병과별 운용과 무선 연락망을 하나의 작전 계획으로 연결하여 서로의 행동을 맞추고 있습니다.\n\n§Y참모부 훈련체계§!를 대체하며 이전 단계와 중첩되지 않습니다."
  HOK_KOR_winter_training_spirit:0 "동계전 준비"
- HOK_KOR_winter_training_spirit_desc:0 "혹한기 숙영과 보급, 장비 관리 훈련이 겨울철 손실을 줄여 줍니다."
+ HOK_KOR_winter_training_spirit_desc:0 "겨울의 행군에서는 밤을 지낼 곳과 얼어붙은 장비를 돌볼 손부터 준비해야 합니다. 혹한기 숙영과 보급, 장비 관리 훈련으로 추위 때문에 생기는 손실을 줄이고 있습니다."
  HOK_KOR_rapid_repairs_spirit:0 "함대 수리체계"
  HOK_KOR_rapid_repairs_spirit_desc:0 "수리창의 작업 순서와 예비 부품 조달을 정비하여 손상된 함선을 빠르게 복귀시킵니다."
  HOK_KOR_escort_spirit:0 "숙련된 호위전대"
- HOK_KOR_escort_spirit_desc:0 "수송대 편성과 호위 절차를 익힌 승조원들이 해상 교통로를 지키고 있습니다."
+ HOK_KOR_escort_spirit_desc:0 "수송선이 흩어지면 호위함도 어느 배를 따라가야 할지 정하기 어렵습니다. 수송대 편성과 호위 절차를 익힌 승조원들이 항해 속도와 대형을 맞추며 해상 교통로를 지키고 있습니다."
  HOK_KOR_coastal_fire_control_spirit:0 "해안 화력협동"
- HOK_KOR_coastal_fire_control_spirit_desc:0 "함대와 해안 관측반이 공통 절차로 사격 지원을 요청하고 조정합니다."
+ HOK_KOR_coastal_fire_control_spirit_desc:0 "해안으로 향하는 부대와 지원 함대가 서로 다른 위치 보고를 받으면 필요한 순간에 화력을 모을 수 없습니다. 함대와 해안 관측반이 공통 절차로 사격 지원을 요청하고 조정하여 상륙 작전의 행동을 맞추고 있습니다."
  HOK_KOR_naval_logistics_spirit:0 "해상 군수지원"
- HOK_KOR_naval_logistics_spirit_desc:0 "장거리 작전의 연료 사용과 보급 일정을 체계적으로 관리합니다."
+ HOK_KOR_naval_logistics_spirit_desc:0 "출항할 연료만 계산해서는 먼 바다에서 임무를 이어 갈 수 없습니다. 함대의 항해 계획과 급유 시기를 함께 살펴 장거리 작전의 연료 사용과 보급 일정을 체계적으로 관리합니다."
  HOK_KOR_formation_spirit_1:0 "표준 편대전술"
- HOK_KOR_formation_spirit_1_desc:0 "조종사들이 공통 기동과 통신 절차를 사용하여 임무 중 서로를 지원합니다."
+ HOK_KOR_formation_spirit_1_desc:0 "조종사가 각자의 판단으로 기동하면 같은 임무에 나선 편대도 서로의 위치를 놓칩니다. 공통 기동과 통신 절차를 사용하여 임무 중 서로의 빈틈을 지키며 지원합니다."
  HOK_KOR_formation_spirit_2:0 "항공전훈 공유체계"
- HOK_KOR_formation_spirit_2_desc:0 "훈련과 전투의 경험이 연구반을 통해 전 항공대로 전달됩니다."
+ HOK_KOR_formation_spirit_2_desc:0 "한 편대가 겪은 문제를 그 편대의 보고서에만 남겨 두면 다음 부대도 같은 시행착오를 겪습니다. 훈련과 전투의 경험을 연구반에서 정리하여 전 항공대의 임무 준비에 전달하고 있습니다.\n\n§Y표준 편대전술§!을 대체하며 이전 단계와 중첩되지 않습니다."
  HOK_KOR_air_maintenance_spirit:0 "전문 항공정비진"
  HOK_KOR_air_maintenance_spirit_desc:0 "체계적인 정비 교육과 사고 분석으로 예방 가능한 항공기 손실을 줄입니다."
 

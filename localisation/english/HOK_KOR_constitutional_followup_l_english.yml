@@ -1,4 +1,5 @@
 ﻿l_english:
+#20261003_kpopmodder: Explain new decision and spirit policies through concrete circumstances; preserve gameplay and lifecycle rules.
 #20260926_kpopmodder: Use escaped ASCII dialogue quotes and compact decision UI text; preserve gameplay and explicit lifecycle warnings.
 #20260926_kpopmodder: Compact new focus descriptions for the fixed-height UI; preserve gameplay and non-focus localisation.
 #20260925_kpopmodder: Rewrite focus, decision and event prose with grounded voices; preserve keys, gameplay rules and paired Korean text.
@@ -32,16 +33,16 @@
  HOK_KOR_cm_liaison_rotation:0 "순환 연락장교"
  HOK_KOR_cm_liaison_rotation_desc:0 "지휘부의 계획을 일선에, 일선의 사정을 지휘부에 전하겠습니다. 연락장교를 순환 배치하며, 세력에 참여하는 동안 제도를 유지합니다."
  HOK_KOR_cm_responsible_cabinet_1:0 "책임내각 I"
- HOK_KOR_cm_responsible_cabinet_1_desc:0 "의회의 신임과 대신의 책임서명에 기반한 내각입니다. 정책 집행과 정치 고문 등용을 지원합니다."
+ HOK_KOR_cm_responsible_cabinet_1_desc:0 "명령이 내려와도 담당 대신이 누구인지 모르면 집행의 잘못을 물을 곳이 없습니다. 군주의 재가에 대신의 책임서명을 남기고 의회가 예산의 쓰임을 묻게 했습니다. 내각은 필요한 인재를 등용하고 정책을 추진하는 동시에 그 결과에 답해야 합니다.\n\n민주정부를 잃으면 제거됩니다."
  HOK_KOR_cm_responsible_cabinet_2:0 "책임내각 II"
- HOK_KOR_cm_responsible_cabinet_2_desc:0 "책임서명과 정보행정이 결합해 내각의 정책 추진력을 높였습니다."
+ HOK_KOR_cm_responsible_cabinet_2_desc:0 "같은 공사를 놓고 부처마다 다른 숫자를 내놓으면 의회도 내각도 집행을 판단할 수 없습니다. 정례 보고와 통신을 책임서명에 연결하여 명령을 낸 사람과 진행 상황을 함께 확인합니다. 질문에 답할 자료와 책임질 이름을 갖춘 내각이 정책을 일관되게 추진할 수 있게 되었습니다.\n\nI단계를 대체하며 민주정부를 잃으면 제거됩니다."
  HOK_KOR_cm_accessible_justice_1:0 "국민 권리구제 I"
- HOK_KOR_cm_accessible_justice_1_desc:0 "경제력과 거리에 관계없이 법률구조에 접근할 수 있도록 지원합니다."
+ HOK_KOR_cm_accessible_justice_1_desc:0 "억울한 사정을 알아도 소장을 쓸 사람이나 재판을 받을 돈이 없으면 권리는 종이에만 남습니다. 법률구조 창구가 주민의 말을 서류로 옮기고 절차를 안내합니다. 경제력과 거리가 권리를 물을 기회까지 가로막지 않도록 마련한 제도입니다.\n\n민주정부를 잃으면 제거됩니다."
  HOK_KOR_cm_accessible_justice_2:0 "국민 권리구제 II"
- HOK_KOR_cm_accessible_justice_2_desc:0 "노사 조정과 지방 순회재판을 정착시켜 생활 분쟁의 부담을 줄이고 제도에 대한 신뢰를 높입니다."
+ HOK_KOR_cm_accessible_justice_2_desc:0 "품삯과 납기를 다투는 동안 작업장은 닫히고, 먼 법정에 다녀오는 동안 고을의 생업도 멈춥니다. 노사 조정과 지방 순회재판을 법률구조망에 연결하여 주민이 생활 가까이에서 분쟁을 해결할 길을 마련했습니다. 재판관이 떠난 뒤에도 상담과 권리구제의 창구가 남습니다.\n\nI단계를 대체하며 민주정부를 잃으면 제거됩니다."
  HOK_KOR_cm_public_welfare_1:0 "황실 공익후원 I"
- HOK_KOR_cm_public_welfare_1_desc:0 "공개된 공익후원으로 생활 위기에 놓인 주민을 지원합니다."
+ HOK_KOR_cm_public_welfare_1_desc:0 "황실의 이름을 내건 구호도 전달식만 끝내고 돌아서면 주민의 끼니를 책임질 수 없습니다. 후원금의 쓰임을 공개하고 생활 위기에 놓인 가구에 공익 지원을 연결합니다. 사적인 은전과 구분되는 지속적인 후원으로 주민이 다시 생업을 이어 갈 바탕을 마련했습니다.\n\n민주정부를 잃으면 제거됩니다."
  HOK_KOR_cm_public_welfare_2:0 "황실 공익후원 II"
- HOK_KOR_cm_public_welfare_2_desc:0 "생활 지원에 시군 진료망을 더해 민생 부담을 덜어 줍니다."
+ HOK_KOR_cm_public_welfare_2_desc:0 "병을 숨기며 버티다가 일자리와 생계까지 잃는 주민에게 후원금만 보내서는 충분하지 않습니다. 가까운 진료소와 생활 지원망을 연결하고 낡은 공익시설을 계속 유지할 체계를 갖췄습니다. 황실의 후원이 한 차례의 구호에서 지역의 일상적인 돌봄으로 이어집니다.\n\nI단계를 대체하며 민주정부를 잃으면 제거됩니다."
  HOK_KOR_cm_allied_liaison:0 "연합군 연락체계"
- HOK_KOR_cm_allied_liaison_desc:0 "순환 연락장교가 한국군과 연합군의 지휘 협력 및 작전 준비를 지원합니다. 민주정부 또는 세력 가입 상태를 잃으면 해제됩니다."
+ HOK_KOR_cm_allied_liaison_desc:0 "같은 신호를 듣고도 다른 방향으로 움직이면 함께 세운 작전은 첫 이동부터 어긋납니다. 참관 기록을 한국군 교범으로 옮기고 순환 연락장교가 지휘부의 계획과 일선의 사정을 양쪽에 전합니다. 용어와 보고 순서를 맞춰 연합군과 함께 움직일 준비를 갖췄습니다.\n\n민주정부 또는 세력 가입 상태를 잃으면 제거됩니다."

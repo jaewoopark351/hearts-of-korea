@@ -1,4 +1,6 @@
 ﻿l_korean:
+#20261003_kpopmodder: Apply varied HOI4 fascist and communist voices to description narrative; preserve effects and explicit rules.
+#20261003_kpopmodder: Explain new decision and spirit policies through concrete circumstances; preserve gameplay and lifecycle rules.
 #20260926_kpopmodder: Use escaped ASCII dialogue quotes and compact decision UI text; preserve gameplay and explicit lifecycle warnings.
 #20260926_kpopmodder: Compact new focus descriptions for the fixed-height UI; preserve gameplay and non-focus localisation.
 #20260926_kpopmodder: Restore fictional NRSC command and conscription black comedy while preserving all gameplay rules.
@@ -13,6 +15,6 @@
  HOK_KOR_nrsc_staff_regulations:0 "참모업무 규정"
  HOK_KOR_nrsc_staff_regulations_desc:0 "\"부재중이면 누가 책임집니까?\"\n\"그 아래 적힌 사람. 자네 이름도 있군.\"\n작전기획과 야전보고를 묶어 기존 계획 혜택을 강화하겠습니다."
  HOK_KOR_nrsc_staff_administration_1:0 "참모업무 체계 I"
- HOK_KOR_nrsc_staff_administration_1_desc:0 "작전기획의 담당 업무와 보고 절차를 정비한 참모업무 체계입니다. 기존 군 지휘기관 및 다른 참모 정책의 효과와 함께 적용되며, 파시즘 정부를 잃으면 제거됩니다."
+ HOK_KOR_nrsc_staff_administration_1_desc:0 "구국군의 승리를 의심할 이유는 없습니다. 승리하기 전까지 어느 부대가 무엇을 준비해야 하는지는 조금 더 자세히 살펴야겠습니다. 작전기획국은 담당 업무와 준비 일정을 정하고 자료를 모아 계획을 검토합니다. 참모가 자리를 비워도 인계할 책임은 남습니다. 조국을 향한 확신만으로 빈 책상에서 작전이 완성되지는 않으니 말입니다.\n\n기존 군 지휘기관 및 다른 참모 정책과 함께 적용됩니다. 파시즘 정부를 잃으면 제거됩니다."
  HOK_KOR_nrsc_staff_administration_2:0 "참모업무 체계 II"
- HOK_KOR_nrsc_staff_administration_2_desc:0 "작전기획과 야전보고를 통합한 참모업무 규정입니다. 하위 체계의 계획 혜택을 강화하여 승계하며, 파시즘 정부를 잃으면 제거됩니다."
+ HOK_KOR_nrsc_staff_administration_2_desc:0 "책상 위에서는 전군이 질서정연하게 진격하고 있습니다. 야전 보고에 따르면 몇 부대의 현재 위치부터 다시 확인해야 합니다. 구국군은 통일된 군대의 위엄을 위해 우선 지도와 현실을 통일하기로 했습니다. 공통 규정으로 부대의 준비와 위치를 계획에 반영하고, 담당자가 바뀌어도 검토와 인계가 이어지게 합니다. 이제 승리의 구상에는 그곳까지 도착할 준비도 포함됩니다.\n\n참모업무 체계 I을 대체하여 기존 계획 혜택을 강화합니다. 파시즘 정부를 잃으면 제거됩니다."

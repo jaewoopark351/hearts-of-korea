@@ -1,4 +1,6 @@
 ﻿l_korean:
+#20261003_kpopmodder: Apply varied HOI4 fascist and communist voices to description narrative; preserve effects and explicit rules.
+#20261003_kpopmodder: Explain new decision and spirit policies through concrete circumstances; preserve gameplay and lifecycle rules.
 #20260926_kpopmodder: Use escaped ASCII dialogue quotes and compact decision UI text; preserve gameplay and explicit lifecycle warnings.
 #20260926_kpopmodder: Compact new focus descriptions for the fixed-height UI; preserve gameplay and non-focus localisation.
 #20260926_kpopmodder: Restore fictional NRSC command and conscription black comedy while preserving all gameplay rules.
@@ -13,15 +15,15 @@
  HOK_KOR_nrsc_supply_contracts:0 "통합 군수계약 체계"
  HOK_KOR_nrsc_supply_contracts_desc:0 "\"서류마다 설명은 다른데 책임자는 같군요.\"\n원가·납기·원료 감독을 통합해 산출과 부족 대응을 강화합니다. 기존 재벌별 주문은 유지합니다."
  HOK_KOR_nrsc_procurement_oversight_1:0 "군수계약 감독 I"
- HOK_KOR_nrsc_procurement_oversight_1_desc:0 "기존 군수계약의 원가와 이행 실적을 감독하여 군수공장 산출을 높입니다. 파시즘 정부를 잃으면 제거됩니다."
+ HOK_KOR_nrsc_procurement_oversight_1_desc:0 "구국군의 주문을 받는 것은 공장의 영광입니다. 물론 그 영광을 원가표의 '기타 비용'으로 청구할 수는 없습니다. 조달 조직은 투입한 비용과 실제 작업을 대조하고 납품 책임자를 세워, 계약서에 적힌 애국심이 생산 현장에서도 제 몫을 하게 합니다. 조국에 봉사하겠다는 약속을 먼저 한 쪽은 기업이니 이 정도 확인은 반가워할 것입니다.\n\n파시즘 정부를 잃으면 제거됩니다."
  HOK_KOR_nrsc_procurement_oversight_2:0 "군수계약 감독 II"
- HOK_KOR_nrsc_procurement_oversight_2_desc:0 "원가와 납기를 통합 관리하여 군수공장 산출의 혜택을 강화하고 자원 부족에 따른 생산 불이익을 줄입니다. I단계를 대체하며 파시즘 정부를 잃으면 제거됩니다."
+ HOK_KOR_nrsc_procurement_oversight_2_desc:0 "모든 공장이 조국을 위해 가장 먼저 강재를 받아야 한다고 주장합니다. 참으로 충성스러운 나라입니다만, 그 충성심을 제련할 수는 없습니다. 구국군은 원가와 원료 배정, 납품 일정을 한데 묶어 실제로 가동할 수 있는 공정부터 잇습니다. 이제는 앞 공장의 사정이라는 말만으로 자기 계약의 차질을 설명하기 어려워졌습니다.\n\n군수계약 감독 I을 대체합니다. 파시즘 정부를 잃으면 제거됩니다."
  HOK_KOR_nrsc_emergency_deliveries_project:0 "긴급 군수납품"
- HOK_KOR_nrsc_emergency_deliveries_project_desc:0 "\"언제 다시 오십니까?\" \"다시 오지 않습니다. 여기서 기다리겠습니다.\"\n납기를 독촉해 군수 생산을 늘립니다. 장비를 즉시 지급하지는 않습니다."
+ HOK_KOR_nrsc_emergency_deliveries_project_desc:0 "\"언제 다시 오십니까?\" \"다시 오지 않습니다. 여기서 기다리겠습니다.\"\n구국군은 공장에 특별한 관심을 보내기로 했습니다. 주인의 사무실에는 조달 담당자가 앉아 있고, 검사대에는 완성품이 쌓이며 다음 공정은 늦어진 부품을 기다립니다. 작업과 검사를 이어 납품을 밀어붙이겠습니다. 이 세심한 배려의 성과는 감사장이 아니라 출하량으로 받습니다.\n\n정치력 150을 소모해 착수부터 90일간 군수 생산을 지원합니다. 민간공장을 점유하지 않으며 장비를 즉시 지급하지는 않습니다. 두 군수계약 사업 중 하나만 진행할 수 있고 종료·취소 후 두 사업 모두 90일간 대기합니다. 파시즘 정부·필요 중점 조건 상실 또는 항복·내전 시 취소되며 비용은 환급되지 않습니다."
  HOK_KOR_nrsc_material_contracts_project:0 "원자재 계약조정"
- HOK_KOR_nrsc_material_contracts_project_desc:0 "\"강재가 부족합니다.\" \"배정을 다시 짜십시오.\"\n원료 부족에 따른 생산 손실을 줄입니다. 자원 생산량, 수입 계약, 자원 소모량은 바꾸지 않습니다."
+ HOK_KOR_nrsc_material_contracts_project_desc:0 "공장마다 원료가 없어서 조국에 봉사하지 못한다니, 구국군으로서도 몹시 안타깝습니다. 다만 같은 강재를 서로 먼저 받겠다는 요구서들을 읽으니 조국이 몇 개인지부터 확인해야겠습니다. 계약별 원료 수요와 작업 순서를 대조해 배정을 다시 짜겠습니다. 없는 강재를 만들어낼 수는 없어도, 있는 강재를 두고 생산 현장이 함께 멈추는 낭비까지 국가가 인정해줄 이유는 없습니다.\n\n정치력 150을 소모해 착수부터 90일간 자원 부족에 따른 생산 불이익을 줄입니다. 민간공장을 점유하지 않으며 자원 생산량·수입 계약·자원 소모량은 바꾸지 않습니다. 두 군수계약 사업 중 하나만 진행할 수 있고 종료·취소 후 두 사업 모두 90일간 대기합니다. 파시즘 정부·필요 중점 조건 상실 또는 항복·내전 시 취소되며 비용은 환급되지 않습니다."
  HOK_KOR_fascist_procurement_programs:0 "구국군 군수계약 사업"
- HOK_KOR_fascist_procurement_programs_desc:0 "\"계약은 끝났는데요.\" \"이행은 시작도 안 했습니다.\"\n납기 조정 중점으로 해금하며 원가심사를 먼저 마칠 필요는 없습니다. 기존 기업별 주문은 유지됩니다.\n사업당 정치력 150, 민간공장 점유 없음. 90일간 하나만 운영하며 종료/취소 후 이 분류 전체가 90일간 대기합니다."
+ HOK_KOR_fascist_procurement_programs_desc:0 "\"계약은 끝났는데요.\" \"이행은 시작도 안 했습니다.\"\n기업의 자율과 국가의 요구는 훌륭히 양립합니다. 기업은 계약을 수행하고 국가는 그 수행을 지켜보면 됩니다. 구국군은 납품을 집중 지원하거나 원료 배정의 충돌을 풀어 생산을 밀어붙일 것입니다. 기존 기업별 주문 권한도 유지됩니다. 그러니 계약을 따냈을 때의 자신감을 이제 공장에서도 보여주십시오.\n\n을해군란과 군수 납기 조정 중점을 완료하면 해금하며, 군수계약 원가심사를 먼저 마칠 필요는 없습니다. 사업당 정치력 150, 민간공장 점유 없음. 90일간 하나만 운영하며 종료·취소 후 두 사업 모두 90일간 대기합니다."
  HOK_KOR_fascist_procurement_no_active_program_tt:0 "다른 구국군 군수계약 사업을 진행하고 있지 않음"
  HOK_KOR_fascist_procurement_cooldown_finished_tt:0 "이전 구국군 군수계약 사업의 종료 또는 취소 후 90일이 지남"
  HOK_KOR_fascist_procurement_program_start_tt:0 "정치력 §Y150§!, 민간공장 점유 없음. 효과는 §Y90일§!간 적용됩니다.\n군수계약 사업 중 하나만 진행. 종료/취소 후 이 분류 전체가 §Y90일§!간 재착수 불가합니다.\n파시즘 정부/경로 상실, 항복/내전 시 취소되며 비용은 환급되지 않습니다."
