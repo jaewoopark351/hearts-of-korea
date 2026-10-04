@@ -343,6 +343,12 @@ For `descriptor.mod` and launcher `.mod` files:
 - Verify decision visibility separately from availability and completion/removal.
 - Check recurring content for accidental daily firing or unbounded event chains.
 
+#### Focus effects must explain decision unlocks
+
+- When completing a focus unlocks a decision or decision category, the focus's effects must explicitly name it and state that it is unlocked. This also applies when the actual unlock is driven by decision visibility/availability conditions such as `has_completed_focus`, a flag, or a national spirit.
+- Display the decision-unlock notice with `unlock_decision_tooltip = <decision_id>` in the focus's `completion_reward`. When a decision category itself is unlocked, display its notice with `unlock_decision_category_tooltip = <category_id>`. Reuse the existing localised name; use an accurate localised effect tooltip if the standard notice cannot describe a conditional unlock.
+- Keep the actual unlock logic, costs, durations, and other usage requirements unchanged when adding this notice. Describe the content as unlocked without promising immediate use when separate requirements remain. Do not describe an individual decision unlock as unlocking its entire category.
+
 #### Focus placement, x/y, and relative coordinates
 
 Before adding or moving Korean focuses, read [the layout plan](docs/HOK_KOREAN_FOCUS_LAYOUT_PLAN.md), [the coordinate specification](docs/HOK_KOREAN_FOCUS_LAYOUT_COORDINATES.md), and [the compact-layout incident record](docs/incidents/2026-09-21-korean-focus-compact.md). These record the earlier distant parent/child placements, conditional movement mismatches, and the subsequent layout that became excessively wide. Use the current source and latest specification together; do not reuse historical coordinates as current positions.

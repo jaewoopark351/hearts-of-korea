@@ -14036,6 +14036,8 @@ focus_tree = {
 		ai_will_do = { factor = 2 }
 		completion_reward = {
 			if = { limit = { has_idea = HOK_KOR_cmn_material_cycle_1 } swap_ideas = { remove_idea = HOK_KOR_cmn_material_cycle_1 add_idea = HOK_KOR_cmn_material_cycle_2 } } else = { add_ideas = HOK_KOR_cmn_material_cycle_2 }
+			#20261005_kpopmodder: Show the existing emergency material-cycle decision unlock in the focus reward tooltip.
+			unlock_decision_tooltip = HOK_KOR_cmn_emergency_material_cycle
 		}
 	}
 	#20260923_kpopmodder: Add a parallel follow-up policy with its original route and regional requirements preserved.
