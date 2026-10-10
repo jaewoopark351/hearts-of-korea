@@ -12390,7 +12390,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = HOK_KOR_nrsc_staff_regulations }
-		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT } }
+		#20261010_kpopmodder: Allow occupation administration before the world focus while retaining coup and actual non-core control gates.
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT } }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -12469,7 +12470,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = KOR_empowering_the_nrsc }
-		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east }
+		#20261010_kpopmodder: Allow interservice liaison before the military-first focus while retaining the coup gate.
+		available = { has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -12709,7 +12711,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = KOR_nomination_prime_minister }
-		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister has_completed_focus = KOR_reaffirming_the_independence_of_the_judiciary }
+		#20261010_kpopmodder: Remove the unconnected judiciary completion gate from the legal-aid entry.
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -12789,7 +12792,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = KOR_nomination_prime_minister }
-		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister has_completed_focus = KOR_modern_sejong_the_great }
+		#20261010_kpopmodder: Remove the unconnected Sejong completion gate from the public-patronage entry.
+		available = { has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -13854,7 +13858,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = KOR_devalue_the_won }
-		available = { has_civil_war = no has_completed_focus = KOR_support_light_industry_export }
+		#20261010_kpopmodder: Remove the unconnected light-industry export completion gate from the export entry.
+		available = { has_civil_war = no }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -13951,7 +13956,9 @@ focus_tree = {
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_develop_unsan_gold_mine }
-		available = { has_civil_war = no has_completed_focus = KOR_hamgyeong_underground_resources }
+		#20261010_kpopmodder: Show both mining prerequisites as required connections while preserving the completion requirement.
+		prerequisite = { focus = KOR_hamgyeong_underground_resources }
+		available = { has_civil_war = no }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no

@@ -1308,7 +1308,7 @@
           "HOK_KOR_nrsc_staff_regulations"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_korea_reigns_above_the_world any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT }",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army any_controlled_state = { NOT = { is_core_of = ROOT } is_fully_controlled_by = ROOT }",
       "reward": "add_political_power = 150",
       "palette": "fascism",
       "motif": "Civil administration ledger and helmet",
@@ -1427,7 +1427,7 @@
           "KOR_empowering_the_nrsc"
         ]
       ],
-      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army has_completed_focus = KOR_prussia_in_the_far_east",
+      "available": "has_government = fascism has_civil_war = no has_completed_focus = KOR_establishment_of_the_national_salvation_army",
       "reward": "army_experience = 25\n\t\t\tnavy_experience = 25\n\t\t\tair_experience = 25",
       "palette": "fascism",
       "motif": "Anchor, wing and staff baton",
@@ -1816,7 +1816,7 @@
         ]
       ],
       "placement_anchor": "KOR_nomination_prime_minister",
-      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister has_completed_focus = KOR_reaffirming_the_independence_of_the_judiciary",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
       "reward": "add_ideas = HOK_KOR_cm_accessible_justice_1",
       "palette": "democracy",
       "motif": "법전과 저울",
@@ -1964,7 +1964,7 @@
         ]
       ],
       "placement_anchor": "KOR_nomination_prime_minister",
-      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister has_completed_focus = KOR_modern_sejong_the_great",
+      "available": "has_government = democratic has_civil_war = no has_completed_focus = KOR_nomination_prime_minister",
       "reward": "add_ideas = HOK_KOR_cm_public_welfare_1",
       "palette": "democracy",
       "motif": "왕관과 열린 손",
@@ -3927,7 +3927,7 @@
         ]
       ],
       "placement_anchor": "KOR_devalue_the_won",
-      "available": "has_civil_war = no has_completed_focus = KOR_support_light_industry_export",
+      "available": "has_civil_war = no",
       "reward": "add_political_power = 150",
       "palette": "industry",
       "motif": "trade invoice and crate",
@@ -4106,10 +4106,13 @@
       "prerequisites": [
         [
           "KOR_develop_unsan_gold_mine"
+        ],
+        [
+          "KOR_hamgyeong_underground_resources"
         ]
       ],
       "placement_anchor": "KOR_develop_unsan_gold_mine",
-      "available": "has_civil_war = no has_completed_focus = KOR_hamgyeong_underground_resources",
+      "available": "has_civil_war = no",
       "reward": "add_tech_bonus = { name = HOK_KOR_cmn_ore_classification bonus = 1.5 uses = 1 category = industry }",
       "palette": "industry",
       "motif": "ore and magnifying glass",
