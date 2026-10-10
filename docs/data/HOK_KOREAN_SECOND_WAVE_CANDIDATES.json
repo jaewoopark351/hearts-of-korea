@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-09-23",
-  "status": "ALL_134_APPLIED_H1_RIGHT_SPACE_STATIC_CHECKED_UI_BLOCKED",
+  "status": "ALL_134_APPLIED_ROYAL_PREREQUISITES_PARTIAL_RUNTIME_VALIDATION",
   "count_target": [
     450,
     470
@@ -2328,7 +2328,7 @@
         ]
       ],
       "placement_anchor": "KOR_urihwangsilsaranghoe",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "add_political_power = 150\nadd_stability = 0.05",
       "palette": "non_aligned",
       "motif": "궁문·상언 두루마리",
@@ -2363,7 +2363,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_am_petition_calendar",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "add_ideas = HOK_KOR_am_relief_protocol_1",
       "palette": "non_aligned",
       "motif": "곡물 자루·민가",
@@ -2400,7 +2400,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_am_petition_calendar",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "if = { limit = { has_idea = HOK_KOR_am_relief_protocol_1 } swap_ideas = { remove_idea = HOK_KOR_am_relief_protocol_1 add_idea = HOK_KOR_am_relief_protocol_2 } } else = { add_ideas = HOK_KOR_am_relief_protocol_2 }",
       "palette": "non_aligned",
       "motif": "곡물·봉인 장부",
@@ -2437,7 +2437,7 @@
         ]
       ],
       "placement_anchor": "KOR_urihwangsilsaranghoe",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order has_completed_focus = KOR_reform_military",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "army_experience = 50",
       "palette": "non_aligned",
       "motif": "병적부·견장",
@@ -2472,7 +2472,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_am_regimental_returns",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "add_ideas = HOK_KOR_am_reserve_cadre_1",
       "palette": "non_aligned",
       "motif": "견장·교육 교범",
@@ -2509,7 +2509,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_am_regimental_returns",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "add_tech_bonus = { name = HOK_KOR_am_reserve_cadre bonus = 1.0 uses = 1 category = infantry_weapons }\narmy_experience = 25",
       "palette": "non_aligned",
       "motif": "철모·예비 명부",
@@ -2547,7 +2547,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_am_regimental_returns",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "if = { limit = { has_idea = HOK_KOR_am_reserve_cadre_1 } swap_ideas = { remove_idea = HOK_KOR_am_reserve_cadre_1 add_idea = HOK_KOR_am_reserve_cadre_2 } } else = { add_ideas = HOK_KOR_am_reserve_cadre_2 }",
       "palette": "non_aligned",
       "motif": "회중시계·동원 명령",
@@ -2584,7 +2584,7 @@
         ]
       ],
       "placement_anchor": "KOR_urihwangsilsaranghoe",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order has_completed_focus = KOR_revive_bibyeonsa",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "add_tech_bonus = { name = HOK_KOR_am_technical_memorials bonus = 1.5 uses = 1 category = industry }",
       "palette": "non_aligned",
       "motif": "톱니·두루마리",
@@ -2619,7 +2619,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_am_technical_memorials",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "add_tech_bonus = { name = HOK_KOR_am_civil_service_practicum bonus = 1.0 uses = 1 category = electronics }\nadd_political_power = 100",
       "palette": "non_aligned",
       "motif": "붓·작은 공장",
@@ -2654,7 +2654,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_am_technical_memorials",
-      "available": "original_tag = KOR has_government = neutrality has_civil_war = no has_completed_focus = KOR_reconstruction_confusian_order",
+      "available": "original_tag = KOR has_government = neutrality has_civil_war = no",
       "reward": "add_ideas = HOK_KOR_am_practical_bureaucracy",
       "palette": "non_aligned",
       "motif": "기술 보고서·봉인",
@@ -2687,10 +2687,10 @@
       "description": "형성된 제국이 실제로 소유하고 완전히 통제하는 만주 지방을 조사해 산업 연구를 지원합니다.",
       "prerequisites": [
         [
-          "KOR_return_of_the_king"
+          "KOR_empire_of_hwan"
         ]
       ],
-      "placement_anchor": "KOR_return_of_the_king",
+      "placement_anchor": "KOR_empire_of_hwan",
       "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
       "reward": "add_tech_bonus = { name = HOK_KOR_hw_provincial_inventory bonus = 1.5 uses = 1 category = industry }",
       "palette": "non_aligned",
@@ -2704,15 +2704,15 @@
       "linked_ideas": [],
       "status": "APPLIED_REMAINING_FOLLOWUP",
       "relative_xy": [
-        25,
+        6,
         1
       ],
       "sprite": "GFX_HOK_KOR_focus_hw_provincial_inventory",
       "position": [
-        211,
-        5
+        184,
+        11
       ],
-      "anchor": "KOR_return_of_the_king",
+      "anchor": "KOR_empire_of_hwan",
       "ai": "factor = 2",
       "implementation_spec": "docs/HOK_KOREAN_ROYAL_FOLLOWUP_SPEC.md"
     },
@@ -2746,8 +2746,8 @@
       ],
       "sprite": "GFX_HOK_KOR_focus_hw_provision_accounts",
       "position": [
-        210,
-        6
+        183,
+        12
       ],
       "anchor": "HOK_KOR_hw_provincial_inventory",
       "ai": "factor = 2",
@@ -2781,8 +2781,8 @@
       ],
       "sprite": "GFX_HOK_KOR_focus_hw_inspection_circuits",
       "position": [
-        212,
-        6
+        185,
+        12
       ],
       "anchor": "HOK_KOR_hw_provincial_inventory",
       "ai": "factor = 2",
@@ -2821,8 +2821,8 @@
       ],
       "sprite": "GFX_HOK_KOR_focus_hw_supply_returns",
       "position": [
-        211,
-        7
+        184,
+        13
       ],
       "anchor": "HOK_KOR_hw_provincial_inventory",
       "ai": "factor = 2",
@@ -2838,7 +2838,7 @@
         ]
       ],
       "placement_anchor": "KOR_urihwangsilsaranghoe",
-      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
       "reward": "army_experience = 50",
       "palette": "non_aligned",
       "motif": "삼족오·통신문",
@@ -2873,7 +2873,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_hw_dispatch_codes",
-      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
       "reward": "add_ideas = HOK_KOR_hw_courier_service_1",
       "palette": "non_aligned",
       "motif": "전신기·교차 화살표",
@@ -2910,7 +2910,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_hw_dispatch_codes",
-      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
       "reward": "add_tech_bonus = { name = HOK_KOR_hw_signal_logs bonus = 1.0 uses = 1 category = electronics }\narmy_experience = 25",
       "palette": "non_aligned",
       "motif": "전신기·통신 장부",
@@ -2948,7 +2948,7 @@
         ]
       ],
       "placement_anchor": "HOK_KOR_hw_dispatch_codes",
-      "available": "original_tag = KOR has_civil_war = no is_subject = no has_completed_focus = KOR_empire_of_hwan OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
+      "available": "original_tag = KOR has_civil_war = no is_subject = no OR = { AND = { owns_state = 716 has_full_control_of_state = 716 } AND = { owns_state = 745 has_full_control_of_state = 745 } AND = { owns_state = 328 has_full_control_of_state = 328 } AND = { owns_state = 717 has_full_control_of_state = 717 } AND = { owns_state = 714 has_full_control_of_state = 714 } AND = { owns_state = 761 has_full_control_of_state = 761 } AND = { owns_state = 715 has_full_control_of_state = 715 } AND = { owns_state = 610 has_full_control_of_state = 610 } }",
       "reward": "if = { limit = { has_idea = HOK_KOR_hw_courier_service_1 } swap_ideas = { remove_idea = HOK_KOR_hw_courier_service_1 add_idea = HOK_KOR_hw_courier_service_2 } } else = { add_ideas = HOK_KOR_hw_courier_service_2 }",
       "palette": "non_aligned",
       "motif": "삼족오·연락 지도",

@@ -124,7 +124,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = HOK_KOR_icon_hw_courier_service_1
 			removal_cost = -1
-			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			#20261010_kpopmodder: Retain the acquired courier service before Hwan formation, matching its newly accessible focus branch.
 			modifier = {
 				initiative_factor = 0.10
 				army_speed_factor = 0.05
@@ -137,7 +137,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = HOK_KOR_icon_hw_courier_service_2
 			removal_cost = -1
-			cancel = { NOT = { has_completed_focus = KOR_empire_of_hwan } }
+			#20261010_kpopmodder: Retain the acquired courier service before Hwan formation, matching its newly accessible focus branch.
 			modifier = {
 				initiative_factor = 0.15
 				army_speed_factor = 0.10

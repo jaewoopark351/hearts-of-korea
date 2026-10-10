@@ -10,6 +10,7 @@
 
 ## 문서 목록
 
+- [왕정 중점 완료 조건과 환제국 물자 가지 배치 계획](docs/HOK_KOREAN_ROYAL_PREREQUISITE_LAYOUT_PLAN.md): 기존 18개 코드 적용·정적/로드/초기 SHOW/HIDE 일부 UI 확인·정상 진행 검증 대기; 14개 지정 완료 조건 삭제, 연락망 I·II 형성 전 유지, 물자 가지는 환제국 선행·우측 하단 (184,11)로 이동
 - [한국 중점 선행 조건 가독성 개선 계획](docs/HOK_KOREAN_FOCUS_PREREQUISITE_READABILITY_PLAN.md): 여섯 시작 중점 코드 적용·정적 및 초기 UI 확인·정상 진행 검증 대기; 원료는 두 선행 AND 연결, 나머지 다섯은 지정 완료 조건만 삭제. 삼군의 을해군란·F4/F5 후속 조건은 유지
 - [한국 신규 디시전과 국민정신 설명 보강 계획](docs/HOK_KOREAN_DECISION_SPIRIT_PROSE_PLAN.md): 설명 124개·한국어/영어 14쌍 적용, 파시즘·공산주의 문체와 좋은 기존 문안 보존; 정적 보존 검사 통과, UI 확인 대기
 - [디시전·국민정신 설명 구현 기록](docs/incidents/2026-10-03-korean-decision-spirit-prose.md): 누적 124개와 문체 후속 48개, 효과·조건 대조, 최종 보존 검사와 Rt56 플레이셋으로 인한 화면 검증 대기
