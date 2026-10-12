@@ -1,0 +1,113 @@
+#20261011_kpopmodder: Resolve Korean leader titles, independent faction tiers and action readiness from the civic-influence state.
+defined_text = {
+	name = HOK_KOR_GetInfluenceLeaderTitle
+	text = {
+		trigger = { has_country_leader = { character = KOR_provisional_peoples_committee ruling_only = yes } }
+		localization_key = HOK_KOR_civic_ui_title_peoples_committee
+	}
+	text = {
+		trigger = { has_country_leader = { name = "Deoksugung Pyeonguihoe" ruling_only = yes } }
+		localization_key = HOK_KOR_civic_ui_title_council
+	}
+	text = {
+		trigger = { has_country_leader = { character = KOR_Yeonsu_Gye ruling_only = yes } }
+		localization_key = HOK_KOR_civic_ui_title_regent
+	}
+	text = {
+		trigger = { has_country_leader = { character = KOR_Eun_Lee ruling_only = yes } }
+		localization_key = HOK_KOR_civic_ui_title_emperor
+	}
+	text = {
+		trigger = { has_government = communism }
+		localization_key = HOK_KOR_civic_ui_title_chairman
+	}
+	text = {
+		trigger = { has_government = fascism }
+		localization_key = HOK_KOR_civic_ui_title_supreme_leader
+	}
+	text = {
+		trigger = { has_government = democratic }
+		localization_key = HOK_KOR_civic_ui_title_president
+	}
+	text = { localization_key = HOK_KOR_civic_ui_title_head_of_state }
+}
+
+defined_text = {
+	name = HOK_KOR_GetInfluenceLeaderPortraitTooltip
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = { character = KOR_syngman_rhee ruling_only = yes }
+				has_country_leader = { character = KOR_Gu_Kim ruling_only = yes }
+				has_country_leader = { character = KOR_Boseon_Yoon ruling_only = yes }
+				has_country_leader = { character = KOR_Gang_Lee ruling_only = yes }
+				has_country_leader = { character = KOR_provisional_peoples_committee ruling_only = yes }
+				has_country_leader = { character = KOR_Woonhyung_Yeo ruling_only = yes }
+				has_country_leader = { character = KOR_Heonyoung_Park ruling_only = yes }
+				has_country_leader = { character = KOR_Beomseok_Lee ruling_only = yes }
+				has_country_leader = { character = KOR_Yeonsu_Gye ruling_only = yes }
+				has_country_leader = { character = KOR_Eun_Lee ruling_only = yes }
+				has_country_leader = { character = KOR_Changho_Ahn ruling_only = yes }
+				has_country_leader = { name = "Deoksugung Pyeonguihoe" ruling_only = yes }
+				has_country_leader = { name = "Gim Teuleo" ruling_only = yes }
+			}
+		}
+		localization_key = HOK_KOR_civic_ui_leader_tt
+	}
+	text = { localization_key = HOK_KOR_civic_ui_leader_unmapped_tt }
+}
+
+defined_text = {
+	name = HOK_KOR_GetChaebolInfluenceTier
+	text = {
+		trigger = { check_variable = { var = HOK_KOR_chaebol_influence value = 75 compare = greater_than_or_equals } }
+		localization_key = HOK_KOR_civic_ui_tier_dominant
+	}
+	text = {
+		trigger = { check_variable = { var = HOK_KOR_chaebol_influence value = 50 compare = greater_than_or_equals } }
+		localization_key = HOK_KOR_civic_ui_tier_intrusive
+	}
+	text = {
+		trigger = { check_variable = { var = HOK_KOR_chaebol_influence value = 25 compare = greater_than_or_equals } }
+		localization_key = HOK_KOR_civic_ui_tier_established
+	}
+	text = { localization_key = HOK_KOR_civic_ui_tier_weak }
+}
+
+defined_text = {
+	name = HOK_KOR_GetCivicInfluenceTier
+	text = {
+		trigger = { check_variable = { var = HOK_KOR_civic_influence value = 75 compare = greater_than_or_equals } }
+		localization_key = HOK_KOR_civic_ui_tier_dominant
+	}
+	text = {
+		trigger = { check_variable = { var = HOK_KOR_civic_influence value = 50 compare = greater_than_or_equals } }
+		localization_key = HOK_KOR_civic_ui_tier_intrusive
+	}
+	text = {
+		trigger = { check_variable = { var = HOK_KOR_civic_influence value = 25 compare = greater_than_or_equals } }
+		localization_key = HOK_KOR_civic_ui_tier_established
+	}
+	text = { localization_key = HOK_KOR_civic_ui_tier_weak }
+}
+
+defined_text = {
+	name = HOK_KOR_GetCivicActionStatus
+	text = {
+		trigger = { NOT = { has_country_flag = HOK_KOR_civic_panel_unlocked } }
+		localization_key = HOK_KOR_civic_ui_actions_locked
+	}
+	text = {
+		trigger = { has_country_flag = HOK_KOR_civic_action_cooldown }
+		localization_key = HOK_KOR_civic_ui_actions_cooldown
+	}
+	text = {
+		trigger = { OR = { has_capitulated = yes has_civil_war = yes } }
+		localization_key = HOK_KOR_civic_ui_actions_blocked
+	}
+	text = {
+		trigger = { has_political_power < 50 }
+		localization_key = HOK_KOR_civic_ui_actions_no_pp
+	}
+	text = { localization_key = HOK_KOR_civic_ui_actions_ready }
+}

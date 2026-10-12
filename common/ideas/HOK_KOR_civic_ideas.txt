@@ -1,0 +1,251 @@
+ideas = {
+	country = {
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_chaebol_established = {
+			picture = HOK_KOR_icon_mass_production_1
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.03
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_chaebol_dominant = {
+			picture = HOK_KOR_icon_mass_production_2
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.08
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_civic_established = {
+			picture = HOK_KOR_icon_workforce_1
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_civic_dominant = {
+			picture = HOK_KOR_icon_workforce_2
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_chaebol_cooperation = {
+			picture = HOK_KOR_icon_mass_production_2
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				industrial_capacity_factory = 0.15
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_civic_reform = {
+			picture = HOK_KOR_icon_accountable_administration_idea
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+				research_speed_factor = 0.05
+				conscription = 0.02
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_public_ownership = {
+			picture = HOK_KOR_icon_procurement_spirit_2
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_civic_production_quality = {
+			picture = HOK_KOR_icon_quality_control
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.15
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_civic_professional_service = {
+			picture = HOK_KOR_icon_staff_spirit_2
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_leader_start_attack_level = 1
+				army_leader_start_logistics_level = 1
+				army_morale_factor = 0.05
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_civic_contract_succession = {
+			picture = HOK_KOR_icon_license_participant_idea
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_procurement_corruption_moderate = {
+			picture = HOK_KOR_icon_procurement_spirit_1
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.08
+				research_speed_factor = -0.03
+				political_power_factor = -0.05
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_procurement_corruption_severe = {
+			picture = HOK_KOR_icon_procurement_spirit_1
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.2
+				research_speed_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_air_procurement_accident = {
+			picture = HOK_KOR_icon_air_maintenance_spirit
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				air_accidents_factor = 0.25
+				air_mission_efficiency = -0.15
+				experience_gain_air_factor = -0.1
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_prosecutor_pressure = {
+			picture = HOK_KOR_icon_public_accounts_idea
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+
+	#20261011_kpopmodder: Add independent influence tiers, policy benefits and connected procurement consequences.
+		HOK_KOR_prosecutorial_takeover_idea = {
+			picture = HOK_KOR_icon_public_accounts_idea
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -1
+				stability_factor = -0.15
+				research_speed_factor = -0.1
+			}
+		}
+
+	#20261011_kpopmodder: Use target-version aircraft equipment families and air research for the temporary procurement incentive.
+		HOK_KOR_fast_air_procurement = {
+			picture = HOK_KOR_icon_formation_spirit_2
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			research_bonus = { air_equipment = 0.15 }
+			equipment_bonus = {
+				small_plane_airframe = { build_cost_ic = -0.20 instant = yes }
+				cv_small_plane_airframe = { build_cost_ic = -0.20 instant = yes }
+			}
+		}
+
+	#20261011_kpopmodder: Keep rocket consequences confined to rocket research and the verified rocket special-project modifier.
+		HOK_KOR_fast_rocket_procurement = {
+			picture = HOK_KOR_icon_procurement_spirit_2
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = { sp_tag_rocket_speed_factor = 0.25 }
+			research_bonus = { rocketry = 0.2 }
+		}
+
+	#20261011_kpopmodder: Keep rocket consequences confined to rocket research and the verified rocket special-project modifier.
+		HOK_KOR_rocket_procurement_accident = {
+			picture = HOK_KOR_icon_procurement_spirit_2
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = { sp_tag_rocket_speed_factor = -0.25 }
+			research_bonus = { rocketry = -0.3 }
+		}
+		#20261011_kpopmodder: Separate the 50-to-74 influence tier from the 25-to-49 foundation and 75-plus dominant tiers.
+		HOK_KOR_chaebol_interfering = {
+			picture = HOK_KOR_icon_mass_production_1
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		#20261011_kpopmodder: Separate the 50-to-74 influence tier from the 25-to-49 foundation and 75-plus dominant tiers.
+		HOK_KOR_civic_interfering = {
+			picture = HOK_KOR_icon_workforce_1
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+	}
+}

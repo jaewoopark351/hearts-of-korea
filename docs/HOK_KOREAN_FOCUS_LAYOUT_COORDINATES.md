@@ -1,6 +1,38 @@
-# 한국 중점 배치 좌표 명세 — 현재 460개와 이전 기준선 이력
+# 한국 중점 배치 좌표 명세 — 현재 472개와 이전 기준선 이력
 
-## 2026-10-10 왕정 선행조건·H1 배치 적용 — 현재 기준
+## 2026-10-12 민주 구역 이동·패널 하향 적용 — 정적 확인 / 런타임 대기
+
+현재 한국 중점 소스 SHA-256은 `36e90bfdbefc1980dad83131745ed00bc4a7a3e33be11f8504c7234cadbc420a`다. 구 `KOR_cooperation_with_the_jaebeol` 한 개를 제거해 **472개·절대 기준 7개·상대 배치 465개·직접 offset 7개**, 기본 범위 **x0~211/y0~24**가 된다. 신규 13개 ID·35일·보상·AI와 내부 AND/OR는 유지하며, 진입의 실제 선행만 **자유당 단독집권 OR 독립당 단독집권**으로 바꾼다. 산업·사회협약은 `KOR_democracy_advance_forward` 기준 상대 `(6,4)`, 기본 `(133,6)`이고 민주 완료 HIDE에서는 −35x를 한 번 상속해 `(98,6)`이다. SHOW·초기 HIDE·민주 진행 중에는 기본 좌표를 유지한다.
+
+13개 군집은 x132~139/y6~12이다. 기존 상선 추가 징발의 상대 x만 −2→0으로 옮겨 `(140,11)`이 되고, 영국 구축함 구매는 기존 상대값을 따라 `(140,13)`으로 이동한다. 삭제한 구 협력을 제외한 기존 459개 중 이 두 개만 기본 위치가 바뀌며 나머지457개는 보존한다. 정치 offset의 조건·값, 지속적 중점 패널 `(200,1700)`과 바로가기는 유지한다.
+
+영향력 inlay는 중점 격자와 별도인 **UI `(1050,1400)`, 크기500×670**으로 내렸다. 민주 군집 이동과 함께 이동시키지 않고 산업 구역에 고정하며, 민주 가지와 패널을 오가는 사용성과 주변 명판·클릭 영역은 실제 화면 검증을 기다린다. [현재472개 JSON](data/HOK_KOREAN_SECOND_WAVE_COORDINATES.json)과 [후속 변경 계획](HOK_KOREAN_CHAEBOL_CIVIL_SOCIETY_REVISION_PLAN.md)을 따른다.
+
+| 중점 | ID | 기본 절대 | 상대 기준 | 상대 x/y | 민주 완료 HIDE |
+|---|---|---|---|---|---|
+| 산업·사회협약 | `HOK_KOR_civic_industrial_compact` | (133,6) | `KOR_democracy_advance_forward` | (6,4) | (98,6) |
+| 재벌과의 산업협력 | `HOK_KOR_civic_chaebol_cooperation` | (133,7) | `HOK_KOR_civic_industrial_compact` | (0,1) | (98,7) |
+| 재벌의 공공 소유 전환 | `HOK_KOR_civic_nationalization` | (135,7) | `HOK_KOR_civic_industrial_compact` | (2,1) | (100,7) |
+| 독점 해체와 시민 개혁 | `HOK_KOR_civic_break_monopolies` | (137,7) | `HOK_KOR_civic_industrial_compact` | (4,1) | (102,7) |
+| 선경 원료·설비 투자 | `HOK_KOR_civic_sunkyong_investment` | (132,8) | `HOK_KOR_civic_chaebol_cooperation` | (-1,1) | (97,8) |
+| 삼성전자 기술투자 | `HOK_KOR_civic_samsung_electronics` | (134,8) | `HOK_KOR_civic_chaebol_cooperation` | (1,1) | (99,8) |
+| 금성 대량생산 설비 | `HOK_KOR_civic_goldstar_mass_production` | (133,9) | `HOK_KOR_civic_chaebol_cooperation` | (0,2) | (98,9) |
+| 노동·생산 협약 | `HOK_KOR_civic_labor_compact` | (137,9) | `HOK_KOR_civic_break_monopolies` | (0,2) | (102,9) |
+| 국민개병제 정비 | `HOK_KOR_civic_mass_conscription` | (136,10) | `HOK_KOR_civic_labor_compact` | (-1,1) | (101,10) |
+| 공적 책임과 공정 인사 | `HOK_KOR_civic_public_accountability` | (138,10) | `HOK_KOR_civic_labor_compact` | (1,1) | (103,10) |
+| 시민 개혁의 정착 | `HOK_KOR_civic_social_settlement` | (137,12) | `HOK_KOR_civic_labor_compact` | (0,3) | (102,12) |
+| 공공 계약과 기술 승계 | `HOK_KOR_civic_public_procurement` | (135,9) | `HOK_KOR_civic_nationalization` | (0,2) | (100,9) |
+| 조달 검수체계 | `HOK_KOR_civic_procurement_inspections` | (139,8) | `HOK_KOR_civic_industrial_compact` | (6,2) | (104,8) |
+
+실제 패치 소스의 순서 보존 검사와 **20상태×2표시 모델**에서 사각형·무관한 세 직각 연결선·무관한 배타 제목띠·무관한 수평 공선 후보는0이다. 정상 공통 OR/AND 합류 접촉145회, 삼자 정책 배타37회, 공유 합류 공선213회는 반복 상태 합산이며 별도로 보존했다. 이 관계선·이름판·숨은 기준점·SHOW/HIDE 전환·클릭·패널의 실제 표시와 새 진입의 정상 진행은 아직 런타임 검증 전이다. 고정 산업 자리에서 수행한 이전473개 소스의 관측을 이번 위치/선행의 실행 결과로 재사용하지 않는다. 기존 JSON의 before와 validation/previous_* 기록은 각 과거 소스 해시의 이력으로 유지한다.
+
+## 2026-10-11 재벌·시민사회 13개와 고정 영향력 패널 — 473개 기준 이력
+
+당시 소스는 `e9f96c856982a5ba32b05e5e77cadc782340e294c542c15bab095c80e91c729e`이며, **473개 중점·절대 기준 7개·상대 배치 466개·직접 offset 7개**, 기본 범위 **x0~211/y0~24**다. 새 13개는 산업화된 사회 `(22,5)` 아래 산업·사회협약 `(22,6)`에서 분기하며, 산업 기준의 고정 자손이므로 SHOW/HIDE와 정치 선택 후에도 이동하지 않는다. 기존 460개 좌표와 지속적 중점 패널 `(200,1700)`·바로가기는 보존한다.
+
+영향력 패널은 일반 중점 격자와 별개의 **UI 좌표 `(1050,1300)`, 크기 `500×670`**로 고정한다. 3정책 선택 후에도 위치와 크기를 바꾸지 않는다. [현재 좌표 JSON; 아래 473개 설명은 이력](data/HOK_KOREAN_SECOND_WAVE_COORDINATES.json)과 [재벌·시민사회 구현 명세](HOK_KOREAN_CHAEBOL_CIVIL_SOCIETY_SPEC.md)를 따른다. 소스 좌표 확인은 실제 아이콘·명판·배타선·패널의 화면 검수를 대신하지 않는다. 신규 13개의 런타임 검증은 별도 기록 대상이며, 아래 460개 및 이전 검증은 각 당시 소스의 이력이다.
+
+## 2026-10-10 왕정 선행조건·H1 배치 적용 — 460개 기준 이력
 
 현재 소스는 `572c035b21a79d89f7e8fa55aee353f12b4230816cbfd491ff0667efc09ac007`이며, 460개 중점·절대 기준 7개·상대 배치 453개·직접 offset 7개를 유지한다. H1 네 중점만 이동해 전체 기본 범위는 **x0~211/y0~24**, 왕정 완료 HIDE의 최대 x는 **110**이다. 다른 456개 기본 좌표와 지속적 중점 패널·바로가기를 보존했다.
 

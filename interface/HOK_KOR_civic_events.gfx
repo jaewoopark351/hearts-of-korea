@@ -1,0 +1,11 @@
+#20261011_kpopmodder: Reuse unchanged target-version event art through project-local civic-system sprites.
+spriteTypes = {
+	spriteType = {
+		name = "GFX_HOK_KOR_civic_event_fighters"
+		texturefile = "gfx/event_pictures/HOK_KOR/civic/report_event_fighters.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_civic_event_parliament"
+		texturefile = "gfx/event_pictures/HOK_KOR/civic/report_event_generic_parliament.dds"
+	}
+}

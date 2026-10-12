@@ -1,0 +1,87 @@
+#20261011_kpopmodder: Add a Korean two-faction focus inlay using current project leader portraits and the civic-state effect contract.
+HOK_KOR_civic_influence_inlay_window = {
+	window_name = HOK_KOR_civic_influence_window
+	internal = yes
+	visible = {
+		tag = KOR
+		has_country_flag = HOK_KOR_civic_system_initialized
+	}
+
+	scripted_images = {
+		HOK_KOR_civic_leader_portrait = {
+			GFX_Portrait_KOR_Syngman_Rhee = { has_country_leader = { character = KOR_syngman_rhee ruling_only = yes } }
+			GFX_Portrait_KOR_Gu_Kim = { has_country_leader = { character = KOR_Gu_Kim ruling_only = yes } }
+			GFX_Portrait_KOR_Boseon_Yoon = { has_country_leader = { character = KOR_Boseon_Yoon ruling_only = yes } }
+			GFX_Portrait_KOR_Gang_Lee = { has_country_leader = { character = KOR_Gang_Lee ruling_only = yes } }
+			GFX_Portrait_KOR_provisional_peoples_committee = { has_country_leader = { character = KOR_provisional_peoples_committee ruling_only = yes } }
+			GFX_Portrait_KOR_Woonhyung_Yeo = { has_country_leader = { character = KOR_Woonhyung_Yeo ruling_only = yes } }
+			GFX_Portrait_KOR_Heonyoung_Park = { has_country_leader = { character = KOR_Heonyoung_Park ruling_only = yes } }
+			GFX_Portrait_KOR_Beomseok_Lee = { has_country_leader = { character = KOR_Beomseok_Lee ruling_only = yes } }
+			GFX_Portrait_KOR_Yeonsu_Gye = { has_country_leader = { character = KOR_Yeonsu_Gye ruling_only = yes } }
+			GFX_Portrait_KOR_Eun_Lee = { has_country_leader = { character = KOR_Eun_Lee ruling_only = yes } }
+			GFX_Portrait_KOR_Changho_Ahn = { has_country_leader = { character = KOR_Changho_Ahn ruling_only = yes } }
+			GFX_HOK_KOR_civic_leader_council = { has_country_leader = { name = "Deoksugung Pyeonguihoe" ruling_only = yes } }
+			GFX_HOK_KOR_civic_leader_gim_teuleo = { has_country_leader = { name = "Gim Teuleo" ruling_only = yes } }
+			GFX_HOK_KOR_civic_leader_unmapped = yes
+		}
+	}
+
+	#20261011_kpopmodder: Disable each action at its saved influence limit to match shared state effects.
+	scripted_buttons = {
+		HOK_KOR_support_chaebol_button = {
+			available = {
+				tag = KOR
+				has_country_flag = HOK_KOR_civic_system_initialized
+				has_country_flag = HOK_KOR_civic_panel_unlocked
+				has_capitulated = no
+				has_civil_war = no
+				NOT = { has_political_power < 50 }
+				NOT = { has_country_flag = HOK_KOR_civic_action_cooldown }
+				check_variable = { HOK_KOR_chaebol_influence < 100 }
+			}
+			click_effect = { HOK_KOR_support_chaebol = yes }
+		}
+
+		HOK_KOR_suppress_chaebol_button = {
+			available = {
+				tag = KOR
+				has_country_flag = HOK_KOR_civic_system_initialized
+				has_country_flag = HOK_KOR_civic_panel_unlocked
+				has_capitulated = no
+				has_civil_war = no
+				NOT = { has_political_power < 50 }
+				NOT = { has_country_flag = HOK_KOR_civic_action_cooldown }
+				check_variable = { HOK_KOR_chaebol_influence > 0 }
+			}
+			click_effect = { HOK_KOR_suppress_chaebol = yes }
+		}
+
+		HOK_KOR_support_civic_button = {
+			available = {
+				tag = KOR
+				has_country_flag = HOK_KOR_civic_system_initialized
+				has_country_flag = HOK_KOR_civic_panel_unlocked
+				has_capitulated = no
+				has_civil_war = no
+				NOT = { has_political_power < 50 }
+				NOT = { has_country_flag = HOK_KOR_civic_action_cooldown }
+				check_variable = { HOK_KOR_civic_influence < 100 }
+			}
+			click_effect = { HOK_KOR_support_civic = yes }
+		}
+
+		HOK_KOR_suppress_civic_button = {
+			available = {
+				tag = KOR
+				has_country_flag = HOK_KOR_civic_system_initialized
+				has_country_flag = HOK_KOR_civic_panel_unlocked
+				has_capitulated = no
+				has_civil_war = no
+				NOT = { has_political_power < 50 }
+				NOT = { has_country_flag = HOK_KOR_civic_action_cooldown }
+				check_variable = { HOK_KOR_civic_influence > 0 }
+			}
+			click_effect = { HOK_KOR_suppress_civic = yes }
+		}
+	}
+}

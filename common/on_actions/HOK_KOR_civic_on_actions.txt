@@ -1,0 +1,15 @@
+on_actions = {
+	#20261011_kpopmodder: Initialize Korean saves once and register completed legacy focuses after initialization.
+	on_startup = {
+		effect = {
+			KOR = { HOK_KOR_register_legacy_civic_state = yes }
+		}
+	}
+
+	#20261011_kpopmodder: Use the installed target-version monthly country callback and an explicit Korean effect scope.
+	on_monthly_KOR = {
+		effect = {
+			KOR = { HOK_KOR_monthly_civic_update = yes }
+		}
+	}
+}

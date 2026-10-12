@@ -1,0 +1,445 @@
+#20261011_kpopmodder: Reuse existing Korean company logos and policy artwork without creating or converting image files.
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_industrial_compact"
+		texturefile = "gfx/interface/goals/HOK_KOR/integrated_production_planning.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_industrial_compact_shine"
+		texturefile = "gfx/interface/goals/HOK_KOR/integrated_production_planning.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/integrated_production_planning.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/integrated_production_planning.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_chaebol_cooperation"
+		texturefile = "gfx/interface/goals/HOK_KOR/regional_industry_fund.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_chaebol_cooperation_shine"
+		texturefile = "gfx/interface/goals/HOK_KOR/regional_industry_fund.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/regional_industry_fund.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/regional_industry_fund.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_nationalization"
+		texturefile = "gfx/interface/goals/HOK_KOR/industrial_power_allocation.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_nationalization_shine"
+		texturefile = "gfx/interface/goals/HOK_KOR/industrial_power_allocation.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/industrial_power_allocation.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/industrial_power_allocation.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_break_monopolies"
+		texturefile = "gfx/interface/goals/HOK_KOR/public_accounts_committee.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_break_monopolies_shine"
+		texturefile = "gfx/interface/goals/HOK_KOR/public_accounts_committee.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/public_accounts_committee.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/public_accounts_committee.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_sunkyong_investment"
+		texturefile = "gfx/interface/ideas/idea_kor_sunkyong.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_sunkyong_investment_shine"
+		texturefile = "gfx/interface/ideas/idea_kor_sunkyong.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/ideas/idea_kor_sunkyong.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/ideas/idea_kor_sunkyong.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_samsung_electronics"
+		texturefile = "gfx/interface/ideas/idea_kor_samsung.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_samsung_electronics_shine"
+		texturefile = "gfx/interface/ideas/idea_kor_samsung.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/ideas/idea_kor_samsung.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/ideas/idea_kor_samsung.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_goldstar_mass_production"
+		texturefile = "gfx/interface/ideas/idea_kor_goldstar.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_goldstar_mass_production_shine"
+		texturefile = "gfx/interface/ideas/idea_kor_goldstar.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/ideas/idea_kor_goldstar.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/ideas/idea_kor_goldstar.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_labor_compact"
+		texturefile = "gfx/interface/goals/HOK_KOR/skilled_workforce.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_labor_compact_shine"
+		texturefile = "gfx/interface/goals/HOK_KOR/skilled_workforce.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/skilled_workforce.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/skilled_workforce.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_mass_conscription"
+		texturefile = "gfx/interface/goals/focus_kor_begin_rearmament.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_mass_conscription_shine"
+		texturefile = "gfx/interface/goals/focus_kor_begin_rearmament.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_kor_begin_rearmament.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_kor_begin_rearmament.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_public_accountability"
+		texturefile = "gfx/interface/goals/HOK_KOR/parliamentary_committee.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_public_accountability_shine"
+		texturefile = "gfx/interface/goals/HOK_KOR/parliamentary_committee.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/parliamentary_committee.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/parliamentary_committee.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_social_settlement"
+		texturefile = "gfx/interface/goals/HOK_KOR/production_quality_assurance.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_social_settlement_shine"
+		texturefile = "gfx/interface/goals/HOK_KOR/production_quality_assurance.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/production_quality_assurance.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/production_quality_assurance.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_public_procurement"
+		texturefile = "gfx/interface/goals/HOK_KOR/production_review.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_public_procurement_shine"
+		texturefile = "gfx/interface/goals/HOK_KOR/production_review.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/production_review.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/production_review.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_procurement_inspections"
+		texturefile = "gfx/interface/goals/HOK_KOR/ordnance_inspection.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOK_KOR_focus_civic_procurement_inspections_shine"
+		texturefile = "gfx/interface/goals/HOK_KOR/ordnance_inspection.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/ordnance_inspection.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/HOK_KOR/ordnance_inspection.dds"
+			animationtexturefile = "gfx/interface/goals/HOK_KOR/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

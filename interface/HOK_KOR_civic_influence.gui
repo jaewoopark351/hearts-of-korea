@@ -1,0 +1,243 @@
+#20261011_kpopmodder: Display the current Korean leader and two civic-influence cards with project-local reusable UI art.
+guiTypes = {
+	containerWindowType = {
+		name = "HOK_KOR_civic_influence_window"
+		orientation = lower_left
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 670 }
+		clipping = no
+		background = {
+			name = "HOK_KOR_civic_panel_background"
+			quadTextureSprite = "GFX_HOK_KOR_civic_panel_background"
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "HOK_KOR_civic_panel_title"
+			position = { x = 22 y = 16 }
+			font = "hoi_36header"
+			context_aware_text = "HOK_KOR_civic_ui_title"
+			format = center
+			maxWidth = 456
+			maxHeight = 40
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "HOK_KOR_civic_leader_portrait"
+			spriteType = "GFX_HOK_KOR_civic_leader_unmapped"
+			position = { x = 187 y = 61 }
+			scale = 0.8
+			alwaystransparent = yes
+			context_aware_tooltip = "[HOK_KOR_GetInfluenceLeaderPortraitTooltip]"
+		}
+		iconType = {
+			name = "HOK_KOR_civic_leader_frame"
+			spriteType = "GFX_HOK_KOR_civic_leader_frame"
+			position = { x = 181 y = 50 }
+			scale = 0.8
+			alwaystransparent = yes
+			context_aware_tooltip = "[HOK_KOR_GetInfluenceLeaderPortraitTooltip]"
+		}
+		containerWindowType = {
+			name = "HOK_KOR_civic_leader_name_plate"
+			position = { x = 130 y = 223 }
+			size = { width = 240 height = 38 }
+			background = {
+				name = "HOK_KOR_civic_leader_name_plate_background"
+				quadTextureSprite = "GFX_HOK_KOR_civic_card_background"
+				alwaystransparent = yes
+			}
+		}
+		instantTextBoxType = {
+			name = "HOK_KOR_civic_leader_name"
+			position = { x = 142 y = 227 }
+			font = "hoi_18mbs"
+			context_aware_text = "HOK_KOR_civic_ui_leader_name_text"
+			format = center
+			maxWidth = 216
+			maxHeight = 32
+			alwaystransparent = yes
+			context_aware_tooltip = "[HOK_KOR_GetInfluenceLeaderPortraitTooltip]"
+		}
+		instantTextBoxType = {
+			name = "HOK_KOR_civic_leader_title"
+			position = { x = 140 y = 270 }
+			font = "hoi_20bs"
+			context_aware_text = "HOK_KOR_civic_ui_leader_title_text"
+			format = center
+			maxWidth = 220
+			maxHeight = 26
+			alwaystransparent = yes
+			context_aware_tooltip = "[HOK_KOR_GetInfluenceLeaderPortraitTooltip]"
+		}
+		containerWindowType = {
+			name = "HOK_KOR_chaebol_card"
+			position = { x = 22 y = 318 }
+			size = { width = 220 height = 250 }
+			clipping = no
+			background = {
+				name = "HOK_KOR_chaebol_card_background"
+				quadTextureSprite = "GFX_HOK_KOR_civic_card_background"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "HOK_KOR_chaebol_name"
+				position = { x = 14 y = 15 }
+				font = "hoi_20bs"
+				context_aware_text = "HOK_KOR_civic_ui_chaebol_name"
+				format = center
+				maxWidth = 192
+				maxHeight = 26
+				alwaystransparent = yes
+				context_aware_tooltip = "HOK_KOR_civic_ui_chaebol_tt"
+			}
+			iconType = {
+				name = "HOK_KOR_chaebol_icon"
+				spriteType = "GFX_HOK_KOR_focus_industrial_power_allocation"
+				position = { x = 60 y = 46 }
+				alwaystransparent = yes
+				context_aware_tooltip = "HOK_KOR_civic_ui_chaebol_tt"
+			}
+			instantTextBoxType = {
+				name = "HOK_KOR_chaebol_value"
+				position = { x = 14 y = 144 }
+				font = "hoi_18mbs"
+				context_aware_text = "HOK_KOR_civic_ui_chaebol_value"
+				format = center
+				maxWidth = 192
+				maxHeight = 24
+				alwaystransparent = yes
+				context_aware_tooltip = "HOK_KOR_civic_ui_chaebol_tt"
+			}
+			instantTextBoxType = {
+				name = "HOK_KOR_chaebol_tier"
+				position = { x = 14 y = 174 }
+				font = "hoi_18mbs"
+				context_aware_text = "HOK_KOR_civic_ui_chaebol_tier"
+				format = center
+				maxWidth = 192
+				maxHeight = 24
+				alwaystransparent = yes
+				context_aware_tooltip = "HOK_KOR_civic_ui_chaebol_tt"
+			}
+			buttonType = {
+				name = "HOK_KOR_support_chaebol_button"
+				quadTextureSprite = "GFX_HOK_KOR_civic_action_button"
+				position = { x = 13 y = 210 }
+				buttonFont = "hoi_16mbs"
+				buttonText = "HOK_KOR_civic_ui_support"
+				context_aware_tooltip = "HOK_KOR_civic_ui_support_chaebol_tt"
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "HOK_KOR_suppress_chaebol_button"
+				quadTextureSprite = "GFX_HOK_KOR_civic_action_button"
+				position = { x = 113 y = 210 }
+				buttonFont = "hoi_16mbs"
+				buttonText = "HOK_KOR_civic_ui_suppress"
+				context_aware_tooltip = "HOK_KOR_civic_ui_suppress_chaebol_tt"
+				clicksound = click_default
+			}
+		}
+		containerWindowType = {
+			name = "HOK_KOR_civic_card"
+			position = { x = 258 y = 318 }
+			size = { width = 220 height = 250 }
+			clipping = no
+			background = {
+				name = "HOK_KOR_civic_card_background"
+				quadTextureSprite = "GFX_HOK_KOR_civic_card_background"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "HOK_KOR_civic_name"
+				position = { x = 14 y = 15 }
+				font = "hoi_20bs"
+				context_aware_text = "HOK_KOR_civic_ui_civic_name"
+				format = center
+				maxWidth = 192
+				maxHeight = 26
+				alwaystransparent = yes
+				context_aware_tooltip = "HOK_KOR_civic_ui_civic_tt"
+			}
+			iconType = {
+				name = "HOK_KOR_civic_icon"
+				spriteType = "GFX_HOK_KOR_focus_parliamentary_committee"
+				position = { x = 60 y = 46 }
+				alwaystransparent = yes
+				context_aware_tooltip = "HOK_KOR_civic_ui_civic_tt"
+			}
+			instantTextBoxType = {
+				name = "HOK_KOR_civic_value"
+				position = { x = 14 y = 144 }
+				font = "hoi_18mbs"
+				context_aware_text = "HOK_KOR_civic_ui_civic_value"
+				format = center
+				maxWidth = 192
+				maxHeight = 24
+				alwaystransparent = yes
+				context_aware_tooltip = "HOK_KOR_civic_ui_civic_tt"
+			}
+			instantTextBoxType = {
+				name = "HOK_KOR_civic_tier"
+				position = { x = 14 y = 174 }
+				font = "hoi_18mbs"
+				context_aware_text = "HOK_KOR_civic_ui_civic_tier"
+				format = center
+				maxWidth = 192
+				maxHeight = 24
+				alwaystransparent = yes
+				context_aware_tooltip = "HOK_KOR_civic_ui_civic_tt"
+			}
+			buttonType = {
+				name = "HOK_KOR_support_civic_button"
+				quadTextureSprite = "GFX_HOK_KOR_civic_action_button"
+				position = { x = 13 y = 210 }
+				buttonFont = "hoi_16mbs"
+				buttonText = "HOK_KOR_civic_ui_support"
+				context_aware_tooltip = "HOK_KOR_civic_ui_support_civic_tt"
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "HOK_KOR_suppress_civic_button"
+				quadTextureSprite = "GFX_HOK_KOR_civic_action_button"
+				position = { x = 113 y = 210 }
+				buttonFont = "hoi_16mbs"
+				buttonText = "HOK_KOR_civic_ui_suppress"
+				context_aware_tooltip = "HOK_KOR_civic_ui_suppress_civic_tt"
+				clicksound = click_default
+			}
+		}
+		instantTextBoxType = {
+			name = "HOK_KOR_civic_corruption"
+			position = { x = 22 y = 589 }
+			font = "hoi_16mbs"
+			context_aware_text = "HOK_KOR_civic_ui_corruption_value"
+			format = center
+			maxWidth = 220
+			maxHeight = 26
+			alwaystransparent = yes
+			context_aware_tooltip = "HOK_KOR_civic_ui_corruption_tt"
+		}
+		instantTextBoxType = {
+			name = "HOK_KOR_civic_capture"
+			position = { x = 258 y = 589 }
+			font = "hoi_16mbs"
+			context_aware_text = "HOK_KOR_civic_ui_capture_value"
+			format = center
+			maxWidth = 220
+			maxHeight = 26
+			alwaystransparent = yes
+			context_aware_tooltip = "HOK_KOR_civic_ui_capture_tt"
+		}
+		instantTextBoxType = {
+			name = "HOK_KOR_civic_action_status"
+			position = { x = 22 y = 625 }
+			font = "hoi_16mbs"
+			context_aware_text = "HOK_KOR_civic_ui_action_status"
+			format = center
+			maxWidth = 456
+			maxHeight = 28
+			alwaystransparent = yes
+		}
+	}
+}

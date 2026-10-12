@@ -1,0 +1,234 @@
+add_namespace = HOK_KOR_CIVIC
+
+#20261011_kpopmodder: Tie a warned field hazard to an active paid contract and let investigation cancel the queued accident.
+country_event = {
+	id = HOK_KOR_CIVIC.1
+	title = HOK_KOR_CIVIC.1.t
+	desc = HOK_KOR_CIVIC.1.d
+	picture = GFX_HOK_KOR_civic_event_fighters
+	is_triggered_only = yes
+	trigger = { tag = KOR has_country_flag = HOK_KOR_air_contract_active }
+	option = {
+		name = HOK_KOR_CIVIC.1.a
+		trigger = { NOT = { has_political_power < 100 } }
+		add_political_power = -100
+		clr_country_flag = HOK_KOR_air_contract_active
+		remove_ideas = HOK_KOR_fast_air_procurement
+		set_country_flag = HOK_KOR_air_recovery_active
+		country_event = { id = HOK_KOR_CIVIC.3 days = 60 }
+		ai_chance = { factor = 90 }
+	}
+	option = {
+		name = HOK_KOR_CIVIC.1.b
+		add_to_variable = { HOK_KOR_procurement_corruption = 5 }
+		HOK_KOR_sync_civic_state = yes
+		country_event = { id = HOK_KOR_CIVIC.2 days = 15 random_days = 30 }
+		ai_chance = { factor = 10 modifier = { factor = 5 has_war = yes } }
+	}
+}
+
+#20261011_kpopmodder: Apply field-specific lasting accident damage and distinguish costly disclosure from cartel-backed concealment.
+country_event = {
+	id = HOK_KOR_CIVIC.2
+	title = HOK_KOR_CIVIC.2.t
+	desc = HOK_KOR_CIVIC.2.d
+	picture = GFX_HOK_KOR_civic_event_fighters
+	is_triggered_only = yes
+	trigger = { tag = KOR has_country_flag = HOK_KOR_air_contract_active }
+	immediate = {
+		clr_country_flag = HOK_KOR_air_contract_active
+		remove_ideas = HOK_KOR_fast_air_procurement
+		add_ideas = HOK_KOR_air_procurement_accident
+		add_to_variable = { HOK_KOR_procurement_corruption = 10 }
+		add_stability = -0.05
+		HOK_KOR_sync_civic_state = yes
+	}
+	option = {
+		name = HOK_KOR_CIVIC.2.a
+		trigger = { NOT = { has_political_power < 75 } }
+		add_political_power = -75
+		add_to_variable = { HOK_KOR_procurement_corruption = -5 }
+		add_to_variable = { HOK_KOR_civic_influence = 5 }
+		HOK_KOR_sync_civic_state = yes
+		unlock_decision_tooltip = HOK_KOR_recover_air_procurement
+		ai_chance = { factor = 80 }
+	}
+	option = {
+		name = HOK_KOR_CIVIC.2.b
+		add_political_power = 50
+		add_to_variable = { HOK_KOR_procurement_corruption = 10 }
+		add_to_variable = { HOK_KOR_institutional_capture = 5 }
+		HOK_KOR_sync_civic_state = yes
+		unlock_decision_tooltip = HOK_KOR_recover_air_procurement
+		ai_chance = { factor = 20 }
+	}
+}
+
+#20261011_kpopmodder: Recover only the investigated field and retain the shared procurement cooldown.
+country_event = {
+	id = HOK_KOR_CIVIC.3
+	title = HOK_KOR_CIVIC.3.t
+	desc = HOK_KOR_CIVIC.3.d
+	picture = GFX_HOK_KOR_civic_event_fighters
+	is_triggered_only = yes
+	trigger = { tag = KOR has_country_flag = HOK_KOR_air_recovery_active }
+	immediate = {
+		clr_country_flag = HOK_KOR_air_recovery_active
+		remove_ideas = HOK_KOR_air_procurement_accident
+		remove_ideas = HOK_KOR_fast_air_procurement
+		add_to_variable = { HOK_KOR_procurement_corruption = -10 }
+		add_to_variable = { HOK_KOR_institutional_capture = -5 }
+		HOK_KOR_sync_civic_state = yes
+	}
+	option = { name = HOK_KOR_CIVIC.3.a }
+}
+
+#20261011_kpopmodder: Tie a warned field hazard to an active paid contract and let investigation cancel the queued accident.
+country_event = {
+	id = HOK_KOR_CIVIC.11
+	title = HOK_KOR_CIVIC.11.t
+	desc = HOK_KOR_CIVIC.11.d
+	picture = GFX_report_event_K002
+	is_triggered_only = yes
+	trigger = { tag = KOR has_country_flag = HOK_KOR_rocket_contract_active }
+	option = {
+		name = HOK_KOR_CIVIC.11.a
+		trigger = { NOT = { has_political_power < 100 } }
+		add_political_power = -100
+		clr_country_flag = HOK_KOR_rocket_contract_active
+		remove_ideas = HOK_KOR_fast_rocket_procurement
+		set_country_flag = HOK_KOR_rocket_recovery_active
+		country_event = { id = HOK_KOR_CIVIC.13 days = 60 }
+		ai_chance = { factor = 90 }
+	}
+	option = {
+		name = HOK_KOR_CIVIC.11.b
+		add_to_variable = { HOK_KOR_procurement_corruption = 5 }
+		HOK_KOR_sync_civic_state = yes
+		country_event = { id = HOK_KOR_CIVIC.12 days = 15 random_days = 30 }
+		ai_chance = { factor = 10 modifier = { factor = 5 has_war = yes } }
+	}
+}
+
+#20261011_kpopmodder: Apply field-specific lasting accident damage and distinguish costly disclosure from cartel-backed concealment.
+country_event = {
+	id = HOK_KOR_CIVIC.12
+	title = HOK_KOR_CIVIC.12.t
+	desc = HOK_KOR_CIVIC.12.d
+	picture = GFX_report_event_K002
+	is_triggered_only = yes
+	trigger = { tag = KOR has_country_flag = HOK_KOR_rocket_contract_active }
+	immediate = {
+		clr_country_flag = HOK_KOR_rocket_contract_active
+		remove_ideas = HOK_KOR_fast_rocket_procurement
+		add_ideas = HOK_KOR_rocket_procurement_accident
+		add_to_variable = { HOK_KOR_procurement_corruption = 10 }
+		add_stability = -0.05
+		HOK_KOR_sync_civic_state = yes
+	}
+	option = {
+		name = HOK_KOR_CIVIC.12.a
+		trigger = { NOT = { has_political_power < 75 } }
+		add_political_power = -75
+		add_to_variable = { HOK_KOR_procurement_corruption = -5 }
+		add_to_variable = { HOK_KOR_civic_influence = 5 }
+		HOK_KOR_sync_civic_state = yes
+		unlock_decision_tooltip = HOK_KOR_recover_rocket_procurement
+		ai_chance = { factor = 80 }
+	}
+	option = {
+		name = HOK_KOR_CIVIC.12.b
+		add_political_power = 50
+		add_to_variable = { HOK_KOR_procurement_corruption = 10 }
+		add_to_variable = { HOK_KOR_institutional_capture = 5 }
+		HOK_KOR_sync_civic_state = yes
+		unlock_decision_tooltip = HOK_KOR_recover_rocket_procurement
+		ai_chance = { factor = 20 }
+	}
+}
+
+#20261011_kpopmodder: Recover only the investigated field and retain the shared procurement cooldown.
+country_event = {
+	id = HOK_KOR_CIVIC.13
+	title = HOK_KOR_CIVIC.13.t
+	desc = HOK_KOR_CIVIC.13.d
+	picture = GFX_report_event_K002
+	is_triggered_only = yes
+	trigger = { tag = KOR has_country_flag = HOK_KOR_rocket_recovery_active }
+	immediate = {
+		clr_country_flag = HOK_KOR_rocket_recovery_active
+		remove_ideas = HOK_KOR_rocket_procurement_accident
+		remove_ideas = HOK_KOR_fast_rocket_procurement
+		add_to_variable = { HOK_KOR_procurement_corruption = -10 }
+		add_to_variable = { HOK_KOR_institutional_capture = -5 }
+		HOK_KOR_sync_civic_state = yes
+	}
+	option = { name = HOK_KOR_CIVIC.13.a }
+}
+
+#20261011_kpopmodder: Clear queued-state flags even if conditions change, then activate exactly one warned crisis.
+country_event = {
+	id = HOK_KOR_CIVIC.20
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { tag = KOR has_country_flag = HOK_KOR_prosecutor_crisis_pending }
+	immediate = {
+		clr_country_flag = HOK_KOR_prosecutor_crisis_pending
+		if = {
+			limit = { HOK_KOR_prosecutor_crisis_eligible = yes }
+			set_country_flag = HOK_KOR_prosecutor_crisis_active
+			add_ideas = HOK_KOR_prosecutor_pressure
+			activate_mission = HOK_KOR_prosecutor_coup_countdown
+			country_event = { id = HOK_KOR_CIVIC.24 }
+		}
+	}
+}
+
+#20261011_kpopmodder: Explain the fictional prosecutor coup, its deadline and both independent defensive decisions.
+country_event = {
+	id = HOK_KOR_CIVIC.24
+	title = HOK_KOR_CIVIC.24.t
+	desc = HOK_KOR_CIVIC.24.d
+	picture = GFX_HOK_KOR_civic_event_parliament
+	is_triggered_only = yes
+	trigger = { tag = KOR has_country_flag = HOK_KOR_prosecutor_crisis_active }
+	option = {
+		name = HOK_KOR_CIVIC.24.a
+		unlock_decision_tooltip = HOK_KOR_secure_prosecutorial_records
+		unlock_decision_tooltip = HOK_KOR_break_capture_networks
+	}
+}
+
+#20261011_kpopmodder: Report the distinct warned-crisis outcome without changing an existing leader or military political route.
+country_event = {
+	id = HOK_KOR_CIVIC.21
+	title = HOK_KOR_CIVIC.21.t
+	desc = HOK_KOR_CIVIC.21.d
+	picture = GFX_HOK_KOR_civic_event_parliament
+	is_triggered_only = yes
+	trigger = { tag = KOR }
+	option = { name = HOK_KOR_CIVIC.21.a }
+}
+
+#20261011_kpopmodder: Report the distinct warned-crisis outcome without changing an existing leader or military political route.
+country_event = {
+	id = HOK_KOR_CIVIC.22
+	title = HOK_KOR_CIVIC.22.t
+	desc = HOK_KOR_CIVIC.22.d
+	picture = GFX_HOK_KOR_civic_event_parliament
+	is_triggered_only = yes
+	trigger = { tag = KOR }
+	option = { name = HOK_KOR_CIVIC.22.a unlock_decision_tooltip = HOK_KOR_restore_civilian_mandate }
+}
+
+#20261011_kpopmodder: Report the distinct warned-crisis outcome without changing an existing leader or military political route.
+country_event = {
+	id = HOK_KOR_CIVIC.23
+	title = HOK_KOR_CIVIC.23.t
+	desc = HOK_KOR_CIVIC.23.d
+	picture = GFX_HOK_KOR_civic_event_parliament
+	is_triggered_only = yes
+	trigger = { tag = KOR }
+	option = { name = HOK_KOR_CIVIC.23.a }
+}
+

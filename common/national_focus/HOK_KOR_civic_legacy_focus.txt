@@ -1,0 +1,16 @@
+#Focus for cooperation with the jaebeol
+# Historical notes retained from the removed playable node; this definition is never imported into the Korean tree.
+#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
+#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
+#20261011_kpopmodder: Reflect this inherited policy once without replacing the new mutually exclusive settlement.
+#20261012_kpopmodder: Keep the historical ID registered only for saved completion lookup, without a playable node or repeated rewards.
+shared_focus = {
+	id = KOR_cooperation_with_the_jaebeol
+	icon = GFX_HOK_KOR_focus_civic_chaebol_cooperation
+	x = 0
+	y = 0
+	cost = 5
+	available = { always = no }
+	ai_will_do = { factor = 0 }
+	completion_reward = { }
+}

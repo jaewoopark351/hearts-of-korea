@@ -1,0 +1,42 @@
+#20261011_kpopmodder: Reuse unchanged common UI textures and existing Korean portraits through project-local sprite mappings.
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_HOK_KOR_civic_panel_background"
+		size = { x = 192 y = 192 }
+		textureFile = "gfx/interface/HOK_KOR/civic/tiled_window_thin_border2.dds"
+		borderSize = { x = 64 y = 64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_HOK_KOR_civic_card_background"
+		size = { x = 96 y = 96 }
+		textureFile = "gfx/interface/HOK_KOR/civic/tiled_window_small.dds"
+		borderSize = { x = 32 y = 32 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_civic_leader_frame"
+		texturefile = "gfx/interface/HOK_KOR/civic/pol_leader_frame.dds"
+		alwaystransparent = yes
+	}
+	textSpriteType = {
+		name = "GFX_HOK_KOR_civic_action_button"
+		texturefile = "gfx/interface/HOK_KOR/civic/button_94x31.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_civic_leader_council"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Urihwangsilsaranghoe.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_civic_leader_gim_teuleo"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Teul_Eo_Kim.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_civic_leader_unmapped"
+		texturefile = "gfx/leaders/KOR/empty.dds"
+	}
+}

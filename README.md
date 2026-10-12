@@ -10,11 +10,16 @@
 
 ## 문서 목록
 
+- [한국 재벌과 시민사회 내정 설계와 모드 이식 후보](docs/HOK_KOREAN_CHAEBOL_CIVIL_SOCIETY_RESEARCH_PLAN.md): 선행 원본 조사; 이후 승인한 한국판 구현은 별도 확정 명세·검증 기록을 따름
+- [한국 재벌·시민사회 확정 명세](docs/HOK_KOREAN_CHAEBOL_CIVIL_SOCIETY_SPEC.md): 두 세력 UI·13개 중점·조달 사고·검찰 정변과 비용·복구 계약
+- [내정 시스템 자산 출처](docs/HOK_KOREAN_CHAEBOL_CIVIL_SOCIETY_ASSET_CREDITS.md): 기존 한국 초상·기업 로고와 공용 UI·사건 그림 재사용
+- [내정 시스템 개정·검증 기록](docs/incidents/2026-10-12-korean-civic-revision.md): 진입·주문·배치·표시 개정의 정상 진행·합성 검사·세이브 검증을 구분
+- [내정 디시전 아이콘 구현·검증 기록](docs/incidents/2026-10-12-korean-civic-decision-icons.md): 전용 배지·파란 지원/견제 아이콘, 출처·정적 확인·실제 표시와 테스트 정리
 - [왕정 중점 완료 조건과 환제국 물자 가지 배치 계획](docs/HOK_KOREAN_ROYAL_PREREQUISITE_LAYOUT_PLAN.md): 기존 18개 코드 적용·정적/로드/초기 SHOW/HIDE 일부 UI 확인·정상 진행 검증 대기; 14개 지정 완료 조건 삭제, 연락망 I·II 형성 전 유지, 물자 가지는 환제국 선행·우측 하단 (184,11)로 이동
 - [한국 중점 선행 조건 가독성 개선 계획](docs/HOK_KOREAN_FOCUS_PREREQUISITE_READABILITY_PLAN.md): 여섯 시작 중점 코드 적용·정적 및 초기 UI 확인·정상 진행 검증 대기; 원료는 두 선행 AND 연결, 나머지 다섯은 지정 완료 조건만 삭제. 삼군의 을해군란·F4/F5 후속 조건은 유지
 - [한국 신규 디시전과 국민정신 설명 보강 계획](docs/HOK_KOREAN_DECISION_SPIRIT_PROSE_PLAN.md): 설명 124개·한국어/영어 14쌍 적용, 파시즘·공산주의 문체와 좋은 기존 문안 보존; 정적 보존 검사 통과, UI 확인 대기
 - [디시전·국민정신 설명 구현 기록](docs/incidents/2026-10-03-korean-decision-spirit-prose.md): 누적 124개와 문체 후속 48개, 효과·조건 대조, 최종 보존 검사와 Rt56 플레이셋으로 인한 화면 검증 대기
-- [한국 중점 2차 확장 현황](docs/HOK_KOREAN_SECOND_WAVE_PLAN.md): 현재 378개, 공산 28개·파시즘 24개 후속 구현; 실제 플레이 검증은 기록별로 구분
+- [한국 중점 2차 확장 현황](docs/HOK_KOREAN_SECOND_WAVE_PLAN.md): 현재 472개; 기존 460개에 내정 13개 추가·구 협력 중점 1개 제거, 실제 플레이 검증은 소스·기록별로 구분
 - [파시즘 점령행정·삼군 조정·재건예산 명세](docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md): 신규 12개·국민정신 8개, 영토·평시 조건과 실제 예산 선택
 - [한국 중점 보상 재조정 설계·적용 상태](docs/HOK_KOREAN_FOCUS_REBALANCE_PLAN.md): 보상 강화 적용, 게임 검증 진행 중; 보병장비 한정 생산량 +10%는 미적용·대안 응답 대기
 - [한국 중점 트리 보존·35일화·확장 설계](docs/HOK_KOREAN_FOCUS_EXPANSION_PLAN.md): 기존 266개 보존, 기간 단축 범위와 단계별 확장 제안

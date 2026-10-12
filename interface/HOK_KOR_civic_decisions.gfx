@@ -1,0 +1,11 @@
+spriteTypes = {
+    #20261012_kpopmodder: Map dedicated civic header and blue action textures without overriding shared assets.
+    spriteType = {
+        name = "GFX_HOK_KOR_decision_category_civic_balance"
+        texturefile = "gfx/interface/decisions/HOK_KOR/civic/category.dds"
+    }
+    spriteType = {
+        name = "GFX_HOK_KOR_decision_civic_influence_blue"
+        texturefile = "gfx/interface/decisions/HOK_KOR/civic/influence_blue.dds"
+    }
+}

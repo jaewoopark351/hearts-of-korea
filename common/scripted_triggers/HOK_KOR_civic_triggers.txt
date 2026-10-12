@@ -1,0 +1,45 @@
+#20261011_kpopmodder: Share country-scope policy, action and crisis gates between effects and decisions.
+HOK_KOR_has_civic_policy = {
+	OR = { has_country_flag = HOK_KOR_policy_cooperation has_country_flag = HOK_KOR_policy_civic_reform has_country_flag = HOK_KOR_policy_public_ownership }
+}
+
+#20261011_kpopmodder: Share country-scope policy, action and crisis gates between effects and decisions.
+HOK_KOR_civic_action_available = {
+	HOK_KOR_civic_action_state_available = yes
+	NOT = { has_political_power < 50 }
+}
+
+#20261011_kpopmodder: Share country-scope policy, action and crisis gates between effects and decisions.
+HOK_KOR_civic_procurement_slot_available = {
+	tag = KOR
+	HOK_KOR_has_civic_policy = yes
+	has_capitulated = no
+	NOT = { has_country_flag = HOK_KOR_procurement_contract_cooldown }
+	NOT = { has_country_flag = HOK_KOR_air_contract_active }
+	NOT = { has_country_flag = HOK_KOR_rocket_contract_active }
+	NOT = { has_country_flag = HOK_KOR_air_recovery_active }
+	NOT = { has_country_flag = HOK_KOR_rocket_recovery_active }
+	check_variable = { var = HOK_KOR_chaebol_influence value = 40 compare = greater_than_or_equals }
+}
+
+#20261011_kpopmodder: Share country-scope policy, action and crisis gates between effects and decisions.
+HOK_KOR_prosecutor_crisis_eligible = {
+	tag = KOR
+	has_country_flag = HOK_KOR_policy_civic_reform
+	has_country_flag = HOK_KOR_civic_reform_pressure
+	check_variable = { var = HOK_KOR_institutional_capture value = 60 compare = greater_than_or_equals }
+	NOT = { has_country_flag = HOK_KOR_prosecutor_crisis_pending }
+	NOT = { has_country_flag = HOK_KOR_prosecutor_crisis_active }
+	NOT = { has_country_flag = HOK_KOR_prosecutor_crisis_cooldown }
+	NOT = { has_country_flag = HOK_KOR_prosecutorial_takeover }
+}
+
+#20261011_kpopmodder: Share country-scope policy, action and crisis gates between effects and decisions.
+HOK_KOR_civic_action_state_available = {
+	tag = KOR
+	has_country_flag = HOK_KOR_civic_system_initialized
+	has_country_flag = HOK_KOR_civic_panel_unlocked
+	has_capitulated = no
+	has_civil_war = no
+	NOT = { has_country_flag = HOK_KOR_civic_action_cooldown }
+}

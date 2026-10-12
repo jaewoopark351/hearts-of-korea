@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-12",
+  "scope": "One civic header and exactly four support/restraint icons; no gameplay changes",
+  "baseline": {
+    "branch": "feat/korean-focus-expansion-ai",
+    "commit": "4d8241e3cd33ebbceaca9650ab36b9891a22b56d",
+    "existing_worktree": "Earlier uncommitted civic implementation preserved",
+    "target": "HOI4 Operation Postern v1.19.3.0.c01a",
+    "baseline_checksum": "d2e6",
+    "source_only_checksum": "575f",
+    "evidence_directory": "C:/hoi/test/civic-decision-icons-20261012"
+  },
+  "method": "Recompose permitted existing PNG components with established project renderer; isolated background recolor; no AI generation or download",
+  "permission": {
+    "upstream": "https://github.com/Globvs/Ultimate-HOI4-GFX/blob/3626dc83c8573d6603fa497138090b04b64a15ba/CREDITS.txt",
+    "fixed_revision": "3626dc83c8573d6603fa497138090b04b64a15ba",
+    "preserved_text": "docs/assets/korean-civic-decision-icons/sources/CREDITS.txt",
+    "sha256": "cf220dc66463d75163f7690ad77b02b662d0c05ca5d53dc62d33ed504512a7f5",
+    "basis": "Upstream contributor consent and all free to use; identified pack files only; no separate MIT/CC licence inferred",
+    "attribution": "Globvs / Ultimate HOI4 GFX contributors; per-file artist mapping unavailable",
+    "continuation": "kpopmodder: selection, native-size recomposition, isolated blue background, export and GFX integration"
+  },
+  "pipeline": {
+    "renderer": ".local-artifacts/korean-focus-icons/IconRenderer.cs",
+    "renderer_sha256": "5ce539624fc427fce2d0f4a553b970be1a53e159ce7550b89f5178d1071c0d16",
+    "background_renderer": ".local-artifacts/korean-focus-icon-colors/BackgroundColors.cs",
+    "background_renderer_sha256": "2f258e5a0f1cf2ba30c227d80d79d98bd5f2795e34eff38f6fc3a7dbb1a6b234",
+    "sprite_file": "interface/HOK_KOR_civic_decisions.gfx",
+    "format": "BGRA32 DDS, one frame, mipmapCount0, explicit alpha",
+    "sampling": "IconRenderer.Piece: alpha crop A>4, aspect-preserving high-quality bicubic SourceOver, unchanged component sources"
+  },
+  "palettes": {
+    "democracy": {
+      "reference_rgb": [
+        53,
+        91,
+        126
+      ],
+      "luminance_reference": 60,
+      "mask_rule": "A>0 && R-G>6 && R-B>3 && B-G>=-4 on isolated Circle.png",
+      "shading": "pow((0.2126R+0.7152G+0.0722B)/60,0.9); clamp(round(referenceRGB*shade)); unchanged alpha",
+      "selected_pixels": 1695,
+      "derived_png": "docs/assets/korean-civic-decision-icons/circle-democracy.png",
+      "mask_png": "docs/assets/korean-civic-decision-icons/circle-democracy-mask.png",
+      "sha256": "700529058806023b6c1cfcc0cba9efdb8dac0abb0560b6c05516f15e4a2b7097",
+      "mask_sha256": "c2a39f32716b08dd1edace34401105f5ebfde6d6635cb7ab77dd408968c0706c"
+    },
+    "industry": {
+      "reference_rgb": [
+        100,
+        100,
+        95
+      ],
+      "derived_png": "docs/assets/korean-civic-decision-icons/focuses-industry.png",
+      "mask_png": "docs/assets/korean-civic-decision-icons/focuses-industry-mask.png",
+      "method": "Byte copy of previously isolated industry background and mask",
+      "sha256": "1527e2eb26346edcedaf1531c597a86b894565e772ff1a42008aa72a86340296",
+      "mask_sha256": "396e2460eab7f0bd3978535a8db68b2967233b72b7dad23d201e944ceb273f58"
+    }
+  },
+  "assets": [
+    {
+      "ids": [
+        "HOK_KOR_civic_balance"
+      ],
+      "kind": "category",
+      "sprite": "GFX_HOK_KOR_decision_category_civic_balance",
+      "texture": "gfx/interface/decisions/HOK_KOR/civic/category.dds",
+      "preview": "docs/assets/korean-civic-decision-icons/category.png",
+      "width": 51,
+      "height": 40,
+      "palette": "industry",
+      "reference_texture": "gfx/interface/goals/HOK_KOR/integrated_production_planning.dds",
+      "reference_match": "Direct visual comparison confirms attached badge composition; actual upstream filename Blueprints is retained",
+      "background_box": [
+        3,
+        1,
+        45,
+        38
+      ],
+      "recipe": [
+        {
+          "piece": "Blueprints",
+          "box": [
+            9.66,
+            5.54,
+            29.37,
+            20.79
+          ]
+        },
+        {
+          "piece": "Cog Wheel",
+          "box": [
+            9,
+            20.39,
+            14.52,
+            11.34
+          ]
+        },
+        {
+          "piece": "Circular Arrows",
+          "box": [
+            27.15,
+            20.39,
+            14.52,
+            11.34
+          ]
+        }
+      ],
+      "stage": null,
+      "edits": "Separate element composition, dedicated small canvas, larger central motif relative to frame; no Roman stage badge",
+      "sha256": "bafbbc102e4da51ab05ca9b15910dea930dc1461994bef4eb373a5a6381cd937",
+      "preview_sha256": "469e1a884b2b3bef889dadea6dbcdaee1373d77f1734eddb6043d8e55bf9252d"
+    },
+    {
+      "ids": [
+        "HOK_KOR_support_chaebol",
+        "HOK_KOR_suppress_chaebol",
+        "HOK_KOR_support_civic",
+        "HOK_KOR_suppress_civic"
+      ],
+      "kind": "decision",
+      "sprite": "GFX_HOK_KOR_decision_civic_influence_blue",
+      "texture": "gfx/interface/decisions/HOK_KOR/civic/influence_blue.dds",
+      "preview": "docs/assets/korean-civic-decision-icons/influence_blue.png",
+      "width": 32,
+      "height": 32,
+      "palette": "democracy",
+      "background_box": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "composition_box": [
+        4,
+        4,
+        24,
+        24
+      ],
+      "recipe": [
+        {
+          "piece": "Scales",
+          "normalized_box": [
+            0.03,
+            0,
+            0.94,
+            1
+          ],
+          "box": [
+            4.72,
+            4,
+            22.56,
+            24
+          ]
+        }
+      ],
+      "stage": null,
+      "original_texture": "gfx/interface/decisions/HOK_KOR/communist_governance/yeo_labor_compact.dds",
+      "original_sha256": "57dacaa69f260a889e9a751ec65302303ac22700fe01b1ddc5579e1f3fdfb58a",
+      "red_reconstruction": "Same component composition reproduces original red DDS byte-for-byte before changing background color",
+      "edits": "Only background layer recolored; original scales, metal rim, dimensions and alpha retained; shared red consumers preserved",
+      "sha256": "c305d3c1c4a747e060f8aca551678cebf6a5986fd91467fb34161b0fcb7f19ab",
+      "preview_sha256": "1cc9d88f43cccbe160f622e549914d9e8599fdcb12fd662e283a8be6ef0387f5"
+    }
+  ],
+  "asset_sources": [
+    {
+      "path": "CREDITS.txt",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/CREDITS.txt",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "sha256": "cf220dc66463d75163f7690ad77b02b662d0c05ca5d53dc62d33ed504512a7f5",
+      "bytes": 1029,
+      "git_blob_sha": "83efbe5261113f933a16698783d6803dfd593152",
+      "attribution": "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+      "project_copy": "docs/assets/korean-civic-decision-icons/sources/CREDITS.txt"
+    },
+    {
+      "path": "National Spirit Backgrounds/Circle.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/National%20Spirit%20Backgrounds/Circle.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "sha256": "11004efa4f5cafa05524bd1293d6fc464b42c0e33f0dd740a67de4c52bf17804",
+      "bytes": 25055,
+      "git_blob_sha": "ab1fa7b4a3a783fb528c496fcca2370001df1b52",
+      "attribution": "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+      "width": 64,
+      "height": 64,
+      "pixel_format": "Format32bppArgb",
+      "project_copy": "docs/assets/korean-civic-decision-icons/sources/National Spirit Backgrounds/Circle.png"
+    },
+    {
+      "path": "Focus Backgrounds/Circle with Ribbon2.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20Backgrounds/Circle%20with%20Ribbon2.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "sha256": "5bcf53259a04276b1586f6c83f7a35a14ba9d22742ea75fb4802911978db2f95",
+      "bytes": 33322,
+      "git_blob_sha": "6f0ebeed856a2fdc3f25f1ea0c82418b60c3d605",
+      "attribution": "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+      "width": 100,
+      "height": 88,
+      "pixel_format": "Format32bppArgb",
+      "project_copy": "docs/assets/korean-civic-decision-icons/sources/Focus Backgrounds/Circle with Ribbon2.png"
+    },
+    {
+      "path": "Focus & National Spirits Pieces/Scales.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Scales.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "sha256": "c0ac5a1a677c551cc40fcbf7f3a1cde31b000368793aafc070117c1ed24a27b4",
+      "bytes": 21187,
+      "git_blob_sha": "af20bf5ba767f3e79a71992b4101b99ac93fbe52",
+      "attribution": "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+      "width": 58,
+      "height": 69,
+      "pixel_format": "Format32bppArgb",
+      "project_copy": "docs/assets/korean-civic-decision-icons/sources/Focus & National Spirits Pieces/Scales.png"
+    },
+    {
+      "path": "Focus & National Spirits Pieces/Blueprints.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Blueprints.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "sha256": "1d75e423748392240bd246dc9681b2787c8f0c19c6200bf4a412a14809def3e4",
+      "bytes": 5253,
+      "git_blob_sha": "cf715e719d6b44cd9e70944648479d6ab31e16fa",
+      "attribution": "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+      "width": 45,
+      "height": 36,
+      "pixel_format": "Format32bppArgb",
+      "project_copy": "docs/assets/korean-civic-decision-icons/sources/Focus & National Spirits Pieces/Blueprints.png"
+    },
+    {
+      "path": "Focus & National Spirits Pieces/Cog Wheel.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Cog%20Wheel.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "sha256": "8765480f16fbfd54babe02163ad5db3a68e0472e18789c1880ee40c6b12a3ada",
+      "bytes": 19167,
+      "git_blob_sha": "86926f5beeed004bc812f7146c7ab4bdc7060bfa",
+      "attribution": "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+      "width": 42,
+      "height": 41,
+      "pixel_format": "Format32bppArgb",
+      "project_copy": "docs/assets/korean-civic-decision-icons/sources/Focus & National Spirits Pieces/Cog Wheel.png"
+    },
+    {
+      "path": "Focus & National Spirits Pieces/Circular Arrows.png",
+      "source_url": "https://raw.githubusercontent.com/Globvs/Ultimate-HOI4-GFX/3626dc83c8573d6603fa497138090b04b64a15ba/Focus%20%26%20National%20Spirits%20Pieces/Circular%20Arrows.png",
+      "upstream_commit": "3626dc83c8573d6603fa497138090b04b64a15ba",
+      "sha256": "49d17868495b84cabeef78c85a2111adf8d325a5b76a0cb72973f51f9150f4c4",
+      "bytes": 22609,
+      "git_blob_sha": "b40b603e4987e2daff273b74ef2585ea2947e1d4",
+      "attribution": "Globvs / Ultimate HOI4 GFX contributors (individual artist not mapped per file in upstream CREDITS)",
+      "width": 58,
+      "height": 59,
+      "pixel_format": "Format32bppArgb",
+      "project_copy": "docs/assets/korean-civic-decision-icons/sources/Focus & National Spirits Pieces/Circular Arrows.png"
+    }
+  ],
+  "validation": {
+    "source_static": "19 PASS/0 FAIL independently; reversing only five icon substitutions and five new comments yields exact baseline bytes",
+    "artwork": "Correct DDS sizes/pitch/channel masks/no mipmaps; 1024 row alpha bytes identical to original; 1695 background pixels changed, alpha and outside-mask pixels unchanged",
+    "runtime": "Complete for selected Korean1600x900 GUI1.0 states: source-only full restart575f header/unavailable/collapse/expand; external manual fixture2430 available and actual support PP93->43 then post-execution display; no time advance or saving",
+    "record": "docs/incidents/2026-10-12-korean-civic-decision-icons.md",
+    "logs": {
+      "baseline": [
+        193,
+        41
+      ],
+      "source_only": [
+        130,
+        41
+      ],
+      "fixture": [
+        131,
+        41
+      ],
+      "new_normalized_types": 0,
+      "new_icon_fixture_errors": 0
+    },
+    "cleanup": {
+      "temporary_loader_removed": true,
+      "original_profile_bytes_restored": true,
+      "settings_hash_matches_task_start": true,
+      "save_metadata_count": 76,
+      "save_metadata_differences": 0,
+      "new_saves": 0,
+      "external_fixture_retained_disabled": true
+    }
+  }
+}

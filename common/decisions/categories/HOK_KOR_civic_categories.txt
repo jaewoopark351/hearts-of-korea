@@ -1,0 +1,14 @@
+#20261011_kpopmodder: Expose influence after entry and procurement only after an industrial policy is selected.
+HOK_KOR_civic_balance = {
+	#20261012_kpopmodder: Give the civic category its own compact industrial badge.
+	icon = GFX_HOK_KOR_decision_category_civic_balance
+	allowed = { tag = KOR }
+	visible = { has_country_flag = HOK_KOR_civic_panel_unlocked }
+}
+
+#20261011_kpopmodder: Keep field contracts and their recovery decisions in the policy-unlocked procurement category.
+HOK_KOR_procurement_integrity = {
+	icon = GFX_HOK_KOR_decision_category_fascist_procurement
+	allowed = { tag = KOR }
+	visible = { has_country_flag = HOK_KOR_civic_panel_unlocked HOK_KOR_has_civic_policy = yes }
+}

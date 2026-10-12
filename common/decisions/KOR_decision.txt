@@ -912,14 +912,21 @@ KOR_jaebeol_category = {
 
 	KOR_order_to_samsung = {
 		icon = ger_mefo_bills
+		#20261012_kpopmodder: Transfer company orders to the new cooperation policy while retaining taming and registered prior-save access.
 		available = {
 			OR = {
+				has_completed_focus = HOK_KOR_civic_chaebol_cooperation
+				has_country_flag = HOK_KOR_legacy_cooperation_registered
+				#20261012_kpopmodder: Preserve completed historical-cooperation access immediately after load, before monthly registration.
 				has_completed_focus = KOR_cooperation_with_the_jaebeol
 				has_completed_focus = KOR_taming_the_jaebeol
 			}
 		}
 		visible = {
 			OR = {
+				has_completed_focus = HOK_KOR_civic_chaebol_cooperation
+				has_country_flag = HOK_KOR_legacy_cooperation_registered
+				#20261012_kpopmodder: Preserve completed historical-cooperation access immediately after load, before monthly registration.
 				has_completed_focus = KOR_cooperation_with_the_jaebeol
 				has_completed_focus = KOR_taming_the_jaebeol
 			}
@@ -935,14 +942,21 @@ KOR_jaebeol_category = {
 	
 	KOR_order_to_hyundai = {
 		icon = ger_mefo_bills
+		#20261012_kpopmodder: Transfer company orders to the new cooperation policy while retaining taming and registered prior-save access.
 		available = {
 			OR = {
+				has_completed_focus = HOK_KOR_civic_chaebol_cooperation
+				has_country_flag = HOK_KOR_legacy_cooperation_registered
+				#20261012_kpopmodder: Preserve completed historical-cooperation access immediately after load, before monthly registration.
 				has_completed_focus = KOR_cooperation_with_the_jaebeol
 				has_completed_focus = KOR_taming_the_jaebeol
 			}
 		}
 		visible = {
 			OR = {
+				has_completed_focus = HOK_KOR_civic_chaebol_cooperation
+				has_country_flag = HOK_KOR_legacy_cooperation_registered
+				#20261012_kpopmodder: Preserve completed historical-cooperation access immediately after load, before monthly registration.
 				has_completed_focus = KOR_cooperation_with_the_jaebeol
 				has_completed_focus = KOR_taming_the_jaebeol
 			}
@@ -955,14 +969,21 @@ KOR_jaebeol_category = {
 	
 	KOR_order_to_sk = {
 		icon = ger_mefo_bills
+		#20261012_kpopmodder: Transfer company orders to the new cooperation policy while retaining taming and registered prior-save access.
 		available = {
 			OR = {
+				has_completed_focus = HOK_KOR_civic_chaebol_cooperation
+				has_country_flag = HOK_KOR_legacy_cooperation_registered
+				#20261012_kpopmodder: Preserve completed historical-cooperation access immediately after load, before monthly registration.
 				has_completed_focus = KOR_cooperation_with_the_jaebeol
 				has_completed_focus = KOR_taming_the_jaebeol
 			}
 		}
 		visible = {
 			OR = {
+				has_completed_focus = HOK_KOR_civic_chaebol_cooperation
+				has_country_flag = HOK_KOR_legacy_cooperation_registered
+				#20261012_kpopmodder: Preserve completed historical-cooperation access immediately after load, before monthly registration.
 				has_completed_focus = KOR_cooperation_with_the_jaebeol
 				has_completed_focus = KOR_taming_the_jaebeol
 			}

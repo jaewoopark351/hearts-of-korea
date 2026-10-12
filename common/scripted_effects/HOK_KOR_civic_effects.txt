@@ -1,0 +1,295 @@
+#20261011_kpopmodder: Clamp four independent saved variables and replace obsolete influence, policy and corruption tiers.
+HOK_KOR_sync_civic_state = {
+	clamp_variable = { var = HOK_KOR_chaebol_influence min = 0 max = 100 }
+	clamp_variable = { var = HOK_KOR_civic_influence min = 0 max = 100 }
+	clamp_variable = { var = HOK_KOR_procurement_corruption min = 0 max = 100 }
+	clamp_variable = { var = HOK_KOR_institutional_capture min = 0 max = 100 }
+	if = {
+		limit = { check_variable = { var = HOK_KOR_chaebol_influence value = 75 compare = greater_than_or_equals } }
+		remove_ideas = HOK_KOR_chaebol_established
+		remove_ideas = HOK_KOR_chaebol_interfering
+		if = { limit = { NOT = { has_idea = HOK_KOR_chaebol_dominant } } add_ideas = HOK_KOR_chaebol_dominant }
+	} else_if = {
+		limit = { check_variable = { var = HOK_KOR_chaebol_influence value = 50 compare = greater_than_or_equals } }
+		remove_ideas = HOK_KOR_chaebol_established
+		remove_ideas = HOK_KOR_chaebol_dominant
+		if = { limit = { NOT = { has_idea = HOK_KOR_chaebol_interfering } } add_ideas = HOK_KOR_chaebol_interfering }
+	} else_if = {
+		limit = { check_variable = { var = HOK_KOR_chaebol_influence value = 25 compare = greater_than_or_equals } }
+		remove_ideas = HOK_KOR_chaebol_interfering
+		remove_ideas = HOK_KOR_chaebol_dominant
+		if = { limit = { NOT = { has_idea = HOK_KOR_chaebol_established } } add_ideas = HOK_KOR_chaebol_established }
+	} else = {
+		remove_ideas = HOK_KOR_chaebol_established
+		remove_ideas = HOK_KOR_chaebol_interfering
+		remove_ideas = HOK_KOR_chaebol_dominant
+	}
+	if = {
+		limit = { check_variable = { var = HOK_KOR_civic_influence value = 75 compare = greater_than_or_equals } }
+		remove_ideas = HOK_KOR_civic_established
+		remove_ideas = HOK_KOR_civic_interfering
+		if = { limit = { NOT = { has_idea = HOK_KOR_civic_dominant } } add_ideas = HOK_KOR_civic_dominant }
+	} else_if = {
+		limit = { check_variable = { var = HOK_KOR_civic_influence value = 50 compare = greater_than_or_equals } }
+		remove_ideas = HOK_KOR_civic_established
+		remove_ideas = HOK_KOR_civic_dominant
+		if = { limit = { NOT = { has_idea = HOK_KOR_civic_interfering } } add_ideas = HOK_KOR_civic_interfering }
+	} else_if = {
+		limit = { check_variable = { var = HOK_KOR_civic_influence value = 25 compare = greater_than_or_equals } }
+		remove_ideas = HOK_KOR_civic_interfering
+		remove_ideas = HOK_KOR_civic_dominant
+		if = { limit = { NOT = { has_idea = HOK_KOR_civic_established } } add_ideas = HOK_KOR_civic_established }
+	} else = {
+		remove_ideas = HOK_KOR_civic_established
+		remove_ideas = HOK_KOR_civic_interfering
+		remove_ideas = HOK_KOR_civic_dominant
+	}
+	if = {
+		limit = { has_country_flag = HOK_KOR_policy_cooperation }
+		if = { limit = { NOT = { has_idea = HOK_KOR_chaebol_cooperation } } add_ideas = HOK_KOR_chaebol_cooperation }
+	} else = { remove_ideas = HOK_KOR_chaebol_cooperation }
+	if = {
+		limit = { has_country_flag = HOK_KOR_policy_civic_reform NOT = { has_country_flag = HOK_KOR_prosecutorial_takeover } }
+		if = { limit = { NOT = { has_idea = HOK_KOR_civic_reform } } add_ideas = HOK_KOR_civic_reform }
+	} else = { remove_ideas = HOK_KOR_civic_reform }
+	if = {
+		limit = { has_country_flag = HOK_KOR_policy_public_ownership }
+		if = { limit = { NOT = { has_idea = HOK_KOR_public_ownership } } add_ideas = HOK_KOR_public_ownership }
+	} else = { remove_ideas = HOK_KOR_public_ownership }
+	if = {
+		limit = { check_variable = { var = HOK_KOR_procurement_corruption value = 70 compare = greater_than_or_equals } }
+		remove_ideas = HOK_KOR_procurement_corruption_moderate
+		if = { limit = { NOT = { has_idea = HOK_KOR_procurement_corruption_severe } } add_ideas = HOK_KOR_procurement_corruption_severe }
+	} else_if = {
+		limit = { check_variable = { var = HOK_KOR_procurement_corruption value = 40 compare = greater_than_or_equals } }
+		remove_ideas = HOK_KOR_procurement_corruption_severe
+		if = { limit = { NOT = { has_idea = HOK_KOR_procurement_corruption_moderate } } add_ideas = HOK_KOR_procurement_corruption_moderate }
+	} else = {
+		remove_ideas = HOK_KOR_procurement_corruption_moderate
+		remove_ideas = HOK_KOR_procurement_corruption_severe
+	}
+}
+
+#20261011_kpopmodder: Seed existing and new saves once without selecting a policy or recursively applying legacy adjustments.
+HOK_KOR_initialize_civic_system = {
+	if = {
+		limit = { tag = KOR NOT = { has_country_flag = HOK_KOR_civic_system_initialized } }
+		set_variable = { HOK_KOR_chaebol_influence = 60 }
+		set_variable = { HOK_KOR_civic_influence = 35 }
+		set_variable = { HOK_KOR_procurement_corruption = 20 }
+		set_variable = { HOK_KOR_institutional_capture = 40 }
+		set_country_flag = HOK_KOR_civic_system_initialized
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Apply one bounded action after either the decision loader or GUI wrapper has paid its cost.
+HOK_KOR_apply_support_chaebol = {
+	if = {
+		limit = { HOK_KOR_civic_action_state_available = yes check_variable = { HOK_KOR_chaebol_influence < 100 } }
+		add_to_variable = { HOK_KOR_chaebol_influence = 10 }
+		add_to_variable = { HOK_KOR_procurement_corruption = 5 }
+		add_to_variable = { HOK_KOR_institutional_capture = 3 }
+		set_country_flag = { flag = HOK_KOR_civic_action_cooldown value = 1 days = 90 }
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Charge GUI actions exactly once; decisions pay their visible engine cost before calling the shared helper.
+HOK_KOR_support_chaebol = {
+	custom_effect_tooltip = HOK_KOR_support_chaebol_tt
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_chaebol_influence < 100 } }
+		add_political_power = -50
+		hidden_effect = { HOK_KOR_apply_support_chaebol = yes }
+	}
+}
+
+#20261011_kpopmodder: Apply one bounded action after either the decision loader or GUI wrapper has paid its cost.
+HOK_KOR_apply_suppress_chaebol = {
+	if = {
+		limit = { HOK_KOR_civic_action_state_available = yes check_variable = { HOK_KOR_chaebol_influence > 0 } }
+		add_to_variable = { HOK_KOR_chaebol_influence = -10 }
+		add_to_variable = { HOK_KOR_procurement_corruption = -3 }
+		add_to_variable = { HOK_KOR_institutional_capture = 4 }
+		set_country_flag = { flag = HOK_KOR_civic_action_cooldown value = 1 days = 90 }
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Charge GUI actions exactly once; decisions pay their visible engine cost before calling the shared helper.
+HOK_KOR_suppress_chaebol = {
+	custom_effect_tooltip = HOK_KOR_suppress_chaebol_tt
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_chaebol_influence > 0 } }
+		add_political_power = -50
+		hidden_effect = { HOK_KOR_apply_suppress_chaebol = yes }
+	}
+}
+
+#20261011_kpopmodder: Apply one bounded action after either the decision loader or GUI wrapper has paid its cost.
+HOK_KOR_apply_support_civic = {
+	if = {
+		limit = { HOK_KOR_civic_action_state_available = yes check_variable = { HOK_KOR_civic_influence < 100 } }
+		add_to_variable = { HOK_KOR_civic_influence = 10 }
+		add_to_variable = { HOK_KOR_procurement_corruption = -2 }
+		if = { limit = { has_country_flag = HOK_KOR_policy_civic_reform } add_to_variable = { HOK_KOR_institutional_capture = 3 } }
+		set_country_flag = { flag = HOK_KOR_civic_action_cooldown value = 1 days = 90 }
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Charge GUI actions exactly once; decisions pay their visible engine cost before calling the shared helper.
+HOK_KOR_support_civic = {
+	custom_effect_tooltip = HOK_KOR_support_civic_tt
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_civic_influence < 100 } }
+		add_political_power = -50
+		hidden_effect = { HOK_KOR_apply_support_civic = yes }
+	}
+}
+
+#20261011_kpopmodder: Apply one bounded action after either the decision loader or GUI wrapper has paid its cost.
+HOK_KOR_apply_suppress_civic = {
+	if = {
+		limit = { HOK_KOR_civic_action_state_available = yes check_variable = { HOK_KOR_civic_influence > 0 } }
+		add_to_variable = { HOK_KOR_civic_influence = -10 }
+		add_to_variable = { HOK_KOR_procurement_corruption = 8 }
+		add_to_variable = { HOK_KOR_institutional_capture = 5 }
+		set_country_flag = { flag = HOK_KOR_civic_action_cooldown value = 1 days = 90 }
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Charge GUI actions exactly once; decisions pay their visible engine cost before calling the shared helper.
+HOK_KOR_suppress_civic = {
+	custom_effect_tooltip = HOK_KOR_suppress_civic_tt
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_civic_influence > 0 } }
+		add_political_power = -50
+		hidden_effect = { HOK_KOR_apply_suppress_civic = yes }
+	}
+}
+
+#20261011_kpopmodder: Select one new industrial policy without removing any legacy focus benefit.
+HOK_KOR_select_chaebol_cooperation = {
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { tag = KOR }
+		clr_country_flag = HOK_KOR_policy_cooperation
+		clr_country_flag = HOK_KOR_policy_civic_reform
+		clr_country_flag = HOK_KOR_policy_public_ownership
+		set_country_flag = HOK_KOR_policy_cooperation
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Select one new industrial policy without removing any legacy focus benefit.
+HOK_KOR_select_civic_reform = {
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { tag = KOR }
+		clr_country_flag = HOK_KOR_policy_cooperation
+		clr_country_flag = HOK_KOR_policy_civic_reform
+		clr_country_flag = HOK_KOR_policy_public_ownership
+		set_country_flag = HOK_KOR_policy_civic_reform
+		set_country_flag = HOK_KOR_civic_reform_pressure
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Select one new industrial policy without removing any legacy focus benefit.
+HOK_KOR_select_public_ownership = {
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { tag = KOR }
+		clr_country_flag = HOK_KOR_policy_cooperation
+		clr_country_flag = HOK_KOR_policy_civic_reform
+		clr_country_flag = HOK_KOR_policy_public_ownership
+		set_country_flag = HOK_KOR_policy_public_ownership
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Register an inherited legacy focus once while leaving the selected new policy untouched.
+HOK_KOR_legacy_cooperation_adjustment = {
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { tag = KOR NOT = { has_country_flag = HOK_KOR_legacy_cooperation_registered } }
+		add_to_variable = { HOK_KOR_chaebol_influence = 10 }
+		add_to_variable = { HOK_KOR_procurement_corruption = 5 }
+		add_to_variable = { HOK_KOR_institutional_capture = 5 }
+		set_country_flag = HOK_KOR_legacy_cooperation_registered
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Register an inherited legacy focus once while leaving the selected new policy untouched.
+HOK_KOR_legacy_taming_adjustment = {
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { tag = KOR NOT = { has_country_flag = HOK_KOR_legacy_taming_registered } }
+		add_to_variable = { HOK_KOR_chaebol_influence = -10 }
+		add_to_variable = { HOK_KOR_civic_influence = 5 }
+		add_to_variable = { HOK_KOR_procurement_corruption = -5 }
+		set_country_flag = HOK_KOR_legacy_taming_registered
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Register an inherited legacy focus once while leaving the selected new policy untouched.
+HOK_KOR_legacy_nationalization_adjustment = {
+	HOK_KOR_initialize_civic_system = yes
+	if = {
+		limit = { tag = KOR NOT = { has_country_flag = HOK_KOR_legacy_nationalization_registered } }
+		add_to_variable = { HOK_KOR_chaebol_influence = -20 }
+		add_to_variable = { HOK_KOR_civic_influence = 10 }
+		add_to_variable = { HOK_KOR_institutional_capture = -5 }
+		set_country_flag = HOK_KOR_legacy_nationalization_registered
+		HOK_KOR_sync_civic_state = yes
+	}
+}
+
+#20261011_kpopmodder: Read completed legacy focuses after initialization so older saves inherit each adjustment once.
+HOK_KOR_register_legacy_civic_state = {
+	HOK_KOR_initialize_civic_system = yes
+	#20261012_kpopmodder: Register either historical cooperation or the new policy through the existing saved once-only guard.
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = KOR_cooperation_with_the_jaebeol
+				has_completed_focus = HOK_KOR_civic_chaebol_cooperation
+			}
+		}
+		HOK_KOR_legacy_cooperation_adjustment = yes
+	}
+	if = { limit = { has_completed_focus = KOR_taming_the_jaebeol } HOK_KOR_legacy_taming_adjustment = yes }
+	if = { limit = { has_completed_focus = KOR_confiscation_of_chaebol_assets } HOK_KOR_legacy_nationalization_adjustment = yes }
+}
+
+#20261011_kpopmodder: Run bounded monthly drift only after policy selection and queue one warned institutional crisis.
+HOK_KOR_monthly_civic_update = {
+	HOK_KOR_register_legacy_civic_state = yes
+	if = {
+		limit = { has_country_flag = HOK_KOR_policy_cooperation check_variable = { var = HOK_KOR_chaebol_influence value = 75 compare = greater_than_or_equals } }
+		add_to_variable = { HOK_KOR_procurement_corruption = 2 }
+		add_to_variable = { HOK_KOR_institutional_capture = 1 }
+	}
+	if = {
+		limit = { has_country_flag = HOK_KOR_policy_civic_reform NOT = { has_country_flag = HOK_KOR_prosecutorial_takeover } }
+		add_to_variable = { HOK_KOR_procurement_corruption = -1 }
+		if = { limit = { has_country_flag = HOK_KOR_civic_reform_pressure } add_to_variable = { HOK_KOR_institutional_capture = 1 } }
+	}
+	if = { limit = { has_country_flag = HOK_KOR_policy_public_ownership } add_to_variable = { HOK_KOR_procurement_corruption = -1 } }
+	HOK_KOR_sync_civic_state = yes
+	if = {
+		limit = { HOK_KOR_prosecutor_crisis_eligible = yes }
+		set_country_flag = HOK_KOR_prosecutor_crisis_pending
+		country_event = { id = HOK_KOR_CIVIC.20 days = 1 }
+	}
+}
+

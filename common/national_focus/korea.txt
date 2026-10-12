@@ -8,6 +8,13 @@ focus_tree = {
 		}
 	}
 	
+	#20261011_kpopmodder: Keep the Korean influence panel in the fixed industrial gap, clear of focuses and the continuous panel.
+	inlay_window = {
+		id = HOK_KOR_civic_influence_inlay_window
+		#20261012_kpopmodder: Lower the complete civic panel to clear the synthetic-rubber nameplate.
+		position = { x = 1050 y = 1400 }
+	}
+
 	#20260921_kpopmodder: Add Korean branch shortcuts with an explicit vanilla zoom factor for consistent camera positioning.
 	#20260921_kpopmodder: Navigate all wide layout sectors with one consistent camera scale.
 	shortcut = { name = HOK_KOR_industry_expansion_shortcut target = KOR_devalue_the_won scroll_wheel_factor = 0.65 }
@@ -3930,6 +3937,8 @@ focus_tree = {
 				remove_ideas = KOR_great_depression_2
 			}
 			add_ideas = KOR_jaebeol
+			#20261011_kpopmodder: Reflect this inherited policy once without replacing the new mutually exclusive settlement.
+			HOK_KOR_legacy_nationalization_adjustment = yes
 		}
 	}
 	#Focus for Lessons from the Civil War
@@ -4769,32 +4778,7 @@ focus_tree = {
 			}
 		}
 	}
-	#Focus for cooperation with the jaebeol
-	focus = {
-		id = KOR_cooperation_with_the_jaebeol
-		icon = GFX_focus_generic_the_giant_wakes
-		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
-		relative_position_id = KOR_democracy_advance_forward
-		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 6
-		y = 4
-		cost = 5
-		available_if_capitulated = no
-		prerequisite = { 
-			focus = KOR_liberal_party_sole_power 
-			focus = KOR_independent_party_in_power 
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-			unlock_decision_tooltip = KOR_order_to_samsung
-			unlock_decision_tooltip = KOR_order_to_hyundai
-			unlock_decision_tooltip = KOR_order_to_sk
-		}
-	}
+	#20261012_kpopmodder: Replace the visible legacy cooperation entry with the civic compact and consolidate its rewards in the new cooperation policy.
 	#Focus for Liberal Party sole power
 	focus = {
 		id = KOR_liberal_party_sole_power
@@ -5466,7 +5450,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_join_the_allie
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -2
+		#20261012_kpopmodder: Clear the relocated civic branch and move the British destroyer follow-up with this anchor.
+		x = 0
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -7377,6 +7362,8 @@ focus_tree = {
 			unlock_decision_tooltip = KOR_order_to_samsung
 			unlock_decision_tooltip = KOR_order_to_hyundai
 			unlock_decision_tooltip = KOR_order_to_sk
+			#20261011_kpopmodder: Reflect this inherited policy once without replacing the new mutually exclusive settlement.
+			HOK_KOR_legacy_taming_adjustment = yes
 		}
 	}
 	#Focus for Korea reigns above the world
@@ -14253,6 +14240,347 @@ focus_tree = {
 		ai_will_do = { factor = 2 }
 		completion_reward = {
 			add_ideas = HOK_KOR_cmn_weather_flying
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_industrial_compact
+		icon = GFX_HOK_KOR_focus_civic_industrial_compact
+		#20261012_kpopmodder: Place the compact at the former democratic cooperation entry and inherit its single route offset.
+		relative_position_id = KOR_democracy_advance_forward
+		x = 6
+		y = 4
+		cost = 5
+		#20261012_kpopmodder: Accept either democratic sole-party government instead of requiring the common industrial focus.
+		prerequisite = { focus = KOR_liberal_party_sole_power focus = KOR_independent_party_in_power }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			HOK_KOR_initialize_civic_system = yes
+			set_country_flag = HOK_KOR_civic_panel_unlocked
+			add_political_power = 150
+			unlock_decision_category_tooltip = HOK_KOR_civic_balance
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_chaebol_cooperation
+		icon = GFX_HOK_KOR_focus_civic_chaebol_cooperation
+		#20261012_kpopmodder: Keep the democratic policy and its company follow-ups clear of the Hong Beom-do fortification lane.
+		relative_position_id = HOK_KOR_civic_industrial_compact
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_industrial_compact }
+		mutually_exclusive = { focus = HOK_KOR_civic_nationalization focus = HOK_KOR_civic_break_monopolies }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+			modifier = { factor = 3 has_war = yes }
+			modifier = { factor = 1.5 has_government = fascism }
+		}
+		#20261012_kpopmodder: Unlock inherited company orders and apply the inherited cooperation adjustment only once.
+		completion_reward = {
+			HOK_KOR_select_chaebol_cooperation = yes
+			HOK_KOR_legacy_cooperation_adjustment = yes
+			unlock_decision_tooltip = KOR_order_to_samsung
+			unlock_decision_tooltip = KOR_order_to_hyundai
+			unlock_decision_tooltip = KOR_order_to_sk
+			unlock_decision_category_tooltip = HOK_KOR_procurement_integrity
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_nationalization
+		icon = GFX_HOK_KOR_focus_civic_nationalization
+		#20261012_kpopmodder: Place public ownership between the cooperation and civic reform lanes.
+		relative_position_id = HOK_KOR_civic_industrial_compact
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_industrial_compact }
+		mutually_exclusive = { focus = HOK_KOR_civic_chaebol_cooperation focus = HOK_KOR_civic_break_monopolies }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+			modifier = { factor = 3 has_government = communism }
+		}
+		completion_reward = {
+			HOK_KOR_select_public_ownership = yes
+			unlock_decision_category_tooltip = HOK_KOR_procurement_integrity
+			if = {
+				limit = {
+					any_owned_state = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = { building = industrial_complex size > 1 include_locked = yes }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = { building = industrial_complex size > 1 include_locked = yes }
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				}
+			}
+			else = { add_offsite_building = { type = industrial_complex level = 2 } }
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_break_monopolies
+		icon = GFX_HOK_KOR_focus_civic_break_monopolies
+		relative_position_id = HOK_KOR_civic_industrial_compact
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_industrial_compact }
+		mutually_exclusive = { focus = HOK_KOR_civic_chaebol_cooperation focus = HOK_KOR_civic_nationalization }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+			modifier = { factor = 3 has_government = democratic }
+		}
+		completion_reward = {
+			HOK_KOR_select_civic_reform = yes
+			unlock_decision_category_tooltip = HOK_KOR_procurement_integrity
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_sunkyong_investment
+		icon = GFX_HOK_KOR_focus_civic_sunkyong_investment
+		relative_position_id = HOK_KOR_civic_chaebol_cooperation
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_chaebol_cooperation }
+		available = { has_civil_war = no has_country_flag = HOK_KOR_policy_cooperation }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_civic_sunkyong_investment bonus = 1.5 uses = 1 category = industry }
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_samsung_electronics
+		icon = GFX_HOK_KOR_focus_civic_samsung_electronics
+		relative_position_id = HOK_KOR_civic_chaebol_cooperation
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_chaebol_cooperation }
+		available = { has_civil_war = no has_country_flag = HOK_KOR_policy_cooperation }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_civic_samsung_electronics bonus = 1.0 uses = 1 category = electronics }
+			add_political_power = 100
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_goldstar_mass_production
+		icon = GFX_HOK_KOR_focus_civic_goldstar_mass_production
+		#20261012_kpopmodder: Use a separate company row below the two research-investment focuses.
+		relative_position_id = HOK_KOR_civic_chaebol_cooperation
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_chaebol_cooperation }
+		available = { has_civil_war = no has_country_flag = HOK_KOR_policy_cooperation }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_labor_compact
+		icon = GFX_HOK_KOR_focus_civic_labor_compact
+		#20261012_kpopmodder: Leave space for the three-policy exclusions before the civic production reforms.
+		relative_position_id = HOK_KOR_civic_break_monopolies
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_break_monopolies }
+		available = { has_civil_war = no has_country_flag = HOK_KOR_policy_civic_reform }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_ideas = HOK_KOR_civic_production_quality
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_mass_conscription
+		icon = GFX_HOK_KOR_focus_civic_mass_conscription
+		relative_position_id = HOK_KOR_civic_labor_compact
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_labor_compact }
+		available = { has_civil_war = no has_country_flag = HOK_KOR_policy_civic_reform }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_XP }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_manpower = 100000
+			army_experience = 30
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_public_accountability
+		icon = GFX_HOK_KOR_focus_civic_public_accountability
+		relative_position_id = HOK_KOR_civic_labor_compact
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_labor_compact }
+		available = { has_civil_war = no has_country_flag = HOK_KOR_policy_civic_reform }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_ideas = HOK_KOR_civic_professional_service
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_social_settlement
+		icon = GFX_HOK_KOR_focus_civic_social_settlement
+		#20261012_kpopmodder: Separate the two-parent settlement nameplate from both prerequisite connections.
+		relative_position_id = HOK_KOR_civic_labor_compact
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_mass_conscription }
+		prerequisite = { focus = HOK_KOR_civic_public_accountability }
+		available = { has_civil_war = no has_country_flag = HOK_KOR_policy_civic_reform }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_tech_bonus = { name = HOK_KOR_civic_social_settlement bonus = 1.5 uses = 1 category = industry }
+			add_political_power = 150
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_public_procurement
+		icon = GFX_HOK_KOR_focus_civic_public_procurement
+		relative_position_id = HOK_KOR_civic_nationalization
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_nationalization }
+		available = { has_civil_war = no has_country_flag = HOK_KOR_policy_public_ownership }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_ideas = HOK_KOR_civic_contract_succession
+			add_political_power = 100
+		}
+	}
+
+	#20261011_kpopmodder: Add a Korean civic and industrial policy while preserving inherited companies, orders, and political branches.
+	focus = {
+		id = HOK_KOR_civic_procurement_inspections
+		icon = GFX_HOK_KOR_focus_civic_procurement_inspections
+		relative_position_id = HOK_KOR_civic_industrial_compact
+		x = 6
+		y = 2
+		cost = 5
+		prerequisite = { focus = HOK_KOR_civic_chaebol_cooperation focus = HOK_KOR_civic_nationalization focus = HOK_KOR_civic_break_monopolies }
+		available = { has_civil_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = { name = HOK_KOR_civic_procurement_inspections bonus = 1.0 uses = 1 category = electronics }
+			set_country_flag = HOK_KOR_air_procurement_unlocked
+			set_country_flag = HOK_KOR_rocket_procurement_unlocked
+			unlock_decision_tooltip = HOK_KOR_fast_track_air_contracts
+			unlock_decision_tooltip = HOK_KOR_fast_track_rocket_contracts
 		}
 	}
 }

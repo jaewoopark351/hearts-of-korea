@@ -1,0 +1,254 @@
+HOK_KOR_civic_balance = {
+	#20261011_kpopmodder: Show the real political-power cost and use the same bounded state change as the GUI.
+	HOK_KOR_support_chaebol = {
+		#20261012_kpopmodder: Use dedicated blue civic artwork while preserving shared red icons.
+		icon = GFX_HOK_KOR_decision_civic_influence_blue
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_civic_panel_unlocked }
+		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_chaebol_influence < 100 } }
+		cost = 50
+		fire_only_once = no
+		complete_effect = { custom_effect_tooltip = HOK_KOR_support_chaebol_tt hidden_effect = { HOK_KOR_apply_support_chaebol = yes } }
+		ai_will_do = { factor = 0.3 modifier = { factor = 0 NOT = { has_political_power > 99 } } }
+	}
+
+	#20261011_kpopmodder: Show the real political-power cost and use the same bounded state change as the GUI.
+	HOK_KOR_suppress_chaebol = {
+		#20261012_kpopmodder: Use dedicated blue civic artwork while preserving shared red icons.
+		icon = GFX_HOK_KOR_decision_civic_influence_blue
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_civic_panel_unlocked }
+		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_chaebol_influence > 0 } }
+		cost = 50
+		fire_only_once = no
+		complete_effect = { custom_effect_tooltip = HOK_KOR_suppress_chaebol_tt hidden_effect = { HOK_KOR_apply_suppress_chaebol = yes } }
+		ai_will_do = { factor = 0.3 modifier = { factor = 0 NOT = { has_political_power > 99 } } }
+	}
+
+	#20261011_kpopmodder: Show the real political-power cost and use the same bounded state change as the GUI.
+	HOK_KOR_support_civic = {
+		#20261012_kpopmodder: Use dedicated blue civic artwork while preserving shared red icons.
+		icon = GFX_HOK_KOR_decision_civic_influence_blue
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_civic_panel_unlocked }
+		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_civic_influence < 100 } }
+		cost = 50
+		fire_only_once = no
+		complete_effect = { custom_effect_tooltip = HOK_KOR_support_civic_tt hidden_effect = { HOK_KOR_apply_support_civic = yes } }
+		ai_will_do = { factor = 0.3 modifier = { factor = 0 NOT = { has_political_power > 99 } } }
+	}
+
+	#20261011_kpopmodder: Show the real political-power cost and use the same bounded state change as the GUI.
+	HOK_KOR_suppress_civic = {
+		#20261012_kpopmodder: Use dedicated blue civic artwork while preserving shared red icons.
+		icon = GFX_HOK_KOR_decision_civic_influence_blue
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_civic_panel_unlocked }
+		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_civic_influence > 0 } }
+		cost = 50
+		fire_only_once = no
+		complete_effect = { custom_effect_tooltip = HOK_KOR_suppress_civic_tt hidden_effect = { HOK_KOR_apply_suppress_civic = yes } }
+		ai_will_do = { factor = 0.3 modifier = { factor = 0 NOT = { has_political_power > 99 } } }
+	}
+
+	#20261011_kpopmodder: Provide a visible 45-day response inside the warned 90-day coup deadline.
+	HOK_KOR_secure_prosecutorial_records = {
+		icon = GFX_HOK_KOR_decision_yeo_labor_compact
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_policy_civic_reform has_country_flag = HOK_KOR_prosecutor_crisis_active }
+		available = { NOT = { has_country_flag = HOK_KOR_record_protection_active } }
+		cost = 150
+		days_remove = 45
+		fire_only_once = no
+		complete_effect = { set_country_flag = HOK_KOR_record_protection_active }
+		remove_effect = {
+			clr_country_flag = HOK_KOR_record_protection_active
+			set_country_flag = { flag = HOK_KOR_prosecutor_defence_prepared value = 1 days = 365 }
+			add_to_variable = { HOK_KOR_institutional_capture = -15 }
+			HOK_KOR_sync_civic_state = yes
+		}
+		ai_will_do = { factor = 20 }
+	}
+
+	#20261011_kpopmodder: Offer a costly lasting reform path instead of an endless institutional punishment loop.
+	HOK_KOR_break_capture_networks = {
+		icon = GFX_HOK_KOR_decision_yeo_labor_compact
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_policy_civic_reform }
+		available = {
+			NOT = { has_country_flag = HOK_KOR_capture_reform_active }
+			NOT = { has_country_flag = HOK_KOR_capture_reform_completed }
+			NOT = { has_country_flag = HOK_KOR_prosecutorial_takeover }
+		}
+		cost = 200
+		days_remove = 60
+		fire_only_once = yes
+		complete_effect = { set_country_flag = HOK_KOR_capture_reform_active add_stability = -0.05 }
+		remove_effect = {
+			clr_country_flag = HOK_KOR_capture_reform_active
+			clr_country_flag = HOK_KOR_civic_reform_pressure
+			set_country_flag = HOK_KOR_capture_reform_completed
+			add_to_variable = { HOK_KOR_institutional_capture = -25 }
+			add_to_variable = { HOK_KOR_procurement_corruption = -10 }
+			add_to_variable = { HOK_KOR_civic_influence = 5 }
+			HOK_KOR_sync_civic_state = yes
+		}
+		ai_will_do = { factor = 5 modifier = { factor = 4 has_country_flag = HOK_KOR_prosecutor_crisis_active } }
+	}
+
+	#20261011_kpopmodder: Restore the new civic policy through civilian mobilisation without invoking an existing army coup or leader swap.
+	HOK_KOR_restore_civilian_mandate = {
+		icon = GFX_HOK_KOR_decision_yeo_labor_compact
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_prosecutorial_takeover }
+		available = {
+			check_variable = { var = HOK_KOR_civic_influence value = 50 compare = greater_than_or_equals }
+			NOT = { has_country_flag = HOK_KOR_civilian_restoration_active }
+		}
+		cost = 200
+		days_remove = 90
+		fire_only_once = no
+		complete_effect = { set_country_flag = HOK_KOR_civilian_restoration_active }
+		remove_effect = {
+			clr_country_flag = HOK_KOR_civilian_restoration_active
+			clr_country_flag = HOK_KOR_prosecutorial_takeover
+			clr_country_flag = HOK_KOR_civic_reform_pressure
+			remove_ideas = HOK_KOR_prosecutorial_takeover_idea
+			add_to_variable = { HOK_KOR_institutional_capture = -30 }
+			add_to_variable = { HOK_KOR_procurement_corruption = -10 }
+			add_stability = 0.05
+			set_country_flag = { flag = HOK_KOR_prosecutor_crisis_cooldown value = 1 days = 365 }
+			HOK_KOR_sync_civic_state = yes
+			country_event = { id = HOK_KOR_CIVIC.23 days = 1 }
+		}
+		ai_will_do = { factor = 15 }
+	}
+
+	#20261011_kpopmodder: Make crisis escalation a visible timed mission with independent counterplay and a specific civilian failure state.
+	HOK_KOR_prosecutor_coup_countdown = {
+		icon = GFX_HOK_KOR_decision_yeo_labor_compact
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_prosecutor_crisis_active }
+		available = { always = no }
+		activation = { always = no }
+		days_mission_timeout = 90
+		is_good = no
+		fire_only_once = no
+		cancel_trigger = { OR = { check_variable = { HOK_KOR_institutional_capture < 60 } has_country_flag = HOK_KOR_prosecutor_defence_prepared NOT = { has_country_flag = HOK_KOR_policy_civic_reform } } }
+		cancel_effect = {
+			clr_country_flag = HOK_KOR_prosecutor_crisis_active
+			remove_ideas = HOK_KOR_prosecutor_pressure
+			set_country_flag = { flag = HOK_KOR_prosecutor_crisis_cooldown value = 1 days = 365 }
+			country_event = { id = HOK_KOR_CIVIC.21 days = 1 }
+		}
+		timeout_effect = {
+			clr_country_flag = HOK_KOR_prosecutor_crisis_active
+			remove_ideas = HOK_KOR_prosecutor_pressure
+			set_country_flag = HOK_KOR_prosecutorial_takeover
+			add_ideas = HOK_KOR_prosecutorial_takeover_idea
+			add_stability = -0.10
+			HOK_KOR_sync_civic_state = yes
+			country_event = { id = HOK_KOR_CIVIC.22 days = 1 }
+		}
+	}
+
+}
+
+HOK_KOR_procurement_integrity = {
+	#20261011_kpopmodder: Charge time and political power for repeatable integrity management without erasing active field hazards.
+	HOK_KOR_independent_procurement_audit = {
+		icon = GFX_HOK_KOR_decision_nrsc_material_contracts
+		allowed = { tag = KOR }
+		visible = { HOK_KOR_has_civic_policy = yes }
+		available = { NOT = { has_country_flag = HOK_KOR_audit_active } NOT = { has_country_flag = HOK_KOR_audit_cooldown } }
+		cost = 100
+		days_remove = 60
+		fire_only_once = no
+		complete_effect = { set_country_flag = HOK_KOR_audit_active }
+		remove_effect = {
+			clr_country_flag = HOK_KOR_audit_active
+			set_country_flag = { flag = HOK_KOR_audit_cooldown value = 1 days = 180 }
+			add_to_variable = { HOK_KOR_procurement_corruption = -12 }
+			add_to_variable = { HOK_KOR_institutional_capture = -5 }
+			HOK_KOR_sync_civic_state = yes
+		}
+		ai_will_do = { factor = 3 modifier = { factor = 3 check_variable = { var = HOK_KOR_procurement_corruption value = 40 compare = greater_than_or_equals } } }
+	}
+
+	#20261011_kpopmodder: Gate a visible risky field incentive through one shared procurement slot and cooldown.
+	HOK_KOR_fast_track_air_contracts = {
+		icon = GFX_HOK_KOR_decision_nrsc_material_contracts
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_air_procurement_unlocked }
+		available = {
+			HOK_KOR_civic_procurement_slot_available = yes
+			NOT = { has_idea = HOK_KOR_air_procurement_accident }
+			NOT = { has_idea = HOK_KOR_rocket_procurement_accident }
+		}
+		cost = 75
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = HOK_KOR_air_contract_active
+			set_country_flag = { flag = HOK_KOR_procurement_contract_cooldown value = 1 days = 365 }
+			add_timed_idea = { idea = HOK_KOR_fast_air_procurement days = 180 }
+			add_to_variable = { HOK_KOR_procurement_corruption = 10 }
+			add_to_variable = { HOK_KOR_institutional_capture = 5 }
+			HOK_KOR_sync_civic_state = yes
+			country_event = { id = HOK_KOR_CIVIC.1 days = 30 random_days = 15 }
+		}
+		ai_will_do = { factor = 0.3 modifier = { factor = 3 has_war = yes } modifier = { factor = 0 check_variable = { var = HOK_KOR_procurement_corruption value = 70 compare = greater_than_or_equals } } }
+	}
+
+	#20261011_kpopmodder: Require paid field recovery while preserving the original contract cooldown.
+	HOK_KOR_recover_air_procurement = {
+		icon = GFX_HOK_KOR_decision_nrsc_material_contracts
+		allowed = { tag = KOR }
+		visible = { has_idea = HOK_KOR_air_procurement_accident }
+		available = { NOT = { has_country_flag = HOK_KOR_air_recovery_active } }
+		cost = 150
+		days_remove = 60
+		fire_only_once = no
+		complete_effect = { set_country_flag = HOK_KOR_air_recovery_active }
+		remove_effect = { country_event = { id = HOK_KOR_CIVIC.3 } }
+		ai_will_do = { factor = 10 }
+	}
+
+	#20261011_kpopmodder: Gate a visible risky field incentive through one shared procurement slot and cooldown.
+	HOK_KOR_fast_track_rocket_contracts = {
+		icon = GFX_HOK_KOR_decision_nrsc_material_contracts
+		allowed = { tag = KOR }
+		visible = { has_country_flag = HOK_KOR_rocket_procurement_unlocked }
+		available = {
+			HOK_KOR_civic_procurement_slot_available = yes
+			NOT = { has_idea = HOK_KOR_air_procurement_accident }
+			NOT = { has_idea = HOK_KOR_rocket_procurement_accident }
+		}
+		cost = 75
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = HOK_KOR_rocket_contract_active
+			set_country_flag = { flag = HOK_KOR_procurement_contract_cooldown value = 1 days = 365 }
+			add_timed_idea = { idea = HOK_KOR_fast_rocket_procurement days = 180 }
+			add_to_variable = { HOK_KOR_procurement_corruption = 10 }
+			add_to_variable = { HOK_KOR_institutional_capture = 5 }
+			HOK_KOR_sync_civic_state = yes
+			country_event = { id = HOK_KOR_CIVIC.11 days = 30 random_days = 15 }
+		}
+		ai_will_do = { factor = 0.3 modifier = { factor = 3 has_war = yes } modifier = { factor = 0 check_variable = { var = HOK_KOR_procurement_corruption value = 70 compare = greater_than_or_equals } } }
+	}
+
+	#20261011_kpopmodder: Require paid field recovery while preserving the original contract cooldown.
+	HOK_KOR_recover_rocket_procurement = {
+		icon = GFX_HOK_KOR_decision_nrsc_material_contracts
+		allowed = { tag = KOR }
+		visible = { has_idea = HOK_KOR_rocket_procurement_accident }
+		available = { NOT = { has_country_flag = HOK_KOR_rocket_recovery_active } }
+		cost = 150
+		days_remove = 60
+		fire_only_once = no
+		complete_effect = { set_country_flag = HOK_KOR_rocket_recovery_active }
+		remove_effect = { country_event = { id = HOK_KOR_CIVIC.13 } }
+		ai_will_do = { factor = 10 }
+	}
+
+}
