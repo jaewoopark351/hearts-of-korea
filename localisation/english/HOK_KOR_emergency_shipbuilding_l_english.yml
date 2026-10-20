@@ -1,0 +1,6 @@
+﻿l_english:
+#20261020_kpopmodder: Name the repeatable emergency shipbuilding plan and explain its naval purpose, duration and reuse conditions.
+ HOK_KOR_enact_emergency_special_shipbuilding:0 "긴급 특별 건함계획 시행"
+ HOK_KOR_enact_emergency_special_shipbuilding_desc:0 "진수대를 비워 둔 채로는 대양함대를 갖출 수 없습니다. 해군과 조선소가 강재와 기관의 납품 일정을 맞추고, 숙련공과 도크를 건함 작업에 집중하도록 긴급 특별 건함계획을 시행하겠습니다. 군함을 건조하는 조선소부터 물자를 실어 나를 수송선까지, 비전 1950을 향한 작업을 서두를 것입니다.\n\n정치력 150을 사용하여 180일 동안 §Y긴급 특별 건함계획§! 국민정신을 얻습니다. 적용 중에는 다시 시행할 수 없으며, 만료 후 추가 대기기간 없이 같은 비용으로 횟수 제한 없이 다시 시행할 수 있습니다."
+ HOK_KOR_emergency_special_shipbuilding:0 "긴급 특별 건함계획"
+ HOK_KOR_emergency_special_shipbuilding_desc:0 "해군이 요구하는 함대는 조선소의 진수대에서 시작됩니다. 강판을 기다리던 선체와 기관을 기다리던 도크가 함께 움직이도록 납품 순서를 조정하고 숙련공을 집중 배치하고 있습니다. 전투함과 지원함, 함대에 필요한 물자를 나를 수송선의 건조까지 하나의 긴급 계획 아래 추진하여 비전 1950의 실현을 앞당길 것입니다."

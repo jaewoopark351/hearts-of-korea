@@ -1,0 +1,210 @@
+{
+  "source_baseline": {
+    "branch": "feat/korean-focus-expansion-ai",
+    "commit": "d4031aaa0c1f85bb89b0e6ca21d041beade8bd26",
+    "date": "2026-10-20",
+    "working_tree_at_artwork_start": "README.md modified and Vision 1950 plan untracked from prior authorized documentation; parallel authorized gameplay/localisation implementation preserved."
+  },
+  "status": "artwork_integrated_static_pass_bounded_runtime_ui_observed",
+  "scope": "Two new Vision 1950 emergency special shipbuilding policy assets: dedicated decision row 32x32 and national spirit 60x68. No inherited artwork altered.",
+  "method": "AI-generated raster originals using built-in image_gen.imagegen, one independent generation call per asset; original illustrated border/backing/motif retained. No external illustration or asset-pack component reused.",
+  "generation": {
+    "tool": "image_gen.imagegen (built-in)",
+    "date": "2026-10-20",
+    "model": null,
+    "model_note": "Actual model identifier was not exposed in tool response; not inferred.",
+    "reference_images": [],
+    "prompt_record": "docs/assets/korean-emergency-shipbuilding/generation-record.json",
+    "prompt_record_sha256": "e381b2a4744ded561a5d1ff7c842fab84081c2053292bd836b91dff0147e1faa",
+    "attribution": "AI-generated artwork; kpopmodder continuation work: policy-specific prompt specification, selection, native-size conversion, sprite integration and validation. Not attributed to original Hearts of Korea author or an external artist.",
+    "third_party_source_components": []
+  },
+  "palette": {
+    "id": "navy",
+    "reference_rgb": [
+      40,
+      59,
+      82
+    ],
+    "reference_hex": "#283b52",
+    "application": "Generation prompt requested navy/slate background with silver-gray metal subject and frame; this is a palette target with generated shading, not a fixed per-pixel fill. No whole-image hue filter or recoloring was applied.",
+    "motif_relationship": "Both depict naval ship construction; simplified ship and hammer for decision, shipyard crane and unfinished hull for spirit. No upgrade stages or ideology-dependent coloring."
+  },
+  "pipeline": {
+    "operations": [
+      "Preserve selected generated PNG unchanged in project docs/assets working directory.",
+      "Find source content bounding rectangle using alpha > 8 only for crop boundary; retain original per-pixel alpha.",
+      "Fit crop proportionally using System.Drawing HighQualityBicubic and SourceCopy; 1 pixel minimum decision margin, 2 pixels minimum spirit margin.",
+      "Export one mip level as uncompressed BGRA32 DDS (DDS_PIXELFORMAT RGB|ALPHAPIXELS, 32-bit masks 00FF0000/0000FF00/000000FF/FF000000).",
+      "Decode written DDS and compare every pixel to resized RGBA buffer; inspect decoded actual-size and 6x nearest-neighbor previews."
+    ],
+    "helper": "C:/hoi/test/vision1950-20261020-01/art/export-icons.ps1",
+    "helper_sha256": "3eb419a80b78abedcff6d4ebb16feeb6aab6e3d1f39e025fcbb6176635562e24",
+    "helper_location_note": "Temporary conversion and evidence files intentionally remain outside repository under required test directory."
+  },
+  "sprite_definition": {
+    "path": "interface/HOK_KOR_emergency_shipbuilding_icons.gfx",
+    "sha256": "0a5e3d2674418dc48634ab1683f96066dd83225eb22c85eda1f2979aa3a96ed9",
+    "contributor_note": "#20261020_kpopmodder: Add dedicated naval-policy decision and national-spirit artwork."
+  },
+  "native_ui": {
+    "reference": "Installed HOI4 1.19.3 interface/countrydecisionview.gui:422-437; project decision-icon repair record",
+    "decision_row_center": [
+      30,
+      19
+    ],
+    "row_size": [
+      32,
+      32
+    ],
+    "row_title_x": 63,
+    "spirit_size": [
+      60,
+      68
+    ],
+    "decision_canvas_bounds": [
+      14,
+      3,
+      46,
+      35
+    ],
+    "decision_title_clearance_px": 17,
+    "note": "Static UI coordinate calculation; not an in-game screenshot or a scale/locked-state runtime claim."
+  },
+  "assets": [
+    {
+      "kind": "decision",
+      "content_id": "HOK_KOR_enact_emergency_special_shipbuilding",
+      "name": "긴급 특별 건함계획 시행",
+      "sprite": "GFX_HOK_KOR_decision_emergency_special_shipbuilding",
+      "content_reference": "icon = GFX_HOK_KOR_decision_emergency_special_shipbuilding",
+      "motif": "Simplified silver side-profile ship and diagonal shipyard hammer on navy circular backing with metal rim.",
+      "source_original": "docs/assets/korean-emergency-shipbuilding/emergency_special_shipbuilding_decision_original.png",
+      "source_sha256": "7a8c56023ee44ab988f59e62d23063bea2a3507a58fff2efa09f7d6bb69f6e14",
+      "source_size": [
+        1273,
+        1236
+      ],
+      "crop_alpha_gt_8": [
+        104,
+        86,
+        1064,
+        1059
+      ],
+      "target_rectangle": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "runtime": "gfx/interface/decisions/HOK_KOR/emergency_shipbuilding/emergency_special_shipbuilding.dds",
+      "size": [
+        32,
+        32
+      ],
+      "format": "BGRA32 uncompressed DDS, alpha, single level",
+      "runtime_sha256": "383cfe8e1552eca4eb6621535e3b3da89984a414f3e00ad2f63c5f2fed1fe350",
+      "bytes": 4224,
+      "alpha_pixels": {
+        "zero": 276,
+        "partial": 658,
+        "opaque": 90
+      },
+      "runtime_content_bounds_alpha_gt_8": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "dds_roundtrip_exact": true
+    },
+    {
+      "kind": "national_spirit",
+      "content_id": "HOK_KOR_emergency_special_shipbuilding",
+      "name": "긴급 특별 건함계획",
+      "sprite": "GFX_idea_HOK_KOR_emergency_special_shipbuilding",
+      "content_reference": "picture = HOK_KOR_emergency_special_shipbuilding",
+      "motif": "Shipyard crane and hook over an unfinished ship hull in drydock, silver rim and navy wave backing.",
+      "source_original": "docs/assets/korean-emergency-shipbuilding/emergency_special_shipbuilding_spirit_original.png",
+      "source_sha256": "b81195035ff28bec9daeee3f7c573465412ec13cbfac4a5f7ba4c56b51038b7e",
+      "source_size": [
+        1178,
+        1335
+      ],
+      "crop_alpha_gt_8": [
+        27,
+        13,
+        1125,
+        1304
+      ],
+      "target_rectangle": [
+        2,
+        2,
+        55,
+        64
+      ],
+      "runtime": "gfx/interface/ideas/HOK_KOR/emergency_special_shipbuilding.dds",
+      "size": [
+        60,
+        68
+      ],
+      "format": "BGRA32 uncompressed DDS, alpha, single level",
+      "runtime_sha256": "f7a33fd43eeeadceeff2ed8f32d6b6b1dae97b8482fd1c9e7a0d97da724a1b9b",
+      "bytes": 16448,
+      "alpha_pixels": {
+        "zero": 1246,
+        "partial": 2653,
+        "opaque": 181
+      },
+      "runtime_content_bounds_alpha_gt_8": [
+        2,
+        2,
+        55,
+        64
+      ],
+      "dds_roundtrip_exact": true
+    }
+  ],
+  "validation": {
+    "static": "PASS: actual-size and 6x decoded-DDS preview inspected; motifs/contrast/alpha/margins/readability clear, exact pixel round trip succeeds.",
+    "preview": "C:/hoi/test/vision1950-20261020-01/art/dds-contact-sheet.png",
+    "decision_export_record": "C:/hoi/test/vision1950-20261020-01/art/decision-export.json",
+    "spirit_export_record": "C:/hoi/test/vision1950-20261020-01/art/spirit-export.json",
+    "runtime": "CONFIRMED bounded UI observation in the parent implementation's diagnostic-assisted run: the final dedicated ship/hammer decision icon and localized name render in the unlocked row at 149 PP and remain visible in the unavailable row after first use; the final crane/hull national-spirit icon appears in politics and its tooltip displays the localized name, per-class cost effects and scheduled removal date. Screenshots inspected directly. This does not establish all UI states, normal focus progression or all DLC/GUI-scale combinations.",
+    "runtime_environment": {
+      "date": "2026-10-20",
+      "settings_resolution": [1280, 720],
+      "gui_scale": 1.0,
+      "screenshot_resolution": [2564, 1504],
+      "screenshot_note": "Original dimensions reflect the capture/DPI setup; distinct from game settings resolution.",
+      "man_the_guns": true,
+      "dlc_count": 36,
+      "enabled_mod_count": 2,
+      "scenario": "Diagnostic-assisted focus-complete state and first real decision use; bounded artwork display observation. Expiry/repeat behavior is tracked separately by parent implementation."
+    },
+    "runtime_evidence": [
+      {
+        "path": "C:/hoi/test/vision1950-20261020-01/runtime-ui/05-unlocked-blocked-at-149.png",
+        "sha256": "ae49e3d508136d28b35b25013f59cf5c0c282450c1adf1c317047ef57ce9c4a0",
+        "observation": "Named unlocked decision with dedicated ship/hammer icon at 149 PP and its action tooltip."
+      },
+      {
+        "path": "C:/hoi/test/vision1950-20261020-01/runtime-ui/06-first-use-pp350.png",
+        "sha256": "4f1078e38437d17fb8f96b12df3bbde4485a591c7a23ae1c4b0bd98c7ea15a19",
+        "observation": "Dedicated decision icon remains in the unavailable row after first use."
+      },
+      {
+        "path": "C:/hoi/test/vision1950-20261020-01/runtime-ui/07-spirit-effects-expiry-june30.png",
+        "sha256": "d165cce4b40a9fe9254c912b8b3287425474856fae5dcdc4e2a6320e24532b71",
+        "observation": "National-spirit icon in politics and localized tooltip with per-class cost effects and scheduled June 30 removal date."
+      }
+    ],
+    "unverified_states": [
+      "all decision visual interaction states beyond captured rows",
+      "in-game GUI-scale variants",
+      "DLC combinations beyond observed setup",
+      "normal focus progression and expiry/repeat behavior belong to separate parent gameplay validation"
+    ]
+  },
+  "git_actions": "No commit, push or publication performed."
+}

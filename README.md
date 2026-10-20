@@ -10,6 +10,9 @@
 
 ## 문서 목록
 
+- [비전 1950 긴급 특별 건함계획 명세](docs/HOK_KOREAN_VISION_1950_EMERGENCY_SHIPBUILDING_PLAN.md): 구현·정적 86/0·기록한 조건의 기능 검증 완료. 정치력 150으로 함정·지원함·수리함·수송선 비용 −50% 보정 180일, 적용 중 사용 차단·만료 후 추가 대기 없이 무제한 반복
+- [긴급 특별 건함계획 구현·검증 기록](docs/incidents/2026-10-20-korean-emergency-shipbuilding.md): 실제 사용·비용 감소와 복귀·재사용·최종 일반 실행 새 게임 새 정규화 오류 0. 강제 조건 준비·합성 저장 경고·정상 진행 및 미검증 항목은 분리
+- [긴급 특별 건함계획 이미지 출처](docs/HOK_KOREAN_EMERGENCY_SHIPBUILDING_ASSET_CREDITS.md): AI 생성 전용 그림 2개·원본 보존·32×32 디시전과 60×68 국민정신·GFX 및 정적 검수
 - [한국 재벌과 시민사회 내정 설계와 모드 이식 후보](docs/HOK_KOREAN_CHAEBOL_CIVIL_SOCIETY_RESEARCH_PLAN.md): 선행 원본 조사; 이후 승인한 한국판 구현은 별도 확정 명세·검증 기록을 따름
 - [한국 재벌·시민사회 확정 명세](docs/HOK_KOREAN_CHAEBOL_CIVIL_SOCIETY_SPEC.md): 두 세력 UI·13개 중점·조달 사고·검찰 정변과 비용·복구 계약
 - [내정 시스템 자산 출처](docs/HOK_KOREAN_CHAEBOL_CIVIL_SOCIETY_ASSET_CREDITS.md): 기존 한국 초상·기업 로고와 공용 UI·사건 그림 재사용

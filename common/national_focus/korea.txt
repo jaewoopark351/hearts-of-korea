@@ -2883,6 +2883,8 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = KOR_vision_1950
 			navy_experience = 50
+			#20261020_kpopmodder: Announce the repeatable emergency shipbuilding decision unlocked by Vision 1950.
+			unlock_decision_tooltip = HOK_KOR_enact_emergency_special_shipbuilding
 		}
 	}
 	#Focus for Jeju Naval Base

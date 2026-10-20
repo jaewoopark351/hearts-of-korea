@@ -279,7 +279,8 @@ ideas = {
 			picture = kor_vision_1950
 			
 			modifier = {
-				industrial_capacity_dockyard = 0.2
+				#20261020_kpopmodder: Increase Vision 1950 dockyard output from 20 to 30 percent as requested.
+				industrial_capacity_dockyard = 0.3
 			}
 		}
 		

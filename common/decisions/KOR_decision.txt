@@ -680,6 +680,24 @@ KOR_liberation_of_asia_category = {
 
 KOR_vision_1950_category = {
 
+	#20261020_kpopmodder: Spend 150 political power on a repeatable 180-day shipbuilding plan, without stacking or an extra cooldown.
+	HOK_KOR_enact_emergency_special_shipbuilding = {
+		icon = GFX_HOK_KOR_decision_emergency_special_shipbuilding
+		allowed = { tag = KOR }
+		visible = { has_completed_focus = KOR_vision_1950 }
+		available = {
+			has_completed_focus = KOR_vision_1950
+			NOT = { has_idea = HOK_KOR_emergency_special_shipbuilding }
+		}
+		cost = 150
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			add_timed_idea = { idea = HOK_KOR_emergency_special_shipbuilding days = 180 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
 	KOR_vision_1950_step_1 = {
 		
 		icon = generic_naval

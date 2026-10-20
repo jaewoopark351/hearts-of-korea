@@ -1,0 +1,11 @@
+#20261020_kpopmodder: Add dedicated naval-policy decision and national-spirit artwork.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_emergency_special_shipbuilding"
+        texturefile = "gfx/interface/decisions/HOK_KOR/emergency_shipbuilding/emergency_special_shipbuilding.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_HOK_KOR_emergency_special_shipbuilding"
+        texturefile = "gfx/interface/ideas/HOK_KOR/emergency_special_shipbuilding.dds"
+    }
+}
