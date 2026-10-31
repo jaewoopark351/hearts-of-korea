@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-31",
+  "method": "Selected vanilla same-game asset reuse and native-size composition.",
+  "original_authorship": "Paradox Interactive",
+  "continuation_contribution": "kpopmodder: native-size fitting, local sprite and decision integration.",
+  "source_version": "1.19.3.0.c01a / Steam build 25205862",
+  "builder": "C:/hoi/test/feature-integration-20261031/soyang-water-gates/build-assets.py",
+  "status": "integrated_source_qa_runtime_pending",
+  "assets": [
+    {
+      "id": "soyang_inundate",
+      "sprite": "GFX_HOK_KOR_decision_soyang_inundate",
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\gfx\\interface\\decisions\\decision_hol_inundate_water_lines.dds",
+      "source_local": "docs/assets/soyang-water-gates/sources/decision_hol_inundate_water_lines.dds",
+      "source_sha256": "2858ef2c1e5e6124ed3e044e7e73aa390b098690bce915253b0ae64022e64561",
+      "source_dimensions": [
+        33,
+        31
+      ],
+      "source_attribution": "Paradox Interactive, Hearts of Iron IV 1.19.3.0.c01a / Steam build 25205862",
+      "reuse_basis": "Selected vanilla asset reused within a mod for the same game; no public-pack or ownership claim.",
+      "method": "Reused vanilla bitmap; alpha-premultiplied bilinear fit inside native UI canvas with transparent margin. No AI generation or recoloring.",
+      "texture": "gfx/interface/decisions/HOK_KOR/soyang_water_gates/soyang_inundate.dds",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "cc5f14f8b630a0dbdd21282a2f833e9269b122ba0f35c549b10eacfa76c8d26d",
+      "format": "DDS BGRA32 uncompressed, one mip level"
+    },
+    {
+      "id": "soyang_drain",
+      "sprite": "GFX_HOK_KOR_decision_soyang_drain",
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\gfx\\interface\\decisions\\decision_hol_drain_water_lines.dds",
+      "source_local": "docs/assets/soyang-water-gates/sources/decision_hol_drain_water_lines.dds",
+      "source_sha256": "c1848f5571452e722159e9f26ce61caf2fbe14df2d3f708bfee65c2a462dbe79",
+      "source_dimensions": [
+        33,
+        31
+      ],
+      "source_attribution": "Paradox Interactive, Hearts of Iron IV 1.19.3.0.c01a / Steam build 25205862",
+      "reuse_basis": "Selected vanilla asset reused within a mod for the same game; no public-pack or ownership claim.",
+      "method": "Reused vanilla bitmap; alpha-premultiplied bilinear fit inside native UI canvas with transparent margin. No AI generation or recoloring.",
+      "texture": "gfx/interface/decisions/HOK_KOR/soyang_water_gates/soyang_drain.dds",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "0b3d7d4b27505b90aa57658796baecd2ab7cde16f2d4e34cedfc68d157a8fb66",
+      "format": "DDS BGRA32 uncompressed, one mip level"
+    },
+    {
+      "id": "soyang_category",
+      "sprite": "GFX_HOK_KOR_decision_category_soyang_water_gates",
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\gfx\\interface\\decisions\\decision_category_hol_prepare_the_inundation_lines.dds",
+      "source_local": "docs/assets/soyang-water-gates/sources/decision_category_hol_prepare_the_inundation_lines.dds",
+      "source_sha256": "57279e8a656b55bd3a0a7d778305eededf9b195fd57ab7164172e8efb64f9c13",
+      "source_dimensions": [
+        52,
+        40
+      ],
+      "source_attribution": "Paradox Interactive, Hearts of Iron IV 1.19.3.0.c01a / Steam build 25205862",
+      "reuse_basis": "Selected vanilla asset reused within a mod for the same game; no public-pack or ownership claim.",
+      "method": "Reused vanilla bitmap; alpha-premultiplied bilinear fit inside native UI canvas with transparent margin. No AI generation or recoloring.",
+      "texture": "gfx/interface/decisions/HOK_KOR/soyang_water_gates/soyang_category.dds",
+      "dimensions": [
+        51,
+        40
+      ],
+      "sha256": "e763200bad13b44a9cb2cde073272d95ce96480d9de8f6bc386b76bb0f759c89",
+      "format": "DDS BGRA32 uncompressed, one mip level"
+    }
+  ]
+}

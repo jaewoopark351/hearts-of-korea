@@ -489,6 +489,9 @@ focus_tree = {
 				localization_key = building_state_modifier|dam
 				INDENT = "    "
 			}
+			#20261031_kpopmodder: Explain the two water-gate decisions unlocked by the completed dam.
+			unlock_decision_tooltip = KOR_inundate_the_water_lines
+			unlock_decision_tooltip = KOR_drain_the_water_lines
 		}
 	}
 	#Focus for Seoul National University Expansion
@@ -510,6 +513,61 @@ focus_tree = {
 		bypass = { KOR = { has_global_flag = kor_hok_gookppong_enabled_flag } }
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+	#20261031_kpopmodder: Grant one nuclear breakthrough point; remove the five-day investment discount as requested.
+	focus = {
+		id = HOK_KOR_fission_chain_reaction_experiments
+		icon = GFX_HOK_KOR_focus_fission_chain_reaction_experiments
+		relative_position_id = KOR_seoul_national_university_expansion
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = { focus = KOR_seoul_national_university_expansion }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 1.00
+			}
+			#20261031_kpopmodder: Add one nuclear technology bonus reducing the ahead-of-time penalty by two years.
+			add_tech_bonus = {
+				name = HOK_KOR_fission_chain_reaction_experiments
+				ahead_reduction = 2
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+	#20261031_kpopmodder: Keep the civilian reactor investment at its unmodified 245-day base cost.
+	focus = {
+		id = HOK_KOR_civilian_nuclear_investment
+		icon = GFX_HOK_KOR_focus_civilian_nuclear_investment
+		relative_position_id = HOK_KOR_fission_chain_reaction_experiments
+		x = 0
+		y = 1
+		cost = 35
+		available_if_capitulated = no
+		prerequisite = { focus = HOK_KOR_fission_chain_reaction_experiments }
+		available = {
+			has_tech = atomic_research
+			has_dlc = "Gotterdammerung"
+		}
+		bypass = { has_tech = commercial_nuclear_reactor_tech }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = HOK_KOR_civilian_nuclear_technology_tt
+			hidden_effect = {
+				set_technology = {
+					commercial_nuclear_reactor_tech = 1
+					popup = no
+				}
+			}
 		}
 	}
 	#Focus for Attract world-class scholars
@@ -1021,6 +1079,8 @@ focus_tree = {
 		completion_reward = {
 			
 			add_ideas = generic_secret_weapons_ns
+			#20261031_kpopmodder: Connect the defence research agency to a land facility and its existing scientist.
+			HOK_KOR_establish_land_research_network = yes
 			
 		}
 	}
@@ -1121,6 +1181,8 @@ focus_tree = {
 				category = rocketry
 				category = jet_technology
 			}
+			#20261031_kpopmodder: Retain the research reward and establish the aviation project network when supported.
+			HOK_KOR_establish_air_research_network = yes
 			
 		}
 	}
@@ -1154,6 +1216,8 @@ focus_tree = {
 			}
 			
 			news_event = { id = news.174 hours = 6 }
+			#20261031_kpopmodder: Retain the nuclear rewards and connect a facility with the existing nuclear scientist.
+			HOK_KOR_establish_nuclear_research_network = yes
 		}
 	}
 	
@@ -1809,6 +1873,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_daewoo_tank_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_daewoo_standardized_parts }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			add_ideas = KOR_expansion_army_officer_corps
 			custom_effect_tooltip = KOR_army_augmentation_tt
 			hidden_effect = {
@@ -1950,6 +2020,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_hyundai_rotem_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_rotem_reinforced_armor }
+				mio:KOR_rygyeong_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_rygyeong_infantry_breakthrough }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -1993,6 +2070,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_doosan_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_doosan_mobile_powertrain }
+				mio:KOR_kia_motors_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_kia_economical_drivetrain }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			add_tech_bonus = {
 				name = motorized_bonus
 				ahead_reduction = 2
@@ -2129,6 +2213,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_gukgun_jobyeongchang_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_gukgun_rifle_tooling }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
@@ -2154,6 +2244,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_hanhwa_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_hanhwa_artillery_ammunition }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
@@ -2181,6 +2277,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_mmaa_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_mmaa_support_standardization }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 1.0
@@ -2248,6 +2350,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_daehanjoseongongsa_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_daehan_escort_sonar }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			country_event = { id = kor_events.5 }
 			navy_experience = 30
 			add_offsite_building = { type = dockyard level = 3 }	
@@ -2299,6 +2407,8 @@ focus_tree = {
 				show_ideas_tooltip = hyundai_heavy_industries
 				show_ideas_tooltip = gyeongwon
 			}
+			#20261031_kpopmodder: Add the naval facility and scientist connection without changing designer access.
+			HOK_KOR_establish_naval_research_network = yes
 			
 		}
 	}
@@ -2327,6 +2437,11 @@ focus_tree = {
 			set_technology = { marines = 1 }
 			show_unit_leaders_tooltip = KOR_Geunchul_Hwang
 			custom_effect_tooltip = KOR_organization_rokmc_tt
+			#20261031_kpopmodder: Explain the native Korean marine raid unlocked by this focus.
+			if = {
+				limit = { has_dlc = "Thunder at Our Gates" }
+				custom_effect_tooltip = HOK_KOR_unlock_nagasaki_port_raid_tt
+			}
 			hidden_effect = {
 				division_template = {
 					name = "Haebyeong-Sadan"
@@ -2396,6 +2511,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_daewoo_ship_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_daewoo_heavy_gun_mounts }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			add_doctrine_cost_reduction = {
 				name = fleet_in_being_bonus
 				cost_reduction = 0.5
@@ -2460,6 +2581,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_hyundai_heavy_industries_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_hyundai_carrier_assembly }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -2663,6 +2790,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_gms_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_gms_torpedo_fire_control }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			add_doctrine_cost_reduction = {
 				name = sub_op_bonus
 				cost_reduction = 0.5
@@ -2885,6 +3018,8 @@ focus_tree = {
 			navy_experience = 50
 			#20261020_kpopmodder: Announce the repeatable emergency shipbuilding decision unlocked by Vision 1950.
 			unlock_decision_tooltip = HOK_KOR_enact_emergency_special_shipbuilding
+			#20261031_kpopmodder: Also announce the existing first fleet milestone without changing its fleet requirements.
+			unlock_decision_tooltip = KOR_vision_1950_step_1
 		}
 	}
 	#Focus for Jeju Naval Base
@@ -3023,6 +3158,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_hanjin_air_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_hanjin_long_range_navigation }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			country_event = { id = kor_events.6 }
 			air_experience = 25
 
@@ -3270,6 +3411,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_kai_company_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_kai_agile_airframes }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			air_experience = 50
 			random_owned_controlled_state = {
 				limit = {
@@ -4457,7 +4604,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			create_faction = "HoK_faction_name_asian_liberation_front"
+			#20261031_kpopmodder: Create the same liberation-front faction through its explicit modern template.
+			create_faction_from_template = HOK_KOR_faction_template_asian_liberation_front
 		}
 	}
 	#Focus for support the Japanese Communist Party
@@ -6527,7 +6675,8 @@ focus_tree = {
 		
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			create_faction = "HoK_faction_name_asian_union"
+			#20261031_kpopmodder: Preserve the Asian Union invitation route while registering explicit faction goals.
+			create_faction_from_template = HOK_KOR_faction_template_asian_union
 			
 			hidden_effect = {
 				news_event = { id = newsk.13 hours = 6 }
@@ -9010,7 +9159,8 @@ focus_tree = {
 			else = {
 				GER = {
 					set_rule = { can_create_factions = yes }
-					create_faction = "GER_central_powers_faction"
+					#20261031_kpopmodder: Keep Germany as founder and retain the existing alliance invitation when creating a new royal bloc.
+					create_faction_from_template = HOK_KOR_faction_template_central_powers
 					country_event = { id = generic.2 }
 				}
 			}
@@ -10956,6 +11106,12 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		#20260921_kpopmodder: Strengthen the requested rewards while preserving other focus effects.
 		completion_reward = {
+			#20261031_kpopmodder: Announce the focus-gated company specialization while retaining normal MIO trait purchase.
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:KOR_jinhae_naval_air_factory_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_jinhae_torpedo_sights }
+				custom_effect_tooltip = HOK_KOR_mio_specialization_purchase_tt
+			}
 			add_tech_bonus = {
 				name = HOK_KOR_naval_air_coordination
 				bonus = 1.0

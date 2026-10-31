@@ -1,0 +1,27 @@
+#20261031_kpopmodder: Release only this module's marked flooding when its fixed-country safety conditions cease to hold.
+on_actions = {
+	#20261031_kpopmodder: Use Gyeonggi's current controller as the daily dispatcher so fixed-country checks remain bounded after Korean annexation.
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = HOK_KOR_soyang_managed_water
+					525 = { is_controlled_by = ROOT }
+				}
+				HOK_KOR_soyang_check_safety_effect = yes
+			}
+		}
+	}
+	on_peace = {
+		effect = { HOK_KOR_soyang_check_safety_effect = yes }
+	}
+	on_capitulation = {
+		effect = { HOK_KOR_soyang_check_safety_effect = yes }
+	}
+	on_annex = {
+		effect = { HOK_KOR_soyang_check_safety_effect = yes }
+	}
+	on_state_control_changed = {
+		effect = { HOK_KOR_soyang_check_safety_effect = yes }
+	}
+}

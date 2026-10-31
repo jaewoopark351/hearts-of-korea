@@ -1,0 +1,15 @@
+﻿l_english:
+#20261031_kpopmodder: Restore only missing native naval-captain UI text while preserving 1.19.3 placeholders and formatting.
+ CAPTAIN_TITLE_TEXT:0 "함장"
+ SHIP_OFFICER_TITLE_SHIP_DEFAULT:0 "함장"
+ WAS_IN_NAVAL_COMBAT_HISTORY:0 "$SUBJECT$(이)가 $PROVINCE$ 전투에 참가함."
+ ASSIGN_CAPTAIN_MEDAL_TOOLTIP:0 "§H 훈장 수여§!\n\n클릭하면 이 함선의 함장에게 해당 전공에 대한 훈장을 수여합니다."
+ CAPTAIN_PROMOTED_HISTORY:0 "$SUBJECT$ 함장은 $PROVINCE$에서 진급됨."
+ BASE_CAPTAIN_MEDAL_TYPE:0 "클릭하면 이 함선의 함장에게 §H $TYPE$§! 훈장을 수여합니다. 함장이 제독으로 진급하면 훈장도 함께 이관됩니다."
+ CAPTAIN_EXPERIENCE_GAIN_TOOLTIP:0 "§H함장 경험치 획득§!\n함장 경험치는 일반 경험치 획득량의 $MULT|%H$ 비율로 획득합니다.\n\n이 함선에 수여된 훈장 한 개마다 경험치 획득 비율이 $PER_MEDAL|%H$ 증가합니다."
+ HIRED_NEW_ADMIRAL_TITLE:0 "함장 진급"
+ HIRED_NEW_ADMIRAL_DESC:0 "정말로 $CHARACTER$(을)를 제독으로 진급시키겠습니까?\n\n진급하면 이 함선의 경험치가 초기화되고 다음 지휘력을 소모합니다.\n$COST|H$ £command_power."
+ UPGRADE_SHIP_CAPTAIN_BUTTON_TITLE:0 "§H함장 진급§!\n\n"
+ CAPTAIN_PROMOTION_EXPERIENCE_PENALTY:0 "이 함선의 숙련도가 $RESULT|%H$ 감소합니다."
+ submarine_officer:0 "잠수함 함장"
+ UNIT_LEADER_NEW_LEADER_CAPTAIN:0 "함장 보기"

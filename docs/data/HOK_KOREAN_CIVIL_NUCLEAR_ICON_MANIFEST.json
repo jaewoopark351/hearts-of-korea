@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-31",
+  "workstream": "Authorized new civil-nuclear focus continuation artwork",
+  "status": "integrated_source_and_actual_size_review_runtime_pending",
+  "branch": "feat/korean-focus-expansion-ai",
+  "baseline_HEAD": "860efe7a3513148dc6964b7e0e3dfafd19addfb7",
+  "source_game_version": "Operation Postern v1.19.4.1.99a5",
+  "source_steam_build": "26282552",
+  "version_evidence": "Current system.log:139 version1.19.4.1.99a5; Steam appmanifest_394360.acf buildid26282552, read2026-10-31. Earlier1.19.3/build25205862 was not used as this source version.",
+  "assets": [
+    {
+      "content_id": "HOK_KOR_fission_chain_reaction_experiments",
+      "sprite": "GFX_HOK_KOR_focus_fission_chain_reaction_experiments",
+      "shine_sprite": "GFX_HOK_KOR_focus_fission_chain_reaction_experiments_shine",
+      "method": "AI-generated original illustration; only mechanical alpha-bounds fit/downsample and format export afterward. No native focus illustration or third-party framework used.",
+      "palette": "light gray / silver research",
+      "selected_original": "docs/assets/civil-nuclear-research/generated/fission_chain_reaction_experiments.original.png",
+      "selected_original_sha256": "2d0412933f4ae0a048d878bf597570ee89a9888269f0a7711ef86a83e6a3f7a7",
+      "original_dimensions": [
+        1337,
+        1176
+      ],
+      "generation_tool": "built-in image_gen.imagegen",
+      "generation_model": "not exposed",
+      "prompt_record": "docs/assets/civil-nuclear-research/generation-prompts.json",
+      "reference_images": [],
+      "export": {
+        "tool": "System.Drawing (GDI+) mechanical PNG-to-DDS export",
+        "source_alpha_bounds": [
+          46,
+          34,
+          1265,
+          1112
+        ],
+        "alpha_bounds_rule": "include every pixel with alpha > 0; crop only transparent exterior margin",
+        "canvas_dimensions": [
+          100,
+          88
+        ],
+        "fit_dimensions": [
+          96,
+          84
+        ],
+        "maximum_fit_box": [
+          96,
+          84
+        ],
+        "interpolation": "HighQualityBicubic; PixelOffsetMode.HighQuality; CompositingMode.SourceCopy; preserve aspect ratio; no hue/color edits",
+        "format": "DDS uncompressed BGRA32 A8R8G8B8, one mip level",
+        "alpha_min_max": [
+          0,
+          255
+        ],
+        "transparent_pixel_count": 2739,
+        "partial_alpha_pixel_count": 5806
+      },
+      "texture": "gfx/interface/goals/HOK_KOR/civil_nuclear_research/fission_chain_reaction_experiments.dds",
+      "animation_mask": "gfx/interface/goals/HOK_KOR/civil_nuclear_research/fission_chain_reaction_experiments.dds",
+      "preview": "docs/assets/civil-nuclear-research/fission_chain_reaction_experiments.png",
+      "preview_sha256": "05c22e6cde462069f499b635b2528fc44a10fbbc7490d53b97f0429ae552126e",
+      "output": {
+        "dimensions": [
+          100,
+          88
+        ],
+        "pixel_format_header": [
+          32,
+          65,
+          0,
+          32,
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "mip_count_header": 1,
+        "bytes": 35328,
+        "sha256": "bcf3761f057a465b613d366000b9b9679e31fd53326a26839fe3672d9535ae45"
+      }
+    },
+    {
+      "content_id": "HOK_KOR_civilian_nuclear_investment",
+      "sprite": "GFX_HOK_KOR_focus_civilian_nuclear_investment",
+      "shine_sprite": "GFX_HOK_KOR_focus_civilian_nuclear_investment_shine",
+      "method": "AI-generated original illustration; only mechanical alpha-bounds fit/downsample and format export afterward. No native focus illustration or third-party framework used.",
+      "palette": "neutral industrial gray / bronze",
+      "selected_original": "docs/assets/civil-nuclear-research/generated/civilian_nuclear_investment.original.png",
+      "selected_original_sha256": "3eb4141798b9f08e9ad7963afe63f55c9872a0dc8845a60a0ad80bf165cf0824",
+      "original_dimensions": [
+        1337,
+        1176
+      ],
+      "generation_tool": "built-in image_gen.imagegen",
+      "generation_model": "not exposed",
+      "prompt_record": "docs/assets/civil-nuclear-research/generation-prompts.json",
+      "reference_images": [],
+      "export": {
+        "tool": "System.Drawing (GDI+) mechanical PNG-to-DDS export",
+        "source_alpha_bounds": [
+          0,
+          21,
+          1323,
+          1117
+        ],
+        "alpha_bounds_rule": "include every pixel with alpha > 0; crop only transparent exterior margin",
+        "canvas_dimensions": [
+          100,
+          88
+        ],
+        "fit_dimensions": [
+          96,
+          81
+        ],
+        "maximum_fit_box": [
+          96,
+          84
+        ],
+        "interpolation": "HighQualityBicubic; PixelOffsetMode.HighQuality; CompositingMode.SourceCopy; preserve aspect ratio; no hue/color edits",
+        "format": "DDS uncompressed BGRA32 A8R8G8B8, one mip level",
+        "alpha_min_max": [
+          0,
+          255
+        ],
+        "transparent_pixel_count": 3153,
+        "partial_alpha_pixel_count": 5393
+      },
+      "texture": "gfx/interface/goals/HOK_KOR/civil_nuclear_research/civilian_nuclear_investment.dds",
+      "animation_mask": "gfx/interface/goals/HOK_KOR/civil_nuclear_research/civilian_nuclear_investment.dds",
+      "preview": "docs/assets/civil-nuclear-research/civilian_nuclear_investment.png",
+      "preview_sha256": "bbdfc19e7afe043152fa7cc1ea7f1c72311e30b2e10d99c084df677e3dce2339",
+      "output": {
+        "dimensions": [
+          100,
+          88
+        ],
+        "pixel_format_header": [
+          32,
+          65,
+          0,
+          32,
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "mip_count_header": 1,
+        "bytes": 35328,
+        "sha256": "74431437fa43fee63da63e580b93aecdc8d0c2c7e4bc2c0dbf1f1a6892beb4f0"
+      }
+    }
+  ],
+  "generated_art_authorship": "AI-generated artwork via OpenAI built-in image_gen tool; model not exposed. kpopmodder continuation contribution: prompts, selection, mechanical fitting/export and local integration. No claim of human-drawn/native/open-source illustration.",
+  "native_overlay": {
+    "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\gfx\\interface\\goals\\shine_overlay.dds",
+    "source_project_copy": "docs/assets/civil-nuclear-research/sources/shine_overlay.dds",
+    "source_authorship": "Paradox Interactive / Hearts of Iron IV",
+    "reuse_basis": "Selected vanilla visual effect reused inside a mod for the same game; no public-pack/open-source/ownership-transfer claim.",
+    "subsequent_edits": "None; byte-exact DDS copy.",
+    "texture": "gfx/interface/goals/HOK_KOR/civil_nuclear_research/shine_overlay.dds",
+    "source_sha256": "bb416649358c73d34aacd46bad61bc44211fac8111627b56e25f385ad98f4448",
+    "output": {
+      "dimensions": [
+        87,
+        88
+      ],
+      "pixel_format_header": [
+        32,
+        65,
+        0,
+        32,
+        16711680,
+        65280,
+        255,
+        4278190080
+      ],
+      "mip_count_header": 0,
+      "bytes": 30752,
+      "sha256": "bb416649358c73d34aacd46bad61bc44211fac8111627b56e25f385ad98f4448"
+    }
+  },
+  "gfx": {
+    "file": "interface/HOK_KOR_civil_nuclear_research.gfx",
+    "sha256": "30ab4b4391333ba5bffa59bd70160cb8093026185bbf1ddffd9bac43878c50af",
+    "base_and_shine_sprites": [
+      "GFX_HOK_KOR_focus_fission_chain_reaction_experiments",
+      "GFX_HOK_KOR_focus_fission_chain_reaction_experiments_shine",
+      "GFX_HOK_KOR_focus_civilian_nuclear_investment",
+      "GFX_HOK_KOR_focus_civilian_nuclear_investment_shine"
+    ],
+    "shine_framework_donor": "Installed interface/goals_shine.gfx:4-34, two scrolling completion-shine animations; project-local icon itself is the mask and local copied shine texture is the overlay. Standard gfx/FX/buttonstate.lua effect reference retained."
+  },
+  "prompts": {
+    "file": "docs/assets/civil-nuclear-research/generation-prompts.json",
+    "sha256": "9af02468d9308dd9f172cebda1dd3534e2fb27954846f4f5266f7d4098140c0a",
+    "mode": "default built-in, one call per asset, transparent_background=true, no reference inputs, no CLI/API key/fallback used"
+  },
+  "static_validation": {
+    "file": "C:/hoi/test/feature-integration-20261031/civil-nuclear-assets/source-asset-checks.json",
+    "pass": 28,
+    "fail": 0
+  },
+  "visual_review": {
+    "actual_size_preview": "docs/assets/civil-nuclear-research/actual-size-preview.png",
+    "result": "Both inspected at100x88: atom/lab silhouette readable; cooling towers/reactor readable; silver vs bronze rims distinguish research and civilian investment; alpha margins retained.",
+    "native_candidate_previews": "External-only discarded native candidates were inspected, not incorporated into final illustrations."
+  },
+  "runtime_validation": "Not performed by asset agent. Root owns fresh restart and locked/available/active/completed/shine/focus-label checks.",
+  "limits": [
+    "Static asset resolution and visual inspection do not prove engine discovery, runtime draw/shine, focus layout or click areas.",
+    "No older focus/icon/locale/gameplay source was edited by this artwork module."
+  ]
+}

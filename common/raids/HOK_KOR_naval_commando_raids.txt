@@ -1,0 +1,274 @@
+types = {
+	#20261031_kpopmodder: Adapt the native Siam marine raid into a one-use Korean attack on the existing Nagasaki port.
+	HOK_KOR_nagasaki_port_raid = {
+		days_to_prepare = 120
+		speed_multiplier = 4
+		category = HOK_KOR_naval_commando_raids
+		custom_map_icon = GFX_HOK_KOR_raid_nagasaki_port_map
+		unit_icon = GFX_HOK_KOR_raid_naval_commando
+		target_icon = GFX_HOK_KOR_raid_naval_base_target
+		target_loc_key = HOK_KOR_nagasaki_port_target
+		launch_sound = raid_launch_marine
+		command_power = 40
+		fire_only_once = yes
+
+		arrow = { type = naval }
+		unit_model = {
+			entity = "westerngfx_traderoute_convoy"
+			start_offset = 15
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				FROM = {
+					ships_in_state_ports = {
+						state = var:target_state
+						size > 0
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					ships_in_state_ports = {
+						type = capital_ship
+						state = var:target_state
+						size > 0
+					}
+				}
+			}
+		}
+
+		allowed = {
+			has_dlc = "Thunder at Our Gates"
+			tag = KOR
+		}
+		visible = {
+			has_completed_focus = KOR_organization_rokmc
+		}
+		show_target = {
+			FROM = { tag = JAP controls_province = 9950 }
+			NOT = { is_in_faction_with = FROM }
+			var:target_state = {
+				state = 528
+				is_owned_and_controlled_by = JAP
+				is_coastal = yes
+				naval_base > 0
+				any_province_building_level = { province = { id = 9950 } building = naval_base level > 0 }
+			}
+		}
+		available = {
+			has_tech = marines
+			FROM = { tag = JAP controls_province = 9950 }
+			NOT = { is_in_faction_with = FROM }
+			var:target_state = {
+				state = 528
+				is_owned_and_controlled_by = JAP
+				naval_base > 0
+				any_province_building_level = { province = { id = 9950 } building = naval_base level > 0 }
+			}
+		}
+		launchable = {
+			FROM = { tag = JAP controls_province = 9950 }
+			has_war_with = FROM
+			var:target_state = {
+				is_owned_and_controlled_by = JAP
+				naval_base > 0
+				any_province_building_level = { province = { id = 9950 } building = naval_base level > 0 }
+			}
+		}
+
+		target_type = { province = 9950 }
+		#20261031_kpopmodder: Use the native naval-base source type verified by the source-only reachability comparison.
+		starting_point = {
+			types = { naval_base }
+			allow_faction_buildings = yes
+		}
+		unit_requirements = {
+			battalion_types = {
+				marine = { min = 3 }
+			}
+		}
+		essential_equipment = { convoy = 40 }
+
+		success_factors = {
+			success = {
+				base = 0.05
+				experience = {
+					weight = 0.3
+					start_weight = -0.15
+					reference = 0.5
+				}
+				organisation = {
+					weight = 0.05
+					start_weight = -0.1
+					reference = 100
+				}
+				strength = {
+					weight = 0.05
+					start_weight = -0.1
+					reference = 1
+				}
+				recon = {
+					weight = 0.025
+					reference = 10
+				}
+				air_superiority = {
+					reference = 1
+					start_reference = 0.5
+					weight = 0.2
+				}
+				intel = {
+					weight = 0.15
+					reference = 100
+				}
+			}
+		}
+
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						org_damage = 0.65
+						str_damage = 0.60
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.1
+					add_raid_history_entry = yes
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				victim_effects = {
+					if = {
+						limit = {
+							JAP = { has_war_with = KOR controls_province = 9950 }
+							var:target_state = {
+								is_owned_and_controlled_by = JAP
+								any_province_building_level = { province = { id = 9950 } building = naval_base level > 0 }
+							}
+						}
+						damage_units = {
+							province = var:target_province
+							limit = { has_war_with = KOR }
+							damage = 0.25
+							ratio = yes
+							army = no
+							navy = yes
+						}
+						var:target_state = {
+							damage_building = {
+								type = naval_base
+								damage = 1
+								province = var:ROOT.target_province
+							}
+						}
+					}
+				}
+				actor_effects = {
+					raid_damage_units = {
+						org_damage = 0.65
+						str_damage = 0.60
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.1
+					add_raid_history_entry = yes
+				}
+				division_effects = { add_divisional_commander_xp = 50 }
+				visual_effect = {
+					entity = "land_raids_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				victim_effects = {
+					if = {
+						limit = {
+							JAP = { has_war_with = KOR controls_province = 9950 }
+							var:target_state = {
+								is_owned_and_controlled_by = JAP
+								any_province_building_level = { province = { id = 9950 } building = naval_base level > 0 }
+							}
+						}
+						damage_units = {
+							province = var:target_province
+							limit = { has_war_with = KOR }
+							damage = 0.5
+							ratio = yes
+							army = no
+							navy = yes
+						}
+						var:target_state = {
+							damage_building = {
+								type = naval_base
+								damage = 2
+								province = var:ROOT.target_province
+							}
+						}
+					}
+				}
+				actor_effects = {
+					raid_damage_units = {
+						org_damage = 0.65
+						str_damage = 0.60
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.1
+					add_raid_history_entry = yes
+				}
+				division_effects = { add_divisional_commander_xp = 50 }
+				visual_effect = {
+					entity = "land_raids_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				victim_effects = {
+					if = {
+						limit = {
+							JAP = { has_war_with = KOR controls_province = 9950 }
+							var:target_state = {
+								is_owned_and_controlled_by = JAP
+								any_province_building_level = { province = { id = 9950 } building = naval_base level > 0 }
+							}
+						}
+						damage_units = {
+							province = var:target_province
+							limit = { has_war_with = KOR }
+							damage = 0.75
+							ratio = yes
+							army = no
+							navy = yes
+						}
+						var:target_state = {
+							damage_building = {
+								type = naval_base
+								damage = 3
+								province = var:ROOT.target_province
+							}
+						}
+					}
+				}
+				actor_effects = {
+					raid_damage_units = {
+						org_damage = 0.65
+						str_damage = 0.60
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.1
+					add_raid_history_entry = yes
+				}
+				division_effects = { add_divisional_commander_xp = 50 }
+				visual_effect = {
+					entity = "land_raids_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+}

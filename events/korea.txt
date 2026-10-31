@@ -1264,7 +1264,8 @@ country_event = {
 			factor = 99
 		}
 		USA = {
-			create_faction = "HoK_faction_name_organization_of_free_nations"
+			#20261031_kpopmodder: Retain the US-founded OFN event chain and register its modern democratic faction template.
+			create_faction_from_template = HOK_KOR_faction_template_organization_of_free_nations
 		}
 		KOR = {
 			country_event = { id = KOR_events.35 days = 1 }

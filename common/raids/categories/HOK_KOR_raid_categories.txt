@@ -1,0 +1,15 @@
+categories = {
+	#20261031_kpopmodder: Give Korea its own native marine-raid category without overriding other countries' visibility.
+	HOK_KOR_naval_commando_raids = {
+		intel_source = naval
+		faction_influence_score_on_success = 50
+		visible = {
+			has_dlc = "Thunder at Our Gates"
+			tag = KOR
+			has_completed_focus = KOR_organization_rokmc
+		}
+		available = {
+			has_tech = marines
+		}
+	}
+}

@@ -555,6 +555,13 @@ Rules:
 
 Never claim a root cause merely because deleting content made an error disappear.
 
+### Test-session cleanup
+
+- After authorized HOI4 runtime testing, preserve the required test saves and logs, then close the game instance and test-owned launcher/helper processes started for that session before reporting completion. No further confirmation is needed unless the user explicitly asks to leave the game open. Identify the session's processes; do not close a pre-existing user game or indiscriminately terminate processes.
+- Verify that the test game processes have exited. If Steam tracked the session, also verify that HOI4 no longer shows Running or Stopping and its normal Play button has returned. A closed game window alone is insufficient; do not launch Steam solely for this check when it was not involved.
+- If the game processes are gone but Steam retains a stale Running/Stopping state, use Steam's normal Stop action. If it remains stuck, a normal Steam exit and restart is permitted without another confirmation after checking that no other active game, download, or important operation will be interrupted. Recheck the HOI4 Play button afterward. Do not force-kill unrelated applications; if cleanup cannot be completed without interrupting other work, report the remaining state accurately.
+- Restore and verify temporary settings and mod selection under section 14 after the test game has exited, and record the cleanup result. Closing the test game or restarting Steam does not authorize shutting down or restarting Windows; that requires an explicit user request.
+
 ---
 
 ## 11. Compatibility workflow
@@ -687,7 +694,8 @@ Not sufficient by itself:
 ## 14. File, Git, attribution, and publication safety
 
 - Never modify the base-game installation or use a Workshop-managed copy as the authoritative working tree.
-- Never overwrite user saves, playsets, or settings without explicit authorization and backup.
+- Never overwrite existing user saves or unrelated settings without explicit authorization and backup.
+- During authorized implementation or runtime diagnostics, temporary HOI4 playset/mod-selection changes needed for validation are permitted without a separate confirmation. This includes the active mod list in `dlc_load.json` and directly necessary test settings. Before changing them, back up the exact current files outside the repository, record the original selection/load order and relevant settings, and use separate test saves. Restore the original files and selection after validation unless the user explicitly asks to retain the test configuration; verify and record the restoration. Do not delete existing playsets, alter DLC ownership, or make unrelated or permanent configuration changes under this permission. Review-only and documentation-only restrictions still apply.
 - Do not commit logs, crash dumps, saves, caches, credentials, account data, or personal launcher data unless requested as sanitized fixtures.
 - Do not use destructive Git commands such as `git reset --hard`, `git clean`, forced checkout, or force-push.
 - Do not discard pre-existing user changes, rename large trees for aesthetics, or mass-convert binary assets.

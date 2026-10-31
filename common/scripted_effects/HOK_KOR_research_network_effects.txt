@@ -1,0 +1,166 @@
+#20261031_kpopmodder: Give a missing research specialization an eligible preferred core state, without replacing another facility.
+
+#20261031_kpopmodder: Connect the existing land research focus to a facility and one independent scientist level.
+HOK_KOR_establish_land_research_network = {
+	if = {
+		limit = { has_dlc = "Gotterdammerung" }
+		custom_effect_tooltip = HOK_KOR_land_research_network_tt
+		hidden_effect = {
+			#20261031_kpopmodder: Use literal IDs after the target-version loader rejected this parameterized placement block.
+			if = {
+				limit = {
+					NOT = { has_facility_specialization = specialization_land }
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						is_fully_controlled_by = ROOT
+						can_construct_building = land_facility
+						air_facility < 1
+						land_facility < 1
+						naval_facility < 1
+						nuclear_facility < 1
+					}
+					prioritize = { 525 }
+					construct_building_in_random_province = {
+						land_facility = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = KOR_Yonggwan_Kim
+					NOT = { has_country_flag = HOK_KOR_land_scientist_training_awarded }
+				}
+				KOR_Yonggwan_Kim = {
+					add_scientist_level = { specialization = specialization_land level = 1 }
+				}
+				set_country_flag = HOK_KOR_land_scientist_training_awarded
+			}
+		}
+	}
+}
+
+#20261031_kpopmodder: Connect the existing naval research focus to a facility and one independent scientist level.
+HOK_KOR_establish_naval_research_network = {
+	if = {
+		limit = { has_dlc = "Gotterdammerung" }
+		custom_effect_tooltip = HOK_KOR_naval_research_network_tt
+		hidden_effect = {
+			#20261031_kpopmodder: Use literal IDs after the target-version loader rejected this parameterized placement block.
+			if = {
+				limit = {
+					NOT = { has_facility_specialization = specialization_naval }
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						is_fully_controlled_by = ROOT
+						can_construct_building = naval_facility
+						air_facility < 1
+						land_facility < 1
+						naval_facility < 1
+						nuclear_facility < 1
+						is_coastal = yes
+					}
+					prioritize = { 1030 }
+					construct_building_in_random_province = {
+						naval_facility = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = KOR_Bugil_Hwang
+					NOT = { has_country_flag = HOK_KOR_naval_scientist_training_awarded }
+				}
+				KOR_Bugil_Hwang = {
+					add_scientist_level = { specialization = specialization_naval level = 1 }
+				}
+				set_country_flag = HOK_KOR_naval_scientist_training_awarded
+			}
+		}
+	}
+}
+
+#20261031_kpopmodder: Connect the existing air research focus to a facility and one independent scientist level.
+HOK_KOR_establish_air_research_network = {
+	if = {
+		limit = { has_dlc = "Gotterdammerung" }
+		custom_effect_tooltip = HOK_KOR_air_research_network_tt
+		hidden_effect = {
+			#20261031_kpopmodder: Use literal IDs after the target-version loader rejected this parameterized placement block.
+			if = {
+				limit = {
+					NOT = { has_facility_specialization = specialization_air }
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						is_fully_controlled_by = ROOT
+						can_construct_building = air_facility
+						air_facility < 1
+						land_facility < 1
+						naval_facility < 1
+						nuclear_facility < 1
+					}
+					prioritize = { 1029 }
+					construct_building_in_random_province = {
+						air_facility = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = KOR_Gyeongyeon_Jo
+					NOT = { has_country_flag = HOK_KOR_air_scientist_training_awarded }
+				}
+				KOR_Gyeongyeon_Jo = {
+					add_scientist_level = { specialization = specialization_air level = 1 }
+				}
+				set_country_flag = HOK_KOR_air_scientist_training_awarded
+			}
+		}
+	}
+}
+
+#20261031_kpopmodder: Connect the existing nuclear research focus to a facility and one independent scientist level.
+HOK_KOR_establish_nuclear_research_network = {
+	if = {
+		limit = { has_dlc = "Gotterdammerung" }
+		custom_effect_tooltip = HOK_KOR_nuclear_research_network_tt
+		hidden_effect = {
+			#20261031_kpopmodder: Use literal IDs after the target-version loader rejected this parameterized placement block.
+			if = {
+				limit = {
+					NOT = { has_facility_specialization = specialization_nuclear }
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						is_fully_controlled_by = ROOT
+						can_construct_building = nuclear_facility
+						air_facility < 1
+						land_facility < 1
+						naval_facility < 1
+						nuclear_facility < 1
+					}
+					prioritize = { 1028 }
+					construct_building_in_random_province = {
+						nuclear_facility = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = KOR_Sanglok_Do
+					NOT = { has_country_flag = HOK_KOR_nuclear_scientist_training_awarded }
+				}
+				KOR_Sanglok_Do = {
+					add_scientist_level = { specialization = specialization_nuclear level = 1 }
+				}
+				set_country_flag = HOK_KOR_nuclear_scientist_training_awarded
+			}
+		}
+	}
+}

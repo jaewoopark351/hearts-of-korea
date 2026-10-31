@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-31",
+  "tool": "built-in image_gen.imagegen",
+  "model": "not exposed by built-in tool",
+  "transparent_background": true,
+  "reference_images": [],
+  "prompts": [
+    {
+      "id": "HOK_KOR_fission_chain_reaction_experiments",
+      "prompt": "Use case: stylized-concept. Asset type: one national-focus icon for a 1930s–1950s grand-strategy game, final display 100x88 pixels. Create a polished original painted/embossed metal emblem for nuclear fission chain-reaction experiments. Main subject: a large clear silver atom-orbit motif above a small laboratory retort and short glass test apparatus; suggest experimental research, not a weapon. A simple light gray and brushed-silver round medallion and restrained silver laurel/rim unify the design. Neutral light gray/silver palette, dark charcoal recesses for readable contrast. Front-facing centered composition, complete icon with all ornament inside the frame, isolated on a genuinely transparent background. Render as a compact game badge with bold silhouettes and selective metallic highlights, no thin schematic microdetails; it must remain legible at 100x88. Leave transparent outer padding. No text, letters, numbers, rank/stage marks, flags, logos, watermark, humans, mushroom cloud, bomb, or yellow-black radiation sign. One icon only, no contact sheet, no mockup, no background panel.",
+      "selected_original": "generated/fission_chain_reaction_experiments.original.png",
+      "original_tool_path": "C:/Users/jaewo/.codex/generated_images/01a18d4a-0733-7521-ab90-a24ac46536d0/exec-701d88aa-3051-42cc-a37d-31c443098716.png"
+    },
+    {
+      "id": "HOK_KOR_civilian_nuclear_investment",
+      "prompt": "Use case: stylized-concept. Asset type: one national-focus icon for a 1930s–1950s grand-strategy game, final display 100x88 pixels. Create a polished original painted/embossed metal emblem for civilian nuclear-power investment. Main subject: two broad cooling towers with a low domed civilian reactor building and a small turbine/power-hall silhouette, clearly peaceful electrical infrastructure. A neutral industrial-gray round medallion with restrained bronze metallic rim and bronze laurel ornament unifies the design. Gray stone/steel plant, warm bronze rim, dark charcoal recesses for readable contrast; very subtle pale steam if needed. Front-facing centered composition, complete icon with all ornament inside the frame, isolated on a genuinely transparent background. Render as a compact game badge with bold silhouettes and selective metallic highlights, no thin schematic microdetails; it must remain legible at 100x88. Leave transparent outer padding. No text, letters, numbers, rank/stage marks, flags, logos, watermark, humans, weapon, missile, explosion, mushroom cloud, or yellow-black radiation sign. One icon only, no contact sheet, no mockup, no background panel. Match the visual weight of a silver scientific-research medallion, while keeping this one gray/bronze and clearly recognizable as a civilian reactor.",
+      "selected_original": "generated/civilian_nuclear_investment.original.png",
+      "original_tool_path": "C:/Users/jaewo/.codex/generated_images/01a18d4a-0733-7521-ab90-a24ac46536d0/exec-9517ee20-f438-4bf7-af9b-8d3ca9551d8c.png"
+    }
+  ]
+}

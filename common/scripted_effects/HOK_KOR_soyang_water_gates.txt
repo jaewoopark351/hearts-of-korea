@@ -1,0 +1,89 @@
+#20261031_kpopmodder: Make fixed-province water-gate cleanup idempotent and independent of Korea's continued existence.
+HOK_KOR_soyang_cleanup_effect = {
+	525 = {
+		remove_province_modifier = {
+			static_modifiers = { HOK_KOR_soyang_flooded }
+			province = { id = 7125 }
+		}
+	}
+	1029 = {
+		remove_province_modifier = {
+			static_modifiers = { HOK_KOR_soyang_flooded }
+			province = { id = 13418 }
+		}
+	}
+	clr_global_flag = HOK_KOR_soyang_managed_water
+	clr_global_flag = HOK_KOR_soyang_opening
+	clr_global_flag = HOK_KOR_soyang_flooding_active
+	clr_global_flag = HOK_KOR_soyang_draining
+}
+
+#20261031_kpopmodder: Check only the marked module and fixed Korean scope after peace, territorial changes, annexation or the daily fallback.
+HOK_KOR_soyang_check_safety_effect = {
+	if = {
+		limit = { has_global_flag = HOK_KOR_soyang_managed_water }
+		if = {
+			limit = {
+				NOT = {
+					KOR = {
+						exists = yes
+						HOK_KOR_soyang_operation_conditions_trigger = yes
+					}
+				}
+			}
+			HOK_KOR_soyang_cleanup_effect = yes
+		}
+	}
+}
+
+#20261031_kpopmodder: Flood only Seoul and Chuncheon after preparation, with bounded state-wide shared-building damage.
+HOK_KOR_soyang_apply_flooding_effect = {
+	if = {
+		limit = {
+			has_global_flag = HOK_KOR_soyang_opening
+			HOK_KOR_soyang_operation_conditions_trigger = yes
+		}
+		525 = {
+			add_province_modifier = {
+				static_modifiers = { HOK_KOR_soyang_flooded }
+				province = { id = 7125 }
+			}
+			#20261031_kpopmodder: Skip absent shared buildings while preserving the existing Soyang damage amounts.
+			if = {
+				limit = { infrastructure > 0 }
+				damage_building = { type = infrastructure damage = 1 }
+			}
+			if = {
+				limit = { industrial_complex > 0 }
+				damage_building = { type = industrial_complex damage = 0.5 }
+			}
+			if = {
+				limit = { arms_factory > 0 }
+				damage_building = { type = arms_factory damage = 0.5 }
+			}
+		}
+		1029 = {
+			add_province_modifier = {
+				static_modifiers = { HOK_KOR_soyang_flooded }
+				province = { id = 13418 }
+			}
+			#20261031_kpopmodder: Skip absent shared buildings while preserving the existing Soyang damage amounts.
+			if = {
+				limit = { infrastructure > 0 }
+				damage_building = { type = infrastructure damage = 1 }
+			}
+			if = {
+				limit = { industrial_complex > 0 }
+				damage_building = { type = industrial_complex damage = 0.5 }
+			}
+			if = {
+				limit = { arms_factory > 0 }
+				damage_building = { type = arms_factory damage = 0.5 }
+			}
+		}
+		clr_global_flag = HOK_KOR_soyang_opening
+		set_global_flag = HOK_KOR_soyang_managed_water
+		set_global_flag = HOK_KOR_soyang_flooding_active
+	}
+	else = { HOK_KOR_soyang_cleanup_effect = yes }
+}

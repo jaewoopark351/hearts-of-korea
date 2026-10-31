@@ -1,0 +1,23 @@
+spriteTypes = {
+	#20261031_kpopmodder: Keep the four native faction emblems inside the project with their original two-frame layout.
+	spriteType = {
+		name = "GFX_HOK_KOR_faction_asian_liberation_front"
+		texturefile = "gfx/interface/factions/HOK_KOR/faction_icon_generic_communist.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_faction_asian_union"
+		texturefile = "gfx/interface/factions/HOK_KOR/faction_logo_generic_democratic.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_faction_organization_of_free_nations"
+		texturefile = "gfx/interface/factions/HOK_KOR/faction_icon_allies.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_faction_central_powers"
+		texturefile = "gfx/interface/factions/HOK_KOR/faction_logo_generic.dds"
+		noOfFrames = 2
+	}
+}

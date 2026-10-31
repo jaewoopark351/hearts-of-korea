@@ -1,0 +1,78 @@
+#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_daewoo_standardized_parts"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/daewoo_standardized_parts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_rotem_reinforced_armor"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/rotem_reinforced_armor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_rygyeong_infantry_breakthrough"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/rygyeong_infantry_breakthrough.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_doosan_mobile_powertrain"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/doosan_mobile_powertrain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_kai_agile_airframes"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/kai_agile_airframes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_hanjin_long_range_navigation"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/hanjin_long_range_navigation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_jinhae_torpedo_sights"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/jinhae_torpedo_sights.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_daewoo_heavy_gun_mounts"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/daewoo_heavy_gun_mounts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_hyundai_carrier_assembly"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/hyundai_carrier_assembly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_daehan_escort_sonar"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/daehan_escort_sonar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_gms_torpedo_fire_control"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/gms_torpedo_fire_control.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_gukgun_rifle_tooling"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/gukgun_rifle_tooling.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_hanhwa_artillery_ammunition"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/hanhwa_artillery_ammunition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_kia_economical_drivetrain"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/kia_economical_drivetrain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOK_KOR_mio_trait_mmaa_support_standardization"
+		texturefile = "gfx/interface/military_industrial_organization/HOK_KOR/mmaa_support_standardization.dds"
+	}
+}

@@ -1,0 +1,71 @@
+#20261031_kpopmodder: Register dedicated generated civil nuclear focus art and local completion-shine textures.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_fission_chain_reaction_experiments"
+        texturefile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/fission_chain_reaction_experiments.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_fission_chain_reaction_experiments_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/fission_chain_reaction_experiments.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/fission_chain_reaction_experiments.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/fission_chain_reaction_experiments.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_civilian_nuclear_investment"
+        texturefile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/civilian_nuclear_investment.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_focus_civilian_nuclear_investment_shine"
+        texturefile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/civilian_nuclear_investment.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/civilian_nuclear_investment.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/civilian_nuclear_investment.dds"
+            animationtexturefile = "gfx/interface/goals/HOK_KOR/civil_nuclear_research/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+}

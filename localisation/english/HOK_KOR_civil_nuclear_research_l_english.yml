@@ -1,0 +1,8 @@
+﻿l_english:
+#20261031_kpopmodder: Localise the university fission experiment and civilian reactor technology investment.
+ HOK_KOR_fission_chain_reaction_experiments:0 "핵분열 연쇄반응 실험"
+ HOK_KOR_fission_chain_reaction_experiments_desc:0 "대학의 물리학 연구진이 핵분열 현상을 검토하고 있습니다. 실험 장비와 연구 자료를 모아 연쇄반응의 가능성을 확인하고, 원자력을 다룰 연구 기반을 마련해야 합니다."
+ HOK_KOR_civilian_nuclear_investment:0 "민간 원자로 투자"
+ HOK_KOR_civilian_nuclear_investment_desc:0 "늘어나는 공장과 도시에는 안정적인 전력이 필요합니다. 원자로 설계와 운전 인력 양성에 장기적으로 투자하여, 핵 연구의 성과를 민간 발전시설 건설로 연결할 것입니다."
+ HOK_KOR_civilian_nuclear_technology_tt:0 "§Y민간 원자로 건설 기술§!을 획득하여 §Y민간 원자로§!를 건설할 수 있게 됩니다."
+ commercial_nuclear_reactor_tech:0 "민간 원자로 건설 기술"

@@ -78,11 +78,12 @@ set_technology = {
 	tech_trucks = 1
 	fuel_silos = 1
 	
-	#doctrines#
-	superior_firepower = 1
-	trade_interdiction = 1
-	formation_flying = 1
 }
+
+#20261031_kpopmodder: Preserve the original three service doctrines in the target-version doctrine system.
+set_grand_doctrine = superior_firepower
+set_grand_doctrine = new_convoy_raiding
+set_grand_doctrine = new_battlefield_support
 
 if = {
 	limit = { has_dlc = "No Step Back" }

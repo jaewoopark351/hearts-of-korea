@@ -6,6 +6,26 @@ KOR_daewoo_tank_organization = {
 	allowed = {
 		tag = KOR
 	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_daewoo_standardized_parts
+		name = HOK_KOR_mio_trait_daewoo_standardized_parts
+		icon = GFX_HOK_KOR_mio_trait_daewoo_standardized_parts
+		special_trait_background = yes
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_mio_trait_simplified_suspension
+		any_parent = { generic_mio_trait_simplified_suspension }
+		available = {
+			FROM = { has_completed_focus = KOR_army_augmentation }
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+	}
 }
 KOR_hyundai_rotem_organization = {
 	include = generic_heavy_tank_organization
@@ -15,6 +35,23 @@ KOR_hyundai_rotem_organization = {
 	}
 	available = {
 		owner = { has_completed_focus = KOR_armored_focus }
+	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_rotem_reinforced_armor
+		name = HOK_KOR_mio_trait_rotem_reinforced_armor
+		icon = GFX_HOK_KOR_mio_trait_rotem_reinforced_armor
+		special_trait_background = yes
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_mio_trait_wide_tracks
+		any_parent = { generic_mio_trait_wide_tracks }
+		available = {
+			FROM = { has_completed_focus = KOR_armored_focus }
+		}
+		equipment_bonus = {
+			armor_value = 0.1
+		}
 	}
 }
 KOR_rygyeong_organization = {
@@ -26,6 +63,23 @@ KOR_rygyeong_organization = {
 	available = {
 		owner = { has_completed_focus = KOR_armored_focus }
 	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_rygyeong_infantry_breakthrough
+		name = HOK_KOR_mio_trait_rygyeong_infantry_breakthrough
+		icon = GFX_HOK_KOR_mio_trait_rygyeong_infantry_breakthrough
+		special_trait_background = yes
+		position = { x = 2 y = 0 }
+		relative_position_id = generic_mio_trait_battle_tank_specifications
+		any_parent = { generic_mio_trait_battle_tank_specifications }
+		available = {
+			FROM = { has_completed_focus = KOR_armored_focus }
+		}
+		equipment_bonus = {
+			breakthrough = 0.1
+		}
+	}
 }
 KOR_doosan_organization = {
 	include = generic_mobile_tank_organization
@@ -35,6 +89,23 @@ KOR_doosan_organization = {
 	}
 	available = {
 		owner = { has_completed_focus = KOR_armored_focus }
+	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_doosan_mobile_powertrain
+		name = HOK_KOR_mio_trait_doosan_mobile_powertrain
+		icon = GFX_HOK_KOR_mio_trait_doosan_mobile_powertrain
+		special_trait_background = yes
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_mio_quality_assurance_routines
+		any_parent = { generic_mio_quality_assurance_routines }
+		available = {
+			FROM = { has_completed_focus = KOR_mobile_infantry }
+		}
+		equipment_bonus = {
+			maximum_speed = 0.1
+		}
 	}
 }
 
@@ -49,6 +120,23 @@ KOR_kai_company_organization = {
 	available = {
 		owner = { has_completed_focus = KOR_korea_aerospace_industry }
 	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_kai_agile_airframes
+		name = HOK_KOR_mio_trait_kai_agile_airframes
+		icon = GFX_HOK_KOR_mio_trait_kai_agile_airframes
+		special_trait_background = yes
+		position = { x = 2 y = 0 }
+		relative_position_id = generic_mio_trait_advanced_aerodynamics
+		any_parent = { generic_mio_trait_advanced_aerodynamics }
+		available = {
+			FROM = { has_completed_focus = KOR_korea_aerospace_industry }
+		}
+		equipment_bonus = {
+			air_agility = 0.1
+		}
+	}
 }
 KOR_hanjin_air_organization = {
 	include = generic_general_aircraft_organization
@@ -56,12 +144,47 @@ KOR_hanjin_air_organization = {
 	allowed = {
 		tag = KOR
 	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_hanjin_long_range_navigation
+		name = HOK_KOR_mio_trait_hanjin_long_range_navigation
+		icon = GFX_HOK_KOR_mio_trait_hanjin_long_range_navigation
+		special_trait_background = yes
+		position = { x = 2 y = 0 }
+		relative_position_id = generic_mio_trait_conservative_designs
+		any_parent = { generic_mio_trait_conservative_designs }
+		available = {
+			FROM = { has_completed_focus = KOR_daehanminguk_gonggun }
+		}
+		equipment_bonus = {
+			air_range = 0.1
+		}
+	}
 }
 KOR_jinhae_naval_air_factory_organization = {
 	include = generic_naval_aircraft_organization
 	icon = GFX_idea_kor_jinhae_naval_air_factory
 	allowed = {
 		tag = KOR
+	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_jinhae_torpedo_sights
+		name = HOK_KOR_mio_trait_jinhae_torpedo_sights
+		icon = GFX_HOK_KOR_mio_trait_jinhae_torpedo_sights
+		special_trait_background = yes
+		position = { x = 2 y = 0 }
+		relative_position_id = generic_mio_trait_navigation_equipment
+		any_parent = { generic_mio_trait_navigation_equipment }
+		available = {
+			FROM = { has_completed_focus = HOK_KOR_naval_air_coordination }
+		}
+		equipment_bonus = {
+			naval_strike_targetting = 0.1
+			naval_strike_attack = 0.05
+		}
 	}
 }
 
@@ -77,6 +200,23 @@ KOR_daewoo_ship_organization = {
 	available = {
 		owner = { has_completed_focus = KOR_invitation_of_foreign_naval_designers }
 	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_daewoo_heavy_gun_mounts
+		name = HOK_KOR_mio_trait_daewoo_heavy_gun_mounts
+		icon = GFX_HOK_KOR_mio_trait_daewoo_heavy_gun_mounts
+		special_trait_background = yes
+		position = { x = 2 y = 0 }
+		relative_position_id = generic_mio_trait_primary_battery_layout
+		any_parent = { generic_mio_trait_primary_battery_layout }
+		available = {
+			FROM = { has_completed_focus = KOR_large_surface_fleet }
+		}
+		equipment_bonus = {
+			hg_attack = 0.1
+		}
+	}
 }
 KOR_hyundai_heavy_industries_organization = {
 	include = generic_task_force_ship_organization
@@ -87,12 +227,48 @@ KOR_hyundai_heavy_industries_organization = {
 	available = {
 		owner = { has_completed_focus = KOR_invitation_of_foreign_naval_designers }
 	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_hyundai_carrier_assembly
+		name = HOK_KOR_mio_trait_hyundai_carrier_assembly
+		icon = GFX_HOK_KOR_mio_trait_hyundai_carrier_assembly
+		special_trait_background = yes
+		position = { x = 2 y = 0 }
+		relative_position_id = generic_mio_trait_primary_fire_director_control
+		any_parent = { generic_mio_trait_primary_fire_director_control }
+		available = {
+			FROM = { has_completed_focus = KOR_carrier_focus }
+		}
+		limit_to_equipment_type = { mio_cat_eq_all_carrier }
+		production_bonus = {
+			production_cost_factor = -0.1
+		}
+	}
 }
 KOR_daehanjoseongongsa_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_kor_daehanjoseongongsa
 	allowed = {
 		tag = KOR
+	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_daehan_escort_sonar
+		name = HOK_KOR_mio_trait_daehan_escort_sonar
+		icon = GFX_HOK_KOR_mio_trait_daehan_escort_sonar
+		special_trait_background = yes
+		position = { x = 2 y = 0 }
+		relative_position_id = generic_mio_trait_submarine_hunters
+		any_parent = { generic_mio_trait_submarine_hunters }
+		available = {
+			FROM = { has_completed_focus = KOR_daehanminguk_haegun }
+		}
+		equipment_bonus = {
+			sub_detection = 0.1
+			sub_attack = 0.05
+		}
 	}
 }
 KOR_gms_organization = {
@@ -103,6 +279,23 @@ KOR_gms_organization = {
 	}
 	available = {
 		owner = { has_completed_focus = KOR_invitation_of_foreign_naval_designers }
+	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_gms_torpedo_fire_control
+		name = HOK_KOR_mio_trait_gms_torpedo_fire_control
+		icon = GFX_HOK_KOR_mio_trait_gms_torpedo_fire_control
+		special_trait_background = yes
+		position = { x = 3 y = 1 }
+		relative_position_id = generic_mio_trait_long_range_raiding
+		any_parent = { generic_mio_trait_long_range_raiding generic_mio_trait_high_speed_raiding }
+		available = {
+			FROM = { has_completed_focus = KOR_commerce_raiding }
+		}
+		equipment_bonus = {
+			torpedo_attack = 0.1
+		}
 	}
 }
 
@@ -115,6 +308,23 @@ KOR_gukgun_jobyeongchang_organization = {
 	allowed = {
 		tag = KOR
 	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_gukgun_rifle_tooling
+		name = HOK_KOR_mio_trait_gukgun_rifle_tooling
+		icon = GFX_HOK_KOR_mio_trait_gukgun_rifle_tooling
+		special_trait_background = yes
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_mio_trait_drum_pattern_sights
+		any_parent = { generic_mio_trait_drum_pattern_sights }
+		available = {
+			FROM = { has_completed_focus = KOR_new_model_rifle }
+		}
+		equipment_bonus = {
+			soft_attack = 0.1
+		}
+	}
 }
 KOR_hanhwa_organization = {
 	include = generic_artillery_organization
@@ -122,12 +332,46 @@ KOR_hanhwa_organization = {
 	allowed = {
 		tag = KOR
 	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_hanhwa_artillery_ammunition
+		name = HOK_KOR_mio_trait_hanhwa_artillery_ammunition
+		icon = GFX_HOK_KOR_mio_trait_hanhwa_artillery_ammunition
+		special_trait_background = yes
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_mio_trait_advanced_barrel_forging
+		any_parent = { generic_mio_trait_advanced_barrel_forging }
+		available = {
+			FROM = { has_completed_focus = KOR_improved_artillery }
+		}
+		equipment_bonus = {
+			soft_attack = 0.1
+		}
+	}
 }
 KOR_kia_motors_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_kor_kia_motors
 	allowed = {
 		tag = KOR
+	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_kia_economical_drivetrain
+		name = HOK_KOR_mio_trait_kia_economical_drivetrain
+		icon = GFX_HOK_KOR_mio_trait_kia_economical_drivetrain
+		special_trait_background = yes
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_mio_trait_medium_machinegun_mounts
+		any_parent = { generic_mio_trait_medium_machinegun_mounts }
+		available = {
+			FROM = { has_completed_focus = KOR_mobile_infantry }
+		}
+		equipment_bonus = {
+			fuel_consumption = -0.1
+		}
 	}
 }
 KOR_mmaa_organization = {
@@ -138,6 +382,23 @@ KOR_mmaa_organization = {
 	}
 	available = {
 		owner = { has_completed_focus = KOR_expansion_of_non_combat_support_units }
+	}
+
+	#20261031_kpopmodder: Add a focus-gated company specialization while preserving the inherited MIO tree and access rules.
+	add_trait = {
+		token = HOK_KOR_mio_trait_mmaa_support_standardization
+		name = HOK_KOR_mio_trait_mmaa_support_standardization
+		icon = GFX_HOK_KOR_mio_trait_mmaa_support_standardization
+		special_trait_background = yes
+		position = { x = -2 y = 0 }
+		relative_position_id = generic_mio_trait_private_scientists_program
+		any_parent = { generic_mio_trait_private_scientists_program }
+		available = {
+			FROM = { has_completed_focus = KOR_expansion_of_non_combat_support_units }
+		}
+		production_bonus = {
+			production_cost_factor = -0.1
+		}
 	}
 }
 

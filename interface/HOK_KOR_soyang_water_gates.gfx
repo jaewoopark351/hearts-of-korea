@@ -1,0 +1,15 @@
+#20261031_kpopmodder: Connect dedicated local small water-gate artwork without changing global Dutch sprites.
+spriteTypes = {
+	spriteType = {
+		name = "GFX_HOK_KOR_decision_soyang_inundate"
+		texturefile = "gfx/interface/decisions/HOK_KOR/soyang_water_gates/soyang_inundate.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_decision_soyang_drain"
+		texturefile = "gfx/interface/decisions/HOK_KOR/soyang_water_gates/soyang_drain.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_decision_category_soyang_water_gates"
+		texturefile = "gfx/interface/decisions/HOK_KOR/soyang_water_gates/soyang_category.dds"
+	}
+}

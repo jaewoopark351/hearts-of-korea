@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-31",
+  "assets": [
+    {
+      "content_id": "HOK_KOR_faction_template_asian_liberation_front",
+      "sprite": "GFX_HOK_KOR_faction_asian_liberation_front",
+      "method": "vanilla_copy_unchanged",
+      "source_path": "<VANILLA>/gfx/interface/factions/faction_logos/faction_icon_generic_communist.dds",
+      "source_version": "HOI4 1.19.3.0.c01a / Steam build 25205862",
+      "original_author": "Paradox Interactive",
+      "reuse_basis": "Installed HOI4 artwork reused for a mod of the same game; original attribution retained; no new artwork licence asserted.",
+      "source_sha256": "8965c81d485fd5bc30ba55adc2bf8bf5d82d1f2fa622e92b14cd487f9d8cb686",
+      "saved_source": "docs/assets/korean-factions/sources/faction_icon_generic_communist.dds",
+      "final_path": "gfx/interface/factions/HOK_KOR/faction_icon_generic_communist.dds",
+      "final_sha256": "8965c81d485fd5bc30ba55adc2bf8bf5d82d1f2fa622e92b14cd487f9d8cb686",
+      "dimensions": [
+        200,
+        100
+      ],
+      "frames": 2,
+      "edits": "None; original dimensions, alpha and two-frame layout retained."
+    },
+    {
+      "content_id": "HOK_KOR_faction_template_asian_union",
+      "sprite": "GFX_HOK_KOR_faction_asian_union",
+      "method": "vanilla_copy_unchanged",
+      "source_path": "<VANILLA>/gfx/interface/factions/faction_logos/faction_logo_generic_democratic.dds",
+      "source_version": "HOI4 1.19.3.0.c01a / Steam build 25205862",
+      "original_author": "Paradox Interactive",
+      "reuse_basis": "Installed HOI4 artwork reused for a mod of the same game; original attribution retained; no new artwork licence asserted.",
+      "source_sha256": "a5ffb7a8df1f37c32f89acb3b0d98718b9b6bf30aef1db2383da2cbcc66bb1d0",
+      "saved_source": "docs/assets/korean-factions/sources/faction_logo_generic_democratic.dds",
+      "final_path": "gfx/interface/factions/HOK_KOR/faction_logo_generic_democratic.dds",
+      "final_sha256": "a5ffb7a8df1f37c32f89acb3b0d98718b9b6bf30aef1db2383da2cbcc66bb1d0",
+      "dimensions": [
+        200,
+        100
+      ],
+      "frames": 2,
+      "edits": "None; original dimensions, alpha and two-frame layout retained."
+    },
+    {
+      "content_id": "HOK_KOR_faction_template_organization_of_free_nations",
+      "sprite": "GFX_HOK_KOR_faction_organization_of_free_nations",
+      "method": "vanilla_copy_unchanged",
+      "source_path": "<VANILLA>/gfx/interface/factions/faction_logos/faction_icon_allies.dds",
+      "source_version": "HOI4 1.19.3.0.c01a / Steam build 25205862",
+      "original_author": "Paradox Interactive",
+      "reuse_basis": "Installed HOI4 artwork reused for a mod of the same game; original attribution retained; no new artwork licence asserted.",
+      "source_sha256": "0d74485244ccf8e822f23cd5ba40caf2b31cbdf2db22b30e3fdbd9e41b410ea5",
+      "saved_source": "docs/assets/korean-factions/sources/faction_icon_allies.dds",
+      "final_path": "gfx/interface/factions/HOK_KOR/faction_icon_allies.dds",
+      "final_sha256": "0d74485244ccf8e822f23cd5ba40caf2b31cbdf2db22b30e3fdbd9e41b410ea5",
+      "dimensions": [
+        200,
+        100
+      ],
+      "frames": 2,
+      "edits": "None; original dimensions, alpha and two-frame layout retained."
+    },
+    {
+      "content_id": "HOK_KOR_faction_template_central_powers",
+      "sprite": "GFX_HOK_KOR_faction_central_powers",
+      "method": "vanilla_copy_unchanged",
+      "source_path": "<VANILLA>/gfx/interface/factions/faction_logos/faction_logo_generic.dds",
+      "source_version": "HOI4 1.19.3.0.c01a / Steam build 25205862",
+      "original_author": "Paradox Interactive",
+      "reuse_basis": "Installed HOI4 artwork reused for a mod of the same game; original attribution retained; no new artwork licence asserted.",
+      "source_sha256": "bc95ff5683742f9de83e035b16e976d3118a180f1c27076364a788f7aed3ab02",
+      "saved_source": "docs/assets/korean-factions/sources/faction_logo_generic.dds",
+      "final_path": "gfx/interface/factions/HOK_KOR/faction_logo_generic.dds",
+      "final_sha256": "bc95ff5683742f9de83e035b16e976d3118a180f1c27076364a788f7aed3ab02",
+      "dimensions": [
+        200,
+        100
+      ],
+      "frames": 2,
+      "edits": "None; original dimensions, alpha and two-frame layout retained."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+﻿l_korean:
+#20261031_kpopmodder: Explain Korea's native marine-raid category, exact Nagasaki target, costs, outcomes and focus unlock.
+ raid_category_HOK_KOR_naval_commando_raids:0 "해군 특공 습격"
+ raid_category_header_HOK_KOR_naval_commando_raids:0 "대한민국 해군 특공작전"
+ tooltip_raid_category_HOK_KOR_naval_commando_raids:0 "§H해군 특공 습격§!\n해병대가 수송선을 타고 적 군항에 접근하여 정박 함선과 항만 시설을 타격합니다."
+ raid_category_fluff_text_HOK_KOR_naval_commando_raids:0 "§L대한민국 해군본부§!"
+ HOK_KOR_nagasaki_port_raid:0 "현해탄 군항 급습"
+ HOK_KOR_nagasaki_port_raid_desc:0 "일본 함대와 정면으로 맞붙기 전에 군항에 묶인 적함을 노려야 합니다. 해병대 습격부대가 현해탄을 건너 나가사키의 접안 시설과 정박 함선을 타격하고 철수합니다. 긴 준비와 큰 희생이 따르지만, 적 함대가 출항하기 전에 피해를 입힐 기회는 한 번뿐입니다."
+ raid_type_HOK_KOR_nagasaki_port_raid:0 "$HOK_KOR_nagasaki_port_raid$"
+ raid_type_HOK_KOR_nagasaki_port_raid_desc:0 "$HOK_KOR_nagasaki_port_raid_desc$\n\n§Y준비와 출격:§!\n해병 대대가 3개 이상인 사단, 출발 해군기지와 수송선 40척이 필요합니다. 지휘력 40을 배정하며 준비 기간은 120일입니다. 일본이 나가사키 주를 소유·지배하고 표적 항구를 통제해야 준비할 수 있고, 일본과 전쟁 중일 때만 출격합니다. 이 작전은 한 번만 수행할 수 있습니다.\n\n§Y성과 — 제한적 성공 / 성공 / 대성공:§!\n나가사키의 표적 해군기지에 1 / 2 / 3단계 피해를 입히고, 그 항구에 정박한 적 함선의 조직력과 전력에 각각 25% / 50% / 75% 피해를 입힙니다. 작전이 끝나기 전에 일본과 평화가 체결되거나 표적 주의 소유·지배 또는 항구 통제가 바뀌면 표적 피해는 적용되지 않습니다.\n\n§R투입 사단의 위험:§!\n모든 결과에서 현재 조직력의 65%와 현재 전력의 60%를 잃습니다. 투입 사단은 경험치 성장도 10%p를 얻고, 제한적 성공 이상이면 사단장은 경험치 50을 얻습니다."
+ HOK_KOR_nagasaki_port_target:0 "나가사키 군항"
+ HOK_KOR_unlock_nagasaki_port_raid_tt:0 "§Y현해탄 군항 급습§! 해군 특공작전이 해금됩니다.\n해병 대대 3개 이상인 사단·수송선 40척·출발 해군기지가 필요하며, 일본과 전쟁 중일 때 나가사키 군항을 한 번 급습할 수 있습니다."

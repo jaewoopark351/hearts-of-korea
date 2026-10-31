@@ -80,7 +80,8 @@ KOR_decision_CNDP_category = {
 }
 
 KOR_soyanggangdam_category = {
-	icon = hol_prepare_the_inundation_lines
+	#20261031_kpopmodder: Use the project-owned small artwork for the completed Korean water-gate system.
+	icon = GFX_HOK_KOR_decision_category_soyang_water_gates
 	
 	allowed = {
 		original_tag = KOR

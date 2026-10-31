@@ -1,0 +1,18 @@
+#20261031_kpopmodder: Bound Soyang water-gate operations to Korea's two river provinces and the completed Chuncheon dam.
+HOK_KOR_soyang_operation_conditions_trigger = {
+	tag = KOR
+	has_capitulated = no
+	has_war = yes
+	owns_state = 525
+	owns_state = 1029
+	controls_province = 7125
+	controls_province = 13418
+	has_completed_focus = KOR_build_soyanggang_dam
+	1029 = {
+		any_province_building_level = {
+			province = { id = 13418 }
+			building = dam
+			level > 0
+		}
+	}
+}

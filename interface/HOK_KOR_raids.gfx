@@ -1,0 +1,24 @@
+spriteTypes = {
+	#20261031_kpopmodder: Supply the native category lookup with a project-owned copy of the marine-raid icon.
+	spriteType = {
+		name = "GFX_raid_category_small_HOK_KOR_naval_commando_raids"
+		texturefile = "gfx/interface/military_raids/HOK_KOR/naval_commando.dds"
+		noOfFrames = 1
+	}
+	#20261031_kpopmodder: Use the project copy for the assigned Korean marine unit icon.
+	spriteType = {
+		name = "GFX_HOK_KOR_raid_naval_commando"
+		texturefile = "gfx/interface/military_raids/HOK_KOR/naval_commando.dds"
+	}
+	#20261031_kpopmodder: Identify the Korean operation with the native port-raid image stored inside this mod.
+	spriteType = {
+		name = "GFX_HOK_KOR_raid_nagasaki_port_map"
+		texturefile = "gfx/interface/military_raids/HOK_KOR/nagasaki_port_map.dds"
+	}
+	#20261031_kpopmodder: Preserve both frames of the native naval-base target portrait in the project copy.
+	spriteType = {
+		name = "GFX_HOK_KOR_raid_naval_base_target"
+		texturefile = "gfx/interface/military_raids/HOK_KOR/naval_base_target.dds"
+		noOfFrames = 2
+	}
+}

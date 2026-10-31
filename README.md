@@ -10,6 +10,11 @@
 
 ## 문서 목록
 
+- [한국 민간 핵 연구 중점 2개 구현 명세](docs/HOK_KOREAN_CIVIL_NUCLEAR_RESEARCH_SPEC.md): 현재474개. 첫35일·핵 혁신100%·핵 기술 선행 연구 불이익2년 감소1회, 둘째는 감산 없는245일. 후속 변경은 정적 대조만 수행하며 기완료 저장에 새 보상을 자동 소급하지 않음
+- [민간 핵 연구 구현·검증 기록](docs/incidents/2026-10-31-korean-civil-nuclear-research.md): 감산 제거 전의 소스506/0·정상240회14/0·건설 대기열17/0·재로드24/0·기보유 통과 각19/0 등은 이력으로 보존. 감산 없는245일의 새 실행·정상 진행은 미검증
+- [민간 핵 연구 아이콘 출처](docs/HOK_KOREAN_CIVIL_NUCLEAR_ICON_CREDITS.md): 전용 AI 그림2개·100×88 DDS·내부 광택, 원본·프롬프트·현재1.19.4.1 광택 자산 출처와 해시
+- [한국 기능 연동 수리·후속 개발 명세](docs/HOK_KOREAN_FEATURE_INTEGRATION_SPEC.md): 훈장·교리·비전 1950 수리와 수문 조절·MIO 15개 전문화·연구망·해군 습격·세력 템플릿 소스 통합. [구현·검증 기록](docs/incidents/2026-10-31-korean-feature-integration.md)의 실제 검증 범위·제한 참조
+- [한국 기능 연동 비교 감사 — 영국·독일 1.19.3 기준](docs/audits/2026-10-30-korean-feature-integration-review.md): 감사 당시 기능 연결 누락 2개 계통·해금 안내 1건, 미완성 흔적 1건과 전용 콘텐츠 차이 4개를 구분한 소스 검토 기록. 이후 구현·실행 검증은 위의 별도 기록 참조
 - [비전 1950 긴급 특별 건함계획 명세](docs/HOK_KOREAN_VISION_1950_EMERGENCY_SHIPBUILDING_PLAN.md): 구현·정적 86/0·기록한 조건의 기능 검증 완료. 정치력 150으로 함정·지원함·수리함·수송선 비용 −50% 보정 180일, 적용 중 사용 차단·만료 후 추가 대기 없이 무제한 반복
 - [긴급 특별 건함계획 구현·검증 기록](docs/incidents/2026-10-20-korean-emergency-shipbuilding.md): 실제 사용·비용 감소와 복귀·재사용·최종 일반 실행 새 게임 새 정규화 오류 0. 강제 조건 준비·합성 저장 경고·정상 진행 및 미검증 항목은 분리
 - [긴급 특별 건함계획 이미지 출처](docs/HOK_KOREAN_EMERGENCY_SHIPBUILDING_ASSET_CREDITS.md): AI 생성 전용 그림 2개·원본 보존·32×32 디시전과 60×68 국민정신·GFX 및 정적 검수
@@ -22,7 +27,7 @@
 - [한국 중점 선행 조건 가독성 개선 계획](docs/HOK_KOREAN_FOCUS_PREREQUISITE_READABILITY_PLAN.md): 여섯 시작 중점 코드 적용·정적 및 초기 UI 확인·정상 진행 검증 대기; 원료는 두 선행 AND 연결, 나머지 다섯은 지정 완료 조건만 삭제. 삼군의 을해군란·F4/F5 후속 조건은 유지
 - [한국 신규 디시전과 국민정신 설명 보강 계획](docs/HOK_KOREAN_DECISION_SPIRIT_PROSE_PLAN.md): 설명 124개·한국어/영어 14쌍 적용, 파시즘·공산주의 문체와 좋은 기존 문안 보존; 정적 보존 검사 통과, UI 확인 대기
 - [디시전·국민정신 설명 구현 기록](docs/incidents/2026-10-03-korean-decision-spirit-prose.md): 누적 124개와 문체 후속 48개, 효과·조건 대조, 최종 보존 검사와 Rt56 플레이셋으로 인한 화면 검증 대기
-- [한국 중점 2차 확장 현황](docs/HOK_KOREAN_SECOND_WAVE_PLAN.md): 현재 472개; 기존 460개에 내정 13개 추가·구 협력 중점 1개 제거, 실제 플레이 검증은 소스·기록별로 구분
+- [한국 중점 2차 확장 현황](docs/HOK_KOREAN_SECOND_WAVE_PLAN.md): 현재474개; 기존460개에 내정13개 추가·구 협력1개 제거 후 민간 핵 연구2개 추가. 과거 수량과 실제 검증은 당시 소스·기록별로 구분
 - [파시즘 점령행정·삼군 조정·재건예산 명세](docs/HOK_KOREAN_FASCIST_FOLLOWUP_SPEC.md): 신규 12개·국민정신 8개, 영토·평시 조건과 실제 예산 선택
 - [한국 중점 보상 재조정 설계·적용 상태](docs/HOK_KOREAN_FOCUS_REBALANCE_PLAN.md): 보상 강화 적용, 게임 검증 진행 중; 보병장비 한정 생산량 +10%는 미적용·대안 응답 대기
 - [한국 중점 트리 보존·35일화·확장 설계](docs/HOK_KOREAN_FOCUS_EXPANSION_PLAN.md): 기존 266개 보존, 기간 단축 범위와 단계별 확장 제안

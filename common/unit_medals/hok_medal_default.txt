@@ -17,9 +17,12 @@ unit_medals = {
 			army_org_factor = 0.05
 		}
 		
-		one_time_effect = {
-			add_divisional_commander_xp = 100
+		#20261031_kpopmodder: Match the vanilla USA naval counterpart and share the existing 100 officer XP across services.
+		ship_modifiers = {
+			navy_org_factor = 0.05
+			naval_morale_factor = 0.05
 		}
+		officer_xp = 100
 		
 	}
 	
@@ -35,9 +38,11 @@ unit_medals = {
 			supply_consumption_factor = -0.1
 		}
 		
-		one_time_effect = {
-			add_divisional_commander_xp = 100
+		#20261031_kpopmodder: Match the vanilla USA naval counterpart and share the existing 100 officer XP across services.
+		ship_modifiers = {
+			naval_supply_consumption_factor = -0.1
 		}
+		officer_xp = 100
 		
 	}
 	
@@ -53,9 +58,11 @@ unit_medals = {
 			army_attack_factor = 0.05
 		}
 		
-		one_time_effect = {
-			add_divisional_commander_xp = 100
+		#20261031_kpopmodder: Match the vanilla USA naval counterpart and share the existing 100 officer XP across services.
+		ship_modifiers = {
+			naval_damage_factor = 0.05
 		}
+		officer_xp = 100
 		
 	}
 	
@@ -71,9 +78,11 @@ unit_medals = {
 			experience_loss_factor = -0.2
 		}
 		
-		one_time_effect = {
-			add_divisional_commander_xp = 100
+		#20261031_kpopmodder: Match the vanilla USA naval counterpart and share the existing 100 officer XP across services.
+		ship_modifiers = {
+			experience_gain_navy_unit_factor = 0.2
 		}
+		officer_xp = 100
 		
 	}
 }

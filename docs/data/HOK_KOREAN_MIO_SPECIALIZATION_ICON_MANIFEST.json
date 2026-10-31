@@ -1,0 +1,844 @@
+{
+  "date": "2026-10-31",
+  "source_version": "Operation Postern 1.19.3.0.c01a / Steam build 25205862",
+  "source_organization_sha256": "87052e3ad3c21fcc97c4f697b6a682cdf04e44eefa0160ac15e280a317873959",
+  "modified_organization_sha256": "057374d4cbbd30ae88a5e61036b01a52efe9d72226457340ca656470a6b589a8",
+  "source_preservation": "Removing the fifteen added trait blocks reproduces every original byte.",
+  "assets": [
+    {
+      "organization_id": "KOR_daewoo_tank_organization",
+      "trait_id": "HOK_KOR_mio_trait_daewoo_standardized_parts",
+      "name_ko": "호환 부품 체계",
+      "focus_gate": "KOR_army_augmentation",
+      "placement_anchor": "generic_mio_trait_simplified_suspension",
+      "any_parent": [
+        "generic_mio_trait_simplified_suspension"
+      ],
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "reliability": 0.05
+        },
+        "production_bonus": {
+          "production_cost_factor": -0.05
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_daewoo_standardized_parts",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_reliability.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "49b4ca60c03ab43519bd55030a59d6ebd7c3722772b57a55f5c5ec3ffe6c0f0b",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_reliability.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/daewoo_standardized_parts.dds",
+      "final_sha256": "49b4ca60c03ab43519bd55030a59d6ebd7c3722772b57a55f5c5ec3ffe6c0f0b",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        0.0,
+        1.0
+      ],
+      "before_bounds": [
+        1.0,
+        8.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_hyundai_rotem_organization",
+      "trait_id": "HOK_KOR_mio_trait_rotem_reinforced_armor",
+      "name_ko": "중전차 장갑 접합",
+      "focus_gate": "KOR_armored_focus",
+      "placement_anchor": "generic_mio_trait_wide_tracks",
+      "any_parent": [
+        "generic_mio_trait_wide_tracks"
+      ],
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "armor_value": 0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_rotem_reinforced_armor",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_armor_value.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "a48b688326f4a51fe404b520a3d2f0f88658726c9e1411f2ee96d9fe99de50ec",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_armor_value.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/rotem_reinforced_armor.dds",
+      "final_sha256": "a48b688326f4a51fe404b520a3d2f0f88658726c9e1411f2ee96d9fe99de50ec",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        0.0,
+        1.0
+      ],
+      "before_bounds": [
+        1.0,
+        9.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        9.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_rygyeong_organization",
+      "trait_id": "HOK_KOR_mio_trait_rygyeong_infantry_breakthrough",
+      "name_ko": "보병 엄호 사격설계",
+      "focus_gate": "KOR_armored_focus",
+      "placement_anchor": "generic_mio_trait_battle_tank_specifications",
+      "any_parent": [
+        "generic_mio_trait_battle_tank_specifications"
+      ],
+      "relative_xy": [
+        2,
+        0
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "breakthrough": 0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_rygyeong_infantry_breakthrough",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_breakthrough.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "39903dc08bd15ec07811f5a4c82b997ae60f65e2fe8302ce969a42fe40803e7c",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_breakthrough.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/rygyeong_infantry_breakthrough.dds",
+      "final_sha256": "39903dc08bd15ec07811f5a4c82b997ae60f65e2fe8302ce969a42fe40803e7c",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        8.0,
+        0.0
+      ],
+      "before_bounds": [
+        0.0,
+        9.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        9.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_doosan_organization",
+      "trait_id": "HOK_KOR_mio_trait_doosan_mobile_powertrain",
+      "name_ko": "기동전용 동력계",
+      "focus_gate": "KOR_mobile_infantry",
+      "placement_anchor": "generic_mio_quality_assurance_routines",
+      "any_parent": [
+        "generic_mio_quality_assurance_routines"
+      ],
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "maximum_speed": 0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_doosan_mobile_powertrain",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_maximum_speed.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "da93597200a349465b0b525aaf160174deced51c8da046179a9302fd1b1f3c60",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_maximum_speed.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/doosan_mobile_powertrain.dds",
+      "final_sha256": "da93597200a349465b0b525aaf160174deced51c8da046179a9302fd1b1f3c60",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        3.0,
+        2.0
+      ],
+      "before_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_kai_company_organization",
+      "trait_id": "HOK_KOR_mio_trait_kai_agile_airframes",
+      "name_ko": "기민한 국산 기체",
+      "focus_gate": "KOR_korea_aerospace_industry",
+      "placement_anchor": "generic_mio_trait_advanced_aerodynamics",
+      "any_parent": [
+        "generic_mio_trait_advanced_aerodynamics"
+      ],
+      "relative_xy": [
+        2,
+        0
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "air_agility": 0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_kai_agile_airframes",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_air_agility.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "6fa89b146ee2cc9eef33056d6671ed78b6ed0ae6febb36bd00809e8f49c6ef27",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_air_agility.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/kai_agile_airframes.dds",
+      "final_sha256": "6fa89b146ee2cc9eef33056d6671ed78b6ed0ae6febb36bd00809e8f49c6ef27",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        8.0,
+        0.0
+      ],
+      "before_bounds": [
+        1.0,
+        7.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        1.0,
+        8.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_hanjin_air_organization",
+      "trait_id": "HOK_KOR_mio_trait_hanjin_long_range_navigation",
+      "name_ko": "장거리 항법 표준",
+      "focus_gate": "KOR_daehanminguk_gonggun",
+      "placement_anchor": "generic_mio_trait_conservative_designs",
+      "any_parent": [
+        "generic_mio_trait_conservative_designs"
+      ],
+      "relative_xy": [
+        2,
+        0
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "air_range": 0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_hanjin_long_range_navigation",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_naval_range.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "376217d46594cccff36573b174c56ddf4182323e1a2bf4fd9d6d368f58964bb2",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_naval_range.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/hanjin_long_range_navigation.dds",
+      "final_sha256": "376217d46594cccff36573b174c56ddf4182323e1a2bf4fd9d6d368f58964bb2",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        6.0,
+        0.0
+      ],
+      "before_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_jinhae_naval_air_factory_organization",
+      "trait_id": "HOK_KOR_mio_trait_jinhae_torpedo_sights",
+      "name_ko": "해상 뇌격 조준기",
+      "focus_gate": "HOK_KOR_naval_air_coordination",
+      "placement_anchor": "generic_mio_trait_navigation_equipment",
+      "any_parent": [
+        "generic_mio_trait_navigation_equipment"
+      ],
+      "relative_xy": [
+        2,
+        0
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "naval_strike_targetting": 0.1,
+          "naval_strike_attack": 0.05
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_jinhae_torpedo_sights",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_naval_strike_targetting.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "999716c0372fd83bbca4aa58b48605c3c337802982ff875b5d43555f8097ee8b",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_naval_strike_targetting.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/jinhae_torpedo_sights.dds",
+      "final_sha256": "999716c0372fd83bbca4aa58b48605c3c337802982ff875b5d43555f8097ee8b",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        6.0,
+        0.0
+      ],
+      "before_bounds": [
+        0.0,
+        7.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        7.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_daewoo_ship_organization",
+      "trait_id": "HOK_KOR_mio_trait_daewoo_heavy_gun_mounts",
+      "name_ko": "대구경 포탑 지지대",
+      "focus_gate": "KOR_large_surface_fleet",
+      "placement_anchor": "generic_mio_trait_primary_battery_layout",
+      "any_parent": [
+        "generic_mio_trait_primary_battery_layout"
+      ],
+      "relative_xy": [
+        2,
+        0
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "hg_attack": 0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_daewoo_heavy_gun_mounts",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_hg_attack.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "1feafc71c0c62184c8ba01ba9998759b1319fbb3c820439ca9b6f8f35ac24f59",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_hg_attack.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/daewoo_heavy_gun_mounts.dds",
+      "final_sha256": "1feafc71c0c62184c8ba01ba9998759b1319fbb3c820439ca9b6f8f35ac24f59",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        10.0,
+        0.0
+      ],
+      "before_bounds": [
+        0.0,
+        9.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        10.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_hyundai_heavy_industries_organization",
+      "trait_id": "HOK_KOR_mio_trait_hyundai_carrier_assembly",
+      "name_ko": "항공모함 블록 건조",
+      "focus_gate": "KOR_carrier_focus",
+      "placement_anchor": "generic_mio_trait_primary_fire_director_control",
+      "any_parent": [
+        "generic_mio_trait_primary_fire_director_control"
+      ],
+      "relative_xy": [
+        2,
+        0
+      ],
+      "bonus_blocks": {
+        "production_bonus": {
+          "production_cost_factor": -0.1
+        }
+      },
+      "limit_to_equipment_type": "mio_cat_eq_all_carrier",
+      "sprite": "GFX_HOK_KOR_mio_trait_hyundai_carrier_assembly",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_build_cost_ic.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "9794be7b86e8f6972198e987396f8b2e968540bc9d4b193f4692023c1a8059fc",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_build_cost_ic.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/hyundai_carrier_assembly.dds",
+      "final_sha256": "9794be7b86e8f6972198e987396f8b2e968540bc9d4b193f4692023c1a8059fc",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        10.0,
+        0.0
+      ],
+      "before_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        10.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_daehanjoseongongsa_organization",
+      "trait_id": "HOK_KOR_mio_trait_daehan_escort_sonar",
+      "name_ko": "호위함 수중탐지 체계",
+      "focus_gate": "KOR_daehanminguk_haegun",
+      "placement_anchor": "generic_mio_trait_submarine_hunters",
+      "any_parent": [
+        "generic_mio_trait_submarine_hunters"
+      ],
+      "relative_xy": [
+        2,
+        0
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "sub_detection": 0.1,
+          "sub_attack": 0.05
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_daehan_escort_sonar",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_sub_detection.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "c7c53fd61934e25e6fe5ab8a0305ab3b679163d3e35d209e96768a903d5f45aa",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_sub_detection.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/daehan_escort_sonar.dds",
+      "final_sha256": "c7c53fd61934e25e6fe5ab8a0305ab3b679163d3e35d209e96768a903d5f45aa",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        3.0,
+        0.0
+      ],
+      "before_bounds": [
+        1.0,
+        7.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        1.0,
+        7.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_gms_organization",
+      "trait_id": "HOK_KOR_mio_trait_gms_torpedo_fire_control",
+      "name_ko": "습격함 어뢰 사격통제",
+      "focus_gate": "KOR_commerce_raiding",
+      "placement_anchor": "generic_mio_trait_long_range_raiding",
+      "any_parent": [
+        "generic_mio_trait_long_range_raiding",
+        "generic_mio_trait_high_speed_raiding"
+      ],
+      "relative_xy": [
+        3,
+        1
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "torpedo_attack": 0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_gms_torpedo_fire_control",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_torpedo_attack.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "47a4a2576a1c75aa111f00d1f0934b7796348089817746714f537a785fd75468",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_torpedo_attack.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/gms_torpedo_fire_control.dds",
+      "final_sha256": "47a4a2576a1c75aa111f00d1f0934b7796348089817746714f537a785fd75468",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        4.0,
+        1.0
+      ],
+      "before_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_gukgun_jobyeongchang_organization",
+      "trait_id": "HOK_KOR_mio_trait_gukgun_rifle_tooling",
+      "name_ko": "소총 정밀 가공",
+      "focus_gate": "KOR_new_model_rifle",
+      "placement_anchor": "generic_mio_trait_drum_pattern_sights",
+      "any_parent": [
+        "generic_mio_trait_drum_pattern_sights"
+      ],
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "soft_attack": 0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_gukgun_rifle_tooling",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_soft_attack.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "10afa634e520d1d95dd9ea6b458004be5344ba3156b8df0209ba02f3a3b4141d",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_soft_attack.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/gukgun_rifle_tooling.dds",
+      "final_sha256": "10afa634e520d1d95dd9ea6b458004be5344ba3156b8df0209ba02f3a3b4141d",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        0.0,
+        1.0
+      ],
+      "before_bounds": [
+        0.0,
+        9.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        9.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_hanhwa_organization",
+      "trait_id": "HOK_KOR_mio_trait_hanhwa_artillery_ammunition",
+      "name_ko": "포병 탄약 일관성",
+      "focus_gate": "KOR_improved_artillery",
+      "placement_anchor": "generic_mio_trait_advanced_barrel_forging",
+      "any_parent": [
+        "generic_mio_trait_advanced_barrel_forging"
+      ],
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "soft_attack": 0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_hanhwa_artillery_ammunition",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_soft_attack.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "10afa634e520d1d95dd9ea6b458004be5344ba3156b8df0209ba02f3a3b4141d",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_soft_attack.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/hanhwa_artillery_ammunition.dds",
+      "final_sha256": "10afa634e520d1d95dd9ea6b458004be5344ba3156b8df0209ba02f3a3b4141d",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        5.0,
+        1.0
+      ],
+      "before_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_kia_motors_organization",
+      "trait_id": "HOK_KOR_mio_trait_kia_economical_drivetrain",
+      "name_ko": "경제적인 수송 구동계",
+      "focus_gate": "KOR_mobile_infantry",
+      "placement_anchor": "generic_mio_trait_medium_machinegun_mounts",
+      "any_parent": [
+        "generic_mio_trait_medium_machinegun_mounts"
+      ],
+      "relative_xy": [
+        -1,
+        1
+      ],
+      "bonus_blocks": {
+        "equipment_bonus": {
+          "fuel_consumption": -0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_kia_economical_drivetrain",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_fuel_consumption.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "2c33f09a111fc8b9ea6a1a24796f2770a7e600b4b5e38abb70139ec5bde13b23",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_fuel_consumption.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/kia_economical_drivetrain.dds",
+      "final_sha256": "2c33f09a111fc8b9ea6a1a24796f2770a7e600b4b5e38abb70139ec5bde13b23",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        3.0,
+        1.0
+      ],
+      "before_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "organization_id": "KOR_mmaa_organization",
+      "trait_id": "HOK_KOR_mio_trait_mmaa_support_standardization",
+      "name_ko": "지원장비 공동규격",
+      "focus_gate": "KOR_expansion_of_non_combat_support_units",
+      "placement_anchor": "generic_mio_trait_private_scientists_program",
+      "any_parent": [
+        "generic_mio_trait_private_scientists_program"
+      ],
+      "relative_xy": [
+        -2,
+        0
+      ],
+      "bonus_blocks": {
+        "production_bonus": {
+          "production_cost_factor": -0.1
+        }
+      },
+      "limit_to_equipment_type": null,
+      "sprite": "GFX_HOK_KOR_mio_trait_mmaa_support_standardization",
+      "method": "Byte-for-byte reuse of native HOI4 MIO stat icon; no visual transformation.",
+      "source_path": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_build_cost_ic.dds",
+      "source_version": "1.19.3.0.c01a / Steam build 25205862",
+      "source_sha256": "9794be7b86e8f6972198e987396f8b2e968540bc9d4b193f4692023c1a8059fc",
+      "project_source_path": "docs/assets/mio-specializations/source/generic_mio_trait_icon_build_cost_ic.dds",
+      "final_path": "gfx/interface/military_industrial_organization/HOK_KOR/mmaa_support_standardization.dds",
+      "final_sha256": "9794be7b86e8f6972198e987396f8b2e968540bc9d4b193f4692023c1a8059fc",
+      "dimensions": [
+        48,
+        48
+      ],
+      "dds_fourcc": "\u0000\u0000\u0000\u0000",
+      "original_authorship": "Paradox Interactive",
+      "reuse_basis": "Native asset of the same HOI4 game, used in this HOI4 mod; no broader artwork licence asserted.",
+      "continuation_contribution": "kpopmodder: trait design, native icon selection, project-owned sprite mapping and integration.",
+      "resolved_xy": [
+        3.0,
+        0.0
+      ],
+      "before_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ],
+      "after_bounds": [
+        0.0,
+        8.0,
+        0.0,
+        4.0
+      ]
+    }
+  ],
+  "focus_reward_snippets": {
+    "KOR_army_augmentation": [
+      "mio:KOR_daewoo_tank_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_daewoo_standardized_parts }"
+    ],
+    "KOR_armored_focus": [
+      "mio:KOR_hyundai_rotem_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_rotem_reinforced_armor }",
+      "mio:KOR_rygyeong_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_rygyeong_infantry_breakthrough }"
+    ],
+    "KOR_mobile_infantry": [
+      "mio:KOR_doosan_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_doosan_mobile_powertrain }",
+      "mio:KOR_kia_motors_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_kia_economical_drivetrain }"
+    ],
+    "KOR_korea_aerospace_industry": [
+      "mio:KOR_kai_company_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_kai_agile_airframes }"
+    ],
+    "KOR_daehanminguk_gonggun": [
+      "mio:KOR_hanjin_air_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_hanjin_long_range_navigation }"
+    ],
+    "HOK_KOR_naval_air_coordination": [
+      "mio:KOR_jinhae_naval_air_factory_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_jinhae_torpedo_sights }"
+    ],
+    "KOR_large_surface_fleet": [
+      "mio:KOR_daewoo_ship_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_daewoo_heavy_gun_mounts }"
+    ],
+    "KOR_carrier_focus": [
+      "mio:KOR_hyundai_heavy_industries_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_hyundai_carrier_assembly }"
+    ],
+    "KOR_daehanminguk_haegun": [
+      "mio:KOR_daehanjoseongongsa_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_daehan_escort_sonar }"
+    ],
+    "KOR_commerce_raiding": [
+      "mio:KOR_gms_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_gms_torpedo_fire_control }"
+    ],
+    "KOR_new_model_rifle": [
+      "mio:KOR_gukgun_jobyeongchang_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_gukgun_rifle_tooling }"
+    ],
+    "KOR_improved_artillery": [
+      "mio:KOR_hanhwa_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_hanhwa_artillery_ammunition }"
+    ],
+    "KOR_expansion_of_non_combat_support_units": [
+      "mio:KOR_mmaa_organization = { unlock_mio_trait_tooltip = HOK_KOR_mio_trait_mmaa_support_standardization }"
+    ]
+  },
+  "static_validation": {
+    "checks": 201,
+    "pass": 201,
+    "fail": 0,
+    "runtime_observed": false
+  }
+}
