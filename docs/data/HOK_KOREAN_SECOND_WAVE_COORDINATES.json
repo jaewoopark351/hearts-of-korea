@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "documented_on": "2026-10-31",
-  "status": "APPLIED_474_CIVIL_NUCLEAR_AHEAD_BONUS_245_DAYS_STATIC_ONLY",
+  "documented_on": "2026-11-01",
+  "status": "APPLIED_474_DEMOCRATIC_INTERNAL_COMPACTION_BOUNDED_SHOW_HIDE_RUNTIME_VALIDATED",
   "source": "common/national_focus/korea.txt",
-  "source_sha256": "3cc9f676203e18f53b7b6a896adbd9e03796b861d492326e48056ec5e3a122ca",
-  "baseline_source_sha256": "440d76ed0395cc84edd0ee320ce0376e27d5b7d328f0f65d1ba1cb6454ed52e9",
+  "source_sha256": "6562d4acfd05f791026502a9aeace3668d3c89869df4279f75c2f1016763f163",
+  "baseline_source_sha256": "3cc9f676203e18f53b7b6a896adbd9e03796b861d492326e48056ec5e3a122ca",
   "count": 474,
   "absolute_anchors": 7,
   "relative_nodes": 467,
@@ -54,7 +54,9 @@
     "2026-10-11 civic influence module: append thirteen relative focuses at declaration orders460..472 under the fixed KOR_devalue_the_won anchor chain. Preserve all460 preceding node records, seven absolute anchors, seven direct offsets, bounds x0..211/y0..24 and continuous panel(200,1700). New inlay(1050,1300),500x670 uses UI coordinates rather than the focus grid and stays fixed across SHOW/HIDE states. See docs/HOK_KOREAN_CHAEBOL_CIVIL_SOCIETY_SPEC.md. Existing conditional_layout.validation and previous validation blocks retain their historical source hashes; none establishes runtime rendering, progression or save behavior for the473-focus source.",
     "2026-10-12 civic revision: remove KOR_cooperation_with_the_jaebeol (473 to472); preserve thirteen civic IDs and move their entry to KOR_democracy_advance_forward relative(6,4), base(133,6), democratic-completed HIDE(98,6). Entry progression now requires liberal-party sole power OR independent-party power; placement alone is not the gate. Compact thirteen-node bounds x132..139/y6..12. Move only KOR_expand_merchant_marine relative x-2 to0, so merchant/naval purchase bases become(140,11)/(140,13). Seven absolute anchors,465 relative nodes, seven offset blocks/conditions, global bounds x0..211/y0..24, continuous panel(200,1700), and existing shortcuts retained. Inlay lowered to fixed UI(1050,1400),500x670, independent of democratic movement. Structural and forty geometry models pass for unrelated overlaps/wires;145 related merge contacts,37 normal three-way exclusions and213 related merge collinearity instances are retained and require actual UI review. Historical validation/previous_* blocks preserve their own source hashes and do not validate this revision. Previous top-level pre-civic baseline hash 2a124ff35d4fb10e33619614470c03ce039324e8013d97237f8feb38c28c3cae is historical; current revision baseline is e9f96c856982a5ba32b05e5e77cadc782340e294c542c15bab095c80e91c729e. Runtime SHOW/HIDE/transition/panel/progression and legacy-save migration remain unverified for the new source.",
     "2026-10-31 civil nuclear research: insert two relative nodes after Seoul university at source orders15/16, base(14,3)/(14,4), each relative(0,1). Preserve all472 previous node fields except declaration_order bookkeeping(+2 from oldorder15), all7 anchors/offsets, bounds, panel, shortcuts and inlay. Both new fixed descendants remain at base coordinates in the20 documented SHOW/HIDE states, so fixed count173->175 and visible counts+2; moved counts/bounds unchanged. Existing validation/previous_* evidence remains historical and is not a new geometry/UI pass. Cost34.286 has an actual240-day UI display; normal second-focus completion is still running at this documentation update. See docs/HOK_KOREAN_CIVIL_NUCLEAR_RESEARCH_SPEC.md.",
-    "2026-10-31 final integer duration supersedes the preceding decimal34.286 candidate note: secondbase cost35weeks=245days, with firstcompletion reduce_focus_completion_cost5days for only the second focus. Exact final sourceECA5D4FC171962DE94128A9E72D5CEB2BB4E65EF213A1AD31BD4D1345BC0AE7E. Newff98 run confirms first reward/discount5 and second UI240; zero-bank secondstart1936.4.4.19, progress239/no commercial tech at11.29.09, completion popup observed11.30.14, native commercial-tech acquisitiondate1936.11.30.1 and one completed-focus record. This is240 daily credits, not5760elapsed wallhours(start->grant239d6h). All474 node coordinates, all7 anchors/offsets and historical evidence remain unchanged; no new full layout/UI matrix pass is asserted."
+    "2026-10-31 final integer duration supersedes the preceding decimal34.286 candidate note: secondbase cost35weeks=245days, with firstcompletion reduce_focus_completion_cost5days for only the second focus. Exact final sourceECA5D4FC171962DE94128A9E72D5CEB2BB4E65EF213A1AD31BD4D1345BC0AE7E. Newff98 run confirms first reward/discount5 and second UI240; zero-bank secondstart1936.4.4.19, progress239/no commercial tech at11.29.09, completion popup observed11.30.14, native commercial-tech acquisitiondate1936.11.30.1 and one completed-focus record. This is240 daily credits, not5760elapsed wallhours(start->grant239d6h). All474 node coordinates, all7 anchors/offsets and historical evidence remain unchanged; no new full layout/UI matrix pass is asserted.",
+    "2026-10-31 democratic internal compaction: preserve474 IDs/order, all7 absolute anchors, all7 offset blocks/conditions, all placement anchors and non-layout gameplay. Change32 direct placement blocks with86 resolved positions changed among95 democratic nodes. Democratic base x108..158 becomes113..151 (center-span50->38,24% reduction); y2..24 unchanged. President gap18->10 and West/US gap16->10. HIDE after democratic completion inherits-35x once; no extra descendant offset. Current source6562d4acfd05f791026502a9aeace3668d3c89869df4279f75c2f1016763f163. Current nodes.after and20-state bounds are synchronized; node.before, previous_* and old validation remain historical. Runtime/UI/normal transition/save reload are pending because the pre-existing user game PID15808 has not been treated as test-owned.",
+    "2026-11-01 democratic compaction runtime follow-up supersedes the preceding pending status: user delegated pre-existing session handling; preserved it to a unique native save and normally exited. Full restarts on installed 1.19.4.1.99a5/DLC36 used a full pre-change source control1395, HIDE fixturef02c, and final no-probe source7572. HIDE normal root completion showed coherent movement; exact35-grid pixels were not measured. Same-process native checkpoint reload and separate synthetic Rhee/cooperation and KimGu/public-ownership states were inspected. Final no-probe SHOW parent/root normal UI progression and same-camera unchanged upper positions were observed; broad upper/lower access does not prove all95 title/click/icon states. Known frontend and shutdown rename warnings are retained; no new relevant focus/relative-layout error was found. Original profile bytes,23 existing saves and loader files were verified after bounded test cleanup; Steam Play restored. See the implementation incident for scope, source-specific logs and unverified cases."
   ],
   "nodes": [
     {
@@ -5161,11 +5163,11 @@
       "after": {
         "relative_position_id": "KOR_democracy_advance_forward",
         "script_xy": {
-          "x": -9,
+          "x": -6,
           "y": 1
         },
         "base_absolute": {
-          "x": 118,
+          "x": 121,
           "y": 3
         }
       }
@@ -5200,11 +5202,11 @@
       "after": {
         "relative_position_id": "KOR_democracy_advance_forward",
         "script_xy": {
-          "x": 9,
+          "x": 4,
           "y": 1
         },
         "base_absolute": {
-          "x": 136,
+          "x": 131,
           "y": 3
         }
       }
@@ -5244,7 +5246,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 118,
+          "x": 121,
           "y": 4
         }
       }
@@ -5284,7 +5286,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 136,
+          "x": 131,
           "y": 4
         }
       }
@@ -5319,11 +5321,11 @@
       "after": {
         "relative_position_id": "KOR_democracy_advance_forward",
         "script_xy": {
-          "x": -6,
+          "x": -4,
           "y": 4
         },
         "base_absolute": {
-          "x": 121,
+          "x": 123,
           "y": 6
         }
       }
@@ -5358,11 +5360,11 @@
       "after": {
         "relative_position_id": "KOR_democracy_advance_forward",
         "script_xy": {
-          "x": -2,
+          "x": 0,
           "y": 4
         },
         "base_absolute": {
-          "x": 125,
+          "x": 127,
           "y": 6
         }
       }
@@ -5399,11 +5401,11 @@
       "after": {
         "relative_position_id": "KOR_liberal_party_sole_power",
         "script_xy": {
-          "x": -13,
+          "x": -6,
           "y": 3
         },
         "base_absolute": {
-          "x": 123,
+          "x": 125,
           "y": 7
         }
       }
@@ -5445,7 +5447,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 122,
+          "x": 124,
           "y": 9
         }
       }
@@ -5482,7 +5484,7 @@
       "after": {
         "relative_position_id": "KOR_liberal_party_sole_power",
         "script_xy": {
-          "x": -8,
+          "x": -3,
           "y": 5
         },
         "base_absolute": {
@@ -5528,7 +5530,7 @@
           "y": 4
         },
         "base_absolute": {
-          "x": 122,
+          "x": 124,
           "y": 11
         }
       }
@@ -5570,7 +5572,7 @@
           "y": 4
         },
         "base_absolute": {
-          "x": 126,
+          "x": 128,
           "y": 11
         }
       }
@@ -5607,11 +5609,11 @@
       "after": {
         "relative_position_id": "KOR_independent_party_in_power",
         "script_xy": {
-          "x": -8,
+          "x": -5,
           "y": 2
         },
         "base_absolute": {
-          "x": 110,
+          "x": 116,
           "y": 6
         }
       }
@@ -5653,7 +5655,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 110,
+          "x": 116,
           "y": 7
         }
       }
@@ -5696,7 +5698,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 110,
+          "x": 116,
           "y": 9
         }
       }
@@ -5740,7 +5742,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 110,
+          "x": 116,
           "y": 11
         }
       }
@@ -5785,7 +5787,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 112,
+          "x": 118,
           "y": 13
         }
       }
@@ -5830,7 +5832,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 108,
+          "x": 114,
           "y": 13
         }
       }
@@ -5905,11 +5907,11 @@
       "after": {
         "relative_position_id": "KOR_prepare_for_the_next_war",
         "script_xy": {
-          "x": 2,
+          "x": 1,
           "y": 1
         },
         "base_absolute": {
-          "x": 131,
+          "x": 130,
           "y": 7
         }
       }
@@ -5950,7 +5952,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 131,
+          "x": 130,
           "y": 9
         }
       }
@@ -5992,7 +5994,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 131,
+          "x": 130,
           "y": 11
         }
       }
@@ -6029,12 +6031,12 @@
       "after": {
         "relative_position_id": "KOR_liberal_party_sole_power",
         "script_xy": {
-          "x": 12,
-          "y": 2
+          "x": 14,
+          "y": 1
         },
         "base_absolute": {
-          "x": 148,
-          "y": 6
+          "x": 145,
+          "y": 5
         }
       }
     },
@@ -6071,8 +6073,8 @@
       "after": {
         "relative_position_id": "KOR_korea_in_the_world",
         "script_xy": {
-          "x": -8,
-          "y": 1
+          "x": -5,
+          "y": 2
         },
         "base_absolute": {
           "x": 140,
@@ -6336,11 +6338,11 @@
       "after": {
         "relative_position_id": "KOR_join_the_allie",
         "script_xy": {
-          "x": 0,
+          "x": 1,
           "y": 8
         },
         "base_absolute": {
-          "x": 140,
+          "x": 141,
           "y": 17
         }
       }
@@ -6378,11 +6380,11 @@
       "after": {
         "relative_position_id": "KOR_korea_in_the_world",
         "script_xy": {
-          "x": 8,
-          "y": 1
+          "x": 5,
+          "y": 2
         },
         "base_absolute": {
-          "x": 156,
+          "x": 150,
           "y": 7
         }
       }
@@ -6425,7 +6427,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 156,
+          "x": 150,
           "y": 9
         }
       }
@@ -6465,11 +6467,11 @@
       "after": {
         "relative_position_id": "KOR_rok_us_mutual_defense_treaty",
         "script_xy": {
-          "x": -2,
+          "x": -1,
           "y": 2
         },
         "base_absolute": {
-          "x": 154,
+          "x": 149,
           "y": 11
         }
       }
@@ -6514,7 +6516,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 154,
+          "x": 149,
           "y": 13
         }
       }
@@ -6554,11 +6556,11 @@
       "after": {
         "relative_position_id": "KOR_rok_us_mutual_defense_treaty",
         "script_xy": {
-          "x": 2,
+          "x": 1,
           "y": 2
         },
         "base_absolute": {
-          "x": 158,
+          "x": 151,
           "y": 11
         }
       }
@@ -6603,7 +6605,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 158,
+          "x": 151,
           "y": 13
         }
       }
@@ -6647,7 +6649,7 @@
           "y": 8
         },
         "base_absolute": {
-          "x": 156,
+          "x": 150,
           "y": 17
         }
       }
@@ -6688,11 +6690,11 @@
       "after": {
         "relative_position_id": "KOR_establish_ofn",
         "script_xy": {
-          "x": -2,
+          "x": -1,
           "y": 2
         },
         "base_absolute": {
-          "x": 154,
+          "x": 149,
           "y": 19
         }
       }
@@ -6733,11 +6735,11 @@
       "after": {
         "relative_position_id": "KOR_establish_ofn",
         "script_xy": {
-          "x": 2,
+          "x": 1,
           "y": 2
         },
         "base_absolute": {
-          "x": 158,
+          "x": 151,
           "y": 19
         }
       }
@@ -6782,7 +6784,7 @@
           "y": 4
         },
         "base_absolute": {
-          "x": 156,
+          "x": 150,
           "y": 21
         }
       }
@@ -6824,11 +6826,11 @@
       "after": {
         "relative_position_id": "KOR_torch_of_the_freedom",
         "script_xy": {
-          "x": -2,
+          "x": -1,
           "y": 2
         },
         "base_absolute": {
-          "x": 154,
+          "x": 149,
           "y": 23
         }
       }
@@ -6875,7 +6877,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 154,
+          "x": 149,
           "y": 24
         }
       }
@@ -6917,11 +6919,11 @@
       "after": {
         "relative_position_id": "KOR_torch_of_the_freedom",
         "script_xy": {
-          "x": 2,
+          "x": 1,
           "y": 2
         },
         "base_absolute": {
-          "x": 158,
+          "x": 151,
           "y": 23
         }
       }
@@ -6968,7 +6970,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 158,
+          "x": 151,
           "y": 24
         }
       }
@@ -7007,10 +7009,10 @@
         "relative_position_id": "KOR_korea_in_the_world",
         "script_xy": {
           "x": 0,
-          "y": 3
+          "y": 4
         },
         "base_absolute": {
-          "x": 148,
+          "x": 145,
           "y": 9
         }
       }
@@ -7048,11 +7050,11 @@
       "after": {
         "relative_position_id": "KOR_korea_in_the_world",
         "script_xy": {
-          "x": -9,
-          "y": 13
+          "x": -7,
+          "y": 14
         },
         "base_absolute": {
-          "x": 139,
+          "x": 138,
           "y": 19
         }
       }
@@ -7095,7 +7097,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 139,
+          "x": 138,
           "y": 21
         }
       }
@@ -7138,7 +7140,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 137,
+          "x": 136,
           "y": 21
         }
       }
@@ -7181,7 +7183,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 141,
+          "x": 140,
           "y": 21
         }
       }
@@ -7224,7 +7226,7 @@
           "y": 4
         },
         "base_absolute": {
-          "x": 139,
+          "x": 138,
           "y": 23
         }
       }
@@ -7262,11 +7264,11 @@
       "after": {
         "relative_position_id": "KOR_korea_in_the_world",
         "script_xy": {
-          "x": -3,
-          "y": 13
+          "x": -1,
+          "y": 14
         },
         "base_absolute": {
-          "x": 145,
+          "x": 144,
           "y": 19
         }
       }
@@ -7309,7 +7311,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 143,
+          "x": 142,
           "y": 21
         }
       }
@@ -7352,7 +7354,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 147,
+          "x": 146,
           "y": 21
         }
       }
@@ -7395,7 +7397,7 @@
           "y": 4
         },
         "base_absolute": {
-          "x": 145,
+          "x": 144,
           "y": 23
         }
       }
@@ -7441,7 +7443,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 110,
+          "x": 116,
           "y": 15
         }
       }
@@ -7483,11 +7485,11 @@
       "after": {
         "relative_position_id": "KOR_preemptive_strike_on_manchuria",
         "script_xy": {
-          "x": 3,
+          "x": 1,
           "y": 2
         },
         "base_absolute": {
-          "x": 115,
+          "x": 119,
           "y": 15
         }
       }
@@ -7534,7 +7536,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 115,
+          "x": 119,
           "y": 17
         }
       }
@@ -7577,11 +7579,11 @@
       "after": {
         "relative_position_id": "KOR_founding_of_the_asian_union",
         "script_xy": {
-          "x": -4,
+          "x": -2,
           "y": 2
         },
         "base_absolute": {
-          "x": 111,
+          "x": 117,
           "y": 17
         }
       }
@@ -7624,11 +7626,11 @@
       "after": {
         "relative_position_id": "KOR_founding_of_the_asian_union",
         "script_xy": {
-          "x": -7,
+          "x": -6,
           "y": 2
         },
         "base_absolute": {
-          "x": 108,
+          "x": 113,
           "y": 17
         }
       }
@@ -7676,7 +7678,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 108,
+          "x": 113,
           "y": 19
         }
       }
@@ -7719,11 +7721,11 @@
       "after": {
         "relative_position_id": "KOR_founding_of_the_asian_union",
         "script_xy": {
-          "x": 4,
+          "x": 2,
           "y": 2
         },
         "base_absolute": {
-          "x": 119,
+          "x": 121,
           "y": 17
         }
       }
@@ -7766,11 +7768,11 @@
       "after": {
         "relative_position_id": "KOR_founding_of_the_asian_union",
         "script_xy": {
-          "x": 6,
+          "x": 4,
           "y": 2
         },
         "base_absolute": {
-          "x": 121,
+          "x": 123,
           "y": 17
         }
       }
@@ -7818,7 +7820,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 121,
+          "x": 123,
           "y": 19
         }
       }
@@ -7862,11 +7864,11 @@
       "after": {
         "relative_position_id": "KOR_invitation_to_independent_asian_countries",
         "script_xy": {
-          "x": 0,
+          "x": -1,
           "y": 2
         },
         "base_absolute": {
-          "x": 115,
+          "x": 118,
           "y": 19
         }
       }
@@ -7915,7 +7917,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 115,
+          "x": 118,
           "y": 21
         }
       }
@@ -7964,7 +7966,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 112,
+          "x": 115,
           "y": 21
         }
       }
@@ -8013,7 +8015,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 117,
+          "x": 120,
           "y": 21
         }
       }
@@ -13595,11 +13597,11 @@
       "after": {
         "relative_position_id": "KOR_strengthen_government_support",
         "script_xy": {
-          "x": -6,
+          "x": -5,
           "y": 2
         },
         "base_absolute": {
-          "x": 117,
+          "x": 120,
           "y": 9
         }
       }
@@ -13642,7 +13644,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 116,
+          "x": 119,
           "y": 11
         }
       }
@@ -13685,7 +13687,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 119,
+          "x": 122,
           "y": 11
         }
       }
@@ -13729,7 +13731,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 119,
+          "x": 122,
           "y": 13
         }
       }
@@ -13772,7 +13774,7 @@
           "y": 5
         },
         "base_absolute": {
-          "x": 117,
+          "x": 120,
           "y": 14
         }
       }
@@ -13815,7 +13817,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 148,
+          "x": 145,
           "y": 11
         }
       }
@@ -13855,11 +13857,11 @@
       "after": {
         "relative_position_id": "HOK_KOR_volunteer_liaison_bureau",
         "script_xy": {
-          "x": -2,
+          "x": -1,
           "y": 2
         },
         "base_absolute": {
-          "x": 146,
+          "x": 144,
           "y": 13
         }
       }
@@ -13899,11 +13901,11 @@
       "after": {
         "relative_position_id": "HOK_KOR_volunteer_liaison_bureau",
         "script_xy": {
-          "x": 2,
+          "x": 1,
           "y": 2
         },
         "base_absolute": {
-          "x": 150,
+          "x": 146,
           "y": 13
         }
       }
@@ -13947,7 +13949,7 @@
           "y": 4
         },
         "base_absolute": {
-          "x": 148,
+          "x": 145,
           "y": 15
         }
       }
@@ -13992,7 +13994,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 148,
+          "x": 145,
           "y": 16
         }
       }
@@ -14035,11 +14037,11 @@
       "after": {
         "relative_position_id": "KOR_founding_of_the_asian_union",
         "script_xy": {
-          "x": 11,
+          "x": 10,
           "y": 2
         },
         "base_absolute": {
-          "x": 126,
+          "x": 129,
           "y": 17
         }
       }
@@ -14087,7 +14089,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 124,
+          "x": 127,
           "y": 19
         }
       }
@@ -14136,7 +14138,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 124,
+          "x": 127,
           "y": 21
         }
       }
@@ -14184,7 +14186,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 128,
+          "x": 131,
           "y": 19
         }
       }
@@ -14233,7 +14235,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 128,
+          "x": 131,
           "y": 21
         }
       }
@@ -16742,11 +16744,11 @@
       "after": {
         "relative_position_id": "KOR_democracy_advance_forward",
         "script_xy": {
-          "x": 6,
+          "x": 5,
           "y": 4
         },
         "base_absolute": {
-          "x": 133,
+          "x": 132,
           "y": 6
         }
       }
@@ -16765,7 +16767,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 133,
+          "x": 132,
           "y": 7
         }
       }
@@ -16784,7 +16786,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 135,
+          "x": 134,
           "y": 7
         }
       }
@@ -16803,7 +16805,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 137,
+          "x": 136,
           "y": 7
         }
       }
@@ -16822,7 +16824,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 132,
+          "x": 131,
           "y": 8
         }
       }
@@ -16841,7 +16843,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 134,
+          "x": 133,
           "y": 8
         }
       }
@@ -16860,7 +16862,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 133,
+          "x": 132,
           "y": 9
         }
       }
@@ -16879,7 +16881,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 137,
+          "x": 136,
           "y": 9
         }
       }
@@ -16898,7 +16900,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 136,
+          "x": 135,
           "y": 10
         }
       }
@@ -16917,7 +16919,7 @@
           "y": 1
         },
         "base_absolute": {
-          "x": 138,
+          "x": 137,
           "y": 10
         }
       }
@@ -16936,7 +16938,7 @@
           "y": 3
         },
         "base_absolute": {
-          "x": 137,
+          "x": 136,
           "y": 12
         }
       }
@@ -16955,7 +16957,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 135,
+          "x": 134,
           "y": 9
         }
       }
@@ -16974,7 +16976,7 @@
           "y": 2
         },
         "base_absolute": {
-          "x": 139,
+          "x": 138,
           "y": 8
         }
       }
@@ -16982,9 +16984,9 @@
   ],
   "conditional_layout": {
     "documented_on": "2026-10-31",
-    "status": "IMPLEMENTED_474_245_DAYS_NO_DISCOUNT_SOURCE_COORDINATES_LAYOUT_MATRIX_PENDING",
-    "baseline_source_sha256": "440d76ed0395cc84edd0ee320ce0376e27d5b7d328f0f65d1ba1cb6454ed52e9",
-    "source_sha256": "3cc9f676203e18f53b7b6a896adbd9e03796b861d492326e48056ec5e3a122ca",
+    "status": "APPLIED_474_DEMOCRATIC_INTERNAL_COMPACTION_SOURCE_STATE_MODEL_RUNTIME_PENDING",
+    "baseline_source_sha256": "3cc9f676203e18f53b7b6a896adbd9e03796b861d492326e48056ec5e3a122ca",
+    "source_sha256": "6562d4acfd05f791026502a9aeace3668d3c89869df4279f75c2f1016763f163",
     "coordinate_model": "after.base_absolute remains the pre-choice/SHOW grid. For a state, add the absolute root offset once to each relative descendant. The republic entry is an independent root. Hidden nodes are excluded from displayed bounds; internal political subroutes are retained conservatively.",
     "direct_offset_count": 7,
     "fixed_roots": [
@@ -17277,7 +17279,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "show_republic_only",
@@ -17296,7 +17305,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "show_communist_in_progress",
@@ -17315,7 +17331,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "show_democratic_in_progress",
@@ -17334,7 +17357,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "show_fascist_in_progress",
@@ -17353,7 +17383,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "show_non_aligned_in_progress",
@@ -17370,7 +17407,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "show_communist",
@@ -17390,7 +17434,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "show_democratic",
@@ -17410,7 +17461,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "show_fascist",
@@ -17430,7 +17488,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "show_non_aligned",
@@ -17449,7 +17514,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "hide_initial",
@@ -17466,7 +17538,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "hide_republic_only",
@@ -17485,7 +17564,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "hide_communist_in_progress",
@@ -17504,7 +17590,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "hide_democratic_in_progress",
@@ -17523,7 +17616,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "hide_fascist_in_progress",
@@ -17542,7 +17642,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "hide_non_aligned_in_progress",
@@ -17559,7 +17666,14 @@
           "max_y": 24
         },
         "visibility_basis": "existing allow_branch on each political root and all relative descendants",
-        "root_position_overrides": []
+        "root_position_overrides": [],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 113,
+          "max_x": 151,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "hide_communist",
@@ -17602,7 +17716,9 @@
               "y": 2
             }
           }
-        ]
+        ],
+        "democratic_visible_count": 0,
+        "democratic_bounds": null
       },
       {
         "id": "hide_democratic",
@@ -17617,7 +17733,7 @@
         "moved_count": 96,
         "bounds": {
           "min_x": 0,
-          "max_x": 123,
+          "max_x": 116,
           "min_y": 0,
           "max_y": 24
         },
@@ -17645,7 +17761,14 @@
               "y": 2
             }
           }
-        ]
+        ],
+        "democratic_visible_count": 95,
+        "democratic_bounds": {
+          "min_x": 78,
+          "max_x": 116,
+          "min_y": 2,
+          "max_y": 24
+        }
       },
       {
         "id": "hide_fascist",
@@ -17688,7 +17811,9 @@
               "y": 2
             }
           }
-        ]
+        ],
+        "democratic_visible_count": 0,
+        "democratic_bounds": null
       },
       {
         "id": "hide_non_aligned",
@@ -17719,7 +17844,9 @@
               "y": 0
             }
           }
-        ]
+        ],
+        "democratic_visible_count": 0,
+        "democratic_bounds": null
       }
     ],
     "validation": {
@@ -18490,8 +18617,24 @@
     "notes": [
       "2026-10-12 civic revision: remove KOR_cooperation_with_the_jaebeol (473 to472); preserve thirteen civic IDs and move their entry to KOR_democracy_advance_forward relative(6,4), base(133,6), democratic-completed HIDE(98,6). Entry progression now requires liberal-party sole power OR independent-party power; placement alone is not the gate. Compact thirteen-node bounds x132..139/y6..12. Move only KOR_expand_merchant_marine relative x-2 to0, so merchant/naval purchase bases become(140,11)/(140,13). Seven absolute anchors,465 relative nodes, seven offset blocks/conditions, global bounds x0..211/y0..24, continuous panel(200,1700), and existing shortcuts retained. Inlay lowered to fixed UI(1050,1400),500x670, independent of democratic movement. Structural and forty geometry models pass for unrelated overlaps/wires;145 related merge contacts,37 normal three-way exclusions and213 related merge collinearity instances are retained and require actual UI review. Historical validation/previous_* blocks preserve their own source hashes and do not validate this revision. Previous top-level pre-civic baseline hash 2a124ff35d4fb10e33619614470c03ce039324e8013d97237f8feb38c28c3cae is historical; current revision baseline is e9f96c856982a5ba32b05e5e77cadc782340e294c542c15bab095c80e91c729e. Runtime SHOW/HIDE/transition/panel/progression and legacy-save migration remain unverified for the new source.",
       "2026-10-31 civil nuclear research: insert two relative nodes after Seoul university at source orders15/16, base(14,3)/(14,4), each relative(0,1). Preserve all472 previous node fields except declaration_order bookkeeping(+2 from oldorder15), all7 anchors/offsets, bounds, panel, shortcuts and inlay. Both new fixed descendants remain at base coordinates in the20 documented SHOW/HIDE states, so fixed count173->175 and visible counts+2; moved counts/bounds unchanged. Existing validation/previous_* evidence remains historical and is not a new geometry/UI pass. Cost34.286 has an actual240-day UI display; normal second-focus completion is still running at this documentation update. See docs/HOK_KOREAN_CIVIL_NUCLEAR_RESEARCH_SPEC.md.",
-      "2026-10-31 final integer duration supersedes the preceding decimal34.286 candidate note: secondbase cost35weeks=245days, with firstcompletion reduce_focus_completion_cost5days for only the second focus. Exact final sourceECA5D4FC171962DE94128A9E72D5CEB2BB4E65EF213A1AD31BD4D1345BC0AE7E. Newff98 run confirms first reward/discount5 and second UI240; zero-bank secondstart1936.4.4.19, progress239/no commercial tech at11.29.09, completion popup observed11.30.14, native commercial-tech acquisitiondate1936.11.30.1 and one completed-focus record. This is240 daily credits, not5760elapsed wallhours(start->grant239d6h). All474 node coordinates, all7 anchors/offsets and historical evidence remain unchanged; no new full layout/UI matrix pass is asserted."
-    ]
+      "2026-10-31 final integer duration supersedes the preceding decimal34.286 candidate note: secondbase cost35weeks=245days, with firstcompletion reduce_focus_completion_cost5days for only the second focus. Exact final sourceECA5D4FC171962DE94128A9E72D5CEB2BB4E65EF213A1AD31BD4D1345BC0AE7E. Newff98 run confirms first reward/discount5 and second UI240; zero-bank secondstart1936.4.4.19, progress239/no commercial tech at11.29.09, completion popup observed11.30.14, native commercial-tech acquisitiondate1936.11.30.1 and one completed-focus record. This is240 daily credits, not5760elapsed wallhours(start->grant239d6h). All474 node coordinates, all7 anchors/offsets and historical evidence remain unchanged; no new full layout/UI matrix pass is asserted.",
+      "2026-10-31 democratic internal compaction: preserve474 IDs/order, all7 absolute anchors, all7 offset blocks/conditions, all placement anchors and non-layout gameplay. Change32 direct placement blocks with86 resolved positions changed among95 democratic nodes. Democratic base x108..158 becomes113..151 (center-span50->38,24% reduction); y2..24 unchanged. President gap18->10 and West/US gap16->10. HIDE after democratic completion inherits-35x once; no extra descendant offset. Current source6562d4acfd05f791026502a9aeace3668d3c89869df4279f75c2f1016763f163. Current nodes.after and20-state bounds are synchronized; node.before, previous_* and old validation remain historical. Runtime/UI/normal transition/save reload are pending because the pre-existing user game PID15808 has not been treated as test-owned."
+    ],
+    "validation_records_context": {
+      "current_source_sha256": "6562d4acfd05f791026502a9aeace3668d3c89869df4279f75c2f1016763f163",
+      "current_evidence": "Source-to-JSON coordinate synchronization and conservative political-root state model only; not a new geometry or runtime layout pass.",
+      "historical_keys": [
+        "validation",
+        "previous_h1_right_space_validation",
+        "previous_validation",
+        "previous_f3_validation",
+        "previous_378_validation",
+        "previous_460_validation",
+        "previous_h1_layout_validation"
+      ],
+      "historical_records_unchanged": true,
+      "historical_warning": "The existing validation and previous_* blocks retain their own historical source hashes and results. They do not validate this new source even where fields say clean load or runtime visual."
+    }
   },
   "pre_filter_source_sha256": "c417f5bef85c69b730bc0646df646dcfedad19f44f7ab37d3e5dd85ad875f751",
   "previous_472_layout_snapshot": {
@@ -19038,7 +19181,7 @@
       "technology_category": "nuclear",
       "ahead_reduction_years": 2,
       "uses": 1,
-      "preserved_nuclear_breakthrough_value": 1.00,
+      "preserved_nuclear_breakthrough_value": 1.0,
       "research_speed_bonus_added": false,
       "runtime_retested": false,
       "retroactive_reward_for_completed_saves": false,
@@ -19093,5 +19236,1778 @@
     },
     "superseded_by_source_sha256": "eca5d4fc171962de94128a9e72d5ceb2bb4e65ef213a1ad31bd4d1345bc0ae7e",
     "interpretation": "Historical decimal-cost candidate UI observation only. Superseded by the final integer245-minus5day native mechanism; not a final-duration completion proof."
+  },
+  "previous_474_pre_democratic_compaction_snapshot": {
+    "status": "APPLIED_474_CIVIL_NUCLEAR_AHEAD_BONUS_245_DAYS_STATIC_ONLY",
+    "source_sha256": "3cc9f676203e18f53b7b6a896adbd9e03796b861d492326e48056ec5e3a122ca",
+    "baseline_source_sha256": "440d76ed0395cc84edd0ee320ce0376e27d5b7d328f0f65d1ba1cb6454ed52e9",
+    "conditional_status": "IMPLEMENTED_474_245_DAYS_NO_DISCOUNT_SOURCE_COORDINATES_LAYOUT_MATRIX_PENDING",
+    "conditional_source_sha256": "3cc9f676203e18f53b7b6a896adbd9e03796b861d492326e48056ec5e3a122ca",
+    "conditional_baseline_source_sha256": "440d76ed0395cc84edd0ee320ce0376e27d5b7d328f0f65d1ba1cb6454ed52e9",
+    "democratic_node_after": {
+      "KOR_democracy_advance_forward": {
+        "relative_position_id": null,
+        "script_xy": {
+          "x": 127,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 127,
+          "y": 2
+        }
+      },
+      "KOR_president_kim_gu": {
+        "relative_position_id": "KOR_democracy_advance_forward",
+        "script_xy": {
+          "x": -9,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 118,
+          "y": 3
+        }
+      },
+      "KOR_syngman_rhee_reelected": {
+        "relative_position_id": "KOR_democracy_advance_forward",
+        "script_xy": {
+          "x": 9,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 136,
+          "y": 3
+        }
+      },
+      "KOR_independent_party_in_power": {
+        "relative_position_id": "KOR_president_kim_gu",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 118,
+          "y": 4
+        }
+      },
+      "KOR_liberal_party_sole_power": {
+        "relative_position_id": "KOR_syngman_rhee_reelected",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 136,
+          "y": 4
+        }
+      },
+      "KOR_democracy_is_our_strength": {
+        "relative_position_id": "KOR_democracy_advance_forward",
+        "script_xy": {
+          "x": -6,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 121,
+          "y": 6
+        }
+      },
+      "KOR_ban_extremism": {
+        "relative_position_id": "KOR_democracy_advance_forward",
+        "script_xy": {
+          "x": -2,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 125,
+          "y": 6
+        }
+      },
+      "KOR_strengthen_government_support": {
+        "relative_position_id": "KOR_liberal_party_sole_power",
+        "script_xy": {
+          "x": -13,
+          "y": 3
+        },
+        "base_absolute": {
+          "x": 123,
+          "y": 7
+        }
+      },
+      "KOR_national_unity": {
+        "relative_position_id": "KOR_strengthen_government_support",
+        "script_xy": {
+          "x": -1,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 122,
+          "y": 9
+        }
+      },
+      "KOR_expend_military_budget": {
+        "relative_position_id": "KOR_liberal_party_sole_power",
+        "script_xy": {
+          "x": -8,
+          "y": 5
+        },
+        "base_absolute": {
+          "x": 128,
+          "y": 9
+        }
+      },
+      "KOR_homeland_defence_special_act": {
+        "relative_position_id": "KOR_strengthen_government_support",
+        "script_xy": {
+          "x": -1,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 122,
+          "y": 11
+        }
+      },
+      "KOR_call_up_the_rokrf": {
+        "relative_position_id": "KOR_strengthen_government_support",
+        "script_xy": {
+          "x": 3,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 126,
+          "y": 11
+        }
+      },
+      "KOR_the_vanguard_of_asian_democracy": {
+        "relative_position_id": "KOR_independent_party_in_power",
+        "script_xy": {
+          "x": -8,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 110,
+          "y": 6
+        }
+      },
+      "KOR_stop_moderate_diplomacy": {
+        "relative_position_id": "KOR_the_vanguard_of_asian_democracy",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 110,
+          "y": 7
+        }
+      },
+      "KOR_war_on_pacifism": {
+        "relative_position_id": "KOR_stop_moderate_diplomacy",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 110,
+          "y": 9
+        }
+      },
+      "KOR_claiming_northern_conquest": {
+        "relative_position_id": "KOR_war_on_pacifism",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 110,
+          "y": 11
+        }
+      },
+      "KOR_preemptive_strike_on_manchuria": {
+        "relative_position_id": "KOR_claiming_northern_conquest",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 112,
+          "y": 13
+        }
+      },
+      "KOR_rok_roc_alliance": {
+        "relative_position_id": "KOR_claiming_northern_conquest",
+        "script_xy": {
+          "x": -2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 108,
+          "y": 13
+        }
+      },
+      "KOR_prepare_for_the_next_war": {
+        "relative_position_id": "KOR_democracy_advance_forward",
+        "script_xy": {
+          "x": 2,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 129,
+          "y": 6
+        }
+      },
+      "KOR_construction_syngman_rhee_line": {
+        "relative_position_id": "KOR_prepare_for_the_next_war",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 131,
+          "y": 7
+        }
+      },
+      "KOR_syngman_rhee_line_final_fortifications": {
+        "relative_position_id": "KOR_construction_syngman_rhee_line",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 131,
+          "y": 9
+        }
+      },
+      "KOR_port_fortification": {
+        "relative_position_id": "KOR_syngman_rhee_line_final_fortifications",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 131,
+          "y": 11
+        }
+      },
+      "KOR_korea_in_the_world": {
+        "relative_position_id": "KOR_liberal_party_sole_power",
+        "script_xy": {
+          "x": 12,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 148,
+          "y": 6
+        }
+      },
+      "KOR_trust_in_the_west": {
+        "relative_position_id": "KOR_korea_in_the_world",
+        "script_xy": {
+          "x": -8,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 140,
+          "y": 7
+        }
+      },
+      "KOR_join_the_allie": {
+        "relative_position_id": "KOR_trust_in_the_west",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 140,
+          "y": 9
+        }
+      },
+      "KOR_expand_merchant_marine": {
+        "relative_position_id": "KOR_join_the_allie",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 140,
+          "y": 11
+        }
+      },
+      "KOR_british_naval_ship": {
+        "relative_position_id": "KOR_expand_merchant_marine",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 140,
+          "y": 13
+        }
+      },
+      "KOR_learn_from_french_army": {
+        "relative_position_id": "KOR_join_the_allie",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 142,
+          "y": 11
+        }
+      },
+      "KOR_allies_military_aid": {
+        "relative_position_id": "KOR_learn_from_french_army",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 142,
+          "y": 13
+        }
+      },
+      "KOR_eef_command": {
+        "relative_position_id": "KOR_join_the_allie",
+        "script_xy": {
+          "x": 0,
+          "y": 8
+        },
+        "base_absolute": {
+          "x": 140,
+          "y": 17
+        }
+      },
+      "KOR_contect_with_america": {
+        "relative_position_id": "KOR_korea_in_the_world",
+        "script_xy": {
+          "x": 8,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 156,
+          "y": 7
+        }
+      },
+      "KOR_rok_us_mutual_defense_treaty": {
+        "relative_position_id": "KOR_contect_with_america",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 156,
+          "y": 9
+        }
+      },
+      "KOR_usfk": {
+        "relative_position_id": "KOR_rok_us_mutual_defense_treaty",
+        "script_xy": {
+          "x": -2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 154,
+          "y": 11
+        }
+      },
+      "KOR_katusa": {
+        "relative_position_id": "KOR_usfk",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 154,
+          "y": 13
+        }
+      },
+      "KOR_lend_lease_from_usa": {
+        "relative_position_id": "KOR_rok_us_mutual_defense_treaty",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 158,
+          "y": 11
+        }
+      },
+      "KOR_invite_macarthur": {
+        "relative_position_id": "KOR_lend_lease_from_usa",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 158,
+          "y": 13
+        }
+      },
+      "KOR_establish_ofn": {
+        "relative_position_id": "KOR_rok_us_mutual_defense_treaty",
+        "script_xy": {
+          "x": 0,
+          "y": 8
+        },
+        "base_absolute": {
+          "x": 156,
+          "y": 17
+        }
+      },
+      "KOR_absorb_the_allies": {
+        "relative_position_id": "KOR_establish_ofn",
+        "script_xy": {
+          "x": -2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 154,
+          "y": 19
+        }
+      },
+      "KOR_securing_the_former_commonwealth": {
+        "relative_position_id": "KOR_establish_ofn",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 158,
+          "y": 19
+        }
+      },
+      "KOR_torch_of_the_freedom": {
+        "relative_position_id": "KOR_establish_ofn",
+        "script_xy": {
+          "x": 0,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 156,
+          "y": 21
+        }
+      },
+      "KOR_protect_benelux": {
+        "relative_position_id": "KOR_torch_of_the_freedom",
+        "script_xy": {
+          "x": -2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 154,
+          "y": 23
+        }
+      },
+      "KOR_crash_the_nazis": {
+        "relative_position_id": "KOR_protect_benelux",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 154,
+          "y": 24
+        }
+      },
+      "KOR_protect_finland": {
+        "relative_position_id": "KOR_torch_of_the_freedom",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 158,
+          "y": 23
+        }
+      },
+      "KOR_hunt_the_bear": {
+        "relative_position_id": "KOR_protect_finland",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 158,
+          "y": 24
+        }
+      },
+      "KOR_korean_volunteer_corps": {
+        "relative_position_id": "KOR_korea_in_the_world",
+        "script_xy": {
+          "x": 0,
+          "y": 3
+        },
+        "base_absolute": {
+          "x": 148,
+          "y": 9
+        }
+      },
+      "KOR_forced_decolonization": {
+        "relative_position_id": "KOR_korea_in_the_world",
+        "script_xy": {
+          "x": -9,
+          "y": 13
+        },
+        "base_absolute": {
+          "x": 139,
+          "y": 19
+        }
+      },
+      "KOR_freedom_to_indochina": {
+        "relative_position_id": "KOR_forced_decolonization",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 139,
+          "y": 21
+        }
+      },
+      "KOR_freedom_to_malaysia": {
+        "relative_position_id": "KOR_forced_decolonization",
+        "script_xy": {
+          "x": -2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 137,
+          "y": 21
+        }
+      },
+      "KOR_freedom_to_philippines": {
+        "relative_position_id": "KOR_forced_decolonization",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 141,
+          "y": 21
+        }
+      },
+      "KOR_freedom_to_indonesia": {
+        "relative_position_id": "KOR_forced_decolonization",
+        "script_xy": {
+          "x": 0,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 139,
+          "y": 23
+        }
+      },
+      "KOR_abcdfk_blocade": {
+        "relative_position_id": "KOR_korea_in_the_world",
+        "script_xy": {
+          "x": -3,
+          "y": 13
+        },
+        "base_absolute": {
+          "x": 145,
+          "y": 19
+        }
+      },
+      "KOR_pressure_on_thailand": {
+        "relative_position_id": "KOR_abcdfk_blocade",
+        "script_xy": {
+          "x": -2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 143,
+          "y": 21
+        }
+      },
+      "KOR_freedom_to_ryukyu_and_ainu": {
+        "relative_position_id": "KOR_abcdfk_blocade",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 147,
+          "y": 21
+        }
+      },
+      "KOR_end_the_threat": {
+        "relative_position_id": "KOR_abcdfk_blocade",
+        "script_xy": {
+          "x": 0,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 145,
+          "y": 23
+        }
+      },
+      "KOR_liberation_of_the_europe": {
+        "relative_position_id": "KOR_preemptive_strike_on_manchuria",
+        "script_xy": {
+          "x": -2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 110,
+          "y": 15
+        }
+      },
+      "KOR_founding_of_the_asian_union": {
+        "relative_position_id": "KOR_preemptive_strike_on_manchuria",
+        "script_xy": {
+          "x": 3,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 115,
+          "y": 15
+        }
+      },
+      "KOR_invitation_to_independent_asian_countries": {
+        "relative_position_id": "KOR_founding_of_the_asian_union",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 115,
+          "y": 17
+        }
+      },
+      "KOR_invite_china": {
+        "relative_position_id": "KOR_founding_of_the_asian_union",
+        "script_xy": {
+          "x": -4,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 111,
+          "y": 17
+        }
+      },
+      "KOR_support_for_democracy_in_china": {
+        "relative_position_id": "KOR_founding_of_the_asian_union",
+        "script_xy": {
+          "x": -7,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 108,
+          "y": 17
+        }
+      },
+      "KOR_overthrow_the_chinese_dictators": {
+        "relative_position_id": "KOR_support_for_democracy_in_china",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 108,
+          "y": 19
+        }
+      },
+      "KOR_invite_japan": {
+        "relative_position_id": "KOR_founding_of_the_asian_union",
+        "script_xy": {
+          "x": 4,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 119,
+          "y": 17
+        }
+      },
+      "KOR_support_for_democracy_in_japan": {
+        "relative_position_id": "KOR_founding_of_the_asian_union",
+        "script_xy": {
+          "x": 6,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 121,
+          "y": 17
+        }
+      },
+      "KOR_minshu_ikki": {
+        "relative_position_id": "KOR_support_for_democracy_in_japan",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 121,
+          "y": 19
+        }
+      },
+      "KOR_asian_independence_support": {
+        "relative_position_id": "KOR_invitation_to_independent_asian_countries",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 115,
+          "y": 19
+        }
+      },
+      "KOR_expelling_european_imperialists": {
+        "relative_position_id": "KOR_asian_independence_support",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 115,
+          "y": 21
+        }
+      },
+      "KOR_death_to_the_fascists": {
+        "relative_position_id": "KOR_asian_independence_support",
+        "script_xy": {
+          "x": -3,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 112,
+          "y": 21
+        }
+      },
+      "KOR_end_of_the_red_plague": {
+        "relative_position_id": "KOR_asian_independence_support",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 117,
+          "y": 21
+        }
+      },
+      "HOK_KOR_parliamentary_committee": {
+        "relative_position_id": "KOR_strengthen_government_support",
+        "script_xy": {
+          "x": -6,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 117,
+          "y": 9
+        }
+      },
+      "HOK_KOR_civil_service_audit": {
+        "relative_position_id": "HOK_KOR_parliamentary_committee",
+        "script_xy": {
+          "x": -1,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 116,
+          "y": 11
+        }
+      },
+      "HOK_KOR_technical_civic_schools": {
+        "relative_position_id": "HOK_KOR_parliamentary_committee",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 119,
+          "y": 11
+        }
+      },
+      "HOK_KOR_rural_education_missions": {
+        "relative_position_id": "HOK_KOR_technical_civic_schools",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 119,
+          "y": 13
+        }
+      },
+      "HOK_KOR_public_accounts_committee": {
+        "relative_position_id": "HOK_KOR_parliamentary_committee",
+        "script_xy": {
+          "x": 0,
+          "y": 5
+        },
+        "base_absolute": {
+          "x": 117,
+          "y": 14
+        }
+      },
+      "HOK_KOR_volunteer_liaison_bureau": {
+        "relative_position_id": "KOR_korean_volunteer_corps",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 148,
+          "y": 11
+        }
+      },
+      "HOK_KOR_overseas_medical_detachments": {
+        "relative_position_id": "HOK_KOR_volunteer_liaison_bureau",
+        "script_xy": {
+          "x": -2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 146,
+          "y": 13
+        }
+      },
+      "HOK_KOR_volunteer_supply_depots": {
+        "relative_position_id": "HOK_KOR_volunteer_liaison_bureau",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 150,
+          "y": 13
+        }
+      },
+      "HOK_KOR_expeditionary_lessons": {
+        "relative_position_id": "HOK_KOR_volunteer_liaison_bureau",
+        "script_xy": {
+          "x": 0,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 148,
+          "y": 15
+        }
+      },
+      "HOK_KOR_overseas_relief_network": {
+        "relative_position_id": "HOK_KOR_expeditionary_lessons",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 148,
+          "y": 16
+        }
+      },
+      "HOK_KOR_asian_trade_secretariat": {
+        "relative_position_id": "KOR_founding_of_the_asian_union",
+        "script_xy": {
+          "x": 11,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 126,
+          "y": 17
+        }
+      },
+      "HOK_KOR_asian_customs_convention": {
+        "relative_position_id": "HOK_KOR_asian_trade_secretariat",
+        "script_xy": {
+          "x": -2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 124,
+          "y": 19
+        }
+      },
+      "HOK_KOR_asian_development_fund": {
+        "relative_position_id": "HOK_KOR_asian_customs_convention",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 124,
+          "y": 21
+        }
+      },
+      "HOK_KOR_asian_armaments_commission": {
+        "relative_position_id": "HOK_KOR_asian_trade_secretariat",
+        "script_xy": {
+          "x": 2,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 128,
+          "y": 19
+        }
+      },
+      "HOK_KOR_asian_license_agreement": {
+        "relative_position_id": "HOK_KOR_asian_armaments_commission",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 128,
+          "y": 21
+        }
+      },
+      "HOK_KOR_civic_industrial_compact": {
+        "relative_position_id": "KOR_democracy_advance_forward",
+        "script_xy": {
+          "x": 6,
+          "y": 4
+        },
+        "base_absolute": {
+          "x": 133,
+          "y": 6
+        }
+      },
+      "HOK_KOR_civic_chaebol_cooperation": {
+        "relative_position_id": "HOK_KOR_civic_industrial_compact",
+        "script_xy": {
+          "x": 0,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 133,
+          "y": 7
+        }
+      },
+      "HOK_KOR_civic_nationalization": {
+        "relative_position_id": "HOK_KOR_civic_industrial_compact",
+        "script_xy": {
+          "x": 2,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 135,
+          "y": 7
+        }
+      },
+      "HOK_KOR_civic_break_monopolies": {
+        "relative_position_id": "HOK_KOR_civic_industrial_compact",
+        "script_xy": {
+          "x": 4,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 137,
+          "y": 7
+        }
+      },
+      "HOK_KOR_civic_sunkyong_investment": {
+        "relative_position_id": "HOK_KOR_civic_chaebol_cooperation",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 132,
+          "y": 8
+        }
+      },
+      "HOK_KOR_civic_samsung_electronics": {
+        "relative_position_id": "HOK_KOR_civic_chaebol_cooperation",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 134,
+          "y": 8
+        }
+      },
+      "HOK_KOR_civic_goldstar_mass_production": {
+        "relative_position_id": "HOK_KOR_civic_chaebol_cooperation",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 133,
+          "y": 9
+        }
+      },
+      "HOK_KOR_civic_labor_compact": {
+        "relative_position_id": "HOK_KOR_civic_break_monopolies",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 137,
+          "y": 9
+        }
+      },
+      "HOK_KOR_civic_mass_conscription": {
+        "relative_position_id": "HOK_KOR_civic_labor_compact",
+        "script_xy": {
+          "x": -1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 136,
+          "y": 10
+        }
+      },
+      "HOK_KOR_civic_public_accountability": {
+        "relative_position_id": "HOK_KOR_civic_labor_compact",
+        "script_xy": {
+          "x": 1,
+          "y": 1
+        },
+        "base_absolute": {
+          "x": 138,
+          "y": 10
+        }
+      },
+      "HOK_KOR_civic_social_settlement": {
+        "relative_position_id": "HOK_KOR_civic_labor_compact",
+        "script_xy": {
+          "x": 0,
+          "y": 3
+        },
+        "base_absolute": {
+          "x": 137,
+          "y": 12
+        }
+      },
+      "HOK_KOR_civic_public_procurement": {
+        "relative_position_id": "HOK_KOR_civic_nationalization",
+        "script_xy": {
+          "x": 0,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 135,
+          "y": 9
+        }
+      },
+      "HOK_KOR_civic_procurement_inspections": {
+        "relative_position_id": "HOK_KOR_civic_industrial_compact",
+        "script_xy": {
+          "x": 6,
+          "y": 2
+        },
+        "base_absolute": {
+          "x": 139,
+          "y": 8
+        }
+      }
+    },
+    "states": [
+      {
+        "id": "show_initial",
+        "rule": "SHOW",
+        "completed": [],
+        "route": null,
+        "completeRoute": false,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_republic_only",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": null,
+        "completeRoute": false,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_communist_in_progress",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "communist",
+        "completeRoute": false,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_democratic_in_progress",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "democratic",
+        "completeRoute": false,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_fascist_in_progress",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "fascist",
+        "completeRoute": false,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_non_aligned_in_progress",
+        "rule": "SHOW",
+        "completed": [],
+        "route": "non_aligned",
+        "completeRoute": false,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_communist",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_long_live_the_dictatorship_of_the_proletariat"
+        ],
+        "route": "communist",
+        "completeRoute": true,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_democratic",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_democracy_advance_forward"
+        ],
+        "route": "democratic",
+        "completeRoute": true,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_fascist",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_empowering_the_nrsc"
+        ],
+        "route": "fascist",
+        "completeRoute": true,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "show_non_aligned",
+        "rule": "SHOW",
+        "completed": [
+          "KOR_urihwangsilsaranghoe"
+        ],
+        "route": "non_aligned",
+        "completeRoute": true,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_initial",
+        "rule": "HIDE",
+        "completed": [],
+        "route": null,
+        "completeRoute": false,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_republic_only",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": null,
+        "completeRoute": false,
+        "visible_count": 383,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 175,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_communist_in_progress",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "communist",
+        "completeRoute": false,
+        "visible_count": 383,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 175,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_democratic_in_progress",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "democratic",
+        "completeRoute": false,
+        "visible_count": 383,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 175,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_fascist_in_progress",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic"
+        ],
+        "route": "fascist",
+        "completeRoute": false,
+        "visible_count": 383,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 175,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_non_aligned_in_progress",
+        "rule": "HIDE",
+        "completed": [],
+        "route": "non_aligned",
+        "completeRoute": false,
+        "visible_count": 474,
+        "moved_count": 0,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 211,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": []
+      },
+      {
+        "id": "hide_communist",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_long_live_the_dictatorship_of_the_proletariat"
+        ],
+        "route": "communist",
+        "completeRoute": true,
+        "visible_count": 232,
+        "moved_count": 57,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 95,
+          "min_y": 0,
+          "max_y": 23
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": [
+          {
+            "id": "KOR_future_of_the_republic",
+            "offset": {
+              "x": -48,
+              "y": 0
+            },
+            "final": {
+              "x": 79,
+              "y": 0
+            }
+          },
+          {
+            "id": "KOR_long_live_the_dictatorship_of_the_proletariat",
+            "offset": {
+              "x": -5,
+              "y": 0
+            },
+            "final": {
+              "x": 79,
+              "y": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "hide_democratic",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_democracy_advance_forward"
+        ],
+        "route": "democratic",
+        "completeRoute": true,
+        "visible_count": 271,
+        "moved_count": 96,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 123,
+          "min_y": 0,
+          "max_y": 24
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": [
+          {
+            "id": "KOR_future_of_the_republic",
+            "offset": {
+              "x": -35,
+              "y": 0
+            },
+            "final": {
+              "x": 92,
+              "y": 0
+            }
+          },
+          {
+            "id": "KOR_democracy_advance_forward",
+            "offset": {
+              "x": -35,
+              "y": 0
+            },
+            "final": {
+              "x": 92,
+              "y": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "hide_fascist",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_future_of_the_republic",
+          "KOR_empowering_the_nrsc"
+        ],
+        "route": "fascist",
+        "completeRoute": true,
+        "visible_count": 232,
+        "moved_count": 57,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 91,
+          "min_y": 0,
+          "max_y": 23
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": [
+          {
+            "id": "KOR_future_of_the_republic",
+            "offset": {
+              "x": -44,
+              "y": 0
+            },
+            "final": {
+              "x": 83,
+              "y": 0
+            }
+          },
+          {
+            "id": "KOR_empowering_the_nrsc",
+            "offset": {
+              "x": -84,
+              "y": 0
+            },
+            "final": {
+              "x": 83,
+              "y": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "hide_non_aligned",
+        "rule": "HIDE",
+        "completed": [
+          "KOR_urihwangsilsaranghoe"
+        ],
+        "route": "non_aligned",
+        "completeRoute": true,
+        "visible_count": 266,
+        "moved_count": 91,
+        "bounds": {
+          "min_x": 0,
+          "max_x": 110,
+          "min_y": 0,
+          "max_y": 23
+        },
+        "visibility_basis": "existing allow_branch on each political root and all relative descendants",
+        "root_position_overrides": [
+          {
+            "id": "KOR_urihwangsilsaranghoe",
+            "offset": {
+              "x": -101,
+              "y": 0
+            },
+            "final": {
+              "x": 85,
+              "y": 0
+            }
+          }
+        ]
+      }
+    ],
+    "evidence_status": "Historical474-node pre-democratic-compaction source metadata and state model. This snapshot is not validation of the new compact positions."
+  },
+  "democratic_compaction_update": {
+    "documented_on": "2026-11-01",
+    "status": "APPLIED_SOURCE_COORDINATES_BOUNDED_SHOW_HIDE_RUNTIME_VALIDATED",
+    "source_sha256": "6562d4acfd05f791026502a9aeace3668d3c89869df4279f75c2f1016763f163",
+    "comparison_baseline_source_sha256": "3cc9f676203e18f53b7b6a896adbd9e03796b861d492326e48056ec5e3a122ca",
+    "specification": "docs/HOK_KOREAN_DEMOCRATIC_FOCUS_COMPACTION_PLAN.md",
+    "mapping_artifact": "C:/hoi/test/democratic-compaction-20261031/design-review/candidate-v4b.json",
+    "source_change_record": "C:/hoi/test/democratic-compaction-20261031/layout-change-record.json",
+    "democratic_node_count": 95,
+    "directly_changed_focus_count": 32,
+    "resolved_position_changed_count": 86,
+    "directly_changed_ids": [
+      "KOR_president_kim_gu",
+      "KOR_syngman_rhee_reelected",
+      "KOR_democracy_is_our_strength",
+      "KOR_ban_extremism",
+      "KOR_strengthen_government_support",
+      "KOR_expend_military_budget",
+      "KOR_the_vanguard_of_asian_democracy",
+      "KOR_construction_syngman_rhee_line",
+      "KOR_korea_in_the_world",
+      "KOR_trust_in_the_west",
+      "KOR_eef_command",
+      "KOR_contect_with_america",
+      "KOR_usfk",
+      "KOR_lend_lease_from_usa",
+      "KOR_absorb_the_allies",
+      "KOR_securing_the_former_commonwealth",
+      "KOR_protect_benelux",
+      "KOR_protect_finland",
+      "KOR_korean_volunteer_corps",
+      "KOR_forced_decolonization",
+      "KOR_abcdfk_blocade",
+      "KOR_founding_of_the_asian_union",
+      "KOR_invite_china",
+      "KOR_support_for_democracy_in_china",
+      "KOR_invite_japan",
+      "KOR_support_for_democracy_in_japan",
+      "KOR_asian_independence_support",
+      "HOK_KOR_parliamentary_committee",
+      "HOK_KOR_overseas_medical_detachments",
+      "HOK_KOR_volunteer_supply_depots",
+      "HOK_KOR_asian_trade_secretariat",
+      "HOK_KOR_civic_industrial_compact"
+    ],
+    "resolved_position_changed_ids": [
+      "KOR_president_kim_gu",
+      "KOR_syngman_rhee_reelected",
+      "KOR_independent_party_in_power",
+      "KOR_liberal_party_sole_power",
+      "KOR_democracy_is_our_strength",
+      "KOR_ban_extremism",
+      "KOR_strengthen_government_support",
+      "KOR_national_unity",
+      "KOR_homeland_defence_special_act",
+      "KOR_call_up_the_rokrf",
+      "KOR_the_vanguard_of_asian_democracy",
+      "KOR_stop_moderate_diplomacy",
+      "KOR_war_on_pacifism",
+      "KOR_claiming_northern_conquest",
+      "KOR_preemptive_strike_on_manchuria",
+      "KOR_rok_roc_alliance",
+      "KOR_construction_syngman_rhee_line",
+      "KOR_syngman_rhee_line_final_fortifications",
+      "KOR_port_fortification",
+      "KOR_korea_in_the_world",
+      "KOR_eef_command",
+      "KOR_contect_with_america",
+      "KOR_rok_us_mutual_defense_treaty",
+      "KOR_usfk",
+      "KOR_katusa",
+      "KOR_lend_lease_from_usa",
+      "KOR_invite_macarthur",
+      "KOR_establish_ofn",
+      "KOR_absorb_the_allies",
+      "KOR_securing_the_former_commonwealth",
+      "KOR_torch_of_the_freedom",
+      "KOR_protect_benelux",
+      "KOR_crash_the_nazis",
+      "KOR_protect_finland",
+      "KOR_hunt_the_bear",
+      "KOR_korean_volunteer_corps",
+      "KOR_forced_decolonization",
+      "KOR_freedom_to_indochina",
+      "KOR_freedom_to_malaysia",
+      "KOR_freedom_to_philippines",
+      "KOR_freedom_to_indonesia",
+      "KOR_abcdfk_blocade",
+      "KOR_pressure_on_thailand",
+      "KOR_freedom_to_ryukyu_and_ainu",
+      "KOR_end_the_threat",
+      "KOR_liberation_of_the_europe",
+      "KOR_founding_of_the_asian_union",
+      "KOR_invitation_to_independent_asian_countries",
+      "KOR_invite_china",
+      "KOR_support_for_democracy_in_china",
+      "KOR_overthrow_the_chinese_dictators",
+      "KOR_invite_japan",
+      "KOR_support_for_democracy_in_japan",
+      "KOR_minshu_ikki",
+      "KOR_asian_independence_support",
+      "KOR_expelling_european_imperialists",
+      "KOR_death_to_the_fascists",
+      "KOR_end_of_the_red_plague",
+      "HOK_KOR_parliamentary_committee",
+      "HOK_KOR_civil_service_audit",
+      "HOK_KOR_technical_civic_schools",
+      "HOK_KOR_rural_education_missions",
+      "HOK_KOR_public_accounts_committee",
+      "HOK_KOR_volunteer_liaison_bureau",
+      "HOK_KOR_overseas_medical_detachments",
+      "HOK_KOR_volunteer_supply_depots",
+      "HOK_KOR_expeditionary_lessons",
+      "HOK_KOR_overseas_relief_network",
+      "HOK_KOR_asian_trade_secretariat",
+      "HOK_KOR_asian_customs_convention",
+      "HOK_KOR_asian_development_fund",
+      "HOK_KOR_asian_armaments_commission",
+      "HOK_KOR_asian_license_agreement",
+      "HOK_KOR_civic_industrial_compact",
+      "HOK_KOR_civic_chaebol_cooperation",
+      "HOK_KOR_civic_nationalization",
+      "HOK_KOR_civic_break_monopolies",
+      "HOK_KOR_civic_sunkyong_investment",
+      "HOK_KOR_civic_samsung_electronics",
+      "HOK_KOR_civic_goldstar_mass_production",
+      "HOK_KOR_civic_labor_compact",
+      "HOK_KOR_civic_mass_conscription",
+      "HOK_KOR_civic_public_accountability",
+      "HOK_KOR_civic_social_settlement",
+      "HOK_KOR_civic_public_procurement",
+      "HOK_KOR_civic_procurement_inspections"
+    ],
+    "before_bounds": {
+      "min_x": 108,
+      "max_x": 158,
+      "min_y": 2,
+      "max_y": 24
+    },
+    "after_bounds": {
+      "min_x": 113,
+      "max_x": 151,
+      "min_y": 2,
+      "max_y": 24
+    },
+    "center_span_x_before": 50,
+    "center_span_x_after": 38,
+    "center_span_x_reduction_percent": 24,
+    "bounds_units": "Focus grid and center span; not pixels, actual screen margins or engine scroll limits.",
+    "president_gap": {
+      "before": 18,
+      "after": 10
+    },
+    "west_us_gap": {
+      "before": 16,
+      "after": 10
+    },
+    "anchors_offsets_and_non_democratic_positions_preserved": true,
+    "gameplay_scope": "Placement fields and coherent contributor notes only. Source gameplay preservation is checked in the separate preservation-review artifact, not inferred from this JSON.",
+    "coordinate_metadata_scope": "All474 current IDs/order/relative fields/resolved positions checked against actual source; all20 existing state summaries recalculated from unchanged root visibility/offset conditions. Internal subroute visibility remains conservatively included as in the historical model.",
+    "historical_record_policy": "nodes.before, existing previous_* objects, conditional_layout.validation and all earlier notes/results are retained as historical evidence. civil_nuclear_update retains its own pre-layout source hash and evidence; rewards are unchanged by compaction.",
+    "runtime": {
+      "status": "BOUNDED_SHOW_HIDE_VALIDATION_COMPLETE_WITH_RECORDED_LIMITS",
+      "record": "docs/incidents/2026-10-31-korean-democratic-focus-compaction.md",
+      "evidence_root": "C:/hoi/test/democratic-compaction-20261031",
+      "version": "Operation Postern v1.19.4.1.99a5",
+      "enabled_dlc_count": 36,
+      "language": "l_korean",
+      "observed_preexisting_pid": 15808,
+      "preexisting_session": "Preserved as HOK_user_preserved_20261101_DLCMP.hoi4; original default save restored; normal UI exit after user delegation.",
+      "controls": {
+        "accepted_old_source": {
+          "checksum": "1395",
+          "selection": [
+            "Korean Language",
+            "external full pre-compaction source"
+          ],
+          "archive": "runs/control-full",
+          "rule": "HIDE"
+        },
+        "hide_fixture": {
+          "checksum": "f02c",
+          "selection": [
+            "Korean Language",
+            "repository",
+            "external bounded readiness probe"
+          ],
+          "archive": "runs/fixture-hide-final",
+          "rule": "HIDE"
+        },
+        "final_clean": {
+          "checksum": "7572",
+          "selection": [
+            "Korean Language",
+            "repository"
+          ],
+          "archives": [
+            "runs/clean-show-paused",
+            "runs/clean-show-completed",
+            "runs/clean-show-final"
+          ],
+          "rule": "SHOW"
+        },
+        "excluded_attempt": "The small control-overlay attempt loaded the new layout and is not accepted as a pre-change control."
+      },
+      "observed": [
+        "HIDE root started through normal UI, active state at base placement and normal completion popup observed; post-completion layout shifted coherently. Source preserves once-inherited -35x; exact movement was not measured in pixels.",
+        "Native root-only checkpoint saved and reloaded in the same process. Rhee/cooperation and KimGu/public ownership are separate synthetic readiness states, not normal policy/reward completion.",
+        "Representative president/civic entry/title/connection states, central AND merge, lower Asian and western/US branches, scrolling and three blocked detail-panel targets inspected.",
+        "Final no-probe SHOW parent and root started through normal UI, completion popups observed; active versus completed same-camera root/president positions unchanged. Root UI duration28days includes bank10, so exact elapsed duration is not claimed.",
+        "Final no-probe broad upper/lower views show branch access. SLOW INTERFACE debug text was visible at speed5; no performance conclusion is drawn."
+      ],
+      "logs": {
+        "accepted_control_error_rows": 47,
+        "hide_initial_error_rows": 54,
+        "hide_final_error_rows": 59,
+        "clean_initial_error_rows": 54,
+        "clean_completed_error_rows": 54,
+        "clean_postexit_error_rows": 56,
+        "clean_progression_error_added_removed": [
+          0,
+          0
+        ],
+        "classification": "Control-to-clean initial adds9 frontend difficulty missing-background rows and removes2 control shutdown rename rows; clean shutdown adds2 random.log errno2 rename rows. Text rows unchanged. No new relevant focus/probe/relative-layout error found; existing warnings remain. Not a zero-errors claim.",
+        "independent_reports": [
+          "runtime-review/independent-hide-runtime-review.json",
+          "runtime-review/independent-clean-show-initial-review.json",
+          "runtime-review/independent-clean-show-final-review.json"
+        ]
+      },
+      "cleanup": {
+        "status": "EXACT_PROFILE_RESTORED_TASK_FILES_REMOVED_ORIGINALS_PRESERVED",
+        "apply_report": "validation/restore-runtime-apply-20261031T160606024841Z-d6536e4e.json",
+        "post_steam_restart_report": "validation/restore-runtime-dry-run-20261031T161004487132Z-77ead166.json",
+        "existing_save_count_verified": 23,
+        "save_checks": [
+          "names",
+          "lengths",
+          "precise UTC modification times",
+          "SHA256"
+        ],
+        "steam": "Owned game exited normally; stale Steam state cleared through normal Stop/exit/restart, green Play observed.",
+        "steam_screenshot": "runtime-ui/clean-final-steam-play-restored.png"
+      },
+      "not_verified": [
+        "all95 every icon/title/click/state",
+        "civic reform or western/US synthetic completion endpoints",
+        "normal civic policy rewards/influence panel",
+        "other political route transitions",
+        "pre-change save compatibility",
+        "long-term AI",
+        "other mod/DLC combinations",
+        "multiplayer/OOS"
+      ]
+    }
   }
 }

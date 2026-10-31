@@ -4843,7 +4843,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_democracy_advance_forward
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -9
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -6
 		y = 1
 		cost = 2
 		available_if_capitulated = no
@@ -4875,7 +4876,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_democracy_advance_forward
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 9
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 4
 		y = 1
 		cost = 2
 		available_if_capitulated = no
@@ -4961,7 +4963,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_democracy_advance_forward
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -6
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -4
 		y = 4
 		cost = 5
 		available_if_capitulated = no
@@ -4987,7 +4990,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_democracy_advance_forward
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 0
 		y = 4
 		cost = 5
 		available_if_capitulated = no
@@ -5010,7 +5014,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_liberal_party_sole_power
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -13
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -6
 		y = 3
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -5067,7 +5072,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_liberal_party_sole_power
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -8
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -3
 		y = 5
 		cost = 5
 		available_if_capitulated = no
@@ -5153,7 +5159,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_independent_party_in_power
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -8
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -5
 		y = 2
 		cost = 5#20260921_kpopmodder : 아시아 민주주의의 선봉 중점 일수 줄임
 		available_if_capitulated = no
@@ -5351,7 +5358,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_prepare_for_the_next_war
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 1
 		y = 1
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -5485,8 +5493,9 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_liberal_party_sole_power
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 12
-		y = 2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 14
+		y = 1
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
 		available_if_capitulated = no
@@ -5508,8 +5517,9 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_korea_in_the_world
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -8
-		y = 1
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -5
+		y = 2
 		cost = 5
 		available_if_capitulated = no
 		prerequisite = { 
@@ -5780,7 +5790,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_join_the_allie
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 0
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 1
 		y = 8
 		cost = 5
 		available_if_capitulated = no
@@ -5806,8 +5817,9 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_korea_in_the_world
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 8
-		y = 1
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 5
+		y = 2
 		cost = 5
 		available_if_capitulated = no
 		prerequisite = { 
@@ -5888,7 +5900,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_rok_us_mutual_defense_treaty
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -1
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -5976,7 +5989,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_rok_us_mutual_defense_treaty
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 1
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -6095,7 +6109,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_establish_ofn
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -1
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -6121,7 +6136,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_establish_ofn
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 1
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -6183,7 +6199,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_torch_of_the_freedom
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -1
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -6238,7 +6255,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_torch_of_the_freedom
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 1
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -6296,7 +6314,8 @@ focus_tree = {
 		relative_position_id = KOR_korea_in_the_world
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
 		x = 0
-		y = 3
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		y = 4
 		cost = 5
 		available_if_capitulated = no
 		prerequisite = { 
@@ -6321,8 +6340,9 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_korea_in_the_world
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -9
-		y = 13
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -7
+		y = 14
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
 		available_if_capitulated = no
@@ -6475,8 +6495,9 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_korea_in_the_world
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -3
-		y = 13
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -1
+		y = 14
 		cost = 5
 		available_if_capitulated = no
 		available = {
@@ -6656,7 +6677,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_preemptive_strike_on_manchuria
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 3
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 1
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -6757,7 +6779,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_founding_of_the_asian_union
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -4
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -2
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -6790,7 +6813,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_founding_of_the_asian_union
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -7
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -6
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -6941,7 +6965,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_founding_of_the_asian_union
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 4
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 2
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -6975,7 +7000,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_founding_of_the_asian_union
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 6
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 4
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -7063,7 +7089,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_invitation_to_independent_asian_countries
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 0
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -1
 		y = 2
 		#20260921_kpopmodder: Shorten this existing focus from 70 to 35 days.
 		cost = 5
@@ -11300,7 +11327,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_strengthen_government_support
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -6
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -5
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_strengthen_government_support }
@@ -11458,7 +11486,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = HOK_KOR_volunteer_liaison_bureau
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = -2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = -1
 		y = 2
 		cost = 5
 		prerequisite = { focus = HOK_KOR_volunteer_liaison_bureau }
@@ -11481,7 +11510,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = HOK_KOR_volunteer_liaison_bureau
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 2
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 1
 		y = 2
 		cost = 5
 		prerequisite = { focus = HOK_KOR_volunteer_liaison_bureau }
@@ -11550,7 +11580,8 @@ focus_tree = {
 		#20260921_kpopmodder: Space this branch using the documented layout anchor; preserve focus gameplay.
 		relative_position_id = KOR_founding_of_the_asian_union
 		#20260921_kpopmodder: Compact sector spacing while keeping focus and nameplate lanes clear.
-		x = 11
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 10
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_founding_of_the_asian_union }
@@ -14407,7 +14438,8 @@ focus_tree = {
 		icon = GFX_HOK_KOR_focus_civic_industrial_compact
 		#20261012_kpopmodder: Place the compact at the former democratic cooperation entry and inherit its single route offset.
 		relative_position_id = KOR_democracy_advance_forward
-		x = 6
+		#20261031_kpopmodder: Compact the democratic policy layout while preserving progression and rewards.
+		x = 5
 		y = 4
 		cost = 5
 		#20261012_kpopmodder: Accept either democratic sole-party government instead of requiring the common industrial focus.
