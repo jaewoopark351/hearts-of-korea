@@ -650,7 +650,8 @@ characters = {
 			}
 			available = { has_completed_focus = KOR_eight_province_development_committee }
 			traits  = {
-				KOR_economist
+				#20261101_kpopmodder: Replace the production-efficiency trait with vanilla consumer-goods reduction.
+				financial_expert
 			}
 		}
 	}
