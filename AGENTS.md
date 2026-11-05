@@ -1,5 +1,27 @@
 # AGENTS.md
 
+## Mandatory checks before acting
+
+Apply these rules at the start of every task and consult the detailed sections below for the relevant work:
+
+- Establish the authorized mode first. Review-only means reading and reporting; documentation-only means editing only the requested documentation. Neither authorizes gameplay changes, tests, packaging, cleanup, or uploads.
+- Before creating test or diagnostic files, select `C:\hoi\test\<task-or-run-id>\` and configure all helper outputs and backups there. Do not create them in this repository, `.local-artifacts`, or an upload package. Game-generated originals remain in the actual HOI4 user-data directory; evidence copies go to the external test directory.
+- Report existing test artifacts found in the repository as outstanding cleanup. Move or delete them only within an explicitly authorized cleanup scope; honor an existing authorization without asking again. Finding old files or reading this rule does not authorize cleanup.
+- For authorized release preparation, build a separate clean staging directory from an explicit public/runtime allowlist. Exclude Git data, agent instructions, test artifacts, private records, and development intermediates; preserve required public credits and licence notices. Check the actual staged file list before upload. `.gitignore` does not define the Workshop package contents.
+- Preserve the original authorship, stable IDs, and gameplay outside explicitly scoped changes. Use the repository as the working source; keep base-game and Workshop-managed copies read-only. Original Workshop ID `2898629778` is provenance only.
+- Git history changes, commit, push, and external publication require authorization for the specific action. Implementation, documentation, cleanup, and release preparation do not themselves authorize those actions.
+
+## Persistent records and required reading
+
+- Keep material file locations and source/provenance references in maintained project documentation so later work can resume without conversation memory. Put detailed inventories, archive mappings, verification history, and task procedures in a relevant document under `docs/`; keep the common rules and required-reading links in `AGENTS.md` concise.
+- Link internal guidance using paths relative to the referring document. State the task condition that requires reading each linked document; a bare link is insufficient. Read the relevant guidance before the dependent work. If it is missing or inconsistent, report the issue and continue only independent authorized work.
+- When authorized work changes a recorded location, update the relevant project document with the old and new paths, original/copy roles, manifest locations, historical mapping, and the actual verification performed. Keep earlier results distinguishable from later checks. If a guidance document moves, update its required-reading link as part of the same documentation change.
+- Keep actual tests and intermediate outputs under `C:\hoi\test\<task-or-run-id>\`; only their maintained location/provenance index belongs in project documentation. Documentation links do not authorize executing scripts, modifying archives, or expanding the requested task.
+
+| Read before this work | Required project document |
+|---|---|
+| Creating or revising images, reusing historical image inputs/recipes, or resolving old `.local-artifacts` references | [Development artifact archive and image-source lookup](docs/HOK_DEVELOPMENT_ARTIFACT_ARCHIVE.md) |
+
 ## Scope and mission
 
 This file applies to the repository root and all descendant directories unless a closer `AGENTS.md` or `AGENTS.override.md` provides more specific instructions.
@@ -76,7 +98,10 @@ When implementation is explicitly authorized:
 When asked to prepare a release:
 
 - Prepare only the package, descriptors, metadata, credits, changelog, dependency list, and validation record requested.
-- Use a clean staging directory or explicit allowlist; exclude `.git`, `AGENTS.md`, editor state, logs, saves, crash dumps, caches, credentials, and private records unless deliberately shipped.
+- Build the package in a separate clean staging directory outside the repository, base-game installation, and Workshop-managed downloads. Populate it from an explicit allowlist of runtime files and intended public release materials. Keep the development source intact.
+- Exclude `.git`, `.local-artifacts`, agent instructions, editor state, test/diagnostic scripts and reports, logs, saves, crash dumps, caches, credentials, private records, and image-generation intermediates. Select required public credits and licence notices explicitly; do not discard them merely because their source is under `docs/`.
+- Before upload, inspect the actual staged file list, file count, total bytes, descriptors, and excluded-file categories. Record the source state, staging path, intended Workshop target, and remaining limitations. Stop release progression if unintended files remain; report the affected paths without deleting source files outside the authorized scope.
+- Verify that the uploader's content path points to the reviewed staging directory. A clean Git status, `.gitignore`, or successful earlier upload does not establish package cleanliness. These preparation checks apply only when release preparation or publication is authorized.
 - Keep original Workshop ID `2898629778` as provenance only and remove stale upstream upload identity from the active successor package.
 - Stop before any external upload unless that exact action is explicitly requested.
 
@@ -518,8 +543,12 @@ Required rules:
 ### Test-file storage
 
 - Store all newly created test and diagnostic files under `C:\hoi\test\<task-or-run-id>\`. This includes test scripts, fixtures, generated reports, copied logs, screenshots, crash dumps, test saves, and save backups.
-- Set test helpers' output and backup paths to that external location before running them. Do not store new test files in this repository, including `.local-artifacts`, or in a Steam Workshop upload/package directory. Historical records referencing `.local-artifacts` do not authorize reusing it for new tests.
+- Before generating artifacts or starting an authorized test, resolve the external task directory and inspect the helper's output, log, report, screenshot, save, and backup destinations. Correct any destination inside the repository or an upload package before running the helper. If the helper cannot use the required destination, report that blocker and continue only independent authorized work.
+- Do not store new test files in this repository, including `.local-artifacts`, or in a Steam Workshop upload/package directory. Historical records referencing `.local-artifacts` do not authorize reusing it for new tests. `.gitignore` controls Git tracking; it does not relocate files or exclude them from a Workshop upload.
 - Keep production mod files and maintained documentation in their normal repository locations. Game-generated originals remain in the actual HOI4 user-data directory; place any test/evidence copies in `C:\hoi\test`. This storage rule does not itself authorize moving or deleting existing files, changing game settings, or running tests.
+- When existing artifacts are discovered, report their location, type, and approximate size separately from any newly generated files. Treat them as pending external archival/cleanup; their presence alone does not establish when or by whom they were created. In review-only or documentation-only work, leave them untouched.
+- When cleanup is explicitly authorized, copy only the scoped artifacts to an identified directory under `C:\hoi\test\<task-or-run-id>\`, preserve their relative paths, and verify the copies before removing any source files covered by that authorization. Record the old and new locations. Preserve historical evidence references; document the archival mapping instead of bulk-rewriting old paths. Retain unique evidence and artwork sources needed for provenance.
+- At the end of an authorized test or diagnostic task, report the external artifact directory, any remaining artifacts in the repository/package, and any storage blocker. Acknowledge and report storage violations; do not describe this mandatory rule as optional advice or treat completion of the gameplay check as completion of artifact cleanup.
 
 ### Runtime evidence
 
