@@ -18,9 +18,13 @@ Apply these rules at the start of every task and consult the detailed sections b
 - When authorized work changes a recorded location, update the relevant project document with the old and new paths, original/copy roles, manifest locations, historical mapping, and the actual verification performed. Keep earlier results distinguishable from later checks. If a guidance document moves, update its required-reading link as part of the same documentation change.
 - Keep actual tests and intermediate outputs under `C:\hoi\test\<task-or-run-id>\`; only their maintained location/provenance index belongs in project documentation. Documentation links do not authorize executing scripts, modifying archives, or expanding the requested task.
 
+Before reviewing HOK runtime logs or attributing an error to HOK, read the project [HOK log-review skill](.agents/skills/hok-log-review/SKILL.md).
+
 | Read before this work | Required project document |
 |---|---|
 | Creating or revising images, reusing historical image inputs/recipes, or resolving old `.local-artifacts` references | [Development artifact archive and image-source lookup](docs/HOK_DEVELOPMENT_ARTIFACT_ARCHIVE.md) |
+| Comparing current logs against the 2026-11-06 compatibility repairs | [Runtime compatibility implementation and evidence](docs/incidents/2026-11-06-hok-runtime-compatibility-implementation.md) |
+| Locating or relocating the HOK log-review skill | [Skill location and migration record](docs/HOK_LOG_REVIEW_SKILL.md) |
 
 ## Scope and mission
 

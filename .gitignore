@@ -10,7 +10,13 @@ Desktop.ini
 /.idea/
 /.codex/
 /.claude/
-/.agents/
+# Share skill instructions; keep other agent files local.
+/.agents/*
+!/.agents/skills/
+/.agents/skills/**
+!/.agents/skills/**/
+!/.agents/skills/**/SKILL.md
+!/.agents/skills/**/skill.md
 *.suo
 *.user
 *.code-workspace
