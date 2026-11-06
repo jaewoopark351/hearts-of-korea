@@ -10,6 +10,7 @@
 
 ## 문서 목록
 
+- [2026-11-06 실행 로그 호환성 수리·검증 기록](docs/incidents/2026-11-06-hok-runtime-compatibility-implementation.md): 해당 오류군을 이어서 수정·검증할 때 먼저 읽는다. 일본 AI·몽골·해군 보상·FIN 교리/장비·일본 인물 등록·음원 수리, 실제 저장·1939 자연 승계·진단 없는 로드 결과와 미검증 범위를 구분한다. [구현 전 검토](docs/incidents/2026-11-06-hok-runtime-log-compatibility-review.md)는 당시의 읽기 전용 판단과 원본 부분 병합 원칙을 보존한 이력이다
 - [민주주의 중점 내부 간격 압축 계획·적용 좌표](docs/HOK_KOREAN_DEMOCRATIC_FOCUS_COMPACTION_PLAN.md): 민주 95개 구역 폭 50→38칸(24% 감소), 배치 32개 직접 수정·86개 이동, 게임플레이 보존 29/0. HIDE 정상 완료·같은 프로세스 재로드·별도 합성 선택, 진단 없는 SHOW 정상 완료 뒤 상단 위치 유지와 설정 원복·기존 저장 23개 보존·Steam 플레이 복귀까지 확인했다. 요청 범위의 구현·핵심 검증 완료; [구현 기록](docs/incidents/2026-10-31-korean-democratic-focus-compaction.md)의 한정 화면·기존/추가 경고·성능 등 미측정 범위 참조
 - [한국 민간 핵 연구 중점 2개 구현 명세](docs/HOK_KOREAN_CIVIL_NUCLEAR_RESEARCH_SPEC.md): 현재474개. 첫35일·핵 혁신100%·핵 기술 선행 연구 불이익2년 감소1회, 둘째는 감산 없는245일. 후속 변경은 정적 대조만 수행하며 기완료 저장에 새 보상을 자동 소급하지 않음
 - [민간 핵 연구 구현·검증 기록](docs/incidents/2026-10-31-korean-civil-nuclear-research.md): 감산 제거 전의 소스506/0·정상240회14/0·건설 대기열17/0·재로드24/0·기보유 통과 각19/0 등은 이력으로 보존. 감산 없는245일의 새 실행·정상 진행은 미검증

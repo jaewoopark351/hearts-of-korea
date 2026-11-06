@@ -74,13 +74,7 @@ shared_focus = {
 				}
 				mark_focus_tree_layout_dirty = yes
 			}
-			recruit_character = HOK_JAP_japanese_national_liberation_committee
-			recruit_character = HOK_JAP_tatsuji_fuse
-			recruit_character = HOK_JAP_tadamichi_kuribayashi
-			recruit_character = HOK_JAP_sigesaburo_miyazaki
-			recruit_character = HOK_JAP_shin_yoshida
-			recruit_character = HOK_JAP_masatomi_kimura
-			recruit_character = HOK_JAP_renya_mutaguchi
+			#20261106_kpopmodder: Character registration now runs once in Japan history; later focus unlocks are unchanged.
 		}
 	}
 }

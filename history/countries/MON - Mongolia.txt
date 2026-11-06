@@ -31,6 +31,8 @@ recruit_character = MON_gomgchigryn_bumtsend
 recruit_character = MON_dansrabilegyin_dogsam
 recruit_character = MON_yundunwangcug
 recruit_character = MON_pai_yun_ti
+#20261106_kpopmodder: Register Choibalsan at startup for the 1939 succession event.
+recruit_character = MON_khorloogiin_choibalsan
 
 #HoK Mongppong characters
 recruit_character = MON_random_general_1
@@ -67,13 +69,6 @@ recruit_character = MON_random_high_command_2
 		support_weapons = 1
 		gw_artillery = 1
 		
-		#doctrines
-		air_superiority = 1
-		
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -89,6 +84,10 @@ recruit_character = MON_random_high_command_2
 		concentrated_industry = 1
 		concentrated_industry2 = 1
 	}
+
+	#20261106_kpopmodder: Use current vanilla grand doctrines for the 1939 starting setup.
+	set_grand_doctrine = mass_assault
+	set_grand_doctrine = new_strategic_destruction
 }
 
 set_politics = {
@@ -106,7 +105,17 @@ set_popularities = {
 		limited_conscription
 	}
 
-	recruit_character = MON_khorloogiin_choibalsan
-	promote_character = MON_khorloogiin_choibalsan
+	#20261106_kpopmodder: Initialize the 1939 leader role and succession flag as in current vanilla.
 	retire_character = MON_anandyn_amar
+
+	add_country_leader_role = {
+		character = MON_khorloogiin_choibalsan
+		promote_leader = yes
+		country_leader = {
+			ideology = stalinism
+			expire = "1948.1.1.12"
+			traits = { MON_pan_mongolian_stalinist }
+		}
+	}
+	set_global_flag = MON_choibalsan_ascended_flag
 }

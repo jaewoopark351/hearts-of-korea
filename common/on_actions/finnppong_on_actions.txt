@@ -448,6 +448,7 @@ on_actions = {
 					
 			
 					#Units and technologies of finn
+					#20261106_kpopmodder: Initialize missing modern doctrines below without replacing an existing choice.
 					set_technology = {
 						infantry_weapons = 1
 						infantry_weapons1 = 1
@@ -458,12 +459,18 @@ on_actions = {
 						motorised_infantry = 1
 						gw_artillery = 1
 						interwar_antiair = 1
-						trench_warfare = 1
-						fleet_in_being = 1
 						fuel_silos = 1
 						fuel_refining = 1
 						basic_train = 1
 						popup = no
+					}
+					if = {
+						limit = { NOT = { has_any_grand_doctrine = land } }
+						set_grand_doctrine = grand_battleplan
+					}
+					if = {
+						limit = { NOT = { has_any_grand_doctrine = naval } }
+						set_grand_doctrine = new_fleet_in_being
 					}
 					
 					if = {
@@ -500,7 +507,7 @@ on_actions = {
 							basic_ship_hull_carrier = 1
 							basic_battery = 1
 							basic_light_battery = 1
-							basic_medium_battery = 1
+							#20261106_kpopmodder: Existing light and heavy battery technologies already unlock the medium gun modules.
 							basic_heavy_battery = 1
 							basic_torpedo = 1
 							sonar = 1
@@ -1637,7 +1644,8 @@ on_actions = {
 							variant_name = "D.371"
 						}
 						add_equipment_to_stockpile = {
-							type = cv_small_plane_naval_bomber_airframe
+							#20261106_kpopmodder: Request the concrete French PL.7 airframe variant instead of an unresolved archetype.
+							type = cv_small_plane_naval_bomber_airframe_0
 							amount = 120
 							producer = FRA
 							variant_name = "PL.7"

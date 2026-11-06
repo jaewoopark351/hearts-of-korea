@@ -781,6 +781,21 @@ recruit_character = JAP_tadaichi_wakamatsu
 recruit_character = JAP_masanobu_tsuji
 
 
+#20261106_kpopmodder: Register the HoK democratic characters in history; retain their focus-gated roles and DLC requirements.
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+		has_dlc = "No Compromise, No Surrender"
+	}
+	recruit_character = HOK_JAP_japanese_national_liberation_committee
+	recruit_character = HOK_JAP_tatsuji_fuse
+	recruit_character = HOK_JAP_tadamichi_kuribayashi
+	recruit_character = HOK_JAP_sigesaburo_miyazaki
+	recruit_character = HOK_JAP_shin_yoshida
+	recruit_character = HOK_JAP_masatomi_kimura
+	recruit_character = HOK_JAP_renya_mutaguchi
+}
+
 ### DLC-SPECIFIC CHARACTERS ###
 IF = {
 	limit = {
