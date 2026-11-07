@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "date_kst": "2026-11-06",
+  "source_baseline": {
+    "branch": "feat/korean-focus-expansion-ai",
+    "commit": "f927b3a5defe046967413da05069a0f92823fbec",
+    "game_version": "Operation Postern v1.19.4.2.2da5",
+    "steam_build": "26409260",
+    "version_basis": "Exact installation version supplied by the parent implementation preflight; asset subtask did not launch the game.",
+    "installation": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV"
+  },
+  "status": "assets_and_project_sprites_created_static_review_complete_actual_ui_observed_2564x1504",
+  "runtime_observation": {
+    "record": "../incidents/2026-11-06-korean-repeatable-resource-prospecting.md",
+    "evidence": "C:/hoi/test/hok-resource-prospecting-20261106-01/runs/ui-main-03/ui",
+    "states_observed": ["available", "active_90_days", "available_after_completion"],
+    "limits": "Observed by parent implementation in the active Korean-language playset; other UI scales and resolutions unverified."
+  },
+  "scope": "Two dedicated small decision-row icons for repeatable Gangwon coal and Pohang steel expansion. Gameplay, localisation, global GUI and inherited artwork are outside this image subtask.",
+  "method": "Byte-identical reuse of installed vanilla HOI4 coal and steel small DDS; no resize, recolor, recompression, added stage mark or generated artwork.",
+  "authorship": {
+    "original_author": "Paradox Interactive",
+    "continuation_contributor": "kpopmodder: source selection, internal byte-preserving copies, project sprite mapping, provenance and static inspection",
+    "new_artwork": false,
+    "ai_generated": false,
+    "new_licence_claim": null
+  },
+  "reuse_basis": {
+    "scope": "Only for the corresponding Hearts of Iron IV game/mod; preserve original game/DLC requirements and Paradox ownership. No independent asset-pack, other-game, MIT, CC or open-source licence claim.",
+    "official_publisher_policy_quotation": "https://store.steampowered.com/oldnews/?appgroupname=stellaris&appids=281990&enddate=1777618800&feed=steam_community_announcements&l=greek",
+    "policy_link_from_publisher": "https://forum.paradoxplaza.com/forum/threads/updated-14-06-18-rules-for-user-made-mods-and-edits-of-pds-games.708039/",
+    "observed_condition": "Publisher quotes policy section 7 requiring corresponding game or DLC installed for use of Paradox-owned content in mods.",
+    "verification_limit": "Full forum policy page could not be fetched; the official publisher quotation was read. This record does not invent a separate asset licence."
+  },
+  "sprite_definition": {
+    "path": "interface/HOK_KOR_resource_prospecting_icons.gfx",
+    "sha256": "587012cebcc7cff7642b38ee16d88db96e4ebef45f866256a8e0d61ee2be6401",
+    "contributor_note": "#20261106_kpopmodder: Map Korean resource expansion decisions to project-local byte-identical vanilla small icons.",
+    "line_endings": "CRLF",
+    "source_sprite_examples": {
+      "coal": "interface/decisions.gfx:2831",
+      "steel": "interface/decisions.gfx:768"
+    }
+  },
+  "native_ui": {
+    "reference": "Installed interface/countrydecisionview.gui:398-437 and 584-637",
+    "project_baseline_decision_size": [
+      32,
+      32
+    ],
+    "exception_reason": "Preserve the exact native small resource DDS after checking current row geometry; not reuse of a large focus or spirit icon.",
+    "normal_row": {
+      "height": 41,
+      "icon_center": [
+        30,
+        19
+      ],
+      "title_x": 63
+    },
+    "timed_row": {
+      "height": 40,
+      "icon_center": [
+        32,
+        20
+      ],
+      "title_x": 62
+    },
+    "scaling": "No explicit size/scale in the inspected iconType blocks; no GUI alteration.",
+    "bounds_note": "Geometric canvas bounds from center and dimensions, not observed game rasterization. Half-pixel rounding may differ.",
+    "coal": {
+      "normal_canvas_bounds_xyxy": [
+        13.5,
+        3,
+        46.5,
+        35
+      ],
+      "normal_title_gap": 16.5,
+      "timed_canvas_bounds_xyxy": [
+        15.5,
+        4,
+        48.5,
+        36
+      ],
+      "timed_title_gap": 13.5
+    },
+    "steel": {
+      "normal_canvas_bounds_xyxy": [
+        13,
+        4,
+        47,
+        34
+      ],
+      "normal_title_gap": 16,
+      "timed_canvas_bounds_xyxy": [
+        15,
+        5,
+        49,
+        35
+      ],
+      "timed_title_gap": 13
+    }
+  },
+  "assets": [
+    {
+      "content_id": "HOK_KOR_expand_gangwon_coal_mines",
+      "sprite": "GFX_HOK_KOR_decision_expand_gangwon_coal_mines",
+      "source_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\gfx\\interface\\decisions\\decision_coal.dds",
+      "source_relative_path": "gfx/interface/decisions/decision_coal.dds",
+      "runtime_path": "gfx/interface/decisions/HOK_KOR/resource_prospecting/gangwon_coal.dds",
+      "source_sha256": "352a18868c7aa8297427cf05f88eb58df21e067bb85b6b87fe84715636d3b0ea",
+      "runtime_sha256": "352a18868c7aa8297427cf05f88eb58df21e067bb85b6b87fe84715636d3b0ea",
+      "size_bytes": 4352,
+      "width": 33,
+      "height": 32,
+      "mipmap_count_header": 1,
+      "pixel_format_flags": 65,
+      "fourcc": "none (uncompressed)",
+      "rgb_bit_count": 32,
+      "rgba_masks": [
+        "00ff0000",
+        "0000ff00",
+        "000000ff",
+        "ff000000"
+      ],
+      "alpha_extrema_decoded": [
+        0,
+        255
+      ],
+      "visible_bounds_alpha_gt_zero": [
+        6,
+        1,
+        28,
+        31
+      ],
+      "native_preview": "C:\\hoi\\test\\hok-resource-prospecting-20261106-01\\assets\\gangwon_coal-native.png",
+      "source_and_runtime_bytes_identical": true,
+      "format": "uncompressed BGRA32 DDS with alpha"
+    },
+    {
+      "content_id": "HOK_KOR_expand_pohang_steelworks",
+      "sprite": "GFX_HOK_KOR_decision_expand_pohang_steelworks",
+      "source_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\gfx\\interface\\decisions\\decision_steel.dds",
+      "source_relative_path": "gfx/interface/decisions/decision_steel.dds",
+      "runtime_path": "gfx/interface/decisions/HOK_KOR/resource_prospecting/pohang_steel.dds",
+      "source_sha256": "688461188713c346cfb7ecf366c64b714c7586ecd7ced64cd5851f9e28602a8a",
+      "runtime_sha256": "688461188713c346cfb7ecf366c64b714c7586ecd7ced64cd5851f9e28602a8a",
+      "size_bytes": 4208,
+      "width": 34,
+      "height": 30,
+      "mipmap_count_header": 0,
+      "pixel_format_flags": 65,
+      "fourcc": "none (uncompressed)",
+      "rgb_bit_count": 32,
+      "rgba_masks": [
+        "00ff0000",
+        "0000ff00",
+        "000000ff",
+        "ff000000"
+      ],
+      "alpha_extrema_decoded": [
+        0,
+        255
+      ],
+      "visible_bounds_alpha_gt_zero": [
+        1,
+        6,
+        33,
+        28
+      ],
+      "native_preview": "C:\\hoi\\test\\hok-resource-prospecting-20261106-01\\assets\\pohang_steel-native.png",
+      "source_and_runtime_bytes_identical": true,
+      "format": "uncompressed BGRA32 DDS with alpha"
+    }
+  ],
+  "external_evidence": {
+    "directory": "C:\\hoi\\test\\hok-resource-prospecting-20261106-01\\assets",
+    "copy_verification": "asset-copy-verification.json",
+    "helper": {
+      "name": "prepare_resource_icons.py",
+      "sha256": "9dabc2242c21691068f3c7f207d14e20113a3e77066cc008e4c1345028d90bf7"
+    },
+    "preview_decoding": "Python standard library, direct uncompressed BGRA32 read and PNG encoding. Original DDS files remain untouched.",
+    "previews": [
+      {
+        "path": "C:\\hoi\\test\\hok-resource-prospecting-20261106-01\\assets\\gangwon_coal-native.png",
+        "sha256": "51822fcf69200b564949afe62894711b26cce01234bca8e7ae7acd594592d305",
+        "role": "static inspection only; not a game screenshot"
+      },
+      {
+        "path": "C:\\hoi\\test\\hok-resource-prospecting-20261106-01\\assets\\pohang_steel-native.png",
+        "sha256": "bf54621299b6546a55241802112fd755f9841772d8e26babc3ea0db298be0214",
+        "role": "static inspection only; not a game screenshot"
+      },
+      {
+        "path": "C:\\hoi\\test\\hok-resource-prospecting-20261106-01\\assets\\native-icons-8x.png",
+        "sha256": "fcf89cf447ff3abd1b153d8cf5272eab6814678dc5bfa49202bf1787fb688869",
+        "role": "static inspection only; not a game screenshot"
+      },
+      {
+        "path": "C:\\hoi\\test\\hok-resource-prospecting-20261106-01\\assets\\native-ui-layout.png",
+        "sha256": "377721dbcaeceb325422ae01e3a4c0cf87d3984b0cf46f8509a22accfb8423f6",
+        "role": "static inspection only; not a game screenshot"
+      }
+    ],
+    "failed_preparation": "Initial Python 3.14 and 3.12 Pillow imports failed before copying any runtime file; helper was replaced with standard-library decoding. No package installed."
+  },
+  "verification": {
+    "source_runtime_bytes_identical": true,
+    "source_runtime_sha256_identical": true,
+    "dds_header_and_payload_length_read": true,
+    "native_and_8x_preview_visually_inspected": true,
+    "static_normal_and_timed_row_layout_visually_inspected": true,
+    "project_relative_sprite_paths_exist": true,
+    "sprite_collision_search": "No prior definitions found in project or installed vanilla interface before creation.",
+    "runtime_ui": "Not observed in this asset subtask. Parent implementation owns decision icon wiring and in-game available/unavailable/active UI checks.",
+    "not_claimed": [
+      "all UI scales",
+      "all resolutions",
+      "all DLC combinations",
+      "gameplay completion",
+      "save compatibility"
+    ]
+  },
+  "credits_document": "docs/HOK_KOREAN_RESOURCE_PROSPECTING_ASSET_CREDITS.md"
+}

@@ -1,0 +1,11 @@
+#20261106_kpopmodder: Map Korean resource expansion decisions to project-local byte-identical vanilla small icons.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_expand_gangwon_coal_mines"
+        texturefile = "gfx/interface/decisions/HOK_KOR/resource_prospecting/gangwon_coal.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_expand_pohang_steelworks"
+        texturefile = "gfx/interface/decisions/HOK_KOR/resource_prospecting/pohang_steel.dds"
+    }
+}

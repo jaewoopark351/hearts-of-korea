@@ -916,6 +916,8 @@ focus_tree = {
 			1030 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
+			#20261107_kpopmodder: Explain the steelworks decision unlock while preserving the original steel reward.
+			unlock_decision_tooltip = HOK_KOR_expand_pohang_steelworks
 			1030 = {
 				add_resource = { 
 					type = steel

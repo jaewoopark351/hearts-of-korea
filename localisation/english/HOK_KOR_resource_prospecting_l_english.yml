@@ -1,0 +1,8 @@
+﻿l_english:
+#20261107_kpopmodder: Keep the coal and steel decision descriptions to narrative background only.
+#20261107_kpopmodder: Explain the Pohang focus requirement and the subsequent repeatable steelworks expansion.
+#20261106_kpopmodder: Describe repeatable Korean coal and steel expansion with fixed costs, completion rewards and cancellation rules.
+ HOK_KOR_expand_gangwon_coal_mines:0 "강원도 탄광 확장"
+ HOK_KOR_expand_gangwon_coal_mines_desc:0 "탄층이 확인되어도 석탄을 지상으로 끌어올릴 설비가 부족하면 광부들의 곡괭이만으로는 생산을 늘릴 수 없습니다. 갱도를 넓히고 배수·환기 장치와 운반 설비를 보강하여 강원 탄전의 채탄 능력을 확충하겠습니다."
+ HOK_KOR_expand_pohang_steelworks:0 "포항 제철소 확장"
+ HOK_KOR_expand_pohang_steelworks_desc:0 "포항제철의 설립으로 우리 손으로 철강을 생산할 기반을 마련했습니다. 이제 늘어나는 산업 수요에 맞춰 용광로와 제강·압연 설비를 증설하고, 원료를 내리는 부두와 운송망을 함께 정비해야 합니다. 포항의 생산 능력을 확충하여 공장과 조선소에 필요한 철강을 안정적으로 공급하겠습니다."
