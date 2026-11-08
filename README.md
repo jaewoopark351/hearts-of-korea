@@ -10,6 +10,10 @@
 
 ## 문서 목록
 
+- [변경 영향 범위와 누락 방지 절차](docs/HOK_CHANGE_COVERAGE_REVIEW.md): 현지화·표식/변수 표시·주/프로빈스 참조를 검토하거나 변경할 때 먼저 읽는다. 전용 스킬의 호출 조건, 사용처·분기별 처리 대장과 소스/화면/효과/저장 검증을 구분하는 완료 기준을 따른다. 이 지침은 게임 실행이나 코드 수정 권한을 추가하지 않는다.
+- [계속개발 내부 표식·변수 현지화 표시 검토](docs/audits/2026-11-08-continuation-localisation-display-review.md): 툴팁에 내부 ID가 보이거나 해당 표시를 수리할 때 먼저 읽는다. 고유 키 8개를 조사한 당시 기록과 [표시 수리 구현·검증 기록](docs/incidents/2026-11-08-localisation-display-implementation.md)을 구분한다. 원문 노출, 수치 조건·효과의 표시 누락, 엔진에서 이미 숨겨진 내부 집계를 별도로 기록한다.
+- [현행 지도 기준 주·프로빈스 참조 코드 정렬 계획](docs/HOK_STATE_REFERENCE_ALIGNMENT_PLAN.md): 현재 주·프로빈스를 유지하고 영토 조건·이전·코어·건설 부모·설명을 수리할 때 먼저 읽는다. 최신 9→15주 분할 누락, 기존 결함, 바닐라 공유 불일치와 미확인 후보를 구분한다. 최초 문서화 이후 승인된 수리의 적용 내용·실제 실행·한계는 [정렬 구현 기록](docs/incidents/2026-11-08-state-reference-alignment.md)을 따른다.
+- [한국 주 분할과 산업 건설 공간 설계](docs/HOK_KOREAN_STATE_SPLIT_PLAN.md): 한국 여섯 도의 남북 분할과 슬롯 확장을 다룰 때 먼저 읽는다. 9주→15주 구현의 최신 대응표·적용 상태·검증 기록을 연결한다. 기존 ID·프로빈스·시작 공장 총량과 중점 배치를 보존하며, 변경 전 저장 호환을 보장하지 않는 새 게임용 변경이다.
 - [강원·포항 반복 자원 탐사 디시전 명세](docs/HOK_KOREAN_REPEATABLE_RESOURCE_PROSPECTING_SPEC.md): 두 디시전을 설계·구현·검증할 때 먼저 읽는다. 기존 자원 탐사 범주에 건설 II·정치력 25·민공 9개·매회 90일·자원 +9·무한 반복을 구현했다. 포항은 「포항제철」 중점 완료도 필요하며, 이 조건·해금 안내·설명문을 검토하거나 수정할 때는 [포항 중점 연계 기록](docs/incidents/2026-11-07-pohang-focus-gate.md)을 먼저 읽는다. 중점 연계 전 실행 결과와 외부 증거·설정 복구는 [최초 구현·검증 기록](docs/incidents/2026-11-06-korean-repeatable-resource-prospecting.md)에서 구분한다.
 - [2026-11-06 실행 로그 호환성 수리·검증 기록](docs/incidents/2026-11-06-hok-runtime-compatibility-implementation.md): 해당 오류군을 이어서 수정·검증할 때 먼저 읽는다. 일본 AI·몽골·해군 보상·FIN 교리/장비·일본 인물 등록·음원 수리, 실제 저장·1939 자연 승계·진단 없는 로드 결과와 미검증 범위를 구분한다. [구현 전 검토](docs/incidents/2026-11-06-hok-runtime-log-compatibility-review.md)는 당시의 읽기 전용 판단과 원본 부분 병합 원칙을 보존한 이력이다
 - [민주주의 중점 내부 간격 압축 계획·적용 좌표](docs/HOK_KOREAN_DEMOCRATIC_FOCUS_COMPACTION_PLAN.md): 민주 95개 구역 폭 50→38칸(24% 감소), 배치 32개 직접 수정·86개 이동, 게임플레이 보존 29/0. HIDE 정상 완료·같은 프로세스 재로드·별도 합성 선택, 진단 없는 SHOW 정상 완료 뒤 상단 위치 유지와 설정 원복·기존 저장 23개 보존·Steam 플레이 복귀까지 확인했다. 요청 범위의 구현·핵심 검증 완료; [구현 기록](docs/incidents/2026-10-31-korean-democratic-focus-compaction.md)의 한정 화면·기존/추가 경고·성능 등 미측정 범위 참조

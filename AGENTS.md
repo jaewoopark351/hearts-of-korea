@@ -18,10 +18,19 @@ Apply these rules at the start of every task and consult the detailed sections b
 - When authorized work changes a recorded location, update the relevant project document with the old and new paths, original/copy roles, manifest locations, historical mapping, and the actual verification performed. Keep earlier results distinguishable from later checks. If a guidance document moves, update its required-reading link as part of the same documentation change.
 - Keep actual tests and intermediate outputs under `C:\hoi\test\<task-or-run-id>\`; only their maintained location/provenance index belongs in project documentation. Documentation links do not authorize executing scripts, modifying archives, or expanding the requested task.
 
+- When reviewing or changing localisation, player-facing flag/variable use, or state/province references, first read the relevant skill below and use [the change-coverage procedure](docs/HOK_CHANGE_COVERAGE_REVIEW.md). Define affected features, IDs, callers and branches; scale the inventory to the change rather than requiring a repository-wide audit for a wording-only edit.
+- Trace relevant shared helpers, alternative paths, active translation overrides and inherited vanilla references beyond the edited files. Record each discovered candidate as **changed, intentionally retained, excluded, or unresolved**, with its expected meaning and supporting evidence. A valid ID or matching key set does not prove the intended region or actual display.
+- Select the required verification for the authorized scope before claiming completion. Keep source, UI, executed effects and save evidence separate; carry unresolved required items into the result. Earlier observations apply only to their recorded source and conditions. Review/documentation requests do not authorize additional tests, gameplay edits or launches; a coverage ledger does not grant that permission.
+
 Before reviewing HOK runtime logs or attributing an error to HOK, read the project [HOK log-review skill](.agents/skills/hok-log-review/SKILL.md).
 
-| Read before this work | Required project document |
+| Read before this work | Required project document or skill |
 |---|---|
+| Adding or changing player-facing content/localisation, flag/variable display paths, or reviewing missing or incorrect tooltip text | [Localisation coverage review skill](.agents/skills/hok-localisation-review/SKILL.md) |
+| Adding or changing state/province references, migrating content after a split, or reviewing geographic targets, including code-only changes that leave the map intact | [State-reference coverage review skill](.agents/skills/hok-state-reference-review/SKILL.md) |
+| Reviewing or repairing raw internal flag/variable names in continuation-content tooltips | [Continuation localisation display review](docs/audits/2026-11-08-continuation-localisation-display-review.md) |
+| Repairing state/province references against the current map without changing the map, or separating recent Korean-split regressions from older defects | [Current-map reference alignment plan](docs/HOK_STATE_REFERENCE_ALIGNMENT_PLAN.md) |
+| Splitting Korean states into northern/southern successors or reviewing the associated construction-slot and content migration | [Korean state split and industrial construction-space plan](docs/HOK_KOREAN_STATE_SPLIT_PLAN.md) |
 | Creating or revising images, reusing historical image inputs/recipes, or resolving old `.local-artifacts` references | [Development artifact archive and image-source lookup](docs/HOK_DEVELOPMENT_ARTIFACT_ARCHIVE.md) |
 | Comparing current logs against the 2026-11-06 compatibility repairs | [Runtime compatibility implementation and evidence](docs/incidents/2026-11-06-hok-runtime-compatibility-implementation.md) |
 | Locating or relocating the HOK log-review skill | [Skill location and migration record](docs/HOK_LOG_REVIEW_SKILL.md) |
@@ -700,6 +709,7 @@ A compatibility fix is complete only when:
 - affected IDs, scopes, localisation, dependencies, and load-order effects are reviewed
 - diff contains no unrelated cleanup or mass formatting
 - runtime validation status is stated honestly
+- the applicable change-coverage inventory is reconciled, with evidence for retained/excluded references and an explicit result for every required verification item; necessary unresolved items limit the completion claim
 
 A successor release is ready only when:
 
