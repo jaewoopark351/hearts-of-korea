@@ -1,0 +1,55 @@
+#20261108_kpopmodder: Add original dedicated small regional artwork for the thirteen CNDP project rows.
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_jeollabuk"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_jeollabuk.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_jeollanam"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_jeollanam.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_gyeongsangbuk"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_gyeongsangbuk.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_gyeongsangnam"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_gyeongsangnam.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_chungcheongnam"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_chungcheongnam.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_chungcheongbuk"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_chungcheongbuk.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_hwanghaenam"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_hwanghaenam.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_hwanghaebuk"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_hwanghaebuk.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_pyeongannam"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_pyeongannam.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_pyeonganbuk"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_pyeonganbuk.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_hamgyeongnam"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_hamgyeongnam.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_hamgyeongbuk"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_hamgyeongbuk.dds"
+    }
+    SpriteType = {
+        name = "GFX_HOK_KOR_decision_cndp_gangwon"
+        texturefile = "gfx/interface/decisions/HOK_KOR/cndp/cndp_gangwon.dds"
+    }
+}

@@ -1,0 +1,396 @@
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_jeollabuk_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1082 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_jeollanam_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1088 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_gyeongsangbuk_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1030 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_gyeongsangnam_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1086 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_chungcheongnam_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1031 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_chungcheongbuk_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1087 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_hwanghaenam_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1083 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_hwanghaebuk_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1091 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_pyeongannam_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	527 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_pyeonganbuk_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1089 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_hamgyeongnam_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1028 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_hamgyeongbuk_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1090 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Use the same explicit state contract at start, cancellation and completion.
+HOK_KOR_cndp_gangwon_territory_trigger = {
+	#20261108_kpopmodder: Hide the internal CNDP version gate while preserving state eligibility.
+	hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 }
+	has_capitulated = no
+	1029 = {
+		is_owned_by = ROOT
+		is_fully_controlled_by = ROOT
+		NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 }
+	}
+}
+
+#20261108_kpopmodder: Upgrade only lower known categories; never replace an equal or higher state category.
+HOK_KOR_cndp_below_town_trigger = {
+	OR = {
+		has_state_category = wasteland
+		has_state_category = enclave
+		has_state_category = tiny_island
+		has_state_category = pastoral
+		has_state_category = small_island
+		has_state_category = rural
+		has_state_category = large_island
+	}
+}
+
+#20261108_kpopmodder: Upgrade only lower known categories; never replace an equal or higher state category.
+HOK_KOR_cndp_below_large_town_trigger = {
+	OR = {
+		has_state_category = wasteland
+		has_state_category = enclave
+		has_state_category = tiny_island
+		has_state_category = pastoral
+		has_state_category = small_island
+		has_state_category = rural
+		has_state_category = large_island
+		has_state_category = town
+	}
+}
+
+#20261108_kpopmodder: Upgrade only lower known categories; never replace an equal or higher state category.
+HOK_KOR_cndp_below_city_trigger = {
+	OR = {
+		has_state_category = wasteland
+		has_state_category = enclave
+		has_state_category = tiny_island
+		has_state_category = pastoral
+		has_state_category = small_island
+		has_state_category = rural
+		has_state_category = large_island
+		has_state_category = town
+		has_state_category = large_town
+	}
+}
+
+#20261108_kpopmodder: Upgrade only lower known categories; never replace an equal or higher state category.
+HOK_KOR_cndp_below_large_city_trigger = {
+	OR = {
+		has_state_category = wasteland
+		has_state_category = enclave
+		has_state_category = tiny_island
+		has_state_category = pastoral
+		has_state_category = small_island
+		has_state_category = rural
+		has_state_category = large_island
+		has_state_category = town
+		has_state_category = large_town
+		has_state_category = city
+	}
+}
+
+#20261108_kpopmodder: Require demonstrable factory-type capacity; conservatively reject indeterminate empty states at 20 or more unlocked slots.
+HOK_KOR_cndp_has_factory_expansion_room_trigger = {
+	OR = {
+		AND = {
+			free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 1 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 1 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 2 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 2 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 3 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 3 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 4 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 4 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 5 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 5 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 6 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 6 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 7 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 7 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 8 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 8 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 9 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 9 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 10 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 10 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 11 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 11 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 12 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 12 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 13 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 13 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 14 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 14 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 15 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 15 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 16 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 16 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 17 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 17 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 18 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 18 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = arms_factory size > 19 include_locked = yes }
+			NOT = { free_building_slots = { building = arms_factory size > 19 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 1 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 1 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 2 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 2 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 3 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 3 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 4 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 4 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 5 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 5 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 6 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 6 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 7 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 7 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 8 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 8 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 9 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 9 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 10 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 10 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 11 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 11 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 12 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 12 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 13 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 13 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 14 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 14 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 15 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 15 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 16 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 16 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 17 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 17 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 18 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 18 include_locked = no } }
+		}
+		AND = {
+			free_building_slots = { building = industrial_complex size > 19 include_locked = yes }
+			NOT = { free_building_slots = { building = industrial_complex size > 19 include_locked = no } }
+		}
+	}
+}
+
+#20261108_kpopmodder: Do not charge for a slot-only project with no remaining development benefit.
+HOK_KOR_cndp_hwanghaenam_benefit_trigger = {
+	HOK_KOR_cndp_has_factory_expansion_room_trigger = yes
+	HOK_KOR_cndp_below_large_town_trigger = yes
+}
+
+#20261108_kpopmodder: Do not charge for a slot-only project with no remaining development benefit.
+HOK_KOR_cndp_pyeonganbuk_benefit_trigger = {
+	HOK_KOR_cndp_has_factory_expansion_room_trigger = yes
+}
+
+#20261108_kpopmodder: Do not charge for a slot-only project with no remaining development benefit.
+HOK_KOR_cndp_hamgyeongnam_benefit_trigger = {
+	HOK_KOR_cndp_has_factory_expansion_room_trigger = yes
+	HOK_KOR_cndp_below_town_trigger = yes
+}

@@ -8818,9 +8818,12 @@ country_event = {
 			states = all
 			states_filter = {
 			    OR = {
-			    	state = 527
-			    	state = 1083 # HoK: Hwanghae, split from 527
-			    	state = 1028
+                    #20261107_kpopmodder: Preserve the old Korean region across its split successors.
+                    OR = { state = 527 state = 1089 }
+                    #20261107_kpopmodder: Preserve the old Korean region across its split successors.
+                    OR = { state = 1083 state = 1091 } # HoK: Hwanghae, split from 527
+                    #20261107_kpopmodder: Preserve the old Korean region across its split successors.
+                    OR = { state = 1028 state = 1090 }
 			    	state = 525
 			    }
 			    is_controlled_by = ROOT
@@ -8893,10 +8896,13 @@ country_event = {
 			states = all
 			states_filter = {
 			    OR = {
-			    	state = 1031
-			    	state = 1082 # HoK: Jeolla, split from 1031
+                    #20261107_kpopmodder: Preserve the old Korean region across its split successors.
+                    OR = { state = 1031 state = 1087 }
+                    #20261107_kpopmodder: Preserve the old Korean region across its split successors.
+                    OR = { state = 1082 state = 1088 } # HoK: Jeolla, split from 1031
 			    	state = 1084 # HoK: Jeju, split from 1031
-			    	state = 1030
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				OR = { state = 1030 state = 1086 }
 			    	state = 1029
 			    }
 			    is_controlled_by = ROOT

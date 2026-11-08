@@ -63,7 +63,8 @@ HOK_KOR_establish_naval_research_network = {
 						nuclear_facility < 1
 						is_coastal = yes
 					}
-					prioritize = { 1030 }
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					prioritize = { 1086 }
 					construct_building_in_random_province = {
 						naval_facility = 1
 					}
@@ -145,6 +146,7 @@ HOK_KOR_establish_nuclear_research_network = {
 						naval_facility < 1
 						nuclear_facility < 1
 					}
+					#20261107_kpopmodder: Retain the original-ID regional capital as the preferred site, with the existing fallback rules.
 					prioritize = { 1028 }
 					construct_building_in_random_province = {
 						nuclear_facility = 1

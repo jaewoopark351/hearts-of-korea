@@ -18,10 +18,12 @@ country_event = {
 		country_event = { id = HOK_KOR_CIVIC.3 days = 60 }
 		ai_chance = { factor = 90 }
 	}
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	option = {
 		name = HOK_KOR_CIVIC.1.b
-		add_to_variable = { HOK_KOR_procurement_corruption = 5 }
-		HOK_KOR_sync_civic_state = yes
+		add_to_variable = { HOK_KOR_procurement_corruption = 5 tooltip = HOK_KOR_procurement_corruption_change_tt }
+		#20261108_kpopmodder: Hide derived spirit synchronisation text while preserving the existing call and effect order.
+		hidden_effect = { HOK_KOR_sync_civic_state = yes }
 		country_event = { id = HOK_KOR_CIVIC.2 days = 15 random_days = 30 }
 		ai_chance = { factor = 10 modifier = { factor = 5 has_war = yes } }
 	}
@@ -41,24 +43,29 @@ country_event = {
 		add_ideas = HOK_KOR_air_procurement_accident
 		add_to_variable = { HOK_KOR_procurement_corruption = 10 }
 		add_stability = -0.05
-		HOK_KOR_sync_civic_state = yes
+		#20261108_kpopmodder: Hide derived spirit synchronisation text while preserving the existing call and effect order.
+		hidden_effect = { HOK_KOR_sync_civic_state = yes }
 	}
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	option = {
 		name = HOK_KOR_CIVIC.2.a
 		trigger = { NOT = { has_political_power < 75 } }
 		add_political_power = -75
-		add_to_variable = { HOK_KOR_procurement_corruption = -5 }
-		add_to_variable = { HOK_KOR_civic_influence = 5 }
-		HOK_KOR_sync_civic_state = yes
+		add_to_variable = { HOK_KOR_procurement_corruption = -5 tooltip = HOK_KOR_procurement_corruption_change_tt }
+		add_to_variable = { HOK_KOR_civic_influence = 5 tooltip = HOK_KOR_civic_influence_change_tt }
+		#20261108_kpopmodder: Hide derived spirit synchronisation text while preserving the existing call and effect order.
+		hidden_effect = { HOK_KOR_sync_civic_state = yes }
 		unlock_decision_tooltip = HOK_KOR_recover_air_procurement
 		ai_chance = { factor = 80 }
 	}
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	option = {
 		name = HOK_KOR_CIVIC.2.b
 		add_political_power = 50
-		add_to_variable = { HOK_KOR_procurement_corruption = 10 }
-		add_to_variable = { HOK_KOR_institutional_capture = 5 }
-		HOK_KOR_sync_civic_state = yes
+		add_to_variable = { HOK_KOR_procurement_corruption = 10 tooltip = HOK_KOR_procurement_corruption_change_tt }
+		add_to_variable = { HOK_KOR_institutional_capture = 5 tooltip = HOK_KOR_institutional_capture_change_tt }
+		#20261108_kpopmodder: Hide derived spirit synchronisation text while preserving the existing call and effect order.
+		hidden_effect = { HOK_KOR_sync_civic_state = yes }
 		unlock_decision_tooltip = HOK_KOR_recover_air_procurement
 		ai_chance = { factor = 20 }
 	}
@@ -101,10 +108,12 @@ country_event = {
 		country_event = { id = HOK_KOR_CIVIC.13 days = 60 }
 		ai_chance = { factor = 90 }
 	}
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	option = {
 		name = HOK_KOR_CIVIC.11.b
-		add_to_variable = { HOK_KOR_procurement_corruption = 5 }
-		HOK_KOR_sync_civic_state = yes
+		add_to_variable = { HOK_KOR_procurement_corruption = 5 tooltip = HOK_KOR_procurement_corruption_change_tt }
+		#20261108_kpopmodder: Hide derived spirit synchronisation text while preserving the existing call and effect order.
+		hidden_effect = { HOK_KOR_sync_civic_state = yes }
 		country_event = { id = HOK_KOR_CIVIC.12 days = 15 random_days = 30 }
 		ai_chance = { factor = 10 modifier = { factor = 5 has_war = yes } }
 	}
@@ -124,24 +133,29 @@ country_event = {
 		add_ideas = HOK_KOR_rocket_procurement_accident
 		add_to_variable = { HOK_KOR_procurement_corruption = 10 }
 		add_stability = -0.05
-		HOK_KOR_sync_civic_state = yes
+		#20261108_kpopmodder: Hide derived spirit synchronisation text while preserving the existing call and effect order.
+		hidden_effect = { HOK_KOR_sync_civic_state = yes }
 	}
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	option = {
 		name = HOK_KOR_CIVIC.12.a
 		trigger = { NOT = { has_political_power < 75 } }
 		add_political_power = -75
-		add_to_variable = { HOK_KOR_procurement_corruption = -5 }
-		add_to_variable = { HOK_KOR_civic_influence = 5 }
-		HOK_KOR_sync_civic_state = yes
+		add_to_variable = { HOK_KOR_procurement_corruption = -5 tooltip = HOK_KOR_procurement_corruption_change_tt }
+		add_to_variable = { HOK_KOR_civic_influence = 5 tooltip = HOK_KOR_civic_influence_change_tt }
+		#20261108_kpopmodder: Hide derived spirit synchronisation text while preserving the existing call and effect order.
+		hidden_effect = { HOK_KOR_sync_civic_state = yes }
 		unlock_decision_tooltip = HOK_KOR_recover_rocket_procurement
 		ai_chance = { factor = 80 }
 	}
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	option = {
 		name = HOK_KOR_CIVIC.12.b
 		add_political_power = 50
-		add_to_variable = { HOK_KOR_procurement_corruption = 10 }
-		add_to_variable = { HOK_KOR_institutional_capture = 5 }
-		HOK_KOR_sync_civic_state = yes
+		add_to_variable = { HOK_KOR_procurement_corruption = 10 tooltip = HOK_KOR_procurement_corruption_change_tt }
+		add_to_variable = { HOK_KOR_institutional_capture = 5 tooltip = HOK_KOR_institutional_capture_change_tt }
+		#20261108_kpopmodder: Hide derived spirit synchronisation text while preserving the existing call and effect order.
+		hidden_effect = { HOK_KOR_sync_civic_state = yes }
 		unlock_decision_tooltip = HOK_KOR_recover_rocket_procurement
 		ai_chance = { factor = 20 }
 	}

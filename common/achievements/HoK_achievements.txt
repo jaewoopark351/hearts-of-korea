@@ -82,6 +82,7 @@ Ready_for_jamboree = {
     }
 
 	happened = {
+		#20261107_kpopmodder: Keep the Saemangeum-host achievement tied to its Jeollabuk successor.
 		1082 = { infrastructure > 4 }
 	}
 }

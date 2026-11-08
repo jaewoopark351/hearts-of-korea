@@ -1,11 +1,12 @@
 HOK_KOR_civic_balance = {
 	#20261011_kpopmodder: Show the real political-power cost and use the same bounded state change as the GUI.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_support_chaebol = {
 		#20261012_kpopmodder: Use dedicated blue civic artwork while preserving shared red icons.
 		icon = GFX_HOK_KOR_decision_civic_influence_blue
 		allowed = { tag = KOR }
 		visible = { has_country_flag = HOK_KOR_civic_panel_unlocked }
-		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_chaebol_influence < 100 } }
+		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_chaebol_influence < 100 tooltip = HOK_KOR_chaebol_influence_below_tt } }
 		cost = 50
 		fire_only_once = no
 		complete_effect = { custom_effect_tooltip = HOK_KOR_support_chaebol_tt hidden_effect = { HOK_KOR_apply_support_chaebol = yes } }
@@ -13,12 +14,13 @@ HOK_KOR_civic_balance = {
 	}
 
 	#20261011_kpopmodder: Show the real political-power cost and use the same bounded state change as the GUI.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_suppress_chaebol = {
 		#20261012_kpopmodder: Use dedicated blue civic artwork while preserving shared red icons.
 		icon = GFX_HOK_KOR_decision_civic_influence_blue
 		allowed = { tag = KOR }
 		visible = { has_country_flag = HOK_KOR_civic_panel_unlocked }
-		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_chaebol_influence > 0 } }
+		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_chaebol_influence > 0 tooltip = HOK_KOR_chaebol_influence_above_tt } }
 		cost = 50
 		fire_only_once = no
 		complete_effect = { custom_effect_tooltip = HOK_KOR_suppress_chaebol_tt hidden_effect = { HOK_KOR_apply_suppress_chaebol = yes } }
@@ -26,12 +28,13 @@ HOK_KOR_civic_balance = {
 	}
 
 	#20261011_kpopmodder: Show the real political-power cost and use the same bounded state change as the GUI.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_support_civic = {
 		#20261012_kpopmodder: Use dedicated blue civic artwork while preserving shared red icons.
 		icon = GFX_HOK_KOR_decision_civic_influence_blue
 		allowed = { tag = KOR }
 		visible = { has_country_flag = HOK_KOR_civic_panel_unlocked }
-		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_civic_influence < 100 } }
+		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_civic_influence < 100 tooltip = HOK_KOR_civic_influence_below_tt } }
 		cost = 50
 		fire_only_once = no
 		complete_effect = { custom_effect_tooltip = HOK_KOR_support_civic_tt hidden_effect = { HOK_KOR_apply_support_civic = yes } }
@@ -39,12 +42,13 @@ HOK_KOR_civic_balance = {
 	}
 
 	#20261011_kpopmodder: Show the real political-power cost and use the same bounded state change as the GUI.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_suppress_civic = {
 		#20261012_kpopmodder: Use dedicated blue civic artwork while preserving shared red icons.
 		icon = GFX_HOK_KOR_decision_civic_influence_blue
 		allowed = { tag = KOR }
 		visible = { has_country_flag = HOK_KOR_civic_panel_unlocked }
-		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_civic_influence > 0 } }
+		available = { HOK_KOR_civic_action_available = yes check_variable = { HOK_KOR_civic_influence > 0 tooltip = HOK_KOR_civic_influence_above_tt } }
 		cost = 50
 		fire_only_once = no
 		complete_effect = { custom_effect_tooltip = HOK_KOR_suppress_civic_tt hidden_effect = { HOK_KOR_apply_suppress_civic = yes } }
@@ -52,6 +56,7 @@ HOK_KOR_civic_balance = {
 	}
 
 	#20261011_kpopmodder: Provide a visible 45-day response inside the warned 90-day coup deadline.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_secure_prosecutorial_records = {
 		icon = GFX_HOK_KOR_decision_yeo_labor_compact
 		allowed = { tag = KOR }
@@ -64,13 +69,14 @@ HOK_KOR_civic_balance = {
 		remove_effect = {
 			clr_country_flag = HOK_KOR_record_protection_active
 			set_country_flag = { flag = HOK_KOR_prosecutor_defence_prepared value = 1 days = 365 }
-			add_to_variable = { HOK_KOR_institutional_capture = -15 }
+			add_to_variable = { HOK_KOR_institutional_capture = -15 tooltip = HOK_KOR_institutional_capture_change_tt }
 			HOK_KOR_sync_civic_state = yes
 		}
 		ai_will_do = { factor = 20 }
 	}
 
 	#20261011_kpopmodder: Offer a costly lasting reform path instead of an endless institutional punishment loop.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_break_capture_networks = {
 		icon = GFX_HOK_KOR_decision_yeo_labor_compact
 		allowed = { tag = KOR }
@@ -88,21 +94,22 @@ HOK_KOR_civic_balance = {
 			clr_country_flag = HOK_KOR_capture_reform_active
 			clr_country_flag = HOK_KOR_civic_reform_pressure
 			set_country_flag = HOK_KOR_capture_reform_completed
-			add_to_variable = { HOK_KOR_institutional_capture = -25 }
-			add_to_variable = { HOK_KOR_procurement_corruption = -10 }
-			add_to_variable = { HOK_KOR_civic_influence = 5 }
+			add_to_variable = { HOK_KOR_institutional_capture = -25 tooltip = HOK_KOR_institutional_capture_change_tt }
+			add_to_variable = { HOK_KOR_procurement_corruption = -10 tooltip = HOK_KOR_procurement_corruption_change_tt }
+			add_to_variable = { HOK_KOR_civic_influence = 5 tooltip = HOK_KOR_civic_influence_change_tt }
 			HOK_KOR_sync_civic_state = yes
 		}
 		ai_will_do = { factor = 5 modifier = { factor = 4 has_country_flag = HOK_KOR_prosecutor_crisis_active } }
 	}
 
 	#20261011_kpopmodder: Restore the new civic policy through civilian mobilisation without invoking an existing army coup or leader swap.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_restore_civilian_mandate = {
 		icon = GFX_HOK_KOR_decision_yeo_labor_compact
 		allowed = { tag = KOR }
 		visible = { has_country_flag = HOK_KOR_prosecutorial_takeover }
 		available = {
-			check_variable = { var = HOK_KOR_civic_influence value = 50 compare = greater_than_or_equals }
+			check_variable = { var = HOK_KOR_civic_influence value = 50 compare = greater_than_or_equals tooltip = HOK_KOR_civic_influence_at_least_tt }
 			NOT = { has_country_flag = HOK_KOR_civilian_restoration_active }
 		}
 		cost = 200
@@ -114,8 +121,8 @@ HOK_KOR_civic_balance = {
 			clr_country_flag = HOK_KOR_prosecutorial_takeover
 			clr_country_flag = HOK_KOR_civic_reform_pressure
 			remove_ideas = HOK_KOR_prosecutorial_takeover_idea
-			add_to_variable = { HOK_KOR_institutional_capture = -30 }
-			add_to_variable = { HOK_KOR_procurement_corruption = -10 }
+			add_to_variable = { HOK_KOR_institutional_capture = -30 tooltip = HOK_KOR_institutional_capture_change_tt }
+			add_to_variable = { HOK_KOR_procurement_corruption = -10 tooltip = HOK_KOR_procurement_corruption_change_tt }
 			add_stability = 0.05
 			set_country_flag = { flag = HOK_KOR_prosecutor_crisis_cooldown value = 1 days = 365 }
 			HOK_KOR_sync_civic_state = yes
@@ -125,6 +132,7 @@ HOK_KOR_civic_balance = {
 	}
 
 	#20261011_kpopmodder: Make crisis escalation a visible timed mission with independent counterplay and a specific civilian failure state.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_prosecutor_coup_countdown = {
 		icon = GFX_HOK_KOR_decision_yeo_labor_compact
 		allowed = { tag = KOR }
@@ -134,7 +142,7 @@ HOK_KOR_civic_balance = {
 		days_mission_timeout = 90
 		is_good = no
 		fire_only_once = no
-		cancel_trigger = { OR = { check_variable = { HOK_KOR_institutional_capture < 60 } has_country_flag = HOK_KOR_prosecutor_defence_prepared NOT = { has_country_flag = HOK_KOR_policy_civic_reform } } }
+		cancel_trigger = { OR = { check_variable = { HOK_KOR_institutional_capture < 60 tooltip = HOK_KOR_institutional_capture_below_tt } has_country_flag = HOK_KOR_prosecutor_defence_prepared NOT = { has_country_flag = HOK_KOR_policy_civic_reform } } }
 		cancel_effect = {
 			clr_country_flag = HOK_KOR_prosecutor_crisis_active
 			remove_ideas = HOK_KOR_prosecutor_pressure
@@ -156,6 +164,7 @@ HOK_KOR_civic_balance = {
 
 HOK_KOR_procurement_integrity = {
 	#20261011_kpopmodder: Charge time and political power for repeatable integrity management without erasing active field hazards.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_independent_procurement_audit = {
 		icon = GFX_HOK_KOR_decision_nrsc_material_contracts
 		allowed = { tag = KOR }
@@ -168,14 +177,15 @@ HOK_KOR_procurement_integrity = {
 		remove_effect = {
 			clr_country_flag = HOK_KOR_audit_active
 			set_country_flag = { flag = HOK_KOR_audit_cooldown value = 1 days = 180 }
-			add_to_variable = { HOK_KOR_procurement_corruption = -12 }
-			add_to_variable = { HOK_KOR_institutional_capture = -5 }
+			add_to_variable = { HOK_KOR_procurement_corruption = -12 tooltip = HOK_KOR_procurement_corruption_change_tt }
+			add_to_variable = { HOK_KOR_institutional_capture = -5 tooltip = HOK_KOR_institutional_capture_change_tt }
 			HOK_KOR_sync_civic_state = yes
 		}
 		ai_will_do = { factor = 3 modifier = { factor = 3 check_variable = { var = HOK_KOR_procurement_corruption value = 40 compare = greater_than_or_equals } } }
 	}
 
 	#20261011_kpopmodder: Gate a visible risky field incentive through one shared procurement slot and cooldown.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_fast_track_air_contracts = {
 		icon = GFX_HOK_KOR_decision_nrsc_material_contracts
 		allowed = { tag = KOR }
@@ -191,8 +201,8 @@ HOK_KOR_procurement_integrity = {
 			set_country_flag = HOK_KOR_air_contract_active
 			set_country_flag = { flag = HOK_KOR_procurement_contract_cooldown value = 1 days = 365 }
 			add_timed_idea = { idea = HOK_KOR_fast_air_procurement days = 180 }
-			add_to_variable = { HOK_KOR_procurement_corruption = 10 }
-			add_to_variable = { HOK_KOR_institutional_capture = 5 }
+			add_to_variable = { HOK_KOR_procurement_corruption = 10 tooltip = HOK_KOR_procurement_corruption_change_tt }
+			add_to_variable = { HOK_KOR_institutional_capture = 5 tooltip = HOK_KOR_institutional_capture_change_tt }
 			HOK_KOR_sync_civic_state = yes
 			country_event = { id = HOK_KOR_CIVIC.1 days = 30 random_days = 15 }
 		}
@@ -214,6 +224,7 @@ HOK_KOR_procurement_integrity = {
 	}
 
 	#20261011_kpopmodder: Gate a visible risky field incentive through one shared procurement slot and cooldown.
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
 	HOK_KOR_fast_track_rocket_contracts = {
 		icon = GFX_HOK_KOR_decision_nrsc_material_contracts
 		allowed = { tag = KOR }
@@ -229,8 +240,8 @@ HOK_KOR_procurement_integrity = {
 			set_country_flag = HOK_KOR_rocket_contract_active
 			set_country_flag = { flag = HOK_KOR_procurement_contract_cooldown value = 1 days = 365 }
 			add_timed_idea = { idea = HOK_KOR_fast_rocket_procurement days = 180 }
-			add_to_variable = { HOK_KOR_procurement_corruption = 10 }
-			add_to_variable = { HOK_KOR_institutional_capture = 5 }
+			add_to_variable = { HOK_KOR_procurement_corruption = 10 tooltip = HOK_KOR_procurement_corruption_change_tt }
+			add_to_variable = { HOK_KOR_institutional_capture = 5 tooltip = HOK_KOR_institutional_capture_change_tt }
 			HOK_KOR_sync_civic_state = yes
 			country_event = { id = HOK_KOR_CIVIC.11 days = 30 random_days = 15 }
 		}

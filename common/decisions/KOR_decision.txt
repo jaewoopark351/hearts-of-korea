@@ -10,14 +10,20 @@ KOR_triumph_for_the_manchuria_category = {
 			is_subject = no
 			
 			# korea
-			controls_state = 1082
-			controls_state = 1028
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1082 controls_state = 1088 }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1028 controls_state = 1090 }
 			controls_state = 525
 			controls_state = 1029
-			controls_state = 1031
-			controls_state = 1030
-			controls_state = 527
-			controls_state = 1083
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1031 controls_state = 1087 }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1030 controls_state = 1086 }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 527 controls_state = 1089 }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1083 controls_state = 1091 }
 			
 			# manchuria
 			controls_state = 716 #liaotung
@@ -147,14 +153,20 @@ KOR_defeat_japan_category = {
 
 		available = {
 			# korea
-			has_full_control_of_state = 1082
-			has_full_control_of_state = 1028
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { has_full_control_of_state = 1082 has_full_control_of_state = 1088 }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { has_full_control_of_state = 1028 has_full_control_of_state = 1090 }
 			has_full_control_of_state = 525
 			has_full_control_of_state = 1029
-			has_full_control_of_state = 1031
-			has_full_control_of_state = 1030
-			has_full_control_of_state = 527
-			has_full_control_of_state = 1083
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { has_full_control_of_state = 1031 has_full_control_of_state = 1087 }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { has_full_control_of_state = 1030 has_full_control_of_state = 1086 }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { has_full_control_of_state = 527 has_full_control_of_state = 1089 }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { has_full_control_of_state = 1083 has_full_control_of_state = 1091 }
 			
 			# manchuria
 			has_full_control_of_state = 716 #liaotung
@@ -210,6 +222,7 @@ KOR_defeat_japan_category = {
 
 KOR_liberation_of_asia_category = {
 
+	#20261108_kpopmodder: Align all liberation paths with the current regional states; preserve local cores and other rewards.
 	KOR_liberation_of_indochina = {
 	
 		icon = generic_form_nation
@@ -221,6 +234,11 @@ KOR_liberation_of_asia_category = {
 			controls_state = 670
 			controls_state = 741
 			controls_state = 286
+			controls_state = 1017
+			controls_state = 1066
+			controls_state = 1067
+			controls_state = 1068
+			controls_state = 1069
 		}
 		
 		cost = 0
@@ -248,6 +266,11 @@ KOR_liberation_of_asia_category = {
 						set_state_controller = 670
 						set_state_controller = 741
 						set_state_controller = 286
+						set_state_controller = 1017
+						set_state_controller = 1066
+						set_state_controller = 1067
+						set_state_controller = 1068
+						set_state_controller = 1069
 					}
 				}
 				VIN = {
@@ -259,6 +282,11 @@ KOR_liberation_of_asia_category = {
 						transfer_state = 670
 						transfer_state = 741
 						transfer_state = 286
+						transfer_state = 1017
+						transfer_state = 1066
+						transfer_state = 1067
+						transfer_state = 1068
+						transfer_state = 1069
 						
 						KOR = {
 							puppet = PREV
@@ -273,12 +301,18 @@ KOR_liberation_of_asia_category = {
 					transfer_state = 670
 					transfer_state = 741
 					transfer_state = 286
+					transfer_state = 1017
+					transfer_state = 1066
+					transfer_state = 1067
+					transfer_state = 1068
+					transfer_state = 1069
 				}
 				set_autonomy = { target = VIN autonomy_state = autonomy_dominion }
 			}
 		}
 	}
 	
+	#20261108_kpopmodder: Align all liberation paths with the current regional states; preserve local cores and other rewards.
 	KOR_liberation_of_philippine = {
 	
 		icon = generic_form_nation
@@ -292,6 +326,10 @@ KOR_liberation_of_asia_category = {
 			controls_state = 624
 			controls_state = 627
 			controls_state = 626
+			controls_state = 628
+			controls_state = 1025
+			controls_state = 1026
+			controls_state = 1027
 		}
 		
 		cost = 0
@@ -321,6 +359,10 @@ KOR_liberation_of_asia_category = {
 						set_state_controller = 624
 						set_state_controller = 627
 						set_state_controller = 626
+						set_state_controller = 628
+						set_state_controller = 1025
+						set_state_controller = 1026
+						set_state_controller = 1027
 					}
 				}
 				PHI = {
@@ -334,6 +376,10 @@ KOR_liberation_of_asia_category = {
 						transfer_state = 624
 						transfer_state = 627
 						transfer_state = 626
+						transfer_state = 628
+						transfer_state = 1025
+						transfer_state = 1026
+						transfer_state = 1027
 						set_cosmetic_tag = PHI_free
 						KOR = {
 							puppet = PREV
@@ -350,6 +396,10 @@ KOR_liberation_of_asia_category = {
 					transfer_state = 624
 					transfer_state = 627
 					transfer_state = 626
+					transfer_state = 628
+					transfer_state = 1025
+					transfer_state = 1026
+					transfer_state = 1027
 					set_cosmetic_tag = PHI_free
 				}
 				set_autonomy = { target = PHI autonomy_state = autonomy_dominion }
@@ -357,6 +407,7 @@ KOR_liberation_of_asia_category = {
 		}
 	}
 	
+	#20261108_kpopmodder: Align all liberation paths with the current regional states; preserve local cores and other rewards.
 	KOR_liberation_of_indonesia = {
 		
 		icon = generic_form_nation
@@ -371,6 +422,20 @@ KOR_liberation_of_asia_category = {
 			controls_state = 667
 			controls_state = 668
 			controls_state = 669
+			controls_state = 1022
+			controls_state = 1047
+			controls_state = 1048
+			controls_state = 1049
+			controls_state = 1050
+			controls_state = 1051
+			controls_state = 1052
+			controls_state = 1053
+			controls_state = 1054
+			controls_state = 1055
+			controls_state = 1056
+			controls_state = 1057
+			controls_state = 1058
+			controls_state = 738
 		}
 		
 		cost = 0
@@ -401,6 +466,20 @@ KOR_liberation_of_asia_category = {
 						set_state_controller = 667
 						set_state_controller = 668
 						set_state_controller = 669
+						set_state_controller = 1022
+						set_state_controller = 1047
+						set_state_controller = 1048
+						set_state_controller = 1049
+						set_state_controller = 1050
+						set_state_controller = 1051
+						set_state_controller = 1052
+						set_state_controller = 1053
+						set_state_controller = 1054
+						set_state_controller = 1055
+						set_state_controller = 1056
+						set_state_controller = 1057
+						set_state_controller = 1058
+						set_state_controller = 738
 					}
 					set_province_name = { id = 7381 name = "Jakarta" }
 					
@@ -417,6 +496,20 @@ KOR_liberation_of_asia_category = {
 						transfer_state = 667
 						transfer_state = 668
 						transfer_state = 669
+						transfer_state = 1022
+						transfer_state = 1047
+						transfer_state = 1048
+						transfer_state = 1049
+						transfer_state = 1050
+						transfer_state = 1051
+						transfer_state = 1052
+						transfer_state = 1053
+						transfer_state = 1054
+						transfer_state = 1055
+						transfer_state = 1056
+						transfer_state = 1057
+						transfer_state = 1058
+						transfer_state = 738
 						KOR = {
 							puppet = PREV
 							set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
@@ -434,6 +527,20 @@ KOR_liberation_of_asia_category = {
 					transfer_state = 667
 					transfer_state = 668
 					transfer_state = 669
+					transfer_state = 1022
+					transfer_state = 1047
+					transfer_state = 1048
+					transfer_state = 1049
+					transfer_state = 1050
+					transfer_state = 1051
+					transfer_state = 1052
+					transfer_state = 1053
+					transfer_state = 1054
+					transfer_state = 1055
+					transfer_state = 1056
+					transfer_state = 1057
+					transfer_state = 1058
+					transfer_state = 738
 					set_province_name = { id = 7381 name = "Jakarta" }
 					set_cosmetic_tag = INS_free
 				}
@@ -442,6 +549,7 @@ KOR_liberation_of_asia_category = {
 		}
 	}
 	
+	#20261108_kpopmodder: Align all liberation paths with the current regional states; preserve local cores and other rewards.
 	KOR_liberation_of_maleisia = {
 		
 		icon = generic_form_nation
@@ -451,6 +559,16 @@ KOR_liberation_of_asia_category = {
 			has_government = democratic
 			controls_state = 336
 			controls_state = 333
+			controls_state = 1021
+			controls_state = 1023
+			controls_state = 1024
+			controls_state = 1059
+			controls_state = 1060
+			controls_state = 1061
+			controls_state = 1062
+			controls_state = 1063
+			controls_state = 1064
+			controls_state = 1065
 		}
 		
 		cost = 0
@@ -476,6 +594,16 @@ KOR_liberation_of_asia_category = {
 					MAL = {
 						set_state_controller = 336
 						set_state_controller = 333
+						set_state_controller = 1021
+						set_state_controller = 1023
+						set_state_controller = 1024
+						set_state_controller = 1059
+						set_state_controller = 1060
+						set_state_controller = 1061
+						set_state_controller = 1062
+						set_state_controller = 1063
+						set_state_controller = 1064
+						set_state_controller = 1065
 					}
 				}
 				MAL = {
@@ -485,6 +613,16 @@ KOR_liberation_of_asia_category = {
 						
 						transfer_state = 336
 						transfer_state = 333
+						transfer_state = 1021
+						transfer_state = 1023
+						transfer_state = 1024
+						transfer_state = 1059
+						transfer_state = 1060
+						transfer_state = 1061
+						transfer_state = 1062
+						transfer_state = 1063
+						transfer_state = 1064
+						transfer_state = 1065
 						
 						set_cosmetic_tag = MAL_free
 						
@@ -499,6 +637,16 @@ KOR_liberation_of_asia_category = {
 				MAL = {
 					transfer_state = 336
 					transfer_state = 333
+					transfer_state = 1021
+					transfer_state = 1023
+					transfer_state = 1024
+					transfer_state = 1059
+					transfer_state = 1060
+					transfer_state = 1061
+					transfer_state = 1062
+					transfer_state = 1063
+					transfer_state = 1064
+					transfer_state = 1065
 					
 					set_cosmetic_tag = MAL_free
 				}
@@ -507,6 +655,7 @@ KOR_liberation_of_asia_category = {
 		}
 	}
 	
+	#20261108_kpopmodder: Align all liberation paths with the current regional states; preserve local cores and other rewards.
 	KOR_liberation_of_pamanyungan = {
 	
 		icon = generic_form_nation
@@ -521,6 +670,13 @@ KOR_liberation_of_asia_category = {
 			controls_state = 285
 			controls_state = 517
 			controls_state = 518
+			controls_state = 674
+			controls_state = 870
+			controls_state = 871
+			controls_state = 872
+			controls_state = 873
+			controls_state = 1074
+			controls_state = 1075
 		}
 		
 		cost = 0
@@ -551,6 +707,13 @@ KOR_liberation_of_asia_category = {
 						set_state_controller = 285
 						set_state_controller = 517
 						set_state_controller = 518
+						set_state_controller = 674
+						set_state_controller = 870
+						set_state_controller = 871
+						set_state_controller = 872
+						set_state_controller = 873
+						set_state_controller = 1074
+						set_state_controller = 1075
 					}
 				}
 				AST = {
@@ -565,6 +728,13 @@ KOR_liberation_of_asia_category = {
 						transfer_state = 285
 						transfer_state = 517
 						transfer_state = 518
+						transfer_state = 674
+						transfer_state = 870
+						transfer_state = 871
+						transfer_state = 872
+						transfer_state = 873
+						transfer_state = 1074
+						transfer_state = 1075
 						
 						KOR = {
 							puppet = PREV
@@ -589,6 +759,13 @@ KOR_liberation_of_asia_category = {
 					transfer_state = 285
 					transfer_state = 517
 					transfer_state = 518
+					transfer_state = 674
+					transfer_state = 870
+					transfer_state = 871
+					transfer_state = 872
+					transfer_state = 873
+					transfer_state = 1074
+					transfer_state = 1075
 					set_cosmetic_tag = AST_pamanyungan
 					create_country_leader = {
 						name = "James Niungga"
@@ -602,6 +779,7 @@ KOR_liberation_of_asia_category = {
 		}
 	}
 	
+	#20261108_kpopmodder: Align all liberation paths with the current regional states; preserve local cores and other rewards.
 	KOR_liberation_of_aotearoa = {
 	
 		icon = generic_form_nation
@@ -611,6 +789,9 @@ KOR_liberation_of_asia_category = {
 			has_government = democratic
 			controls_state = 723
 			controls_state = 284
+			controls_state = 1079
+			controls_state = 1080
+			controls_state = 1081
 		}
 		
 		cost = 0
@@ -636,6 +817,9 @@ KOR_liberation_of_asia_category = {
 					NZL = {
 						set_state_controller = 723
 						set_state_controller = 284
+						set_state_controller = 1079
+						set_state_controller = 1080
+						set_state_controller = 1081
 					}
 				}
 				NZL = {
@@ -645,6 +829,9 @@ KOR_liberation_of_asia_category = {
 						
 						transfer_state = 723
 						transfer_state = 284
+						transfer_state = 1079
+						transfer_state = 1080
+						transfer_state = 1081
 						
 						KOR = {
 							puppet = PREV
@@ -664,6 +851,9 @@ KOR_liberation_of_asia_category = {
 				NZL = {
 					transfer_state = 723
 					transfer_state = 284
+					transfer_state = 1079
+					transfer_state = 1080
+					transfer_state = 1081
 					set_cosmetic_tag = NZL_aotearoa
 					create_country_leader = {
 						name = "Korokī Mahuta"
@@ -1018,6 +1208,7 @@ KOR_jaebeol_category = {
 
 KOR_fall_of_the_sun_category = {
 
+	#20261108_kpopmodder: Include the three current mainland successors in protectorate gates, cores and transfers; retain separate Tsushima content.
 	KOR_establish_protectorate_states_of_japan = {
 
 		icon = generic_form_nation
@@ -1039,6 +1230,9 @@ KOR_fall_of_the_sun_category = {
 					controls_state = 534
 					controls_state = 535
 					controls_state = 536
+					controls_state = 1018
+					controls_state = 1019
+					controls_state = 1020
 				}
 				AND = {
 					JAP = { is_subject_of = KOR }
@@ -1053,6 +1247,9 @@ KOR_fall_of_the_sun_category = {
 						controls_state = 534
 						controls_state = 535
 						controls_state = 536
+						controls_state = 1018
+						controls_state = 1019
+						controls_state = 1020
 					}
 				}
 			}
@@ -1079,6 +1276,9 @@ KOR_fall_of_the_sun_category = {
 			534 = { add_core_of = KJP }
 			535 = { add_core_of = KJP }
 			536 = { add_core_of = KJP }
+			1018 = { add_core_of = KJP }
+			1019 = { add_core_of = KJP }
+			1020 = { add_core_of = KJP }
 			
 			
 			KJP = {
@@ -1092,6 +1292,9 @@ KOR_fall_of_the_sun_category = {
 				transfer_state = 534
 				transfer_state = 535
 				transfer_state = 536
+				transfer_state = 1018
+				transfer_state = 1019
+				transfer_state = 1020
 				
 				set_cosmetic_tag = KJP_PSJ
 				
@@ -1109,6 +1312,7 @@ KOR_fall_of_the_sun_category = {
 
 KOR_China_national_reconstruction_category = {
 
+	#20261108_kpopmodder: Restore the existing Chinese core region across its fifteen current successors without extending into removed Manchurian content.
 	KOR_New_China_Government = {
 		icon = generic_form_nation
 		allowed = { original_tag = KOR }
@@ -1188,6 +1392,21 @@ KOR_China_national_reconstruction_category = {
 						754 = { add_core_of = KCH }
 						755 = { add_core_of = KCH }
 						756 = { add_core_of = KCH }
+						1032 = { add_core_of = KCH }
+						1033 = { add_core_of = KCH }
+						1034 = { add_core_of = KCH }
+						1035 = { add_core_of = KCH }
+						1036 = { add_core_of = KCH }
+						1037 = { add_core_of = KCH }
+						1038 = { add_core_of = KCH }
+						1039 = { add_core_of = KCH }
+						1040 = { add_core_of = KCH }
+						1041 = { add_core_of = KCH }
+						1042 = { add_core_of = KCH }
+						1043 = { add_core_of = KCH }
+						1044 = { add_core_of = KCH }
+						1045 = { add_core_of = KCH }
+						1046 = { add_core_of = KCH }
 					}
 				}
 			}
@@ -1205,7 +1424,8 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1082
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1082 controls_state = 1088 }
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1213,6 +1433,7 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 			1082 = {
 				set_state_category = large_town
 				add_extra_state_shared_building_slots = 1
@@ -1224,13 +1445,16 @@ KOR_decision_CNDP_category = {
 					province = 13429
 					value = 1
 				}
+			}
+			1088 = {
 				add_victory_points = {
 					province = 10110 
 					value = 1
 				}
 			}
 		}
-		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+		#20261108_kpopmodder: Keep original regional contracts exclusively for unversioned saves.
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan NOT = { has_country_flag = HOK_KOR_cndp_state_projects_v1 } }
 	}
 	KOR_develop_gyeongsang = {
 		icon = GFX_decision_generic_construction
@@ -1240,7 +1464,8 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1030
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1030 controls_state = 1086 }
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1248,6 +1473,7 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 			1030 = {
 				set_state_category = city
 				add_extra_state_shared_building_slots = 1
@@ -1255,6 +1481,8 @@ KOR_decision_CNDP_category = {
 					province = 7121 
 					value = 1
 				}
+			}
+			1086 = {
 				add_victory_points = {
 					province = 12060 
 					value = 1
@@ -1265,7 +1493,8 @@ KOR_decision_CNDP_category = {
 				}
 			}
 		}
-		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+		#20261108_kpopmodder: Keep original regional contracts exclusively for unversioned saves.
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan NOT = { has_country_flag = HOK_KOR_cndp_state_projects_v1 } }
 	}
 	KOR_develop_chungcheong = {
 		icon = GFX_decision_generic_construction
@@ -1275,7 +1504,8 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1031
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1031 controls_state = 1087 }
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1283,20 +1513,26 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 			1031 = {
 				set_state_category = large_town
 				add_extra_state_shared_building_slots = 1
+			}
+			1087 = {
 				add_victory_points = {
 					province = 13446
 					value = 1
 				}
+			}
+			1031 = {
 				add_victory_points = {
 					province = 7204 
 					value = 1
 				}
 			}
 		}
-		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+		#20261108_kpopmodder: Keep original regional contracts exclusively for unversioned saves.
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan NOT = { has_country_flag = HOK_KOR_cndp_state_projects_v1 } }
 	}
 	KOR_develop_hwanghae = {
 		icon = GFX_decision_generic_construction
@@ -1306,7 +1542,8 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1083
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1083 controls_state = 1091 }
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1314,16 +1551,20 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 			1083 = {
 				set_state_category = large_town
 				add_extra_state_shared_building_slots = 1
+			}
+			1091 = {
 				add_victory_points = {
 					province = 11915 
 					value = 1
 				}
 			}
 		}
-		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+		#20261108_kpopmodder: Keep original regional contracts exclusively for unversioned saves.
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan NOT = { has_country_flag = HOK_KOR_cndp_state_projects_v1 } }
 	}
 	KOR_develop_pyeongan = {
 		icon = GFX_decision_generic_construction
@@ -1333,7 +1574,8 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 527
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 527 controls_state = 1089 }
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1341,6 +1583,7 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 			527 = {
 				set_state_category = large_city
 				add_extra_state_shared_building_slots = 1
@@ -1354,7 +1597,8 @@ KOR_decision_CNDP_category = {
 				}
 			}
 		}
-		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+		#20261108_kpopmodder: Keep original regional contracts exclusively for unversioned saves.
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan NOT = { has_country_flag = HOK_KOR_cndp_state_projects_v1 } }
 	}
 	KOR_develop_gangwon = {
 		icon = GFX_decision_generic_construction
@@ -1385,7 +1629,8 @@ KOR_decision_CNDP_category = {
 				}
 			}
 		}
-		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+		#20261108_kpopmodder: Keep original regional contracts exclusively for unversioned saves.
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan NOT = { has_country_flag = HOK_KOR_cndp_state_projects_v1 } }
 	}
 	KOR_develop_hamgyeong = {
 		icon = GFX_decision_generic_construction
@@ -1395,7 +1640,8 @@ KOR_decision_CNDP_category = {
 		available = { 
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 1028
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { controls_state = 1028 controls_state = 1090 }
 		}
 		fire_only_once = yes
 		cost = 150
@@ -1403,16 +1649,539 @@ KOR_decision_CNDP_category = {
 		modifier = { civilian_factory_use = 5 }
 		
 		remove_effect = {
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 			1028 = {
 				set_state_category = town
 				add_extra_state_shared_building_slots = 1
+			}
+			1090 = {
 				add_victory_points = {
 					province = 6944 
 					value = 1
 				}
 			}
 		}
-		visible = { has_completed_focus = KOR_comprehensive_national_development_plan }
+		#20261108_kpopmodder: Keep original regional contracts exclusively for unversioned saves.
+		visible = { has_completed_focus = KOR_comprehensive_national_development_plan NOT = { has_country_flag = HOK_KOR_cndp_state_projects_v1 } }
+	}
+
+
+	#20261108_kpopmodder: Develop state 1082 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_jeollabuk = {
+		icon = GFX_HOK_KOR_decision_cndp_jeollabuk
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1082 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_jeollabuk_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 1082 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_jeollabuk_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_jeollabuk_territory_trigger = yes
+				}
+				1082 = {
+					if = { limit = { HOK_KOR_cndp_below_large_town_trigger = yes } set_state_category = large_town }
+					add_resource = { type = coal amount = 1 }
+					add_victory_points = { province = 13429 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1088 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_jeollanam = {
+		icon = GFX_HOK_KOR_decision_cndp_jeollanam
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1088 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_jeollanam_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 1088 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_jeollanam_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_jeollanam_territory_trigger = yes
+				}
+				1088 = {
+					add_extra_state_shared_building_slots = 1
+					add_victory_points = { province = 10110 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1030 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_gyeongsangbuk = {
+		icon = GFX_HOK_KOR_decision_cndp_gyeongsangbuk
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1030 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_gyeongsangbuk_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 1030 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_gyeongsangbuk_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_gyeongsangbuk_territory_trigger = yes
+				}
+				1030 = {
+					if = { limit = { HOK_KOR_cndp_below_city_trigger = yes } set_state_category = city }
+					add_victory_points = { province = 7121 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1086 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_gyeongsangnam = {
+		icon = GFX_HOK_KOR_decision_cndp_gyeongsangnam
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1086 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_gyeongsangnam_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 1086 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_gyeongsangnam_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_gyeongsangnam_territory_trigger = yes
+				}
+				1086 = {
+					add_extra_state_shared_building_slots = 1
+					add_victory_points = { province = 12060 value = 1 }
+					add_victory_points = { province = 13435 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1031 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_chungcheongnam = {
+		icon = GFX_HOK_KOR_decision_cndp_chungcheongnam
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1031 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_chungcheongnam_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 1031 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_chungcheongnam_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_chungcheongnam_territory_trigger = yes
+				}
+				1031 = {
+					if = { limit = { HOK_KOR_cndp_below_large_town_trigger = yes } set_state_category = large_town }
+					add_victory_points = { province = 7204 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1087 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_chungcheongbuk = {
+		icon = GFX_HOK_KOR_decision_cndp_chungcheongbuk
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1087 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_chungcheongbuk_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 1087 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_chungcheongbuk_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_chungcheongbuk_territory_trigger = yes
+				}
+				1087 = {
+					add_extra_state_shared_building_slots = 1
+					add_victory_points = { province = 13446 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1083 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_hwanghaenam = {
+		icon = GFX_HOK_KOR_decision_cndp_hwanghaenam
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1083 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_hwanghaenam_territory_trigger = yes
+			custom_trigger_tooltip = { tooltip = HOK_KOR_cndp_meaningful_space 1083 = { HOK_KOR_cndp_hwanghaenam_benefit_trigger = yes } }
+		}
+		highlight_states = { highlight_state_targets = { state = 1083 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_hwanghaenam_territory_trigger = yes }
+				1083 = { NOT = { HOK_KOR_cndp_hwanghaenam_benefit_trigger = yes } }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_hwanghaenam_territory_trigger = yes
+					1083 = { HOK_KOR_cndp_hwanghaenam_benefit_trigger = yes }
+				}
+				1083 = {
+					if = { limit = { HOK_KOR_cndp_below_large_town_trigger = yes } set_state_category = large_town }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1091 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_hwanghaebuk = {
+		icon = GFX_HOK_KOR_decision_cndp_hwanghaebuk
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1091 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_hwanghaebuk_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 1091 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_hwanghaebuk_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_hwanghaebuk_territory_trigger = yes
+				}
+				1091 = {
+					add_extra_state_shared_building_slots = 1
+					add_victory_points = { province = 11915 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 527 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_pyeongannam = {
+		icon = GFX_HOK_KOR_decision_cndp_pyeongannam
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			527 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_pyeongannam_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 527 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_pyeongannam_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_pyeongannam_territory_trigger = yes
+				}
+				527 = {
+					if = { limit = { HOK_KOR_cndp_below_large_city_trigger = yes } set_state_category = large_city }
+					add_resource = { type = coal amount = 1 }
+					add_victory_points = { province = 9790 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1089 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_pyeonganbuk = {
+		icon = GFX_HOK_KOR_decision_cndp_pyeonganbuk
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1089 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_pyeonganbuk_territory_trigger = yes
+			custom_trigger_tooltip = { tooltip = HOK_KOR_cndp_meaningful_space 1089 = { HOK_KOR_cndp_pyeonganbuk_benefit_trigger = yes } }
+		}
+		highlight_states = { highlight_state_targets = { state = 1089 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_pyeonganbuk_territory_trigger = yes }
+				1089 = { NOT = { HOK_KOR_cndp_pyeonganbuk_benefit_trigger = yes } }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_pyeonganbuk_territory_trigger = yes
+					1089 = { HOK_KOR_cndp_pyeonganbuk_benefit_trigger = yes }
+				}
+				1089 = {
+					add_extra_state_shared_building_slots = 1
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1028 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_hamgyeongnam = {
+		icon = GFX_HOK_KOR_decision_cndp_hamgyeongnam
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1028 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_hamgyeongnam_territory_trigger = yes
+			custom_trigger_tooltip = { tooltip = HOK_KOR_cndp_meaningful_space 1028 = { HOK_KOR_cndp_hamgyeongnam_benefit_trigger = yes } }
+		}
+		highlight_states = { highlight_state_targets = { state = 1028 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_hamgyeongnam_territory_trigger = yes }
+				1028 = { NOT = { HOK_KOR_cndp_hamgyeongnam_benefit_trigger = yes } }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_hamgyeongnam_territory_trigger = yes
+					1028 = { HOK_KOR_cndp_hamgyeongnam_benefit_trigger = yes }
+				}
+				1028 = {
+					if = { limit = { HOK_KOR_cndp_below_town_trigger = yes } set_state_category = town }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1090 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_hamgyeongbuk = {
+		icon = GFX_HOK_KOR_decision_cndp_hamgyeongbuk
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1090 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_hamgyeongbuk_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 1090 } }
+		fire_only_once = no
+		cost = 75
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_hamgyeongbuk_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_hamgyeongbuk_territory_trigger = yes
+				}
+				1090 = {
+					add_extra_state_shared_building_slots = 1
+					add_victory_points = { province = 6944 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
+	}
+
+	#20261108_kpopmodder: Develop state 1029 independently and grant its conserved regional reward once.
+	HOK_KOR_cndp_develop_gangwon = {
+		icon = GFX_HOK_KOR_decision_cndp_gangwon
+		allowed = { tag = KOR }
+		visible = {
+			has_country_flag = HOK_KOR_cndp_state_projects_v1
+			has_completed_focus = KOR_comprehensive_national_development_plan
+			1029 = { NOT = { has_state_flag = HOK_KOR_cndp_developed_v1 } }
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 5
+			HOK_KOR_cndp_gangwon_territory_trigger = yes
+		}
+		highlight_states = { highlight_state_targets = { state = 1029 } }
+		fire_only_once = no
+		cost = 150
+		days_remove = 180
+		modifier = { civilian_factory_use = 5 }
+		cancel_trigger = {
+			OR = {
+				NOT = { HOK_KOR_cndp_gangwon_territory_trigger = yes }
+			}
+		}
+		cancel_effect = { }
+		remove_effect = {
+			if = {
+				limit = {
+					HOK_KOR_cndp_gangwon_territory_trigger = yes
+				}
+				1029 = {
+					if = { limit = { HOK_KOR_cndp_below_town_trigger = yes } set_state_category = town }
+					add_extra_state_shared_building_slots = 1
+					add_resource = { type = coal amount = 3 }
+					add_victory_points = { province = 1148 value = 1 }
+					set_state_flag = HOK_KOR_cndp_developed_v1
+				}
+			}
+		}
 	}
 }
 
@@ -1599,6 +2368,7 @@ KOR_decision_expend_federation_of_balhae_category = {
 		ai_will_do = { factor = 100 }
 	}
 	
+	#20261108_kpopmodder: Use current Tsushima state1085 and its stable Daema name key instead of transferring Aden992.
 	KOR_admission_tsushima_to_the_federation = {
 		icon = generic_form_nation
 		allowed = { original_tag = KOR }
@@ -1610,11 +2380,11 @@ KOR_decision_expend_federation_of_balhae_category = {
 		complete_effect = {
 			1085 = {
 				add_core_of = ROOT
-				set_state_name = STATE_KR_992
+				set_state_name = STATE_KR_1027
 			}
 			
 			hidden_effect = {
-				transfer_state = 992
+				transfer_state = 1085
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -1696,24 +2466,37 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1031 = { is_controlled_by = ROOT }		#Chungcheong
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1031 = { is_controlled_by = ROOT }
+				1087 = { is_controlled_by = ROOT }
+			}		#Chungcheong
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1031 = {	#Chungcheong
-				is_not_controlled_by_ROOT_or_subject = yes
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			OR = {
+				1031 = {	#Chungcheong
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
+				1087 = {	#Chungcheong
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1031 = {	#Chungcheong
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				1031 = {
 					create_unit = {
 					    division = "name = \"Je 6 Yugyeok-Yeodan 'Chungcheong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
 					}
+				}
+				1087 = {
 					create_unit = {
 					    division = "name = \"Je 7 Yugyeok-Yeodan 'Chungcheong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1730,24 +2513,37 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1030 = { is_controlled_by = ROOT }		#Gyeongsang
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1030 = { is_controlled_by = ROOT }
+				1086 = { is_controlled_by = ROOT }
+			}		#Gyeongsang
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1030 = {	#Gyeongsang
-				is_not_controlled_by_ROOT_or_subject = yes
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			OR = {
+				1030 = {	#Gyeongsang
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
+				1086 = {	#Gyeongsang
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1030 = {	#Gyeongsang
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				1030 = {
 					create_unit = {
 					    division = "name = \"Je 6 Yugyeok-Yeodan 'Gyeongsang'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
 					}
+				}
+				1086 = {
 					create_unit = {
 					    division = "name = \"Je 7 Yugyeok-Yeodan 'Gyeongsang'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1764,24 +2560,37 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			527 = { is_controlled_by = ROOT }		#Pyeongan
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				527 = { is_controlled_by = ROOT }
+				1089 = { is_controlled_by = ROOT }
+			}		#Pyeongan
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			527 = {	#Pyeongan
-				is_not_controlled_by_ROOT_or_subject = yes
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			OR = {
+				527 = {	#Pyeongan
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
+				1089 = {	#Pyeongan
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				527 = {	#Pyeongan
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				527 = {
 					create_unit = {
 					    division = "name = \"Je 8 Yugyeok-Yeodan 'Pyeongan'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
 					}
+				}
+				1089 = {
 					create_unit = {
 					    division = "name = \"Je 9 Yugyeok-Yeodan 'Pyeongan'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1798,24 +2607,37 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1083 = { is_controlled_by = ROOT }		#Hwanghae
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1083 = { is_controlled_by = ROOT }
+				1091 = { is_controlled_by = ROOT }
+			}		#Hwanghae
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1083 = {	#Hwanghae
-				is_not_controlled_by_ROOT_or_subject = yes
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			OR = {
+				1083 = {	#Hwanghae
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
+				1091 = {	#Hwanghae
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1083 = {	#Hwanghae
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				1083 = {
 					create_unit = {
 					    division = "name = \"Je 11 Yugyeok-Yeodan 'Hwanghae'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
 					}
+				}
+				1091 = {
 					create_unit = {
 					    division = "name = \"Je 12 Yugyeok-Yeodan 'Hwanghae'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1832,24 +2654,37 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1082 = { is_controlled_by = ROOT }		#Jeolla
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1082 = { is_controlled_by = ROOT }
+				1088 = { is_controlled_by = ROOT }
+			}		#Jeolla
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1082 = {	#Jeolla
-				is_not_controlled_by_ROOT_or_subject = yes
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			OR = {
+				1082 = {	#Jeolla
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
+				1088 = {	#Jeolla
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1082 = {	#Jeolla
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				1082 = {
 					create_unit = {
 					    division = "name = \"Je 13 Yugyeok-Yeodan 'Jeolla'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
 					}
+				}
+				1088 = {
 					create_unit = {
 					    division = "name = \"Je 15 Yugyeok-Yeodan 'Jeolla'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
@@ -1866,24 +2701,37 @@ KOR_decision_rokrf_category = {
 		priority = 99
 		allowed = { original_tag = KOR }
 		available = {
-			1028 = { is_controlled_by = ROOT }		#Hamgyeong
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1028 = { is_controlled_by = ROOT }
+				1090 = { is_controlled_by = ROOT }
+			}		#Hamgyeong
 		}
 		days_remove = 3
 		complete_effect = {
 		}
 		cancel_trigger = {
-			1028 = {	#Hamgyeong
-				is_not_controlled_by_ROOT_or_subject = yes
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			OR = {
+				1028 = {	#Hamgyeong
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
+				1090 = {	#Hamgyeong
+					is_not_controlled_by_ROOT_or_subject = yes
+				}
 			}
 		}
 		remove_effect = {
 			custom_effect_tooltip = KOR_assemble_rokrf_tt
 			hidden_effect = {
-				1028 = {	#Hamgyeong
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				1028 = {
 					create_unit = {
 					    division = "name = \"Je 16 Yugyeok-Yeodan 'Hamgyeong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT
 					}
+				}
+				1090 = {
 					create_unit = {
 					    division = "name = \"Je 17 Yugyeok-Yeodan 'Hamgyeong'\" division_template = \"Yugyeok-Yeodan\" start_experience_factor = 0.3 start_equipment_factor = 1"
 					    owner = ROOT

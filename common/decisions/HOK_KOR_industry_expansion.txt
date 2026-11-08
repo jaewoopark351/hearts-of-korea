@@ -3,6 +3,7 @@ HOK_KOR_regional_industry_projects = {
 	#20260921_kpopmodder: One completed arms_factory contract in HoK state 527; cancel on ownership/control or site loss.
 	#20260921_kpopmodder: Rebalance to repeatable 90-day contracts; retain the completion flag only as a historical record and give no cancellation reward.
 	#20260923_kpopmodder: Charge only 150 political power; remove civilian-factory use and quantity gates.
+	#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 	HOK_KOR_pyeongan_industry_project = {
 		icon = decision_generic_construction
 		allowed = { original_tag = KOR }
@@ -11,6 +12,10 @@ HOK_KOR_regional_industry_projects = {
 		}
 		available = {
 			has_capitulated = no
+			1089 = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+			}
 			527 = {
 				is_owned_by = ROOT
 				is_fully_controlled_by = ROOT
@@ -24,6 +29,12 @@ HOK_KOR_regional_industry_projects = {
 		cancel_trigger = {
 			OR = {
 				has_capitulated = yes
+				1089 = {
+					OR = {
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_fully_controlled_by = ROOT }
+					}
+				}
 				527 = {
 					OR = {
 						NOT = { is_owned_by = ROOT }
@@ -38,6 +49,10 @@ HOK_KOR_regional_industry_projects = {
 			if = {
 				limit = {
 					has_capitulated = no
+					1089 = {
+						is_owned_by = ROOT
+						is_fully_controlled_by = ROOT
+					}
 					527 = {
 						is_owned_by = ROOT
 						is_fully_controlled_by = ROOT
@@ -119,6 +134,7 @@ HOK_KOR_regional_industry_projects = {
 	#20260921_kpopmodder: One completed industrial_complex contract in HoK state 1031; cancel on ownership/control or site loss.
 	#20260921_kpopmodder: Rebalance to repeatable 90-day contracts; retain the completion flag only as a historical record and give no cancellation reward.
 	#20260923_kpopmodder: Charge only 150 political power; remove civilian-factory use and quantity gates.
+	#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 	HOK_KOR_chungcheong_industry_project = {
 		icon = decision_generic_construction
 		allowed = { original_tag = KOR }
@@ -127,6 +143,10 @@ HOK_KOR_regional_industry_projects = {
 		}
 		available = {
 			has_capitulated = no
+			1087 = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+			}
 			1031 = {
 				is_owned_by = ROOT
 				is_fully_controlled_by = ROOT
@@ -140,6 +160,12 @@ HOK_KOR_regional_industry_projects = {
 		cancel_trigger = {
 			OR = {
 				has_capitulated = yes
+				1087 = {
+					OR = {
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_fully_controlled_by = ROOT }
+					}
+				}
 				1031 = {
 					OR = {
 						NOT = { is_owned_by = ROOT }
@@ -154,6 +180,10 @@ HOK_KOR_regional_industry_projects = {
 			if = {
 				limit = {
 					has_capitulated = no
+					1087 = {
+						is_owned_by = ROOT
+						is_fully_controlled_by = ROOT
+					}
 					1031 = {
 						is_owned_by = ROOT
 						is_fully_controlled_by = ROOT
@@ -177,6 +207,7 @@ HOK_KOR_regional_industry_projects = {
 	#20260921_kpopmodder: One completed dockyard contract in HoK state 1030; cancel on ownership/control or site loss.
 	#20260921_kpopmodder: Rebalance to repeatable 90-day contracts; retain the completion flag only as a historical record and give no cancellation reward.
 	#20260923_kpopmodder: Charge only 150 political power; remove civilian-factory use and quantity gates.
+	#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 	HOK_KOR_gyeongsang_shipbuilding_project = {
 		icon = decision_generic_construction
 		allowed = { original_tag = KOR }
@@ -188,11 +219,15 @@ HOK_KOR_regional_industry_projects = {
 			1030 = {
 				is_owned_by = ROOT
 				is_fully_controlled_by = ROOT
+			}
+			1086 = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
 				is_coastal = yes
 				free_building_slots = { building = dockyard size > 0 include_locked = yes }
 			}
 		}
-		highlight_states = { highlight_state_targets = { state = 1030 } }
+		highlight_states = { highlight_state_targets = { state = 1086 } }
 		fire_only_once = no
 		cost = 150
 		days_remove = 90
@@ -200,6 +235,12 @@ HOK_KOR_regional_industry_projects = {
 			OR = {
 				has_capitulated = yes
 				1030 = {
+					OR = {
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_fully_controlled_by = ROOT }
+					}
+				}
+				1086 = {
 					OR = {
 						NOT = { is_owned_by = ROOT }
 						NOT = { is_fully_controlled_by = ROOT }
@@ -216,10 +257,14 @@ HOK_KOR_regional_industry_projects = {
 					1030 = {
 						is_owned_by = ROOT
 						is_fully_controlled_by = ROOT
+					}
+					1086 = {
+						is_owned_by = ROOT
+						is_fully_controlled_by = ROOT
 						free_building_slots = { building = dockyard size > 0 include_locked = yes }
 					}
 				}
-				1030 = {
+				1086 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard

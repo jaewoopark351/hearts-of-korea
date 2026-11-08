@@ -1,4 +1,5 @@
 ﻿l_korean:
+#20261108_kpopmodder: Align descriptions with current recipient states and whole-region requirements; preserve rewards and lifecycle.
 #20261003_kpopmodder: Explain new decision and spirit policies through concrete circumstances; preserve gameplay and lifecycle rules.
 #20260926_kpopmodder: Use escaped ASCII dialogue quotes and compact decision UI text; preserve gameplay and explicit lifecycle warnings.
 #20260926_kpopmodder: Compact new focus descriptions for the fixed-height UI; preserve gameplay and non-focus localisation.
@@ -12,7 +13,7 @@
  HOK_KOR_civil_service_audit:0 "공직 감찰 정비"
  HOK_KOR_civil_service_audit_desc:0 "\"그분 소개로 왔는데도 절차가 필요합니까?\"\n청사마다 답이 달라서는 안 됩니다. 채용·지출·청탁 기록으로 공직의 책임을 묻겠습니다."
  HOK_KOR_technical_civic_schools:0 "실업·시민교육 확대"
- HOK_KOR_technical_civic_schools_desc:0 "기계의 눈금과 시민의 권리를 함께 가르치겠습니다.\n경기·전라·충청의 소유·완전통제·부지가 필요합니다. 각 주에 슬롯·민간공장 2개씩, 전자공학 연구 25% 1회를 얻습니다."
+ HOK_KOR_technical_civic_schools_desc:0 "기계의 눈금과 시민의 권리를 함께 가르치겠습니다.\n경기·전라남북·충청남북의 소유·완전통제와 경기·전라북도·충청남도의 부지가 필요합니다. 경기·전라북도·충청남도에 각각 슬롯·민간공장 2개씩, 전자공학 연구 25% 1회를 얻습니다."
  HOK_KOR_rural_education_missions:0 "농촌 순회교육"
  HOK_KOR_rural_education_missions_desc:0 "교사에게 누군가는 편지를, 누군가는 고장 난 농기구를 내밉니다. 마을의 질문에서 수업을 시작하겠습니다. 연구 속도 +10%는 기한 없이 유지됩니다."
  HOK_KOR_public_accounts_committee:0 "국회 결산위원회"

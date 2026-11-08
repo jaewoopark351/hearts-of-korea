@@ -12,6 +12,8 @@
 
 이 문서는 현재 1.19.2 바닐라 전역 맵을 보존하면서 HoK의 한국·만주·쓰시마 지리를 다시 이식하기 위한 설계, 증거 등급, 영향 범위와 승인 게이트를 고정한다. 2026-09-01 사용자가 이 문서의 target-native 정책, 개별 ID 매핑, 새 게임 전용 호환성 정책과 production 구현을 명시적으로 승인했다. 실제 적용과 정적 검증 결과는 [target-native 맵 구현 기록](incidents/2026-09-01-target-native-map-implementation.md)에 기록한다.
 
+2026-11-07 후속 분할: 한국 여섯 도의 남북 분할이나 산업 건설 공간을 다룰 때는 [한국 주 분할과 산업 건설 공간 설계](HOK_KOREAN_STATE_SPLIT_PLAN.md)와 그 안의 최신 구현 기록·대응표를 먼저 읽는다. 사용자가 별도로 승인한 9주→15주 구현은 현재 문서의 역사적 ID 배정·검증과 구분한다. 새 1086~1091은 과거 제거된 만주 주를 복구한 것이 아니다.
+
 이 문서는 시작 크래시 복구 당시의 구현 기준과 적용 상태를 보존하는 역사적 설계다. 이후 승인된 중국·만주·일본 정렬에서는 [중국·일본 1.19.2 바닐라 정렬 정책](CHINA_JAPAN_VANILLA_ALIGNMENT_POLICY.md)이 우선하며, 만주의 간도·안둥·헤이허 state `1085–1087`과 관련 delta는 제거되어 target source states로 복귀했다. 최초 후속 정렬이 쓰시마 `1088`만 남겨 만든 ID 구멍은 첫 `D-CJ-POST` map load 실패로 확인됐고, 다시 승인된 쓰시마 `1088 → 1085` 마이그레이션이 적용됐다. 아래 `1085–1088` 표는 당시 target-native 복구의 역사적 매핑이지 현재 active ID 표가 아니다. KOR 기능 disposition과 실제 후속 변경은 [중국·만주·일본 바닐라 정렬 구현 기록](incidents/2026-09-01-china-japan-vanilla-alignment-implementation.md)에 기록한다. scanner v12 targeted static 검증과 post-fix `D-CJ-POST-FIX`의 map 진입·1/7/30일 진행·정상 종료는 `PASS`이며, `C-CJ-POST`와 save/reload는 `NOT RUN`이다.
 
 관련 문서:

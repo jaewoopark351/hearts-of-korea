@@ -137,6 +137,7 @@ focus_tree = {
 		}
 	}
 	#Focus for Northern development
+	#20261107_kpopmodder: Distribute each original northern three-slot reward as two retained-state slots and one new-state slot.
 	focus = {
 		id = KOR_northern_development
 		icon = {
@@ -160,14 +161,22 @@ focus_tree = {
 		}
 		completion_reward = {
 			527 = {
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 2
+			}
+			1089 = {
+					add_extra_state_shared_building_slots = 1
 			}
 			1028 = {
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 2
+			}
+			1090 = {
+					add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
 	#Focus for Southern development
+	#20261107_kpopmodder: Share the existing Gyeongsang slot reward between both successor states without increasing its total.
+	#20261107_kpopmodder: Complete the Jeolla and Chungcheong split of the existing southern slot rewards without increasing their total.
 	focus = {
 		id = KOR_southern_development
 		icon = {
@@ -191,17 +200,27 @@ focus_tree = {
 		}
 		completion_reward = {
 			1082 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
+			}
+			1088 = {
+					add_extra_state_shared_building_slots = 1
 			}
 			1030 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
+			}
+			1086 = {
+					add_extra_state_shared_building_slots = 1
 			}
 			1031 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
+			}
+			1087 = {
+					add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
 	#Focus for Central region development
+	#20261107_kpopmodder: Share the existing Hwanghae two-slot reward across its successor states.
 	focus = {
 		id = KOR_central_region_development
 		icon = {
@@ -231,11 +250,15 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 2
 			}
 			1083 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
+			}
+			1091 = {
+					add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
 	#Focus for Develop Unsan Gold Mine
+	#20261107_kpopmodder: Follow the Unsan reward into Pyeongan Bukdo while retaining control of the former complete Pyeongan area.
 	focus = {
 		id = KOR_develop_unsan_gold_mine
 		icon = GFX_focus_usa_reestablish_the_gold_standard
@@ -254,10 +277,11 @@ focus_tree = {
 		}
 		available = {
 			527 = { is_controlled_by = ROOT }
+			1089 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			add_ideas = KOR_gold_exports
-			527 = {
+			1089 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -268,6 +292,7 @@ focus_tree = {
 		}
 	}
 	#Focus for support gaema plateau
+	#20261107_kpopmodder: Preserve the full former Hamgyeong control requirement while keeping the Gaema reward in Hamgyeong Namdo.
 	focus = {
 		id = KOR_support_gaema_plateau
 		icon = GFX_focus_generic_horse_studs
@@ -287,6 +312,7 @@ focus_tree = {
 		}
 		available = {
 			1028 = { is_controlled_by = ROOT }
+			1090 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			1028 = {
@@ -306,6 +332,7 @@ focus_tree = {
 		}
 	}
 	#Focus for Honam Plain Food Factory
+	#20261107_kpopmodder: Preserve the former complete Jeolla control area while keeping the existing Honam reward in Jeolla Bukdo.
 	focus = {
 		id = KOR_honam_plain_food_factory
 		icon = GFX_goal_generic_construct_civ_factory
@@ -324,6 +351,7 @@ focus_tree = {
 		}
 		available = {
 			1082 = { is_controlled_by = ROOT }
+			1088 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			1082 = {
@@ -337,6 +365,7 @@ focus_tree = {
 		}
 	}
 	#Focus for Saemangeum Reclamation
+	#20261107_kpopmodder: Keep the legacy Chungcheong reward target and preserve its complete pre-split control requirement.
 	focus = {
 		id = KOR_saemangeum_reclamation
 		icon = GFX_goal_generic_construct_civ_factory
@@ -355,6 +384,7 @@ focus_tree = {
 		}
 		available = {
 			1031 = { is_controlled_by = ROOT }
+			1087 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			1031 = {
@@ -368,6 +398,7 @@ focus_tree = {
 		}
 	}
 	#Focus for Busan Free Trade Zone
+	#20261107_kpopmodder: Move Busan rewards with province 4056 while retaining control of the complete former Gyeongsang area.
 	focus = {
 		id = KOR_busan_free_trade_zone
 		icon = GFX_focus_mex_privatisation
@@ -391,9 +422,10 @@ focus_tree = {
 		}
 		available = {
 			1030 = { is_controlled_by = ROOT }
+			1086 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1030 = {
+			1086 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -410,6 +442,7 @@ focus_tree = {
 		}
 	}
 	#Focus for Agricultural support in Jaeryeong Plain
+	#20261107_kpopmodder: Retain control of the former complete Hwanghae area while keeping the Jaeryeong reward in Hwanghae Namdo.
 	focus = {
 		id = KOR_agricultural_support_in_jaeryeong_plain
 		icon = GFX_focus_generic_farmland
@@ -428,6 +461,7 @@ focus_tree = {
 		}
 		available = {
 			1083 = { is_controlled_by = ROOT }
+			1091 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			add_ideas = KOR_jaeryeong_plain_agricultural_products
@@ -595,6 +629,7 @@ focus_tree = {
 		}
 	}
 	#Focus for Hamgyeong Underground Resources
+	#20261107_kpopmodder: Keep the original resource totals while assigning northern steel and southern tungsten to their successor states.
 	focus = {
 		id = KOR_hamgyeong_underground_resources
 		icon = GFX_focus_generic_tungsten
@@ -613,13 +648,16 @@ focus_tree = {
 		}
 		available = {
 			1028 = { is_controlled_by = ROOT }
+			1090 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1028 = {
+			1090 = {
 				add_resource = { 
 					type = steel
 					amount = 15
 				}
+			}
+			1028 = {
 				add_resource = { 
 					type = tungsten
 					amount = 5
@@ -679,18 +717,40 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			unlock_decision_tooltip = KOR_develop_jeolla
-			unlock_decision_tooltip = KOR_develop_gyeongsang
-			unlock_decision_tooltip = KOR_develop_chungcheong
-			unlock_decision_tooltip = KOR_develop_hwanghae
-			unlock_decision_tooltip = KOR_develop_pyeongan
-			unlock_decision_tooltip = KOR_develop_gangwon
-			unlock_decision_tooltip = KOR_develop_hamgyeong
+			#20261108_kpopmodder: Show state-project unlocks for new games and preserve the original regional notices for legacy saves.
+			if = {
+				#20261108_kpopmodder: Keep the saved CNDP generation check internal while preserving its unlock branch.
+				limit = { hidden_trigger = { has_country_flag = HOK_KOR_cndp_state_projects_v1 } }
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_jeollabuk
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_jeollanam
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_gyeongsangbuk
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_gyeongsangnam
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_chungcheongnam
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_chungcheongbuk
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_hwanghaenam
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_hwanghaebuk
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_pyeongannam
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_pyeonganbuk
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_hamgyeongnam
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_hamgyeongbuk
+				unlock_decision_tooltip = HOK_KOR_cndp_develop_gangwon
+			}
+			else = {
+				unlock_decision_tooltip = KOR_develop_jeolla
+				unlock_decision_tooltip = KOR_develop_gyeongsang
+				unlock_decision_tooltip = KOR_develop_chungcheong
+				unlock_decision_tooltip = KOR_develop_hwanghae
+				unlock_decision_tooltip = KOR_develop_pyeongan
+				unlock_decision_tooltip = KOR_develop_gangwon
+				unlock_decision_tooltip = KOR_develop_hamgyeong
+			}
 		}
 	}
 	
 	
 	#Focus for Gyeongbu Expressway
+	#20261107_kpopmodder: Distribute the original two Gyeongsang infrastructure levels across the two successor states.
+	#20261107_kpopmodder: Complete the unchanged Chungcheong infrastructure reward as one level in each successor state.
 	focus = {
 		id = KOR_gyeongbu_expressway
 		icon = GFX_focus_kor_gyeongbu_expressway
@@ -716,20 +776,35 @@ focus_tree = {
 			1031 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
+					instant_build = yes
+				}
+			}
+			1087 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 			}
 			1030 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
+					instant_build = yes
+				}
+			}
+			1086 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 			}
 		}
 	}
 	#Focus for Gyeongui Expressway
+	#20261107_kpopmodder: Distribute the original Hwanghae and Pyeongan infrastructure levels without changing the depression upgrade or total reward.
 	focus = {
 		id = KOR_gyeongui_expressway
 		icon = GFX_focus_kor_gyeongui_expressway
@@ -763,20 +838,36 @@ focus_tree = {
 			1083 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
+					instant_build = yes
+				}
+			}
+			1091 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 			}
 			527 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
+					instant_build = yes
+				}
+			}
+			1089 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 			}
 		}
 	}
 	#Focus for First new city plan
+	#20261107_kpopmodder: Split the unchanged Gyeongsang population transfer by the approved 52 percent northern weight.
+	#20261107_kpopmodder: Complete the original population transfer using approved northern weights and exact integer remainder conservation.
 	focus = {
 		id = KOR_first_new_city_plan
 		icon = GFX_focus_kor_first_new_city_plan
@@ -801,16 +892,28 @@ focus_tree = {
 				set_state_category = metropolis
 			}
 			1082 = {
-				add_manpower = -800000
+				add_manpower = -320000
+			}
+			1088 = {
+				add_manpower = -480000
 			}
 			1031 = {
-				add_manpower = -300000
+				add_manpower = -195000
+			}
+			1087 = {
+				add_manpower = -105000
 			}
 			1030 = {
-				add_manpower = -450000
+				add_manpower = -234000
+			}
+			1086 = {
+				add_manpower = -216000
 			}
 			1028 = {
-				add_manpower = -450000
+				add_manpower = -247500
+			}
+			1090 = {
+				add_manpower = -202500
 			}
 			525 = {
 				add_victory_points = {
@@ -898,6 +1001,7 @@ focus_tree = {
 		}
 	}
 	#Focus for Pohang Iron & Steel Company
+	#20261107_kpopmodder: Retain the former complete Gyeongsang control requirement while keeping Pohang steel and its decision unlock unchanged.
 	focus = {
 		id = KOR_pohang_iron__steel_company
 		icon = GFX_focus_generic_steel
@@ -914,6 +1018,7 @@ focus_tree = {
 		}
 		available = {
 			1030 = { is_controlled_by = ROOT }
+			1086 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
 			#20261107_kpopmodder: Explain the steelworks decision unlock while preserving the original steel reward.
@@ -927,6 +1032,7 @@ focus_tree = {
 		}
 	}
 	#Focus for Namdong-imhae Industrial complex
+	#20261107_kpopmodder: Keep the southern coastal industrial reward together while retaining the former Gyeongsang control area.
 	focus = {
 		id = KOR_namdong_imhae_industrial_complex
 		icon = GFX_focus_POL_develop_polish_shipbuilding
@@ -943,9 +1049,10 @@ focus_tree = {
 		}
 		available = {
 			1030 = { is_controlled_by = ROOT }
+			1086 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
-			1030 = {
+			1086 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -1087,6 +1194,7 @@ focus_tree = {
 		}
 	}
 	#Focus for oil form korean coal
+	#20261107_kpopmodder: Keep both original refinery rewards and require the complete former Hamgyeong area.
 	focus = {
 		id = KOR_oil_from_korean_coal
 		icon = GFX_goal_generic_oil_refinery
@@ -1104,6 +1212,7 @@ focus_tree = {
 		}
 		available = {
 			1028 = { is_controlled_by = ROOT }
+			1090 = { is_controlled_by = ROOT }
 			1029 = { is_controlled_by = ROOT }
 		}
 		completion_reward = {
@@ -3083,6 +3192,7 @@ focus_tree = {
 		}
 	}
 	#Focus for peninsula dockyard
+	#20261107_kpopmodder: Keep four coastal dockyard rewards and move the Jeolla dockyard with its existing southern site while preserving old territory gates.
 	focus = {
 		id = KOR_peninsula_dockyard
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -3097,9 +3207,13 @@ focus_tree = {
 		available = { 
 			KOR = { has_global_flag = kor_triumph_for_the_manchuria_flag }
 			527 = { is_controlled_by = ROOT }
+			1089 = { is_controlled_by = ROOT }
 			1083 = { is_controlled_by = ROOT }
+			1091 = { is_controlled_by = ROOT }
 			1031 = { is_controlled_by = ROOT }
+			1087 = { is_controlled_by = ROOT }
 			1082 = { is_controlled_by = ROOT }
+			1088 = { is_controlled_by = ROOT }
 		}
 		prerequisite = { 
 			focus = KOR_vision_1950
@@ -3132,7 +3246,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1082 = {
+			1088 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -3250,6 +3364,8 @@ focus_tree = {
 		}
 	}
 	#Focus for expane air bases
+	#20261107_kpopmodder: Keep the existing Gyeongsang air-base site and capacity gate in its southern successor without duplicating the reward.
+	#20261107_kpopmodder: Preserve former territorial control gates and keep the Hamgyeong air-base reward and capacity test at its original northern site.
 	focus = {
 		id = KOR_expand_air_bases
 		icon = GFX_focus_generic_air_bases
@@ -3286,6 +3402,7 @@ focus_tree = {
 			if = {
 				limit = {
 					controls_state = 527
+					controls_state = 1089
 					527 = {
 						air_base < 9
 					}
@@ -3303,11 +3420,12 @@ focus_tree = {
 			if = {
 				limit = {
 					controls_state = 1030
-					1030 = {
+					controls_state = 1086
+					1086 = {
 						air_base < 9
 					}
 				}
-				1030 = {
+				1086 = {
 					add_building_construction = {
 						type = air_base
 						level = 2
@@ -3320,14 +3438,15 @@ focus_tree = {
 			if = {
 				limit = {
 					controls_state = 1028
+					controls_state = 1090
 				}
 				if = {
 					limit = {
-						1028 = {
+						1090 = {
 							air_base < 10
 						}
 					}
-					1028 = {
+					1090 = {
 						add_building_construction = {
 							type = air_base
 							level = 1
@@ -3339,6 +3458,8 @@ focus_tree = {
 		}
 	}
 	#Focus for 1st air defense brigade
+	#20261107_kpopmodder: Keep the Gyeongsang air-defense reward at its existing southern sites and preserve the old territory condition.
+	#20261107_kpopmodder: Keep the existing Pyeongyang air-defense recipient and preserve control of the complete former Pyeongan area.
 	focus = {
 		id = KOR_1st_air_defense_brigade
 		icon = GFX_focus_generic_air_defense
@@ -3371,6 +3492,7 @@ focus_tree = {
 			if = {
 				limit = {
 					controls_state = 527
+					controls_state = 1089
 				}
 				527 = { # Pyeongan
 					add_building_construction = {
@@ -3384,8 +3506,9 @@ focus_tree = {
 			if = {
 				limit = {
 					controls_state = 1030
+					controls_state = 1086
 				}
-				1030 = { # Gyeongsang
+				1086 = { # Gyeongsang
 					add_building_construction = {
 						type = anti_air_building
 						level = 2
@@ -5354,6 +5477,7 @@ focus_tree = {
 		}
 	}
 	#Focus for construction syngman rhee line
+	#20261107_kpopmodder: Preserve each existing border-fort province and level under its actual successor-state parent without duplicating rewards.
 	focus = {
 		id = KOR_construction_syngman_rhee_line
 		icon = GFX_focus_BEL_better_than_maginot
@@ -5368,7 +5492,9 @@ focus_tree = {
 		available_if_capitulated = no
 		available = {
 			527 = { is_controlled_by = ROOT }
+			1089 = { is_controlled_by = ROOT }
 			1028 = { is_controlled_by = ROOT }
+			1090 = { is_controlled_by = ROOT }
 		}
 		prerequisite = { focus = KOR_prepare_for_the_next_war }
 		ai_will_do = {
@@ -5378,7 +5504,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = KOR_construction_syngman_rhee_line_tt
 			hidden_effect = {
-				527 = {
+				1089 = {
 					add_building_construction = { type = bunker province = 11835 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9918 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9795 level = 2 instant_build = yes }
@@ -5388,6 +5514,8 @@ focus_tree = {
 				1028 = {
 					add_building_construction = { type = bunker province = 906 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9899 level = 2 instant_build = yes }
+				}
+				1090 = {
 					add_building_construction = { type = bunker province = 3803 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 3860 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 898 level = 2 instant_build = yes }
@@ -5397,6 +5525,7 @@ focus_tree = {
 		}
 	}
 	#Focus for syngman rhee line final fortifications
+	#20261107_kpopmodder: Preserve each existing border-fort province and level under its actual successor-state parent without duplicating rewards.
 	focus = {
 		id = KOR_syngman_rhee_line_final_fortifications
 		icon = GFX_goal_generic_fortify_city
@@ -5410,7 +5539,9 @@ focus_tree = {
 		available_if_capitulated = no
 		available = {
 			527 = { is_controlled_by = ROOT }
+			1089 = { is_controlled_by = ROOT }
 			1028 = { is_controlled_by = ROOT }
+			1090 = { is_controlled_by = ROOT }
 		}
 		prerequisite = { focus = KOR_construction_syngman_rhee_line }
 		ai_will_do = {
@@ -5420,7 +5551,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = KOR_syngman_rhee_line_final_fortifications_tt
 			hidden_effect = {
-				527 = {
+				1089 = {
 					add_building_construction = { type = bunker province = 11835 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9918 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9795 level = 2 instant_build = yes }
@@ -5430,6 +5561,8 @@ focus_tree = {
 				1028 = {
 					add_building_construction = { type = bunker province = 906 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 9899 level = 2 instant_build = yes }
+				}
+				1090 = {
 					add_building_construction = { type = bunker province = 3803 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 3860 level = 2 instant_build = yes }
 					add_building_construction = { type = bunker province = 898 level = 2 instant_build = yes }
@@ -5439,6 +5572,8 @@ focus_tree = {
 		}
 	}
 	#Focus for port fortification
+	#20261107_kpopmodder: Follow Busan province 4056 into Gyeongsang Namdo while preserving the old complete Gyeongsang control condition.
+	#20261107_kpopmodder: Keep all coastal-fort province IDs and levels while aligning their actual state parents and preserving the old territory exceptions.
 	focus = {
 		id = KOR_port_fortification
 		icon = GFX_focus_BEL_koningshooikt_wavre_line
@@ -5452,11 +5587,16 @@ focus_tree = {
 		available_if_capitulated = no
 		available = {
 			527 = { is_controlled_by = ROOT }
+			1089 = { is_controlled_by = ROOT }
 			1028 = { is_controlled_by = ROOT }
+			1090 = { is_controlled_by = ROOT }
 			525 = { is_controlled_by = ROOT }
 			1082 = { is_controlled_by = ROOT }
+			1088 = { is_controlled_by = ROOT }
 			1030 = { is_controlled_by = ROOT }
+			1086 = { is_controlled_by = ROOT }
 			1083 = { is_controlled_by = ROOT }
+			1091 = { is_controlled_by = ROOT }
 		}
 		prerequisite = { focus = KOR_syngman_rhee_line_final_fortifications }
 		ai_will_do = {
@@ -5475,14 +5615,17 @@ focus_tree = {
 				525 = {
 					add_building_construction = { type = coastal_bunker province = 7221 level = 3 instant_build = yes }
 				}
-				1082 = {
+				1088 = {
 					add_building_construction = { type = coastal_bunker province = 10110 level = 3 instant_build = yes }
-					add_building_construction = { type = coastal_bunker province = 13419 level = 3 instant_build = yes }
 				}
-				1030 = {
+				#20261108_kpopmodder: Restore the intended Haeju coastal grant at HoK province 13438 in Hwanghae Namdo, retaining three fort levels.
+				1083 = {
+					add_building_construction = { type = coastal_bunker province = 13438 level = 3 instant_build = yes }
+				}
+				1086 = {
 					add_building_construction = { type = coastal_bunker province = 4056 level = 3 instant_build = yes }
 				}
-				1083 = {
+				1082 = {
 					add_building_construction = { type = coastal_bunker province = 13429 level = 3 instant_build = yes }
 				}
 			}
@@ -6388,6 +6531,12 @@ focus_tree = {
 						has_full_control_of_state = 671
 						has_full_control_of_state = 286
 						has_full_control_of_state = 741
+						#20261108_kpopmodder: Match the current nine-state Indochina release area while retaining the VIN-subject alternative.
+						has_full_control_of_state = 1017
+						has_full_control_of_state = 1066
+						has_full_control_of_state = 1067
+						has_full_control_of_state = 1068
+						has_full_control_of_state = 1069
 					}
 				}
 			}
@@ -8049,6 +8198,10 @@ focus_tree = {
 					controls_state = 534
 					controls_state = 535
 					controls_state = 536
+					#20261108_kpopmodder: Include the three current mainland successors in the existing occupation route; keep Tsushima separate.
+					controls_state = 1018
+					controls_state = 1019
+					controls_state = 1020
 				}
 				JAP = { is_subject_of = KOR }
 				JAP = { exists = no }
@@ -11365,6 +11518,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		completion_reward = { add_ideas = HOK_KOR_accountable_administration_idea }
 	}
+	#20261107_kpopmodder: Preserve full Jeolla and Chungcheong ownership gates while checking factory space only in the unchanged three reward recipients.
 	focus = {
 		id = HOK_KOR_technical_civic_schools
 		#20260922_kpopmodder: Distinguish civic education with a dedicated policy icon.
@@ -11381,7 +11535,9 @@ focus_tree = {
 			has_government = democratic
 			525 = { is_owned_by = ROOT is_fully_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 1 include_locked = yes } }
 			1082 = { is_owned_by = ROOT is_fully_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 1 include_locked = yes } }
+			1088 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }
 			1031 = { is_owned_by = ROOT is_fully_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 1 include_locked = yes } }
+			1087 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -11395,7 +11551,9 @@ focus_tree = {
 				limit = {
 					525 = { is_owned_by = ROOT is_fully_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 1 include_locked = yes } }
 					1082 = { is_owned_by = ROOT is_fully_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 1 include_locked = yes } }
+					1088 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }
 					1031 = { is_owned_by = ROOT is_fully_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 1 include_locked = yes } }
+					1087 = { is_owned_by = ROOT is_fully_controlled_by = ROOT }
 				}
 				525 = {
 					add_extra_state_shared_building_slots = 2

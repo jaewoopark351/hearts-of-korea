@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "mode": "new-game marker; old seven IDs retained for unversioned saves; no save migration",
+  "source_head": "0d73d49726abbfa435c73f1bf8cc24d4a5af014b",
+  "country_flag": "HOK_KOR_cndp_state_projects_v1",
+  "success_state_flag": "HOK_KOR_cndp_developed_v1",
+  "projects": [
+    {
+      "region": "jeollabuk",
+      "state": 1082,
+      "decision": "HOK_KOR_cndp_develop_jeollabuk",
+      "target_category": "large_town",
+      "extra_slots": 0,
+      "coal": 1,
+      "victory_points": [
+        13429
+      ],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    },
+    {
+      "region": "jeollanam",
+      "state": 1088,
+      "decision": "HOK_KOR_cndp_develop_jeollanam",
+      "target_category": null,
+      "extra_slots": 1,
+      "coal": 0,
+      "victory_points": [
+        10110
+      ],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    },
+    {
+      "region": "gyeongsangbuk",
+      "state": 1030,
+      "decision": "HOK_KOR_cndp_develop_gyeongsangbuk",
+      "target_category": "city",
+      "extra_slots": 0,
+      "coal": 0,
+      "victory_points": [
+        7121
+      ],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    },
+    {
+      "region": "gyeongsangnam",
+      "state": 1086,
+      "decision": "HOK_KOR_cndp_develop_gyeongsangnam",
+      "target_category": null,
+      "extra_slots": 1,
+      "coal": 0,
+      "victory_points": [
+        12060,
+        13435
+      ],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    },
+    {
+      "region": "chungcheongnam",
+      "state": 1031,
+      "decision": "HOK_KOR_cndp_develop_chungcheongnam",
+      "target_category": "large_town",
+      "extra_slots": 0,
+      "coal": 0,
+      "victory_points": [
+        7204
+      ],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    },
+    {
+      "region": "chungcheongbuk",
+      "state": 1087,
+      "decision": "HOK_KOR_cndp_develop_chungcheongbuk",
+      "target_category": null,
+      "extra_slots": 1,
+      "coal": 0,
+      "victory_points": [
+        13446
+      ],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    },
+    {
+      "region": "hwanghaenam",
+      "state": 1083,
+      "decision": "HOK_KOR_cndp_develop_hwanghaenam",
+      "target_category": "large_town",
+      "extra_slots": 0,
+      "coal": 0,
+      "victory_points": [],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": true
+    },
+    {
+      "region": "hwanghaebuk",
+      "state": 1091,
+      "decision": "HOK_KOR_cndp_develop_hwanghaebuk",
+      "target_category": null,
+      "extra_slots": 1,
+      "coal": 0,
+      "victory_points": [
+        11915
+      ],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    },
+    {
+      "region": "pyeongannam",
+      "state": 527,
+      "decision": "HOK_KOR_cndp_develop_pyeongannam",
+      "target_category": "large_city",
+      "extra_slots": 0,
+      "coal": 1,
+      "victory_points": [
+        9790
+      ],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    },
+    {
+      "region": "pyeonganbuk",
+      "state": 1089,
+      "decision": "HOK_KOR_cndp_develop_pyeonganbuk",
+      "target_category": null,
+      "extra_slots": 1,
+      "coal": 0,
+      "victory_points": [],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": true
+    },
+    {
+      "region": "hamgyeongnam",
+      "state": 1028,
+      "decision": "HOK_KOR_cndp_develop_hamgyeongnam",
+      "target_category": "town",
+      "extra_slots": 0,
+      "coal": 0,
+      "victory_points": [],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": true
+    },
+    {
+      "region": "hamgyeongbuk",
+      "state": 1090,
+      "decision": "HOK_KOR_cndp_develop_hamgyeongbuk",
+      "target_category": null,
+      "extra_slots": 1,
+      "coal": 0,
+      "victory_points": [
+        6944
+      ],
+      "political_power": 75,
+      "days": 90,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    },
+    {
+      "region": "gangwon",
+      "state": 1029,
+      "decision": "HOK_KOR_cndp_develop_gangwon",
+      "target_category": "town",
+      "extra_slots": 1,
+      "coal": 3,
+      "victory_points": [
+        1148
+      ],
+      "political_power": 150,
+      "days": 180,
+      "civilian_use": 5,
+      "minimum_available_civilians": 6,
+      "requires_effective_space": false
+    }
+  ],
+  "budget": {
+    "political_power": 1050,
+    "civilian_factory_days": 6300,
+    "base_category_delta": 11,
+    "explicit_extra_slots": 7,
+    "coal": 5,
+    "victory_points": 11
+  },
+  "cap_policy": "Shared25 and type20 unchanged. All seven explicit extra-slot rewards are retained as raw permanent increments; effective room remains engine-clamped. Fixed resource/VP projects permit partial benefit. Three slot-only projects require a provable increase in at least one factory-type capacity using paired locked/unlocked queries. This conservative gate can reject sparsely occupied states already unlocking20-24 slots because type20 hides the remaining mixed-use space; it is not an exact shared-capacity getter.",
+  "save_policy": "Country history initializes new games only. Existing unversioned saves retain original seven blocks and rewards. No automatic conversion, PP refunds, or old completed-ledger inference.",
+  "slot_only_activation_predicate": "HOK_KOR_cndp_has_factory_expansion_room_trigger"
+}

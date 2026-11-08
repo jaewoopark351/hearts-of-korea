@@ -233,15 +233,28 @@ on_actions = {
 					
 					
 					#MORE RAILWAY AND HUBS FOR MONGOLIA
+					#20261108_kpopmodder: Keep the same eight hubs in their actual parent states without changing the railway network.
 					330 = {
 						add_building_construction = { type = supply_node level = 1 province = 7799 instant_build = yes }	
+					}
+					818 = {
 						add_building_construction = { type = supply_node level = 1 province = 7843 instant_build = yes }
+					}
+					820 = {
 						add_building_construction = { type = supply_node level = 1 province = 7717 instant_build = yes }
 						add_building_construction = { type = supply_node level = 1 province = 7676 instant_build = yes }
+					}
+					819 = {
 						add_building_construction = { type = supply_node level = 1 province = 12557 instant_build = yes }
+					}
+					817 = {
 						add_building_construction = { type = supply_node level = 1 province = 12612 instant_build = yes }
 						add_building_construction = { type = supply_node level = 1 province = 12541 instant_build = yes }
+					}
+					621 = {
 						add_building_construction = { type = supply_node level = 1 province = 12609 instant_build = yes }
+					}
+					330 = {
 						
 						build_railway = { level = 2 build_only_on_allied = no path = { 4801 7752 7749 12612 } start_province = 4801 target_province = 12612 }
 						build_railway = { level = 2 build_only_on_allied = no path = { 12612 4655 12448 11752 } start_province = 12612 target_province = 11752 }

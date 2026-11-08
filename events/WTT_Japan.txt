@@ -1644,14 +1644,20 @@ country_event = {
 					NOT = {
 						MAN = {
 							controls_state = 525
-							controls_state = 527
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 527 controls_state = 1089 }
 							controls_state = 1029
-							controls_state = 1031
-							controls_state = 1082 # HoK: Jeolla
-							controls_state = 1083 # HoK: Hwanghae
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1031 controls_state = 1087 }
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1082 controls_state = 1088 } # HoK: Jeolla
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1083 controls_state = 1091 } # HoK: Hwanghae
 							controls_state = 1084 # HoK: Jeju
-							controls_state = 1030
-							controls_state = 1028
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1030 controls_state = 1086 }
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1028 controls_state = 1090 }
 						}
 					}
 				}
@@ -1808,38 +1814,62 @@ country_event = {
 				NOT = {
 					MAN = {
 						controls_state = 525
-						controls_state = 527
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 527 controls_state = 1089 }
 						controls_state = 1029
-						controls_state = 1031
-						controls_state = 1082 # HoK: Jeolla
-						controls_state = 1083 # HoK: Hwanghae
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1031 controls_state = 1087 }
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1082 controls_state = 1088 } # HoK: Jeolla
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1083 controls_state = 1091 } # HoK: Hwanghae
 						controls_state = 1084 # HoK: Jeju
-						controls_state = 1030
-						controls_state = 1028
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1030 controls_state = 1086 }
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1028 controls_state = 1090 }
 					}
 				}
 				JAP = {
 					owns_state = 525
-					owns_state = 527
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 527 owns_state = 1089 }
 					owns_state = 1029
-					owns_state = 1031
-					owns_state = 1082 # HoK: Jeolla
-					owns_state = 1083 # HoK: Hwanghae
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1031 owns_state = 1087 }
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1082 owns_state = 1088 } # HoK: Jeolla
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1083 owns_state = 1091 } # HoK: Hwanghae
 					owns_state = 1084 # HoK: Jeju
-					owns_state = 1030
-					owns_state = 1028
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1030 owns_state = 1086 }
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1028 owns_state = 1090 }
 				}
 			}
 			KOR = {
 				transfer_state = 525
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 				transfer_state = 527
+				transfer_state = 1089
 				transfer_state = 1029
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 				transfer_state = 1031
-				transfer_state = 1082 # HoK: Jeolla
-				transfer_state = 1083 # HoK: Hwanghae
+				transfer_state = 1087
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				transfer_state = 1082
+				transfer_state = 1088 # HoK: Jeolla
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				transfer_state = 1083
+				transfer_state = 1091 # HoK: Hwanghae
 				transfer_state = 1084 # HoK: Jeju
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 				transfer_state = 1030
+				transfer_state = 1086
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 				transfer_state = 1028
+				transfer_state = 1090
 			}
 		}
 		else_if = {
@@ -1850,14 +1880,20 @@ country_event = {
 				}
 				MAN = {
 					controls_state = 525
-					controls_state = 527
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { controls_state = 527 controls_state = 1089 }
 					controls_state = 1029
-					controls_state = 1031
-					controls_state = 1082 # HoK: Jeolla
-					controls_state = 1083 # HoK: Hwanghae
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { controls_state = 1031 controls_state = 1087 }
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { controls_state = 1082 controls_state = 1088 } # HoK: Jeolla
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { controls_state = 1083 controls_state = 1091 } # HoK: Hwanghae
 					controls_state = 1084 # HoK: Jeju
-					controls_state = 1030
-					controls_state = 1028
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { controls_state = 1030 controls_state = 1086 }
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { controls_state = 1028 controls_state = 1090 }
 				}
 			}
 			JAP = {
@@ -2323,39 +2359,63 @@ country_event = {
 						any_country = {
 							is_literally_china = yes
 							controls_state = 525
-							controls_state = 527
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 527 controls_state = 1089 }
 							controls_state = 1029
-							controls_state = 1031
-							controls_state = 1082 # HoK: Jeolla
-							controls_state = 1083 # HoK: Hwanghae
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1031 controls_state = 1087 }
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1082 controls_state = 1088 } # HoK: Jeolla
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1083 controls_state = 1091 } # HoK: Hwanghae
 							controls_state = 1084 # HoK: Jeju
-							controls_state = 1030
-							controls_state = 1028
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1030 controls_state = 1086 }
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1028 controls_state = 1090 }
 						}
 					}
 					JAP = {
 						owns_state = 525
-						owns_state = 527
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { owns_state = 527 owns_state = 1089 }
 						owns_state = 1029
-						owns_state = 1031
-						owns_state = 1082 # HoK: Jeolla
-						owns_state = 1083 # HoK: Hwanghae
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { owns_state = 1031 owns_state = 1087 }
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { owns_state = 1082 owns_state = 1088 } # HoK: Jeolla
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { owns_state = 1083 owns_state = 1091 } # HoK: Hwanghae
 						owns_state = 1084 # HoK: Jeju
-						owns_state = 1030
-						owns_state = 1028
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { owns_state = 1030 owns_state = 1086 }
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { owns_state = 1028 owns_state = 1090 }
 					}
 				}
 				FROM = { release = KOR }
 				KOR = {
 					transfer_state = 525
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 					transfer_state = 527
+					transfer_state = 1089
 					transfer_state = 1029
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 					transfer_state = 1031
-					transfer_state = 1082 # HoK: Jeolla
-					transfer_state = 1083 # HoK: Hwanghae
+					transfer_state = 1087
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					transfer_state = 1082
+					transfer_state = 1088 # HoK: Jeolla
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					transfer_state = 1083
+					transfer_state = 1091 # HoK: Hwanghae
 					transfer_state = 1084 # HoK: Jeju
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 					transfer_state = 1030
+					transfer_state = 1086
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 					transfer_state = 1028
+					transfer_state = 1090
 				}
 				MAN = {
 					puppet = KOR
@@ -2400,14 +2460,20 @@ country_event = {
 						}
 						NOT = {
 							state = 525
-							state = 527
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							OR = { state = 527 state = 1089 }
 							state = 1029
-							state = 1031
-							state = 1082 # HoK: Jeolla
-							state = 1083 # HoK: Hwanghae
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							OR = { state = 1031 state = 1087 }
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							OR = { state = 1082 state = 1088 } # HoK: Jeolla
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							OR = { state = 1083 state = 1091 } # HoK: Hwanghae
 							state = 1084 # HoK: Jeju
-							state = 1030
-							state = 1028
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							OR = { state = 1030 state = 1086 }
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							OR = { state = 1028 state = 1090 }
 						}
 					}
 					every_country = {
@@ -2456,39 +2522,63 @@ country_event = {
 					any_country = {
 						is_literally_china = yes
 						controls_state = 525
-						controls_state = 527
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 527 controls_state = 1089 }
 						controls_state = 1029
-						controls_state = 1031
-						controls_state = 1082 # HoK: Jeolla
-						controls_state = 1083 # HoK: Hwanghae
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1031 controls_state = 1087 }
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1082 controls_state = 1088 } # HoK: Jeolla
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1083 controls_state = 1091 } # HoK: Hwanghae
 						controls_state = 1084 # HoK: Jeju
-						controls_state = 1030
-						controls_state = 1028
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1030 controls_state = 1086 }
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { controls_state = 1028 controls_state = 1090 }
 					}
 				}
 				JAP = {
 					owns_state = 525
-					owns_state = 527
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 527 owns_state = 1089 }
 					owns_state = 1029
-					owns_state = 1031
-					owns_state = 1082 # HoK: Jeolla
-					owns_state = 1083 # HoK: Hwanghae
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1031 owns_state = 1087 }
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1082 owns_state = 1088 } # HoK: Jeolla
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1083 owns_state = 1091 } # HoK: Hwanghae
 					owns_state = 1084 # HoK: Jeju
-					owns_state = 1030
-					owns_state = 1028
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1030 owns_state = 1086 }
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { owns_state = 1028 owns_state = 1090 }
 				}
 			}
 			FROM = { release = KOR }
 			KOR = {
 				transfer_state = 525
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 				transfer_state = 527
+				transfer_state = 1089
 				transfer_state = 1029
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 				transfer_state = 1031
-				transfer_state = 1082 # HoK: Jeolla
-				transfer_state = 1083 # HoK: Hwanghae
+				transfer_state = 1087
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				transfer_state = 1082
+				transfer_state = 1088 # HoK: Jeolla
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				transfer_state = 1083
+				transfer_state = 1091 # HoK: Hwanghae
 				transfer_state = 1084 # HoK: Jeju
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 				transfer_state = 1030
+				transfer_state = 1086
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 				transfer_state = 1028
+				transfer_state = 1090
 			}
 			MAN = {
 				puppet = KOR

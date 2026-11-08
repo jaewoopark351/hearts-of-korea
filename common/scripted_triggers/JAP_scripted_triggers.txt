@@ -75,12 +75,18 @@ is_korean_state = {
 	OR = {
 		state = 525
 		state = 1029
-		state = 1031
-		state = 1030
-		state = 527
-		state = 1028
-		state = 1082 # HoK: Jeolla, split from 1031
-		state = 1083 # HoK: Hwanghae, split from 527
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1031 state = 1087 }
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1030 state = 1086 }
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 527 state = 1089 }
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1028 state = 1090 }
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1082 state = 1088 } # HoK: Jeolla, split from 1031
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1083 state = 1091 } # HoK: Hwanghae, split from 527
 		state = 1084 # HoK: Jeju, split from 1031
 	}
 }
@@ -90,9 +96,12 @@ is_south_korean_state = {
 	OR = {
 		state = 525
 		state = 1029
-		state = 1031
-		state = 1030
-		state = 1082 # HoK: Jeolla
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1031 state = 1087 }
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1030 state = 1086 }
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1082 state = 1088 } # HoK: Jeolla
 		state = 1084 # HoK: Jeju
 	}
 }
@@ -100,9 +109,12 @@ is_south_korean_state = {
 # North Korean states
 is_north_korean_state = {
 	OR = {
-		state = 527
-		state = 1028
-		state = 1083 # HoK: Hwanghae
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 527 state = 1089 }
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1028 state = 1090 }
+		#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+		OR = { state = 1083 state = 1091 } # HoK: Hwanghae
 	}
 }
 

@@ -983,27 +983,63 @@ foreign_politics = {
 				1029 = {
 					is_controlled_by_ROOT_or_ally = no
 				}
-				1031 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1031 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1087 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1030 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1030 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1086 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1082 = { # HoK: Jeolla
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1082 = { # HoK: Jeolla
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1088 = { # HoK: Jeolla
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
 				1084 = { # HoK: Jeju
 					is_controlled_by_ROOT_or_ally = no
 				}
 				# North Korea
-				527 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					527 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1089 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1028 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1028 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1090 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1083 = { # HoK: Hwanghae
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1083 = { # HoK: Hwanghae
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1091 = { # HoK: Hwanghae
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
 				NOT = {
 					any_of = {
@@ -1104,27 +1140,63 @@ foreign_politics = {
 				1029 = {
 					is_controlled_by_ROOT_or_ally = no
 				}
-				1031 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1031 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1087 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1030 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1030 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1086 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1082 = { # HoK: Jeolla
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1082 = { # HoK: Jeolla
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1088 = { # HoK: Jeolla
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
 				1084 = { # HoK: Jeju
 					is_controlled_by_ROOT_or_ally = no
 				}
 				# North Korea
-				527 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					527 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1089 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1028 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1028 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1090 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1083 = { # HoK: Hwanghae
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1083 = { # HoK: Hwanghae
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1091 = { # HoK: Hwanghae
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
 				NOT = {
 					any_of = {
@@ -1241,27 +1313,63 @@ foreign_politics = {
 				1029 = {
 					is_controlled_by_ROOT_or_ally = no
 				}
-				1031 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1031 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1087 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1030 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1030 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1086 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1082 = { # HoK: Jeolla
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1082 = { # HoK: Jeolla
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1088 = { # HoK: Jeolla
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
 				1084 = { # HoK: Jeju
 					is_controlled_by_ROOT_or_ally = no
 				}
 				# North Korea
-				527 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					527 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1089 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1028 = {
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1028 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1090 = {
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
-				1083 = { # HoK: Hwanghae
-					is_controlled_by_ROOT_or_ally = no
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = {
+					1083 = { # HoK: Hwanghae
+						is_controlled_by_ROOT_or_ally = no
+					}
+					1091 = { # HoK: Hwanghae
+						is_controlled_by_ROOT_or_ally = no
+					}
 				}
 				factor = 10
 			}
@@ -2070,7 +2178,8 @@ JAP_pacific_guardian = {
 		activation = {
 			has_completed_focus = JAP_the_korean_question
 			has_full_control_of_state = 525
-			has_full_control_of_state = 527
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = { has_full_control_of_state = 527 has_full_control_of_state = 1089 }
 			KOR = { exists = no }
 		}
 
@@ -3523,7 +3632,8 @@ operations = {
 				has_non_aggression_pact_with = SOV
 				SOV = { is_puppet_of = JAP }
 			}
-			1028 = {
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			1090 = {
 				any_neighbor_state = {
 					is_controlled_by = SOV
 				}
@@ -3540,7 +3650,8 @@ operations = {
 		highlight_states = {
 	 		highlight_state_targets = {
 				state = 408
-				state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				state = 1090
 			} 
 		}
 		
@@ -3569,7 +3680,8 @@ operations = {
 		war_with_on_remove = SOV
 
 		complete_effect = {
-			1028 = {
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			1090 = {
 				save_event_target_as = JAP_SOV_attacker_state
 				set_state_flag = border_incident_active
 			}
@@ -3707,7 +3819,8 @@ operations = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				state = 1090
 				state = 408
 			} 
 		}
@@ -3732,7 +3845,8 @@ operations = {
 			hidden_effect = {
 				SOV = { remove_targeted_decision = { target = JAP decision = JAP_border_conflict_escalation_warning_SOV } }
 				SOV = {
-					1028 = {
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					1090 = {
 						clr_state_flag = border_incident_active
 					}
 					408 = {
@@ -3751,7 +3865,8 @@ operations = {
 		allowed = { always = no } #Activated from effect
 
 		available = {
-			1028 = {
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			1090 = {
 				OR = {
 					is_fully_controlled_by = ROOT
 					CONTROLLER = {
@@ -3763,7 +3878,8 @@ operations = {
 				}
 			}
 			divisions_in_border_state = {
-				state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				state = 1090
 				border_state = 408
 				size > 0
 			}
@@ -3771,7 +3887,8 @@ operations = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				state = 1090
 				state = 408	
 			} 
 		}
@@ -3791,7 +3908,8 @@ operations = {
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
-					state = 1028
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					state = 1090
 					num_provinces = 4
 					on_win = japan_border_conflict.2
 					on_lose = japan_border_conflict.3
@@ -3822,14 +3940,16 @@ operations = {
 		allowed = { always = no } #Activated from effect
 
 		available = {
-			1028 = { has_border_war = no }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			1090 = { has_border_war = no }
 			408 = { has_border_war = no }
 		}
 		
 		highlight_states = {
 			highlight_state_targets = {
 				state = 408
-				state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				state = 1090
 			} 
 		}
 
@@ -3852,7 +3972,8 @@ operations = {
 		timeout_effect = {
 			cancel_border_war = {
 				defender = 408
-				attacker = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				attacker = 1090
 			}
 			hidden_effect = {
 				remove_targeted_decision = { target = SOV decision = JAP_border_conflict_escalate_conflict }
@@ -3874,7 +3995,8 @@ operations = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				state = 1090
 				state = 408
 			} 
 		}
@@ -3906,7 +4028,8 @@ operations = {
 			if = {
 				limit = { original_tag = SOV }
 				set_border_war_data = {
-					attacker = 1028
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					attacker = 1090
 					defender = 408
 					defender_modifier = 0.15
 					combat_width = 100
@@ -3929,7 +4052,8 @@ operations = {
 			}
 			else = {
 				set_border_war_data = {
-					attacker = 1028
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					attacker = 1090
 					defender = 408
 					attacker_modifier = 0.15
 					combat_width = 100
@@ -3972,7 +4096,8 @@ operations = {
 		highlight_states = {
  			highlight_state_targets = {
 				state = 408
-				state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				state = 1090
 			} 
 		}
 
@@ -4007,7 +4132,8 @@ operations = {
 			if = {
 				limit = { original_tag = SOV }
 				408 = { save_event_target_as = their_state }
-				1028 = { save_event_target_as = our_state }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				1090 = { save_event_target_as = our_state }
 				JAP = {
 					country_event = { id = japan_border_conflict.6 hours = 1 }
 					hidden_effect = {
@@ -4016,7 +4142,8 @@ operations = {
 			 	}
 			}
 			else = {
-				1028 = { save_event_target_as = our_state }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				1090 = { save_event_target_as = our_state }
 				408 = { save_event_target_as = their_state }
 				SOV = {
 					country_event = { id = japan_border_conflict.5 hours = 1 }
@@ -4032,12 +4159,14 @@ operations = {
 			cancel_border_war = {
 				dont_fire_events = yes
 				defender = 408
-				attacker = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				attacker = 1090
 			}
 			declare_war_on = { target = FROM type = annex_everything }
 			if = {
 				limit = { original_tag = SOV }
-				1028 = {
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				1090 = {
 					clr_state_flag = border_incident_active
 				}
 				408 = {
@@ -4047,7 +4176,8 @@ operations = {
 			}
 			else = {
 				FROM = {
-					1028 = {
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					1090 = {
 						clr_state_flag = border_incident_active
 					}
 					408 = {
@@ -4069,7 +4199,8 @@ operations = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				state = 1090
 				state = 408
 			} 
 		}
@@ -4088,13 +4219,15 @@ operations = {
 				limit = { original_tag = SOV }
 				finalize_border_war = {
 					attacker_win = yes
-					attacker = 1028
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					attacker = 1090
 					defender = 408
 				}
 			}
 			else = {
 				finalize_border_war = {
-					attacker = 1028
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					attacker = 1090
 					defender = 408
 					defender_win = yes
 				}

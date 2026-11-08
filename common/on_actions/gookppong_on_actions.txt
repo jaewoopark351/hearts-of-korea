@@ -492,6 +492,7 @@ on_actions = {
 						add_building_construction = { type = fuel_silo level = 1 instant_build = yes }
 						add_building_construction = { type = dockyard level = 1 instant_build = yes }
 					}
+					#20261107_kpopmodder: Retain this regional bonus once in the original-ID successor; do not duplicate the option budget.
 					527 = {	#Pyeongan
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
@@ -499,6 +500,7 @@ on_actions = {
 						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 					}
+					#20261107_kpopmodder: Retain this regional bonus once in the original-ID successor; do not duplicate the option budget.
 					1083 = {	#Hwanghae
 						add_extra_state_shared_building_slots = 1
 						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
@@ -506,35 +508,46 @@ on_actions = {
 						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 					}
+					#20261107_kpopmodder: Retain this regional bonus once in the original-ID successor; do not duplicate the option budget.
 					1031 = {	#Chungcheong
 						add_extra_state_shared_building_slots = 1
 						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 					}
-					1030 = {	#Gyeongsang
+					#20261107_kpopmodder: Keep industrial slots and factories once in Gyeongsangbuk; the airbase follows its southern marker.
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					1030 = {
 						add_extra_state_shared_building_slots = 2
-						add_building_construction = { type = air_base level = 2 instant_build = yes }
 						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 					}
-					1082 = { #Jeolla
-						add_extra_state_shared_building_slots = 2
+					1086 = {
 						add_building_construction = { type = air_base level = 2 instant_build = yes }
+					}
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					1082 = {
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					}
+					1088 = {
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
 					}
 					1029 = { #Gangwon
 						add_extra_state_shared_building_slots = 2
 						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 					}
-					1028 = { #Hamgyeong
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					1028 = {
 						add_extra_state_shared_building_slots = 4
-						add_building_construction = { type = air_base level = 2 instant_build = yes }
 						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 						add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 						add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 						add_building_construction = { type = dockyard level = 1 instant_build = yes }
+					}
+					1090 = {
+						add_building_construction = { type = air_base level = 2 instant_build = yes }
 					}
 					1084 = { #Jeju
 						add_extra_state_shared_building_slots = 1
@@ -657,25 +670,31 @@ on_actions = {
 					525 = {	#Gyeonggi
 						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
 					}
+					#20261107_kpopmodder: Retain this regional bonus once in the original-ID successor; do not duplicate the option budget.
 					527 = {	#Pyeongan
 						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
 						create_unit = { division = "division_template = \"Gigap-Sadan\" start_experience_factor = 0.3" owner = KOR }
 					}
+					#20261107_kpopmodder: Retain this regional bonus once in the original-ID successor; do not duplicate the option budget.
 					1083 = {	#Hwanghae
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 					}
+					#20261107_kpopmodder: Retain this regional bonus once in the original-ID successor; do not duplicate the option budget.
 					1031 = {	#Chungcheong
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 					}
+					#20261107_kpopmodder: Keep this original regional bonus once in Gyeongsangbuk; do not duplicate it for the new state.
 					1030 = {	#Gyeongsang
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 					}
+					#20261107_kpopmodder: Retain this regional bonus once in the original-ID successor; do not duplicate the option budget.
 					1082 = { #Jeolla
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 					}
 					1029 = { #Gangwon
 						create_unit = { division = "division_template = \"Bobyeong-Sadan\" start_experience_factor = 0.3" owner = KOR }
 					}
+					#20261107_kpopmodder: Retain this regional bonus once in the original-ID successor; do not duplicate the option budget.
 					1028 = { #Hamgyeong
 						create_unit = { division = "division_template = \"Sanak-Sadan\" start_experience_factor = 0.3" owner = KOR }
 						create_unit = { division = "division_template = \"Sanak-Sadan\" start_experience_factor = 0.3" owner = KOR }

@@ -562,7 +562,8 @@ focus_tree = {
 				ideology = fascism
 				size = 0.5	#This was too much for AI
 				capital = 282
-				states = { 282 533 536 555 529 530 528 526 524 645 648 646 647 684 633 609 745 527 525 1018 }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				states = { 282 533 536 555 529 530 528 526 524 645 648 646 647 684 633 609 745 527 1089 525 1018 }
 				keep_unit_leaders = {
 					750 751 752
 				}
@@ -2389,34 +2390,43 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
+			#20261108_kpopmodder: Retain the original five-province threshold pool and ordered grants while using each current state parent.
 			IF = {
 				limit = {
-					609 = {
-						is_fully_controlled_by = ROOT
-						any_province_building_level = {
-							province = {
-								id = 6969
-								id = 11822
-								id = 12043
-								id = 3900
-								id = 1052
+					609 = { is_fully_controlled_by = ROOT }
+					OR = {
+						609 = {
+							any_province_building_level = {
+								province = { id = 11822 id = 12043 id = 3900 id = 1052 }
+								building = bunker
+								level < 5
 							}
-							building = bunker
-							level < 5
-						}	
+						}
+						610 = {
+							any_province_building_level = {
+								province = { id = 6969 }
+								building = bunker
+								level < 5
+							}
+						}
+					}
+				}
+				610 = {
+					IF = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = { id = 6969 }
+							instant_build = yes
+						}
 					}
 				}
 				609 = {
 					add_building_construction = {
 						type = bunker
 						level = 3
-						province = {
-							id = 6969
-							id = 11822
-							id = 12043
-							id = 3900
-							id = 1052
-						}
+						province = { id = 11822 id = 12043 id = 3900 id = 1052 }
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -2480,6 +2490,7 @@ focus_tree = {
 				}
 			}
 
+			#20261108_kpopmodder: Keep the three existing MEN/ROOT fort grants under their actual Hebei-Chahar parent.
 			IF = {
 				limit = {
 					MEN = {
@@ -2487,7 +2498,7 @@ focus_tree = {
 					}
 				}
 				MEN = {
-					611 = {
+					1039 = {
 						IF = {
 							limit = { 
 								is_controlled_by = PREV 
@@ -2517,7 +2528,7 @@ focus_tree = {
 			}
 			ELSE_IF = {
 				limit = {
-					611 = {
+					1039 = {
 						is_fully_controlled_by = ROOT
 						any_province_building_level = {
 							province = {
@@ -2530,7 +2541,7 @@ focus_tree = {
 						}
 					}
 				}
-				611 = {
+				1039 = {
 					add_building_construction = {
 						type = bunker
 						level = 3
@@ -3537,7 +3548,8 @@ focus_tree = {
 			ELSE_IF = {
 				limit = {
 					has_full_control_of_state = 525
-					has_full_control_of_state = 527
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = { has_full_control_of_state = 527 has_full_control_of_state = 1089 }
 					KOR = { exists = no }
 				}
 				activate_mission_tooltip = JAP_release_korea
@@ -3548,14 +3560,16 @@ focus_tree = {
 					MAN = {
 						has_government = fascism
 						has_full_control_of_state = 525
-						has_full_control_of_state = 527
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						AND = { has_full_control_of_state = 527 has_full_control_of_state = 1089 }
 					}
 				}
 				create_wargoal = {
 					type = take_state_focus
 					target = MAN
 					expire = 0
-					generator = { 525 527 }
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					generator = { 525 527 1089 }
 				}
 			}
 		}
@@ -13090,12 +13104,10 @@ focus_tree = {
 					}
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 					any_province_building_level = {
+						#20261108_kpopmodder: Check coastal fort levels in this island state, using the documented province filter instead of mainland China IDs.
 						province = {
-							id = 6969
-							id = 11822
-							id = 12043
-							id = 3900
-							id = 1052
+							all_provinces = yes
+							limit_to_coastal = yes
 						}
 						building = coastal_bunker
 						level < 5
@@ -14873,34 +14885,43 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
+			#20261108_kpopmodder: Retain the original five-province threshold pool and ordered grants while using each current state parent.
 			IF = {
 				limit = {
-					609 = {
-						is_fully_controlled_by = ROOT
-						any_province_building_level = {
-							province = {
-								id = 6969
-								id = 11822
-								id = 12043
-								id = 3900
-								id = 1052
+					609 = { is_fully_controlled_by = ROOT }
+					OR = {
+						609 = {
+							any_province_building_level = {
+								province = { id = 11822 id = 12043 id = 3900 id = 1052 }
+								building = bunker
+								level < 5
 							}
-							building = bunker
-							level < 5
-						}	
+						}
+						610 = {
+							any_province_building_level = {
+								province = { id = 6969 }
+								building = bunker
+								level < 5
+							}
+						}
+					}
+				}
+				610 = {
+					IF = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = { id = 6969 }
+							instant_build = yes
+						}
 					}
 				}
 				609 = {
 					add_building_construction = {
 						type = bunker
 						level = 3
-						province = {
-							id = 6969
-							id = 11822
-							id = 12043
-							id = 3900
-							id = 1052
-						}
+						province = { id = 11822 id = 12043 id = 3900 id = 1052 }
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -14964,6 +14985,7 @@ focus_tree = {
 				}
 			}
 
+			#20261108_kpopmodder: Keep the three existing MEN/ROOT fort grants under their actual Hebei-Chahar parent.
 			IF = {
 				limit = {
 					MEN = {
@@ -14971,7 +14993,7 @@ focus_tree = {
 					}
 				}
 				MEN = {
-					611 = {
+					1039 = {
 						IF = {
 							limit = { 
 								is_controlled_by = PREV 
@@ -15001,7 +15023,7 @@ focus_tree = {
 			}
 			ELSE_IF = {
 				limit = {
-					611 = {
+					1039 = {
 						is_fully_controlled_by = ROOT
 						any_province_building_level = {
 							province = {
@@ -15014,7 +15036,7 @@ focus_tree = {
 						}
 					}
 				}
-				611 = {
+				1039 = {
 					add_building_construction = {
 						type = bunker
 						level = 3
@@ -26983,6 +27005,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
+					#20261107_kpopmodder: Retain the original-ID regional capital as the preferred site, with the existing fallback rules.
 					prioritize = { 527 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -27244,11 +27267,23 @@ focus_tree = {
 			}
 			OR = {
 				AND = {
-					527 = {
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = {
+						527 = {
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+						1089 = {
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
 					}
-					1028 = {
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = {
+						1028 = {
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+						1090 = {
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
 					}
 				}
 				KOR = {
@@ -28100,14 +28135,18 @@ focus_tree = {
 
 		available = {
 			OR = {
-				controls_state = 527
-				controls_state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = { controls_state = 527 controls_state = 1089 }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = { controls_state = 1028 controls_state = 1090 }
 				AND = {
 					has_subject = KOR
 					KOR = {
 						OR = {
-							controls_state = 527
-							controls_state = 1028
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 527 controls_state = 1089 }
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							AND = { controls_state = 1028 controls_state = 1090 }
 						}
 					}
 				}
@@ -28138,11 +28177,18 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					527 = {
-						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = {
+						527 = {
+							state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+						}
+						1089 = {
+							state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+						}
 					}
 				}
-				527 = {
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				1089 = {
 					add_building_construction = {
 						type = bunker
 						level = 2
@@ -28155,14 +28201,27 @@ focus_tree = {
 						}
 						instant_build = yes
 					}
+				}
+				#20261108_kpopmodder: Keep Pyongyang's three levels and move only Haeju's existing three-level reward to its eligible current parent.
+				527 = {
 					add_building_construction = {
 						type = bunker
 						level = 3
-						province = {
-							id = 4052
-							id = 1003
-						}
+						province = { id = 4052 }
 						instant_build = yes
+					}
+				}
+				IF = {
+					limit = {
+						1083 = { state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes }
+					}
+					1083 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = { id = 1003 }
+							instant_build = yes
+						}
 					}
 				}
 				IF = {
@@ -28175,6 +28234,7 @@ focus_tree = {
 							}	
 						}
 					}
+					#20261107_kpopmodder: Keep the single regional industrial reward in the original-ID successor.
 					527 = {
 						add_extra_state_shared_building_slots = 1
 						add_building_construction = {
@@ -28188,10 +28248,17 @@ focus_tree = {
 			}
 			IF = {
 				limit = {
-					1028 = {
-						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = {
+						1028 = {
+							state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+						}
+						1090 = {
+							state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+						}
 					}
 				}
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
 				1028 = {
 					add_building_construction = {
 						type = bunker
@@ -28199,6 +28266,15 @@ focus_tree = {
 						province = {
 							id = 906
 							id = 9899
+						}
+						instant_build = yes
+					}
+				}
+				1090 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = {
 							id = 3803
 							id = 3860
 							id = 898
@@ -28206,6 +28282,8 @@ focus_tree = {
 						}
 						instant_build = yes
 					}
+				}
+				1028 = {
 					add_building_construction = {
 						type = bunker
 						level = 3
@@ -28223,6 +28301,7 @@ focus_tree = {
 							}	
 						}
 					}
+					#20261107_kpopmodder: Keep the single regional industrial reward in the original-ID successor.
 					1028 = {
 						add_extra_state_shared_building_slots = 1
 						add_building_construction = {

@@ -2550,10 +2550,19 @@ shared_focus = {
 					is_subject = no
 				}
 			}
-			527 = {
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				527 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1089 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
 			525 = {
@@ -2562,10 +2571,19 @@ shared_focus = {
 					is_in_faction_with = ROOT
 				}
 			}
-			1028 = {
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1028 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1090 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
 			1029 = {
@@ -2574,28 +2592,64 @@ shared_focus = {
 					is_in_faction_with = ROOT
 				}
 			}
-			1030 = {
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1030 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1086 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
-			1031 = {
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1031 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1087 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
-			1082 = { # HoK: Jeolla, split from 1031
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1082 = { # HoK: Jeolla, split from 1031
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1088 = { # HoK: Jeolla, split from 1031
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
-			1083 = { # HoK: Hwanghae, split from 527
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1083 = { # HoK: Hwanghae, split from 527
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1091 = { # HoK: Hwanghae, split from 527
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
 			1084 = { # HoK: Jeju, split from 1031
@@ -2615,13 +2669,18 @@ shared_focus = {
 		if = {
 			limit = {
 				OR = {
-					527 = { is_owned_and_controlled_by = ROOT }
+					#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+					AND = {
+						527 = { is_owned_and_controlled_by = ROOT }
+						1089 = { is_owned_and_controlled_by = ROOT }
+					}
 					525 = { is_owned_and_controlled_by = ROOT }
 				}
 			}
 			activate_mission_tooltip = CHI_release_korea
 		}
 		else = {
+			#20261107_kpopmodder: Preserve the existing controller anchor while expanding the territorial generator below.
 			527 = {
 				CONTROLLER = {
 					ROOT = {
@@ -2629,7 +2688,8 @@ shared_focus = {
 							type = take_state_focus
 							target = PREV
 							expire = 0
-							generator = { 527 }
+							#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+							generator = { 527 1089 }
 						}
 					}
 				}
@@ -2637,7 +2697,8 @@ shared_focus = {
 			#Don't give wargoal on same country twice
 			if = {
 				limit = {
-					NOT = { 525 = { CONTROLLER = { controls_state = 527 } } }
+					NOT = { 525 = { CONTROLLER = { #20261107_kpopmodder: Keep the existing controller-identity anchor so the same country is not targeted twice.
+					controls_state = 527 } } }
 				}
 				525 = {
 					CONTROLLER = {
@@ -2805,6 +2866,8 @@ shared_focus = {
 		controls_state = 670
 		controls_state = 286
 		controls_state = 741
+		#20261108_kpopmodder: Keep the bypass area identical to the existing nine-state Indochina wargoal.
+		controls_state = 1017
 		controls_state = 1066 
 		controls_state = 1067 
 		controls_state = 1068 
@@ -2911,10 +2974,19 @@ shared_focus = {
 	available = {
 		is_subject = no
 		OR = {
-			527 = {
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					NOT = { is_in_faction_with = ROOT }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				527 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+				1089 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
 				}
 			}
 			525 = {
@@ -2923,10 +2995,19 @@ shared_focus = {
 					NOT = { is_in_faction_with = ROOT }
 				}
 			}
-			1028 = {
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1028 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1090 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
 			1029 = {
@@ -2935,28 +3016,64 @@ shared_focus = {
 					is_in_faction_with = ROOT
 				}
 			}
-			1030 = {
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1030 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1086 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
-			1031 = {
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1031 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1087 = {
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
-			1082 = { # HoK: Jeolla, split from 1031
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1082 = { # HoK: Jeolla, split from 1031
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
+				}
+				1088 = { # HoK: Jeolla, split from 1031
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						is_in_faction_with = ROOT
+					}
 				}
 			}
-			1083 = { # HoK: Hwanghae, split from 527
-				CONTROLLER = {
-					NOT = { tag = ROOT }
-					NOT = { is_in_faction_with = ROOT }
+			#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+			AND = {
+				1083 = { # HoK: Hwanghae, split from 527
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+				1091 = { # HoK: Hwanghae, split from 527
+					CONTROLLER = {
+						NOT = { tag = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
 				}
 			}
 			1084 = { # HoK: Jeju, split from 1031
@@ -2979,14 +3096,20 @@ shared_focus = {
 				is_subject_of = ROOT
 			}
 			AND = {
-				controls_state = 527
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = { controls_state = 527 controls_state = 1089 }
 				controls_state = 525
-				controls_state = 1028
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = { controls_state = 1028 controls_state = 1090 }
 				controls_state = 1029
-				controls_state = 1030
-				controls_state = 1031
-				controls_state = 1082 # HoK: Jeolla
-				controls_state = 1083 # HoK: Hwanghae
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = { controls_state = 1030 controls_state = 1086 }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = { controls_state = 1031 controls_state = 1087 }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = { controls_state = 1082 controls_state = 1088 } # HoK: Jeolla
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				AND = { controls_state = 1083 controls_state = 1091 } # HoK: Hwanghae
 				controls_state = 1084 # HoK: Jeju
 			}
 		}
@@ -2997,6 +3120,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		#20261107_kpopmodder: Preserve the existing controller anchor while expanding the territorial generator below.
 		527 = {
 			CONTROLLER = {
 				ROOT = {
@@ -3004,7 +3128,8 @@ shared_focus = {
 						type = take_state_focus
 						target = PREV
 						expire = 0
-						generator = { 527 }
+						#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+						generator = { 527 1089 }
 					}
 				}
 			}
@@ -3016,6 +3141,7 @@ shared_focus = {
 					525 = {
 						CONTROLLER = {
 							OR = {
+								#20261107_kpopmodder: Keep the existing controller-identity anchor so the same country is not targeted twice.
 								controls_state = 527
 								tag = ROOT								
 							}

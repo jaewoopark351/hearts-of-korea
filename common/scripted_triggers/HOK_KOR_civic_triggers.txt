@@ -19,7 +19,8 @@ HOK_KOR_civic_procurement_slot_available = {
 	NOT = { has_country_flag = HOK_KOR_rocket_contract_active }
 	NOT = { has_country_flag = HOK_KOR_air_recovery_active }
 	NOT = { has_country_flag = HOK_KOR_rocket_recovery_active }
-	check_variable = { var = HOK_KOR_chaebol_influence value = 40 compare = greater_than_or_equals }
+	#20261108_kpopmodder: Expose existing civic numeric conditions and effects without changing their execution.
+	check_variable = { var = HOK_KOR_chaebol_influence value = 40 compare = greater_than_or_equals tooltip = HOK_KOR_chaebol_influence_at_least_tt }
 }
 
 #20261011_kpopmodder: Share country-scope policy, action and crisis gates between effects and decisions.

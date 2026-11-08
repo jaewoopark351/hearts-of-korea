@@ -1,0 +1,29 @@
+#20261108_kpopmodder: Prepend current Korean border-conflict cleanup while retaining the accumulated target-version Soviet civil-war effect.
+SOV_start_civil_war = {
+	IF = {
+		limit = {
+			has_border_war_between = {
+				attacker = 1090
+				defender = 408
+			}
+		}
+		finalize_border_war = {
+			attacker_win = yes
+			attacker = 1090
+			defender = 408
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_border_war_between = {
+				attacker = 408
+				defender = 1090
+			}
+		}
+		finalize_border_war = {
+			defender_win = yes
+			attacker = 408
+			defender = 1090
+		}
+	}
+}

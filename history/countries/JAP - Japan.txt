@@ -381,13 +381,27 @@ IF = {
 # HoK starts with an independent Korea in 1936.  Apply vanilla-equivalent
 # resistance only after the Korean state histories transfer ownership to JAP.
 1939.3.14 = {
+	#20261107_kpopmodder: Apply the dated Korean occupation history to both successor states.
 	527 = {
 		start_resistance = yes
 		set_compliance = 5
 		set_resistance = 5
 		set_garrison_strength = 1.0
 	}
+	1089 = {
+		start_resistance = yes
+		set_compliance = 5
+		set_resistance = 5
+		set_garrison_strength = 1.0
+	}
+	#20261107_kpopmodder: Apply the dated Korean occupation history to both successor states.
 	1028 = {
+		start_resistance = yes
+		set_compliance = 5
+		set_resistance = 5
+		set_garrison_strength = 1.0
+	}
+	1090 = {
 		start_resistance = yes
 		set_compliance = 5
 		set_resistance = 5
@@ -405,25 +419,53 @@ IF = {
 		set_resistance = 5
 		set_garrison_strength = 1.0
 	}
+	#20261107_kpopmodder: Apply the dated Korean occupation history to both successor states.
 	1030 = {
 		start_resistance = yes
 		set_compliance = 5
 		set_resistance = 5
 		set_garrison_strength = 1.0
 	}
+	1086 = {
+		start_resistance = yes
+		set_compliance = 5
+		set_resistance = 5
+		set_garrison_strength = 1.0
+	}
+	#20261107_kpopmodder: Apply the dated Korean occupation history to both successor states.
 	1031 = {
 		start_resistance = yes
 		set_compliance = 5
 		set_resistance = 5
 		set_garrison_strength = 1.0
 	}
+	1087 = {
+		start_resistance = yes
+		set_compliance = 5
+		set_resistance = 5
+		set_garrison_strength = 1.0
+	}
+	#20261107_kpopmodder: Apply the dated Korean occupation history to both successor states.
 	1082 = {
 		start_resistance = yes
 		set_compliance = 5
 		set_resistance = 5
 		set_garrison_strength = 1.0
 	}
+	1088 = {
+		start_resistance = yes
+		set_compliance = 5
+		set_resistance = 5
+		set_garrison_strength = 1.0
+	}
+	#20261107_kpopmodder: Apply the dated Korean occupation history to both successor states.
 	1083 = {
+		start_resistance = yes
+		set_compliance = 5
+		set_resistance = 5
+		set_garrison_strength = 1.0
+	}
+	1091 = {
 		start_resistance = yes
 		set_compliance = 5
 		set_resistance = 5

@@ -1,0 +1,592 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-07",
+  "mode": "new-game-only; no backward-save migration",
+  "source_commit": "0d73d49726abbfa435c73f1bf8cc24d4a5af014b",
+  "province_policy": "Existing provinces and geometry unchanged; adopted connected game boundaries, not a historical GIS reconstruction.",
+  "allocation_policy": "Integer game-design population weights, not census estimates. Exact parent totals conserved; infrastructure copied to each child to retain local access. Both categories retain parent level. No starting factory rebalance.",
+  "name_policy": "All twelve successors use unique HOK_KOR_STATE_<id> display keys; original STATE_<id> localisation definitions retained as aliases. Tsushima1085 continues STATE_1088.",
+  "parents": [
+    {
+      "old_id": 1030,
+      "successor_ids": [
+        1030,
+        1086
+      ],
+      "original_name_key": "STATE_1030",
+      "original_file": "history/states/1030 - Gyeongsang.txt",
+      "original_sha256": "21f0fc8e372642c30e177789c0550384d095b37d5283d14e7e21ab40cdf7f60f",
+      "original_manpower": 4811479,
+      "retained_population_percent": 52,
+      "category": "large_town",
+      "infrastructure_each": 2,
+      "whole_region_condition_ids": [
+        1030,
+        1086
+      ],
+      "children": [
+        {
+          "id": 1030,
+          "name": "경상북도",
+          "name_key": "HOK_KOR_STATE_1030",
+          "file": "history/states/1030 - Gyeongsang.txt",
+          "provinces": [
+            1081,
+            4103,
+            7121,
+            10115,
+            11912,
+            12089,
+            13436,
+            13437
+          ],
+          "manpower": 2501969,
+          "resources": {
+            "tungsten": 5
+          },
+          "buildings": {
+            "infrastructure": 2,
+            "industrial_complex": 1,
+            "arms_factory": 1
+          },
+          "province_buildings": {},
+          "victory_points": {
+            "13436": 15
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        },
+        {
+          "id": 1086,
+          "name": "경상남도",
+          "name_key": "HOK_KOR_STATE_1086",
+          "file": "history/states/1086 - Gyeongsangnam.txt",
+          "provinces": [
+            1054,
+            4056,
+            4086,
+            10085,
+            12060,
+            13432,
+            13433,
+            13434,
+            13435
+          ],
+          "manpower": 2309510,
+          "resources": {},
+          "buildings": {
+            "infrastructure": 2,
+            "industrial_complex": 1,
+            "dockyard": 1,
+            "air_base": 1
+          },
+          "province_buildings": {
+            "4056": {
+              "naval_base": 5,
+              "coastal_bunker": 1
+            }
+          },
+          "victory_points": {
+            "4056": 20
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "old_id": 1031,
+      "successor_ids": [
+        1031,
+        1087
+      ],
+      "original_name_key": "STATE_1031",
+      "original_file": "history/states/1031 - Chungcheong Jeolla.txt",
+      "original_sha256": "b82df5e0f94f1e5c1aa67ff4e21a43825d5622c7bdb6ec0deea11509f577ff4a",
+      "original_manpower": 2486315,
+      "retained_population_percent": 65,
+      "category": "town",
+      "infrastructure_each": 2,
+      "whole_region_condition_ids": [
+        1031,
+        1087
+      ],
+      "children": [
+        {
+          "id": 1031,
+          "name": "충청남도",
+          "name_key": "HOK_KOR_STATE_1031",
+          "file": "history/states/1031 - Chungcheong Jeolla.txt",
+          "provinces": [
+            7175,
+            7204,
+            11977,
+            11992,
+            13442,
+            13443,
+            13444
+          ],
+          "manpower": 1616104,
+          "resources": {},
+          "buildings": {
+            "infrastructure": 2,
+            "arms_factory": 1
+          },
+          "province_buildings": {},
+          "victory_points": {
+            "11977": 10
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        },
+        {
+          "id": 1087,
+          "name": "충청북도",
+          "name_key": "HOK_KOR_STATE_1087",
+          "file": "history/states/1087 - Chungcheongbuk.txt",
+          "provinces": [
+            1100,
+            13445,
+            13446,
+            13447
+          ],
+          "manpower": 870211,
+          "resources": {},
+          "buildings": {
+            "infrastructure": 2
+          },
+          "province_buildings": {},
+          "victory_points": {},
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "old_id": 1082,
+      "successor_ids": [
+        1082,
+        1088
+      ],
+      "original_name_key": "STATE_1082",
+      "original_file": "history/states/1082 - Jeolla.txt",
+      "original_sha256": "b44a6deb68d708105f2c6beef4d6deaf058f19acc5e5caa80b89212f8a565b3c",
+      "original_manpower": 4077292,
+      "retained_population_percent": 40,
+      "category": "town",
+      "infrastructure_each": 1,
+      "whole_region_condition_ids": [
+        1082,
+        1088
+      ],
+      "children": [
+        {
+          "id": 1082,
+          "name": "전라북도",
+          "name_key": "HOK_KOR_STATE_1082",
+          "file": "history/states/1082 - Jeolla.txt",
+          "provinces": [
+            4126,
+            13427,
+            13428,
+            13429,
+            13430,
+            13431
+          ],
+          "manpower": 1630916,
+          "resources": {},
+          "buildings": {
+            "infrastructure": 1
+          },
+          "province_buildings": {
+            "13429": {
+              "naval_base": 1,
+              "coastal_bunker": 1
+            }
+          },
+          "victory_points": {
+            "13430": 1
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        },
+        {
+          "id": 1088,
+          "name": "전라남도",
+          "name_key": "HOK_KOR_STATE_1088",
+          "file": "history/states/1088 - Jeollanam.txt",
+          "provinces": [
+            10110,
+            11948,
+            12085,
+            13424,
+            13425,
+            13426
+          ],
+          "manpower": 2446376,
+          "resources": {},
+          "buildings": {
+            "infrastructure": 1,
+            "industrial_complex": 1,
+            "air_base": 1
+          },
+          "province_buildings": {
+            "10110": {
+              "naval_base": 1,
+              "coastal_bunker": 1
+            }
+          },
+          "victory_points": {
+            "13424": 10
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "old_id": 527,
+      "successor_ids": [
+        527,
+        1089
+      ],
+      "original_name_key": "STATE_527",
+      "original_file": "history/states/527-North Korea.txt",
+      "original_sha256": "ef9edde5ed12c8eb0804adc70279e2b7e7dfa32917eef9aeb265a817a20dcbc8",
+      "original_manpower": 4179983,
+      "retained_population_percent": 55,
+      "category": "large_town",
+      "infrastructure_each": 2,
+      "whole_region_condition_ids": [
+        527,
+        1089
+      ],
+      "children": [
+        {
+          "id": 527,
+          "name": "평안남도",
+          "name_key": "HOK_KOR_STATE_527",
+          "file": "history/states/527-North Korea.txt",
+          "provinces": [
+            978,
+            3912,
+            4052,
+            7171,
+            9790,
+            13415
+          ],
+          "manpower": 2298990,
+          "resources": {
+            "aluminium": 2,
+            "coal": 5
+          },
+          "buildings": {
+            "infrastructure": 2,
+            "industrial_complex": 1,
+            "air_base": 1
+          },
+          "province_buildings": {
+            "13415": {
+              "naval_base": 2,
+              "coastal_bunker": 1
+            }
+          },
+          "victory_points": {
+            "4052": 20,
+            "13415": 1
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        },
+        {
+          "id": 1089,
+          "name": "평안북도",
+          "name_key": "HOK_KOR_STATE_1089",
+          "file": "history/states/1089 - Pyeonganbuk.txt",
+          "provinces": [
+            912,
+            6963,
+            9795,
+            9918,
+            11775,
+            11828,
+            11835,
+            11896
+          ],
+          "manpower": 1880993,
+          "resources": {
+            "aluminium": 3
+          },
+          "buildings": {
+            "infrastructure": 2,
+            "industrial_complex": 1,
+            "arms_factory": 1
+          },
+          "province_buildings": {},
+          "victory_points": {
+            "11835": 3,
+            "6963": 3
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "old_id": 1028,
+      "successor_ids": [
+        1028,
+        1090
+      ],
+      "original_name_key": "STATE_1028",
+      "original_file": "history/states/1028 - Hamgyong.txt",
+      "original_sha256": "b9bd8f7ff15c21b1e2d913ecdf552b38034837f42f368a09849ce2e208e59fc7",
+      "original_manpower": 2574500,
+      "retained_population_percent": 55,
+      "category": "rural",
+      "infrastructure_each": 1,
+      "whole_region_condition_ids": [
+        1028,
+        1090
+      ],
+      "children": [
+        {
+          "id": 1028,
+          "name": "함경남도",
+          "name_key": "HOK_KOR_STATE_1028",
+          "file": "history/states/1028 - Hamgyong.txt",
+          "provinces": [
+            848,
+            852,
+            906,
+            3852,
+            3904,
+            3981,
+            6928,
+            9899,
+            10083,
+            11770
+          ],
+          "manpower": 1415975,
+          "resources": {
+            "tungsten": 14,
+            "coal": 10
+          },
+          "buildings": {
+            "infrastructure": 1,
+            "industrial_complex": 1
+          },
+          "province_buildings": {
+            "848": {
+              "naval_base": 3,
+              "coastal_bunker": 1
+            }
+          },
+          "victory_points": {
+            "6928": 3,
+            "848": 10
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        },
+        {
+          "id": 1090,
+          "name": "함경북도",
+          "name_key": "HOK_KOR_STATE_1090",
+          "file": "history/states/1090 - Hamgyeongbuk.txt",
+          "provinces": [
+            898,
+            959,
+            3803,
+            3860,
+            6822,
+            6922,
+            6944,
+            11878
+          ],
+          "manpower": 1158525,
+          "resources": {
+            "steel": 15,
+            "tungsten": 14,
+            "coal": 10,
+            "chromium": 4
+          },
+          "buildings": {
+            "infrastructure": 1
+          },
+          "province_buildings": {},
+          "victory_points": {
+            "6822": 3,
+            "6944": 1
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "old_id": 1083,
+      "successor_ids": [
+        1083,
+        1091
+      ],
+      "original_name_key": "STATE_1083",
+      "original_file": "history/states/1083 - Hwanghae.txt",
+      "original_sha256": "9825932abd167080ce85650d4705dcfe48b88a62ce158ea7ed57ed40d94328c4",
+      "original_manpower": 2674214,
+      "retained_population_percent": 55,
+      "category": "town",
+      "infrastructure_each": 1,
+      "whole_region_condition_ids": [
+        1083,
+        1091
+      ],
+      "children": [
+        {
+          "id": 1083,
+          "name": "황해남도",
+          "name_key": "HOK_KOR_STATE_1083",
+          "file": "history/states/1083 - Hwanghae.txt",
+          "provinces": [
+            1003,
+            4107,
+            7155,
+            13438,
+            13440,
+            13441
+          ],
+          "manpower": 1470817,
+          "resources": {},
+          "buildings": {
+            "infrastructure": 1
+          },
+          "province_buildings": {},
+          "victory_points": {
+            "13438": 1
+          },
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        },
+        {
+          "id": 1091,
+          "name": "황해북도",
+          "name_key": "HOK_KOR_STATE_1091",
+          "file": "history/states/1091 - Hwanghaebuk.txt",
+          "provinces": [
+            7070,
+            10065,
+            11915,
+            13439
+          ],
+          "manpower": 1203397,
+          "resources": {
+            "steel": 8
+          },
+          "buildings": {
+            "infrastructure": 1
+          },
+          "province_buildings": {},
+          "victory_points": {},
+          "owner_1936": "KOR",
+          "core_countries": [
+            "KOR"
+          ],
+          "dated_history": {
+            "1939.3.14": {
+              "owner": "JAP",
+              "controller": "JAP"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

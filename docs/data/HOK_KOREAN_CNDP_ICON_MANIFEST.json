@@ -1,0 +1,1023 @@
+{
+  "date": "2026-11-08",
+  "scope": "Thirteen new CNDP region-specific32x32 decision-row icons only; no category/focus/spirit/legacy artwork change.",
+  "baseline": {
+    "branch": "feat/korean-focus-expansion-ai",
+    "commit": "0d73d49726abbfa435c73f1bf8cc24d4a5af014b",
+    "preexisting_changes": "Earlier six-state-split and CNDP work preserved; task baseline snapshot owned by root.",
+    "external_task_root": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01"
+  },
+  "method": "Original procedural vector drawings. Gray/bronze CNDP construction family; source geography supplies regional outline data only. No AI image generation and no external illustration component.",
+  "authorship": {
+    "new_work": "Continuation project/kpopmodder: new vector construction composition, programmatic drawing and GFX integration, authored with Codex assistance.",
+    "image_generation_model": null,
+    "external_artwork_components": [],
+    "geographic_data_credit": "Existing Hearts of Korea project map/province data, including retained original HOK and target vanilla geographic authorship. No existing artwork pixels are copied into the illustration.",
+    "licence_note": "No third-party illustration licence or blanket licence for source mods is inferred; existing project authorship and notices remain unchanged."
+  },
+  "palette": {
+    "industry_reference": "#64645f",
+    "frame_highlight": "#ead5a4",
+    "frame_mid": "#ae8955",
+    "frame_shadow": "#5b4129",
+    "region_fill": "#c6c8bc",
+    "factory": "#737c76",
+    "windows": "#d7b674"
+  },
+  "pipeline": {
+    "canvas": [
+      32,
+      32
+    ],
+    "source_canvas": [
+      256,
+      256
+    ],
+    "sampling": "8x original vector rendering with System.Drawing anti-aliasing, HighQualityBicubic downsample, TileFlipXY alpha-safe edge sampling.",
+    "dds_format": "Legacy DDS, uncompressed BGRA32, explicit alpha, one frame, one level, mipmapCount0, pitch128,124-byte header.",
+    "dds_technical_reference": "Existing project civic/communist small-icon format; no illustration pixels copied.",
+    "sprite_file": "interface\\HOK_KOR_cndp_icons.gfx",
+    "sources_and_recipes": [
+      {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\build_design.py",
+        "sha256": "9c0774a4d6254c399bcaef1c3dc4b980d16d135c8f92540f2ee7475d018f89cf"
+      },
+      {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\CndpIcons.cs",
+        "sha256": "87d356679910ec9f75bc9a6bd70c7d574c9d532387919158d46947796301c887"
+      },
+      {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\render_icons.ps1",
+        "sha256": "fc84b6129a09ed6e0772fcd0074a418b37dce5d94190486e479696aa5a04d2b8"
+      },
+      {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\cndp_design.json",
+        "sha256": "d580febf1a9da411ebaefbbf99dab23a5824b81a4d27d17e5108f858e37dbda1"
+      }
+    ],
+    "sprite_file_sha256": "0582be3643ed3dd644ea7e0b677d9a34779aaff3b26a388c2f626be322f9e4d1"
+  },
+  "geographic_sources": [
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1028 - Hamgyong.txt",
+      "sha256": "4a0049f8f2a591edf79fe86008e1b7c07d0999cb619d0780698c04f465da8a9d"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1029 - Gangwon.txt",
+      "sha256": "f065eea66706adab166dcc2e504f3941769ce892b7ec86dc34ca260964302072"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1030 - Gyeongsang.txt",
+      "sha256": "35dbe055fb9c8955adca8100209544375d2f4f0cbe629cbe62df93a18445b361"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1031 - Chungcheong Jeolla.txt",
+      "sha256": "ad4401bdb8343e21aac41f850d4b723f308478b4dcc5d4878ad07d024a6aaf15"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1082 - Jeolla.txt",
+      "sha256": "2df0262e4b6a3d3e30ea39c95c7e8702350e3b8796eb4130beea8f38890dea51"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1083 - Hwanghae.txt",
+      "sha256": "ab48b3bc05b284f557bc9d0b2c345bb680377ebb755ea70fee509ea77782a6ca"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1086 - Gyeongsangnam.txt",
+      "sha256": "b0705e2b6445c2454ed975626af35f386592d57af356f86a127d52b28690958f"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1087 - Chungcheongbuk.txt",
+      "sha256": "c7fc34ceec8a1f4d758376ee88b77e20eaf06c804c1cf9a0dc86a0ac8a13a4ec"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1088 - Jeollanam.txt",
+      "sha256": "b6a37f635c72727dbe0185c48657e3796cb19ded041d9247495d082525aae066"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1089 - Pyeonganbuk.txt",
+      "sha256": "b2cbd2aecfbe2dea9a3a88d32eb50ec9763236ce5696b5a7678cadcd5edff4d1"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1090 - Hamgyeongbuk.txt",
+      "sha256": "344682e78111d6f339d8c4ef05ad854af90e46014632c346f4a1f52e68218052"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\1091 - Hwanghaebuk.txt",
+      "sha256": "e89006a43f9dd5678570ef32d8041873e5e2173be717097504263df40db751e5"
+    },
+    {
+      "role": "project geographic membership, not illustration input",
+      "path": "C:\\hoi\\hearts_of_korea\\history\\states\\527-North Korea.txt",
+      "sha256": "46021dc78db5399f52dae60a326b97088844e6e4369d2da7c36b47a820f65a30"
+    },
+    {
+      "role": "project geographic labels only; no source illustration pixels copied",
+      "path": "C:\\hoi\\hearts_of_korea\\map\\provinces.bmp",
+      "sha256": "a00ec0e8c18e9f405fc7e7ea59a77848870f03c79e9e5f78cf6e12272d867600"
+    },
+    {
+      "role": "project geographic labels only; no source illustration pixels copied",
+      "path": "C:\\hoi\\hearts_of_korea\\map\\definition.csv",
+      "sha256": "ca90847350f70ffcfd358bbab02612e86b20de3528327eb91a67c16419b377a6"
+    }
+  ],
+  "ui_reference": {
+    "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\interface\\countrydecisionview.gui",
+    "sha256": "1af3de93c190635cf866ac7d4d47fe7cbbadc75f1ed0059ab8ed038630531ce7",
+    "ordinary_row": {
+      "height": 41,
+      "icon_center": [
+        30,
+        19
+      ],
+      "title_x": 63,
+      "texture_bounds": [
+        14,
+        3,
+        46,
+        35
+      ]
+    },
+    "timed_row": {
+      "height": 40,
+      "icon_center": [
+        32,
+        20
+      ],
+      "title_x": 62,
+      "texture_bounds": [
+        16,
+        4,
+        48,
+        36
+      ]
+    },
+    "status": "Installed source bounds checked; no GUI modification."
+  },
+  "preview": {
+    "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\contact-sheet.png",
+    "sha256": "6ac64751bd320a688c2964b455c12f50e30c997cfbc207b62dfa52530370a083",
+    "review": "Manually inspected all13 icons at actual32x32 and4x diagnostic enlargement. This is a static artwork preview, not a game screenshot."
+  },
+  "verification": {
+    "dds_dimensions_format_alpha_length": "PASS",
+    "unique_sprite_names": "PASS",
+    "unique_output_images": "PASS_13_distinct_hashes",
+    "relative_texture_paths_and_exact_case": "PASS",
+    "original_artwork_preservation": "Only new owned asset paths written.",
+    "ui_available_unavailable_active": "NOT_RUN",
+    "actual_engine_texture_registration": "NOT_RUN",
+    "runtime_limit": "Root must distinguish engine log registration checks from actual native decision UI observation.",
+    "decision_to_sprite_to_dds_chain": "PASS_13_PROJECT_DECISION_BLOCKS"
+  },
+  "assets": [
+    {
+      "decision_id": "HOK_KOR_cndp_develop_jeollabuk",
+      "region": "jeollabuk",
+      "label": "전라북도",
+      "state": 1082,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_jeollabuk",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_jeollabuk.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "72a47bc6b646f10c56ea7eedb645605ae6ff3d2ae86e6acb331f61b8d7406700",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          4126,
+          13427,
+          13428,
+          13429,
+          13430,
+          13431
+        ],
+        "representative_marker_province": 13430,
+        "bounds": [
+          4780,
+          795,
+          4802,
+          812
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_jeollabuk.svg",
+        "sha256": "27bb693f04128fe3603d264509c2ba3b977e1589c85e3e81f707ab4608622472"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_jeollabuk.png",
+        "sha256": "e94b6180f84335024f6382fcfdd9aa17a0f3ba71f984763dc491f17bb53c4044",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_jeollabuk.png",
+        "sha256": "f8946058fa2ade670f207bfef55dd9bab866f4b9ee467f7a2108cbec5e78ff52"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_jeollanam",
+      "region": "jeollanam",
+      "label": "전라남도",
+      "state": 1088,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_jeollanam",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_jeollanam.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "7fec6868c9a98da269ad890ccd4dbbe9d6ee2c155e91d3ec1e5113ad9f440484",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          10110,
+          11948,
+          12085,
+          13424,
+          13425,
+          13426
+        ],
+        "representative_marker_province": 13424,
+        "bounds": [
+          4774,
+          807,
+          4800,
+          830
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_jeollanam.svg",
+        "sha256": "e158c3b03c166148808d634954be459f0c7b2df6380b08632751f32ad65e9669"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_jeollanam.png",
+        "sha256": "23d480846eb0a4f64b875d5251b7db520328b0dd7ac2bd10c52943c8f1ddf09e",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_jeollanam.png",
+        "sha256": "c0cf4844fc97fa789338a7d07f6d2a088c5e1f0c7fa45417bb44ec56d351fe14"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_gyeongsangbuk",
+      "region": "gyeongsangbuk",
+      "label": "경상북도",
+      "state": 1030,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_gyeongsangbuk",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_gyeongsangbuk.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "a36411df71cd73783d299e550e0d2758429c14a9c85ecafe64776696f541dd9a",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          1081,
+          4103,
+          7121,
+          10115,
+          11912,
+          12089,
+          13436,
+          13437
+        ],
+        "representative_marker_province": 7121,
+        "bounds": [
+          4801,
+          778,
+          4827,
+          804
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_gyeongsangbuk.svg",
+        "sha256": "9d998cba460d991298071cf5763165d74c2d68af7fbda0628495db92cb636596"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_gyeongsangbuk.png",
+        "sha256": "09871644b17a5a66bd8d80432115e37f84c093704b0ca4cdddfdc4d7ad6b480c",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_gyeongsangbuk.png",
+        "sha256": "e6f8f5b82b6aa6935b5dec38ffee4442f75da444e03e84a22305d30254ff9175"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_gyeongsangnam",
+      "region": "gyeongsangnam",
+      "label": "경상남도",
+      "state": 1086,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_gyeongsangnam",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_gyeongsangnam.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "a359930ca0e5b5ea1efe192456b21d7d3c7e8e51db74d7a599d715891820d31f",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          1054,
+          4056,
+          4086,
+          10085,
+          12060,
+          13432,
+          13433,
+          13434,
+          13435
+        ],
+        "representative_marker_province": 4056,
+        "bounds": [
+          4797,
+          797,
+          4829,
+          823
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_gyeongsangnam.svg",
+        "sha256": "99de140b68328ddfa90569f7d2e1398469e02d09e5892e0aee55d1a206c53f5b"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_gyeongsangnam.png",
+        "sha256": "318147d3b49a0b32c012ffc78f219120d9713a109c8dd22ca0b781b6c7f0482b",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_gyeongsangnam.png",
+        "sha256": "88da1331255f85d640842460a00bb70659680c8a64b3db4a94a3f95b2e995166"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_chungcheongnam",
+      "region": "chungcheongnam",
+      "label": "충청남도",
+      "state": 1031,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_chungcheongnam",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_chungcheongnam.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "caa750e58d7cdaf3c4b0692e37b3164631eda914981f050f8412e6b9d146ae51",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          7175,
+          7204,
+          11977,
+          11992,
+          13442,
+          13443,
+          13444
+        ],
+        "representative_marker_province": 11977,
+        "bounds": [
+          4775,
+          779,
+          4804,
+          799
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_chungcheongnam.svg",
+        "sha256": "04c7f1d615474642d98f9b70b98882cc5cd2b02c01c96faa95519c05c18fa566"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_chungcheongnam.png",
+        "sha256": "45f57e1fbc01e66a157da54fe087efe4d6b5a2b51a254b846906aa0ec4a07f6e",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_chungcheongnam.png",
+        "sha256": "cb9d59686dfc2adad763a8fb4d2229baba3e3f16628b7edad2d0e0a5bd86536c"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_chungcheongbuk",
+      "region": "chungcheongbuk",
+      "label": "충청북도",
+      "state": 1087,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_chungcheongbuk",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_chungcheongbuk.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "9f794dd2cdc5bb5e0aaf5b9d39100ceb1c986a5658037711399a8cbd6fa7e31f",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          1100,
+          13445,
+          13446,
+          13447
+        ],
+        "representative_marker_province": 13446,
+        "bounds": [
+          4795,
+          776,
+          4812,
+          790
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_chungcheongbuk.svg",
+        "sha256": "92fb0d799663c49c32bed7d43840e52c83cd95e9ad654a367460798a407dbf92"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_chungcheongbuk.png",
+        "sha256": "624a85a70e95c6da06a3980dd680fac5be61d56c866414ad93173d623c10bdb4",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_chungcheongbuk.png",
+        "sha256": "fcf5ad7401aca1c1447b6f27ae81035cfc23197316445eef0f62759e4cdaf2f6"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_hwanghaenam",
+      "region": "hwanghaenam",
+      "label": "황해남도",
+      "state": 1083,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_hwanghaenam",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_hwanghaenam.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "ce19d9bffe3f4b145f0fefbed79ccd0234deaece38d263ce3a33963528aef6e5",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          1003,
+          4107,
+          7155,
+          13438,
+          13440,
+          13441
+        ],
+        "representative_marker_province": 13438,
+        "bounds": [
+          4752,
+          745,
+          4781,
+          767
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_hwanghaenam.svg",
+        "sha256": "10e9d9826db3dfb9e010f04b85857ca8d07c2b93a81fa27d694dfcfc466df4c0"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_hwanghaenam.png",
+        "sha256": "26f38e80903e6b5533fecace8176cbe55dbcbc648681757c76e46bd462f55231",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_hwanghaenam.png",
+        "sha256": "e15edc8fec43be62409dcd442211fa437415e9bc526230a7fa7f19cc46822ed2"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_hwanghaebuk",
+      "region": "hwanghaebuk",
+      "label": "황해북도",
+      "state": 1091,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_hwanghaebuk",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_hwanghaebuk.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "9e912c3212d8e24890a90444458202dfaced7ec3adbaa1413255defea71836ec",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          7070,
+          10065,
+          11915,
+          13439
+        ],
+        "representative_marker_province": 11915,
+        "bounds": [
+          4770,
+          740,
+          4790,
+          759
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_hwanghaebuk.svg",
+        "sha256": "a19958350539c0c255f46b6d4cd4dbef2851ace09f9189b265cc425586c8d0a0"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_hwanghaebuk.png",
+        "sha256": "0798be1a7ba17259810a65ca6de16d68e5cfcfeda570fbec4ab0b77fce7be9db",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_hwanghaebuk.png",
+        "sha256": "eb1eb16df1883319e2305cb84e383ba8d0cef228f25e5608a2db8ec2ec33ad90"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_pyeongannam",
+      "region": "pyeongannam",
+      "label": "평안남도",
+      "state": 527,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_pyeongannam",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_pyeongannam.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "a0220b8323d55ad42937cdf5d4f569a75e454cb2b903a30ae3128b5bde42baab",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          978,
+          3912,
+          4052,
+          7171,
+          9790,
+          13415
+        ],
+        "representative_marker_province": 4052,
+        "bounds": [
+          4759,
+          715,
+          4791,
+          748
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_pyeongannam.svg",
+        "sha256": "89d922ed44f3ba703367a7ccc7a6bc1ccaa49e5b50009d0e9aef0cca3cf732d9"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_pyeongannam.png",
+        "sha256": "bb12afbcc4f5ca8ac9430a238c984f72e6391a58f1d48e1f2cb5642c3a0d5331",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_pyeongannam.png",
+        "sha256": "91aca4e3b0d5f3676743be51bb28be30f31387765cc1e3e5aa80ab0a069b2fb3"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_pyeonganbuk",
+      "region": "pyeonganbuk",
+      "label": "평안북도",
+      "state": 1089,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_pyeonganbuk",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_pyeonganbuk.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "40efec4c73f1bea55a15b6786e33ad68bc1f903f5ae5535230950f37d0f27831",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          912,
+          6963,
+          9795,
+          9918,
+          11775,
+          11828,
+          11835,
+          11896
+        ],
+        "representative_marker_province": 11835,
+        "bounds": [
+          4746,
+          692,
+          4792,
+          733
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_pyeonganbuk.svg",
+        "sha256": "1fe11c90c3d542aa8d5e6e44359195b5ef5c0bf70d98fc5459f542c13944534d"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_pyeonganbuk.png",
+        "sha256": "614421907abbce7132232fa0c75d65c7c14ee0a3b5617565671d0805fe596738",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_pyeonganbuk.png",
+        "sha256": "b0a349b3836c670ba90505ad82a4dd4105fffda2026e82f56097166563bafdd8"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_hamgyeongnam",
+      "region": "hamgyeongnam",
+      "label": "함경남도",
+      "state": 1028,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_hamgyeongnam",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_hamgyeongnam.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "c885e9508ff761059cdb86d7471fbe5f4bca4174252e2ae9407ac92bf74c0362",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          848,
+          852,
+          906,
+          3852,
+          3904,
+          3981,
+          6928,
+          9899,
+          10083,
+          11770
+        ],
+        "representative_marker_province": 6928,
+        "bounds": [
+          4783,
+          697,
+          4816,
+          747
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_hamgyeongnam.svg",
+        "sha256": "1507c4585115450bb805a2a1ec81b6174d3c9a3f9b3f85afd04ceb40502e33be"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_hamgyeongnam.png",
+        "sha256": "38b98d7dda5ef07be075d4e4b3797044560797efff20e1880f58c5f5ed75b1c2",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_hamgyeongnam.png",
+        "sha256": "270857f40f8cf34df156fefa28f372f95384fe2cbfb75730d2766c71939cc597"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_hamgyeongbuk",
+      "region": "hamgyeongbuk",
+      "label": "함경북도",
+      "state": 1090,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_hamgyeongbuk",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_hamgyeongbuk.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "b0f840288b6b29f3d6e8ab55661fc61d32c2f00066bc102c1795482a9f218385",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          898,
+          959,
+          3803,
+          3860,
+          6822,
+          6922,
+          6944,
+          11878
+        ],
+        "representative_marker_province": 6822,
+        "bounds": [
+          4804,
+          669,
+          4845,
+          718
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_hamgyeongbuk.svg",
+        "sha256": "787025b80b56fbbd6c8628c8049f38beb15eded0028a5234ef2aaed250cf58df"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_hamgyeongbuk.png",
+        "sha256": "304996ef7bcd0c7afca126d2e23eafe0a4d0a74f9a244c224cb242aa1725d326",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_hamgyeongbuk.png",
+        "sha256": "4d7438f8ffaedc453dfaf1cd2145b6f220ac7ba4e8e62de164fe9e49070a0565"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    },
+    {
+      "decision_id": "HOK_KOR_cndp_develop_gangwon",
+      "region": "gangwon",
+      "label": "강원도",
+      "state": 1029,
+      "kind": "decision_row",
+      "sprite": "GFX_HOK_KOR_decision_cndp_gangwon",
+      "texture": "gfx/interface/decisions/HOK_KOR/cndp/cndp_gangwon.dds",
+      "width": 32,
+      "height": 32,
+      "bytes": 4224,
+      "sha256": "cadea36836e910bd9b4538b113ea304a320b72665615d3983a4f585a53beaf72",
+      "creation_method": "Original procedural vector/programmatic drawing; geographic outline from project data, no external illustration pixels and no AI image-generation tool.",
+      "geographic_input": {
+        "provinces": [
+          1148,
+          4004,
+          7021,
+          9936,
+          9981,
+          10036,
+          11958,
+          12011,
+          13418,
+          13419,
+          13422,
+          13423
+        ],
+        "representative_marker_province": 13418,
+        "bounds": [
+          4786,
+          740,
+          4826,
+          781
+        ],
+        "not_a_claim_of_new_map_geometry": true
+      },
+      "source_svg": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\sources\\svg\\cndp_gangwon.svg",
+        "sha256": "515b0603f475e35de93efc52393f964cc0d8d642c4f2e2f2d0dc3a21ee86c242"
+      },
+      "selected_original_png": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\originals\\cndp_gangwon.png",
+        "sha256": "69cb040869e458bd5c3d3cfdbc262c11cb199652c07372c1a1859ef82ec5847c",
+        "size": [
+          256,
+          256
+        ]
+      },
+      "actual_size_preview": {
+        "path": "C:\\hoi\\test\\hok-korean-cndp-state-development-20261108-01\\artwork\\renders\\png\\cndp_gangwon.png",
+        "sha256": "bdaccda6141e5a40504e88f4ea36544fafb8c0c5683eb8c8ab0dc6997d61f96e"
+      },
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "nonzero_bounds": [
+          1,
+          1,
+          30,
+          30
+        ],
+        "outer_one_pixel_transparent": true,
+        "transparent_pixels": 307,
+        "partial_alpha_pixels": 107
+      }
+    }
+  ]
+}

@@ -83,9 +83,12 @@ peace_ai_desires = {
         peace_action_type = { puppet }
         enable = {
             FROM.FROM.FROM = {
-                state = 527
-                state = 1028
-				state = 1083 # HoK: Hwanghae
+                #20261107_kpopmodder: Preserve the old Korean region across its split successors.
+                OR = { state = 527 state = 1089 }
+                #20261107_kpopmodder: Preserve the old Korean region across its split successors.
+                OR = { state = 1028 state = 1090 }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				OR = { state = 1083 state = 1091 } # HoK: Hwanghae
             }
             FROM = {
                 original_tag = KOR
@@ -114,9 +117,12 @@ peace_ai_desires = {
             FROM.FROM.FROM = {
                 state = 525
                 state = 1029
-                state = 1031
-                state = 1030
-				state = 1082 # HoK: Jeolla
+                #20261107_kpopmodder: Preserve the old Korean region across its split successors.
+                OR = { state = 1031 state = 1087 }
+                #20261107_kpopmodder: Preserve the old Korean region across its split successors.
+                OR = { state = 1030 state = 1086 }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				OR = { state = 1082 state = 1088 } # HoK: Jeolla
 				state = 1084 # HoK: Jeju
             }
             FROM = {

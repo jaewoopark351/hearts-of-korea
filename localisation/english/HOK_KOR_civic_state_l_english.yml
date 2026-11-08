@@ -1,4 +1,5 @@
 ﻿l_english:
+#20261108_kpopmodder: Name civic values and evidence while preserving all numeric conditions, effects and saved state.
 #20261011_kpopmodder: Localise independent industrial policies, procurement scandals and the fictional prosecutor-coup chain with exact costs and deadlines.
  HOK_KOR_chaebol_established:0 "재벌의 산업망"
  HOK_KOR_chaebol_established_desc:0 "재벌 영향력 25~49. 기업의 투자·납품망이 산업 동원의 기반을 제공합니다."
@@ -108,3 +109,18 @@
  HOK_KOR_chaebol_interfering_desc:0 "재벌 영향력 50~74. 산업 계약과 납품망에 개입할 수 있을 만큼 재벌의 영향력이 커졌습니다."
  HOK_KOR_civic_interfering:0 "시민사회의 정책 참여"
  HOK_KOR_civic_interfering_desc:0 "시민사회 영향력 50~74. 현장 협의와 공적 감시가 정책 집행에 지속적으로 영향을 줍니다."
+ HOK_KOR_chaebol_influence:0 "재벌 영향력"
+ HOK_KOR_civic_influence:0 "시민사회 영향력"
+ HOK_KOR_institutional_capture:0 "기관 장악"
+ HOK_KOR_procurement_corruption:0 "조달 비리"
+ HOK_KOR_prosecutor_defence_prepared:0 "증거 보전을 완료함"
+ HOK_KOR_chaebol_influence_below_tt:0 "$HOK_KOR_chaebol_influence$ §Y$RIGHT|0$§! 미만 (현재: [?HOK_KOR_chaebol_influence|Y0])"
+ HOK_KOR_chaebol_influence_above_tt:0 "$HOK_KOR_chaebol_influence$ §Y$RIGHT|0$§! 초과 (현재: [?HOK_KOR_chaebol_influence|Y0])"
+ HOK_KOR_chaebol_influence_at_least_tt:0 "$HOK_KOR_chaebol_influence$ §Y$RIGHT|0$§! 이상 (현재: [?HOK_KOR_chaebol_influence|Y0])"
+ HOK_KOR_civic_influence_below_tt:0 "$HOK_KOR_civic_influence$ §Y$RIGHT|0$§! 미만 (현재: [?HOK_KOR_civic_influence|Y0])"
+ HOK_KOR_civic_influence_above_tt:0 "$HOK_KOR_civic_influence$ §Y$RIGHT|0$§! 초과 (현재: [?HOK_KOR_civic_influence|Y0])"
+ HOK_KOR_civic_influence_at_least_tt:0 "$HOK_KOR_civic_influence$ §Y$RIGHT|0$§! 이상 (현재: [?HOK_KOR_civic_influence|Y0])"
+ HOK_KOR_institutional_capture_below_tt:0 "$HOK_KOR_institutional_capture$ §Y$RIGHT|0$§! 미만 (현재: [?HOK_KOR_institutional_capture|Y0])"
+ HOK_KOR_civic_influence_change_tt:0 "$HOK_KOR_civic_influence$: $RIGHT|+=0$"
+ HOK_KOR_institutional_capture_change_tt:0 "$HOK_KOR_institutional_capture$: $RIGHT|-=0$"
+ HOK_KOR_procurement_corruption_change_tt:0 "$HOK_KOR_procurement_corruption$: $RIGHT|-=0$"

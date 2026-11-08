@@ -142,7 +142,8 @@ country_event = {
 				size = 0.5
 				navy_ratio = 0.01
 				capital = 525
-				states = { 525 1082 1028 1029 1031 527 1083 716 745 328 717 714 761 715 }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				states = { 525 1082 1088 1028 1090 1029 1031 1087 527 1089 1083 1091 716 745 328 717 714 761 715 }
 			}
 			division_template = {
 				name = "Nonong-jeokwi-Sadan"
@@ -278,14 +279,18 @@ country_event = {
 		name = kor_events.3.a
 		hidden_effect = {
 
-			set_capital = { state = 1030 }
+			#20261107_kpopmodder: Keep the southern fallback capital at Busan after splitting Gyeongsang.
+			set_capital = { state = 1086 }
 			start_civil_war = {
 				ruling_party = fascism
 				ideology = democratic
 				size = 0.5
 				navy_ratio = 0.01
-				capital = 1030
-				states = { 1082 1028 1029 1031 1030 527 1083 716 745 328 717 714 761 715 }
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				capital = 1086
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				#20261107_kpopmodder: Preserve the old Korean region across its split successors.
+				states = { 1082 1088 1028 1090 1029 1031 1087 1030 1086 527 1089 1083 1091 716 745 328 717 714 761 715 }
 			}
 			
 			division_template = {
@@ -2013,6 +2018,7 @@ country_event = {
 }
 
 ##freedom to indochina(KOR)
+#20261108_kpopmodder: Carry Indochina independence and the existing Laos/Cambodia federation-core policy across current successor states.
 country_event = {
 	id = kor_events.62
 	title = kor_events.62.t
@@ -2032,9 +2038,17 @@ country_event = {
 			transfer_state = 286
 			transfer_state = 741
 			transfer_state = 670
+			transfer_state = 1017
+			transfer_state = 1066
+			transfer_state = 1067
+			transfer_state = 1068
+			transfer_state = 1069
 			
 			670 = { add_core_of = VIN }
 			741 = { add_core_of = VIN }
+			1067 = { add_core_of = VIN }
+			1068 = { add_core_of = VIN }
+			1069 = { add_core_of = VIN }
 			
 			set_cosmetic_tag = VIN_indochina_democratic
 			
@@ -2073,6 +2087,15 @@ country_event = {
 		}
 		
 		MAL = {
+			#20261108_kpopmodder: Transfer only British-owned and fully controlled Malayan Straits cores without clearing foreign occupation.
+			if = {
+				limit = { 1021 = { is_owned_by = ENG is_core_of = MAL is_fully_controlled_by = ENG } }
+				transfer_state = 1021
+			}
+			if = {
+				limit = { 1065 = { is_owned_by = ENG is_core_of = MAL is_fully_controlled_by = ENG } }
+				transfer_state = 1065
+			}
 			set_cosmetic_tag = MAL_democratic
 			
 			add_timed_idea = {
