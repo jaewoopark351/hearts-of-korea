@@ -1,6 +1,6 @@
 # 한국 연구시설·과학자 성장 연계 명세
 
-**2026-11-08 현행 소스 구분:** 남북도 분할 뒤 해군 우선 주는 경상남도 `1086`, 핵 우선 주는 함경남도 `1028`이다. 아래 적용 표는 현재 소스에 맞추며, 2026-10-31의 해군 `1030` 지급·해시·실행 수치는 당시 분할 전 이력으로 보존한다. 실제 우선 주와 옛 툴팁 ID의 불일치를 수리할 때는 [현행 지도 기준 코드 정렬 계획](HOK_STATE_REFERENCE_ALIGNMENT_PLAN.md)의 D-01을 먼저 읽는다. 해당 현지화 수리와 현행 우선 주의 신규 실행 검증은 아직 수행하지 않았다.
+**현행 소스 구분.** 남북도 분할 뒤 해군 우선 주는 경상남도 `1086`, 핵 우선 주는 함경남도 `1028`이다. 2026-10-31의 해군 `1030` 지급·해시·실행 수치는 분할 전 이력이다. 해군 툴팁 정정과 관측은 [2026-11-08 참조 정렬 구현 기록](incidents/2026-11-08-state-reference-alignment.md)을 따른다. 핵 우선 주 지명을 확인할 때는 [2026-11-10 핵 툴팁 정정 기록](#2026-11-10-핵-실험시설-우선-주-툴팁-정정-계획)을 먼저 읽는다. 본체와 별도 영문 번역에 지명 정정을 반영했다.
 
 작성: 2026-10-31 (Asia/Seoul). 설치본 HOI4 `Operation Postern 1.19.3.0.c01a`, Steam build `25205862` 기준. 2026-10-30 감사의 C2를 사용자가 후속 개발 범위로 승인한 뒤 구현한다. 호환성 복구 A1/A2와 구분하는 의도적인 보상 추가다.
 
@@ -66,6 +66,25 @@
 - 문구: `localisation/korean/HOK_KOR_research_network_l_korean.yml`, `localisation/english/HOK_KOR_research_network_l_english.yml`. UTF-8 BOM, 각 locale header, 같은 contributor note를 유지한다. 기존 프로젝트 계약에 맞춰 양쪽에 한국어 문구를 제공한다.
 - 표시 키: `HOK_KOR_land_research_network_tt`, `HOK_KOR_naval_research_network_tt`, `HOK_KOR_air_research_network_tt`, `HOK_KOR_nuclear_research_network_tt`.
 - 기존 중점 그림을 유지하므로 새 이미지·sprite를 추가하지 않는다.
+
+## 2026-11-10 핵 실험시설 우선 주 툴팁 정정 계획
+
+**소스 반영 · 정적 검증 완료.** [한국 중점](../common/national_focus/korea.txt) 「무궁화 꽃이 피었습니다」는 `HOK_KOR_establish_nuclear_research_network`를 호출한다. [배치 효과](../common/scripted_effects/HOK_KOR_research_network_effects.txt)가 우선하는 주 `1028`의 [지도 표시명 키](<../history/states/1028 - Hamgyong.txt>)는 `HOK_KOR_STATE_1028`이다. 작업 전 본체 `596b221`과 별도 영문 번역 `34f1c77`에서는 효과 툴팁 `HOK_KOR_nuclear_research_network_tt`가 옛 `$STATE_1028$`를 참조해 각각 ‘함경’과 ‘Hamgyeong’을 가리켰다.
+
+| 처리 | 대상과 근거 |
+|---|---|
+| 반영 | 본체 [한국어 채널](../localisation/korean/HOK_KOR_research_network_l_korean.yml)과 [영어 채널](../localisation/english/HOK_KOR_research_network_l_english.yml)에서 핵 툴팁의 지명 토큰을 `$HOK_KOR_STATE_1028$`로 교체했다. 두 채널은 기존 한국어 본문을 사용하며, 해당 키는 ‘함경남도’로 정의돼 있다. [한국어 주 이름](../localisation/korean/HOK_KOR_state_split_l_korean.yml) · [영어 채널 주 이름](../localisation/english/HOK_KOR_state_split_l_english.yml) |
+| 반영 | 활성 영문 번역 소스 `C:/hoi/Hearts of Korea English Translation Anime Modder's Edition`의 `localisation/english/HOK_KOR_research_network_l_english.yml`에서 같은 토큰을 교체했다. 해당 소스의 `localisation/english/HOK_KOR_state_split_l_english.yml`에 정의된 ‘Hamgyeongnam’을 재사용한다. |
+| 유지 | 시설 우선 주 `1028`, 적격 대체 주 선택, `Gotterdammerung` 조건, 시설 중복 방지, 과학자 성장, 기존 보상과 호환성용 옛 `STATE_1028` 정의를 보존했다. |
+| 제외 | 육군·해군·항공 연구시설의 툴팁과 효과는 이 지명 정정 범위 밖이다. |
+
+세 현지화 파일에서 지명 토큰과 같은 언어의 이름 정의를 대조했다. 작업 전과 비교하면 각 파일에서 핵 툴팁의 지명 토큰 한 곳과 기여자 주석 한 줄이 바뀌었다.
+
+### 실행 검증
+
+**한국어 화면.** `Operation Postern v1.19.4.2.2da5` (실행 체크섬 `580d`)의 한국 새 캠페인에서 `Gotterdammerung`을 포함한 활성 DLC와 기존 플레이세트로 중점 효과 화면 및 마우스 오버 툴팁에 ‘함경남도’가 표시되는 것을 확인했다. 화면 증거는 `C:/hoi/test/hok-regional-focus-rewards-20261110-01/runs/production-ko/screenshots/nuclear-ko.jpg`에 있다.
+
+**영문 화면.** 같은 설치본을 완전히 재시작해 별도 영문 번역과 지역 보상 진단 모드로 확인했다(실행 체크섬 `9928`). 진단 모드에는 현지화 파일이 없다. 중점 효과 화면과 마우스 오버 툴팁에 ‘Hamgyeongnam’이 표시됐다. 화면 증거는 `C:/hoi/test/hok-regional-focus-rewards-20261110-01/runs/probe-en/screenshots/nuclear-en.jpg`에 있다. 이번 실행 검증은 지명 표시에 한정했다.
 
 ## 설치본 근거
 

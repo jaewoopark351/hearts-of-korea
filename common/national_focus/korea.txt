@@ -159,18 +159,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		#20261110_kpopmodder: Restore the original three shared slots in each Pyeongan and Hamgyeong successor.
 		completion_reward = {
 			527 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 			}
 			1089 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 3
 			}
 			1028 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 			}
 			1090 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 3
 			}
 		}
 	}
@@ -198,24 +199,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		#20261110_kpopmodder: Restore the original two shared slots in each southern successor state.
 		completion_reward = {
 			1082 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 			}
 			1088 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 			}
 			1030 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 			}
 			1086 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 			}
 			1031 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 			}
 			1087 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
@@ -242,6 +244,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		#20261110_kpopmodder: Restore the original two shared slots in each Hwanghae successor.
 		completion_reward = {
 			525 = {
 					add_extra_state_shared_building_slots = 2
@@ -250,10 +253,10 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 2
 			}
 			1083 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 			}
 			1091 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
@@ -765,6 +768,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		#20261110_kpopmodder: Restore two infrastructure levels in each Chungcheong and Gyeongsang successor.
 		completion_reward = {
 			525 = {
 				add_building_construction = {
@@ -776,28 +780,28 @@ focus_tree = {
 			1031 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			1087 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			1030 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			1086 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -819,6 +823,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		#20261110_kpopmodder: Restore two infrastructure levels in each Hwanghae and Pyeongan successor.
 		completion_reward = {
 			custom_effect_tooltip = KOR_gyeongui_expressway_tt
 			if = {
@@ -838,28 +843,28 @@ focus_tree = {
 			1083 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			1091 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			527 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			1089 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -10721,7 +10726,9 @@ focus_tree = {
 		prerequisite = { focus = HOK_KOR_regional_industry_fund }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			#20261110_kpopmodder: Show the separate southern and northern investment decisions.
 			unlock_decision_tooltip = HOK_KOR_pyeongan_industry_project
+			unlock_decision_tooltip = HOK_KOR_pyeonganbuk_industry_project
 		}
 	}
 
@@ -10763,7 +10770,9 @@ focus_tree = {
 		prerequisite = { focus = HOK_KOR_gangwon_electrical_workshops }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			#20261110_kpopmodder: Show the separate southern and northern investment decisions.
 			unlock_decision_tooltip = HOK_KOR_chungcheong_industry_project
+			unlock_decision_tooltip = HOK_KOR_chungcheongbuk_industry_project
 		}
 	}
 
@@ -10784,7 +10793,9 @@ focus_tree = {
 		prerequisite = { focus = HOK_KOR_chungcheong_supplier_network }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			#20261110_kpopmodder: Show the separate southern and northern dockyard decisions.
 			unlock_decision_tooltip = HOK_KOR_gyeongsang_shipbuilding_project
+			unlock_decision_tooltip = HOK_KOR_gyeongsangbuk_shipbuilding_project
 		}
 	}
 
