@@ -1538,7 +1538,8 @@ country_event = {
 	id = kor_events.45
 	title = kor_events.45.t
 	desc = kor_events.45.d
-	picture = GFX_report_event_K003
+	#20261111_kpopmodder: Use the project-owned AI illustration for Korean-American treaty notifications.
+	picture = GFX_HOK_KOR_us_defense_talks
 	
 	is_triggered_only = yes
 	
@@ -1548,6 +1549,9 @@ country_event = {
 			base = 10
 		}
 		
+		#20261111_kpopmodder: Grant the accepted bilateral defense-cost spirits once without changing treaty AI or diplomacy timing.
+		custom_effect_tooltip = HOK_KOR_us_defense_treaty_accept_tt
+		hidden_effect = { KOR = { HOK_KOR_apply_us_defense_treaty = yes } }
 		KOR = {
 			set_global_flag = rok_us_alliance_formed_flag
 			country_event = { id = KOR_events.46 days = 1 }
@@ -1571,7 +1575,8 @@ country_event = {
 	id = kor_events.46
 	title = kor_events.46.t
 	desc = kor_events.46.d
-	picture = GFX_report_event_K003
+	#20261111_kpopmodder: Use the project-owned AI illustration for Korean-American treaty notifications.
+	picture = GFX_HOK_KOR_us_defense_talks
 	
 	is_triggered_only = yes
 	
@@ -1597,7 +1602,8 @@ country_event = {
 	id = kor_events.47
 	title = kor_events.47.t
 	desc = kor_events.47.d
-	picture = GFX_report_event_K003
+	#20261111_kpopmodder: Use the project-owned AI illustration for Korean-American treaty notifications.
+	picture = GFX_HOK_KOR_us_defense_talks
 	
 	is_triggered_only = yes
 	

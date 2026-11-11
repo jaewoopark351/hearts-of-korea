@@ -6039,7 +6039,9 @@ focus_tree = {
 			factor = 1
 		}
 		
+		#20261111_kpopmodder: Explain the conditional defense-cost exchange while preserving the existing American treaty event.
 		completion_reward = {
+			custom_effect_tooltip = HOK_KOR_us_defense_treaty_request_tt
 			USA = {
 				country_event = kor_events.45
 			}
@@ -6066,48 +6068,20 @@ focus_tree = {
 			factor = 1
 		}
 		
+		#20261111_kpopmodder: Request the American stationing decision before granting divisions or changing defense costs.
 		completion_reward = {
-			custom_effect_tooltip = KOR_usfk_tt
+			custom_effect_tooltip = HOK_KOR_us_defense_station_request_tt
 			hidden_effect = {
-				division_template = {
-					name = "USFK Division"
-					priority = 1
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-			
-	    	   		 	infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-			
-	    	   		 	infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
+				if = {
+					limit = { NOT = { has_country_flag = HOK_KOR_us_defense_station_requested } }
+					set_country_flag = HOK_KOR_us_defense_station_requested
+					if = {
+						limit = { country_exists = USA }
+						USA = { country_event = { id = HOK_KOR_us_defense.1 } }
 					}
-					support = {
-						recon = { x = 0 y = 0 }      		
-						artillery = { x = 0 y = 1 }
-						engineer = { x = 0 y = 2 }
-					}
+					else = { HOK_KOR_refuse_us_defense_stationing = yes }
 				}
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 835 }
-					create_unit = {
-						division = "name = \"1st 'Yongsan' USFK Division\" division_template = \"USFK Division\" start_experience_factor = 0.3" 
-						owner = KOR
-					}
-					create_unit = {
-						division = "name = \"2nd 'Pyeongtaek' USFK Division\" division_template = \"USFK Division\" start_experience_factor = 0.3" 
-						owner = KOR
-					}
-					create_unit = {
-						division = "name = \"3rd 'Osan' USFK Division\" division_template = \"USFK Division\" start_experience_factor = 0.3" 
-						owner = KOR
-					}
-				}
-			}				
+			}
 		}
 	}
 	#Focus for katusa
@@ -6123,6 +6097,16 @@ focus_tree = {
 		available_if_capitulated = no
 		prerequisite = { 
 			focus = KOR_usfk 
+		}
+		#20261111_kpopmodder: Require actual stationing approval for new requests while preserving completed legacy-save access.
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = HOK_KOR_us_defense_station_approved_tt
+				OR = {
+					NOT = { has_country_flag = HOK_KOR_us_defense_station_requested }
+					has_country_flag = HOK_KOR_us_defense_station_approved
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1

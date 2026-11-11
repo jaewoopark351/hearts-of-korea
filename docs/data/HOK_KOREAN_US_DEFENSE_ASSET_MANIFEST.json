@@ -1,0 +1,655 @@
+{
+  "schema_version": 1,
+  "title": "Hearts of Korea Korean-American defense sharing selected artwork",
+  "date": "2026-11-11",
+  "baseline": {
+    "branch": "feat/korean-focus-expansion-ai",
+    "commit": "e2009b635d79c80a67fed0370d5fe36a823b656f"
+  },
+  "scope": "Only six selected generated originals and eight integrated runtime textures are asset inventory entries. Rejected/intermediate outputs are described solely in provenance and prompt history.",
+  "credits_document": "docs/HOK_KOREAN_US_DEFENSE_ASSET_CREDITS.md",
+  "authorship": {
+    "generated_art": "AI-generated fictional artwork; selection and integration by continuation contributor kpopmodder",
+    "inherited_assets": "Existing HOK and Paradox flag references remain attributed to their sources; no new independent asset licence claimed"
+  },
+  "counts": {
+    "selected_originals": 6,
+    "selected_photo_originals": 2,
+    "selected_icon_originals": 4,
+    "runtime_assets": 8,
+    "event_photo_textures": 4,
+    "national_spirit_textures": 4,
+    "logical_flag_references": 2
+  },
+  "generation": {
+    "tool": "image_gen.imagegen (built-in)",
+    "model": "not exposed by tool result",
+    "date": "2026-11-11",
+    "rejected_outputs_in_asset_inventory": false
+  },
+  "selected_sources": [
+    {
+      "id": "talks_selected",
+      "category": "event_photo",
+      "method": "AI generated; built-in image_gen correction edit",
+      "tool": "image_gen.imagegen (built-in)",
+      "model": "not exposed by tool",
+      "date": "2026-11-11",
+      "project_path": "docs/assets/us-defense-sharing/generated/photos/us_defense_talks_selected.png",
+      "source_tool_file": "C:/Users/jaewo/.codex/generated_images/01a1c9ad-e7d7-7250-bc9a-426b3a5c025e/exec-b0454617-9992-46ed-b5c5-36e242a90eee.png",
+      "sha256": "B9678134BFCC74A2765E08725BE8F9AAACA8D38DFF1E1DEEEA17BAA8A0841C67",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "selected": true,
+      "prompt": "Use case: precise-object-edit\nAsset type: AI-generated black-and-white period diplomatic photograph for a Hearts of Iron IV event.\nEdit target: image 1, the Korean-American treaty signing scene. Supporting references: image 2 is the exact Korean flag design, image 3 is the exact period United States flag design. These two small flag designs are geometry references only.\nChange only the two flag designs in the photograph so that the existing cloth flags faithfully carry the reference designs in correct upright orientation. In particular the Taegeukgi must have exactly four correctly placed trigrams: upper-left three solid bars; upper-right broken/solid/broken; lower-left solid/broken/solid; lower-right all three broken. Its central taegeuk is the normal upright symbol. The United States flag is 48 stars arranged six rows of eight, with thirteen alternating stripes. Render the designs naturally following the current gentle folds, retaining the same monochrome photograph.\nKeep the original anonymous diplomats, faces, hands, pens, papers, clothing, lighting, furniture, background, composition, and image proportions unchanged. No added text, borders, watermark, stars outside the US canton or new flag. Do not convert the photo into a drawing or a poster.",
+      "input_references": [
+        "C:/Users/jaewo/.codex/generated_images/01a1c9ad-e7d7-7250-bc9a-426b3a5c025e/exec-cc287111-77da-49b1-a9d4-340cfec17bae.png",
+        "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/reference_KOR_democratic.png",
+        "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/reference_USA_democratic.png"
+      ],
+      "prompt_history_document": "docs/HOK_KOREAN_US_DEFENSE_ASSET_CREDITS.md#생성편집-프롬프트-전문"
+    },
+    {
+      "id": "dominion_selected",
+      "category": "event_photo",
+      "method": "AI generated; built-in image_gen correction edit",
+      "tool": "image_gen.imagegen (built-in)",
+      "model": "not exposed by tool",
+      "date": "2026-11-11",
+      "project_path": "docs/assets/us-defense-sharing/generated/photos/us_defense_dominion_selected.png",
+      "source_tool_file": "C:/Users/jaewo/.codex/generated_images/01a1c9ad-e7d7-7250-bc9a-426b3a5c025e/exec-d991b6b5-c69f-49a3-9186-a492398a2c34.png",
+      "sha256": "D211C4073F8B5582826C44B9335ECE1667D3DACCA4A724FF0F2D8E3C639FB2FB",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "selected": true,
+      "prompt": "Use case: precise-object-edit\nAsset type: fictional black-and-white late-1930s diplomatic press photograph, prepared for a shallow newspaper picture.\nEdit target: image 1, the standing American and Korean officials holding a plain document folder. Image 2 is an exact Korean flag geometry reference, image 3 is an exact period American flag geometry reference.\nMake two tightly bounded corrections:\n1. Correct both hanging flags to the reference designs. Taegeukgi must have upright taegeuk and exactly four trigrams: upper-left three solid, upper-right broken/solid/broken, lower-left solid/broken/solid, lower-right all broken. American flag must have thirteen stripes and exactly FORTY-EIGHT stars in SIX horizontal rows of EIGHT stars, in the canton only. Preserve monochrome cloth shading and natural gentle drape.\n2. The two principal men now hold the SAME closed plain folder HIGHER, at mid-chest level, between them; bend their elbows naturally and preserve realistic hands. This brings the folder near the faces and flag symbols so the scene remains meaningful in a shallow horizontal newspaper crop.\nPreserve every man's identity, facial expression, 1930s suit, positions, backgrounds, period microphones, camera framing, aspect ratio and archival grain. Keep aides secondary. No extra people, extra fingers, visible text, caption, number, watermark, poster border or modern item. This is a new fictional alternate-history scene, not a real photograph of a historical event.",
+      "input_references": [
+        "C:/Users/jaewo/.codex/generated_images/01a1c9ad-e7d7-7250-bc9a-426b3a5c025e/exec-53277031-54f2-4dd6-ad87-98643179980f.png",
+        "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/reference_KOR_democratic.png",
+        "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/reference_USA_democratic.png"
+      ],
+      "prompt_history_document": "docs/HOK_KOREAN_US_DEFENSE_ASSET_CREDITS.md#생성편집-프롬프트-전문"
+    },
+    {
+      "id": "HOK_KOR_us_defense_cost_sharing_1_source",
+      "content_id": "HOK_KOR_us_defense_cost_sharing_1",
+      "category": "national_spirit_icon",
+      "method": "AI-generated imagery; image_gen edits for flag correction, income variant and genuine tier I/II; deterministic resizing/DDS export only",
+      "tool": "image_gen.imagegen (built-in)",
+      "model": "not exposed by tool result",
+      "date": "2026-11-11",
+      "project_path": "docs/assets/us-defense-sharing/generated/icons/HOK_KOR_us_defense_cost_sharing_1.png",
+      "source_tool_file": "C:/Users/jaewo/.codex/generated_images/01a1c9ae-2e46-72e3-9bd0-858baa1c9052/exec-b8db45f7-a512-4d7b-a908-ba51ab0f399a.png",
+      "sha256": "E7F457B7B9CA1DEAB5FD3CD708356CF85B1974988ADB5018CEA27F3108D81226",
+      "dimensions": [
+        1180,
+        1333
+      ],
+      "selected": true,
+      "prompt": "Use case: precise-object-edit. EDIT target Image1 only. Keep the entire badge, shape, blue background, parchment, flowing coins, arrow, numeral I, metal frame, all positions and transparent alpha EXACTLY unchanged.\nCorrect ONLY the miniature US flag in its existing rectangle. The previous flag erroneously has 7 columns and 6 rows =42 stars. Replace its star field by EXACTLY EIGHT columns and SIX straight rows =48 white stars, all aligned, with eight stars on every row. Visually count them. Make the blue canton a little wider within the same flag rectangle if needed to fit eight stars. US flag has exactly THIRTEEN red and white horizontal stripes, seven red and six white, beginning and ending red. Image3 is exact flag pattern reference. Do not make a modern staggered 50-star field.\nAlso ensure Korean trigrams MATCH Image2 precisely: top-left three solid, top-right broken-solid-broken, bottom-left solid-broken-solid, bottom-right all three broken. Keep taegeuk red upper half and blue lower half. Preserve white field and placement.\nReturn ONE same badge, transparent outside. No added graphics or text.",
+      "input_references": [
+        "C:/Users/jaewo/.codex/generated_images/01a1c9ae-2e46-72e3-9bd0-858baa1c9052/exec-a246c251-6977-4f0f-b1d6-edae1a303c68.png",
+        "C:/hoi/test/us-defense-sharing-20261111-01/art/icons/KOR_democratic.png",
+        "C:/hoi/test/us-defense-sharing-20261111-01/art/icons/USA_democratic.png"
+      ],
+      "prompt_history_document": "docs/HOK_KOREAN_US_DEFENSE_ASSET_CREDITS.md#아이콘-생성편집-프롬프트-전문"
+    },
+    {
+      "id": "HOK_KOR_us_defense_cost_sharing_2_source",
+      "content_id": "HOK_KOR_us_defense_cost_sharing_2",
+      "category": "national_spirit_icon",
+      "method": "AI-generated imagery; image_gen edits for flag correction, income variant and genuine tier I/II; deterministic resizing/DDS export only",
+      "tool": "image_gen.imagegen (built-in)",
+      "model": "not exposed by tool result",
+      "date": "2026-11-11",
+      "project_path": "docs/assets/us-defense-sharing/generated/icons/HOK_KOR_us_defense_cost_sharing_2.png",
+      "source_tool_file": "C:/Users/jaewo/.codex/generated_images/01a1c9ae-2e46-72e3-9bd0-858baa1c9052/exec-8a2cc54f-78f3-414b-97b3-38ee2b24cb46.png",
+      "sha256": "BB0FA453F4B6D09A1F813BE5A13D25393A52DCA62C48B70628DEE71CC35713E6",
+      "dimensions": [
+        1180,
+        1333
+      ],
+      "selected": true,
+      "prompt": "Use case: precise-object-edit. Image1 is the ONLY edit target. Change ONLY the bottom metal plate's Roman numeral from \"I\" to \"II\", centered in the identical plate. This is the tier-II upgrade of exactly the same HOI4 national-spirit icon. Preserve every other detail: outline, canvas proportions, transparent background and alpha, blue enamel, metal rim, gold leaves, star, parchment, three outward-moving gold coins and arrow, entire positions and sizes. Preserve BOTH flags precisely, including South Korean red-over-blue taegeuk and four trigrams, and the historical US flag's 48 stars arranged 6 rows of 8 with exactly 13 red-white stripes. Do not redraw their patterns or add/remove stars. No other changes, no new text or objects. Return one badge on true transparent background.",
+      "input_references": [
+        "C:/Users/jaewo/.codex/generated_images/01a1c9ae-2e46-72e3-9bd0-858baa1c9052/exec-b8db45f7-a512-4d7b-a908-ba51ab0f399a.png"
+      ],
+      "prompt_history_document": "docs/HOK_KOREAN_US_DEFENSE_ASSET_CREDITS.md#아이콘-생성편집-프롬프트-전문"
+    },
+    {
+      "id": "HOK_KOR_korean_defense_contribution_1_source",
+      "content_id": "HOK_KOR_korean_defense_contribution_1",
+      "category": "national_spirit_icon",
+      "method": "AI-generated imagery; image_gen edits for flag correction, income variant and genuine tier I/II; deterministic resizing/DDS export only",
+      "tool": "image_gen.imagegen (built-in)",
+      "model": "not exposed by tool result",
+      "date": "2026-11-11",
+      "project_path": "docs/assets/us-defense-sharing/generated/icons/HOK_KOR_korean_defense_contribution_1.png",
+      "source_tool_file": "C:/Users/jaewo/.codex/generated_images/01a1c9ae-2e46-72e3-9bd0-858baa1c9052/exec-1d5e831b-5d85-4549-a79c-a37d6bc1b722.png",
+      "sha256": "72AEC05A4DEE0AE929C71BC730B7C0075D986CFC2D4BB0D7DB5D7B9B10A7C11F",
+      "dimensions": [
+        1180,
+        1333
+      ],
+      "selected": true,
+      "prompt": "Use case: precise-object-edit. EDIT Image1, a complete HOI4 national spirit badge. Preserve EVERYTHING in upper half exactly pixel-faithfully: silver shield top and gold star, blue enamel, both framed flag rectangles, Korean taegeuk and trigrams, and especially the US flag with EIGHT stars per row in SIX rows (48 total) and 13 stripes. Keep the whole badge frame, leaves, bottom Roman \"I\" plaque, transparent background, and overall proportions.\nChange ONLY the gold coins-and-arrow motif in the lower middle: replace the three separate coins flowing out with ONE stack of 3 gold coins on the right, and move a simple gold arrow so it flows from the parchment on left INTO that coin stack on right. This means contribution RECEIPTS for the United States, not spending. Keep parchment's existing position and scale.\nDo not change flags, do not respace any stars. One badge, no other text, original true transparency outside.",
+      "input_references": [
+        "C:/Users/jaewo/.codex/generated_images/01a1c9ae-2e46-72e3-9bd0-858baa1c9052/exec-b8db45f7-a512-4d7b-a908-ba51ab0f399a.png"
+      ],
+      "prompt_history_document": "docs/HOK_KOREAN_US_DEFENSE_ASSET_CREDITS.md#아이콘-생성편집-프롬프트-전문"
+    },
+    {
+      "id": "HOK_KOR_korean_defense_contribution_2_source",
+      "content_id": "HOK_KOR_korean_defense_contribution_2",
+      "category": "national_spirit_icon",
+      "method": "AI-generated imagery; image_gen edits for flag correction, income variant and genuine tier I/II; deterministic resizing/DDS export only",
+      "tool": "image_gen.imagegen (built-in)",
+      "model": "not exposed by tool result",
+      "date": "2026-11-11",
+      "project_path": "docs/assets/us-defense-sharing/generated/icons/HOK_KOR_korean_defense_contribution_2.png",
+      "source_tool_file": "C:/Users/jaewo/.codex/generated_images/01a1c9ae-2e46-72e3-9bd0-858baa1c9052/exec-abf806da-e3f8-4a29-b684-69a66fa14a87.png",
+      "sha256": "2D8F1E155158B0FE22C9E7BF6456C6CA48E04B1228F5EF68AB1C68511587AF49",
+      "dimensions": [
+        1180,
+        1333
+      ],
+      "selected": true,
+      "prompt": "Use case: precise-object-edit. Image1 is the ONLY edit target. Change ONLY the bottom metal plaque's Roman numeral from \"I\" to \"II\", centered inside the same plate. Tier-II upgrade of exactly the same HOI4 national-spirit badge. All other pixels/positions should remain unchanged: blue shield, worn silver rim, gold star/leaves, treaty scroll, inward gold arrow and received gold coin stack, canvas proportions, and TRUE transparent background. Preserve BOTH flags exactly: Taegeukgi's red-over-blue taegeuk and all four trigrams; the historical US flag's EXACTLY EIGHT white stars on each of SIX straight rows =48, 13 red/white stripes starting/ending red. Do not redraw flags, do not change stars or stripes. No other edits, no new objects or text, one badge only.",
+      "input_references": [
+        "C:/Users/jaewo/.codex/generated_images/01a1c9ae-2e46-72e3-9bd0-858baa1c9052/exec-1d5e831b-5d85-4549-a79c-a37d6bc1b722.png"
+      ],
+      "prompt_history_document": "docs/HOK_KOREAN_US_DEFENSE_ASSET_CREDITS.md#아이콘-생성편집-프롬프트-전문"
+    }
+  ],
+  "runtime_assets": [
+    {
+      "id": "us_defense_talks",
+      "category": "event_photo",
+      "source_id": "talks_selected",
+      "sprite": "GFX_HOK_KOR_us_defense_talks",
+      "gfx_path": "interface/HOK_KOR_us_defense_event_pictures.gfx",
+      "runtime_path": "gfx/event_pictures/HOK_KOR/us_defense/us_defense_talks.dds",
+      "dimensions": [
+        210,
+        176
+      ],
+      "sha256": "11EDFFFB5588C9ED4319244984DA8AD4447207412513C440193F5A75B91ED650",
+      "bytes": 147968,
+      "format": "uncompressed legacy BGRA32 DDS, DDPF flags 65, RGB bits 32, one frame, no mipmaps",
+      "alpha": "all 255 (opaque)",
+      "frames": 1,
+      "mipmaps": false,
+      "transform": {
+        "method": "PowerShell System.Drawing HighQualityBicubic crop/resample; opaque pixels written to legacy BGRA32 DDS. No Python used.",
+        "source_crop": [
+          157,
+          0,
+          1222,
+          1024
+        ],
+        "source_dimensions": [
+          1536,
+          1024
+        ]
+      },
+      "static_verification": {
+        "header_and_length": "passed",
+        "dds_to_preview_rgb_pixel_mismatches": 0,
+        "non_opaque_pixels": 0,
+        "preview_inspected": true
+      },
+      "external_preview": "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/us_defense_talks.png"
+    },
+    {
+      "id": "us_defense_agreement_news",
+      "category": "event_photo",
+      "source_id": "talks_selected",
+      "sprite": "GFX_HOK_KOR_us_defense_agreement_news",
+      "gfx_path": "interface/HOK_KOR_us_defense_event_pictures.gfx",
+      "runtime_path": "gfx/event_pictures/HOK_KOR/us_defense/us_defense_agreement_news.dds",
+      "dimensions": [
+        397,
+        153
+      ],
+      "sha256": "453FFC5867B00200EAA53F142DE539E133EA6B85FE24152EDF182653BD4C66AC",
+      "bytes": 243092,
+      "format": "uncompressed legacy BGRA32 DDS, DDPF flags 65, RGB bits 32, one frame, no mipmaps",
+      "alpha": "all 255 (opaque)",
+      "frames": 1,
+      "mipmaps": false,
+      "transform": {
+        "method": "PowerShell System.Drawing HighQualityBicubic crop/resample; opaque pixels written to legacy BGRA32 DDS. No Python used.",
+        "source_crop": [
+          0,
+          320,
+          1536,
+          591.96
+        ],
+        "source_dimensions": [
+          1536,
+          1024
+        ]
+      },
+      "static_verification": {
+        "header_and_length": "passed",
+        "dds_to_preview_rgb_pixel_mismatches": 0,
+        "non_opaque_pixels": 0,
+        "preview_inspected": true
+      },
+      "external_preview": "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/us_defense_agreement_news.png"
+    },
+    {
+      "id": "us_defense_dominion",
+      "category": "event_photo",
+      "source_id": "dominion_selected",
+      "sprite": "GFX_HOK_KOR_us_defense_dominion",
+      "gfx_path": "interface/HOK_KOR_us_defense_event_pictures.gfx",
+      "runtime_path": "gfx/event_pictures/HOK_KOR/us_defense/us_defense_dominion.dds",
+      "dimensions": [
+        210,
+        176
+      ],
+      "sha256": "8B13E50096E50F72103296D193ED4ABCFA680435A7CB25ACDDDA1F2EDB1DFA69",
+      "bytes": 147968,
+      "format": "uncompressed legacy BGRA32 DDS, DDPF flags 65, RGB bits 32, one frame, no mipmaps",
+      "alpha": "all 255 (opaque)",
+      "frames": 1,
+      "mipmaps": false,
+      "transform": {
+        "method": "PowerShell System.Drawing HighQualityBicubic crop/resample; opaque pixels written to legacy BGRA32 DDS. No Python used.",
+        "source_crop": [
+          157,
+          0,
+          1222,
+          1024
+        ],
+        "source_dimensions": [
+          1536,
+          1024
+        ]
+      },
+      "static_verification": {
+        "header_and_length": "passed",
+        "dds_to_preview_rgb_pixel_mismatches": 0,
+        "non_opaque_pixels": 0,
+        "preview_inspected": true
+      },
+      "external_preview": "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/us_defense_dominion.png"
+    },
+    {
+      "id": "us_defense_dominion_news",
+      "category": "event_photo",
+      "source_id": "dominion_selected",
+      "sprite": "GFX_HOK_KOR_us_defense_dominion_news",
+      "gfx_path": "interface/HOK_KOR_us_defense_event_pictures.gfx",
+      "runtime_path": "gfx/event_pictures/HOK_KOR/us_defense/us_defense_dominion_news.dds",
+      "dimensions": [
+        397,
+        153
+      ],
+      "sha256": "510BA0E1FC4E0EAA7323C5BC71EA7676DFD331E5F06DB267F52930A681B2A2A5",
+      "bytes": 243092,
+      "format": "uncompressed legacy BGRA32 DDS, DDPF flags 65, RGB bits 32, one frame, no mipmaps",
+      "alpha": "all 255 (opaque)",
+      "frames": 1,
+      "mipmaps": false,
+      "transform": {
+        "method": "PowerShell System.Drawing HighQualityBicubic crop/resample; opaque pixels written to legacy BGRA32 DDS. No Python used.",
+        "source_crop": [
+          0,
+          110,
+          1536,
+          591.96
+        ],
+        "source_dimensions": [
+          1536,
+          1024
+        ]
+      },
+      "static_verification": {
+        "header_and_length": "passed",
+        "dds_to_preview_rgb_pixel_mismatches": 0,
+        "non_opaque_pixels": 0,
+        "preview_inspected": true
+      },
+      "external_preview": "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/us_defense_dominion_news.png"
+    },
+    {
+      "id": "HOK_KOR_us_defense_cost_sharing_1",
+      "category": "national_spirit_icon",
+      "source_id": "HOK_KOR_us_defense_cost_sharing_1_source",
+      "country": "KOR",
+      "tier": 1,
+      "motif": "outgoing separated coins",
+      "sprite": "GFX_idea_HOK_KOR_us_defense_cost_sharing_1",
+      "gfx_path": "interface/HOK_KOR_us_defense_ideas.gfx",
+      "runtime_path": "gfx/interface/ideas/HOK_KOR/us_defense/HOK_KOR_us_defense_cost_sharing_1.dds",
+      "dimensions": [
+        60,
+        68
+      ],
+      "sha256": "2946E53D923C42DB60D333CE494495DA261C287C7ACF31CC9CB98B2D3D21DFFA",
+      "bytes": 16448,
+      "format": "DDS uncompressed BGRA32 / DDPF_RGB|DDPF_ALPHAPIXELS",
+      "alpha": {
+        "transparent": 1223,
+        "opaque": 189,
+        "partial": 2668
+      },
+      "frames": 1,
+      "mipmaps": false,
+      "transform": {
+        "y": 1,
+        "method": "full uncropped image; aspect-preserving high-quality bicubic fit inside 58x66; centered in 60x68",
+        "width": 58,
+        "height": 66,
+        "x": 1
+      },
+      "palette": {
+        "field": "democratic diplomacy",
+        "rendering": "AI-painted muted deep-blue enamel with silver and brass metal; no whole-image hue transformation",
+        "reference_rgb": [
+          53,
+          91,
+          126
+        ],
+        "reference_hex": "#355b7e"
+      },
+      "static_verification": {
+        "header_and_length": "passed per icon-agent proof; dimensions and hash rechecked during documentation merge",
+        "dds_to_preview_rgba_pixel_match": "passed per icon-agent proof",
+        "actual_size": "passed per icon-agent 1x/2x inspection",
+        "source_copy_byte_identical_to_tool_output": true
+      },
+      "external_preview": "C:/hoi/test/us-defense-sharing-20261111-01/art/icons/HOK_KOR_us_defense_cost_sharing_1.png"
+    },
+    {
+      "id": "HOK_KOR_us_defense_cost_sharing_2",
+      "category": "national_spirit_icon",
+      "source_id": "HOK_KOR_us_defense_cost_sharing_2_source",
+      "country": "KOR",
+      "tier": 2,
+      "motif": "outgoing separated coins",
+      "sprite": "GFX_idea_HOK_KOR_us_defense_cost_sharing_2",
+      "gfx_path": "interface/HOK_KOR_us_defense_ideas.gfx",
+      "runtime_path": "gfx/interface/ideas/HOK_KOR/us_defense/HOK_KOR_us_defense_cost_sharing_2.dds",
+      "dimensions": [
+        60,
+        68
+      ],
+      "sha256": "CBFF7B3B7C07C76137673948DABC575F5DE33FF66A03D19FEE1E1D097EA14AF6",
+      "bytes": 16448,
+      "format": "DDS uncompressed BGRA32 / DDPF_RGB|DDPF_ALPHAPIXELS",
+      "alpha": {
+        "transparent": 1218,
+        "opaque": 184,
+        "partial": 2678
+      },
+      "frames": 1,
+      "mipmaps": false,
+      "transform": {
+        "y": 1,
+        "method": "full uncropped image; aspect-preserving high-quality bicubic fit inside 58x66; centered in 60x68",
+        "width": 58,
+        "height": 66,
+        "x": 1
+      },
+      "palette": {
+        "field": "democratic diplomacy",
+        "rendering": "AI-painted muted deep-blue enamel with silver and brass metal; no whole-image hue transformation",
+        "reference_rgb": [
+          53,
+          91,
+          126
+        ],
+        "reference_hex": "#355b7e"
+      },
+      "static_verification": {
+        "header_and_length": "passed per icon-agent proof; dimensions and hash rechecked during documentation merge",
+        "dds_to_preview_rgba_pixel_match": "passed per icon-agent proof",
+        "actual_size": "passed per icon-agent 1x/2x inspection",
+        "source_copy_byte_identical_to_tool_output": true
+      },
+      "external_preview": "C:/hoi/test/us-defense-sharing-20261111-01/art/icons/HOK_KOR_us_defense_cost_sharing_2.png"
+    },
+    {
+      "id": "HOK_KOR_korean_defense_contribution_1",
+      "category": "national_spirit_icon",
+      "source_id": "HOK_KOR_korean_defense_contribution_1_source",
+      "country": "USA",
+      "tier": 1,
+      "motif": "receiving coin stack",
+      "sprite": "GFX_idea_HOK_KOR_korean_defense_contribution_1",
+      "gfx_path": "interface/HOK_KOR_us_defense_ideas.gfx",
+      "runtime_path": "gfx/interface/ideas/HOK_KOR/us_defense/HOK_KOR_korean_defense_contribution_1.dds",
+      "dimensions": [
+        60,
+        68
+      ],
+      "sha256": "3D840300F6FE23C8585DC3A68842460F7E92F836EF68870EDE5A4A3F5B74F391",
+      "bytes": 16448,
+      "format": "DDS uncompressed BGRA32 / DDPF_RGB|DDPF_ALPHAPIXELS",
+      "alpha": {
+        "transparent": 1209,
+        "opaque": 185,
+        "partial": 2686
+      },
+      "frames": 1,
+      "mipmaps": false,
+      "transform": {
+        "y": 1,
+        "method": "full uncropped image; aspect-preserving high-quality bicubic fit inside 58x66; centered in 60x68",
+        "width": 58,
+        "height": 66,
+        "x": 1
+      },
+      "palette": {
+        "field": "democratic diplomacy",
+        "rendering": "AI-painted muted deep-blue enamel with silver and brass metal; no whole-image hue transformation",
+        "reference_rgb": [
+          53,
+          91,
+          126
+        ],
+        "reference_hex": "#355b7e"
+      },
+      "static_verification": {
+        "header_and_length": "passed per icon-agent proof; dimensions and hash rechecked during documentation merge",
+        "dds_to_preview_rgba_pixel_match": "passed per icon-agent proof",
+        "actual_size": "passed per icon-agent 1x/2x inspection",
+        "source_copy_byte_identical_to_tool_output": true
+      },
+      "external_preview": "C:/hoi/test/us-defense-sharing-20261111-01/art/icons/HOK_KOR_korean_defense_contribution_1.png"
+    },
+    {
+      "id": "HOK_KOR_korean_defense_contribution_2",
+      "category": "national_spirit_icon",
+      "source_id": "HOK_KOR_korean_defense_contribution_2_source",
+      "country": "USA",
+      "tier": 2,
+      "motif": "receiving coin stack",
+      "sprite": "GFX_idea_HOK_KOR_korean_defense_contribution_2",
+      "gfx_path": "interface/HOK_KOR_us_defense_ideas.gfx",
+      "runtime_path": "gfx/interface/ideas/HOK_KOR/us_defense/HOK_KOR_korean_defense_contribution_2.dds",
+      "dimensions": [
+        60,
+        68
+      ],
+      "sha256": "188A7AC2840354F33382B9FC2AF39F0D0B913F8BC09CF070090A60371EF358DE",
+      "bytes": 16448,
+      "format": "DDS uncompressed BGRA32 / DDPF_RGB|DDPF_ALPHAPIXELS",
+      "alpha": {
+        "transparent": 1193,
+        "opaque": 194,
+        "partial": 2693
+      },
+      "frames": 1,
+      "mipmaps": false,
+      "transform": {
+        "y": 1,
+        "method": "full uncropped image; aspect-preserving high-quality bicubic fit inside 58x66; centered in 60x68",
+        "width": 58,
+        "height": 66,
+        "x": 1
+      },
+      "palette": {
+        "field": "democratic diplomacy",
+        "rendering": "AI-painted muted deep-blue enamel with silver and brass metal; no whole-image hue transformation",
+        "reference_rgb": [
+          53,
+          91,
+          126
+        ],
+        "reference_hex": "#355b7e"
+      },
+      "static_verification": {
+        "header_and_length": "passed per icon-agent proof; dimensions and hash rechecked during documentation merge",
+        "dds_to_preview_rgba_pixel_match": "passed per icon-agent proof",
+        "actual_size": "passed per icon-agent 1x/2x inspection",
+        "source_copy_byte_identical_to_tool_output": true
+      },
+      "external_preview": "C:/hoi/test/us-defense-sharing-20261111-01/art/icons/HOK_KOR_korean_defense_contribution_2.png"
+    }
+  ],
+  "reference_sources": [
+    {
+      "id": "KOR_democratic_flag",
+      "source": "C:/hoi/hearts_of_korea/gfx/flags/KOR_democratic.tga",
+      "source_sha256": "3BCDB104244BF78B2DAE3F6DED909781F0A7997910BE4C42F9623623F6210A5A",
+      "role": "Inherited project flag; Taegeukgi design reference only, no copied raster in final photograph",
+      "dimensions": [
+        82,
+        52
+      ],
+      "preserved_original": "docs/assets/us-defense-sharing/generated/photos/references/KOR_democratic_project.tga",
+      "photo_input": "docs/assets/us-defense-sharing/generated/photos/references/reference_KOR_democratic.png",
+      "photo_input_sha256": "AF6790C595BF232218520349DD5716A1553C07A55EF0B6A342109E234AE96818",
+      "icon_input": "docs/assets/us-defense-sharing/generated/icons/references/KOR_democratic.png",
+      "icon_input_sha256": "AF6790C595BF232218520349DD5716A1553C07A55EF0B6A342109E234AE96818",
+      "conversion": "Uncompressed BGRA32 TGA decoded without design/colour edits into PNG; source provenance copy retained",
+      "rights_statement": "Inherited project flag, not claimed as newly authored"
+    },
+    {
+      "id": "USA_democratic_period_flag",
+      "source": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/gfx/flags/USA_democratic.tga",
+      "source_sha256": "329EBC817D1CFC141883357CC99EAC36AF32AA08EC3B970D1791E91D211D2559",
+      "role": "Installed HOI4 1.19.4.2 flag by Paradox; period US flag design reference only, no copied raster in final photograph; not an independently licensed public asset pack",
+      "dimensions": [
+        82,
+        52
+      ],
+      "preserved_original": "docs/assets/us-defense-sharing/generated/photos/references/USA_democratic_vanilla_1.19.4.tga",
+      "photo_input": "docs/assets/us-defense-sharing/generated/photos/references/reference_USA_democratic.png",
+      "photo_input_sha256": "4E1BD6BD5E1DED80E34683C2993C1FFF998C701E9FF0711E2B80A4C50492FB7C",
+      "icon_input": "docs/assets/us-defense-sharing/generated/icons/references/USA_democratic.png",
+      "icon_input_sha256": "4E1BD6BD5E1DED80E34683C2993C1FFF998C701E9FF0711E2B80A4C50492FB7C",
+      "conversion": "Uncompressed BGRA32 TGA decoded without design/colour edits into PNG; source provenance copy retained",
+      "rights_statement": "Paradox-distributed installed HOI4 flag used as symbol reference; not an independently licensed public artwork pack"
+    }
+  ],
+  "gfx_definitions": [
+    {
+      "path": "interface/HOK_KOR_us_defense_event_pictures.gfx",
+      "sha256": "35B05B84672A41C417A823A9A3DA3340B5DDBBFCF33D2012A6CBCA18539F7CAC"
+    },
+    {
+      "path": "interface/HOK_KOR_us_defense_ideas.gfx",
+      "sha256": "039199D12B6F67D2E4DD05A37532F6C23A38FE169997159B99D62426141BD0A6"
+    }
+  ],
+  "validation": {
+    "source": {
+      "selected_original_dimensions_and_hashes": "passed",
+      "project_originals_byte_identical_to_actual_tool_outputs": "passed",
+      "runtime_dimensions_and_hashes": "passed",
+      "relative_project_owned_texture_chain": "passed"
+    },
+    "static_visual": {
+      "photographs": "selected originals and four actual-size country/news crops inspected",
+      "icons": "Passed: 60x68 images inspected together on #202326 UI-like background, at 1x and 2x nearest-neighbor. Both flags recognized, separated outgoing coins vs receiving stack and I/II visible; full border and transparent margins preserved. This is static artwork inspection, not in-game UI evidence."
+    },
+    "runtime": {
+      "status": "partially observed in engine: four photographs and three national-spirit icons",
+      "owner": "root implementation task",
+      "date": "2026-11-11",
+      "run": "run3 and Korean-player diagnostic save reloads; run4 for the Korean tier-II icon",
+      "engine_version": "Operation Postern v1.19.4.2.2da5",
+      "runtime_checksums_by_run": {"run3": "1b0d", "run4": "1402"},
+      "language": "l_korean",
+      "incident_record": "docs/incidents/2026-11-11-korean-us-defense-sharing.md",
+      "screenshots_root": "C:/hoi/test/us-defense-sharing-20261111-01/runtime/screenshots/",
+      "observations": [
+        {
+          "asset_id": "us_defense_talks",
+          "status": "observed",
+          "surface": "treaty and stationing country-event pictures",
+          "screenshots": ["01-treaty-offer.png", "02-stationing-options.png"]
+        },
+        {
+          "asset_id": "us_defense_agreement_news",
+          "status": "observed",
+          "surface": "defence-cost agreement newspaper picture",
+          "screenshots": ["03-agreement-news.png"]
+        },
+        {
+          "asset_id": "us_defense_dominion",
+          "status": "observed",
+          "surface": "Korean dominion notification picture and single acceptance option",
+          "screenshots": ["11-korean-dominion-single-accept.png"]
+        },
+        {
+          "asset_id": "us_defense_dominion_news",
+          "status": "observed",
+          "surface": "dominion newspaper picture from American and Korean perspectives",
+          "screenshots": ["06-dominion-news.png", "12-korean-dominion-news.png"]
+        },
+        {
+          "asset_id": "HOK_KOR_us_defense_cost_sharing_1",
+          "status": "observed",
+          "surface": "Korean tier-I national-spirit icon after refusal",
+          "screenshots": ["09-kor-tier1-after-refusal.png"]
+        },
+        {
+          "asset_id": "HOK_KOR_us_defense_cost_sharing_2",
+          "status": "observed",
+          "run": "run4 normal focus progression",
+          "runtime_checksum": "1402",
+          "surface": "Korean tier-II national-spirit icon with both flags and +35.0% Consumer Goods Factories factor tooltip",
+          "screenshots": ["22-normal-kor-tier2-35percent.png"]
+        },
+        {
+          "asset_id": "HOK_KOR_korean_defense_contribution_1",
+          "status": "not yet observed",
+          "surface": "static source, actual-size preview and DDS checks only",
+          "screenshots": []
+        },
+        {
+          "asset_id": "HOK_KOR_korean_defense_contribution_2",
+          "status": "observed",
+          "surface": "American tier-II national-spirit icon and -15.0% Consumer Goods Factories factor tooltip",
+          "screenshots": ["04-usa-tier2.png"]
+        }
+      ],
+      "note": "These are specific engine-rendered UI observations reported by the runtime owner. Gameplay effects, save state, AI and normal focus progression are separate evidence in the incident record. The unobserved American tier-I icon retains its static validation status."
+    }
+  },
+  "evidence": {
+    "photos": "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/photos-proof.json",
+    "icons": "C:/hoi/test/us-defense-sharing-20261111-01/art/icons/manifest.json",
+    "icon_static_verification": "C:/hoi/test/us-defense-sharing-20261111-01/art/icons/static-verification.json",
+    "helpers": [
+      "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/export-photos.ps1",
+      "C:/hoi/test/us-defense-sharing-20261111-01/art/photos/tga-to-png.ps1",
+      "C:/hoi/test/us-defense-sharing-20261111-01/art/icons/export-icons.ps1"
+    ]
+  },
+  "publication": {
+    "commit": false,
+    "push": false,
+    "upload": false
+  }
+}

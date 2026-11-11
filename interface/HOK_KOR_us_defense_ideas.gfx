@@ -1,0 +1,19 @@
+#20261111_kpopmodder: Add paired Korean-American defense contribution national-spirit icons.
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_HOK_KOR_us_defense_cost_sharing_1"
+		texturefile = "gfx/interface/ideas/HOK_KOR/us_defense/HOK_KOR_us_defense_cost_sharing_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_KOR_us_defense_cost_sharing_2"
+		texturefile = "gfx/interface/ideas/HOK_KOR/us_defense/HOK_KOR_us_defense_cost_sharing_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_KOR_korean_defense_contribution_1"
+		texturefile = "gfx/interface/ideas/HOK_KOR/us_defense/HOK_KOR_korean_defense_contribution_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_KOR_korean_defense_contribution_2"
+		texturefile = "gfx/interface/ideas/HOK_KOR/us_defense/HOK_KOR_korean_defense_contribution_2.dds"
+	}
+}

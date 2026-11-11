@@ -1,0 +1,82 @@
+#20261111_kpopmodder: Let the American player decide stationing terms and publish one notification/news outcome per request.
+add_namespace = HOK_KOR_us_defense
+
+country_event = {
+	id = HOK_KOR_us_defense.1
+	title = HOK_KOR_us_defense.1.t
+	desc = HOK_KOR_us_defense.1.d
+	picture = GFX_HOK_KOR_us_defense_talks
+	is_triggered_only = yes
+	trigger = {
+		KOR = {
+			exists = yes
+			has_country_flag = HOK_KOR_us_defense_station_requested
+			NOT = { has_country_flag = HOK_KOR_us_defense_station_resolved }
+		}
+	}
+	option = {
+		name = HOK_KOR_us_defense.1.a
+		ai_chance = { base = 10 }
+		custom_effect_tooltip = HOK_KOR_us_defense_station_agreement_tt
+		hidden_effect = { KOR = { HOK_KOR_accept_us_defense_stationing = yes } }
+	}
+	option = {
+		name = HOK_KOR_us_defense.1.b
+		ai_chance = { base = 0 }
+		custom_effect_tooltip = HOK_KOR_us_defense_dominion_tt
+		hidden_effect = { KOR = { HOK_KOR_accept_us_defense_dominion = yes } }
+	}
+	option = {
+		name = HOK_KOR_us_defense.1.c
+		ai_chance = { base = 0 }
+		custom_effect_tooltip = HOK_KOR_us_defense_refused_tt
+		hidden_effect = { KOR = { HOK_KOR_refuse_us_defense_stationing = yes } }
+	}
+}
+
+country_event = {
+	id = HOK_KOR_us_defense.2
+	title = HOK_KOR_us_defense.2.t
+	desc = HOK_KOR_us_defense.2.d
+	picture = GFX_HOK_KOR_us_defense_talks
+	is_triggered_only = yes
+	option = { name = HOK_KOR_us_defense.2.a }
+}
+
+country_event = {
+	id = HOK_KOR_us_defense.3
+	title = HOK_KOR_us_defense.3.t
+	desc = HOK_KOR_us_defense.3.d
+	picture = GFX_HOK_KOR_us_defense_dominion
+	is_triggered_only = yes
+	option = { name = HOK_KOR_us_defense.3.a }
+}
+
+country_event = {
+	id = HOK_KOR_us_defense.4
+	title = HOK_KOR_us_defense.4.t
+	desc = HOK_KOR_us_defense.4.d
+	picture = GFX_HOK_KOR_us_defense_talks
+	is_triggered_only = yes
+	option = { name = HOK_KOR_us_defense.4.a }
+}
+
+news_event = {
+	id = HOK_KOR_us_defense.5
+	title = HOK_KOR_us_defense.5.t
+	desc = HOK_KOR_us_defense.5.d
+	picture = GFX_HOK_KOR_us_defense_agreement_news
+	major = yes
+	is_triggered_only = yes
+	option = { name = HOK_KOR_us_defense.5.a }
+}
+
+news_event = {
+	id = HOK_KOR_us_defense.6
+	title = HOK_KOR_us_defense.6.t
+	desc = HOK_KOR_us_defense.6.d
+	picture = GFX_HOK_KOR_us_defense_dominion_news
+	major = yes
+	is_triggered_only = yes
+	option = { name = HOK_KOR_us_defense.6.a }
+}

@@ -1,0 +1,13 @@
+#20261111_kpopmodder: Revalidate Korean-American stationing when the delayed American decision is processed.
+HOK_KOR_can_finalize_us_defense_stationing = {
+	country_exists = KOR
+	country_exists = USA
+	is_subject = no
+	has_civil_war = no
+	NOT = { has_war_with = USA }
+	USA = { has_civil_war = no }
+	any_owned_state = {
+		is_controlled_by = KOR
+		KOR = { has_full_control_of_state = PREV }
+	}
+}

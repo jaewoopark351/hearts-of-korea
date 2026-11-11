@@ -1,0 +1,33 @@
+#20261111_kpopmodder: Add paired defense-cost tiers and end their economic effects if a partner disappears or the partners go to war.
+ideas = {
+	country = {
+		HOK_KOR_us_defense_cost_sharing_1 = {
+			picture = HOK_KOR_us_defense_cost_sharing_1
+			allowed = { original_tag = KOR }
+			removal_cost = -1
+			cancel = { OR = { NOT = { country_exists = USA } has_war_with = USA } }
+			modifier = { consumer_goods_factor = 0.05 }
+		}
+		HOK_KOR_us_defense_cost_sharing_2 = {
+			picture = HOK_KOR_us_defense_cost_sharing_2
+			allowed = { original_tag = KOR }
+			removal_cost = -1
+			cancel = { OR = { NOT = { country_exists = USA } has_war_with = USA } }
+			modifier = { consumer_goods_factor = 0.35 }
+		}
+		HOK_KOR_korean_defense_contribution_1 = {
+			picture = HOK_KOR_korean_defense_contribution_1
+			allowed = { original_tag = USA }
+			removal_cost = -1
+			cancel = { OR = { NOT = { country_exists = KOR } has_war_with = KOR } }
+			modifier = { consumer_goods_factor = -0.05 }
+		}
+		HOK_KOR_korean_defense_contribution_2 = {
+			picture = HOK_KOR_korean_defense_contribution_2
+			allowed = { original_tag = USA }
+			removal_cost = -1
+			cancel = { OR = { NOT = { country_exists = KOR } has_war_with = KOR } }
+			modifier = { consumer_goods_factor = -0.15 }
+		}
+	}
+}

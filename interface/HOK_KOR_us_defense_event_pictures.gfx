@@ -1,0 +1,19 @@
+spriteTypes = {
+	#20261111_kpopmodder: Add project-owned AI photographs for Korean-American defense negotiations and dominion announcements.
+	spriteType = {
+		name = "GFX_HOK_KOR_us_defense_talks"
+		texturefile = "gfx/event_pictures/HOK_KOR/us_defense/us_defense_talks.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_us_defense_agreement_news"
+		texturefile = "gfx/event_pictures/HOK_KOR/us_defense/us_defense_agreement_news.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_us_defense_dominion"
+		texturefile = "gfx/event_pictures/HOK_KOR/us_defense/us_defense_dominion.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_us_defense_dominion_news"
+		texturefile = "gfx/event_pictures/HOK_KOR/us_defense/us_defense_dominion_news.dds"
+	}
+}

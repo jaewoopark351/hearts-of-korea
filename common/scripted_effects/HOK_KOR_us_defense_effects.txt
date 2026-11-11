@@ -1,0 +1,132 @@
+#20261111_kpopmodder: Execute the two bilateral negotiations in Korean country scope with persistent one-time outcome guards.
+HOK_KOR_apply_us_defense_treaty = {
+	if = {
+		limit = { NOT = { has_country_flag = HOK_KOR_us_defense_treaty_accepted } }
+		set_country_flag = HOK_KOR_us_defense_treaty_accepted
+		if = {
+			limit = { NOT = { has_idea = HOK_KOR_us_defense_cost_sharing_2 } }
+			add_ideas = HOK_KOR_us_defense_cost_sharing_1
+		}
+		USA = {
+			if = {
+				limit = { NOT = { has_idea = HOK_KOR_korean_defense_contribution_2 } }
+				add_ideas = HOK_KOR_korean_defense_contribution_1
+			}
+		}
+	}
+}
+
+#20261111_kpopmodder: Preserve the original three Korean-owned divisions and explicitly retain Korean state ownership when called by America.
+HOK_KOR_grant_usfk_divisions = {
+	if = {
+		limit = { NOT = { has_country_flag = HOK_KOR_us_defense_units_granted } }
+			division_template = {
+				name = "USFK Division"
+				priority = 1
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+					engineer = { x = 0 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { KOR = { has_full_control_of_state = PREV } }
+				prioritize = { 835 }
+				create_unit = {
+					division = "name = \"1st 'Yongsan' USFK Division\" division_template = \"USFK Division\" start_experience_factor = 0.3"
+					owner = KOR
+				}
+				create_unit = {
+					division = "name = \"2nd 'Pyeongtaek' USFK Division\" division_template = \"USFK Division\" start_experience_factor = 0.3"
+					owner = KOR
+				}
+				create_unit = {
+					division = "name = \"3rd 'Osan' USFK Division\" division_template = \"USFK Division\" start_experience_factor = 0.3"
+					owner = KOR
+				}
+				#20261111_kpopmodder: Mark deployment only inside the state iterator that actually creates the three divisions.
+				KOR = { set_country_flag = HOK_KOR_us_defense_units_granted }
+			}
+	}
+}
+
+#20261111_kpopmodder: Upgrade the paired spirits to the agreed final values and resolve each request once.
+HOK_KOR_accept_us_defense_stationing = {
+	if = {
+		limit = {
+			has_country_flag = HOK_KOR_us_defense_station_requested
+			NOT = { has_country_flag = HOK_KOR_us_defense_station_resolved }
+		}
+		#20261111_kpopmodder: Close an invalidated pending request without granting approval, divisions or new economic effects.
+		if = {
+			limit = { HOK_KOR_can_finalize_us_defense_stationing = yes }
+			set_country_flag = HOK_KOR_us_defense_treaty_accepted
+			set_country_flag = HOK_KOR_us_defense_station_resolved
+			set_country_flag = HOK_KOR_us_defense_station_approved
+			remove_ideas = HOK_KOR_us_defense_cost_sharing_1
+			add_ideas = HOK_KOR_us_defense_cost_sharing_2
+			USA = {
+				remove_ideas = HOK_KOR_korean_defense_contribution_1
+				add_ideas = HOK_KOR_korean_defense_contribution_2
+			}
+			HOK_KOR_grant_usfk_divisions = yes
+			country_event = { id = HOK_KOR_us_defense.2 days = 1 }
+			news_event = { id = HOK_KOR_us_defense.5 days = 1 }
+		}
+		else = {
+			HOK_KOR_refuse_us_defense_stationing = yes
+		}
+	}
+}
+
+#20261111_kpopmodder: Create an American dominion while preserving existing defense costs and granting the approved stationing benefits.
+HOK_KOR_accept_us_defense_dominion = {
+	if = {
+		limit = {
+			has_country_flag = HOK_KOR_us_defense_station_requested
+			NOT = { has_country_flag = HOK_KOR_us_defense_station_resolved }
+		}
+		#20261111_kpopmodder: Recheck independence and deployment eligibility before making Korea an American dominion.
+		if = {
+			limit = { HOK_KOR_can_finalize_us_defense_stationing = yes }
+			set_country_flag = HOK_KOR_us_defense_treaty_accepted
+			set_country_flag = HOK_KOR_us_defense_station_resolved
+			set_country_flag = HOK_KOR_us_defense_station_approved
+			set_country_flag = HOK_KOR_us_defense_dominion
+			USA = {
+				set_autonomy = { target = KOR autonomy_state = autonomy_dominion end_wars = no end_civil_wars = no }
+			}
+			HOK_KOR_grant_usfk_divisions = yes
+			country_event = { id = HOK_KOR_us_defense.3 days = 1 }
+			news_event = { id = HOK_KOR_us_defense.6 days = 1 }
+		}
+		else = {
+			HOK_KOR_refuse_us_defense_stationing = yes
+		}
+	}
+}
+
+#20261111_kpopmodder: Refuse only stationing and preserve the existing treaty and paired economic spirits.
+HOK_KOR_refuse_us_defense_stationing = {
+	if = {
+		limit = {
+			has_country_flag = HOK_KOR_us_defense_station_requested
+			NOT = { has_country_flag = HOK_KOR_us_defense_station_resolved }
+		}
+		set_country_flag = HOK_KOR_us_defense_station_resolved
+		country_event = { id = HOK_KOR_us_defense.4 days = 1 }
+	}
+}
