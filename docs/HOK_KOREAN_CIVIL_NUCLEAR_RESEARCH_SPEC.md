@@ -1,32 +1,54 @@
 # 한국 민간 핵 연구 중점 2개 구현 명세
 
-작성·갱신: 2026-10-31 (Asia/Seoul). 상태: **5일 감산 제거·핵 기술 선행 연구 불이익2년 감소1회 추가 / 현재35일+245일 / 후속 변경은 정적 대조만 수행**. 첫 핵 혁신100%와 다른 조건·효과·그림·배치를 유지한다. 아래240회 진행·건설·재로드 등은 후속 변경 전 소스의 이력이며 새 연구 혜택과 감산 없는245일의 런타임은 미검증이다. 상세 증거는 [구현·검증 기록](incidents/2026-10-31-korean-civil-nuclear-research.md)을 따른다.
+작성: 2026-10-31 / 갱신: 2026-11-11 (Asia/Seoul). 상태: **핵 기술 연구 보너스150% 추가 / 기존 선행 연구 불이익2년 감소1회·핵 혁신100% 유지 / 기본35일+245일 / 새 보상의 런타임 미검증**. 다른 조건·효과·그림·배치를 유지한다. 아래240회 진행·건설·재로드 등은 2026-10-31 감산 제거 전 소스의 이력이며 현재 연구 혜택과 감산 없는245일의 런타임 증거가 아니다. 상세 증거는 [구현·검증 기록](incidents/2026-10-31-korean-civil-nuclear-research.md)을 따른다.
 
 ## 범위와 기준
 
-사용자가 승인한 **서울대학교 확장 → 핵분열 연쇄반응 실험 → 민간 원자로 투자**를 독립된 신규 가지로 구현했다. 첫 보상은 핵 혁신 진행도100%와 핵 기술 선행 연구 불이익2년 감소1회, 둘째 보상은 민간 원자로 건설 기술이며 기존 국방 연구·무궁화 경로는 유지한다. 이는 의도적인 신규 콘텐츠·획득 시점 변경으로, 누락 기능의 호환성 수리와 구분한다. 최초 문서화 상태에서 후속 구현 승인으로 진행했으며 그때의 “미구현” 표기를 현재 상태로 사용하지 않는다.
+사용자가 승인한 **서울대학교 확장 → 핵분열 연쇄반응 실험 → 민간 원자로 투자**를 독립된 신규 가지로 구현했다. 첫 보상은 핵 혁신 진행도100%와 핵 기술 연구 보너스150%·선행 연구 불이익2년 감소1회, 둘째 보상은 민간 원자로 건설 기술이며 기존 국방 연구·무궁화 경로는 유지한다. 이는 의도적인 신규 콘텐츠·획득 시점 변경으로, 누락 기능의 호환성 수리와 구분한다. 최초 문서화 상태에서 후속 구현 승인으로 진행했으며 그때의 “미구현” 표기를 현재 상태로 사용하지 않는다.
+
+다음 기준선·해시·실행 수치는 **2026-10-31 작업 당시**의 기록이다. 2026-11-11 변경 기준과 검증 범위는 아래 후속 절에 따로 기록한다.
 
 - 브랜치/HEAD: `feat/korean-focus-expansion-ai` / `860efe7a3513148dc6964b7e0e3dfafd19addfb7`.
 - 신규 가지 전 소스: 기존 중점 472개, `common/national_focus/korea.txt` SHA-256 `440D76ED0395CC84EDD0EE320CE0376E27D5B7D328F0F65D1BA1CB6454ED52E9`.
-- 현재 소스: **474개**, 절대 기준 7개·상대 배치 467개·직접 offset 7개. 앞선 기능 연동의 작업 트리 변경을 보존한다.
-- 현재 설치·실행 기준: **Operation Postern v1.19.4.1.99a5 / Steam build26282552 / 실제 인식 DLC36개**. 원본 루트는 `C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV`다. 앞선 기능 연동의 1.19.3/build25205862를 이번 실행 버전으로 기록하지 않는다.
+- 당시 소스: **474개**, 절대 기준 7개·상대 배치 467개·직접 offset 7개. 앞선 기능 연동의 작업 트리 변경을 보존했다.
+- 당시 설치·실행 기준: **Operation Postern v1.19.4.1.99a5 / Steam build26282552 / 실제 인식 DLC36개**. 원본 루트는 `C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV`다. 앞선 기능 연동의 1.19.3/build25205862를 당시 실행 버전으로 기록하지 않는다.
 - 연구망 효과 `common/scripted_effects/HOK_KOR_research_network_effects.txt` SHA-256은 `185874FC8EEE0A5256E654ECF25EAFD258C487D8E8DA53EAFF5C579B43DCEE87`로 유지한다.
-- 현재 소스 SHA-256은 `3CC9F676203E18F53B7B6A896ADBD9E03796B861D492326E48056EC5E3A122CA`다. 외부 `C:/hoi/test/civil-nuclear-ahead-bonus-20261031/change-record.json`은 핵 연구 혜택6줄·기여 주석1줄 추가 외 직전 소스 보존과 새 런타임 검증 없음을 기록한다.
+- 2026-10-31 선행 감소 추가 직후 소스 SHA-256은 `3CC9F676203E18F53B7B6A896ADBD9E03796B861D492326E48056EC5E3A122CA`다. 외부 `C:/hoi/test/civil-nuclear-ahead-bonus-20261031/change-record.json`은 당시 핵 연구 혜택6줄·기여 주석1줄 추가 외 직전 소스 보존과 새 런타임 검증 없음을 기록한다.
 - 직전 감산 제거 소스 SHA-256은 `F3C4FC60688C6451D396EF494BF9A7AB1FD834CABE139DBFD25301C2EDDD1156`다. 외부 `C:/hoi/test/civil-nuclear-discount-removal-20261031/change-record.json`의 범위 대조는 감산4줄 삭제·두 기여 주석 정정 외 바이트 보존을 기록한다.
 - 감산 제거 전 검증 소스 SHA-256은 `ECA5D4FC171962DE94128A9E72D5CEB2BB4E65EF213A1AD31BD4D1345BC0AE7E`, 정상 진행 실행은 `ff98`다. 해당 프로세스에서는 생산 스크립트를 중간 수정하지 않았다. 실패 소수 후보 `34.286`의 소스는 `FBB156FC…CAB212`, 실행은 `7d94`로 구분한다.
 
 Workshop2898629778은 읽기 전용 역사적 자료다. 이번 가지는 기존 [연구망 명세](HOK_KOREAN_RESEARCH_NETWORK_SPEC.md)의 시설·과학자 보상과 분리한다. 앞선 [기능 연동 실행 기록](incidents/2026-10-31-korean-feature-integration.md)을 이 신규 가지의 정상 완료 증거로 재사용하지 않는다. 커밋·푸시·게시·업로드는 포함하지 않는다.
+
+## 2026-11-11 후속 — 연구 보너스150% 추가
+
+사용자가 설명 검토 뒤 수정을 승인하여 첫 중점의 기존 `add_tech_bonus`에 `bonus=1.5`를 추가했다. `ahead_reduction=2`, `uses=1`, `category=nuclear`와 기존 이름을 함께 유지한다. 2년은 지급 후 유효기간이 아니라 기술의 선행 연구 불이익 감소량이다. 추가 연구 보너스는 선행 불이익이 없는 시점에도 연구 혜택을 제공하려는 의도이며 영구 국가 연구속도 수정치나 추가 사용 횟수를 부여하지 않는다.
+
+- 변경 시작 기준: `feat/korean-focus-expansion-ai` / HEAD `1c2e5423c08677228fa89c0181535bc30fc5764d`, 작업 트리 변경 없음.
+- 같은 문맥의 원본 근거: 읽기 전용 설치본 `common/national_focus/toa_shared_military_branch.txt:1568–1574`는 `nuclear` 기술에 `ahead_reduction=2`와 `bonus=1`을 함께 사용한다. `localisation/korean/effects_l_korean.yml:92`는 선행 감소와 연구 혜택을 함께 표시하는 문구다. 설치 메타데이터는 `Operation Postern v1.19.4.2.2da5 (0bdb)`이며 이번에 게임을 새로 실행한 버전 기록은 아니다.
+- 현재 런처 descriptor `hearts of korea.mod`는 `C:/hoi/hearts_of_korea`를 선택하며, 활성 목록은 저장소 → `C:/hoi/Hearts of Korea English Translation Anime Modder's Edition` 순서다. `settings.txt`의 언어는 `l_korean`이다. 이 설정 확인은 새 게임 실행·보상 지급 확인과 구분한다.
+- 정적 검증 증거 위치: `C:/hoi/test/fission-research-bonus-20261111/`. `korea.before.txt`는 변경 전 소스의 증거 사본, `change-record.json`은 전후 해시와 두 줄 외 바이트 보존의 기록이다. 원본 작업 소스는 계속 저장소의 `common/national_focus/korea.txt`다.
+- 변경 전 소스 SHA-256: `fcab533936d55625692b6a58422c6556713a45e0dbdb344b0004262d0e9eb85b`. 변경 후: `f2a26c497ce1d7bad49410f7e6c66d88ba1a72c942477f18ea36aab1658f5c26`. 생산파일 diff는 기여 주석과 `bonus=1.5`의 **2줄 추가·삭제0**이며 그 외 바이트는 동일하다. `git diff --check`는 종료코드0이었다. 범위 대조와 원본의 동일 문맥 확인까지 수행했고 게임은 새로 실행하지 않았다.
+
+| 기능·경로 | 처리와 근거 | 확인 범위·남은 항목 |
+|---|---|---|
+| 첫 중점 `add_tech_bonus` | **변경** — 같은 블록에 `bonus=1.5`와 기여 주석 추가 | 소스 변경 대상. 새 실제 UI·연구 적용·소모는 미검증 |
+| 핵 혁신1.00·선행 감소2년·사용1회·`nuclear`·보상 이름 | **의도적 유지** — 기존 혜택과 적용 범위를 보존 | 두 줄 외 소스 바이트 동일 확인 |
+| 선행·기간·AI·배치·그림·기존 무궁화/연구망·둘째 중점 | **의도적 유지** — 이번 보상 강화의 변경 대상이 아님 | 생산파일 두 줄 외 보존 확인. 과거 런타임을 새 보상 증거로 사용하지 않음 |
+| 두 본체 언어 채널·활성 번역의 이름/설명 | **의도적 유지** — 기존 중점 이름을 재사용하고 숫자 효과는 엔진 자동 표시 경로 사용 | 현지화 수정 없음. 활성 번역은 이름/설명만 덮어쓰며 `common/national_focus/korea.txt`와 `EFFECT_ADD_TECH_BONUS` 덮어쓰기 없음 확인. 새 화면은 미검증 |
+| 이미 완료한 중점·기존 저장의 보너스 | **미확인** — 소급 지급·기존 보너스 변환 코드를 추가하지 않음 | 새 보상 직렬화·소모·저장 왕복 미검증 |
+
+이 후속 변경에서는 게임 실행, 강제 보상 진단, 기존 저장 수정, 커밋·푸시·업로드를 수행하지 않았다. 2026-10-31의240회 진행·건설·재로드 결과는 당시 소스에서 관측한 이력으로 유지한다.
 
 ## 구현한 두 중점
 
 | 항목 | 핵분열 연쇄반응 실험 | 민간 원자로 투자 |
 |---|---|---|
 | ID | `HOK_KOR_fission_chain_reaction_experiments` | `HOK_KOR_civilian_nuclear_investment` |
-| 소스 위치 | `common/national_focus/korea.txt:519–543` | 같은 파일 `545–572` |
+| 소스 위치 | `common/national_focus/korea.txt`의 첫 중점ID 블록 | 같은 파일의 둘째 중점ID 블록 |
 | 기본 기간 | 기본35일, `cost=5` | `cost=35`의 **245일**, 첫 완료 감산 없음 |
 | 선행 | `KOR_seoul_national_university_expansion` | 신규 핵분열 연쇄반응 실험 |
 | 추가 시작 조건 | 별도 핵 기술·DLC 조건 없음 | `atomic_research` 완료 **AND** `Gotterdammerung` 보유 |
-| 완료 보상 | 핵 `value=1.00` + `nuclear` 기술 선행 연구 불이익2년 감소1회 | `set_technology`로 `commercial_nuclear_reactor_tech=1`, `popup=no` |
+| 완료 보상 | 핵 `value=1.00` + `nuclear` 기술 연구 보너스150%·선행 연구 불이익2년 감소1회 | `set_technology`로 `commercial_nuclear_reactor_tech=1`, `popup=no` |
 | 자동 통과 | 혁신 잔액에 따른 bypass 없음 | `has_tech=commercial_nuclear_reactor_tech` |
 | 취소·계속 | 기존 일반 중점 설정 사용 | `cancel_if_invalid=yes`, `continue_if_invalid=no` |
 | AI | `factor=1` | `factor=1`, 시작 조건은 동일하게 적용 |
@@ -36,7 +58,7 @@ Workshop2898629778은 읽기 전용 역사적 자료다. 이번 가지는 기존
 
 후속 사용자 요청으로 첫 효과창의 “다음 민간 원자로5일 감소”를 없애기 위해 `reduce_focus_completion_cost` 블록만 제거하고 둘째 `cost=35`를 유지했다. 새 지급에는 감산이 없으므로 둘째 기본 기간은245일, 두 중점 기본 합계는280일이다. 이번 변경은 범위 정적 대조만 수행하며 HOI4 재실행·245일 정상 진행 검증은 하지 않는다. 기존 저장에 이미 직렬화된 감산5는 자동 회수·마이그레이션하지 않아 남을 수 있으며, 모든 기존 저장의 표시가245일로 즉시 바뀐다고 약속하지 않는다.
 
-이어 첫 완료 보상에 `add_tech_bonus`를 추가했다. `ahead_reduction=2`, `uses=1`, `category=nuclear`이며 보상 이름은 기존 첫 중점 현지화 키를 재사용한다. 핵 기술의 선행 연구 불이익을2년 줄이는1회 혜택이며 자동 기술 획득이나 별도의 연구 속도 보너스는 없다. 이 추가도 소스 범위 대조만 수행했고 실제 혜택 표시·소비는 미검증이다. 첫 중점을 이미 완료한 저장에는 새 보상을 자동 소급하지 않는다.
+2026-10-31에는 이어 첫 완료 보상에 `add_tech_bonus`를 추가했다. 당시에는 `ahead_reduction=2`, `uses=1`, `category=nuclear`만 있었고 보상 이름은 기존 첫 중점 현지화 키를 재사용했다. 핵 기술의 선행 연구 불이익을2년 줄이는1회 혜택으로, 당시 별도의 연구 속도 보너스나 자동 기술 획득은 없었다. 당시 추가는 소스 범위 대조만 수행했고 실제 혜택 표시·소비는 미검증이었다. 2026-11-11에는 위 후속 절처럼 동일 블록에 연구 보너스150%를 추가했다. 첫 중점을 이미 완료한 저장에 새 보상을 자동 소급하는 코드는 없다.
 
 ### 보상의 의미와 경계
 

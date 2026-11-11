@@ -573,6 +573,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HOK_KOR_fission_chain_reaction_experiments
 				ahead_reduction = 2
+				#20261111_kpopmodder: Add a 150% research bonus while preserving the two-year ahead-of-time reduction.
+				bonus = 1.5
 				uses = 1
 				category = nuclear
 			}
