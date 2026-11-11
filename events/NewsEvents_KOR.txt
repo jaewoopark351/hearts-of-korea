@@ -702,10 +702,19 @@ news_event = {
 
 	major = yes
 	
+	#20261112_kpopmodder: Check Beijing province and match its owner to Korea's war opponent.
 	trigger = {
-		608 = { is_controlled_by = KOR }
-		608 = { is_owned_by = CHI }
-		KOR = { has_war_with = CHI }
+		KOR = { controls_province = 9843 }
+		OR = {
+			AND = {
+				608 = { is_owned_by = CHI }
+				KOR = { has_war_with = CHI }
+			}
+			AND = {
+				608 = { is_owned_by = HBC }
+				KOR = { has_war_with = HBC }
+			}
+		}
 		NOT = { has_global_flag = fall_of_beijing_kor }
 	}
 	
@@ -747,9 +756,10 @@ news_event = {
 
 	major = yes
 	
+	#20261112_kpopmodder: Check Nanjing province and its current parent state's Chinese ownership.
 	trigger = {
-		613 = { is_controlled_by = KOR }
-		613 = { is_owned_by = CHI }
+		KOR = { controls_province = 11913 }
+		1035 = { is_owned_by = CHI }
 		KOR = { has_war_with = CHI }
 		NOT = { has_global_flag = fall_of_nanjing_kor }
 	}
@@ -792,10 +802,19 @@ news_event = {
 
 	major = yes
 	
+	#20261112_kpopmodder: Check Chongqing province and match its owner to Korea's war opponent.
 	trigger = {
-		605 = { is_controlled_by = KOR }
-		605 = { is_owned_by = CHI }
-		KOR = { has_war_with = CHI }
+		KOR = { controls_province = 6999 }
+		OR = {
+			AND = {
+				1037 = { is_owned_by = CHI }
+				KOR = { has_war_with = CHI }
+			}
+			AND = {
+				1037 = { is_owned_by = SIC }
+				KOR = { has_war_with = SIC }
+			}
+		}
 		NOT = { has_global_flag = fall_of_chongqing_kor }
 	}
 	
