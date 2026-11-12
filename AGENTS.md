@@ -32,6 +32,7 @@ Before reviewing HOK runtime logs or attributing an error to HOK, read the proje
 | Repairing state/province references against the current map without changing the map, or separating recent Korean-split regressions from older defects | [Current-map reference alignment plan](docs/HOK_STATE_REFERENCE_ALIGNMENT_PLAN.md) |
 | Splitting Korean states into northern/southern successors or reviewing the associated construction-slot and content migration | [Korean state split and industrial construction-space plan](docs/HOK_KOREAN_STATE_SPLIT_PLAN.md) |
 | Creating or revising images, reusing historical image inputs/recipes, or resolving old `.local-artifacts` references | [Development artifact archive and image-source lookup](docs/HOK_DEVELOPMENT_ARTIFACT_ARCHIVE.md) |
+| Reviewing or implementing Korean-only portraits for newly recruited scientists, including anime-submod integration | [Korean scientist portrait plan and source evidence](docs/HOK_KOREAN_SCIENTIST_PORTRAIT_PLAN.md) |
 | Comparing current logs against the 2026-11-06 compatibility repairs | [Runtime compatibility implementation and evidence](docs/incidents/2026-11-06-hok-runtime-compatibility-implementation.md) |
 | Locating or relocating the HOK log-review skill | [Skill location and migration record](docs/HOK_LOG_REVIEW_SKILL.md) |
 
@@ -808,6 +809,13 @@ For review-only work:
 - Distinguish inherited content, restoration fixes, intentional redesigns, and new continuation content in history and release notes.
 - Do not imply that inherited work was created by the continuation team or that the original Workshop identity transferred to the new item.
 - New content, modernization, and rebalance are allowed when explicitly requested, but must preserve attribution and be tested independently from restoration claims.
+
+### Historical naming: no 21st-century politician names
+
+- Do not use the real names of 21st-century politicians in the mod's World War II-era game content, regardless of nationality, party or political orientation. This includes fixed and generated characters, scientist recruitment, name pools, localisation and narrative text. Political jokes and Easter eggs using these names are also prohibited.
+- Apply the rule to native-script names, Romanizations and spelling/hyphenation variants corresponding to the verified person. Do not retain a prohibited name merely because it comes from vanilla or an inherited upstream list.
+- When adding or changing generated-name pools, check the full names formed by given-name and surname combinations. Exclude confirmed politician-name overlaps and their corresponding spelling variants. If the engine cannot exclude a single combination, remove the affected given-name component and record the shared consumers. Use names appropriate to the period.
+- Before reviewing or changing Korean generated-name pools, read the [name-pool exclusion record](docs/incidents/2026-11-12-korean-random-name-localisation.md). Distinguish verified full-name overlaps from assumptions about common names or political intent. Names may appear in evidence, audits and maintenance documentation solely to record sources, verified overlaps or exclusion reasons; this does not permit using them as game content. Apply changes only within the user's authorized scope.
 
 ---
 

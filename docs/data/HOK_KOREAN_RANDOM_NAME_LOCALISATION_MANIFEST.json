@@ -1,0 +1,1612 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "scope": "Original Romanized spellings of the shared KOR generated-name pool",
+  "status": "romanized_names_with_verified_modern_name_exclusions_static_verified",
+  "source_baseline": {
+    "branch": "feat/korean-focus-expansion-ai",
+    "commit": "cdc022eee15fbf7404d4cb30cf2d0102d29e550c",
+    "original_source_sha256": "1a7a0e06f26ec3e03bea00ea7ea37b23ae138a575706d84bed0304e889eb3662",
+    "original_source_backup": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/source-before/common/names/00_names.txt"
+  },
+  "input_entry_counts": {
+    "male": 56,
+    "female": 11,
+    "surnames": 14,
+    "total": 81
+  },
+  "shared_pool_impact": {
+    "intended_ui_target": "Newly recruited Korean scientists",
+    "additional_consumers": "Other generated Korean characters that consume the same KOR random-name lists",
+    "full_name_order": "Existing engine name assembly order",
+    "raw_tokens_shared_with_other_country_pools": [
+      "Hong",
+      "Jang",
+      "Kim",
+      "Lee"
+    ],
+    "other_country_source_blocks": "byte-for-byte preservation verified"
+  },
+  "localisation_channel_contract": {
+    "project_contract_record": "../incidents/2026-09-01-localisation-contract.md",
+    "project_contract": "Paired Korean and English locale files use identical Korean bodies where localisations are supplied",
+    "active_name_localisation_files": [],
+    "current_name_display_source": "Original Romanized literals in common/names/00_names.txt; fixed scientist name localisations retained"
+  },
+  "portrait_assets": {
+    "changes_in_this_name_work": false,
+    "record": "HOK_KOREAN_SCIENTIST_PORTRAIT_ASSET_MANIFEST.json",
+    "existing_eight_dds_hashes_match_prior_manifest": true
+  },
+  "rejected_configuration": {
+    "status": "DISPROVEN_FOR_TESTED_PER_TOKEN_CONFIGURATION",
+    "method": "Dedicated HOK_KOR_RANDOM_NAME_ keys in each first-name and surname source token",
+    "prefix": "HOK_KOR_RANDOM_NAME_",
+    "failure_observation": "All four observed scientist recruitment candidates displayed raw prefixed component keys",
+    "evidence": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/runtime/screenshots/first-run-raw-name-keys.png",
+    "source_snapshot": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/source-rejected-prefix/common/names/00_names.txt",
+    "source_sha256": "116ffb50e3313bb6e689a54d27df6f35370b62fdb215f2ccdbd8f8a4cecb6c01",
+    "archived_paired_localisations": [
+      {
+        "former_runtime_path": "localisation/korean/HOK_KOR_random_names_l_korean.yml",
+        "preserved_path": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/source-rejected-prefix/localisation/korean/HOK_KOR_random_names_l_korean.yml",
+        "sha256": "34e8048e95f4cf67f41cd935833837c3e83b77f4647a94e2a64d39a20c3629ba"
+      },
+      {
+        "former_runtime_path": "localisation/english/HOK_KOR_random_names_l_english.yml",
+        "preserved_path": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/source-rejected-prefix/localisation/english/HOK_KOR_random_names_l_english.yml",
+        "sha256": "d0e89d561961b67c36bd82076898520c558ce97491487881de12106a69e74f1c"
+      }
+    ],
+    "paired_contract": {
+      "body_language": "Korean",
+      "locale_headers": [
+        "l_korean:",
+        "l_english:"
+      ],
+      "encoding": "UTF-8 with BOM",
+      "line_endings": "CRLF",
+      "paired_body_identical": true
+    }
+  },
+  "historical_direct_korean_configuration": {
+    "implementation_method": "Direct Korean UTF-8 name literals in the existing KOR source lists",
+    "production_files": [
+      {
+        "path": "common/names/00_names.txt",
+        "sha256": "f428e6a66553c62b721f68433dd3e49d1463dd3b58890a710d3451d428d8af64",
+        "encoding": "UTF-8",
+        "bom": false,
+        "line_endings": "CRLF",
+        "final_crlf": true,
+        "contributor_note": "#20261112_kpopmodder: Display Korean random names directly in the KOR source pool."
+      }
+    ],
+    "source_preservation": {
+      "input_order": "preserved",
+      "roman_spelling_variant_entries": "retained as separate source entries",
+      "original_quoted_and_unquoted_forms": "preserved",
+      "empty_callsigns": "preserved",
+      "outside_kor_bytes": "identical to the original source snapshot",
+      "engine_selection_distribution": "unverified",
+      "direct_value_cardinality": {
+        "male": {
+          "input_entries": 71,
+          "unique_direct_values": 65,
+          "repeated_display_groups": 6,
+          "entries_beyond_first_occurrence": 6
+        },
+        "female": {
+          "input_entries": 17,
+          "unique_direct_values": 10,
+          "repeated_display_groups": 7,
+          "entries_beyond_first_occurrence": 7
+        },
+        "surnames": {
+          "input_entries": 14,
+          "unique_direct_values": 14,
+          "repeated_display_groups": 0,
+          "entries_beyond_first_occurrence": 0
+        },
+        "total_input_entries": 102,
+        "unique_direct_values_across_groups": 89,
+        "total_entries_beyond_first_occurrence": 13,
+        "interpretation": "Separate input entries sharing the same Korean spelling retain their original list positions. Engine handling of repeated spellings and the resulting selection probabilities remain unverified."
+      }
+    },
+    "static_validation": [
+      {
+        "record": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/validation/direct-korean-name-source-checks.json",
+        "passed": 24,
+        "failed": 0,
+        "scope": "Input lists, quoted forms, UTF-8 and line endings, source boundaries and archived rejected locale files"
+      }
+    ],
+    "runtime_validation": {
+      "status": "normal_candidate_and_hired_name_display_verified",
+      "record": "../incidents/2026-11-12-korean-random-name-localisation.md",
+      "observed_session": {
+        "process_id": 6884,
+        "started_kst": "2026-11-12 16:35:20.725",
+        "version": "Operation Postern v1.19.4.2.2da5",
+        "main_menu_checksum": "16ea",
+        "checksum_basis": {
+          "source": "C:/Users/jaewo/OneDrive/문서/Paradox Interactive/Hearts of Iron IV/logs/system.log",
+          "line": 155,
+          "description": "게임 로그에서 확인한 실제 체크섬"
+        },
+        "language": "l_korean",
+        "playset": [
+          "mod/hearts of korea.mod",
+          "mod/Hearts of Korea anime.mod"
+        ],
+        "main_menu_evidence": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/runtime/screenshots/direct-main-menu-16ea.png"
+      },
+      "normal_recruitment_candidates": {
+        "status": "CONFIRMED",
+        "country": "KOR",
+        "game_date": "1936.01.01.12",
+        "political_power": 2,
+        "observed_names": [
+          "소라 이",
+          "경희 최",
+          "지영 박",
+          "동준 홍"
+        ],
+        "observed_name_parts": "Korean given names and surnames",
+        "raw_localisation_keys_observed": false,
+        "evidence": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/runtime/screenshots/direct-normal-candidates-korean.png"
+      },
+      "existing_fixed_scientists": {
+        "status": "CONFIRMED",
+        "observed_count": 4,
+        "evidence": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/runtime/screenshots/direct-initial-fixed-four.png"
+      },
+      "normal_hiring_and_roster": {
+        "status": "CONFIRMED",
+        "method": "자연 정치력 수입으로 비용을 확보한 뒤 게임 UI에서 정상 영입",
+        "game_date": "1936.02.27.10",
+        "political_power_before": 127,
+        "political_power_after": 27,
+        "recruitment_cost": 100,
+        "hired_name": "소라 이",
+        "roster_count": 5,
+        "fixed_scientists_present": 4,
+        "newly_hired_scientists_present": 1,
+        "name_display": "정상 영입 후 명단에서도 한글 이름과 성이 유지됨",
+        "evidence": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/runtime/screenshots/direct-hired-name-and-fixed-scientists.png"
+      },
+      "save_round_trip": "unverified",
+      "save_or_reload_performed": false,
+      "test_session_cleanup": {
+        "status": "CONFIRMED",
+        "owned_game_process_id": 6884,
+        "game_exit": "CONFIRMED",
+        "process_query_kst": "2026-11-12 16:41:13",
+        "matching_game_processes": 0,
+        "final_read_only_check_kst": "2026-11-12 16:49:29.654",
+        "steam_state": "Steam 정상 재시작 후 라이브러리에서 초록 플레이 버튼과 실행 중·중지 중 표시 해제를 확인",
+        "steam_play_button": "CONFIRMED",
+        "steam_recovery": "다른 게임 실행과 진행·대기 다운로드가 없음을 확인한 뒤 Steam을 정상 종료하고 등록 앱으로 재시작",
+        "verification_method": "root의 실시간 CUA 관측",
+        "steam_window_id": 198380,
+        "saved_final_screenshot": false,
+        "assessment": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/runtime/run2-direct-korean-final/assessment.json"
+      },
+      "existing_save_retroactive_name_display": "unverified",
+      "other_kor_pool_consumers": "unverified",
+      "cosmetic_tags": "unverified",
+      "other_languages_and_translation_mods": "unverified"
+    },
+    "mapping_source": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/validation/direct-korean-name-mapping.json",
+    "entries": [
+      {
+        "group": "male",
+        "ordinal": 1,
+        "original_token": "Hee-Seok",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Hee_Seok",
+        "direct_value": "희석"
+      },
+      {
+        "group": "male",
+        "ordinal": 2,
+        "original_token": "Jae-Hoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jae_Hoon",
+        "direct_value": "재훈"
+      },
+      {
+        "group": "male",
+        "ordinal": 3,
+        "original_token": "Shin-Woo",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Shin_Woo",
+        "direct_value": "신우"
+      },
+      {
+        "group": "male",
+        "ordinal": 4,
+        "original_token": "Sang",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Sang",
+        "direct_value": "상"
+      },
+      {
+        "group": "male",
+        "ordinal": 5,
+        "original_token": "Gun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Gun",
+        "direct_value": "건"
+      },
+      {
+        "group": "male",
+        "ordinal": 6,
+        "original_token": "Kwang",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Kwang",
+        "direct_value": "광"
+      },
+      {
+        "group": "male",
+        "ordinal": 7,
+        "original_token": "Woong",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Woong",
+        "direct_value": "웅"
+      },
+      {
+        "group": "male",
+        "ordinal": 8,
+        "original_token": "Chul",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Chul",
+        "direct_value": "철"
+      },
+      {
+        "group": "male",
+        "ordinal": 9,
+        "original_token": "Hyuk",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Hyuk",
+        "direct_value": "혁"
+      },
+      {
+        "group": "male",
+        "ordinal": 10,
+        "original_token": "Yoon-Gi",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Yoon_Gi",
+        "direct_value": "윤기"
+      },
+      {
+        "group": "male",
+        "ordinal": 11,
+        "original_token": "Han-gyeol",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Han_gyeol",
+        "direct_value": "한결"
+      },
+      {
+        "group": "male",
+        "ordinal": 12,
+        "original_token": "Heeseok",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Heeseok",
+        "direct_value": "희석"
+      },
+      {
+        "group": "male",
+        "ordinal": 13,
+        "original_token": "Jaehoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jaehoon",
+        "direct_value": "재훈"
+      },
+      {
+        "group": "male",
+        "ordinal": 14,
+        "original_token": "Shinwoo",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Shinwoo",
+        "direct_value": "신우"
+      },
+      {
+        "group": "male",
+        "ordinal": 15,
+        "original_token": "Yoongi",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Yoongi",
+        "direct_value": "윤기"
+      },
+      {
+        "group": "male",
+        "ordinal": 16,
+        "original_token": "Hangyeol",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Hangyeol",
+        "direct_value": "한결"
+      },
+      {
+        "group": "male",
+        "ordinal": 17,
+        "original_token": "Dowon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Dowon",
+        "direct_value": "도원"
+      },
+      {
+        "group": "male",
+        "ordinal": 18,
+        "original_token": "Dongjun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Dongjun",
+        "direct_value": "동준"
+      },
+      {
+        "group": "male",
+        "ordinal": 19,
+        "original_token": "Gwangmin",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Gwangmin",
+        "direct_value": "광민"
+      },
+      {
+        "group": "male",
+        "ordinal": 20,
+        "original_token": "Insoo",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Insoo",
+        "direct_value": "인수"
+      },
+      {
+        "group": "male",
+        "ordinal": 21,
+        "original_token": "Jaehwan",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jaehwan",
+        "direct_value": "재환"
+      },
+      {
+        "group": "male",
+        "ordinal": 22,
+        "original_token": "Jeonghwan",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jeonghwan",
+        "direct_value": "정환"
+      },
+      {
+        "group": "male",
+        "ordinal": 23,
+        "original_token": "Juhyun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Juhyun",
+        "direct_value": "주현"
+      },
+      {
+        "group": "male",
+        "ordinal": 24,
+        "original_token": "Byungchul",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Byungchul",
+        "direct_value": "병철"
+      },
+      {
+        "group": "male",
+        "ordinal": 25,
+        "original_token": "Daehyun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Daehyun",
+        "direct_value": "대현"
+      },
+      {
+        "group": "male",
+        "ordinal": 26,
+        "original_token": "Dohyun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Dohyun",
+        "direct_value": "도현"
+      },
+      {
+        "group": "male",
+        "ordinal": 27,
+        "original_token": "Donghae",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Donghae",
+        "direct_value": "동해"
+      },
+      {
+        "group": "male",
+        "ordinal": 28,
+        "original_token": "Donghyun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Donghyun",
+        "direct_value": "동현"
+      },
+      {
+        "group": "male",
+        "ordinal": 29,
+        "original_token": "Dongwon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Dongwon",
+        "direct_value": "동원"
+      },
+      {
+        "group": "male",
+        "ordinal": 30,
+        "original_token": "Doyoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Doyoon",
+        "direct_value": "도윤"
+      },
+      {
+        "group": "male",
+        "ordinal": 31,
+        "original_token": "Geonwoo",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Geonwoo",
+        "direct_value": "건우"
+      },
+      {
+        "group": "male",
+        "ordinal": 32,
+        "original_token": "Gyungho",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Gyungho",
+        "direct_value": "경호"
+      },
+      {
+        "group": "male",
+        "ordinal": 33,
+        "original_token": "Hajoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Hajoon",
+        "direct_value": "하준"
+      },
+      {
+        "group": "male",
+        "ordinal": 34,
+        "original_token": "Jaehyun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jaehyun",
+        "direct_value": "재현"
+      },
+      {
+        "group": "male",
+        "ordinal": 35,
+        "original_token": "Jaeyoung",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jaeyoung",
+        "direct_value": "재영"
+      },
+      {
+        "group": "male",
+        "ordinal": 36,
+        "original_token": "Jiho",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jiho",
+        "direct_value": "지호"
+      },
+      {
+        "group": "male",
+        "ordinal": 37,
+        "original_token": "Jihoo",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jihoo",
+        "direct_value": "지후"
+      },
+      {
+        "group": "male",
+        "ordinal": 38,
+        "original_token": "Jihoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jihoon",
+        "direct_value": "지훈"
+      },
+      {
+        "group": "male",
+        "ordinal": 39,
+        "original_token": "Jinho",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jinho",
+        "direct_value": "진호"
+      },
+      {
+        "group": "male",
+        "ordinal": 40,
+        "original_token": "Jisub",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jisub",
+        "direct_value": "지섭"
+      },
+      {
+        "group": "male",
+        "ordinal": 41,
+        "original_token": "Jiwon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jiwon",
+        "direct_value": "지원"
+      },
+      {
+        "group": "male",
+        "ordinal": 42,
+        "original_token": "Joowon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Joowon",
+        "direct_value": "주원"
+      },
+      {
+        "group": "male",
+        "ordinal": 43,
+        "original_token": "Jungho",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jungho",
+        "direct_value": "정호"
+      },
+      {
+        "group": "male",
+        "ordinal": 44,
+        "original_token": "Junghoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Junghoon",
+        "direct_value": "정훈"
+      },
+      {
+        "group": "male",
+        "ordinal": 45,
+        "original_token": "Junsuh",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Junsuh",
+        "direct_value": "준서"
+      },
+      {
+        "group": "male",
+        "ordinal": 46,
+        "original_token": "Junwoo",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Junwoo",
+        "direct_value": "준우"
+      },
+      {
+        "group": "male",
+        "ordinal": 47,
+        "original_token": "Junyoung",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Junyoung",
+        "direct_value": "준영"
+      },
+      {
+        "group": "male",
+        "ordinal": 48,
+        "original_token": "Juwon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Juwon",
+        "direct_value": "주원"
+      },
+      {
+        "group": "male",
+        "ordinal": 49,
+        "original_token": "Mingyu",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Mingyu",
+        "direct_value": "민규"
+      },
+      {
+        "group": "male",
+        "ordinal": 50,
+        "original_token": "Minho",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Minho",
+        "direct_value": "민호"
+      },
+      {
+        "group": "male",
+        "ordinal": 51,
+        "original_token": "Minjae",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Minjae",
+        "direct_value": "민재"
+      },
+      {
+        "group": "male",
+        "ordinal": 52,
+        "original_token": "Minjoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Minjoon",
+        "direct_value": "민준"
+      },
+      {
+        "group": "male",
+        "ordinal": 53,
+        "original_token": "Minseok",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Minseok",
+        "direct_value": "민석"
+      },
+      {
+        "group": "male",
+        "ordinal": 54,
+        "original_token": "Minsoo",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Minsoo",
+        "direct_value": "민수"
+      },
+      {
+        "group": "male",
+        "ordinal": 55,
+        "original_token": "Sanghoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Sanghoon",
+        "direct_value": "상훈"
+      },
+      {
+        "group": "male",
+        "ordinal": 56,
+        "original_token": "Seojoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Seojoon",
+        "direct_value": "서준"
+      },
+      {
+        "group": "male",
+        "ordinal": 57,
+        "original_token": "Seungho",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Seungho",
+        "direct_value": "승호"
+      },
+      {
+        "group": "male",
+        "ordinal": 58,
+        "original_token": "Seunghoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Seunghoon",
+        "direct_value": "승훈"
+      },
+      {
+        "group": "male",
+        "ordinal": 59,
+        "original_token": "Seunghyun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Seunghyun",
+        "direct_value": "승현"
+      },
+      {
+        "group": "male",
+        "ordinal": 60,
+        "original_token": "Seungmin",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Seungmin",
+        "direct_value": "승민"
+      },
+      {
+        "group": "male",
+        "ordinal": 61,
+        "original_token": "Shiwoo",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Shiwoo",
+        "direct_value": "시우"
+      },
+      {
+        "group": "male",
+        "ordinal": 62,
+        "original_token": "Sungho",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Sungho",
+        "direct_value": "성호"
+      },
+      {
+        "group": "male",
+        "ordinal": 63,
+        "original_token": "Sunghoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Sunghoon",
+        "direct_value": "성훈"
+      },
+      {
+        "group": "male",
+        "ordinal": 64,
+        "original_token": "Sungjin",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Sungjin",
+        "direct_value": "성진"
+      },
+      {
+        "group": "male",
+        "ordinal": 65,
+        "original_token": "Sungmin",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Sungmin",
+        "direct_value": "성민"
+      },
+      {
+        "group": "male",
+        "ordinal": 66,
+        "original_token": "Taehyun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Taehyun",
+        "direct_value": "태현"
+      },
+      {
+        "group": "male",
+        "ordinal": 67,
+        "original_token": "Woojin",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Woojin",
+        "direct_value": "우진"
+      },
+      {
+        "group": "male",
+        "ordinal": 68,
+        "original_token": "Yejoon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Yejoon",
+        "direct_value": "예준"
+      },
+      {
+        "group": "male",
+        "ordinal": 69,
+        "original_token": "Youngchul",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Youngchul",
+        "direct_value": "영철"
+      },
+      {
+        "group": "male",
+        "ordinal": 70,
+        "original_token": "Youngjae",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Youngjae",
+        "direct_value": "영재"
+      },
+      {
+        "group": "male",
+        "ordinal": 71,
+        "original_token": "Yoonwoo",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Yoonwoo",
+        "direct_value": "윤우"
+      },
+      {
+        "group": "female",
+        "ordinal": 1,
+        "original_token": "Ae-jung",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Ae_jung",
+        "direct_value": "애정"
+      },
+      {
+        "group": "female",
+        "ordinal": 2,
+        "original_token": "Bora",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Bora",
+        "direct_value": "보라"
+      },
+      {
+        "group": "female",
+        "ordinal": 3,
+        "original_token": "Chae-won",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Chae_won",
+        "direct_value": "채원"
+      },
+      {
+        "group": "female",
+        "ordinal": 4,
+        "original_token": "Hye-ja",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Hye_ja",
+        "direct_value": "혜자"
+      },
+      {
+        "group": "female",
+        "ordinal": 5,
+        "original_token": "Ji-young",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Ji_young",
+        "direct_value": "지영"
+      },
+      {
+        "group": "female",
+        "ordinal": 6,
+        "original_token": "Seong-ja",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Seong_ja",
+        "direct_value": "성자"
+      },
+      {
+        "group": "female",
+        "ordinal": 7,
+        "original_token": "Sora",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Sora",
+        "direct_value": "소라"
+      },
+      {
+        "group": "female",
+        "ordinal": 8,
+        "original_token": "Yeo-jin",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Yeo_jin",
+        "direct_value": "여진"
+      },
+      {
+        "group": "female",
+        "ordinal": 9,
+        "original_token": "Kyung-hee",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Kyung_hee",
+        "direct_value": "경희"
+      },
+      {
+        "group": "female",
+        "ordinal": 10,
+        "original_token": "Aejung",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Aejung",
+        "direct_value": "애정"
+      },
+      {
+        "group": "female",
+        "ordinal": 11,
+        "original_token": "Chaewon",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Chaewon",
+        "direct_value": "채원"
+      },
+      {
+        "group": "female",
+        "ordinal": 12,
+        "original_token": "Hyeja",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Hyeja",
+        "direct_value": "혜자"
+      },
+      {
+        "group": "female",
+        "ordinal": 13,
+        "original_token": "Jiyoung",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jiyoung",
+        "direct_value": "지영"
+      },
+      {
+        "group": "female",
+        "ordinal": 14,
+        "original_token": "Seongja",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Seongja",
+        "direct_value": "성자"
+      },
+      {
+        "group": "female",
+        "ordinal": 15,
+        "original_token": "Yeojin",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Yeojin",
+        "direct_value": "여진"
+      },
+      {
+        "group": "female",
+        "ordinal": 16,
+        "original_token": "Kyunghee",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Kyunghee",
+        "direct_value": "경희"
+      },
+      {
+        "group": "female",
+        "ordinal": 17,
+        "original_token": "Geunhye",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Geunhye",
+        "direct_value": "근혜"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 1,
+        "original_token": "Kim",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Kim",
+        "direct_value": "김"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 2,
+        "original_token": "Cho",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Cho",
+        "direct_value": "조"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 3,
+        "original_token": "Lee",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Lee",
+        "direct_value": "이"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 4,
+        "original_token": "Park",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Park",
+        "direct_value": "박"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 5,
+        "original_token": "Jeong",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jeong",
+        "direct_value": "정"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 6,
+        "original_token": "Choe",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Choe",
+        "direct_value": "최"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 7,
+        "original_token": "Jang",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Jang",
+        "direct_value": "장"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 8,
+        "original_token": "Yun",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Yun",
+        "direct_value": "윤"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 9,
+        "original_token": "Rim",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Rim",
+        "direct_value": "림"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 10,
+        "original_token": "Ryu",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Ryu",
+        "direct_value": "류"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 11,
+        "original_token": "Gang",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Gang",
+        "direct_value": "강"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 12,
+        "original_token": "Ahn",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Ahn",
+        "direct_value": "안"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 13,
+        "original_token": "Hong",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Hong",
+        "direct_value": "홍"
+      },
+      {
+        "group": "surnames",
+        "ordinal": 14,
+        "original_token": "Hwang",
+        "rejected_key": "HOK_KOR_RANDOM_NAME_Hwang",
+        "direct_value": "황"
+      }
+    ]
+  },
+  "implementation_method": "Original Romanized KOR name lists with user-requested exclusions of verified modern-politician name combinations",
+  "production_files": [
+    {
+      "path": "common/names/00_names.txt",
+      "sha256": "32aa863816ee3eacc02aa448e9ccbf0a4fcdb1af92809ce23bdf2cc5dd096b9f",
+      "encoding": "UTF-8",
+      "bom": false,
+      "line_endings": "CRLF",
+      "final_crlf": true,
+      "contributor_note": "#20261112_kpopmodder: Exclude verified modern-politician name combinations from the shared KOR name pool.",
+      "previous_contributor_note_retained": true
+    }
+  ],
+  "source_preservation": {
+    "kor_block": "Original Romanized names retained except documented user-requested name exclusions and contributor notes",
+    "input_order_and_spelling_variants": "Remaining original entries and spelling order preserved",
+    "other_source_bytes": "Outside the KOR block and its new contributor note, byte-identical to the previous source snapshot",
+    "fixed_scientists_and_paired_character_localisations": "unchanged hashes",
+    "portrait_configuration": "unchanged hashes"
+  },
+  "restoration": {
+    "date": "2026-11-12",
+    "reason": "Explicit user request to restore only newly generated names to their original Romanized spellings",
+    "evidence_root": "C:/hoi/test/hok-scientist-name-roman-restore-20261112-01",
+    "verification_record": "C:/hoi/test/hok-scientist-name-roman-restore-20261112-01/restoration-verification.json",
+    "before_sha256": "f428e6a66553c62b721f68433dd3e49d1463dd3b58890a710d3451d428d8af64",
+    "after_sha256": "7659d5eab0428cf1548dc37737c6f82564a936546af6ce054c9efa3266c36a6c",
+    "source_reference": "C:/hoi/test/hok-scientist-name-localisation-20261112-01/source-before/common/names/00_names.txt",
+    "original_kor_block_exact": true,
+    "affected_shared_consumers": "All generated Korean characters consuming this same KOR list return to their original Romanized input spellings",
+    "runtime_after_restoration": "not_run",
+    "historical_evidence_note": "Earlier Korean-name UI results apply only to the archived Korean-literal source, not to this restored source"
+  },
+  "runtime_validation": {
+    "status": "not_run_after_modern_name_exclusions",
+    "historical_korean_run": "historical_direct_korean_configuration.runtime_validation",
+    "existing_saved_names": "not_modified_or_tested"
+  },
+  "entries": [
+    {
+      "group": "male",
+      "ordinal": 1,
+      "active_value": "Hee-Seok"
+    },
+    {
+      "group": "male",
+      "ordinal": 2,
+      "active_value": "Jae-Hoon"
+    },
+    {
+      "group": "male",
+      "ordinal": 3,
+      "active_value": "Shin-Woo"
+    },
+    {
+      "group": "male",
+      "ordinal": 4,
+      "active_value": "Sang"
+    },
+    {
+      "group": "male",
+      "ordinal": 6,
+      "active_value": "Kwang"
+    },
+    {
+      "group": "male",
+      "ordinal": 8,
+      "active_value": "Chul"
+    },
+    {
+      "group": "male",
+      "ordinal": 9,
+      "active_value": "Hyuk"
+    },
+    {
+      "group": "male",
+      "ordinal": 11,
+      "active_value": "Han-gyeol"
+    },
+    {
+      "group": "male",
+      "ordinal": 12,
+      "active_value": "Heeseok"
+    },
+    {
+      "group": "male",
+      "ordinal": 13,
+      "active_value": "Jaehoon"
+    },
+    {
+      "group": "male",
+      "ordinal": 14,
+      "active_value": "Shinwoo"
+    },
+    {
+      "group": "male",
+      "ordinal": 16,
+      "active_value": "Hangyeol"
+    },
+    {
+      "group": "male",
+      "ordinal": 17,
+      "active_value": "Dowon"
+    },
+    {
+      "group": "male",
+      "ordinal": 18,
+      "active_value": "Dongjun"
+    },
+    {
+      "group": "male",
+      "ordinal": 19,
+      "active_value": "Gwangmin"
+    },
+    {
+      "group": "male",
+      "ordinal": 20,
+      "active_value": "Insoo"
+    },
+    {
+      "group": "male",
+      "ordinal": 21,
+      "active_value": "Jaehwan"
+    },
+    {
+      "group": "male",
+      "ordinal": 22,
+      "active_value": "Jeonghwan"
+    },
+    {
+      "group": "male",
+      "ordinal": 23,
+      "active_value": "Juhyun"
+    },
+    {
+      "group": "male",
+      "ordinal": 24,
+      "active_value": "Byungchul"
+    },
+    {
+      "group": "male",
+      "ordinal": 25,
+      "active_value": "Daehyun"
+    },
+    {
+      "group": "male",
+      "ordinal": 26,
+      "active_value": "Dohyun"
+    },
+    {
+      "group": "male",
+      "ordinal": 27,
+      "active_value": "Donghae"
+    },
+    {
+      "group": "male",
+      "ordinal": 28,
+      "active_value": "Donghyun"
+    },
+    {
+      "group": "male",
+      "ordinal": 29,
+      "active_value": "Dongwon"
+    },
+    {
+      "group": "male",
+      "ordinal": 30,
+      "active_value": "Doyoon"
+    },
+    {
+      "group": "male",
+      "ordinal": 31,
+      "active_value": "Geonwoo"
+    },
+    {
+      "group": "male",
+      "ordinal": 32,
+      "active_value": "Gyungho"
+    },
+    {
+      "group": "male",
+      "ordinal": 33,
+      "active_value": "Hajoon"
+    },
+    {
+      "group": "male",
+      "ordinal": 34,
+      "active_value": "Jaehyun"
+    },
+    {
+      "group": "male",
+      "ordinal": 36,
+      "active_value": "Jiho"
+    },
+    {
+      "group": "male",
+      "ordinal": 37,
+      "active_value": "Jihoo"
+    },
+    {
+      "group": "male",
+      "ordinal": 38,
+      "active_value": "Jihoon"
+    },
+    {
+      "group": "male",
+      "ordinal": 40,
+      "active_value": "Jisub"
+    },
+    {
+      "group": "male",
+      "ordinal": 42,
+      "active_value": "Joowon"
+    },
+    {
+      "group": "male",
+      "ordinal": 45,
+      "active_value": "Junsuh"
+    },
+    {
+      "group": "male",
+      "ordinal": 46,
+      "active_value": "Junwoo"
+    },
+    {
+      "group": "male",
+      "ordinal": 47,
+      "active_value": "Junyoung"
+    },
+    {
+      "group": "male",
+      "ordinal": 48,
+      "active_value": "Juwon"
+    },
+    {
+      "group": "male",
+      "ordinal": 49,
+      "active_value": "Mingyu"
+    },
+    {
+      "group": "male",
+      "ordinal": 50,
+      "active_value": "Minho"
+    },
+    {
+      "group": "male",
+      "ordinal": 51,
+      "active_value": "Minjae"
+    },
+    {
+      "group": "male",
+      "ordinal": 52,
+      "active_value": "Minjoon"
+    },
+    {
+      "group": "male",
+      "ordinal": 56,
+      "active_value": "Seojoon"
+    },
+    {
+      "group": "male",
+      "ordinal": 57,
+      "active_value": "Seungho"
+    },
+    {
+      "group": "male",
+      "ordinal": 58,
+      "active_value": "Seunghoon"
+    },
+    {
+      "group": "male",
+      "ordinal": 59,
+      "active_value": "Seunghyun"
+    },
+    {
+      "group": "male",
+      "ordinal": 60,
+      "active_value": "Seungmin"
+    },
+    {
+      "group": "male",
+      "ordinal": 61,
+      "active_value": "Shiwoo"
+    },
+    {
+      "group": "male",
+      "ordinal": 64,
+      "active_value": "Sungjin"
+    },
+    {
+      "group": "male",
+      "ordinal": 66,
+      "active_value": "Taehyun"
+    },
+    {
+      "group": "male",
+      "ordinal": 67,
+      "active_value": "Woojin"
+    },
+    {
+      "group": "male",
+      "ordinal": 68,
+      "active_value": "Yejoon"
+    },
+    {
+      "group": "male",
+      "ordinal": 69,
+      "active_value": "Youngchul"
+    },
+    {
+      "group": "male",
+      "ordinal": 70,
+      "active_value": "Youngjae"
+    },
+    {
+      "group": "male",
+      "ordinal": 71,
+      "active_value": "Yoonwoo"
+    },
+    {
+      "group": "female",
+      "ordinal": 1,
+      "active_value": "Ae-jung"
+    },
+    {
+      "group": "female",
+      "ordinal": 3,
+      "active_value": "Chae-won"
+    },
+    {
+      "group": "female",
+      "ordinal": 4,
+      "active_value": "Hye-ja"
+    },
+    {
+      "group": "female",
+      "ordinal": 6,
+      "active_value": "Seong-ja"
+    },
+    {
+      "group": "female",
+      "ordinal": 7,
+      "active_value": "Sora"
+    },
+    {
+      "group": "female",
+      "ordinal": 8,
+      "active_value": "Yeo-jin"
+    },
+    {
+      "group": "female",
+      "ordinal": 10,
+      "active_value": "Aejung"
+    },
+    {
+      "group": "female",
+      "ordinal": 11,
+      "active_value": "Chaewon"
+    },
+    {
+      "group": "female",
+      "ordinal": 12,
+      "active_value": "Hyeja"
+    },
+    {
+      "group": "female",
+      "ordinal": 14,
+      "active_value": "Seongja"
+    },
+    {
+      "group": "female",
+      "ordinal": 15,
+      "active_value": "Yeojin"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 1,
+      "active_value": "Kim"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 2,
+      "active_value": "Cho"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 3,
+      "active_value": "Lee"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 4,
+      "active_value": "Park"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 5,
+      "active_value": "Jeong"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 6,
+      "active_value": "Choe"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 7,
+      "active_value": "Jang"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 8,
+      "active_value": "Yun"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 9,
+      "active_value": "Rim"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 10,
+      "active_value": "Ryu"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 11,
+      "active_value": "Gang"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 12,
+      "active_value": "Ahn"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 13,
+      "active_value": "Hong"
+    },
+    {
+      "group": "surnames",
+      "ordinal": 14,
+      "active_value": "Hwang"
+    }
+  ],
+  "user_requested_name_exclusions": [
+    {
+      "date": "2026-11-12",
+      "removed_value": "Geunhye",
+      "group": "female",
+      "removed_entry": {
+        "group": "female",
+        "ordinal": 17,
+        "active_value": "Geunhye"
+      },
+      "reason": "Explicit user request",
+      "scope": "Shared KOR generated-name pool, including newly recruited scientists",
+      "female_before": 17,
+      "female_after": 16,
+      "total_before": 102,
+      "total_after": 101,
+      "before_sha256": "7659d5eab0428cf1548dc37737c6f82564a936546af6ce054c9efa3266c36a6c",
+      "after_sha256": "08c6cad04ded79dfd18dd49ae32e8d68570d77ff78db0bee3e1ded17d6745c8d",
+      "verification_record": "C:/hoi/test/hok-scientist-name-geunhye-removal-20261112-01/removal-verification.json",
+      "runtime": "not_run",
+      "historical_metadata": "Original restoration and earlier Korean mapping records retained for their recorded source snapshots"
+    },
+    {
+      "date": "2026-11-12",
+      "reason": "User required avoiding 21st-century politician names in the World War II setting, irrespective of political affiliation",
+      "scope": "Shared KOR generated-name pool, including newly recruited scientists",
+      "mechanism": "Remove given-name components that form verified overlaps with retained surnames; this removes their combinations with every surname",
+      "removed_entries": [
+        {
+          "group": "male",
+          "ordinal": 5,
+          "active_value": "Gun"
+        },
+        {
+          "group": "male",
+          "ordinal": 7,
+          "active_value": "Woong"
+        },
+        {
+          "group": "male",
+          "ordinal": 10,
+          "active_value": "Yoon-Gi"
+        },
+        {
+          "group": "male",
+          "ordinal": 15,
+          "active_value": "Yoongi"
+        },
+        {
+          "group": "male",
+          "ordinal": 35,
+          "active_value": "Jaeyoung"
+        },
+        {
+          "group": "male",
+          "ordinal": 39,
+          "active_value": "Jinho"
+        },
+        {
+          "group": "male",
+          "ordinal": 41,
+          "active_value": "Jiwon"
+        },
+        {
+          "group": "male",
+          "ordinal": 43,
+          "active_value": "Jungho"
+        },
+        {
+          "group": "male",
+          "ordinal": 44,
+          "active_value": "Junghoon"
+        },
+        {
+          "group": "male",
+          "ordinal": 53,
+          "active_value": "Minseok"
+        },
+        {
+          "group": "male",
+          "ordinal": 54,
+          "active_value": "Minsoo"
+        },
+        {
+          "group": "male",
+          "ordinal": 55,
+          "active_value": "Sanghoon"
+        },
+        {
+          "group": "male",
+          "ordinal": 62,
+          "active_value": "Sungho"
+        },
+        {
+          "group": "male",
+          "ordinal": 63,
+          "active_value": "Sunghoon"
+        },
+        {
+          "group": "male",
+          "ordinal": 65,
+          "active_value": "Sungmin"
+        },
+        {
+          "group": "female",
+          "ordinal": 2,
+          "active_value": "Bora"
+        },
+        {
+          "group": "female",
+          "ordinal": 5,
+          "active_value": "Ji-young"
+        },
+        {
+          "group": "female",
+          "ordinal": 9,
+          "active_value": "Kyung-hee"
+        },
+        {
+          "group": "female",
+          "ordinal": 13,
+          "active_value": "Jiyoung"
+        },
+        {
+          "group": "female",
+          "ordinal": 16,
+          "active_value": "Kyunghee"
+        }
+      ],
+      "removed_entry_counts": {
+        "male": 15,
+        "female": 5,
+        "total": 20
+      },
+      "before_counts": {
+        "male": 71,
+        "female": 16,
+        "surnames": 14,
+        "total": 101
+      },
+      "after_counts": {
+        "male": 56,
+        "female": 11,
+        "surnames": 14,
+        "total": 81
+      },
+      "before_sha256": "08c6cad04ded79dfd18dd49ae32e8d68570d77ff78db0bee3e1ded17d6745c8d",
+      "after_sha256": "32aa863816ee3eacc02aa448e9ccbf0a4fcdb1af92809ce23bdf2cc5dd096b9f",
+      "verification_record": "C:\\hoi\\test\\hok-scientist-modern-name-exclusions-20261112-01\\removal-verification.json",
+      "identity_evidence": [
+        {
+          "values": [
+            "Sanghoon"
+          ],
+          "example": "김상훈",
+          "source": "https://www.nanet.go.kr/attachfiles/bodo/library/1707264989699.pdf"
+        },
+        {
+          "values": [
+            "Sungmin",
+            "Sunghoon",
+            "Junghoon",
+            "Minsoo"
+          ],
+          "example": "박성민·박성훈·조정훈·김민수",
+          "source": "https://m.peoplepowerparty.kr/about/people_center"
+        },
+        {
+          "values": [
+            "Jaeyoung"
+          ],
+          "example": "이재영",
+          "source": "https://www.peoplepowerparty.kr/news/comment_view_all/16561?gubun_list=all&page=2796"
+        },
+        {
+          "values": [
+            "Jinho"
+          ],
+          "example": "박진호",
+          "source": "https://www.peoplepowerparty.kr/news/comment_view/BBSDD0001/108617"
+        },
+        {
+          "values": [
+            "Sungho"
+          ],
+          "example": "박성호",
+          "source": "https://www.peoplepowerparty.kr/news/comment_view_all/16109?gubun_list=all&page=2899"
+        },
+        {
+          "values": [
+            "Minseok",
+            "Jiwon",
+            "Jungho"
+          ],
+          "example": "김민석·박지원·김정호",
+          "source": "https://dl.nanet.go.kr/detail/PAMP10000000077313"
+        },
+        {
+          "values": [
+            "Gun"
+          ],
+          "example": "김건",
+          "source": "https://ampos.nanet.go.kr/activityCongressDetail.do?congress_no=G1899888"
+        },
+        {
+          "values": [
+            "Woong"
+          ],
+          "example": "김웅",
+          "source": "https://ampos.nanet.go.kr/activityCongressDetail.do?congress_no=G1899713"
+        },
+        {
+          "values": [
+            "Yoon-Gi",
+            "Yoongi"
+          ],
+          "example": "김윤기",
+          "source": "https://www.justice21.org/newhome/board/board_view.html?num=166848&page=5"
+        },
+        {
+          "values": [
+            "Ji-young",
+            "Jiyoung"
+          ],
+          "example": "류지영",
+          "source": "https://ampos.nanet.go.kr/materialSeminarDetail.do?control_no=PAMP1000040049"
+        },
+        {
+          "values": [
+            "Kyung-hee",
+            "Kyunghee"
+          ],
+          "example": "정경희",
+          "source": "https://www.peoplepowerparty.kr/news/lawmaker_inspection_view/98548?page=3"
+        },
+        {
+          "values": [
+            "Bora"
+          ],
+          "example": "김보라",
+          "source": "https://www.anseong.go.kr/mayor/contents.do?mId=0101000000"
+        }
+      ],
+      "review_boundary": "Known verified overlaps listed here; not an exhaustive guarantee against every past or present local politician or candidate",
+      "runtime": "not_run",
+      "existing_saved_names": "not_modified_or_tested"
+    }
+  ]
+}

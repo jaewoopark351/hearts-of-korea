@@ -1,0 +1,663 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "scope": "Korean-only portraits for newly recruited scientists",
+  "source_baseline": {
+    "branch": "feat/korean-focus-expansion-ai",
+    "commit": "cdc022eee15fbf7404d4cb30cf2d0102d29e550c"
+  },
+  "status": "source_assets_verified_normal_recruitment_samples_verified_save_validation_partial",
+  "asset_counts": {
+    "male": 4,
+    "female": 4,
+    "total": 8
+  },
+  "generation": {
+    "classification": "AI-generated",
+    "tool": "image_gen.imagegen",
+    "model": "not_exposed",
+    "date": "2026-11-12",
+    "reference_images": [],
+    "transparent_background": true
+  },
+  "source_preservation": {
+    "selected_original_directory": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generated",
+    "selected_original_role": "Preserved selected image-generation PNGs",
+    "prompt_record": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/prompts.json",
+    "generation_provenance_record": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generation-provenance.json",
+    "conversion_record": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/conversion-manifest.json",
+    "native_contact_sheet": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/native-contact-sheet.png"
+  },
+  "static_validation_record": "C:/hoi/test/hok-scientist-portraits-20261112-01/validation/scientist-asset-manifest-validation.json",
+  "runtime_validation": {
+    "status": "normal_recruitment_samples_verified_save_validation_partial",
+    "record": "../incidents/2026-11-12-korean-scientist-portraits.md",
+    "playset": [
+      "mod/hearts of korea.mod",
+      "mod/Hearts of Korea anime.mod"
+    ],
+    "normal_recruitment": {
+      "status": "CONFIRMED",
+      "hired_samples": [
+        {
+          "name": "Shinwoo Choe",
+          "portrait": "GFX_HOK_KOR_scientist_male_03"
+        },
+        {
+          "name": "Chae-won Hwang",
+          "portrait": "GFX_HOK_KOR_scientist_female_04"
+        }
+      ],
+      "additional_displayed_candidate_portraits": [
+        "GFX_HOK_KOR_scientist_female_03"
+      ],
+      "evidence": [
+        "C:/hoi/test/hok-scientist-portraits-20261112-01/runtime/screenshots/anime-normal-hired-pair-clear.png"
+      ]
+    },
+    "save_round_trip": {
+      "status": "PARTIAL",
+      "initial_save_attempt": {
+        "status": "UNRESOLVED",
+        "temporary_name": "KOR_1936_04_08_22_temp.hoi4",
+        "evidence_copy": "C:/hoi/test/hok-scientist-portraits-20261112-01/runtime/saves/anime-normal-pair-temp.hoi4",
+        "observations": [
+          "A save rename error occurred and the final save file was absent.",
+          "The observed save data was binary."
+        ]
+      },
+      "same_process_and_full_restart_reload": {
+        "case": "First immediate-save attempt",
+        "observed_present": [
+          "GFX_HOK_KOR_scientist_female_04",
+          "The four existing fixed Korean scientists"
+        ],
+        "observed_not_listed": [
+          "Shinwoo Choe"
+        ],
+        "cause_of_shinwoo_absence": "UNPROVEN"
+      },
+      "repeat_save_after_ordinary_progress": {
+        "status": "CONFIRMED_FOR_SAME_PROCESS_SAMPLE",
+        "verification_method": "In-game UI load of the temporary save within the same process after ordinary time progression",
+        "roster_count_after_reload": 6,
+        "observed_pair_preserved": [
+          {
+            "name": "Chae-won Hwang",
+            "portrait": "GFX_HOK_KOR_scientist_female_04"
+          },
+          {
+            "name": "Yoon-Gi Gang",
+            "portrait": "GFX_HOK_KOR_scientist_male_03"
+          }
+        ],
+        "save_file": {
+          "role": "Temporary binary save loaded through the game UI",
+          "temporary_name": "KOR_1936_05_26_23_temp.hoi4",
+          "evidence_copy": "C:/hoi/test/hok-scientist-portraits-20261112-01/runtime/saves/anime-ticked-pair-temp.hoi4",
+          "sha256": "38b5fd3f3f419f414410db2bec41f1808ea863a193eba70fc85b594a1dbdf52a",
+          "bytes": 47058356,
+          "binary_analysis": "not_performed"
+        },
+        "save_rename_error": "still_observed",
+        "full_process_restart_reload": "unverified_for_this_second_save_sample",
+        "evidence": [
+          "C:/hoi/test/hok-scientist-portraits-20261112-01/runtime/screenshots/anime-ticked-pair-after-reload.png"
+        ]
+      }
+    },
+    "unverified_scope": [
+      "In-game display of all eight portrait variants",
+      "HOK without the anime submod",
+      "The thirteen Korean cosmetic tags",
+      "Pre-implementation save compatibility",
+      "Multiplayer"
+    ]
+  },
+  "assets": [
+    {
+      "id": "male_01",
+      "gender": "male",
+      "classification": "AI-generated",
+      "contribution": "New portrait artwork for the Hearts of Korea continuation",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Create one original game portrait asset for a Korean scientist newly recruited in a 1936–1948 grand strategy game. One fictional Korean man aged about 37, clean-shaven, short neatly side-parted black hair, attentive thoughtful face with distinctive broad brow, round thin wire spectacles, dark charcoal 1930s wool suit, cream shirt and restrained grey tie, a fountain pen in breast pocket. Authentic Korean appearance and restrained period styling. Painted realistic strategy-game portrait, softly brushed oil-paint texture, muted desaturated natural colors, clear facial structure readable at 156 by 210 pixels, gentle upper-left studio light, subtle shadows. Vertical 3:4 canvas, a single three-quarter bust facing slightly viewer-left, head fully visible, head and shoulders large and centered, torso extends to bottom edge, subject comfortably inset 8 percent from top and side edges. Genuine transparent background around silhouette, no environment, no border, no insignia, no laboratory props, no text, no logos, no watermarks. This is a fictional scientist, no specific real person's likeness. Make a finished standalone portrait, only one person.",
+        "reference_images": [],
+        "transparent_background": true,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1ce2c-e1e3-7ce0-b1a6-614f63216c4f/exec-8ec4789f-90a0-4044-8a5b-bd62d9d6fa52.png",
+        "tool_native_original_sha256": "55b457c685193035fbc16f23b5b814148e5f58673bb0ee38a23581474795f85f"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generated/male_01.png",
+        "sha256": "55b457c685193035fbc16f23b5b814148e5f58673bb0ee38a23581474795f85f",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original generation output"
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_scientist_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_scientist_male_01",
+      "runtime_path": "gfx/leaders/scientists/HOK_KOR/portrait_HOK_KOR_scientist_male_01.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/prepare_scientist_dds.ps1",
+        "crop_rectangle_xywh": [
+          5.171428571428578,
+          0,
+          1075.6571428571428,
+          1448
+        ],
+        "crop_method": "Centered crop preserving the target aspect ratio",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with one mip level",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_male_01.dds"
+      },
+      "output": {
+        "sha256": "99c67c13bfdc1fba4e85c3ff7d4a07d7337395f08981f17cfb54e5a4943903a9",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 1,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "transparent_pixels": 11768,
+          "partial_alpha_pixels": 20599
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_male_01.png",
+        "sha256": "2baa0774834df82f02c3dcddeffb1bc3bdfe51cc13ba5892df5774081e066057"
+      }
+    },
+    {
+      "id": "male_02",
+      "gender": "male",
+      "classification": "AI-generated",
+      "contribution": "New portrait artwork for the Hearts of Korea continuation",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Create one original standalone game portrait for a newly recruited Korean scientist in a 1936–1948 grand strategy game. One fictional Korean adult. Painted realistic strategy-game portrait with softly brushed oil paint texture, muted desaturated natural colors, authentic period civilian clothing, clear facial structure readable at 156 by 210 pixels, gentle upper-left studio light and subtle shadows. Vertical 3:4 canvas, single three-quarter head-and-upper-torso bust facing slightly viewer-left, head fully visible and large, shoulders extend naturally to the bottom, 8 percent clear margin above head. Genuine transparent background around silhouette. No environment, no border, no insignia, no laboratory props, no text, no logos, no watermark. Fictional identity, no specific real person's likeness. Korean man aged about 47, broad rounded face with warm alert eyes, short neatly brushed back black hair, small tidy moustache, no spectacles, white cotton laboratory coat over a brown waistcoat, cream shirt and muted burgundy tie. A different clearly individual face.",
+        "reference_images": [],
+        "transparent_background": true,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1ce2c-e1e3-7ce0-b1a6-614f63216c4f/exec-43da818c-0d63-4197-a34b-9bc0075a6ec2.png",
+        "tool_native_original_sha256": "f8b5219fb40240c98b51da13de08ec24b37a5dc308dc8b5700d0236c2e36ffae"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generated/male_02.png",
+        "sha256": "f8b5219fb40240c98b51da13de08ec24b37a5dc308dc8b5700d0236c2e36ffae",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original generation output"
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_scientist_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_scientist_male_02",
+      "runtime_path": "gfx/leaders/scientists/HOK_KOR/portrait_HOK_KOR_scientist_male_02.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/prepare_scientist_dds.ps1",
+        "crop_rectangle_xywh": [
+          5.171428571428578,
+          0,
+          1075.6571428571428,
+          1448
+        ],
+        "crop_method": "Centered crop preserving the target aspect ratio",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with one mip level",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_male_02.dds"
+      },
+      "output": {
+        "sha256": "68c821857be50f8a47f1ddadb1ff26529dbca5ed0c7aaf5aa4381ef695c540db",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 1,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "transparent_pixels": 10315,
+          "partial_alpha_pixels": 22071
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_male_02.png",
+        "sha256": "ca6f12e5b1736a9c2f0626e6c73af74d204389210668ca56f985cd7474e31e51"
+      }
+    },
+    {
+      "id": "male_03",
+      "gender": "male",
+      "classification": "AI-generated",
+      "contribution": "New portrait artwork for the Hearts of Korea continuation",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Create one original standalone game portrait for a newly recruited Korean scientist in a 1936–1948 grand strategy game. One fictional Korean adult. Painted realistic strategy-game portrait with softly brushed oil paint texture, muted desaturated natural colors, authentic period civilian clothing, clear facial structure readable at 156 by 210 pixels, gentle upper-left studio light and subtle shadows. Vertical 3:4 canvas, single three-quarter head-and-upper-torso bust facing slightly viewer-left, head fully visible and large, shoulders extend naturally to the bottom, 8 percent clear margin above head. Genuine transparent background around silhouette. No environment, no border, no insignia, no laboratory props, no text, no logos, no watermark. Fictional identity, no specific real person's likeness. Korean man aged about 61, long angular face with age lines, short salt-and-pepper hair with a slightly receding hairline, clean-shaven, rectangular thin metal spectacles, navy wool three-piece suit, cream shirt and dark muted blue tie. Scholarly, composed expression.",
+        "reference_images": [],
+        "transparent_background": true,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1ce2c-e1e3-7ce0-b1a6-614f63216c4f/exec-ba00a899-9510-4a8c-8e55-bc23c67ae369.png",
+        "tool_native_original_sha256": "9fb02d1a1d389cbea104c0ad60739fc34025ae8ab38d5641775efa957600d623"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generated/male_03.png",
+        "sha256": "9fb02d1a1d389cbea104c0ad60739fc34025ae8ab38d5641775efa957600d623",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original generation output"
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_scientist_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_scientist_male_03",
+      "runtime_path": "gfx/leaders/scientists/HOK_KOR/portrait_HOK_KOR_scientist_male_03.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/prepare_scientist_dds.ps1",
+        "crop_rectangle_xywh": [
+          5.171428571428578,
+          0,
+          1075.6571428571428,
+          1448
+        ],
+        "crop_method": "Centered crop preserving the target aspect ratio",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with one mip level",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_male_03.dds"
+      },
+      "output": {
+        "sha256": "ded6bfa82a2b0f05683c18cb0569f3d2763a40dc0f7f2712cd568438d8df7831",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 1,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "transparent_pixels": 13078,
+          "partial_alpha_pixels": 19312
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_male_03.png",
+        "sha256": "ee172466c4186ea0e63f5c60f02d6c4d68826e884bffa234c8a170afc031ebf8"
+      }
+    },
+    {
+      "id": "male_04",
+      "gender": "male",
+      "classification": "AI-generated",
+      "contribution": "New portrait artwork for the Hearts of Korea continuation",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Create one original standalone game portrait for a newly recruited Korean scientist in a 1936–1948 grand strategy game. One fictional Korean adult. Painted realistic strategy-game portrait with softly brushed oil paint texture, muted desaturated natural colors, authentic period civilian clothing, clear facial structure readable at 156 by 210 pixels, gentle upper-left studio light and subtle shadows. Vertical 3:4 canvas, single three-quarter head-and-upper-torso bust facing slightly viewer-left, head fully visible and large, shoulders extend naturally to the bottom, 8 percent clear margin above head. Genuine transparent background around silhouette. No environment, no border, no insignia, no laboratory props, no text, no logos, no watermark. Fictional identity, no specific real person's likeness. Korean man aged about 32, oval face with high cheekbones and a calm determined expression, short slightly wavy black hair side-parted, clean-shaven, no spectacles, pale cream laboratory coat over a dark olive waistcoat and light shirt with a restrained black tie.",
+        "reference_images": [],
+        "transparent_background": true,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1ce2c-e1e3-7ce0-b1a6-614f63216c4f/exec-cacfc507-827a-4ea2-b4c0-5ef165c32c70.png",
+        "tool_native_original_sha256": "79662d8f03b27cd1b6786049b5e227e138bf905efd95e0d788e177f5b705d543"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generated/male_04.png",
+        "sha256": "79662d8f03b27cd1b6786049b5e227e138bf905efd95e0d788e177f5b705d543",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original generation output"
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_scientist_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_scientist_male_04",
+      "runtime_path": "gfx/leaders/scientists/HOK_KOR/portrait_HOK_KOR_scientist_male_04.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/prepare_scientist_dds.ps1",
+        "crop_rectangle_xywh": [
+          5.171428571428578,
+          0,
+          1075.6571428571428,
+          1448
+        ],
+        "crop_method": "Centered crop preserving the target aspect ratio",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with one mip level",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_male_04.dds"
+      },
+      "output": {
+        "sha256": "5d195d8f31a0bf7e2ec2da383e5575f8d864da31a279e4f0873ed602e0eaf38b",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 1,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "transparent_pixels": 11444,
+          "partial_alpha_pixels": 20934
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_male_04.png",
+        "sha256": "59a5c2cacd9232565eeb2b87199ab7c02475facb02bec954cb4a230f9fa87df0"
+      }
+    },
+    {
+      "id": "female_01",
+      "gender": "female",
+      "classification": "AI-generated",
+      "contribution": "New portrait artwork for the Hearts of Korea continuation",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Create one original standalone game portrait for a newly recruited Korean scientist in a 1936–1948 grand strategy game. One fictional Korean adult. Painted realistic strategy-game portrait with softly brushed oil paint texture, muted desaturated natural colors, authentic period civilian clothing, clear facial structure readable at 156 by 210 pixels, gentle upper-left studio light and subtle shadows. Vertical 3:4 canvas, single three-quarter head-and-upper-torso bust facing slightly viewer-left, head fully visible and large, shoulders extend naturally to the bottom, 8 percent clear margin above head. Genuine transparent background around silhouette. No environment, no border, no insignia, no laboratory props, no text, no logos, no watermark. Fictional identity, no specific real person's likeness. Korean woman aged about 34, oval face with attentive eyes and softly arched brows, short black hair in a tidy 1930s bob tucked behind one ear, no spectacles, cream cotton laboratory coat over a muted blue-grey high-neck period blouse, no jewellery, confident thoughtful expression.",
+        "reference_images": [],
+        "transparent_background": true,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1ce2c-e1e3-7ce0-b1a6-614f63216c4f/exec-0d9a97dc-da5e-4bf1-b548-8f3c46af8086.png",
+        "tool_native_original_sha256": "9daeec4a7cddffe05562caf509ca7078f3e5563b0ca3db792aed6cb1eae50080"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generated/female_01.png",
+        "sha256": "9daeec4a7cddffe05562caf509ca7078f3e5563b0ca3db792aed6cb1eae50080",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original generation output"
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_scientist_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_scientist_female_01",
+      "runtime_path": "gfx/leaders/scientists/HOK_KOR/portrait_HOK_KOR_scientist_female_01.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/prepare_scientist_dds.ps1",
+        "crop_rectangle_xywh": [
+          5.171428571428578,
+          0,
+          1075.6571428571428,
+          1448
+        ],
+        "crop_method": "Centered crop preserving the target aspect ratio",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with one mip level",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_female_01.dds"
+      },
+      "output": {
+        "sha256": "8ce30a7a681abb1cca6cc9f9e83f17afeebe8ac778ca140b1a9c4cbeb4c59de4",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 1,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "transparent_pixels": 10727,
+          "partial_alpha_pixels": 21614
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_female_01.png",
+        "sha256": "f3baa89510a247f61f5aedbeae3964af50909bd72c67bb977c613b6d41470b42"
+      }
+    },
+    {
+      "id": "female_02",
+      "gender": "female",
+      "classification": "AI-generated",
+      "contribution": "New portrait artwork for the Hearts of Korea continuation",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Create one original standalone game portrait for a newly recruited Korean scientist in a 1936–1948 grand strategy game. One fictional Korean adult. Painted realistic strategy-game portrait with softly brushed oil paint texture, muted desaturated natural colors, authentic period civilian clothing, clear facial structure readable at 156 by 210 pixels, gentle upper-left studio light and subtle shadows. Vertical 3:4 canvas, single three-quarter head-and-upper-torso bust facing slightly viewer-left, head fully visible and large, shoulders extend naturally to the bottom, 8 percent clear margin above head. Genuine transparent background around silhouette. No environment, no border, no insignia, no laboratory props, no text, no logos, no watermark. Fictional identity, no specific real person's likeness. Korean woman aged about 45, broad thoughtful face with subtle smile lines, black hair arranged in a low neat period bun, round thin metal spectacles, muted grey-green wool jacket over an ivory collared blouse, simple and practical 1930s academic attire.",
+        "reference_images": [],
+        "transparent_background": true,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1ce2c-e1e3-7ce0-b1a6-614f63216c4f/exec-fee0aa15-a18d-4ba2-a911-2b006463c7e4.png",
+        "tool_native_original_sha256": "bd87b9322f6e5daa1dbcc4f1a3bb5a2373a23eb1ad29c6582b2aa5ae009f6f5b"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generated/female_02.png",
+        "sha256": "bd87b9322f6e5daa1dbcc4f1a3bb5a2373a23eb1ad29c6582b2aa5ae009f6f5b",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original generation output"
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_scientist_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_scientist_female_02",
+      "runtime_path": "gfx/leaders/scientists/HOK_KOR/portrait_HOK_KOR_scientist_female_02.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/prepare_scientist_dds.ps1",
+        "crop_rectangle_xywh": [
+          5.171428571428578,
+          0,
+          1075.6571428571428,
+          1448
+        ],
+        "crop_method": "Centered crop preserving the target aspect ratio",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with one mip level",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_female_02.dds"
+      },
+      "output": {
+        "sha256": "1c7e12f9802656cc0f61ccbe0f0ceab04f98a82a6daa48ba927ba01260fe7c47",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 1,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "transparent_pixels": 11756,
+          "partial_alpha_pixels": 20604
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_female_02.png",
+        "sha256": "e450858d5d50445a2b7a60e940e3a7484ca3ef82f2d8643bd3334aa57ee00705"
+      }
+    },
+    {
+      "id": "female_03",
+      "gender": "female",
+      "classification": "AI-generated",
+      "contribution": "New portrait artwork for the Hearts of Korea continuation",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Create one original standalone game portrait for a newly recruited Korean scientist in a 1936–1948 grand strategy game. One fictional Korean adult. Painted realistic strategy-game portrait with softly brushed oil paint texture, muted desaturated natural colors, authentic period civilian clothing, clear facial structure readable at 156 by 210 pixels, gentle upper-left studio light and subtle shadows. Vertical 3:4 canvas, single three-quarter head-and-upper-torso bust facing slightly viewer-left, head fully visible and large, shoulders extend naturally to the bottom, 8 percent clear margin above head. Genuine transparent background around silhouette. No environment, no border, no insignia, no laboratory props, no text, no logos, no watermark. Fictional identity, no specific real person's likeness. Korean woman aged about 56, long narrow face with gentle age lines, black hair with a few grey strands pulled into a low bun, no spectacles, modest ivory jeogori with subdued pale grey-blue collar and dark muted blue chima visible at lower edge, historically plausible 1930s Korean academic, dignified calm expression.",
+        "reference_images": [],
+        "transparent_background": true,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1ce2c-e1e3-7ce0-b1a6-614f63216c4f/exec-7ed8e2bc-a5db-491b-bfd1-5b9f3b6024a9.png",
+        "tool_native_original_sha256": "049fac36907040002b9ca4abae5a9732a4dac64d0ea86b99601b6b5a826db301"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generated/female_03.png",
+        "sha256": "049fac36907040002b9ca4abae5a9732a4dac64d0ea86b99601b6b5a826db301",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original generation output"
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_scientist_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_scientist_female_03",
+      "runtime_path": "gfx/leaders/scientists/HOK_KOR/portrait_HOK_KOR_scientist_female_03.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/prepare_scientist_dds.ps1",
+        "crop_rectangle_xywh": [
+          5.171428571428578,
+          0,
+          1075.6571428571428,
+          1448
+        ],
+        "crop_method": "Centered crop preserving the target aspect ratio",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with one mip level",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_female_03.dds"
+      },
+      "output": {
+        "sha256": "97416574e0ae690d3e40387eb8c61433e30269774c718c5e85d5eaf72b4962fd",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 1,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "transparent_pixels": 11446,
+          "partial_alpha_pixels": 20966
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_female_03.png",
+        "sha256": "0c9820e22934a035f72322d83bf248239ef4d4caaeea7bfbc4e2e0c765bd4eef"
+      }
+    },
+    {
+      "id": "female_04",
+      "gender": "female",
+      "classification": "AI-generated",
+      "contribution": "New portrait artwork for the Hearts of Korea continuation",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Create one original standalone game portrait for a newly recruited Korean scientist in a 1936–1948 grand strategy game. One fictional Korean adult. Painted realistic strategy-game portrait with softly brushed oil paint texture, muted desaturated natural colors, authentic period civilian clothing, clear facial structure readable at 156 by 210 pixels, gentle upper-left studio light and subtle shadows. Vertical 3:4 canvas, single three-quarter head-and-upper-torso bust facing slightly viewer-left, head fully visible and large, shoulders extend naturally to the bottom, 8 percent clear margin above head. Genuine transparent background around silhouette. No environment, no border, no insignia, no laboratory props, no text, no logos, no watermark. Fictional identity, no specific real person's likeness. Korean woman aged about 29, softly squared face with distinctive straight brows, short neatly waved black hair pinned back at the temples, no spectacles, ivory laboratory coat over a high-neck pale sage blouse, serious inquisitive expression and restrained period styling.",
+        "reference_images": [],
+        "transparent_background": true,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1ce2c-e1e3-7ce0-b1a6-614f63216c4f/exec-266b1690-877a-4c07-aaa7-6bac06110e01.png",
+        "tool_native_original_sha256": "486c5b21849fafc221ba9c64ec964f1c877741cdb6c4a3562bf60fdb9f56f956"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/generated/female_04.png",
+        "sha256": "486c5b21849fafc221ba9c64ec964f1c877741cdb6c4a3562bf60fdb9f56f956",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original generation output"
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_scientist_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_scientist_female_04",
+      "runtime_path": "gfx/leaders/scientists/HOK_KOR/portrait_HOK_KOR_scientist_female_04.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/prepare_scientist_dds.ps1",
+        "crop_rectangle_xywh": [
+          5.171428571428578,
+          0,
+          1075.6571428571428,
+          1448
+        ],
+        "crop_method": "Centered crop preserving the target aspect ratio",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with one mip level",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_female_04.dds"
+      },
+      "output": {
+        "sha256": "e93bb2e51dfa3ed7150583a2a6e117cb32c93f2963b9fe9eb038b5e4f5004b21",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 1,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "transparent_pixels": 12406,
+          "partial_alpha_pixels": 19861
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-scientist-portraits-20261112-01/art/final-dds/portrait_HOK_KOR_scientist_female_04.png",
+        "sha256": "f5761b4196b788341f46e98dd87f0b4e7b6ddddec27c4cdf1dec72bd94913df5"
+      }
+    }
+  ]
+}

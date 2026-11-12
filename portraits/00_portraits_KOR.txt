@@ -21,4 +21,20 @@ KOR = {
 			"GFX_Portrait_Korea_Generic_navy_4"
 		}
 	}
+
+	#20261112_kpopmodder: Assign Korean-only portraits to newly recruited male and female scientists.
+	scientist = {
+		female = {
+			"GFX_HOK_KOR_scientist_female_01"
+			"GFX_HOK_KOR_scientist_female_02"
+			"GFX_HOK_KOR_scientist_female_03"
+			"GFX_HOK_KOR_scientist_female_04"
+		}
+		male = {
+			"GFX_HOK_KOR_scientist_male_01"
+			"GFX_HOK_KOR_scientist_male_02"
+			"GFX_HOK_KOR_scientist_male_03"
+			"GFX_HOK_KOR_scientist_male_04"
+		}
+	}
 }

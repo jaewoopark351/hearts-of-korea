@@ -5617,21 +5617,25 @@ TAN = {
 	callsigns = { }
 }
 
+#20261112_kpopmodder: Display Korean random names directly in the KOR source pool.
+#20261112_kpopmodder: Restore the original Romanized random-name pool at user request.
+#20261112_kpopmodder: Exclude verified modern-politician name combinations from the shared KOR name pool.
 KOR = {
 	male = {
 		names = {
-			"Hee-Seok" "Jae-Hoon" "Shin-Woo" Sang Gun Kwang Woong Chul Hyuk "Yoon-Gi" "Han-gyeol"
-			Heeseok Jaehoon Shinwoo Yoongi Hangyeol Dowon Dongjun Gwangmin Insoo Jaehwan Jeonghwan Juhyun Byungchul
-			Daehyun Dohyun Donghae Donghyun Dongwon Doyoon Geonwoo Gyungho Hajoon Jaehyun Jaeyoung Jiho Jihoo Jihoon
-			Jinho Jisub Jiwon Joowon Jungho Junghoon Junsuh Junwoo Junyoung Juwon Mingyu Minho Minjae Minjoon Minseok
-			Minsoo Sanghoon Seojoon Seungho Seunghoon Seunghyun Seungmin Shiwoo Sungho Sunghoon Sungjin Sungmin Taehyun
+			"Hee-Seok" "Jae-Hoon" "Shin-Woo" Sang Kwang Chul Hyuk "Han-gyeol"
+			Heeseok Jaehoon Shinwoo Hangyeol Dowon Dongjun Gwangmin Insoo Jaehwan Jeonghwan Juhyun Byungchul
+			Daehyun Dohyun Donghae Donghyun Dongwon Doyoon Geonwoo Gyungho Hajoon Jaehyun Jiho Jihoo Jihoon
+			Jisub Joowon Junsuh Junwoo Junyoung Juwon Mingyu Minho Minjae Minjoon
+			Seojoon Seungho Seunghoon Seunghyun Seungmin Shiwoo Sungjin Taehyun
 			Woojin Yejoon Youngchul Youngjae Yoonwoo
 		}
 	}
 	female = {
 		names = {
-			"Ae-jung" Bora "Chae-won" "Hye-ja" "Ji-young" "Seong-ja" Sora "Yeo-jin" "Kyung-hee"
-			Aejung Chaewon Hyeja Jiyoung Seongja Yeojin Kyunghee Geunhye
+			"Ae-jung" "Chae-won" "Hye-ja" "Seong-ja" Sora "Yeo-jin"
+			#20261112_kpopmodder: Remove Geunhye from the shared KOR female-name pool at user request.
+			Aejung Chaewon Hyeja Seongja Yeojin
 		}
 	}
 	surnames = { Kim Cho Lee Park Jeong Choe Jang Yun Rim Ryu Gang Ahn Hong Hwang }
