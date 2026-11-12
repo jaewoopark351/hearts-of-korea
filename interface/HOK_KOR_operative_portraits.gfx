@@ -1,0 +1,35 @@
+#20261112_kpopmodder: Connect Korean-only operative portrait sprites to project-owned DDS assets.
+spriteTypes = {
+	spriteType = {
+		name = "GFX_HOK_KOR_operative_female_01"
+		texturefile = "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_01.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_operative_female_02"
+		texturefile = "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_02.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_operative_female_03"
+		texturefile = "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_03.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_operative_female_04"
+		texturefile = "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_04.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_operative_male_01"
+		texturefile = "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_01.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_operative_male_02"
+		texturefile = "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_02.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_operative_male_03"
+		texturefile = "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_03.dds"
+	}
+	spriteType = {
+		name = "GFX_HOK_KOR_operative_male_04"
+		texturefile = "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_04.dds"
+	}
+}

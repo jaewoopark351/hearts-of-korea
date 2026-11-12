@@ -33,6 +33,7 @@ Before reviewing HOK runtime logs or attributing an error to HOK, read the proje
 | Splitting Korean states into northern/southern successors or reviewing the associated construction-slot and content migration | [Korean state split and industrial construction-space plan](docs/HOK_KOREAN_STATE_SPLIT_PLAN.md) |
 | Creating or revising images, reusing historical image inputs/recipes, or resolving old `.local-artifacts` references | [Development artifact archive and image-source lookup](docs/HOK_DEVELOPMENT_ARTIFACT_ARCHIVE.md) |
 | Reviewing or implementing Korean-only portraits for newly recruited scientists, including anime-submod integration | [Korean scientist portrait plan and source evidence](docs/HOK_KOREAN_SCIENTIST_PORTRAIT_PLAN.md) |
+| Reviewing or implementing Korean-only portraits for newly recruited operatives, including foreign recruitment and anime-submod integration | [Korean operative portrait plan and source evidence](docs/HOK_KOREAN_OPERATIVE_PORTRAIT_PLAN.md) |
 | Comparing current logs against the 2026-11-06 compatibility repairs | [Runtime compatibility implementation and evidence](docs/incidents/2026-11-06-hok-runtime-compatibility-implementation.md) |
 | Locating or relocating the HOK log-review skill | [Skill location and migration record](docs/HOK_LOG_REVIEW_SKILL.md) |
 

@@ -1,0 +1,878 @@
+{
+  "schema_version": 2,
+  "date": "2026-11-12",
+  "scope": "Korean-only portraits for newly recruited operatives",
+  "source_baseline": {
+    "branch": "feat/korean-focus-expansion-ai",
+    "commit": "f1282d701bc47e47c119ca31faa6082e9e6ed1e6"
+  },
+  "status": "revised_assets_integrated_static_and_main_runtime_verified_with_scoped_limits",
+  "asset_counts": {
+    "male": 4,
+    "female": 4,
+    "total": 8
+  },
+  "generation": {
+    "classification": "AI-edited from the existing generated fictional identities",
+    "tool": "image_gen.imagegen",
+    "model": "not_exposed",
+    "date": "2026-11-12",
+    "reference_images": [
+      "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_01.png",
+      "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_02.png",
+      "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_03.png",
+      "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_04.png",
+      "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_01.png",
+      "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_02.png",
+      "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_03.png",
+      "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_04.png"
+    ],
+    "reference_role": "Identity-preserving edit inputs from the initial portrait generation",
+    "transparent_background": false
+  },
+  "visual_style": "Existing fictional Korean identities in Goblin drama-inspired black felt fedora, black suit and overcoat, white shirt and black tie, with an opaque neutral gray studio gradient",
+  "format_reference": {
+    "source": "Installed La Resistance Asia operative DDS headers",
+    "evidence": "C:/hoi/test/hok-operative-portraits-20261112-01/art/reference/operative-dds-header-evidence.json",
+    "dimensions": [
+      156,
+      210
+    ],
+    "format": "Uncompressed BGRA32 with alpha",
+    "mipmap_header_count": 0,
+    "header_flags": 528391,
+    "linear_size": 131040
+  },
+  "anime_compatibility": {
+    "strategy": "Provide the base realistic portraits at the new mod-relative operative path",
+    "asset_path": "gfx/leaders/operatives/HOK_KOR/",
+    "observed_anime_replace_path": "gfx/leaders/KOR",
+    "anime_specific_artwork": "not_selected_for_this_implementation",
+    "initial_runtime_validation": "confirmed_full_process_start_and_saved_female04_male02_rendering_from_base_assets",
+    "current_runtime_validation": "source_fallback_preserved_current_anime_session_not_launched"
+  },
+  "source_preservation": {
+    "selected_original_directory": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generated",
+    "selected_original_role": "Preserved selected image-edit outputs for the current revision",
+    "prompt_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/prompts.json",
+    "generation_provenance_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generation-provenance.json",
+    "conversion_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/conversion-manifest.json",
+    "native_contact_sheet": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/native-contact-sheet.png",
+    "native_preview_review": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/native-preview-review.json",
+    "helper_provenance": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/helper-provenance.json",
+    "previous_source_backup": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before",
+    "old_to_new_asset_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/validation/staged-asset-revision-records.json"
+  },
+  "static_validation_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/validation/final-integration.json",
+  "assets": [
+    {
+      "id": "female_01",
+      "gender": "female",
+      "classification": "AI-edited",
+      "contribution": "Outfit and opaque-background revision of the existing generated fictional operative",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Use case identity-preserve. Edit the supplied fictional adult Korean character portrait for a Hearts of Iron IV operative asset. Preserve this exact person's facial identity, apparent age, face shape, skin tone, facial details, expression, eye direction, and shoulder angle. Retain the realistic hand-painted strategy-game rendering and soft directional face lighting. Dress this same person in the Grim Reaper uniform inspired by the Korean TV drama Goblin (Guardian: The Lonely and Great God): a matte black felt fedora with a modest brim and black ribbon, sharply tailored black suit, crisp white collared shirt, slim black tie, and black wool overcoat visible at the shoulders. The brim sits high enough for both eyes and eyebrows to stay clearly readable. Replace the background with an opaque desaturated medium-dark neutral gray studio gradient, gently lighter behind the head, darker toward the edges, covering the entire rectangular canvas. Single chest-up portrait, vertical 3:4 composition, complete fedora crown and brim inside the image with generous headroom and side margins, face large and readable at 156x210 pixels. Preserve each person's original distinctive features and hair visible beneath the hat. Clean unlettered portrait artwork with natural anatomy. Preserve her narrow oval face, dark eyes, and original side-parted low-bun hairstyle.",
+        "reference_images": [
+          {
+            "path": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_01.png",
+            "sha256": "7686dd1e996e35a89cebb74a49a45376c50a68fabbfeb8196da752365e96123a",
+            "role": "Image-generation edit reference"
+          }
+        ],
+        "transparent_background": false,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-46bf30a8-1d99-4be4-8feb-059d80dbbbb0.png",
+        "tool_native_original_sha256": "7aca61c1949e070316f046ec2f13c5ce9c83ee126f0e50a656d08ab71583911f"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generated/portrait_HOK_KOR_operative_female_01.png",
+        "sha256": "7aca61c1949e070316f046ec2f13c5ce9c83ee126f0e50a656d08ab71583911f",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original image-edit output"
+      },
+      "identity_reference": {
+        "id": "female_01",
+        "original_selected_png": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_01.png",
+        "original_selected_sha256": "7686dd1e996e35a89cebb74a49a45376c50a68fabbfeb8196da752365e96123a",
+        "original_tool_png": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-b2512507-2967-4c5c-a4cf-4337ea06b307.png",
+        "old_runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_01.dds",
+        "old_runtime_sha256": "50cf7ee64b13347bb00f914ddfa4cd41f20dd1a5ce11eec23fcd3abdacf411cf"
+      },
+      "previous_runtime_asset": {
+        "relative_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_01.dds",
+        "source": "C:/hoi/hearts_of_korea/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_01.dds",
+        "source_role": "Current project source before outfit and background revision",
+        "backup": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_01.dds",
+        "backup_role": "Byte-identical evidence copy",
+        "sha256": "50cf7ee64b13347bb00f914ddfa4cd41f20dd1a5ce11eec23fcd3abdacf411cf",
+        "bytes": 131168
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_operative_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_operative_female_01",
+      "runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_01.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/prepare_operative_dds.ps1",
+        "crop_rectangle_xywh": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "crop_method": "No crop; resize the full source canvas to retain the fedora crown and brim",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with no additional mip levels (header count 0)",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_female_01.dds"
+      },
+      "output": {
+        "sha256": "47996cc711660057d09ffec53176a55ddf24bfb4aaf79b56940703f41b646a4e",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 0,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 255,
+          "maximum": 255,
+          "transparent_pixels": 0,
+          "partial_alpha_pixels": 0
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_female_01.png",
+        "sha256": "88e2ac6d33451f11b5feb53bf668b0a6dfb0147e1e9fb5178f06a2726de3eda0"
+      }
+    },
+    {
+      "id": "female_02",
+      "gender": "female",
+      "classification": "AI-edited",
+      "contribution": "Outfit and opaque-background revision of the existing generated fictional operative",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Use case identity-preserve. Edit the supplied fictional adult Korean character portrait for a Hearts of Iron IV operative asset. Preserve this exact person's facial identity, apparent age, face shape, skin tone, facial details, expression, eye direction, and shoulder angle. Retain the realistic hand-painted strategy-game rendering and soft directional face lighting. Dress this same person in the Grim Reaper uniform inspired by the Korean TV drama Goblin (Guardian: The Lonely and Great God): a matte black felt fedora with a modest brim and black ribbon, sharply tailored black suit, crisp white collared shirt, slim black tie, and black wool overcoat visible at the shoulders. The brim sits high enough for both eyes and eyebrows to stay clearly readable. Replace the background with an opaque desaturated medium-dark neutral gray studio gradient, gently lighter behind the head, darker toward the edges, covering the entire rectangular canvas. Single chest-up portrait, vertical 3:4 composition, complete fedora crown and brim inside the image with generous headroom and side margins, face large and readable at 156x210 pixels. Preserve each person's original distinctive features and hair visible beneath the hat. Clean unlettered portrait artwork with natural anatomy. Preserve her mature rounded face, original dark wavy bob, and composed gaze.",
+        "reference_images": [
+          {
+            "path": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_02.png",
+            "sha256": "31e80fbbdd9ff70ef12d9c305ed559422f80fc3f8eaf8b5d7fdf65b14fd614a6",
+            "role": "Image-generation edit reference"
+          }
+        ],
+        "transparent_background": false,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-c6c02524-90ac-4e3f-bd70-0e22908eedba.png",
+        "tool_native_original_sha256": "ccfee952eeff8a1ce676091814da3ddc471bb89abf4c15b066843effe89c7bb4"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generated/portrait_HOK_KOR_operative_female_02.png",
+        "sha256": "ccfee952eeff8a1ce676091814da3ddc471bb89abf4c15b066843effe89c7bb4",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original image-edit output"
+      },
+      "identity_reference": {
+        "id": "female_02",
+        "original_selected_png": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_02.png",
+        "original_selected_sha256": "31e80fbbdd9ff70ef12d9c305ed559422f80fc3f8eaf8b5d7fdf65b14fd614a6",
+        "original_tool_png": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-b0930f03-db0e-4d8b-a11e-2283252119d9.png",
+        "old_runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_02.dds",
+        "old_runtime_sha256": "f70834960bf93fdcce6c1b49686b48a9b18eeb64ec3b93d49996714daeae3d84"
+      },
+      "previous_runtime_asset": {
+        "relative_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_02.dds",
+        "source": "C:/hoi/hearts_of_korea/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_02.dds",
+        "source_role": "Current project source before outfit and background revision",
+        "backup": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_02.dds",
+        "backup_role": "Byte-identical evidence copy",
+        "sha256": "f70834960bf93fdcce6c1b49686b48a9b18eeb64ec3b93d49996714daeae3d84",
+        "bytes": 131168
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_operative_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_operative_female_02",
+      "runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_02.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/prepare_operative_dds.ps1",
+        "crop_rectangle_xywh": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "crop_method": "No crop; resize the full source canvas to retain the fedora crown and brim",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with no additional mip levels (header count 0)",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_female_02.dds"
+      },
+      "output": {
+        "sha256": "866cb4bbcddb399548968b48d80b9a409d451cb716623e16f2a8eba71e66b2c2",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 0,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 255,
+          "maximum": 255,
+          "transparent_pixels": 0,
+          "partial_alpha_pixels": 0
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_female_02.png",
+        "sha256": "4de32d9125b3965d96fcf06188f3f1c2683cad506eb70c986e66fefabb452eb9"
+      }
+    },
+    {
+      "id": "female_03",
+      "gender": "female",
+      "classification": "AI-edited",
+      "contribution": "Outfit and opaque-background revision of the existing generated fictional operative",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not exposed by built-in tool",
+        "prompt": "Use case identity-preserve. Edit the supplied fictional adult Korean character portrait for a Hearts of Iron IV operative asset. Preserve this exact person's facial identity, apparent age, face shape, skin tone, facial details, expression, eye direction, and shoulder angle. Retain the realistic hand-painted strategy-game rendering and soft directional face lighting. Dress this same person in the Grim Reaper uniform inspired by the Korean TV drama Goblin (Guardian: The Lonely and Great God): a matte black felt fedora with a modest brim and black ribbon, sharply tailored black suit, crisp white collared shirt, slim black tie, and black wool overcoat visible at the shoulders. The brim sits high enough for both eyes and eyebrows to stay clearly readable. Replace the background with an opaque desaturated medium-dark neutral gray studio gradient, gently lighter behind the head, darker toward the edges, covering the entire rectangular canvas. Single chest-up portrait, vertical 3:4 composition, complete fedora crown and brim inside the image with generous headroom and side margins, face large and readable at 156x210 pixels. Preserve each person's original distinctive features and hair visible beneath the hat. Clean unlettered portrait artwork with natural anatomy. Preserve her narrow oval face, dark eyes, and original side-parted low-bun hairstyle.\nSpecific identity: Preserve her exact round thin wire-frame glasses, round face, calm gaze, and side-parted dark hair visible beneath the hat.",
+        "reference_images": [
+          {
+            "path": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_03.png",
+            "sha256": "58c4f48be2b2d5ca4ab7898d69b1ac790b80bade1995f708120529ad5e4a6926",
+            "role": "Image-generation edit reference"
+          }
+        ],
+        "transparent_background": false,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-11b2aee9-0f77-49ec-89c1-b85076033be7.png",
+        "tool_native_original_sha256": "9c9ca7c29716557bb52a1819c05ee9cc415dfeded8ff658b60a2692175da20fc"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generated/portrait_HOK_KOR_operative_female_03.png",
+        "sha256": "9c9ca7c29716557bb52a1819c05ee9cc415dfeded8ff658b60a2692175da20fc",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original image-edit output"
+      },
+      "identity_reference": {
+        "id": "female_03",
+        "original_selected_png": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_03.png",
+        "original_selected_sha256": "58c4f48be2b2d5ca4ab7898d69b1ac790b80bade1995f708120529ad5e4a6926",
+        "original_tool_png": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-c641d8e1-883c-480a-bc6c-6d56b2ae7c60.png",
+        "old_runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_03.dds",
+        "old_runtime_sha256": "4a5e3125c6e58188c967ed710e25be365f541c814e6a9a3cab1e6b6430e474c8"
+      },
+      "previous_runtime_asset": {
+        "relative_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_03.dds",
+        "source": "C:/hoi/hearts_of_korea/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_03.dds",
+        "source_role": "Current project source before outfit and background revision",
+        "backup": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_03.dds",
+        "backup_role": "Byte-identical evidence copy",
+        "sha256": "4a5e3125c6e58188c967ed710e25be365f541c814e6a9a3cab1e6b6430e474c8",
+        "bytes": 131168
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_operative_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_operative_female_03",
+      "runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_03.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/prepare_operative_dds.ps1",
+        "crop_rectangle_xywh": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "crop_method": "No crop; resize the full source canvas to retain the fedora crown and brim",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with no additional mip levels (header count 0)",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_female_03.dds"
+      },
+      "output": {
+        "sha256": "a8299a6a934a6fcac6f1f1226541be69e8e57043de4a4f7542b547c6490eba84",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 0,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 255,
+          "maximum": 255,
+          "transparent_pixels": 0,
+          "partial_alpha_pixels": 0
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_female_03.png",
+        "sha256": "33c72074cef26bfa7df592c8b8f9f87184f0f08fc39c1372bd73862ac6196c11"
+      }
+    },
+    {
+      "id": "female_04",
+      "gender": "female",
+      "classification": "AI-edited",
+      "contribution": "Outfit and opaque-background revision of the existing generated fictional operative",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not exposed by built-in tool",
+        "prompt": "Use case identity-preserve. Edit the supplied fictional adult Korean character portrait for a Hearts of Iron IV operative asset. Preserve this exact person's facial identity, apparent age, face shape, skin tone, facial details, expression, eye direction, and shoulder angle. Retain the realistic hand-painted strategy-game rendering and soft directional face lighting. Dress this same person in the Grim Reaper uniform inspired by the Korean TV drama Goblin (Guardian: The Lonely and Great God): a matte black felt fedora with a modest brim and black ribbon, sharply tailored black suit, crisp white collared shirt, slim black tie, and black wool overcoat visible at the shoulders. The brim sits high enough for both eyes and eyebrows to stay clearly readable. Replace the background with an opaque desaturated medium-dark neutral gray studio gradient, gently lighter behind the head, darker toward the edges, covering the entire rectangular canvas. Single chest-up portrait, vertical 3:4 composition, complete fedora crown and brim inside the image with generous headroom and side margins, face large and readable at 156x210 pixels. Preserve each person's original distinctive features and hair visible beneath the hat. Clean unlettered portrait artwork with natural anatomy. Preserve her narrow oval face, dark eyes, and original side-parted low-bun hairstyle.\nSpecific identity: Preserve her exact youthful face, cheek beauty mark, composed expression, and side-parted short wavy bob visible beneath the hat.",
+        "reference_images": [
+          {
+            "path": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_04.png",
+            "sha256": "938ca3408af9cb69bd21ef80dfc08cd3ac057ad61112eecb61203aa6b2c7478a",
+            "role": "Image-generation edit reference"
+          }
+        ],
+        "transparent_background": false,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-30b8be44-f06e-4dbf-a199-b4a1e594d05c.png",
+        "tool_native_original_sha256": "ad7ad1269526227733403f55607afe2fa57fb0f3cc18f520c498ad6552fb03f0"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generated/portrait_HOK_KOR_operative_female_04.png",
+        "sha256": "ad7ad1269526227733403f55607afe2fa57fb0f3cc18f520c498ad6552fb03f0",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original image-edit output"
+      },
+      "identity_reference": {
+        "id": "female_04",
+        "original_selected_png": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_female_04.png",
+        "original_selected_sha256": "938ca3408af9cb69bd21ef80dfc08cd3ac057ad61112eecb61203aa6b2c7478a",
+        "original_tool_png": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-a6f5cb62-373c-4920-8e0e-19456deae01b.png",
+        "old_runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_04.dds",
+        "old_runtime_sha256": "952c78712070a8ee1d9752a2793512ca452d202cdd48a6328a3a3ba99891df83"
+      },
+      "previous_runtime_asset": {
+        "relative_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_04.dds",
+        "source": "C:/hoi/hearts_of_korea/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_04.dds",
+        "source_role": "Current project source before outfit and background revision",
+        "backup": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_04.dds",
+        "backup_role": "Byte-identical evidence copy",
+        "sha256": "952c78712070a8ee1d9752a2793512ca452d202cdd48a6328a3a3ba99891df83",
+        "bytes": 131168
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_operative_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_operative_female_04",
+      "runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_female_04.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/prepare_operative_dds.ps1",
+        "crop_rectangle_xywh": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "crop_method": "No crop; resize the full source canvas to retain the fedora crown and brim",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with no additional mip levels (header count 0)",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_female_04.dds"
+      },
+      "output": {
+        "sha256": "ccd02d8cc9773a4b2b2f5930a9d7e879242872aefc4727426be2c0b13a8fac16",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 0,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 255,
+          "maximum": 255,
+          "transparent_pixels": 0,
+          "partial_alpha_pixels": 0
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_female_04.png",
+        "sha256": "8258fac1b63b6128909279653e43c1f1768fc6d43166a3e471bf0c71edb9ea26"
+      }
+    },
+    {
+      "id": "male_01",
+      "gender": "male",
+      "classification": "AI-edited",
+      "contribution": "Outfit and opaque-background revision of the existing generated fictional operative",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Use case identity-preserve. Edit the supplied fictional adult Korean character portrait for a Hearts of Iron IV operative asset. Preserve this exact person's facial identity, apparent age, face shape, skin tone, facial details, expression, eye direction, and shoulder angle. Retain the realistic hand-painted strategy-game rendering and soft directional face lighting. Dress this same person in the Grim Reaper uniform inspired by the Korean TV drama Goblin (Guardian: The Lonely and Great God): a matte black felt fedora with a modest brim and black ribbon, sharply tailored black suit, crisp white collared shirt, slim black tie, and black wool overcoat visible at the shoulders. The brim sits high enough for both eyes and eyebrows to stay clearly readable. Replace the background with an opaque desaturated medium-dark neutral gray studio gradient, gently lighter behind the head, darker toward the edges, covering the entire rectangular canvas. Single chest-up portrait, vertical 3:4 composition, complete fedora crown and brim inside the image with generous headroom and side margins, face large and readable at 156x210 pixels. Preserve each person's original distinctive features and hair visible beneath the hat. Clean unlettered portrait artwork with natural anatomy. Preserve his lean angular clean-shaven face and original side-parted hair.",
+        "reference_images": [
+          {
+            "path": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_01.png",
+            "sha256": "f6e1217eb890c30fa543fd8d6dfa09313d57d46b2299e6ecf6baa79acd73c123",
+            "role": "Image-generation edit reference"
+          }
+        ],
+        "transparent_background": false,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-b9319f9c-c848-4fb6-83f4-bf1fe29915ea.png",
+        "tool_native_original_sha256": "7dc4974cc62b68730f3ceb493423a585bcfe8ea96b8f03f9c04849d72c4260d8"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generated/portrait_HOK_KOR_operative_male_01.png",
+        "sha256": "7dc4974cc62b68730f3ceb493423a585bcfe8ea96b8f03f9c04849d72c4260d8",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original image-edit output"
+      },
+      "identity_reference": {
+        "id": "male_01",
+        "original_selected_png": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_01.png",
+        "original_selected_sha256": "f6e1217eb890c30fa543fd8d6dfa09313d57d46b2299e6ecf6baa79acd73c123",
+        "original_tool_png": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-184f0534-013f-4d76-ac3f-e10bffd4a7a3.png",
+        "old_runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_01.dds",
+        "old_runtime_sha256": "9f6038b866d106748d4f3d30452ecb22b6a1ba7196dc6c635420086be9b4e055"
+      },
+      "previous_runtime_asset": {
+        "relative_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_01.dds",
+        "source": "C:/hoi/hearts_of_korea/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_01.dds",
+        "source_role": "Current project source before outfit and background revision",
+        "backup": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_01.dds",
+        "backup_role": "Byte-identical evidence copy",
+        "sha256": "9f6038b866d106748d4f3d30452ecb22b6a1ba7196dc6c635420086be9b4e055",
+        "bytes": 131168
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_operative_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_operative_male_01",
+      "runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_01.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/prepare_operative_dds.ps1",
+        "crop_rectangle_xywh": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "crop_method": "No crop; resize the full source canvas to retain the fedora crown and brim",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with no additional mip levels (header count 0)",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_male_01.dds"
+      },
+      "output": {
+        "sha256": "9d39ee382acb5c741f7884e354c2d8334723cb57374d3a0178e04d8e883a2816",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 0,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 255,
+          "maximum": 255,
+          "transparent_pixels": 0,
+          "partial_alpha_pixels": 0
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_male_01.png",
+        "sha256": "0bfa43dcd394a0caa0386c5c8487ca8d85fd1d7bddb1f5f3ba8daad1f7e4e944"
+      }
+    },
+    {
+      "id": "male_02",
+      "gender": "male",
+      "classification": "AI-edited",
+      "contribution": "Outfit and opaque-background revision of the existing generated fictional operative",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not_exposed",
+        "prompt": "Use case identity-preserve. Edit the supplied fictional adult Korean character portrait for a Hearts of Iron IV operative asset. Preserve this exact person's facial identity, apparent age, face shape, skin tone, facial details, expression, eye direction, and shoulder angle. Retain the realistic hand-painted strategy-game rendering and soft directional face lighting. Dress this same person in the Grim Reaper uniform inspired by the Korean TV drama Goblin (Guardian: The Lonely and Great God): a matte black felt fedora with a modest brim and black ribbon, sharply tailored black suit, crisp white collared shirt, slim black tie, and black wool overcoat visible at the shoulders. The brim sits high enough for both eyes and eyebrows to stay clearly readable. Replace the background with an opaque desaturated medium-dark neutral gray studio gradient, gently lighter behind the head, darker toward the edges, covering the entire rectangular canvas. Single chest-up portrait, vertical 3:4 composition, complete fedora crown and brim inside the image with generous headroom and side margins, face large and readable at 156x210 pixels. Preserve each person's original distinctive features and hair visible beneath the hat. Clean unlettered portrait artwork with natural anatomy. Preserve his wider weathered middle-aged face, gray temples, and thin moustache exactly.",
+        "reference_images": [
+          {
+            "path": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_02.png",
+            "sha256": "48b876fa5cd44c1d906b80eb264ae9542e6fb6cbcfa39a8a79aa44294d8d894c",
+            "role": "Image-generation edit reference"
+          }
+        ],
+        "transparent_background": false,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-fc9e8e5c-db4c-4249-a9b2-8b849c394f98.png",
+        "tool_native_original_sha256": "076a1dac1565991f8e1a32a24fd1d989be553d1b3d2a74c0ecdf7bed642feeb0"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generated/portrait_HOK_KOR_operative_male_02.png",
+        "sha256": "076a1dac1565991f8e1a32a24fd1d989be553d1b3d2a74c0ecdf7bed642feeb0",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original image-edit output"
+      },
+      "identity_reference": {
+        "id": "male_02",
+        "original_selected_png": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_02.png",
+        "original_selected_sha256": "48b876fa5cd44c1d906b80eb264ae9542e6fb6cbcfa39a8a79aa44294d8d894c",
+        "original_tool_png": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-e06d16c3-16ad-4c63-9042-10974453038f.png",
+        "old_runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_02.dds",
+        "old_runtime_sha256": "499341a3cc8fa4b3e25c03281c5ef8f2a9cbb0fa1e283a86c5261dfcc8517a9b"
+      },
+      "previous_runtime_asset": {
+        "relative_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_02.dds",
+        "source": "C:/hoi/hearts_of_korea/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_02.dds",
+        "source_role": "Current project source before outfit and background revision",
+        "backup": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_02.dds",
+        "backup_role": "Byte-identical evidence copy",
+        "sha256": "499341a3cc8fa4b3e25c03281c5ef8f2a9cbb0fa1e283a86c5261dfcc8517a9b",
+        "bytes": 131168
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_operative_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_operative_male_02",
+      "runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_02.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/prepare_operative_dds.ps1",
+        "crop_rectangle_xywh": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "crop_method": "No crop; resize the full source canvas to retain the fedora crown and brim",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with no additional mip levels (header count 0)",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_male_02.dds"
+      },
+      "output": {
+        "sha256": "4fe52a0d447c5f1d858ec7d1e51a5b24ff78e375f827f620eb55eeb8d25338c2",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 0,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 255,
+          "maximum": 255,
+          "transparent_pixels": 0,
+          "partial_alpha_pixels": 0
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_male_02.png",
+        "sha256": "83ef86191beba629014fb80e447738e7075db0528df6cf97b2650a3e7a160a65"
+      }
+    },
+    {
+      "id": "male_03",
+      "gender": "male",
+      "classification": "AI-edited",
+      "contribution": "Outfit and opaque-background revision of the existing generated fictional operative",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not exposed by built-in tool",
+        "prompt": "Use case identity-preserve. Edit the supplied fictional adult Korean character portrait for a Hearts of Iron IV operative asset. Preserve this exact person's facial identity, apparent age, face shape, skin tone, facial details, expression, eye direction, and shoulder angle. Retain the realistic hand-painted strategy-game rendering and soft directional face lighting. Dress this same person in the Grim Reaper uniform inspired by the Korean TV drama Goblin (Guardian: The Lonely and Great God): a matte black felt fedora with a modest brim and black ribbon, sharply tailored black suit, crisp white collared shirt, slim black tie, and black wool overcoat visible at the shoulders. The brim sits high enough for both eyes and eyebrows to stay clearly readable. Replace the background with an opaque desaturated medium-dark neutral gray studio gradient, gently lighter behind the head, darker toward the edges, covering the entire rectangular canvas. Single chest-up portrait, vertical 3:4 composition, complete fedora crown and brim inside the image with generous headroom and side margins, face large and readable at 156x210 pixels. Preserve each person's original distinctive features and hair visible beneath the hat. Clean unlettered portrait artwork with natural anatomy. Preserve her narrow oval face, dark eyes, and original side-parted low-bun hairstyle.\nSpecific identity: Preserve his exact clean-shaven broad-jawed young face, cheek beauty mark, steady gaze, and short dark hair visible beneath the hat.",
+        "reference_images": [
+          {
+            "path": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_03.png",
+            "sha256": "ceb4ef72f6362cdf89204b1c3e9ac09c7845eb93b101befcc4d61df8537c2520",
+            "role": "Image-generation edit reference"
+          }
+        ],
+        "transparent_background": false,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-fa026ad9-6d5f-4944-8c17-8e809dd4fbee.png",
+        "tool_native_original_sha256": "a3a3b4f702dc551c607b7ef1350e26c9999249acfaddb1b967fb651986be40f4"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generated/portrait_HOK_KOR_operative_male_03.png",
+        "sha256": "a3a3b4f702dc551c607b7ef1350e26c9999249acfaddb1b967fb651986be40f4",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original image-edit output"
+      },
+      "identity_reference": {
+        "id": "male_03",
+        "original_selected_png": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_03.png",
+        "original_selected_sha256": "ceb4ef72f6362cdf89204b1c3e9ac09c7845eb93b101befcc4d61df8537c2520",
+        "original_tool_png": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-c5fec51d-3174-470b-b235-78933ff5f7f9.png",
+        "old_runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_03.dds",
+        "old_runtime_sha256": "3a9ed46075e9b8f50ca76d4619b036cdd70a97327b2995732b0eb56ef7196a36"
+      },
+      "previous_runtime_asset": {
+        "relative_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_03.dds",
+        "source": "C:/hoi/hearts_of_korea/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_03.dds",
+        "source_role": "Current project source before outfit and background revision",
+        "backup": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_03.dds",
+        "backup_role": "Byte-identical evidence copy",
+        "sha256": "3a9ed46075e9b8f50ca76d4619b036cdd70a97327b2995732b0eb56ef7196a36",
+        "bytes": 131168
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_operative_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_operative_male_03",
+      "runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_03.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/prepare_operative_dds.ps1",
+        "crop_rectangle_xywh": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "crop_method": "No crop; resize the full source canvas to retain the fedora crown and brim",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with no additional mip levels (header count 0)",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_male_03.dds"
+      },
+      "output": {
+        "sha256": "1e5b5c3e2a4ed41f0641a2c84db076d5be1aea112557630ee06ecca8490dbdf1",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 0,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 255,
+          "maximum": 255,
+          "transparent_pixels": 0,
+          "partial_alpha_pixels": 0
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_male_03.png",
+        "sha256": "2e88a904ac30d6540f70ab1ce106ecfe623f1a00060e1d2ec641658bfcfc1222"
+      }
+    },
+    {
+      "id": "male_04",
+      "gender": "male",
+      "classification": "AI-edited",
+      "contribution": "Outfit and opaque-background revision of the existing generated fictional operative",
+      "generation": {
+        "date": "2026-11-12",
+        "tool": "image_gen.imagegen",
+        "model": "not exposed by built-in tool",
+        "prompt": "Use case identity-preserve. Edit the supplied fictional adult Korean character portrait for a Hearts of Iron IV operative asset. Preserve this exact person's facial identity, apparent age, face shape, skin tone, facial details, expression, eye direction, and shoulder angle. Retain the realistic hand-painted strategy-game rendering and soft directional face lighting. Dress this same person in the Grim Reaper uniform inspired by the Korean TV drama Goblin (Guardian: The Lonely and Great God): a matte black felt fedora with a modest brim and black ribbon, sharply tailored black suit, crisp white collared shirt, slim black tie, and black wool overcoat visible at the shoulders. The brim sits high enough for both eyes and eyebrows to stay clearly readable. Replace the background with an opaque desaturated medium-dark neutral gray studio gradient, gently lighter behind the head, darker toward the edges, covering the entire rectangular canvas. Single chest-up portrait, vertical 3:4 composition, complete fedora crown and brim inside the image with generous headroom and side margins, face large and readable at 156x210 pixels. Preserve each person's original distinctive features and hair visible beneath the hat. Clean unlettered portrait artwork with natural anatomy. Preserve her narrow oval face, dark eyes, and original side-parted low-bun hairstyle.\nSpecific identity: Preserve his exact elderly thin face, fine wrinkles, round wire-frame glasses, graying side-parted hair visible beneath the hat, and gentle composed gaze.",
+        "reference_images": [
+          {
+            "path": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_04.png",
+            "sha256": "ec291d17b5f9c7a8c175984c05a6567a645e7008bb68611fd3dfa4a0e2b55194",
+            "role": "Image-generation edit reference"
+          }
+        ],
+        "transparent_background": false,
+        "tool_native_original_path": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-00472ee2-a350-4cb5-ae41-c5d62250a7c3.png",
+        "tool_native_original_sha256": "87477d5a60e2c173ffc65e9cb69185811deece5ba7cdcb37e4516cd670fd4007"
+      },
+      "selected_original": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/generated/portrait_HOK_KOR_operative_male_04.png",
+        "sha256": "87477d5a60e2c173ffc65e9cb69185811deece5ba7cdcb37e4516cd670fd4007",
+        "dimensions": [
+          1086,
+          1448
+        ],
+        "role": "Preserved selected original image-edit output"
+      },
+      "identity_reference": {
+        "id": "male_04",
+        "original_selected_png": "C:/hoi/test/hok-operative-portraits-20261112-01/art/generated/portrait_HOK_KOR_operative_male_04.png",
+        "original_selected_sha256": "ec291d17b5f9c7a8c175984c05a6567a645e7008bb68611fd3dfa4a0e2b55194",
+        "original_tool_png": "C:/Users/jaewo/.codex/generated_images/01a1cf1e-a773-7480-b988-8c8652f01d70/exec-d228eb71-bb82-43cb-9a60-6f717291c1c9.png",
+        "old_runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_04.dds",
+        "old_runtime_sha256": "2582f75ea3e2a839668b22251f7e5bdcf713825f7fec87f26cdf4c6dae687ee5"
+      },
+      "previous_runtime_asset": {
+        "relative_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_04.dds",
+        "source": "C:/hoi/hearts_of_korea/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_04.dds",
+        "source_role": "Current project source before outfit and background revision",
+        "backup": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before/gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_04.dds",
+        "backup_role": "Byte-identical evidence copy",
+        "sha256": "2582f75ea3e2a839668b22251f7e5bdcf713825f7fec87f26cdf4c6dae687ee5",
+        "bytes": 131168
+      },
+      "source_file": "portraits/00_portraits_KOR.txt",
+      "sprite_file": "interface/HOK_KOR_operative_portraits.gfx",
+      "sprite": "GFX_HOK_KOR_operative_male_04",
+      "runtime_path": "gfx/leaders/operatives/HOK_KOR/portrait_HOK_KOR_operative_male_04.dds",
+      "mechanical_processing": {
+        "script": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/prepare_operative_dds.ps1",
+        "crop_rectangle_xywh": [
+          0,
+          0,
+          1086,
+          1448
+        ],
+        "crop_method": "No crop; resize the full source canvas to retain the fedora crown and brim",
+        "resize": "System.Drawing high-quality bicubic to 156x210",
+        "export": "Uncompressed BGRA32 DDS with no additional mip levels (header count 0)",
+        "converted_dds_preservation_path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_male_04.dds"
+      },
+      "output": {
+        "sha256": "da123b2a25149229756746af5881be4d5794cb63bdcf8e251ffdd77ade328dc0",
+        "bytes": 131168,
+        "dimensions": [
+          156,
+          210
+        ],
+        "format": "Uncompressed BGRA32",
+        "mipmap_count": 0,
+        "channel_masks_rgba": [
+          16711680,
+          65280,
+          255,
+          4278190080
+        ],
+        "alpha": {
+          "minimum": 255,
+          "maximum": 255,
+          "transparent_pixels": 0,
+          "partial_alpha_pixels": 0
+        }
+      },
+      "native_preview": {
+        "path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/art/final-dds/portrait_HOK_KOR_operative_male_04.png",
+        "sha256": "2ea750641d7502c17064eb5a6f2e14d449bd55fe006fb7e0547fb2e1974320e4"
+      }
+    }
+  ],
+  "revision": "2026-11-12-outfit-and-opaque-background",
+  "historical_revision": {
+    "revision": "2026-11-12-initial-transparent-portraits",
+    "manifest_path": "C:/hoi/test/hok-operative-outfit-background-20261112-01/source-before/docs/data/HOK_KOREAN_OPERATIVE_PORTRAIT_ASSET_MANIFEST.json",
+    "manifest_sha256": "d226b277f9d774c96e53e4eff815f75aed86fdbb4294e82dc790e2f2af0ba5d5",
+    "role": "Complete byte-preserved manifest before the outfit and background revision",
+    "source_baseline_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/baseline.json"
+  },
+  "initial_runtime_validation": {
+    "status": "verified_with_scoped_limits",
+    "implementation_record": "docs/incidents/2026-11-12-korean-operative-portraits.md",
+    "game_version": "Operation Postern v1.19.4.2.2da5",
+    "main_and_anime_menu_checksum": "04d2",
+    "dlc_count": 36,
+    "la_resistance_enabled": true,
+    "normal_recruitment": {
+      "female": "female_04 Hyeja Hong",
+      "male": "male_02 Sungjin Yun",
+      "progressed_until": "1936.05.12.02",
+      "full_process_restart_temp_save_reload": "confirmed_both_portraits_and_roster_retained",
+      "normal_save_completion": "failed_errno_2_temp_to_final_filename_rename",
+      "save_copy": "C:/hoi/test/hok-operative-portraits-20261112-01/runtime/saves/main-normal-pair-temp.hoi4",
+      "save_sha256": "D09A5A869E970893FE566A545AC5B14BAF149B7BFB61E5258C8C93665F5F9BC2"
+    },
+    "diagnostic": {
+      "menu_checksum": "1aa6",
+      "forced_gfx": false,
+      "all_eight_artworks_observed_in_candidate_ui": true,
+      "baseline_and_13_cosmetic_tags": "28_named_male_female_candidates_all_show_custom_portraits_of_expected_gender",
+      "foreign_override_controls": "4_JAP_RAJ_candidates_visually_distinct_from_custom_pool_exact_foreign_sprite_indices_unresolved",
+      "ui_observation_record": "C:/hoi/test/hok-operative-portraits-20261112-01/diagnostic/runtime/ui-portrait-observation.json",
+      "normal_political_routes_and_foreign_recruitment_decisions": "not_tested"
+    },
+    "anime_record": "C:/hoi/test/hok-operative-portraits-20261112-01/runtime/anime-session-final/source-fallback.json",
+    "restoration_record": "C:/hoi/test/hok-operative-portraits-20261112-01/runtime/pre-restoration/restoration.json",
+    "remaining_limits": [
+      "Ordinary save filename rename failed; successful full restart used the game-generated temp save",
+      "Pre-implementation saves, long-term play and multiplayer not tested",
+      "All13 cosmetic selectors tested by forced creation; natural route progression not tested",
+      "Foreign portrait override selectors tested; normal local-recruitment costs and FROM.OWNER target flow not tested",
+      "Anime-specific artwork and fresh normal recruitment under anime not tested",
+      "OS denied settings.txt restoration; unchanged save_as_binary=yes and game-updated loading-screen lists retained, other three configs restored or baseline-identical"
+    ]
+  },
+  "current_runtime_validation": {
+    "status": "verified_main_rendering_with_scoped_limits",
+    "scope": "Revised black outfits, fedoras and opaque gray portrait backgrounds",
+    "implementation_record": "docs/incidents/2026-11-12-korean-operative-outfit-background.md",
+    "game_version": "Operation Postern v1.19.4.2.2da5",
+    "menu_checksum": "04d2",
+    "process_id": 26248,
+    "load_order": ["mod/ugc_2743487021.mod", "mod/hearts of korea.mod"],
+    "dlc_count": 36,
+    "la_resistance_enabled": true,
+    "full_process_restart": true,
+    "existing_hired_pair": "female_04 Hyeja Hong and male_02 Sungjin Yun displayed revised art on roster cards and circular map icons after reloading the previous normal recruitment temp save",
+    "all_eight_revised_assets_in_candidate_ui": true,
+    "candidate_conditions": "Loaded the previous diagnostic candidate temp save in the ordinary main two-mod session, created an agency through UI, waited through recruitment and inspected the pool at 1936.03.21.15",
+    "fresh_normal_candidate": "Hyeja Gang displayed female_01",
+    "background_result": "Opaque gray backgrounds cover the former white portrait slot",
+    "ui_observation_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/runtime/ui-observation.json",
+    "independent_runtime_review": "C:/hoi/test/hok-operative-outfit-background-20261112-01/validation/independent-runtime-portrait-mapping-review.json",
+    "screenshot_normalization_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/runtime/screenshot-format-normalization.json",
+    "independent_pixel_comparison": "C:/hoi/test/hok-operative-outfit-background-20261112-01/inspection/ui-crops/candidate-pixel-comparison.json",
+    "production_dds_pixel_comparison": "C:/hoi/test/hok-operative-outfit-background-20261112-01/inspection/dds-native-pixel-check/pixel-comparison.json",
+    "session_assessment": "C:/hoi/test/hok-operative-outfit-background-20261112-01/runtime/main-session-final/assessment.json",
+    "art_related_error_count": 0,
+    "other_log_observations": "76 physical error lines, 74 unique messages, including 64 fleet warnings at the previous diagnostic-save load boundary with underlying cause unresolved",
+    "new_save_attempts": 0,
+    "save_inventory": "87 before and after, zero added, removed or metadata-changed entries, both selected temp save hashes unchanged",
+    "restoration_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/runtime/pre-restoration/restoration.json",
+    "settings_restoration": "All four files match this revision baseline, settings.txt unchanged, original RT56 mod selection restored",
+    "remaining_limits": [
+      "Current revision anime combination not launched",
+      "Political route progression and foreign local recruitment decisions not rerun for this artwork revision",
+      "No new save was written, long-term play and multiplayer not tested",
+      "Candidate-to-portrait mapping is specific to this load and is not asserted identical to the earlier diagnostic session"
+    ]
+  },
+  "revision_baseline_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/baseline.json",
+  "delivery_validation_record": "C:/hoi/test/hok-operative-outfit-background-20261112-01/validation/final-delivery-review.json"
+}
