@@ -1428,8 +1428,15 @@ characters = {
 			planning_skill = 4
 			logistics_skill = 3
 			
+			#20261114_kpopmodder: Gate new-game military unlocks by the focus and preserve legacy gook commanders.
 			visible = { 
-				has_global_flag = kor_hok_gookppong_enabled_flag 
+				OR = {
+					has_completed_focus = KOR_prepare_for_the_next_war
+					AND = {
+						has_global_flag = kor_hok_gookppong_enabled_flag
+						NOT = { has_country_flag = HOK_KOR_commander_focus_unlock_v1 }
+					}
+				}
 			}
 		}
 	}
@@ -1450,8 +1457,15 @@ characters = {
 			planning_skill = 4
 			logistics_skill = 2
 			
+			#20261114_kpopmodder: Gate new-game military unlocks by the focus and preserve legacy gook commanders.
 			visible = { 
-				has_global_flag = kor_hok_gookppong_enabled_flag 
+				OR = {
+					has_completed_focus = KOR_prepare_for_the_next_war
+					AND = {
+						has_global_flag = kor_hok_gookppong_enabled_flag
+						NOT = { has_country_flag = HOK_KOR_commander_focus_unlock_v1 }
+					}
+				}
 			}
 		}
 	}
@@ -1472,8 +1486,15 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 			
+			#20261114_kpopmodder: Gate new-game military unlocks by the focus and preserve legacy gook commanders.
 			visible = { 
-				has_global_flag = kor_hok_gookppong_enabled_flag 
+				OR = {
+					has_completed_focus = KOR_prepare_for_the_next_war
+					AND = {
+						has_global_flag = kor_hok_gookppong_enabled_flag
+						NOT = { has_country_flag = HOK_KOR_commander_focus_unlock_v1 }
+					}
+				}
 			}
 		}
 	}

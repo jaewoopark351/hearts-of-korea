@@ -3,6 +3,9 @@
 #20261108_kpopmodder: Use independent CNDP projects in new games without migrating existing regional contracts.
 set_country_flag = HOK_KOR_cndp_state_projects_v1
 
+#20261114_kpopmodder: Mark new games for focus-based commander unlocks while preserving legacy saves.
+set_country_flag = HOK_KOR_commander_focus_unlock_v1
+
 ##Korean start setup###
 
 set_research_slots = 2

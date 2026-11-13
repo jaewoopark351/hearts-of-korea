@@ -5481,6 +5481,10 @@ focus_tree = {
 			add_ideas = KOR_prepare_for_the_next_war
 			custom_effect_tooltip = available_political_advisor
 		    show_ideas_tooltip = beomdo_hong
+			#20261114_kpopmodder: Show the three military roles unlocked by this focus.
+			show_unit_leaders_tooltip = KOR_Beomdo_Hong
+			show_unit_leaders_tooltip = KOR_Jwajin_Kim
+			show_unit_leaders_tooltip = KOR_Junggeun_Ahn
 		}
 	}
 	#Focus for construction syngman rhee line
